@@ -1,6 +1,8 @@
 # HelpMe!: Identifying emergency reports and calls for help on social media
 > The aim of this project is to produce a series of curated feeds containing social media posts, where each feed corresponds to a particular type of information request, aid request, or report containing a particular type of information
 
+* [Zotero Research Library](https://www.zotero.org/markglasgow/collections/NKR37VTR)z
+
 ## Background
 
 > Internationally, civil protection, police forces and emergency response agencies are under increasing pressure to more quickly and effectively respond to emergency situations. The mass adoption of mobile internet-enabled devices paired with wide-spread use of social media platforms for communication and coordination has created ways for the public on-the-ground to contact response services.
