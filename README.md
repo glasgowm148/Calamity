@@ -18,6 +18,8 @@ During the project the student will learn about how to use state-of-the-art mach
 * Java-based back-end, 
 * HTML/Javascript frontend/Web UI built with [Play Framework](https://www.playframework.com/)
 
+* I've used [java-play-react seed](https://github.com/yohangz/java-play-react-seed)
+
 ### Evaluation
 
 The product will be evaluated via automatic evaluation of categorization accuracy using text collections built for the [TREC Incident Streams evaluation initiative](http://dcs.gla.ac.uk/~richardm/TREC_IS/)

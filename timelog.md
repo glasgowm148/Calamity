@@ -1,9 +1,9 @@
 # Timelog
 
-* PROJECT NAME
-* YOUR NAME
-* STUDENT_ID
-* SUPERVISOR NAME
+* HelpMe!
+* Mark Glasgow
+* 2336003g
+* Dr Richard McCreadie
 
 ## Guidance
 
@@ -12,7 +12,12 @@
 * This timelog should be filled out honestly, regularly (daily) and accurately. It is for *your* benefit.
 * Follow the structure provided, grouping time by weeks.  Quantise time to the half hour.
 
-## Week 1
+## Week 1 (4/16hrs)
+
+### 29 Sep 2019
+
+* *2 hours* Initial Project config (example-project + java-play-react seed)
+* *2 hours* Literature review
 
 ### 19 Oct 2019
 
