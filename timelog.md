@@ -12,20 +12,43 @@
 * This timelog should be filled out honestly, regularly (daily) and accurately. It is for *your* benefit.
 * Follow the structure provided, grouping time by weeks.  Quantise time to the half hour.
 
-## Week 1 (4/16hrs)
+## Week 1
 
-### 29 Sep 2019
+### 29 Sep 2020
 
 * *2 hours* Initial Project config (example-project + java-play-react seed)
 * *2 hours* Literature review
 
-### 19 Oct 2019
+## 30th Sep 2020
 
-* *4 hours* Read the project guidance notes
-* *0.5 hour* Created GitLab repository and cloned the cookiecutter for the projects
-* *1 hour* Modified dissertation template, compiled  
+* 3hr 30m Literature review
 
-## 20 Oct 2019
+## T 01 Oct 2020
 
-* *1 hour* meeting with supervisor
-* *2 hours* writing initial version of test harness
+* 2hr Literature review
+
+## F 02 Oct 2020
+
+* 1hr Literature review
+
+## T 06 Oct 2020
+
+* 8hr System Architecture Diagram / miro
+
+## T 08 Oct 2020
+
+* 1hr Literature review 
+
+## F 09 Oct 2020
+
+* 30m System Architecture Diagram / miro
+
+## S 11 Oct 2020
+
+* 1hr Trello / Literature review
+  
+## M 12 Oct 2020
+
+* 30m Cleaning project and updating time-log
+* 1hr 30m Polishing Arch diagram
+* 30m Second meeting with supervisor to discuss system architecture and Literature review
