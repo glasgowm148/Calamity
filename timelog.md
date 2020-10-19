@@ -5,9 +5,10 @@
 * 2336003g
 * Dr Richard McCreadie
 
-## Week 1
-
-
+## Week 0
+> 29.09.2020 -> 02.10.2020
+> *Background reading based on project description*
+> **10.5hrs**
 - **29.09.2020**
   - `[2hr]` Literature review
   - `[2hr]` Initial Project config (example-project + java-play-react seed)
@@ -17,7 +18,12 @@
   - `[2hr]` Literature review
 - **02.10.2020**
   - `[1hr]` Literature review
-# Week 2
+  - `[30m]` **Initial Supervisor Meeting @ 10.30**
+
+# Week 1
+> 2.10.2020 -> 12.10.2020
+> *Requirements gathering and initial architectual diagram*
+> **15.5hrs**
 
 - **06.10.2020**
   - `[8hr]` System Architecture Diagram / miro
@@ -28,7 +34,7 @@
 - **09.10.2020**
   - `[1hr]` System Architecture Diagram / miro
 - **11.10.2020**
-  - `[60m]` Trello + lit. review
+  - `[1hr]` Trello + lit. review
 - **12.10.2020**
   - `[30m]` Project administration (tidy/log)
   - `[90m]` Java Classpath troubleshooting
@@ -36,6 +42,11 @@
   - `[1hr]` Retrospective and Organising next sprint
   
 ## Week 3
+> 12.10.2020 -> 19.10.2020
+>
+> *Further requirements gathering. Docker, Play, VPN and Datasets Setup*
+>
+> **23.5hrs**
 
 - **16.10.2020**
   - `[2hr]` **VPN** Troubleshooting
@@ -44,21 +55,29 @@
 - **17.10.2020**
   - `[1hr]` *Cluster* familiarisation
     - Reading over slides and taking notes
-- **19.10.2020**
-  - `[4hr]` VPN Troubleshooting
+- **18.10.2020**
+  - `[3hr]` VPN Troubleshooting
     - CISCO issues, alternative methods connect but don't allow me to resolve the cluster.
-    - Tried setting manually using old vpn details, and using an alternative to CISCO (Shimo)
-    - Works on my partners laptop - running the same version of OSX, on the same network
-    - Problem is likely a local config or cert setting I've changed when working with AWS/Azure/GCP in the past year.
-    - Reinstalling and using a new admin user account on the mac were both unfruitful.
+      - Tried setting manually using old vpn details, using an alternative to CISCO (Shimo), using a fresh account on osx, reinstalling, etc.. 
+      - Works on my partners laptop - running the same version of OSX, on the same network
   - `[2hr]` Cluster familiarisation
-    - Completed the idagpu quickstar example
+    - [x] Completed the idagpu quickstar example
   - `[1hr]` Docker set-up
     - Image or custom build?
   - `[3hr]` Play Framework seed and familiarisation
-    -  [PLAY JAVA STARTER EXAMPLE](https://developer.lightbend.com/start/?group=play&project=play-samples-play-java-starter-example)
-    -  [Tweet Miner](https://github.com/PranavBhatia/tweet-miner)
-  - `[1hr]`: Dataset retrieval and interpretaiton
+    - [x]  [PLAY JAVA STARTER EXAMPLE](https://developer.lightbend.com/start/?group=play&project=play-samples-play-java-starter-example)
+    - [x] [Tweet Miner](https://github.com/PranavBhatia/tweet-miner)
+      - Fetches using twitter4j API based on the search keyword entered by the user. Searching for tweets with respect to geolocation, hashtags, etc.  Sentiment analysis and counting words can also be performed.
+  - `[3hr]`: Dataset retrieval and interpretaiton
     - Scraped what I could from `nfswebhost-richardmproject`
-      - Notably the folders within `/datasets/TRECIS/` return 404/403
-  
+      - The folders within `/datasets/TRECIS/` return 404/403
+      - [x] 6.14GB pulled successfully
+      - [X] Merged with data available for 2020B
+        - rough notes in `../data/raw/datasets/notes.md`
+- **19.10.2020**
+  - `[3hr]` Requirements visualisation @ miro 
+  - `[30m]` **Third Supervisor meeting @ 10.30**
+    - `Q:` Most suitable path seems to be developing a module for existing Event-Tracker system
+
+  ## Week 4
+> 19.10.2020 -
