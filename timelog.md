@@ -77,7 +77,12 @@
 - **19.10.2020**
   - `[3hr]` Requirements visualisation @ miro 
   - `[30m]` **Third Supervisor meeting @ 10.30**
-    - `Q:` Most suitable path seems to be developing a module for existing Event-Tracker system
+    - `Questions/Comments for meeting`
+      -  Most suitable path seems to be developing a module for existing Event-Tracker system. Access required to determine entry/end-points I would be coding to. 
+      -  Online Supervised Learning vs. Incremental Learning
+      -  Why does sentiment matter in this context?
+         -  Is lexicon sufficient for sentiment or should the entire system utilise ML at all points? 
+
 
   ## Week 4
 > 19.10.2020 -
