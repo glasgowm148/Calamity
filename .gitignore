@@ -3,3 +3,4 @@
 .DS_Store
 data/raw/datasets/*
 src/.seed/*
+src/TweetMinner-master/.project

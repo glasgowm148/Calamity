@@ -86,3 +86,50 @@
 
   ## Week 4
 > 19.10.2020 -
+
+- 50k terms, exist or not? 
+  - not binary exist or not instead to a TDIF
+    - does it exist
+    - embedding force
+      - Triple TVEC
+      - BERT 
+      - Muppet Models ? 
+
+- Classical vs Deep Learning
+  - CPU vs GPU
+  - CPU : Fewer parameters, linear regression - learning a linear weight to your features
+  - Tree based learning 
+  - Deep : Blackbox, 
+  - deep to generate features
+  - deep end-to-end, neural networks does that classification
+
+- Bert -> Vector of numbers -> Linear Regression 
+
+- 99% wont be relevent for search and recue
+  - Accuracy not that important
+  - Performance - recall is most important (positive class calculation / balanced accuracy)
+  - cant afford to miss relevent stuff, rather more spam 
+
+
+- How it sources it categorisation data.  
+  - Pull from my system instead 
+  - API or Empty Mailbox
+  - 2 step process
+  - get historical data
+  - auto adds it to the listing 
+  
+- Just start with offline learning
+  - Feedback to update learning
+  - Debug U.I 
+
+- Sentiment Analysis
+  - Solution for category 
+
+- Sentiment Analysis using ML 
+  - grab a library 
+
+- For next week, pre-processing script 
+  - see performance
+  - see where it fails
+  - add / improvimng structure story
+    - show a story and how you worked through 
