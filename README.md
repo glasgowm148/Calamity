@@ -20,6 +20,9 @@ During the project the student will learn about how to use state-of-the-art mach
 
 * I've used [java-play-react seed](https://github.com/yohangz/java-play-react-seed)
 
+Run with `sbt run` from within `src` or `./run.sh`
+`sbt dist`
+
 ### Evaluation
 
 The product will be evaluated via automatic evaluation of categorization accuracy using text collections built for the [TREC Incident Streams evaluation initiative](http://dcs.gla.ac.uk/~richardm/TREC_IS/)
