@@ -4,6 +4,7 @@ rm -rf target/universal/help*
 sbt update
 
 # This task will create a new zip under target/universal/directory.
+echo "### sbt dist"
 sbt dist
 # 
 unzip target/universal/help-me-event-detection-1.0-SNAPSHOT.zip -d target/universal

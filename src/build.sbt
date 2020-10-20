@@ -9,7 +9,7 @@ javaOptions in Universal ++= Seq(
 name := """help-me-event-detection"""
 organization := "com.helpme"
 
-version := "1.0-SNAPSHOT"
+// version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
@@ -19,10 +19,10 @@ libraryDependencies += guice
 
 
 // Docker
-
+maintainer := "2336003g@student.gla.ac.uk"
 Docker / maintainer := "2336003g@student.gla.ac.uk" // TODO: set your info here
 Docker / packageName := "help-me-event-detection"
-Docker / version := sys.env.getOrElse("BUILD_NUMBER", "0")
+Docker / version := sys.env.getOrElse("BUILD_NUMBER", "1.0-SNAPSHOT")
 Docker / daemonUserUid  := None
 Docker / daemonUser := "daemon"
 dockerExposedPorts := Seq(9000)

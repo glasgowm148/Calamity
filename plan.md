@@ -10,9 +10,17 @@ Week-by-week plan for the whole project. Update this as you go along.
 ## Winter semester
 
 * **Week 1**
+
+Initial Background reading
 * **Week 2**
+
+Requirements gathering
 * **Week 3**
+Literature Review
+Requirements gathering
 * **Week 4**
+
+Dockerise a version of Play Framework and start coding the logic to read and clean the dataset. 
 * **Week 5**
 * **Week 6**
 * **Week 7**
