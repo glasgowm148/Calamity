@@ -15,7 +15,9 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
+        Play.getFile("/tweets/before_selection.json");
         return ok(views.html.index.render());
     }
 
 }
+

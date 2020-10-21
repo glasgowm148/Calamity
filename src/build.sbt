@@ -29,3 +29,6 @@ dockerExposedPorts := Seq(9000)
 dockerBaseImage := "openjdk:15"
 dockerRepository := sys.env.get("ecr_repo")
 dockerUpdateLatest := true
+
+import com.typesafe.sbt.packager.MappingsHelper._
+mappings in Universal ++= directory(baseDirectory.value / "../data/raw/tweets")
