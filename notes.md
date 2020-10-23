@@ -10,13 +10,16 @@ https://stackoverflow.com/questions/21085187/reading-files-from-directory-in-pla
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 javac -version
 
+## Play
+
+https://dvirf1.github.io/play-tutorial/posts/working-with-config/
 ## Akka
 
 http://www.reactive-streams.org
 https://github.com/JDoIt/akka-stream-twitter-sentiment
 https://dzone.com/articles/streaming-twitter-api-akka-and
-
-
+https://github.com/playframework/play-samples/tree/2.8.x/play-java-akka-cluster-example
+https://github.com/fforbeck/twitter-analyst
 http://felipeforbeck.com/posts/2015/01/tweet-sentiment-analyst/#.X5KfwC9Q1hE
 >Java; Play Framework; Spring; Spring Data; Hibernate; WebSockets; Akka; Twitter4J Search & Stream API; Redis; HPVerticaDB; HPIdol OnDemand API; Twitter Bootstrap 3; JQuery 1.11; Highcharts.
 
@@ -33,3 +36,8 @@ CQRS/ES persistence strategies
 
 https://github.com/piyushknoldus/lagom-scala-wordcount.g8/wiki/Working-ScreenShots
 [Lagom Framework Java JPA CRUD example](https://github.com/taymyr/lagom-samples/tree/master/jpa-crud/java-sbt)
+https://blog.contactsunny.com/data-science/removing-stop-words-in-java-as-part-of-data-cleaning-in-artificial-intelligence
+https://github.com/contactsunny/RemoveStopWordsInJavaPOC/blob/master/src/main/java/com/contactsunny/poc/RemoveStopWordsInJavaPOC/App.java
+
+
+https://stackoverflow.com/questions/39266763/play-java-how-to-read-a-local-json-file-and-show-as-list-on-a-body
