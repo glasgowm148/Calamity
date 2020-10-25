@@ -11,7 +11,10 @@ sbt update
 
 # This task will create a new zip under target/universal/directory.
 echo "### sbt dist"
+sbt clean
+sbt update
 sbt dist
+sbt run
 
 
 unzip target/universal/helpme-akka-1.0-SNAPSHOT.zip -d target/universal
@@ -20,7 +23,6 @@ unzip target/universal/helpme-akka-1.0-SNAPSHOT.zip -d target/universal
 # ./play-java-seed
 # cd .. # cd .. # cd .. # cd ..
 # Illegal reflective access
-sbt run
 
 
 # echo "### Docker:publishLocal"
