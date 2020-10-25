@@ -67,7 +67,9 @@ public class Tweet {
         jsonText = json.toString();
         ObjectMapper mapper = new ObjectMapper();
         //JsonNode tweetJsonNode = mapper.readTree(String.valueOf(json));
-       // JsonNode jsonNode1 = json.get("full_text");
+
+        // JsonNode jsonNode1 = json.get("full_text");
+
 
         //System.out.println(mapper.convertValue(json, Tweet.class));
         //Tweet tweet = mapper.convertValue(json, Tweet.class);
@@ -112,6 +114,10 @@ public class Tweet {
     private void addProperty(String key, String value) {
 */
     }
+
+
+
+    /* Getters and Setters */
 
     public String getCreatedAt() {
         return createdAt;

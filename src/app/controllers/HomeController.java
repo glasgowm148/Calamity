@@ -81,9 +81,8 @@ public class HomeController extends Controller {
         } catch(IOException e){
             return internalServerError("Something went wrong");
         }
-        
+
     }
-   
 
     //public CompletionStage<Result> getLocation(String latitude, String longitude) {
     //    return ask(tweetActor, new tweetActor(latitude, longitude))
