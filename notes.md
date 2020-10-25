@@ -41,3 +41,9 @@ https://github.com/contactsunny/RemoveStopWordsInJavaPOC/blob/master/src/main/ja
 
 
 https://stackoverflow.com/questions/39266763/play-java-how-to-read-a-local-json-file-and-show-as-list-on-a-body
+
+## Pandas for Java
+https://medium.com/@thijser/doing-cool-data-science-in-java-how-3-dataframe-libraries-stack-up-5e6ccb7b437
+https://github.com/zavtech/morpheus-core
+
+https://github.com/terrier-org/terrier-core/blob/5.x/doc/index.md

@@ -33,6 +33,7 @@ import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+
 /**
  * This controller contains an action to handle HTTP requests
  * to the application's home page.
@@ -89,6 +90,8 @@ public class HomeController extends Controller {
         } catch(IOException e){
             return internalServerError("Something went wrong");
         }
+
+        
     
     }
 
