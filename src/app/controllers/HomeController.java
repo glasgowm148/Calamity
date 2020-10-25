@@ -6,7 +6,6 @@ import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.google.gson.JsonParser;
 import models.Tweet;
 import play.Environment;
 import play.libs.Json;
@@ -32,18 +31,10 @@ import java.util.concurrent.CompletionStage;
  * to the application's home page.
  */
 public class HomeController extends Controller {
-
-    private static JsonParser parser = new JsonParser();
-    private ActorRef<Command> counterActor; // , TweetActor
-    private Scheduler scheduler;
-
-    private Duration askTimeout = Duration.ofSeconds(3L);
-    // public ImportScheduler(final ActorSystem actorSystem, #Named("user_import_actor") ActorRef UserImportActor) {
-    
+    private final ActorRef<Command> counterActor; // , TweetActor
+    private final Scheduler scheduler;
+    private final Duration askTimeout = Duration.ofSeconds(3L);
     private final Environment env;
-
-    
-
 
     @Inject
     public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler, final Environment env) {
@@ -56,7 +47,7 @@ public class HomeController extends Controller {
 
     public CompletionStage<Result> index() {
         // https://www.playframework.com/documentation/2.8.x/AkkaTyped#Using-the-AskPattern-&-Typed-Scheduler
-        return AskPattern.<Command, Integer>ask(
+        return AskPattern.ask(
                 counterActor,
                 GetValue::new,
                 askTimeout,
@@ -66,7 +57,7 @@ public class HomeController extends Controller {
 
     public CompletionStage<Result> increment() {
         // https://www.playframework.com/documentation/2.8.x/AkkaTyped#Using-the-AskPattern-&-Typed-Scheduler
-        return AskPattern.<Command, Integer>ask(
+        return AskPattern.ask(
                 counterActor,
                 Increment::new,
                 askTimeout,
@@ -76,40 +67,23 @@ public class HomeController extends Controller {
 
 
     private Result renderIndex(Integer hitCounter) {
-        File
-                file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json");
-
-        /*
-        Gson gson = new Gson();
-        JsonReader reader = new JsonReader(new FileReader(file));
-        Tweet[] data = gson.fromJson(reader, Tweet[].class);
-        */
-        // Original / Print raw JSON
-
+        File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json");
         try (
-                FileInputStream is =new FileInputStream(file);
+                FileInputStream is =new FileInputStream(file)
         ){
             final JsonNode json = Json.parse(is);
             Tweet tweet = new Tweet(json);
-
             //ObjectMapper objectMapper = new ObjectMapper();
-
             //JsonNode jsonNode = objectMapper.readTree(json);
-            //json.get("text");
-            //return ok(json);
-
-            return ok(json.get("full_text"));
-
-
+            //System.out.println(tweet.getIdStr());
+            return ok(json.get("id_str"));
 
         } catch(IOException e){
             return internalServerError("Something went wrong");
         }
-        
+
     }
 
-  
-   
 
     //public CompletionStage<Result> getLocation(String latitude, String longitude) {
     //    return ask(tweetActor, new tweetActor(latitude, longitude))
