@@ -1,13 +1,13 @@
 
 package models;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import scala.Tuple2;
 
 import javax.persistence.*;
 import java.io.IOException;
-import java.util.Date;
 import java.util.logging.Logger;
 
 /**
@@ -32,14 +32,30 @@ public class Tweet {
     public Double sentimentScore;
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at")
-    public Date createdAt;
+    public String createdAt;
     public Long retweets;
 
     final long serialVersionUID = 42l;
     final ObjectMapper mapper = new ObjectMapper();
 
-    public Tweet(JsonNode json) {
-        System.out.println(json.get("full_text"));
+    public Tweet(JsonNode json) throws JsonProcessingException {
+        System.out.println("Tweet()");
+        // JsonNode root = mapper.readTree(json.asText());
+        if (json.get("lang") != null && "en".equals(json.get("lang").textValue())) {
+            if (json.get("id") != null && json.get("full_text") != null) {
+                id = json.get("id").longValue();
+                text = json.get("full_text").textValue();
+                createdAt = json.get("created_at").textValue();
+
+
+            }
+        }
+        System.out.println(id);
+        System.out.println(text);
+        System.out.println(createdAt);
+
+
+
 
 
     }
