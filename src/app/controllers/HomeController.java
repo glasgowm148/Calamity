@@ -3,14 +3,13 @@ package controllers;
 //import actors.TweetActor;
 
 import akka.actor.typed.ActorRef;
-//import akka.actor.AbstractActor;
-import akka.actor.ActorSystem;
 import akka.actor.typed.Scheduler;
-import akka.actor.typed.javadsl.Adapter;
 import akka.actor.typed.javadsl.AskPattern;
-import akka.cluster.typed.Cluster;
-import akka.cluster.typed.ClusterSingleton;
-import akka.cluster.typed.SingletonActor;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.google.gson.JsonParser;
+import models.Tweet;
+import play.Environment;
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 import services.CounterActor;
@@ -19,24 +18,13 @@ import services.CounterActor.GetValue;
 import services.CounterActor.Increment;
 
 import javax.inject.Inject;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.CompletionStage;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import javax.inject.Inject;
-import com.fasterxml.jackson.databind.JsonNode;
-import play.Environment;
-import play.libs.Json;
-import play.mvc.Controller;
-import play.mvc.Result;
-
-import com.google.gson.*;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+//import akka.actor.AbstractActor;
 
 
 /**
@@ -86,20 +74,34 @@ public class HomeController extends Controller {
                 .thenApply(this::renderIndex);
     }
 
+
     private Result renderIndex(Integer hitCounter) {
-        File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json");
-        
+        File
+                file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json");
+
+        /*
         Gson gson = new Gson();
         JsonReader reader = new JsonReader(new FileReader(file));
-        Review[] data = gson.fromJson(reader, Review[].class);
-
-        // List<Review> data = gson.fromJson(reader, TWEETS); // parse sequentially
+        Tweet[] data = gson.fromJson(reader, Tweet[].class);
+        */
+        // Original / Print raw JSON
 
         try (
                 FileInputStream is =new FileInputStream(file);
         ){
             final JsonNode json = Json.parse(is);
-            return ok(data);
+            Tweet tweet = new Tweet(json.asText());
+
+            //ObjectMapper objectMapper = new ObjectMapper();
+
+            //JsonNode jsonNode = objectMapper.readTree(json);
+            //json.get("text");
+            //return ok(json);
+
+            return ok(json.get("full_text"));
+
+
+
         } catch(IOException e){
             return internalServerError("Something went wrong");
         }
