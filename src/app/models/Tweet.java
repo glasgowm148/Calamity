@@ -39,7 +39,7 @@ public class Tweet {
     final ObjectMapper mapper = new ObjectMapper();
 
     public Tweet(JsonNode json) {
-        System.out.println(json);
+        System.out.println(json.get("full_text"));
 
 
     }
