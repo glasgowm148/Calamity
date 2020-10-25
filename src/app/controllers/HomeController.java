@@ -90,7 +90,7 @@ public class HomeController extends Controller {
                 FileInputStream is =new FileInputStream(file);
         ){
             final JsonNode json = Json.parse(is);
-            Tweet tweet = new Tweet(json.asText());
+            Tweet tweet = new Tweet(json);
 
             //ObjectMapper objectMapper = new ObjectMapper();
 

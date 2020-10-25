@@ -1,10 +1,14 @@
 
 package models;
 
-import com.google.common.base.Objects;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import scala.Tuple2;
 
 import javax.persistence.*;
+import java.io.IOException;
 import java.util.Date;
+import java.util.logging.Logger;
 
 /**
  * Created by fforbeck on 24/01/15.
@@ -31,6 +35,36 @@ public class Tweet {
     public Date createdAt;
     public Long retweets;
 
+    final long serialVersionUID = 42l;
+    final ObjectMapper mapper = new ObjectMapper();
+
+    public Tweet(JsonNode json) {
+        System.out.println(json);
+
+
+    }
+
+    public Tuple2<Long, String> call(String json) {
+        try {
+            JsonNode root = mapper.readValue(json, JsonNode.class);
+            long id;
+            String text;
+            if (root.get("lang") != null && "en".equals(root.get("lang").textValue())) {
+                if (root.get("id") != null && root.get("text") != null) {
+                    id = root.get("id").longValue();
+                    text = root.get("text").textValue();
+                    return new Tuple2<Long, String>(id, text);
+                }
+                return null;
+            }
+            return null;
+        } catch (IOException ex) {
+            Logger LOG = Logger.getLogger(String.valueOf(this.getClass()));
+
+        }
+        return null;
+    }
+    /**
     @Override
     public String toString() {
         return Objects.toStringHelper(this)
@@ -46,4 +80,5 @@ public class Tweet {
                 .add("retweets", retweets)
                 .toString();
     }
+    */
 }
