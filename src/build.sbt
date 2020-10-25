@@ -30,6 +30,10 @@ libraryDependencies += "com.typesafe.akka" %% "akka-cluster-typed" % akkaVersion
 // See also `conf/serialization.conf` and `services.CborSerializable` for more info.
 libraryDependencies += "com.typesafe.akka" %% "akka-serialization-jackson" % akkaVersion
 
+//
+libraryDependencies += "com.google.code.gson" % "gson" % "2.2.4"
+libraryDependencies += "com.typesafe.play" %% "play-json" % "2.9.1"
+
 
 // Docker PID permissions
 import com.typesafe.sbt.packager.docker.DockerChmodType

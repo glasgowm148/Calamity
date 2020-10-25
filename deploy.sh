@@ -3,6 +3,9 @@ rm -rf target/universal/play*
 rm -rf target/universal/help*
 rm -rf target/docker*
 
+
+## These should be uncommented when any structural changes are made 
+## (adding dependencies, Java version, etc)
 sbt clean
 sbt update
 

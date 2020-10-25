@@ -85,7 +85,23 @@
 
 
   ## Week 4
-> 19.10.2020 -
+> 19.10.2020 - 26.10.2020
+
+- **19.10.2020**
+  - `[3hr]` - Play framework seed
+- **20.10.2020**
+  - `[5hr30m]` - Dockerising an instance of play framework
+- **21.10.2020**
+  - `[30m]` Organisation
+- **22.10.2020**
+- **23.10.2020**
+  - `[7hr]` Research into Akka / best method of implementation
+- **24.10.2020**
+- **25.10.2020**
+  - `[30m]` Retrospective / Updating work-log / Trello / etc.
+- **26.10.2020**
+
+
 
 - 50k terms, exist or not? 
   - not binary exist or not instead to a TDIF

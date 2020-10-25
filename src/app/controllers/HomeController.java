@@ -33,6 +33,11 @@ import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 
+import com.google.gson.*;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -40,7 +45,7 @@ import play.mvc.Result;
  */
 public class HomeController extends Controller {
 
-
+    private static JsonParser parser = new JsonParser();
     private ActorRef<Command> counterActor; // , TweetActor
     private Scheduler scheduler;
 
@@ -48,6 +53,8 @@ public class HomeController extends Controller {
     // public ImportScheduler(final ActorSystem actorSystem, #Named("user_import_actor") ActorRef UserImportActor) {
     
     private final Environment env;
+
+    
 
 
     @Inject
@@ -81,20 +88,25 @@ public class HomeController extends Controller {
 
     private Result renderIndex(Integer hitCounter) {
         File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json");
+        
+        Gson gson = new Gson();
+        JsonReader reader = new JsonReader(new FileReader(file));
+        Review[] data = gson.fromJson(reader, Review[].class);
+
+        // List<Review> data = gson.fromJson(reader, TWEETS); // parse sequentially
 
         try (
                 FileInputStream is =new FileInputStream(file);
         ){
             final JsonNode json = Json.parse(is);
-            return ok(json);
+            return ok(data);
         } catch(IOException e){
             return internalServerError("Something went wrong");
         }
-
         
-    
     }
 
+  
    
 
     //public CompletionStage<Result> getLocation(String latitude, String longitude) {
