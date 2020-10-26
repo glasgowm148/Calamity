@@ -1,7 +1,7 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -10,7 +10,7 @@ import com.google.gson.annotations.Expose;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Tweet {
 
     public Tweet() {
@@ -29,7 +29,7 @@ public class Tweet {
     @JsonProperty("id_str")
     @Expose
     private String idStr;
-    @JsonProperty("text")
+    @JsonProperty("full_text")
     @Expose
     private String text;
     @JsonProperty("truncated")
@@ -66,12 +66,12 @@ public class Tweet {
 
         jsonText = json.toString();
         ObjectMapper mapper = new ObjectMapper();
-        //JsonNode tweetJsonNode = mapper.readTree(String.valueOf(json));
+        JsonNode tweetJsonNode = mapper.readTree(String.valueOf(json));
 
         // JsonNode jsonNode1 = json.get("full_text");
 
 
-        //System.out.println(mapper.convertValue(json, Tweet.class));
+        System.out.println(mapper.convertValue(json, Tweet.class)); // Unrecognized field "full_text" (class models.Tweet),
         //Tweet tweet = mapper.convertValue(json, Tweet.class);
         //System.out.println(tweet);
         //assertThat(jsonNode1.textValue(), equalTo("v1"));
@@ -263,10 +263,32 @@ public class Tweet {
 }
 
 class Entities {
+    @JsonIgnoreProperties(ignoreUnknown = true)
+
+
+
+    @JsonProperty("hashtags")
+    @Expose
+    private String[] hashtags;
+
+    @JsonProperty("symbols")
+    @Expose
+    private String[] symbols;
+
+    @JsonProperty("user_mentions")
+    @Expose
+    private String[] user_mentions;
+
+    @JsonProperty("urls")
+    @Expose
+    private List<Object>  urls;
 
     @JsonProperty("media")
     @Expose
     private List<Medium> media = new ArrayList<Medium>();
+
+    Entities() {
+    }
 
     public List<Medium> getMedia() {
         return media;
@@ -305,8 +327,9 @@ class Retweet {
     }
 }
 
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 class User {
+
 
     @JsonProperty("id")
     @Expose
