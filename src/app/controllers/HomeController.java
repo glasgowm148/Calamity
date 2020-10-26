@@ -75,7 +75,9 @@ public class HomeController extends Controller {
             Tweet tweet = new Tweet(json);
             //ObjectMapper objectMapper = new ObjectMapper();
             //JsonNode jsonNode = objectMapper.readTree(json);
-            //System.out.println(tweet.getIdStr());
+            System.out.println("HomeController.java: tweet.getIdStr()");
+            System.out.println(tweet.getText());
+
             return ok(json.get("id_str"));
 
         } catch(IOException e){
