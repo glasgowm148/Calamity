@@ -32,7 +32,7 @@ Docker / version := sys.env.getOrElse("BUILD_NUMBER", "1.0-SNAPSHOT")
 Docker / daemonUserUid  := None
 Docker / daemonUser := "daemon"
 dockerExposedPorts := Seq(9000)
-dockerBaseImage := "openjdk:13"
+dockerBaseImage := "openjdk:9"
 dockerRepository := sys.env.get("ecr_repo")
 dockerUpdateLatest := true
 

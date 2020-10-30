@@ -67,14 +67,57 @@ public class Tweet {
         jsonText = json.toString();
         ObjectMapper mapper = new ObjectMapper();
         JsonNode tweetJsonNode = mapper.readTree(String.valueOf(json));
+        mapper.readTree(String.valueOf(json));
+        this.text = String.valueOf(json.get("full_text"));
+
+        // JsonNode jsonNode1 = json.get("full_text");
+
+        System.out.println("####BREAKPOINT####");
+        System.out.println(this.getText());
+        System.out.println(tweetJsonNode.toString());
+       //System.out.println(mapper.convertValue(json, Tweet.class)); // Unrecognized field "full_text" (class models.Tweet),
+
+        //Tweet tweet = mapper.convertValue(json, Tweet.class);
+        //System.out.println(tweet);
+        //assertThat(jsonNode1.textValue(), equalTo("v1"));
+
+        // doParsing(tweet);
+
+        /*
+        if (json.get("lang") != null && "en".equals(json.get("lang").textValue())) {
+            if (json.get("id") != null && json.get("full_text") != null) {
+                this.id = json.get("id").longValue();
+                this.text = json.get("full_text").textValue();
+                this.createdAt = json.get("created_at").textValue();
 
 
-        Tweet tweet = mapper.convertValue(json, Tweet.class);
-        System.out.println("tweet.getText(): " + tweet.getText());
-        System.out.println("tweet.getCreatedAt(): " + tweet.getCreatedAt());
-        System.out.println("tweet.idStr(): " + tweet.getIdStr());
-        System.out.println("Medium.getMediaUrl(): " + Medium.getMediaUrl());
+            }
+        }
+        System.out.println(id);
+        System.out.println(text);
+        System.out.println(createdAt);
+        System.out.println(json);
 
+
+
+
+
+    }
+
+    public void doParsing(JsonObject json) {
+
+        if (json.get("created_at") != null)
+            if (!json.get("created_at").isJsonNull()) addProperty("created_at", json.get("created_at").getAsString());
+        if (json.get("source") != null)
+            if (!json.get("source").isJsonNull()) addProperty("source", json.get("source").getAsString());
+        if (json.get("lang") != null)
+            if (!json.get("lang").isJsonNull()) addProperty("lang", json.get("lang").getAsString());
+        if (json.get("text") != null)
+            if (!json.get("text").isJsonNull()) addProperty("text", json.get("text").getAsString());
+    }
+
+    private void addProperty(String key, String value) {
+*/
     }
 
 
@@ -187,8 +230,8 @@ public class Tweet {
 
 }
 
-@JsonIgnoreProperties(ignoreUnknown = true)
 class Entities {
+    @JsonIgnoreProperties(ignoreUnknown = true)
 
 
 
@@ -254,6 +297,8 @@ class Retweet {
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class User {
+
+
     @JsonProperty("id")
     @Expose
     private Long id;
@@ -654,10 +699,11 @@ class User {
 
 
 class Medium {
-    private static String mediaUrl;
     @JsonProperty("media_url")
-    //@Expose
-    public static String getMediaUrl() {
+    @Expose
+    private String mediaUrl;
+
+    public String getMediaUrl() {
         return mediaUrl;
     }
 

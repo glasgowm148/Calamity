@@ -7,7 +7,6 @@ import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
 import com.fasterxml.jackson.databind.JsonNode;
 import models.Tweet;
-import play.Environment;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -23,6 +22,19 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.concurrent.CompletionStage;
 
+//package me.aboullaite.corenlp.sentimentanalysis.services;
+/*
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.CoreMap;
+import me.aboullaite.corenlp.sentimentanalysis.model.SentimentType;
+import org.springframework.stereotype.Service;
+*/
+
 //import akka.actor.AbstractActor;
 
 
@@ -34,14 +46,12 @@ public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
     private final Duration askTimeout = Duration.ofSeconds(3L);
-    private final Environment env;
 
     @Inject
-    public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler, final Environment env) {
+    public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
         //TweetActor = system.actorOf(tweetActor.props());
         this.counterActor = counterActor;
         this.scheduler = scheduler;
-        this.env = env;
     }
 
 
@@ -75,16 +85,50 @@ public class HomeController extends Controller {
             Tweet tweet = new Tweet(json);
             //ObjectMapper objectMapper = new ObjectMapper();
             //JsonNode jsonNode = objectMapper.readTree(json);
-            System.out.println("HomeController.java: tweet.getIdStr()");
+
+            //System.out.println(cleanTweets(tweet.getText()));
+
+            //Status tweet_status = new Tweet(status.getCreatedAt(), status.getId(), status.getText(), null, status.getUser().getName(), status.getUser().getScreenName(), status.getUser().getProfileImageURL());
+            // Clean up tweets
+            String text = tweet.getText().trim()
+                    // remove links
+                    .replaceAll("http.*?[\\S]+", "")
+                    // remove usernames
+                    .replaceAll("@[\\S]+", "")
+                    // replace hashtags by just words
+                    .replaceAll("#", "")
+                    // correct all multiple white spaces to a single white space
+                    .replaceAll("[\\s]+", " ");
+
+            // Tweet.setText(text);
+            //Tweet.setSentimentType(analyzerService.analyse(text));
+            System.out.println("######TST");
+            System.out.println(json.get("full_text"));
             System.out.println(tweet.getText());
 
-            return ok(json.get("id_str"));
-
+            return ok(text);
         } catch(IOException e){
             return internalServerError("Something went wrong");
         }
 
     }
+
+
+    /*
+    public int analyse(String tweet) {
+
+        Properties props = new Properties();
+        props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment");
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+        Annotation annotation = pipeline.process(tweet);
+        for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
+            Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
+            return RNNCoreAnnotations.getPredictedClass(tree);
+        }
+        return 0;
+    }
+    */
+
 
     //public CompletionStage<Result> getLocation(String latitude, String longitude) {
     //    return ask(tweetActor, new tweetActor(latitude, longitude))
