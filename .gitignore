@@ -4,3 +4,4 @@
 data/raw/datasets/*
 src/.seed/*
 src/TweetMinner-master/.project
+src/CoreNLP
