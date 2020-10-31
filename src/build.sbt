@@ -43,7 +43,11 @@ libraryDependencies += guice
 
 // In order to use Akka Cluster SBR-OSS for the cluster we need to override the Akka version
 
-
+// CoreNLP
+libraryDependencies ++= Seq(
+  "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0",
+  "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0" classifier "models"
+)
 
 // Some Akka overrides to align versions of artifacts
 libraryDependencies ++= Seq(

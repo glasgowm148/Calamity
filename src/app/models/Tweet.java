@@ -17,7 +17,6 @@ public class Tweet {
         super();
     }
 
-    final long serialVersionUID = 42l;
     final ObjectMapper mapper = new ObjectMapper();
     String jsonText = null;
     @JsonProperty("created_at")
@@ -72,7 +71,7 @@ public class Tweet {
 
         // JsonNode jsonNode1 = json.get("full_text");
 
-        System.out.println("####BREAKPOINT####");
+        System.out.println("####BREAKPOINT - Tweet.java - this.getText()####");
         System.out.println(this.getText());
         System.out.println(tweetJsonNode.toString());
        //System.out.println(mapper.convertValue(json, Tweet.class)); // Unrecognized field "full_text" (class models.Tweet),
