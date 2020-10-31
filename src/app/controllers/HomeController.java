@@ -13,6 +13,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
+import models.SentimentResult;
 import models.Tweet;
 import play.libs.Json;
 import play.mvc.Controller;
@@ -105,11 +106,25 @@ public class HomeController extends Controller {
             System.out.println("scores from 0 to 4 based on whether the analysis comes back with Very Negative, Negative, Neutral, Positive or Very Positive respectively.");
             System.out.println("score" + analyse(text));
 
-
+            SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
+            sentimentAnalyzer.initialize();
+            SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(text);
+            System.out.println("Sentiment Score: " + sentimentResult.getSentimentScore());
+            System.out.println("Sentiment Type: " + sentimentResult.getSentimentType());
+            System.out.println("Very positive: " + sentimentResult.getSentimentClass().getVeryPositive()+"%");
+            System.out.println("Positive: " + sentimentResult.getSentimentClass().getPositive()+"%");
+            System.out.println("Neutral: " + sentimentResult.getSentimentClass().getNeutral()+"%");
+            System.out.println("Negative: " + sentimentResult.getSentimentClass().getNegative()+"%");
+            System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative()+"%");
             return ok(text);
         } catch(IOException e){
             return internalServerError("Something went wrong");
         }
+
+
+
+
+
 
     }
 
@@ -127,6 +142,7 @@ public class HomeController extends Controller {
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
             System.out.println("---");
             System.out.println(sentence.get(CoreAnnotations.TextAnnotation.class));
+            System.out.println(sentence.get(CoreAnnotations.TextAnnotation.class));
             System.out.println(sentence.get(SentimentCoreAnnotations.SentimentClass.class));
         }
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
@@ -135,6 +151,8 @@ public class HomeController extends Controller {
         }
         return 0;
     }
+
+
 
 
 
