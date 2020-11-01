@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Tweet {
+public class Tweet<S, O> {
 
     public Tweet() {
         super();
@@ -56,6 +56,8 @@ public class Tweet {
     @JsonProperty("retweeted")
     @Expose
     private Boolean retweeted;
+    @JsonProperty("data")
+    private String data;
     @JsonProperty("retweeted_status")
     @Expose
     private Retweet retweet;
@@ -66,6 +68,7 @@ public class Tweet {
 
 
         // json to string
+        /*
         jsonText = json.toString();
         System.out.println("jsonText" + jsonText);
 
@@ -82,7 +85,7 @@ public class Tweet {
 
         //System.out.println(tweet);
         //assertThat(jsonNode1.textValue(), equalTo("v1"));
-
+*/
 
     }
 

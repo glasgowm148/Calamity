@@ -5,8 +5,9 @@ package controllers;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
-import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.CollectionType;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -20,7 +21,6 @@ import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
 import models.SentimentResult;
 import models.Tweet;
-import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 import services.CounterActor;
@@ -30,9 +30,10 @@ import services.CounterActor.Increment;
 
 import javax.inject.Inject;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CompletionStage;
 
@@ -86,65 +87,50 @@ public class HomeController extends Controller {
 
     private Result renderIndex(Integer hitCounter) {
 
-        String jsonText = null;
+        //String jsonText = null;
+        //jsonText = tweets.toString();
+        //String prettyJson = toPrettyFormat(jsonText);
+        //System.out.println("Pretty:\n" + prettyJson);
+
         File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/before_selection.json");
+        ParseJSON(file);
+        /*
+        ObjectMapper mapper = new ObjectMapper();
+        List<Tweet<String,Object>> list = new ArrayList<>();
+
         try (
-                FileInputStream is =new FileInputStream(file)
-        ){
-            final JsonNode json = Json.parse(is);
-            jsonText = json.toString();
-            System.out.println("Original Tweet:" + json.get("full_text"));
+                BufferedReader br = new BufferedReader(new FileReader(file))) {
 
-            String prettyJson = toPrettyFormat(jsonText);
-            System.out.println("Pretty:\n" + prettyJson);
-            // new mapper
-            ObjectMapper mapper = new ObjectMapper();
+            while (br.ready()) {
+                String line = br.readLine();
+                Tweet tweet = mapper.readValue(line, Tweet.class);
 
-            
+                clean(tweet);
+                System.out.println("cleanedText:" + tweet.getText());
+                System.out.println("cleanedText:" + tweet.getCreatedAt());
 
-            /// Create a new Tweet object
-            Tweet tweets = mapper.readValue(json.toString(), Tweet.class);
+                System.out.println(".list.add(tweet);:");
+                list.add(tweet);
+                System.out.println(".list.add(tweet);");
 
-            //Tweet tweets = mapper.readValue(new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json"), Tweet.class);
-            System.out.println("##tweets" + tweets.getCreatedAt());
+            }
+            System.out.println("for loop:");
+            for (Tweet tweet : list) {
+                System.out.println("~~~tweet :: " + tweet.getText());
+            }
 
-            // Remove URLs, mentions, hashtags and whitespace
-            tweets.setText(tweets.getText().trim()
-                    .replaceAll("http.*?[\\S]+", "")
-                    .replaceAll("@[\\S]+", "")
-                    .replaceAll("#", "")
-                    .replaceAll("[\\s]+", " "));
 
-            // Sentiment Analyser (./controllers/SentimentAnalyzer)
-            SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
-            sentimentAnalyzer.initialize();
-            SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweets.getText());
 
-            // print results to console
-            System.out.println("Sentiment Score: " + sentimentResult.getSentimentScore());
-            System.out.println("Sentiment Type: " + sentimentResult.getSentimentType());
-            System.out.println("Very positive: " + sentimentResult.getSentimentClass().getVeryPositive()+"%");
-            System.out.println("Positive: " + sentimentResult.getSentimentClass().getPositive()+"%");
-            System.out.println("Neutral: " + sentimentResult.getSentimentClass().getNeutral()+"%");
-            System.out.println("Negative: " + sentimentResult.getSentimentClass().getNegative()+"%");
-            System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative()+"%");
-
-            // Outputs to browser
-            return ok(prettyJson);
-
-        } catch(IOException e){
-            return internalServerError("Something went wrong");
+        } catch (IOException e) {
+            e.printStackTrace();
+            return internalServerError("IOException: Something went wrong");
         }
-
-
-
-
-
-
+*/
+        // Outputs to browser
+        return ok("test");
     }
 
     /**
-     *
      * @param tweet
      * @return
      */
@@ -154,7 +140,7 @@ public class HomeController extends Controller {
         props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         Annotation annotation = pipeline.process(tweet);
-        props.setProperty("ssplit.eolonly","true");
+        props.setProperty("ssplit.eolonly", "true");
         //props.setProperty("parse.binaryTrees","true");
         pipeline.annotate(annotation);
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
@@ -180,14 +166,56 @@ public class HomeController extends Controller {
         return prettyJson;
     }
 
+    // Sentiment Analyser (./controllers/SentimentAnalyzer)
+    public static void sentimentScore(Tweet tweet){
+        SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
+        sentimentAnalyzer.initialize();
+        SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweet.getText());
+
+        // print results to console
+        System.out.println("Sentiment Score: " + sentimentResult.getSentimentScore());
+        System.out.println("Sentiment Type: " + sentimentResult.getSentimentType());
+        System.out.println("Very positive: " + sentimentResult.getSentimentClass().getVeryPositive() + "%");
+        System.out.println("Positive: " + sentimentResult.getSentimentClass().getPositive() + "%");
+        System.out.println("Neutral: " + sentimentResult.getSentimentClass().getNeutral() + "%");
+        System.out.println("Negative: " + sentimentResult.getSentimentClass().getNegative() + "%");
+        System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative() + "%");
+    }
+
+    public static void clean(Tweet tweet){
+        // Remove URLs, mentions, hashtags and whitespace
+        tweet.setText(tweet.getText().trim()
+                .replaceAll("http.*?[\\S]+", "")
+                .replaceAll("@[\\S]+", "")
+                .replaceAll("#", "")
+                .replaceAll("[\\s]+", " "));
+
+    }
+
+
+        public static void ParseJSON(File file) {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+            try {
+                CollectionType tweetListType = mapper.getTypeFactory().constructCollectionType(ArrayList.class, Tweet.class);
+                List<Tweet> tweets = mapper.readValue(file, tweetListType);
+                //tweets.forEach(System.out::println);
+                for (Tweet tweet : tweets) {
+                    System.out.println("~~~tweet :: " + tweet.getText());
+                    clean(tweet);
+                    System.out.println("~~~CleanedTweet :: " + tweet.getText());
+                }
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+}
 
 
 
 
-
-
-    //public CompletionStage<Result> getLocation(String latitude, String longitude) {
+        //public CompletionStage<Result> getLocation(String latitude, String longitude) {
     //    return ask(tweetActor, new tweetActor(latitude, longitude))
     //}
 
-}
+
