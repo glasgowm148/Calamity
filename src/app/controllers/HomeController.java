@@ -7,6 +7,10 @@ import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -83,15 +87,20 @@ public class HomeController extends Controller {
     private Result renderIndex(Integer hitCounter) {
 
         String jsonText = null;
-        File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json");
+        File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/before_selection.json");
         try (
                 FileInputStream is =new FileInputStream(file)
         ){
             final JsonNode json = Json.parse(is);
+            jsonText = json.toString();
             System.out.println("Original Tweet:" + json.get("full_text"));
 
+            String prettyJson = toPrettyFormat(jsonText);
+            System.out.println("Pretty:\n" + prettyJson);
             // new mapper
             ObjectMapper mapper = new ObjectMapper();
+
+            
 
             /// Create a new Tweet object
             Tweet tweets = mapper.readValue(json.toString(), Tweet.class);
@@ -121,7 +130,7 @@ public class HomeController extends Controller {
             System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative()+"%");
 
             // Outputs to browser
-            return ok(tweets.getText());
+            return ok(prettyJson);
 
         } catch(IOException e){
             return internalServerError("Something went wrong");
@@ -160,6 +169,18 @@ public class HomeController extends Controller {
         }
         return 0;
     }
+
+    public static String toPrettyFormat(String jsonString) {
+        JsonParser parser = new JsonParser();
+        JsonObject json = parser.parse(jsonString).getAsJsonObject();
+
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String prettyJson = gson.toJson(json);
+
+        return prettyJson;
+    }
+
+
 
 
 
