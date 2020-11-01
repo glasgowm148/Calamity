@@ -5,12 +5,13 @@ package controllers;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
@@ -21,6 +22,7 @@ import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
 import models.SentimentResult;
 import models.Tweet;
+import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
 import services.CounterActor;
@@ -30,6 +32,8 @@ import services.CounterActor.Increment;
 
 import javax.inject.Inject;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -87,47 +91,37 @@ public class HomeController extends Controller {
 
     private Result renderIndex(Integer hitCounter) {
 
-        //String jsonText = null;
-        //jsonText = tweets.toString();
-        //String prettyJson = toPrettyFormat(jsonText);
+
         //System.out.println("Pretty:\n" + prettyJson);
 
         File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/before_selection.json");
+        String prettyJson = toPrettyFormat(file);
+
         ParseJSON(file);
-        /*
-        ObjectMapper mapper = new ObjectMapper();
-        List<Tweet<String,Object>> list = new ArrayList<>();
 
-        try (
-                BufferedReader br = new BufferedReader(new FileReader(file))) {
-
-            while (br.ready()) {
-                String line = br.readLine();
-                Tweet tweet = mapper.readValue(line, Tweet.class);
-
-                clean(tweet);
-                System.out.println("cleanedText:" + tweet.getText());
-                System.out.println("cleanedText:" + tweet.getCreatedAt());
-
-                System.out.println(".list.add(tweet);:");
-                list.add(tweet);
-                System.out.println(".list.add(tweet);");
-
-            }
-            System.out.println("for loop:");
-            for (Tweet tweet : list) {
-                System.out.println("~~~tweet :: " + tweet.getText());
-            }
-
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-            return internalServerError("IOException: Something went wrong");
-        }
-*/
         // Outputs to browser
-        return ok("test");
+        return ok(prettyJson);
+    }
+
+    public void ParseJSON(File file) {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+        try {
+            CollectionType tweetListType = mapper.getTypeFactory().constructCollectionType(ArrayList.class, Tweet.class);
+            List<Tweet> tweets = mapper.readValue(file, tweetListType);
+            //tweets.forEach(System.out::println);
+
+            for (Tweet tweet : tweets) {
+                // System.out.println("~~~tweet :: " + tweet.getText());
+                clean(tweet);
+                System.out.println("~~~CleanedTweet :: " + tweet.getText());
+                sentimentScore(tweet);
+                analyse(tweet.getText());
+
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
     }
 
     /**
@@ -140,12 +134,11 @@ public class HomeController extends Controller {
         props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         Annotation annotation = pipeline.process(tweet);
-        props.setProperty("ssplit.eolonly", "true");
-        //props.setProperty("parse.binaryTrees","true");
+        //props.setProperty("ssplit.eolonly", "true");
+        props.setProperty("parse.binaryTrees","true");
         pipeline.annotate(annotation);
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
             System.out.println("---");
-            System.out.println(sentence.get(CoreAnnotations.TextAnnotation.class));
             System.out.println(sentence.get(CoreAnnotations.TextAnnotation.class));
             System.out.println(sentence.get(SentimentCoreAnnotations.SentimentClass.class));
         }
@@ -156,14 +149,28 @@ public class HomeController extends Controller {
         return 0;
     }
 
-    public static String toPrettyFormat(String jsonString) {
-        JsonParser parser = new JsonParser();
-        JsonObject json = parser.parse(jsonString).getAsJsonObject();
+    public static String toPrettyFormat(File file) {
+       String jsonText = null;
+        try (
+                FileInputStream is = new FileInputStream(file)
+        ) {
+            final JsonNode json = Json.parse(is);
+            JsonParser parser = new JsonParser();
+            //JsonObject json = parser.parse(jsonText).getAsJsonObject();
+            Tweet tweets = new Tweet(json);
+            jsonText = tweets.toString();
+            
 
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String prettyJson = gson.toJson(json);
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            String prettyJson = gson.toJson(json);
 
-        return prettyJson;
+            return prettyJson;
+        } catch (JsonProcessingException | FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return jsonText;
     }
 
     // Sentiment Analyser (./controllers/SentimentAnalyzer)
@@ -193,22 +200,7 @@ public class HomeController extends Controller {
     }
 
 
-        public static void ParseJSON(File file) {
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
-            try {
-                CollectionType tweetListType = mapper.getTypeFactory().constructCollectionType(ArrayList.class, Tweet.class);
-                List<Tweet> tweets = mapper.readValue(file, tweetListType);
-                //tweets.forEach(System.out::println);
-                for (Tweet tweet : tweets) {
-                    System.out.println("~~~tweet :: " + tweet.getText());
-                    clean(tweet);
-                    System.out.println("~~~CleanedTweet :: " + tweet.getText());
-                }
-            } catch (IOException ex) {
-                ex.printStackTrace();
-            }
-        }
+
 }
 
 
