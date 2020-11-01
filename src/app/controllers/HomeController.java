@@ -1,11 +1,10 @@
 package controllers;
 
-//import actors.TweetActor;
-
+// akka
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
-import com.fasterxml.jackson.databind.JsonNode;
+// Stanford CoreNLP (must be on classpath)
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -13,16 +12,20 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
+// Models
 import models.SentimentResult;
 import models.Tweet;
+// Play
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+// Services
 import services.CounterActor;
 import services.CounterActor.Command;
 import services.CounterActor.GetValue;
 import services.CounterActor.Increment;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import javax.inject.Inject;
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,10 +34,9 @@ import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.CompletionStage;
 
-//package me.aboullaite.corenlp.sentimentanalysis.services;
-
 
 //import akka.actor.AbstractActor;
+//import actors.TweetActor;
 
 
 /**
@@ -81,34 +83,24 @@ public class HomeController extends Controller {
                 FileInputStream is =new FileInputStream(file)
         ){
             final JsonNode json = Json.parse(is);
+            System.out.println("Original Tweet:" + json.get("full_text"));
+
+            /// Create a new Tweet object
             Tweet tweet = new Tweet(json);
-            //ObjectMapper objectMapper = new ObjectMapper();
-            //JsonNode jsonNode = objectMapper.readTree(json);
 
-            //System.out.println(cleanTweets(tweet.getText()));
-
-            //Status tweet_status = new Tweet(status.getCreatedAt(), status.getId(), status.getText(), null, status.getUser().getName(), status.getUser().getScreenName(), status.getUser().getProfileImageURL());
-            // Clean up tweets
-            String text = tweet.getText().trim()
-                    // remove links
+            // Remove URLs, mentions, hashtags and whitespace
+            tweet.setText(tweet.getText().trim()
                     .replaceAll("http.*?[\\S]+", "")
-                    // remove usernames
                     .replaceAll("@[\\S]+", "")
-                    // replace hashtags by just words
                     .replaceAll("#", "")
-                    // correct all multiple white spaces to a single white space
-                    .replaceAll("[\\s]+", " ");
+                    .replaceAll("[\\s]+", " "));
 
-            // Tweet.setText(text);
-            //Tweet.setSentimentType(analyzerService.analyse(text));
-            System.out.println(json.get("full_text"));
-            System.out.println(tweet.getText());
-            System.out.println("scores from 0 to 4 based on whether the analysis comes back with Very Negative, Negative, Neutral, Positive or Very Positive respectively.");
-            System.out.println("score" + analyse(text));
-
+            // Sentiment Analyser (./controllers/SentimentAnalyzer)
             SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
             sentimentAnalyzer.initialize();
-            SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(text);
+            SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweet.getText());
+
+            // print results to console
             System.out.println("Sentiment Score: " + sentimentResult.getSentimentScore());
             System.out.println("Sentiment Type: " + sentimentResult.getSentimentType());
             System.out.println("Very positive: " + sentimentResult.getSentimentClass().getVeryPositive()+"%");
@@ -116,7 +108,10 @@ public class HomeController extends Controller {
             System.out.println("Neutral: " + sentimentResult.getSentimentClass().getNeutral()+"%");
             System.out.println("Negative: " + sentimentResult.getSentimentClass().getNegative()+"%");
             System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative()+"%");
-            return ok(text);
+
+            // Outputs to browser
+            return ok(tweet.getText());
+
         } catch(IOException e){
             return internalServerError("Something went wrong");
         }
@@ -128,16 +123,19 @@ public class HomeController extends Controller {
 
     }
 
-
-
+    /**
+     *
+     * @param tweet
+     * @return
+     */
     public int analyse(String tweet) {
 
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment");
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         Annotation annotation = pipeline.process(tweet);
-        //props.setProperty("ssplit.eolonly","true");
-        props.setProperty("parse.binaryTrees","true");
+        props.setProperty("ssplit.eolonly","true");
+        //props.setProperty("parse.binaryTrees","true");
         pipeline.annotate(annotation);
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
             System.out.println("---");
