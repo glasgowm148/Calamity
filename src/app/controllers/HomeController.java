@@ -1,10 +1,12 @@
 package controllers;
 
 // akka
+
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
-// Stanford CoreNLP (must be on classpath)
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -12,20 +14,16 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
-// Models
 import models.SentimentResult;
 import models.Tweet;
-// Play
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
-// Services
 import services.CounterActor;
 import services.CounterActor.Command;
 import services.CounterActor.GetValue;
 import services.CounterActor.Increment;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import javax.inject.Inject;
 import java.io.File;
 import java.io.FileInputStream;
@@ -33,6 +31,11 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.CompletionStage;
+
+// Stanford CoreNLP (must be on classpath)
+// Models
+// Play
+// Services
 
 
 //import akka.actor.AbstractActor;
@@ -78,6 +81,7 @@ public class HomeController extends Controller {
 
 
     private Result renderIndex(Integer hitCounter) {
+        String jsonText = null;
         File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json");
         try (
                 FileInputStream is =new FileInputStream(file)
@@ -86,10 +90,18 @@ public class HomeController extends Controller {
             System.out.println("Original Tweet:" + json.get("full_text"));
 
             /// Create a new Tweet object
-            Tweet tweet = new Tweet(json);
+            // Tweet tweet = new Tweet(json);
+
+            // json to string
+            jsonText = json.toString();
+            System.out.println("jsonText" + jsonText);
+
+            ObjectMapper mapper2 = new ObjectMapper();
+            Tweet tweets = mapper2.readValue(jsonText, Tweet.class);
+            System.out.println("##tweets" + tweets.getCreatedAt());
 
             // Remove URLs, mentions, hashtags and whitespace
-            tweet.setText(tweet.getText().trim()
+            tweets.setText(tweets.getText().trim()
                     .replaceAll("http.*?[\\S]+", "")
                     .replaceAll("@[\\S]+", "")
                     .replaceAll("#", "")
@@ -98,7 +110,7 @@ public class HomeController extends Controller {
             // Sentiment Analyser (./controllers/SentimentAnalyzer)
             SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
             sentimentAnalyzer.initialize();
-            SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweet.getText());
+            SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweets.getText());
 
             // print results to console
             System.out.println("Sentiment Score: " + sentimentResult.getSentimentScore());
@@ -110,7 +122,7 @@ public class HomeController extends Controller {
             System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative()+"%");
 
             // Outputs to browser
-            return ok(tweet.getText());
+            return ok(tweets.getText());
 
         } catch(IOException e){
             return internalServerError("Something went wrong");

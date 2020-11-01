@@ -75,10 +75,10 @@ public class Tweet {
         System.out.println("tweetJsonNode" + tweetJsonNode);
 
         // Instantiates a new ObjectMapper()
-        ObjectMapper mapper = new ObjectMapper();
-        Tweet tweet = mapper.convertValue(tweetJsonNode, Tweet.class);
+        //ObjectMapper mapper = new ObjectMapper();
+        //Tweet tweet = mapper.convertValue(tweetJsonNode, Tweet.class);
 
-        this.text = String.valueOf(json.get("full_text"));
+        //this.text = String.valueOf(json.get("full_text"));
 
         //System.out.println(tweet);
         //assertThat(jsonNode1.textValue(), equalTo("v1"));
