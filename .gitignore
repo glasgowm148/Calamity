@@ -4,6 +4,14 @@
 data/raw/datasets/*
 src/.seed/*
 src/TweetMinner-master/.project
-src/CoreNLP
-src/CoreNLP
-src/CoreNLP
+src/CoreNLP/*
+
+src/logs
+src/target
+src/.idea
+src/.idea_modules
+src/.classpath
+src/.project
+src/.settings
+src/RUNNING_PID
+src/src/CoreNLP

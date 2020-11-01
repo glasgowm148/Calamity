@@ -81,6 +81,7 @@ public class HomeController extends Controller {
 
 
     private Result renderIndex(Integer hitCounter) {
+
         String jsonText = null;
         File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json");
         try (
@@ -89,15 +90,13 @@ public class HomeController extends Controller {
             final JsonNode json = Json.parse(is);
             System.out.println("Original Tweet:" + json.get("full_text"));
 
+            // new mapper
+            ObjectMapper mapper = new ObjectMapper();
+
             /// Create a new Tweet object
-            // Tweet tweet = new Tweet(json);
+            Tweet tweets = mapper.readValue(json.toString(), Tweet.class);
 
-            // json to string
-            jsonText = json.toString();
-            System.out.println("jsonText" + jsonText);
-
-            ObjectMapper mapper2 = new ObjectMapper();
-            Tweet tweets = mapper2.readValue(jsonText, Tweet.class);
+            //Tweet tweets = mapper.readValue(new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/alberta.json"), Tweet.class);
             System.out.println("##tweets" + tweets.getCreatedAt());
 
             // Remove URLs, mentions, hashtags and whitespace
