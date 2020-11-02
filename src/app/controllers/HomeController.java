@@ -150,10 +150,6 @@ public class HomeController extends Controller {
         }
     }
 
-    /**
-     * @param tweet
-     * @return
-     */
     public int analyse(String tweet) {
         // https://aboullaite.me/stanford-corenlp-java/
 
@@ -175,7 +171,7 @@ public class HomeController extends Controller {
             String pos = sentence.get(CoreAnnotations.PartOfSpeechAnnotation.class);
             String ne = sentence.get(CoreAnnotations.NamedEntityTagAnnotation.class);
             String normalized = sentence.get(CoreAnnotations.NormalizedNamedEntityTagAnnotation.class);
-            System.out.println("print:" + word + " " + lemma + " " + pos + " " + ne + " " + normalized);
+            System.out.println("word:" + word + "lemma: " + lemma + "pos: " + pos + "ne: " + ne + "normalised " + normalized);
         }
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
             Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
@@ -208,7 +204,6 @@ public class HomeController extends Controller {
         return jsonText;
     }
 
-    // Sentiment Analyser (./controllers/SentimentAnalyzer)
     public static void sentimentScore(Tweet tweet){
         // https://github.com/Ruthwik/Sentiment-Analysis
         SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
