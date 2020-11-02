@@ -13,7 +13,7 @@ organization := "com.helpme"
 version := "1.0-SNAPSHOT"
 
 val akkaVersion =  "2.6.6" // val akkaVersion =  PlayVersion.akkaVersion
-scalaVersion := "2.13.3"
+scalaVersion := "2.12.10"
 
 
 
@@ -32,7 +32,7 @@ Docker / version := sys.env.getOrElse("BUILD_NUMBER", "1.0-SNAPSHOT")
 Docker / daemonUserUid  := None
 Docker / daemonUser := "daemon"
 dockerExposedPorts := Seq(9000)
-dockerBaseImage := "openjdk:9"
+dockerBaseImage := "openjdk:8"
 dockerRepository := sys.env.get("ecr_repo")
 dockerUpdateLatest := true
 
@@ -43,11 +43,7 @@ libraryDependencies += guice
 
 // In order to use Akka Cluster SBR-OSS for the cluster we need to override the Akka version
 
-// CoreNLP
-libraryDependencies ++= Seq(
-  "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0",
-  "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0" classifier "models"
-)
+
 
 // Some Akka overrides to align versions of artifacts
 libraryDependencies ++= Seq(
@@ -93,5 +89,15 @@ libraryDependencies += "com.typesafe.play" %% "play-json" % "2.9.1"
 
 libraryDependencies += guice
 
+libraryDependencies += "org.apache.spark" %% "spark-core" % "3.0.1"
 
 
+// CoreNLP
+libraryDependencies ++= Seq(
+  "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0",
+  "edu.stanford.nlp" % "stanford-corenlp" % "3.6.0" classifier "models"
+)
+
+
+// https://mvnrepository.com/artifact/org.apache.spark/spark-mllib
+libraryDependencies += "org.apache.spark" %% "spark-mllib" % "3.0.1" % "provided"
