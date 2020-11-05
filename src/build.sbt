@@ -56,10 +56,6 @@ libraryDependencies ++= Seq(
   javaWs,
   javaCore,
   javaJpa,
-  "org.springframework" % "spring-context" % "3.2.2.RELEASE",
-  "javax.inject" % "javax.inject" % "1",
-  "org.springframework.data" % "spring-data-jpa" % "1.3.2.RELEASE",
-  "org.springframework" % "spring-expression" % "3.2.2.RELEASE",
   "org.hibernate" % "hibernate-entitymanager" % "3.6.10.Final",
   "org.twitter4j" % "twitter4j-core" % "4.0.2",
   "org.twitter4j" % "twitter4j-stream" % "4.0.2",
@@ -67,6 +63,13 @@ libraryDependencies ++= Seq(
   "org.apache.commons" % "commons-lang3" % "3.3.2",
   "redis.clients" % "jedis" % "2.6.2"
 )
+
+/*
+ "org.springframework" % "spring-context" % "3.2.2.RELEASE",
+  "javax.inject" % "javax.inject" % "1",
+  "org.springframework.data" % "spring-data-jpa" % "1.3.2.RELEASE",
+  "org.springframework" % "spring-expression" % "3.2.2.RELEASE",
+ */
 
 // https://mvnrepository.com/artifact/net.sf.trove4j/trove4j
 libraryDependencies += "net.sf.trove4j" % "trove4j" % "3.0.3"
@@ -101,3 +104,6 @@ libraryDependencies ++= Seq(
 
 // https://mvnrepository.com/artifact/org.apache.spark/spark-mllib
 libraryDependencies += "org.apache.spark" %% "spark-mllib" % "3.0.1" % "provided"
+
+// https://mvnrepository.com/artifact/edu.berkeley.nlp/berkeleylm
+libraryDependencies += "edu.berkeley.nlp" % "berkeleylm" % "1.1.2"

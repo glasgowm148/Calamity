@@ -1,2 +1,0 @@
-cd src
-sbt run

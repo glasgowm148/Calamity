@@ -2,6 +2,7 @@ package controllers;
 
 // akka
 
+import actors.Twokenize;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
@@ -143,6 +144,7 @@ public class HomeController extends Controller {
                 // monolingual slang dict
                 // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
                 analyse(tweet.getText());
+                System.out.println("tokenize():" + Twokenize.tokenize(tweet.getText()));
 
             }
         } catch (IOException ex) {
@@ -226,9 +228,28 @@ public class HomeController extends Controller {
                 .replaceAll("http.*?[\\S]+", "")
                 .replaceAll("@[\\S]+", "")
                 .replaceAll("#", "")
-                .replaceAll("[\\s]+", " "));
+                .replaceAll("[\\s]+", " ")
+                //replace text between {},[],() including them
+                .replaceAll("\\{.*?\\}", "")
+                .replaceAll("\\[.*?\\]", "")
+                .replaceAll("\\(.*?\\)", "")
+                .replaceAll("[^A-Za-z0-9(),!?@\'\\`\"\\_\n]", " ")
+                .replaceAll("[/]"," ")
+                .replaceAll(";"," "));
+        /*
+        Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"\'\\`\\_\\|?!\n\r@;]+");
+        String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
+        //Collect all tokens into labels collection.    
+        Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label->label.length()>0).collect(Collectors.toList());
+        //get from standard text files available for Stopwords. e.g https://algs4.cs.princeton.edu/35applications/stopwords.txt
+        labels = labels.parallelStream().filter(label ->  !StopWords.getStopWords().contains(label.trim())).collect(Collectors.toList());
+        */
 
     }
+
+    
+  
+
 
 
 
