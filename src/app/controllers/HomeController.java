@@ -43,6 +43,8 @@ import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CompletionStage;
 
+import static pipelines.TrueCase.TrueCase;
+
 // Stanford CoreNLP (must be on classpath)
 // Models
 // Play
@@ -144,7 +146,8 @@ public class HomeController extends Controller {
                 // monolingual slang dict
                 // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
                 analyse(tweet.getText());
-                System.out.println("tokenize():" + Twokenize.tokenize(tweet.getText()));
+                System.out.println("tokenize():" + Twokenize.tokenizeRawTweetText(tweet.getText()));
+                TrueCase(tweet.getText());
 
             }
         } catch (IOException ex) {
@@ -156,7 +159,7 @@ public class HomeController extends Controller {
         // https://aboullaite.me/stanford-corenlp-java/
 
         Properties props = new Properties();
-        props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment");
+        props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment"); // ner, entitymentions
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
         Annotation annotation = pipeline.process(tweet);
         //props.setProperty("ssplit.eolonly", "true");
