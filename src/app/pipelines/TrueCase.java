@@ -69,6 +69,8 @@ public class TrueCase {
         Map<Integer, CorefChain> graph =
                 document.get(CorefChainAnnotation.class);
 
+        System.out.println("coreference link graph:\n" + graph);
+
     }
 
 }

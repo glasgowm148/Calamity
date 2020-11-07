@@ -107,3 +107,15 @@ libraryDependencies += "org.apache.spark" %% "spark-mllib" % "3.0.1" % "provided
 
 // https://mvnrepository.com/artifact/edu.berkeley.nlp/berkeleylm
 libraryDependencies += "edu.berkeley.nlp" % "berkeleylm" % "1.1.2"
+
+// https://mvnrepository.com/artifact/org.nd4j/nd4j-api
+libraryDependencies += "org.nd4j" % "nd4j-api" % "1.0.0-beta7"
+
+// https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-core
+libraryDependencies += "org.deeplearning4j" % "deeplearning4j-core" % "1.0.0-beta7"
+
+// https://mvnrepository.com/artifact/org.apache.opennlp/opennlp-tools
+libraryDependencies += "org.apache.opennlp" % "opennlp-tools" % "1.9.3"
+
+// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.11"

@@ -1,5 +1,6 @@
 package controllers;
 
+
 // akka
 
 import actors.Twokenize;
@@ -44,6 +45,7 @@ import java.util.Properties;
 import java.util.concurrent.CompletionStage;
 
 import static pipelines.TrueCase.TrueCase;
+
 
 // Stanford CoreNLP (must be on classpath)
 // Models
@@ -141,13 +143,17 @@ public class HomeController extends Controller {
                 System.out.println("~~~CleanedTweet :: " + tweet.getText());
                 System.out.println(tweet.getText());
                 System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
-                sentimentScore(tweet);
+                //sentimentScore(tweet);
                 // twitterStatus.setSentimentType(analyzerService.analyse(text));
                 // monolingual slang dict
                 // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
-                analyse(tweet.getText());
+                //analyse(tweet.getText());
                 System.out.println("tokenize():" + Twokenize.tokenizeRawTweetText(tweet.getText()));
                 TrueCase(tweet.getText());
+                //BagOfWords(ArrayList<String> dir, ArrayList<String> lex, String sPath
+                //BagOfWords nlp = new NLPAlgorithms.BagOfWords(directories, lex, stopWords);
+
+
 
             }
         } catch (IOException ex) {
