@@ -22,38 +22,34 @@ public class DocumentBOW {
     private String sWordPath;
     private HashMap<String, Integer> vector;
 
-    public DocumentBOW(String docPath, ArrayList<String> lex, String sPath){
-        path = docPath;
+    public DocumentBOW(){
+        ArrayList<String> lex = new ArrayList<String>();
+        lex.add("hurricane");
+        lex.add("earthquake");
+       // path = docPath;
         vector = new HashMap<>();
-        sWordPath = sPath;
+        //sWordPath = sPath;
         for(String l: lex){
             vector.put(l, 0);
         }
     }
 
-    void makeDocumentBOW(){
-        /*
-        MedicalNotePreprocessing preProcessing = new MedicalNotePreprocessing(path, sWordPath);
-        preProcessing.segmentFile();
-        preProcessing.eliminateNoise(".*\\d+|_+|:|;|\\*+|,|-|\\[|\\]|#|\\(|\\).*", "");
-        preProcessing.eliminateStopWords();
-        */
-        String[] testString = { "Athens residents flee as strong earthquake shakes Greek capital. A strong earthquake has struck near Athens, causing residents of the Greek capital to run into the streets.",
-            "Athens residents flee as strong earthquake shakes Greek capital. A strong earthquake has struck near Athens,"};
-        for(String note : testString){
-            try{
-                StanfordAnalysis stanford = new StanfordAnalysis(note);
-                for(Sentence s: stanford.getLemmatizedPOS(note)){
-                    for(SentenceToken token: s.getTokens()){
-                        if(vector.containsKey(token.getToken().toLowerCase()))
-                            vector.replace(token.getToken().toLowerCase(), vector.get(token.getToken().toLowerCase())+1);
-                    }
+
+    public HashMap<String, Integer> makeDocumentBOW(String note){
+        try{
+            StanfordAnalysis stanford = new StanfordAnalysis(note);
+            for(Sentence s: stanford.getLemmatizedPOS(note)){
+                for(SentenceToken token: s.getTokens()){
+                    if(vector.containsKey(token.getToken().toLowerCase()))
+                        vector.replace(token.getToken().toLowerCase(), vector.get(token.getToken().toLowerCase())+1);
                 }
             }
-            catch(IllegalStateException e){
-
-            }
         }
+        catch(IllegalStateException e){
+
+        }
+
+        return vector;
 
     }
 

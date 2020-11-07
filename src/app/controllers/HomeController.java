@@ -3,6 +3,7 @@ package controllers;
 
 // akka
 
+import NLPAlgorithms.DocumentBOW;
 import actors.Twokenize;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
@@ -152,7 +153,8 @@ public class HomeController extends Controller {
                 TrueCase(tweet.getText());
                 //BagOfWords(ArrayList<String> dir, ArrayList<String> lex, String sPath
                 //BagOfWords nlp = new NLPAlgorithms.BagOfWords(directories, lex, stopWords);
-
+                DocumentBOW doc = new DocumentBOW();
+                System.out.println(doc.makeDocumentBOW(tweet.getText()));
 
 
             }
