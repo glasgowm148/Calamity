@@ -5,6 +5,12 @@ public class SentimentResult {
     String sentimentType;
     SentimentClassification sentimentClass;
 
+
+
+    public double SentimentResult(String text) {
+        return getSentiment();
+    }
+
     public double getSentiment() {
         return sentimentScore;
     }

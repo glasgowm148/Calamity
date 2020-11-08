@@ -34,7 +34,7 @@ import java.util.List;
 
 
 public class Tweet2vecModel {
-    public static void Tweet2vecModel(Tweet list) {
+    public Tweet2vecModel(Tweet list) {
 
         String logFile = "/home/anoukh/SentimentAnalysis/ml-projects-java/NewFiles/uniqueTweetsNoHold.csv"; // Should be some file on your system
 
@@ -80,20 +80,17 @@ public class Tweet2vecModel {
 
         int max = 300;
 
-        java.util.Iterator<java.util.Map.Entry<String, List<Double>>> iterate = finalVector.entrySet().iterator();
+        for (java.util.Map.Entry<String, List<Double>> entry : finalVector.entrySet()) {
+            List<Double> val = entry.getValue();
 
-        while (iterate.hasNext()){
-            java.util.Map.Entry entry = iterate.next();
-            List<Double> val = (List<Double>) entry.getValue();
-
-            for (int i = val.size(); i < max; i ++){
+            for (int i = val.size(); i < max; i++) {
                 val.add(0.0d);
             }
         }
 
-        for (Object temp: finalVector.values()) {
-            if (max < ((List<Double>)temp).size()){
-                max = ((List<Double>)temp).size();
+        for (List<Double> temp: finalVector.values()) {
+            if (max < (temp).size()){
+                max = (temp).size();
             }
 
         }
@@ -110,18 +107,15 @@ public class Tweet2vecModel {
             writer = new FileWriter(file);
 
 
-            java.util.Iterator<java.util.Map.Entry<String, List<Double>>> iterate2 = finalVector.entrySet().iterator();
+            for (java.util.Map.Entry<String, List<Double>> entry : finalVector.entrySet()) {
+                List<Double> val = entry.getValue();
 
-            while (iterate2.hasNext()){
-                java.util.Map.Entry entry = iterate2.next();
-                List<Double> val = (List<Double>) entry.getValue();
-
-                String key = (String)entry.getKey();
+                String key = entry.getKey();
                 writer.append(key);
 
-                for (int i = 0; i < val.size(); i ++){
+                for (Double aDouble : val) {
                     writer.append(",");
-                    writer.append(Double.toString(val.get(i)));
+                    writer.append(Double.toString(aDouble));
                 }
                 writer.append("\n");
             }
@@ -129,6 +123,7 @@ public class Tweet2vecModel {
             e.printStackTrace();
         }finally{
             try {
+                assert writer != null;
                 writer.close();
             } catch (IOException e) {
                 e.printStackTrace();

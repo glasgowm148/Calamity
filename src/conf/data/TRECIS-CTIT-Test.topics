@@ -1,0 +1,156 @@
+<top>
+<num>TRECIS-CTIT-H-Test-007</num>
+<dataset>guatemalaEarthquake2012</dataset>
+<title>2012 Guatemala earthquake</title>
+<type>earthquake</type>
+<url>https://en.wikipedia.org/wiki/2012_Guatemala_earthquake</url>
+<narr> The 2012 Guatemala earthquake occurred on November 7 at 10:35:47 local time
+in the Pacific Ocean, 35 kilometres (22 mi) south of Champerico in the department 
+of Retalhuleu.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-008</num>
+<dataset>italyEarthquakes2012</dataset>
+<title>2012 Italy earthquakes</title>
+<type>earthquake</type>
+<url>https://en.wikipedia.org/wiki/2012_Northern_Italy_earthquakes</url>
+<narr> In May 2012, two major earthquakes struck Northern Italy, known as the 2012 
+Emilia earthquakes.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-009</num>
+<dataset>philipinnesFloods2012</dataset>
+<title>2012 Philipinnes floods</title>
+<type>flood</type>
+<url>https://en.wikipedia.org/wiki/2012_Luzon_southwest_monsoon_floods</url>
+<narr> The 2012 Luzon southwest monsoon floods was an eight-day period of torrential 
+rain and thunderstorms in the Philippines starting on August 1, 2012.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-010</num>
+<dataset>albertaFloods2013</dataset>
+<title>2013 Alberta floods</title>
+<type>flood</type>
+<url>https://en.wikipedia.org/wiki/2013_Alberta_floods</url>
+<narr> In the days leading up to June 19, 2013, Alberta, Canada, experienced heavy 
+rainfall that triggered catastrophic flooding.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-011</num>
+<dataset>australiaBushfire2013</dataset>
+<title>2013 Australia bushfire</title>
+<type>wildfire</type>
+<url>https://en.wikipedia.org/wiki/2013_New_South_Wales_bushfires</url>
+<narr> The 2013 New South Wales bushfires were a series of bushfires in Australia across 
+the state of New South Wales primarily starting, or becoming notable, on the 13 October 2013. 
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-012</num>
+<dataset>bostonBombings2013</dataset>
+<title>2013 Boston bombings</title>
+<type>bombing</type>
+<url>https://en.wikipedia.org/wiki/Boston_Marathon_bombing</url>
+<narr> During the annual Boston Marathon on April 15, 2013 homemade bombs detonated near 
+the finish line of the race. 
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-013</num>
+<dataset>manilaFloods2013</dataset>
+<title>2013 Manila floods</title>
+<type>flood</type>
+<url>https://en.wikipedia.org/wiki/Tropical_Storm_Trami_%282013%29</url>
+<narr> Severe Tropical Storm Trami, known in the Philippines as Tropical Storm Maring, was a 
+tropical cyclone that brought heavy rains to Taiwan and East China during mid-August 2013. This
+event is focused on the resultant flooding of Metro Manila one of the three defined metropolitan
+areas of the Philippines.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-014</num>
+<dataset>queenslandFloods2013</dataset>
+<title>2013 Queensland floods</title>
+<type>flood</type>
+<url>https://en.wikipedia.org/wiki/Cyclone_Oswald</url>
+<narr> Tropical Cyclone Oswald in January 2013 passed over parts of Queensland and New South Wales, 
+Australia over a number of days, causing widespread impact including severe storms, flooding, and 
+water spouts.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-015</num>
+<dataset>typhoonYolanda2013</dataset>
+<title>2013 Typhoon Yolanda</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/Typhoon_Haiyan</url>
+<narr> Typhoon Haiyan, known as Super Typhoon Yolanda in the Philippines, was one of the strongest 
+tropical cyclones ever recorded. On making landfall, Haiyan devastated portions of Southeast Asia, 
+particularly the Philippines.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-016</num>
+<dataset>joplinTornado2011</dataset>
+<title>2011 Joplin tornado</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/2011_Joplin_tornado</url>
+<narr> The 2011 Joplin tornado was a catastrophic EF5-rated multiple-vortex tornado that struck Joplin, 
+Missouri, late in the afternoon of Sunday, May 22, 2011.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-017</num>
+<dataset>chileEarthquake2014</dataset>
+<title>2014 Chile Earthquake</title>
+<type>earthquake</type>
+<url>https://en.wikipedia.org/wiki/2014_Iquique_earthquake</url>
+<narr> The 2014 Iquique earthquake struck off the coast of Chile on 1 April, with a moment magnitude of 8.2, 
+at 20:46 local time (23:46 UTC).[7][8] The epicenter of the earthquake was approximately 95 kilometres (59 mi) 
+northwest of Iquique.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-018</num>
+<dataset>typhoonHagupit2014</dataset>
+<title>2014 Typhoon Hagupit</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/Typhoon_Hagupit_%282014%29</url>
+<narr> Typhoon Hagupit, known in the Philippines as Typhoon Ruby, was the second most intense tropical cyclone in 
+2014. Hagupit particularly impacted the Philippines in early December while gradually weakening.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-019</num>
+<dataset>nepalEarthquake2015</dataset>
+<title>2015 Nepal Earthquake</title>
+<type>earthquake</type>
+<url>https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake</url>
+<narr> The April 2015 Nepal earthquake (also known as the Gorkha earthquake) occurred at 11:56 Nepal Standard Time
+on 25 April, with a magnitude of 7.8Mw and a maximum Mercalli Intensity of VIII (Severe). Its epicenter 
+was east of Gorkha District at Barpak, Gorkha.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-020</num>
+<dataset>flSchoolShooting2018</dataset>
+<title>2018 FL School Shooting</title>
+<type>shooting</type>
+<url>https://en.wikipedia.org/wiki/Stoneman_Douglas_High_School_shooting</url>
+<narr> On February 14, 2018, a gunman opened fire at Marjory Stoneman Douglas High School in Parkland, Florida.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-021</num>
+<dataset>parisAttacks2015</dataset>
+<title>2015 Paris attacks</title>
+<type>bombing</type>
+<url>https://en.wikipedia.org/wiki/November_2015_Paris_attacks</url>
+<narr> The November 2015 Paris attacks were a series of coordinated terrorist attacks that occurred on Friday,
+13 November 2015 in Paris, France and the city's northern suburb, Saint-Denis.
+</narr>
+</top>

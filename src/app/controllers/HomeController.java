@@ -3,12 +3,11 @@ package controllers;
 
 // akka
 
-import NLPAlgorithms.DocumentBOW;
+import NLPAlgorithms.DocumentLex;
 import actors.Twokenize;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -37,15 +36,15 @@ import services.CounterActor.Increment;
 import javax.inject.Inject;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.Serializable;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CompletionStage;
 
-import static pipelines.TrueCase.TrueCase;
+import static pipelines.BasicPipeline.BasicPipeline;
 
 
 // Stanford CoreNLP (must be on classpath)
@@ -132,11 +131,13 @@ public class HomeController extends Controller {
     public void ParseJSON(File file) {
         // https://stackoverflow.com/questions/54947356/how-can-i-iterate-through-json-objects-using-jackson
         ObjectMapper mapper = new ObjectMapper();
+        // Cannot deserialize instance of `java.util.ArrayList<models.Tweet>` out of START_OBJECT token
+        // cannot deserialize a single object into an array of objects
         mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true); // https://stackoverflow.com/questions/20837856/can-not-deserialize-instance-of-java-util-arraylist-out-of-start-object-token
         try {
             CollectionType tweetListType = mapper.getTypeFactory().constructCollectionType(ArrayList.class, Tweet.class);
             List<Tweet> tweets = mapper.readValue(file, tweetListType);
-            //tweets.forEach(System.out::println);
+            tweets.forEach(System.out::println);
 
             for (Tweet tweet : tweets) {
                 // System.out.println("~~~tweet :: " + tweet.getText());
@@ -148,13 +149,14 @@ public class HomeController extends Controller {
                 // twitterStatus.setSentimentType(analyzerService.analyse(text));
                 // monolingual slang dict
                 // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
-                //analyse(tweet.getText());
+                System.out.println("analyse():\n");
+                System.out.println(analyse(tweet.getText()));
                 System.out.println("tokenize():" + Twokenize.tokenizeRawTweetText(tweet.getText()));
-                TrueCase(tweet.getText());
+                BasicPipeline(tweet.getText());
                 //BagOfWords(ArrayList<String> dir, ArrayList<String> lex, String sPath
                 //BagOfWords nlp = new NLPAlgorithms.BagOfWords(directories, lex, stopWords);
-                DocumentBOW doc = new DocumentBOW();
-                System.out.println(doc.makeDocumentBOW(tweet.getText()));
+                DocumentLex doc = new DocumentLex();
+                System.out.println(doc.makeDocumentLex(tweet.getText()));
 
 
             }
@@ -163,7 +165,7 @@ public class HomeController extends Controller {
         }
     }
 
-    public int analyse(String tweet) {
+    public Serializable analyse(String tweet) {
         // https://aboullaite.me/stanford-corenlp-java/
 
         Properties props = new Properties();
@@ -174,7 +176,6 @@ public class HomeController extends Controller {
         props.setProperty("parse.binaryTrees","true");
         pipeline.annotate(annotation);
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
-            System.out.println("---");
             // word
             System.out.println(sentence.get(CoreAnnotations.TextAnnotation.class));
             System.out.println(sentence.get(SentimentCoreAnnotations.SentimentClass.class));
@@ -188,7 +189,9 @@ public class HomeController extends Controller {
         }
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
             Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
-            return RNNCoreAnnotations.getPredictedClass(tree);
+            return RNNCoreAnnotations.getNodeVector(tree); //RNNCoreAnnotations.getPredictedClass(tree);
+            // 3  It returns the distributed representation of the node, which is a vector. This corresponds to the vectors a, b, c, p1, and p2 in Section 4 of the paper about the work: http://nlp.stanford.edu/pubs/SocherEtAl_EMNLP2013.pdf . It is not easily human interpretable, but a function of it predicts the node's sentiment, as explained in the paper.
+            
         }
         return 0;
     }
@@ -206,11 +209,8 @@ public class HomeController extends Controller {
             
 
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            String prettyJson = gson.toJson(json);
 
-            return prettyJson;
-        } catch (JsonProcessingException | FileNotFoundException e) {
-            e.printStackTrace();
+            return gson.toJson(json);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -241,10 +241,10 @@ public class HomeController extends Controller {
                 .replaceAll("#", "")
                 .replaceAll("[\\s]+", " ")
                 //replace text between {},[],() including them
-                .replaceAll("\\{.*?\\}", "")
+                .replaceAll("\\{.*?}", "")
                 .replaceAll("\\[.*?\\]", "")
                 .replaceAll("\\(.*?\\)", "")
-                .replaceAll("[^A-Za-z0-9(),!?@\'\\`\"\\_\n]", " ")
+                .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
                 .replaceAll("[/]"," ")
                 .replaceAll(";"," "));
         /*
