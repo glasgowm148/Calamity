@@ -32,6 +32,7 @@ import services.CounterActor;
 import services.CounterActor.Command;
 import services.CounterActor.GetValue;
 import services.CounterActor.Increment;
+import tweetfeatures.NumericTweetFeatures;
 
 import javax.inject.Inject;
 import java.io.File;
@@ -41,6 +42,7 @@ import java.io.Serializable;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.CompletionStage;
 
@@ -157,7 +159,8 @@ public class HomeController extends Controller {
                 //BagOfWords nlp = new NLPAlgorithms.BagOfWords(directories, lex, stopWords);
                 DocumentLex doc = new DocumentLex();
                 System.out.println(doc.makeDocumentLex(tweet.getText()));
-
+                Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+                System.out.println(stringDoubleMap);
 
             }
         } catch (IOException ex) {

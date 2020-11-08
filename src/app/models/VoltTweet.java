@@ -29,6 +29,7 @@ public class VoltTweet {
 		urls = new String[0];
 		userMentions = new String[0];
 		geoLocation = new double[0];
+		userRegistrationDate = new Timestamp(userRegistrationDate.getTime());
 	}
 	
 	public long getId() {

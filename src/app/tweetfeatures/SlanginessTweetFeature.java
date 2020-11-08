@@ -2,14 +2,13 @@ package tweetfeatures;
 
 import Utils.VoltLookUpTable;
 import models.Tweet;
-import models.VoltTweet;
 
 import java.io.File;
 
 public class SlanginessTweetFeature extends TweetFeature {
 	
 	public static VoltLookUpTable lookUpTable = 
-			new VoltLookUpTable(new File("resources/slangs.txt" ));
+			new VoltLookUpTable(new File("conf/slangs.txt" ));
 
 	@Override
 	/**

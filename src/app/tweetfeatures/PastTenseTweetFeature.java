@@ -36,7 +36,7 @@ public class PastTenseTweetFeature extends TweetFeature {
 	 * @param tweet
 	 * @return
 	 */
-	public static double getScore(VoltTweet tweet) {
+	public static double getScore(Tweet tweet) {
 		double counter = 0;
 		for ( String token : tweet.getTokens() ) {
 			if ( past_words.contains(token) ) {

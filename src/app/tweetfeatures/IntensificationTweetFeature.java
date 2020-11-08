@@ -8,7 +8,7 @@ import java.io.File;
 public class IntensificationTweetFeature extends TweetFeature {
 
 	public static VoltLookUpTable lookUpTable = 
-			new VoltLookUpTable(new File("resources/intensifiers.txt" ));
+			new VoltLookUpTable(new File("conf/intensifiers.txt" ));
 
 	@Override
 	/**

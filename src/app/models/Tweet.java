@@ -1,5 +1,6 @@
 package models;
 
+import Utils.IDGenerator;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -19,6 +20,14 @@ public class Tweet<S, O> {
 
     public Tweet() {
         super();
+
+        this.id = IDGenerator.getID();
+        tokens = new String[0];
+        hashtags = new String[0];
+        urls = new String[0];
+        userMentions = new String[0];
+        double[] geoLocation = new double[0];
+
     }
 
     final ObjectMapper mapper = new ObjectMapper();
@@ -26,6 +35,9 @@ public class Tweet<S, O> {
     private String[] userMentions;
 
     private Timestamp userRegistrationDate;
+
+    private String userScreenName, userRealName,
+            userDescription, userLocation;
 
     private String[] tokens;
     private int userFollowersCount, userFriendsCount,
@@ -37,6 +49,14 @@ public class Tweet<S, O> {
     private String[] urls;
 
     private String[] hashtags;
+
+    public int getUserListedCount() {
+        return userListedCount;
+    }
+
+    public void setUserListedCount(int userListedCount) {
+        this.userListedCount = userListedCount;
+    }
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "EEE MMM dd HH:mm:ss Z yyyy", locale = "en")
     @JsonProperty("created_at")
@@ -111,6 +131,14 @@ public class Tweet<S, O> {
 
 
     /* Getters and Setters */
+
+    public String getUserDescription() {
+        return userDescription;
+    }
+
+    public void setUserDescription(String userDescription) {
+        this.userDescription = userDescription;
+    }
 
     public Timestamp getUserRegistrationDate() {
         return userRegistrationDate;
