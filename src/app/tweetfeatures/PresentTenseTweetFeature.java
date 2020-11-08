@@ -1,6 +1,6 @@
 package tweetfeatures;
 
-import models.VoltTweet;
+import models.Tweet;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -26,7 +26,7 @@ public class PresentTenseTweetFeature extends TweetFeature {
 	/**
 	 * Checks if the tweet has a present tense or not
 	 */
-	public boolean classify(VoltTweet tweet) {
+	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
 			if ( presence_words.contains(token) ) {
 				return true;
@@ -40,7 +40,7 @@ public class PresentTenseTweetFeature extends TweetFeature {
 	 * @param tweet
 	 * @return
 	 */
-	public static double getScore(VoltTweet tweet) {
+	public static double getScore(Tweet tweet) {
 		double counter = 0;
 		for ( String token : tweet.getTokens() ) {
 			if ( presence_words.contains(token) ) {

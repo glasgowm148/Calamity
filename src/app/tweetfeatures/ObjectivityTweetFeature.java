@@ -1,9 +1,9 @@
 package tweetfeatures;
 
+import models.Tweet;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
-
-import models.VoltTweet;
 
 public class ObjectivityTweetFeature extends TweetFeature {
 
@@ -27,7 +27,7 @@ public class ObjectivityTweetFeature extends TweetFeature {
 	 * Classifies the tweet as either objective or not. (i.e.
 	 * if it has NO personal pronouns then it's objective).
 	 */
-	public boolean classify(VoltTweet tweet) {
+	public boolean classify(Tweet tweet) {
 		
 		for ( String token : tweet.getTokens() ) {
 			if ( first_person_pronouns.contains(token) ) {
@@ -43,7 +43,7 @@ public class ObjectivityTweetFeature extends TweetFeature {
 	 * @param tweet
 	 * @return
 	 */
-	public static double getScore(VoltTweet tweet) {
+	public static double getScore(Tweet tweet) {
 		double counter = 0;
 		for ( String token : tweet.getTokens() ) {
 			if ( first_person_pronouns.contains(token) ) {

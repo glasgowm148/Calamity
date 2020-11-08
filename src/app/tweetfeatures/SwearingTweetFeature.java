@@ -1,6 +1,7 @@
 package tweetfeatures;
 
 import Utils.VoltLookUpTable;
+import models.Tweet;
 import models.VoltTweet;
 
 import java.io.File;
@@ -13,7 +14,7 @@ public class SwearingTweetFeature extends TweetFeature {
 	/**
 	 * Checks if the tweet has a bad word or not
 	 */
-	public boolean classify(VoltTweet tweet) {
+	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
 			if ( lookUpTable.contains(token) ) {
 				return true;

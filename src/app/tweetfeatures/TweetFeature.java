@@ -1,6 +1,6 @@
 package tweetfeatures;
 
-import models.VoltTweet;
+import models.Tweet;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -60,5 +60,5 @@ public abstract class TweetFeature {
 		features.add(described_user);
 	}
 	
-	public abstract boolean classify(VoltTweet tweet);
+	public abstract boolean classify(Tweet tweet);
 }

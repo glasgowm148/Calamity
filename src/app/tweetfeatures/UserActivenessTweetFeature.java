@@ -1,9 +1,8 @@
 package tweetfeatures;
 
+import models.Tweet;
 import org.joda.time.DateTime;
 import org.joda.time.Days;
-
-import models.VoltTweet;
 
 public class UserActivenessTweetFeature extends TweetFeature {
 
@@ -11,7 +10,7 @@ public class UserActivenessTweetFeature extends TweetFeature {
 	/**
 	 * Classifies the user as either active user or not
 	 */
-	public boolean classify(VoltTweet tweet) {
+	public boolean classify(Tweet tweet) {
 		int tweetsCount = tweet.getUserNumbTweets();
 		double daysSinceReg = getScore(tweet);
 		double ratio = (double) tweetsCount / daysSinceReg;
@@ -25,7 +24,7 @@ public class UserActivenessTweetFeature extends TweetFeature {
 	 * @param tweet
 	 * @return
 	 */
-	public static double getScore(VoltTweet tweet) {
+	public static double getScore(Tweet tweet) {
 		double daysSinceReg = 0;
 		DateTime currentDate = new DateTime(tweet.getCreatedAt().getTime());
 		DateTime regDate = new DateTime(tweet.getUserRegistrationDate().getTime());

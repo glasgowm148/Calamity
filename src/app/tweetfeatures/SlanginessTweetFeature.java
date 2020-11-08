@@ -1,6 +1,7 @@
 package tweetfeatures;
 
 import Utils.VoltLookUpTable;
+import models.Tweet;
 import models.VoltTweet;
 
 import java.io.File;
@@ -14,7 +15,7 @@ public class SlanginessTweetFeature extends TweetFeature {
 	/**
 	 * Checks if the tweet has a slangy word or not
 	 */
-	public boolean classify(VoltTweet tweet) {
+	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
 			if ( lookUpTable.contains(token) ) {
 				return true;
@@ -28,7 +29,7 @@ public class SlanginessTweetFeature extends TweetFeature {
 	 * @param tweet
 	 * @return
 	 */
-	public static double getScore(VoltTweet tweet) {
+	public static double getScore(Tweet tweet) {
 		double counter = 0;
 		for ( String token : tweet.getTokens() ) {
 			if ( lookUpTable.contains(token) ) {

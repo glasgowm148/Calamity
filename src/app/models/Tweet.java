@@ -1,5 +1,6 @@
 package models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -7,9 +8,11 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.annotations.Expose;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Tweet<S, O> {
@@ -20,9 +23,25 @@ public class Tweet<S, O> {
 
     final ObjectMapper mapper = new ObjectMapper();
     String jsonText = null;
+    private String[] userMentions;
+
+    private Timestamp userRegistrationDate;
+
+    private String[] tokens;
+    private int userFollowersCount, userFriendsCount,
+            userNumbTweets, userListedCount;
+
+    private boolean sentFromWeb, sentFromMobile;
+
+
+    private String[] urls;
+
+    private String[] hashtags;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "EEE MMM dd HH:mm:ss Z yyyy", locale = "en")
     @JsonProperty("created_at")
     @Expose
-    private String createdAt;
+    private Timestamp createdAt;
     @JsonProperty("id")
     @Expose
     private Long id;
@@ -93,11 +112,102 @@ public class Tweet<S, O> {
 
     /* Getters and Setters */
 
-    public String getCreatedAt() {
+    public Timestamp getUserRegistrationDate() {
+        return userRegistrationDate;
+    }
+
+    public void setUserRegistrationDate(Timestamp userRegistrationDate) {
+        this.userRegistrationDate = userRegistrationDate;
+    }
+
+    public int getUserNumbTweets() {
+        return userNumbTweets;
+    }
+
+    public void setUserNumbTweets(int userNumbTweets) {
+        this.userNumbTweets = userNumbTweets;
+    }
+
+
+    public boolean isSentFromWeb() {
+        return sentFromWeb;
+    }
+
+    public void setSentFromWeb(boolean sentFromWeb) {
+        this.sentFromWeb = sentFromWeb;
+    }
+
+    public boolean isSentFromMobile() {
+        return sentFromMobile;
+    }
+
+    public void setSentFromMobile(boolean sentFromMobile) {
+        this.sentFromMobile = sentFromMobile;
+    }
+
+    public boolean isFavorited() {
+        return favorited;
+    }
+
+    public void setFavorited(boolean favorited) {
+        this.favorited = favorited;
+    }
+
+    public String[] getHashtags() {
+        return hashtags;
+    }
+
+    public void setHashtags(String[] hashtags) {
+        this.hashtags = hashtags;
+    }
+
+
+    public int getUserFriendsCount() {
+        return userFriendsCount;
+    }
+
+    public void setUserFriendsCount(int userFriendsCount) {
+        this.userFriendsCount = userFriendsCount;
+    }
+
+    public int getUserFollowersCount() {
+        return userFollowersCount;
+    }
+
+    public void setUserFollowersCount(int userFollowersCount) {
+        this.userFollowersCount = userFollowersCount;
+    }
+
+    public String[] getUserMentions() {
+        return userMentions;
+    }
+
+    public void setUserMentions(String[] userMentions) {
+        this.userMentions = userMentions;
+    }
+
+    public String[] getUrls() {
+        return urls;
+    }
+
+    public void setUrls(String[] urls) {
+        this.urls = urls;
+    }
+
+
+    public String[] getTokens() {
+        return tokens;
+    }
+
+    public void setTokens(String[] tokens) {
+        this.tokens = tokens;
+    }
+
+    public Timestamp getCreatedAt() {
         return createdAt;
     }
 
-    public void setCreatedAt(String createdAt) {
+    public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
     }
 

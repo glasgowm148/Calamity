@@ -1,7 +1,7 @@
 package tweetfeatures;
 
 import classifiers.SentimentClassifier;
-import models.VoltTweet;
+import models.Tweet;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -71,7 +71,7 @@ public class NumericTweetFeatures {
 	}
 	
 	
-	public static Map<String, Double> makeFeatures(VoltTweet tweet) {
+	public static Map<String, Double> makeFeatures(Tweet tweet) {
 		Map<String, Double> features = new LinkedHashMap<>();
 		
 		double posScore = SentimentClassifier.getStrengths(tweet.getText())[0];
@@ -103,14 +103,14 @@ public class NumericTweetFeatures {
 		//features.put(numb_of_swearing_words, SwearingTweetFeature.getScore(tweet));
 		//features.put(numb_of_slang_words, SlanginessTweetFeature.getScore(tweet));
 		//features.put(numb_of_intensifiers, IntensificationTweetFeature.getScore(tweet));
-		features.put(has_geolocation, tweet.getGeoLocation().length>0?1.0:0);
+		//features.put(has_geolocation, tweet.getGeoLocation().length>0?1.0:0);
 		features.put(tweet_length, (double)tweet.getText().length());
 		features.put(userFollowersCount, (double) tweet.getUserFollowersCount());
 		features.put(userFriendsCount, (double) tweet.getUserFriendsCount());
 		features.put(userRegistrationDays, UserActivenessTweetFeature.getScore(tweet));
-		features.put(user_numb_of_tweets, (double)tweet.getUserNumbTweets());
-		features.put(numb_of_user_description_chars, (double)tweet.getUserDescription().length());
-		features.put(user_listed_count, (double)tweet.getUserListedCount());
+		//features.put(user_numb_of_tweets, (double)tweet.getUserNumbTweets());
+		//features.put(numb_of_user_description_chars, (double)tweet.getUserDescription().length());
+		//features.put(user_listed_count, (double)tweet.getUserListedCount());
 		
 		return features;
 	}

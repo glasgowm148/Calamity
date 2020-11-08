@@ -1,6 +1,6 @@
 package tweetfeatures;
 
-import models.VoltTweet;
+import models.Tweet;
 
 public class PopularUserTweetFeature extends TweetFeature {
 
@@ -8,7 +8,7 @@ public class PopularUserTweetFeature extends TweetFeature {
 	/**
 	 * Classifies the user as either popular or not
 	 */
-	public boolean classify(VoltTweet tweet) {
+	public boolean classify(Tweet tweet) {
 		double ratio = getScore(tweet);
 		if ( ratio > 1 )
 			return true;
@@ -20,7 +20,7 @@ public class PopularUserTweetFeature extends TweetFeature {
 	 * @param tweet
 	 * @return
 	 */
-	public static double getScore(VoltTweet tweet) {
+	public static double getScore(Tweet tweet) {
 		double popularityRatio = 0;
 		int followers = tweet.getUserFollowersCount();
 		int friends = tweet.getUserFriendsCount();

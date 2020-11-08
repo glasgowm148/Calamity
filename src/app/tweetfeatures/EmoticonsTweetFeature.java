@@ -1,9 +1,10 @@
 package tweetfeatures;
 
+import models.Tweet;
+import models.VoltTweet;
+
 import java.util.LinkedHashSet;
 import java.util.Set;
-
-import models.VoltTweet;
 
 public class EmoticonsTweetFeature extends TweetFeature {
 	
@@ -32,7 +33,7 @@ public class EmoticonsTweetFeature extends TweetFeature {
 	/**
 	 * Returns if the tweet has an emoticon or not
 	 */
-	public boolean classify(VoltTweet tweet) {
+	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
 			if ( emoticons.contains(token) ) {
 				return true;
@@ -46,7 +47,7 @@ public class EmoticonsTweetFeature extends TweetFeature {
 	 * @param tweet
 	 * @return
 	 */
-	public static double getScore(VoltTweet tweet) {
+	public static double getScore(Tweet tweet) {
 		double counter = 0;
 		
 		for ( String token : tweet.getTokens() ) {
