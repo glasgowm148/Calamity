@@ -7,16 +7,11 @@ import org.joda.time.Days;
 public class UserActivenessTweetFeature extends TweetFeature {
 
 	@Override
-	/**
-	 * Classifies the user as either active user or not
-	 */
 	public boolean classify(Tweet tweet) {
 		int tweetsCount = tweet.getUserNumbTweets();
 		double daysSinceReg = getScore(tweet);
 		double ratio = (double) tweetsCount / daysSinceReg;
-		if ( ratio > 1 )
-			return true;
-		return false;
+		return ratio > 1;
 	}
 	
 	/**

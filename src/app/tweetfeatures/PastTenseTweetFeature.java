@@ -1,7 +1,6 @@
 package tweetfeatures;
 
 import models.Tweet;
-import models.VoltTweet;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -19,9 +18,6 @@ public class PastTenseTweetFeature extends TweetFeature {
 	}
 
 	@Override
-	/**
-	 * Classifies the tweet to have a past tense or not
-	 */
 	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
 			if ( past_words.contains(token) ) {

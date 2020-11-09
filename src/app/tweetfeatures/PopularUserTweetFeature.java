@@ -10,9 +10,8 @@ public class PopularUserTweetFeature extends TweetFeature {
 	 */
 	public boolean classify(Tweet tweet) {
 		double ratio = getScore(tweet);
-		if ( ratio > 1 )
-			return true;
-		return false;
+		boolean b = ratio > 1;
+		return b;
 	}
 	
 	/**

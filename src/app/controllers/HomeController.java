@@ -142,24 +142,34 @@ public class HomeController extends Controller {
             tweets.forEach(System.out::println);
 
             for (Tweet tweet : tweets) {
-                // System.out.println("~~~tweet :: " + tweet.getText());
                 clean(tweet);
-                System.out.println("~~~CleanedTweet :: " + tweet.getText());
-                System.out.println(tweet.getText());
+                System.out.println("\nCleanedTweet:\n" + tweet.getText());
+
                 System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
-                //sentimentScore(tweet);
+
+
+                System.out.println("\nsentimentScore:\n" + tweet.getSentimentScore());
+
                 // twitterStatus.setSentimentType(analyzerService.analyse(text));
+
                 // monolingual slang dict
                 // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
-                System.out.println("analyse():\n");
-                System.out.println(analyse(tweet.getText()));
-                System.out.println("tokenize():" + Twokenize.tokenizeRawTweetText(tweet.getText()));
+
+                System.out.println("\nanalyse():\n" + analyse(tweet.getText()));
+
+                System.out.println("\ntokenize():\n" + Twokenize.tokenizeRawTweetText(tweet.getText()));
+
                 BasicPipeline(tweet.getText());
+
                 //BagOfWords(ArrayList<String> dir, ArrayList<String> lex, String sPath
                 //BagOfWords nlp = new NLPAlgorithms.BagOfWords(directories, lex, stopWords);
+
+                System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
                 DocumentLex doc = new DocumentLex();
                 System.out.println(doc.makeDocumentLex(tweet.getText()));
                 Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+
+                System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
                 System.out.println(stringDoubleMap);
 
             }
@@ -220,7 +230,7 @@ public class HomeController extends Controller {
         return jsonText;
     }
 
-    public static void sentimentScore(Tweet tweet){
+    public void sentimentScore(Tweet tweet){
         // https://github.com/Ruthwik/Sentiment-Analysis
         SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
         sentimentAnalyzer.initialize();
@@ -229,11 +239,13 @@ public class HomeController extends Controller {
         // print results to console
         System.out.println("Sentiment Score: " + sentimentResult.getSentimentScore());
         System.out.println("Sentiment Type: " + sentimentResult.getSentimentType());
-        System.out.println("Very positive: " + sentimentResult.getSentimentClass().getVeryPositive() + "%");
-        System.out.println("Positive: " + sentimentResult.getSentimentClass().getPositive() + "%");
-        System.out.println("Neutral: " + sentimentResult.getSentimentClass().getNeutral() + "%");
-        System.out.println("Negative: " + sentimentResult.getSentimentClass().getNegative() + "%");
-        System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative() + "%");
+        System.out.println("Very positive: " + sentimentResult.getSentimentClass().getVeryPositive());
+        System.out.println("Positive: " + sentimentResult.getSentimentClass().getPositive());
+        System.out.println("Neutral: " + sentimentResult.getSentimentClass().getNeutral());
+        System.out.println("Negative: " + sentimentResult.getSentimentClass().getNegative());
+        System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative());
+        tweet.setSentiment(sentimentResult);
+
     }
 
     public static void clean(Tweet tweet){

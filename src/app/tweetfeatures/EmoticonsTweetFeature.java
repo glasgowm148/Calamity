@@ -1,8 +1,8 @@
 package tweetfeatures;
 
 import models.Tweet;
-import models.VoltTweet;
 
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -23,9 +23,7 @@ public class EmoticonsTweetFeature extends TweetFeature {
 				" %) :-###.. :###.. <:-| ಠ_ಠ @>-->-- 5:-) ~:-\\ //0-0\\\\" +
 				" *<|:-) =:o] ,:-) 7:^] <3 </3";
 
-		for ( String emo : emos.split(" ") ) {
-			emoticons.add(emo);
-		}
+		emoticons.addAll(Arrays.asList(emos.split(" ")));
 
 	}
 

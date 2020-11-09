@@ -18,20 +18,13 @@ import java.util.Map;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Tweet<S, O> {
 
-    public Tweet() {
-        super();
-
-        this.id = IDGenerator.getID();
-        tokens = new String[0];
-        hashtags = new String[0];
-        urls = new String[0];
-        userMentions = new String[0];
-        double[] geoLocation = new double[0];
-
-    }
-
-    final ObjectMapper mapper = new ObjectMapper();
-    String jsonText = null;
+    private double sentimentScore;
+    private String sentimentType;
+    private double sentimentClassVerPos;
+    private double sentimentClassPos;
+    private double sentimentClassNeutral;
+    private double sentimentClassNeg;
+    private double sentimentClassVerNeg;
     private String[] userMentions;
 
     private Timestamp userRegistrationDate;
@@ -49,6 +42,22 @@ public class Tweet<S, O> {
     private String[] urls;
 
     private String[] hashtags;
+
+    public Tweet() {
+        super();
+
+        this.id = IDGenerator.getID();
+        tokens = new String[0];
+        hashtags = new String[0];
+        urls = new String[0];
+        userMentions = new String[0];
+        double[] geoLocation = new double[0];
+
+    }
+
+    final ObjectMapper mapper = new ObjectMapper();
+    String jsonText = null;
+
 
     public int getUserListedCount() {
         return userListedCount;
@@ -334,6 +343,22 @@ public class Tweet<S, O> {
     public void setRetweet(Retweet retweet) {
         this.retweet = retweet;
     }
+
+    public void setSentiment(SentimentResult sentimentResult) {
+        this.sentimentScore = sentimentResult.getSentimentScore();
+        this.sentimentType = sentimentResult.getSentimentType();
+        this.sentimentClassVerPos = sentimentResult.getSentimentClass().getVeryPositive();
+        this.sentimentClassPos = sentimentResult.getSentimentClass().getPositive();
+        this.sentimentClassNeutral = sentimentResult.getSentimentClass().getNeutral();
+        this.sentimentClassNeg =  sentimentResult.getSentimentClass().getNegative();
+        this.sentimentClassVerNeg =  sentimentResult.getSentimentClass().getVeryNegative();
+    }
+
+    public double getSentimentScore() {
+        return this.sentimentScore;
+    }
+
+
 
 }
 @JsonIgnoreProperties(ignoreUnknown = true)

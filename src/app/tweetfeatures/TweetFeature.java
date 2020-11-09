@@ -33,7 +33,7 @@ public abstract class TweetFeature {
 	public static String described_user = "described_user";
 	
 	static {
-		features = new LinkedHashSet<String>();
+		features = new LinkedHashSet<>();
 		features.add(positive_sentiment);
 		features.add(negatuve_sentiment);
 		features.add(neutral_sentiment);

@@ -10,11 +10,8 @@ public class WeirdCharsSaturationTweetFeature extends TweetFeature {
 	 */
 	public boolean classify(Tweet tweet) {
 		double numbOfWeirdChars = getScore(tweet);
-		
-		if ( numbOfWeirdChars > (tweet.getText().length()/2) )
-			return true;
-		
-		return false;
+
+		return numbOfWeirdChars > (tweet.getText().length() / 2);
 	}
 	
 	/**
