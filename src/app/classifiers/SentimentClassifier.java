@@ -1,8 +1,13 @@
 package classifiers;
 
-import controllers.SentimentAnalyzer;
+import logic.SentimentAnalyzer;
 
 //import uk.ac.wlv.sentistrength.SentiStrength;
+
+/**
+ * Currently just returns 1. This was the old SentiStrength version, should be replaced with CoreNLP
+ * But can wait until after we have a feature vector
+ */
 
 public class SentimentClassifier {
 

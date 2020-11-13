@@ -1,3 +1,49 @@
+Here
+Ok so this is the class and you are tring to read all lines from json
+
+home controller reads in the json
+tweet.java is the model
+using a mapper
+
+why mapper ?
+
+Dunno, seemed like the best option?
+sometimes best isnt always the right. Let me analyse the code first
+
+You dont need to rerun, it's sbt. Switch to safari and refresh
+
+how do you test changes in this ide ?
+
+go to safari, when you reload it recompiles
+
+where is json file
+
+so code is giving error in parsejson function ?
+
+Yes, when it tries to map the object
+
+create new java file for testing code
+
+i m unable to do right click can you run this test file
+
+i need an environment or folder where only these 2 files can execute
+
+I don't know how to do that - why don't you just run it in the Controller? 
+It takes minutes to compile
+
+alright do it
+
+
+When running via SBT, the first time takes a minute or two, then there
+after you can just refresh and it takes a couple of seconds to recompile
+
+ok
+
+Almost done...ok
+
+Good to go
+
+
 # notes
 plugins.sbt has deleted itself twice now
 ```Bash

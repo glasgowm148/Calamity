@@ -1,5 +1,6 @@
-package actors;
+package logic;
 
+import actors.FileUtils;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
@@ -29,7 +30,7 @@ import java.util.*;
  * under the License.
  */
 
-public class TwitterUtils {
+public class StopWords {
     private static Set stopWords = new HashSet<String[]>();
 
     static {

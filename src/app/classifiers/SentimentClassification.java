@@ -1,4 +1,4 @@
-package models;
+package classifiers;
 
 public class SentimentClassification {
     double veryPositive;

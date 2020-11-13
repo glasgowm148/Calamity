@@ -15,12 +15,10 @@ public class NumericTweetFeatures {
 	public static final String numb_of_mentions = "numb_of_mentions";
 	public static final String numb_of_urls = "numb_of_urls";
 	public static final String numb_of_hashtags = "numb_of_hashtags";
-	public static final String is_tweet_favorited = "is_tweet_favorited";
 	public static final String numb_of_personal_pronouns = "numb_of_personal_pronouns";
 	public static final String numb_of_present_tenses = "numb_of_present_tenses";
 	public static final String numb_of_past_tenses = "numb_of_past_tenses";
 	public static final String numb_of_named_entites = "numb_of_named_entites";
-	public static final String numb_of_retweets = "numb_of_retweets";
 	public static final String sent_from_mobile = "sent_from_mobile";
 	public static final String sent_from_web = "sent_from_web";
 	public static final String numb_of_weird_chars = "numb_of_weird_chars";
@@ -45,12 +43,10 @@ public class NumericTweetFeatures {
 		numericFeaturesNames.add(numb_of_mentions);
 		numericFeaturesNames.add(numb_of_urls);
 		numericFeaturesNames.add(numb_of_hashtags);
-		numericFeaturesNames.add(is_tweet_favorited);
 		numericFeaturesNames.add(numb_of_personal_pronouns);
 		numericFeaturesNames.add(numb_of_present_tenses);
 		numericFeaturesNames.add(numb_of_past_tenses);
 		//numericFeaturesNames.add(numb_of_named_entites);
-		numericFeaturesNames.add(numb_of_retweets);
 		numericFeaturesNames.add(sent_from_mobile);
 		numericFeaturesNames.add(sent_from_web);
 		numericFeaturesNames.add(numb_of_weird_chars);
@@ -82,13 +78,11 @@ public class NumericTweetFeatures {
 		features.put(numb_of_mentions, (double) tweet.getUserMentions().length);
 		features.put(numb_of_urls, (double) tweet.getUrls().length);
 		features.put(numb_of_hashtags, (double) tweet.getHashtags().length);
-		features.put(is_tweet_favorited, tweet.isFavorited()?1.0:0);
 		features.put(numb_of_personal_pronouns, ObjectivityTweetFeature.getScore(tweet));
 		features.put(numb_of_present_tenses, PresentTenseTweetFeature.getScore(tweet));
 		features.put(numb_of_past_tenses, PastTenseTweetFeature.getScore(tweet));
 //		features.put(numb_of_named_entites, (double)
 //				NamedEntityClassifier.getNamedEntites(tweet.getText().replace("#", " ")).size());
-		features.put(numb_of_retweets, (double) tweet.getRetweetCount());
 		features.put(sent_from_mobile, tweet.isSentFromMobile()?1.0:0);
 		features.put(sent_from_web, tweet.isSentFromWeb()?1.0:0);
 		features.put(numb_of_weird_chars, WeirdCharsSaturationTweetFeature.getScore(tweet));

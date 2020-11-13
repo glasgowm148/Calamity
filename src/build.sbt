@@ -119,3 +119,8 @@ libraryDependencies += "org.apache.opennlp" % "opennlp-tools" % "1.9.3"
 
 // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
 libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.11"
+
+//libraryDependencies += "in.abilng" % "ndjson" // [error] Type error in expression
+
+
+libraryDependencies += "in.abilng" % "ndjson"% "0.3"

@@ -1,20 +1,10 @@
 package controllers;
 
-
-// akka
-
-import NLPAlgorithms.DocumentLex;
-import actors.Twokenize;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
-import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.type.CollectionType;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -22,6 +12,9 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
+import logic.Sanitise;
+import logic.SentimentAnalyzer;
+import logic.Twokenize;
 import models.SentimentResult;
 import models.Tweet;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -32,37 +25,23 @@ import services.CounterActor;
 import services.CounterActor.Command;
 import services.CounterActor.GetValue;
 import services.CounterActor.Increment;
-import tweetfeatures.NumericTweetFeatures;
 
 import javax.inject.Inject;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.Serializable;
+import java.io.*;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.CompletionStage;
+import java.util.stream.Stream;
 
 import static pipelines.BasicPipeline.BasicPipeline;
-
-
-// Stanford CoreNLP (must be on classpath)
-// Models
-// Play
-// Services
-
-
-//import akka.actor.AbstractActor;
-//import actors.TweetActor;
-
 
 /**
  * This controller contains an action to handle HTTP requests
  * to the application's home page.
  */
+
 public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
@@ -97,40 +76,170 @@ public class HomeController extends Controller {
     }
 
 
-    private Result renderIndex(Integer hitCounter) {
+    private Result renderIndex(Integer hitCounter)  {
 
         File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/before_selection.json");
 
-        String prettyJson = toPrettyFormat(file);
-
+        String prettyJson = Sanitise.toPrettyFormat(file);
         ParseJSON(file);
-        /*
-            models.Tweet@760f4e6c[mapper=com.fasterxml.jackson.databind.ObjectMapper@49ca350e,jsonText=<null>,
 
-            createdAt=Fri Jul 19 17:08:23 +0000 2019,id=1152263930645024768,
+        /**
+        for (String tweet : tweetsList) {
+            Sanitise.clean(tweet);
+            System.out.println("\nCleanedTweet:\n" + tweet.getText());
 
-            idStr=1152263930645024768,
+            System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
 
-            text=Athens residents flee as strong earthquake shakes Greek capital A strong earthquake has struck near Athens,
 
-            causing residents of the Greek capital to run into the streets. The city’s Institute of Geodynamics gave… ,
+            System.out.println("\nsentimentScore:\n" + tweet.getSentimentScore());
 
-            truncated=false,entities=models.Entities@1f0a690d,user=models.User@7f04da7,isQuoteStatus=false,
+            // twitterStatus.setSentimentType(analyzerService.analyse(text));
 
-            retweetCount=0,
-            favoriteCount=0,
-            favorited=false,
-            retweeted=false,
-            data=<null>,
-            retweet=<null>,
-            properties=<null>]
+            // monolingual slang dict
+            // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
 
-         */
+            System.out.println("\nanalyse():\n" + analyse(tweet.getText()));
+
+            System.out.println("\ntokenize():\n" + Twokenize.tokenizeRawTweetText(tweet.getText()));
+
+            try {
+                BasicPipeline(tweet.getText());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            //BagOfWords(ArrayList<String> dir, ArrayList<String> lex, String sPath
+            //BagOfWords nlp = new NLPAlgorithms.BagOfWords(directories, lex, stopWords);
+
+            System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
+            DocumentLex doc = null;
+            try {
+                doc = new DocumentLex();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            assert doc != null;
+            System.out.println(doc.makeDocumentLex(tweet.getText()));
+            Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+
+            System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
+            System.out.println(stringDoubleMap);
+
+            //System.out.println("\nTweet2VEC");
+            //new Tweet2vecModel(tweetsList);
+
+
+
+        }*/
+
         // Outputs to browser
         return ok(prettyJson);
     }
 
-    public void ParseJSON(File file) {
+    public List<Tweet> ParseJSON(File file) {
+
+        System.out.println("Parsing JSON...");
+        List<Tweet> tList =  new ArrayList<>();
+
+
+        try (InputStream is = new FileInputStream(new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/before_selection.json"))) {
+            try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
+
+                ObjectMapper mapper = new ObjectMapper();
+                for (String s : (Iterable<String>) lines::iterator) {
+
+                    //System.out.println("\nJsonString\n");
+                    //System.out.println(s);
+
+                    //System.out.println("\nJsValue\n");
+                    //JsValue j = JacksonJson.parseJsValue(s);
+                    //System.out.println(j);
+
+                    //System.out.println("\nJsonNode\n");
+                    JsonNode n = Json.parse(s);
+                    //System.out.println(n);
+
+                    Tweet tweet = mapper.treeToValue(n, Tweet.class);
+                    System.out.println("\ntweet\n");
+                    System.out.println(tweet.getText());
+
+                    Sanitise.clean(tweet);
+                    System.out.println("\nCleanedTweet:\n" + tweet.getText());
+
+                    System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
+
+
+                    System.out.println("\nsentimentScore:\n" + tweet.getSentimentScore());
+
+                    // twitterStatus.setSentimentType(analyzerService.analyse(text));
+
+                    // monolingual slang dict
+                    // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
+
+                    System.out.println("\nanalyse():\n" + analyse(tweet.getText()));
+
+                    System.out.println("\ntokenize():\n" + Twokenize.tokenizeRawTweetText(tweet.getText()));
+
+                    BasicPipeline(tweet.getText());
+
+                    //DocumentLex doc = null;
+
+                    //System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
+                    //System.out.println(doc.makeDocumentLex(tweet.getText()));
+                    //Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+
+                    //System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
+                    //System.out.println(stringDoubleMap);
+
+                    //System.out.println("\nTweet2VEC");
+                    //new Tweet2vecModel(tweetsList);
+
+
+
+
+                    //tList = mapper.readValue(newJsonNode, new TypeReference<List<Tweet>>() {});
+
+                }
+
+            }
+
+            //tList = Arrays.asList(mapper.readValue(s, Tweet[].class));
+            //List<Tweet> ppl2 = Arrays.asList(mapper.readValue(s, Tweet[].class));
+            //System.out.println("\nJSON array to List of objects");
+            //ppl2.stream().forEach(x -> System.out.println(x.getText()));
+            //Tweet t = mapper.readValue(s, Tweet.class);
+            //tList.add(t);
+
+            //Stream<Tweet> readValue = ndJsonObjectMapper.readValue(is, Tweet.class);
+            //readValue.forEach(s -> System.out::println(s.getText());
+            //List<String> result = readValue.collect(Collectors.toList());
+            //readValue.forEach(tweet-> System.out.println(tweet.getText()));
+
+        } catch (IOException ie) {
+            //SOPs
+        }
+
+
+        System.out.println("\nAlternative...");
+        tList.forEach(System.out::println);
+        //System.out.println(tList.length());
+        System.out.println(tList.size());
+        return tList;
+
+
+    }
+
+
+
+
+        /*
+
+        InputStream is = null;
+        try {
+            is = new FileInputStream(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         // https://stackoverflow.com/questions/54947356/how-can-i-iterate-through-json-objects-using-jackson
         ObjectMapper mapper = new ObjectMapper();
         // Cannot deserialize instance of `java.util.ArrayList<models.Tweet>` out of START_OBJECT token
@@ -138,45 +247,18 @@ public class HomeController extends Controller {
         mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true); // https://stackoverflow.com/questions/20837856/can-not-deserialize-instance-of-java-util-arraylist-out-of-start-object-token
         try {
             CollectionType tweetListType = mapper.getTypeFactory().constructCollectionType(ArrayList.class, Tweet.class);
-            List<Tweet> tweets = mapper.readValue(file, tweetListType);
-            tweets.forEach(System.out::println);
+            try (Stream<Tweet> tweets = NdJsonObjectMapper.readValue(is, Tweet.class)) {
+                List<Tweet> tweetsList = mapper.readValue(file, tweetListType);
+                tweetsList.forEach(System.out::println);
 
-            for (Tweet tweet : tweets) {
-                clean(tweet);
-                System.out.println("\nCleanedTweet:\n" + tweet.getText());
-
-                System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
-
-
-                System.out.println("\nsentimentScore:\n" + tweet.getSentimentScore());
-
-                // twitterStatus.setSentimentType(analyzerService.analyse(text));
-
-                // monolingual slang dict
-                // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
-
-                System.out.println("\nanalyse():\n" + analyse(tweet.getText()));
-
-                System.out.println("\ntokenize():\n" + Twokenize.tokenizeRawTweetText(tweet.getText()));
-
-                BasicPipeline(tweet.getText());
-
-                //BagOfWords(ArrayList<String> dir, ArrayList<String> lex, String sPath
-                //BagOfWords nlp = new NLPAlgorithms.BagOfWords(directories, lex, stopWords);
-
-                System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
-                DocumentLex doc = new DocumentLex();
-                System.out.println(doc.makeDocumentLex(tweet.getText()));
-                Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-
-                System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
-                System.out.println(stringDoubleMap);
 
             }
+
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-    }
+        */
+
 
     public Serializable analyse(String tweet) {
         // https://aboullaite.me/stanford-corenlp-java/
@@ -209,26 +291,7 @@ public class HomeController extends Controller {
         return 0;
     }
 
-    public static String toPrettyFormat(File file) {
-       String jsonText = null;
-        try (
-                FileInputStream is = new FileInputStream(file)
-        ) {
-            final JsonNode json = Json.parse(is);
-            JsonParser parser = new JsonParser();
-            //JsonObject json = parser.parse(jsonText).getAsJsonObject();
-            Tweet tweets = new Tweet(json);
-            jsonText = tweets.toString();
-            
 
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-            return gson.toJson(json);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return jsonText;
-    }
 
     public void sentimentScore(Tweet tweet){
         // https://github.com/Ruthwik/Sentiment-Analysis
@@ -248,30 +311,7 @@ public class HomeController extends Controller {
 
     }
 
-    public static void clean(Tweet tweet){
-        // Remove URLs, mentions, hashtags and whitespace
-        tweet.setText(tweet.getText().trim()
-                .replaceAll("http.*?[\\S]+", "")
-                .replaceAll("@[\\S]+", "")
-                .replaceAll("#", "")
-                .replaceAll("[\\s]+", " ")
-                //replace text between {},[],() including them
-                .replaceAll("\\{.*?}", "")
-                .replaceAll("\\[.*?\\]", "")
-                .replaceAll("\\(.*?\\)", "")
-                .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
-                .replaceAll("[/]"," ")
-                .replaceAll(";"," "));
-        /*
-        Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"\'\\`\\_\\|?!\n\r@;]+");
-        String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
-        //Collect all tokens into labels collection.    
-        Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label->label.length()>0).collect(Collectors.toList());
-        //get from standard text files available for Stopwords. e.g https://algs4.cs.princeton.edu/35applications/stopwords.txt
-        labels = labels.parallelStream().filter(label ->  !StopWords.getStopWords().contains(label.trim())).collect(Collectors.toList());
-        */
 
-    }
 
     
   

@@ -10,12 +10,12 @@ public class FileUtils {
         writeToFile(findAndReplace(fileAsStr, regex, replacement), file);
     }
 
-    public static String findAndReplace(String fileAsStr, String regex, String replacement) throws Exception {
+    public static String findAndReplace(String fileAsStr, String regex, String replacement) {
         return fileAsStr.replaceAll(regex, replacement);
     }
 
     public static String readFromStream(InputStream in) throws IOException {
-        StringBuffer wsdlStr = new StringBuffer();
+        StringBuilder wsdlStr = new StringBuilder();
 
         int read;
 
@@ -44,14 +44,14 @@ public class FileUtils {
     }
 
 
-    public static interface LineProcessor {
-        public boolean process(String line);
+    public interface LineProcessor {
+        boolean process(String line);
     }
 
     public static void doForEachLine(String file, LineProcessor processor) throws Exception {
         BufferedReader reader = new BufferedReader(new FileReader(file));
 
-        String line = null;
+        String line;
 
         while ((line = reader.readLine()) != null) {
             boolean isContinue = processor.process(line);

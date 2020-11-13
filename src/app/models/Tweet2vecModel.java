@@ -1,6 +1,6 @@
 package models;
 
-import actors.TwitterUtils;
+import logic.StopWords;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
@@ -34,25 +35,27 @@ import java.util.List;
 
 
 public class Tweet2vecModel {
-    public Tweet2vecModel(Tweet list) {
+    public Tweet2vecModel(List<Tweet> list) {
 
-        String logFile = "/home/anoukh/SentimentAnalysis/ml-projects-java/NewFiles/uniqueTweetsNoHold.csv"; // Should be some file on your system
+        String logFile = "/Users/pseudo/Documents/GitHub/HelpMe/src/conf/uniqueTweetsNoHold.csv"; // Should be some file on your system
 
-        SparkConf conf = new SparkConf().setAppName("LKA").setMaster("local");
-        JavaSparkContext sc = new JavaSparkContext(conf);
+        SparkConf conf = new SparkConf().setAppName("FeatureVector").setMaster("local[2]");
+        JavaSparkContext sc = new JavaSparkContext(conf); // java.lang.ExceptionInInitializerError: null
 
-        JavaRDD<String> tweetText = TwitterUtils.loadTwitterData(sc, logFile);
-        List<String> collectedList = tweetText.collect();
+
+        JavaRDD<String> tweetText = StopWords.loadTwitterData(sc, logFile);
+        //List<String> collectedList = tweetText.collect();
+        List<String> collectedList = Arrays.asList("a test tweet", "also, a test tweet");
 
         Word2VecModel model = Word2VecModel.load(sc.sc(), "uniqueTweet.model");
 
-        java.util.Map<String, List<Double>> finalVector = new HashMap<String, List<Double>>();
+        java.util.Map<String, List<Double>> finalVector = new HashMap<>();
         long count = 0;
 
 
         for (String tweet : collectedList) { //For each tweet
             double[] totalVectorValue;
-            List<Double> theList = new ArrayList<Double>();
+            List<Double> theList = new ArrayList<>();
             String[] tokens = tweet.split(" ");
 
             for (String word: tokens) { //For each word in the tweet
@@ -95,7 +98,7 @@ public class Tweet2vecModel {
 
         }
 
-        File file = new File("/home/anoukh/SentimentAnalysis/ml-projects-java/NewFiles/agreedOnlyTweetsOutOf60KVectorsNoHold.csv"); //Output File
+        File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/agreedOnlyTweetsOutOf60KVectorsNoHold.csv"); //Output File
         FileWriter writer = null;
         // if file doesnt exists, then create it
         try{

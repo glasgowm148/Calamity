@@ -283,7 +283,7 @@ public class Tweet<S, O> {
     public Entities getEntities() {
         return entities;
     }
-
+    @JsonProperty("entities")
     public void setEntities(Entities entities) {
         this.entities = entities;
     }
@@ -389,6 +389,7 @@ class Entities {
     private List<Medium> media = new ArrayList<Medium>();
 
     Entities() {
+
     }
 
     public List<Medium> getMedia() {

@@ -1,5 +1,7 @@
 package models;
 
+import classifiers.SentimentClassification;
+
 public class SentimentResult {
     double sentimentScore;
     String sentimentType;

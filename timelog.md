@@ -101,6 +101,82 @@
   - `[30m]` Retrospective / Updating work-log / Trello / etc.
 - **26.10.2020**
 
+Week 6
+> 02.11.2020 - 09.11.2020
+> `24.5hrs`
+> 
+> *JDK Debugging, Feature extraction implementationa and research* 
+
+- **02.11.2020**
+- **03.11.2020**
+  - `[.5hr]`
+    - Poor attempt at fixing broken classpath before abandonment 
+- **04.11.2020**
+- **05.11.2020**
+  - `[3.5hrs]`
+    - Twokenize.java
+    - NLP / ark-tweet-nlp
+- **06.11.2020**
+  - `[4hrs]`
+    - 2hrs Java classpath issue
+      - Uninstalled all java and reinstalled JDK8 only
+    - CoreNLP NERDemo.java / Glove
+- **07.11.2020**
+  - `[6.5hrs]`
+    - 30m HomeController.java
+    - 1hr tandfordAnalysis.java
+    - 1.5hr DocumentLex.java
+    - 30m Python server 
+    - Research into NLP Methods / Lagom
+    - Organising bookmarks
+- **08.11.2020**
+  - `[6hrs]`
+    - 4.5hrs Feature extraction
+      - SentimentClassification
+      - DocumentLex
+      - EmoticonsTweet
+    - 1.5hrs Research
+- **09.11.2020**
+  - `[4hrs]`
+    - 1hr miro
+    - 30m timelog
+    - 30m supervisor meeting
+    - 2.5hrs Project tidy
+
+
+
+## Notes
+
+- Offline classification?
+  - I know the data is currently offline - but I had assumed that was for development purposes, but I came across a ML video which seperated the two
+  - 2019B most suitable data source?
+    - analysis
+      - critical.tweets.json.gz
+      - critical.tweets.uniq.json.gz
+      - high.tweets...
+      - ..
+    - tweets
+      - alberta_wildfires
+      - colorado_stem_shooting
+        - colorado_stem_shooting_aa
+        - colorado_stem_shooting_aa.gz
+        - colorado_stem_shooting_ab
+        - colorado_stem_shooting_ab.gz
+        - ...
+    - assessment
+      - 2019B-assr1.json
+      - ...
+    - Critical.tweetid
+    - InformationType.mapping
+    - ITR-H.types.v3.json
+    - nyu-smapp_run_fasttext_multi.csv
+
+
+
+
+
+
+## Notes
 
 
 - 50k terms, exist or not? 
