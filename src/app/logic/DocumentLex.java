@@ -23,6 +23,7 @@ public class DocumentLex {
     private final HashMap<String, Integer> vector;
 
     public DocumentLex() throws IOException {
+        System.out.println("test");
         BufferedReader bufReader = new BufferedReader(new FileReader("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/lex.txt"));
 
         ArrayList<String> lex = new ArrayList<>();

@@ -12,12 +12,13 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
+import edu.stanford.nlp.util.logging.RedwoodConfiguration;
 import logic.Sanitise;
 import logic.SentimentAnalyzer;
+import logic.TFIDFCalculator;
 import logic.Twokenize;
 import models.SentimentResult;
 import models.Tweet;
-import org.apache.commons.lang3.builder.ToStringBuilder;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -29,14 +30,11 @@ import services.CounterActor.Increment;
 import javax.inject.Inject;
 import java.io.*;
 import java.time.Duration;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.CompletionStage;
 import java.util.stream.Stream;
-
-import static pipelines.BasicPipeline.BasicPipeline;
-
 /**
  * This controller contains an action to handle HTTP requests
  * to the application's home page.
@@ -83,66 +81,15 @@ public class HomeController extends Controller {
         String prettyJson = Sanitise.toPrettyFormat(file);
         ParseJSON(file);
 
-        /**
-        for (String tweet : tweetsList) {
-            Sanitise.clean(tweet);
-            System.out.println("\nCleanedTweet:\n" + tweet.getText());
-
-            System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
-
-
-            System.out.println("\nsentimentScore:\n" + tweet.getSentimentScore());
-
-            // twitterStatus.setSentimentType(analyzerService.analyse(text));
-
-            // monolingual slang dict
-            // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
-
-            System.out.println("\nanalyse():\n" + analyse(tweet.getText()));
-
-            System.out.println("\ntokenize():\n" + Twokenize.tokenizeRawTweetText(tweet.getText()));
-
-            try {
-                BasicPipeline(tweet.getText());
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            //BagOfWords(ArrayList<String> dir, ArrayList<String> lex, String sPath
-            //BagOfWords nlp = new NLPAlgorithms.BagOfWords(directories, lex, stopWords);
-
-            System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
-            DocumentLex doc = null;
-            try {
-                doc = new DocumentLex();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            assert doc != null;
-            System.out.println(doc.makeDocumentLex(tweet.getText()));
-            Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-
-            System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
-            System.out.println(stringDoubleMap);
-
-            //System.out.println("\nTweet2VEC");
-            //new Tweet2vecModel(tweetsList);
-
-
-
-        }*/
-
         // Outputs to browser
         return ok(prettyJson);
     }
 
-    public List<Tweet> ParseJSON(File file) {
+    public void ParseJSON(File file) {
+        System.out.println("Parsing....");
+        RedwoodConfiguration.current().clear().apply();
 
-        System.out.println("Parsing JSON...");
-        List<Tweet> tList =  new ArrayList<>();
-
-
-        try (InputStream is = new FileInputStream(new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/before_selection.json"))) {
+        try (InputStream is = new FileInputStream(new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/testJSON.json"))) {
             try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
 
                 ObjectMapper mapper = new ObjectMapper();
@@ -151,80 +98,72 @@ public class HomeController extends Controller {
                     //System.out.println("\nJsonString\n");
                     //System.out.println(s);
 
-                    //System.out.println("\nJsValue\n");
-                    //JsValue j = JacksonJson.parseJsValue(s);
-                    //System.out.println(j);
-
-                    //System.out.println("\nJsonNode\n");
                     JsonNode n = Json.parse(s);
                     //System.out.println(n);
 
                     Tweet tweet = mapper.treeToValue(n, Tweet.class);
-                    System.out.println("\ntweet\n");
-                    System.out.println(tweet.getText());
 
+                    //System.out.println("\nTweet Text:\n" + tweet.getText());
                     Sanitise.clean(tweet);
-                    System.out.println("\nCleanedTweet:\n" + tweet.getText());
+                    //System.out.println("\nCleanedTweet:\n" + tweet.getText());
 
-                    System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
+                    //System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
 
+                    System.out.println("\ntokenize: ");
+                    tweet.setText(String.valueOf(Twokenize.tokenizeRawTweetText(tweet.getText())));
+                    System.out.println(tweet.getText());
+                    System.out.println("\nsentiment:" + tweet.getSentimentScore());
 
-                    System.out.println("\nsentimentScore:\n" + tweet.getSentimentScore());
-
-                    // twitterStatus.setSentimentType(analyzerService.analyse(text));
+                    sentimentScore(tweet);
+                    //twitterStatus.setSentimentType(analyzerService.analyse(text));
 
                     // monolingual slang dict
                     // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
 
-                    System.out.println("\nanalyse():\n" + analyse(tweet.getText()));
+                    //System.out.println("\nanalyse():\n returns the distributed representation of the node \n" + analyse(tweet.getText()));
+                    analyse(tweet.getText());
+                    //BasicPipeline(tweet.getText());
 
-                    System.out.println("\ntokenize():\n" + Twokenize.tokenizeRawTweetText(tweet.getText()));
+                    /**
+                    DocumentLex doc = null;
 
-                    BasicPipeline(tweet.getText());
+                    System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
+                    System.out.println("\nDoc text:\n" + tweet.getText());
+                    System.out.println(doc.makeDocumentLex(tweet.getText()));
+                    Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
 
-                    //DocumentLex doc = null;
-
-                    //System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
-                    //System.out.println(doc.makeDocumentLex(tweet.getText()));
-                    //Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-
-                    //System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
-                    //System.out.println(stringDoubleMap);
+                    System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
+                    System.out.println(stringDoubleMap);
+                     */
 
                     //System.out.println("\nTweet2VEC");
                     //new Tweet2vecModel(tweetsList);
 
+                    List<String> doc1 = Arrays.asList("Lorem", "ipsum", "dolor", "ipsum", "sit", "ipsum");
+                    List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
+                    List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
+                    List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
+
+                    TFIDFCalculator calculator = new TFIDFCalculator();
+                    double tfidf = calculator.tfIdf(doc1, documents, "earthquake");
+                    System.out.println("TF-IDF (ipsum) = " + tfidf);
 
 
 
-                    //tList = mapper.readValue(newJsonNode, new TypeReference<List<Tweet>>() {});
+
 
                 }
 
             }
 
-            //tList = Arrays.asList(mapper.readValue(s, Tweet[].class));
-            //List<Tweet> ppl2 = Arrays.asList(mapper.readValue(s, Tweet[].class));
-            //System.out.println("\nJSON array to List of objects");
-            //ppl2.stream().forEach(x -> System.out.println(x.getText()));
-            //Tweet t = mapper.readValue(s, Tweet.class);
-            //tList.add(t);
 
-            //Stream<Tweet> readValue = ndJsonObjectMapper.readValue(is, Tweet.class);
-            //readValue.forEach(s -> System.out::println(s.getText());
-            //List<String> result = readValue.collect(Collectors.toList());
-            //readValue.forEach(tweet-> System.out.println(tweet.getText()));
 
         } catch (IOException ie) {
             //SOPs
         }
 
 
-        System.out.println("\nAlternative...");
-        tList.forEach(System.out::println);
-        //System.out.println(tList.length());
-        System.out.println(tList.size());
-        return tList;
+
 
 
     }
@@ -280,7 +219,7 @@ public class HomeController extends Controller {
             String pos = sentence.get(CoreAnnotations.PartOfSpeechAnnotation.class);
             String ne = sentence.get(CoreAnnotations.NamedEntityTagAnnotation.class);
             String normalized = sentence.get(CoreAnnotations.NormalizedNamedEntityTagAnnotation.class);
-            System.out.println("word:" + word + "lemma: " + lemma + "pos: " + pos + "ne: " + ne + "normalised " + normalized);
+            //System.out.println("word:" + word + "lemma: " + lemma + "pos: " + pos + "ne: " + ne + "normalised " + normalized);
         }
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
             Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
