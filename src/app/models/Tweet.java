@@ -13,6 +13,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Vector;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -33,8 +34,9 @@ public class Tweet<S, O> {
             userDescription, userLocation;
 
     private String[] tokens;
-    private int userFollowersCount, userFriendsCount,
-            userNumbTweets, userListedCount;
+    private int userFriendsCount;
+    private int userNumbTweets;
+    private int userListedCount;
 
     private boolean sentFromWeb, sentFromMobile;
 
@@ -42,6 +44,9 @@ public class Tweet<S, O> {
     private String[] urls;
 
     private String[] hashtags;
+    private Vector<Double> features;
+    private double positive;
+    private double negative;
 
     public Tweet() {
         super();
@@ -53,6 +58,7 @@ public class Tweet<S, O> {
         userMentions = new String[0];
         double[] geoLocation = new double[0];
 
+
     }
 
     final ObjectMapper mapper = new ObjectMapper();
@@ -60,11 +66,11 @@ public class Tweet<S, O> {
 
 
     public int getUserListedCount() {
-        return userListedCount;
+        return user.getListedCount();
     }
 
     public void setUserListedCount(int userListedCount) {
-        this.userListedCount = userListedCount;
+        user.setListedCount(userListedCount);
     }
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "EEE MMM dd HH:mm:ss Z yyyy", locale = "en")
@@ -95,17 +101,14 @@ public class Tweet<S, O> {
     @JsonProperty("retweet_count")
     @Expose
     private Integer retweetCount;
-    @JsonProperty("favorite_count")
-    @Expose
-    private Integer favoriteCount;
-    @JsonProperty("favorited")
-    @Expose
-    private Boolean favorited;
+
     @JsonProperty("retweeted")
     @Expose
     private Boolean retweeted;
     @JsonProperty("data")
     private String data;
+    @JsonProperty("followers_count")
+    private int userFollowersCount;
     @JsonProperty("retweeted_status")
     @Expose
     private Retweet retweet;
@@ -113,7 +116,6 @@ public class Tweet<S, O> {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public Tweet(JsonNode json) throws JsonProcessingException {
-        System.out.println("Test");
 
         // json to string
         /*
@@ -182,13 +184,7 @@ public class Tweet<S, O> {
         this.sentFromMobile = sentFromMobile;
     }
 
-    public boolean isFavorited() {
-        return favorited;
-    }
 
-    public void setFavorited(boolean favorited) {
-        this.favorited = favorited;
-    }
 
     public String[] getHashtags() {
         return hashtags;
@@ -200,19 +196,19 @@ public class Tweet<S, O> {
 
 
     public int getUserFriendsCount() {
-        return userFriendsCount;
+        return user.getFriendsCount();
     }
 
     public void setUserFriendsCount(int userFriendsCount) {
-        this.userFriendsCount = userFriendsCount;
+        user.setFriendsCount(userFriendsCount);
     }
 
     public int getUserFollowersCount() {
-        return userFollowersCount;
+        return user.getFollowersCount();
     }
 
     public void setUserFollowersCount(int userFollowersCount) {
-        this.userFollowersCount = userFollowersCount;
+        user.setFollowersCount(userFollowersCount);
     }
 
     public String[] getUserMentions() {
@@ -304,45 +300,6 @@ public class Tweet<S, O> {
         isQuoteStatus = quoteStatus;
     }
 
-    public Integer getRetweetCount() {
-        return retweetCount;
-    }
-
-    public void setRetweetCount(Integer retweetCount) {
-        this.retweetCount = retweetCount;
-    }
-
-    public Integer getFavoriteCount() {
-        return favoriteCount;
-    }
-
-    public void setFavoriteCount(Integer favoriteCount) {
-        this.favoriteCount = favoriteCount;
-    }
-
-    public Boolean getFavorited() {
-        return favorited;
-    }
-
-    public void setFavorited(Boolean favorited) {
-        this.favorited = favorited;
-    }
-
-    public Boolean getRetweeted() {
-        return retweeted;
-    }
-
-    public void setRetweeted(Boolean retweeted) {
-        this.retweeted = retweeted;
-    }
-
-    public Retweet getRetweet() {
-        return retweet;
-    }
-
-    public void setRetweet(Retweet retweet) {
-        this.retweet = retweet;
-    }
 
     public void setSentiment(SentimentResult sentimentResult) {
         this.sentimentScore = sentimentResult.getSentimentScore();
@@ -360,8 +317,31 @@ public class Tweet<S, O> {
         return this.sentimentScore;
     }
 
+    public void setFeatureVector(Vector<Double> features){
+        this.features = features;
+    }
 
 
+    public Vector<Double> getFeatureVector() {
+        return features;
+    }
+
+    public void setPositiveSentiment(double positive) {
+        this.positive = positive;
+    }
+
+    public Double getPositiveSentiment() {
+        return positive;
+    }
+
+    public void setNegativeSentiment(double negative) {
+        this.negative = negative;
+    }
+
+
+    public Double getNegativeSentiment() {
+        return negative;
+    }
 }
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Entities {
@@ -422,13 +402,7 @@ class Retweet {
         this.user = user;
     }
 
-    public Integer getFavoriteCount() {
-        return favoriteCount;
-    }
 
-    public void setFavoriteCount(Integer favoriteCount) {
-        this.favoriteCount = favoriteCount;
-    }
 }
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -468,9 +442,7 @@ class User {
     @JsonProperty("created_at")
     @Expose
     private String createdAt;
-    @JsonProperty("favourites_count")
-    @Expose
-    private Integer favouritesCount;
+
     @JsonProperty("utc_offset")
     @Expose
     private Integer utcOffset;
@@ -632,13 +604,7 @@ class User {
         this.createdAt = createdAt;
     }
 
-    public Integer getFavouritesCount() {
-        return favouritesCount;
-    }
 
-    public void setFavouritesCount(Integer favouritesCount) {
-        this.favouritesCount = favouritesCount;
-    }
 
     public Integer getUtcOffset() {
         return utcOffset;

@@ -50,7 +50,7 @@ public class Sanitise {
 
             }
         }
-        System.out.println("\nCleaned & Tokenised Text:\n" + Arrays.toString(filteredWords.toArray(new String[0])));
+        //System.out.println("\nCleaned & Tokenised Text:\n" + Arrays.toString(filteredWords.toArray(new String[0])));
         return filteredWords.toArray(new String[0]);
     }
 
@@ -79,7 +79,7 @@ public class Sanitise {
                     t = t.replaceAll("rt ", "");
                     t += " ";
                 }
-                System.out.println(t);
+                //System.out.println(t);
                 return t;
             }
         });

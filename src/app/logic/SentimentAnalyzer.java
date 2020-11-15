@@ -11,7 +11,11 @@ import classifiers.SentimentClassification;
 import models.SentimentResult;
 import org.ejml.simple.SimpleMatrix;
 
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.util.Properties;
+
+import edu.stanford.nlp.util.logging.RedwoodConfiguration;
 
 public class SentimentAnalyzer {
 
@@ -25,10 +29,25 @@ public class SentimentAnalyzer {
     static StanfordCoreNLP pipeline;
 
     public void initialize() {
+        // this is your print stream, store the reference
+        PrintStream err = System.err;
+
+        // now make all writes to the System.err stream silent
+                System.setErr(new PrintStream(new OutputStream() {
+                    public void write(int b) {
+                    }
+                }));
+
+
         // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER, parsing, and sentiment
         props = new Properties();
+        RedwoodConfiguration.current().clear().apply();
+
         props.setProperty("annotators", "tokenize, ssplit, parse, sentiment, pos, lemma"); // ("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
         pipeline = new StanfordCoreNLP(props);
+
+        // set everything bck to its original state afterwards
+        System.setErr(err);
     }
 
     public SentimentResult getSentimentResult(String text) {

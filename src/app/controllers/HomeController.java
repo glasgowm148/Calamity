@@ -1,6 +1,5 @@
 package controllers;
 
-import Utils.APIUtils;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
@@ -35,19 +34,14 @@ import java.util.stream.Stream;
 import org.json.JSONObject;
 import tweetfeatures.NumericTweetFeatures;
 
-import static java.util.concurrent.CompletableFuture.supplyAsync;
 import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
 
 /**
  * This controller contains an action to handle HTTP requests
- * to the application's home page.
  *
  * I've used an Akka-play seed,
  * the Akka cluster functionality is ignored/bypassed for now
  *
- * renderIndex() calls ParseJSON() where the processing happens
- *
- * Play Framework - Using Scala/SBT
  *
  * !! To recompile, navigate to browser and refresh localhost:9000
  *
@@ -57,6 +51,7 @@ public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
     private final Duration askTimeout = Duration.ofSeconds(3L);
+    private final File path = new File("conf/alberta.json");
     Object[] objArray;
     List<Tweet> tweetList = new ArrayList<>();
 
@@ -91,73 +86,81 @@ public class HomeController extends Controller {
 
     private Result renderIndex(Integer hitCounter)  {
 
-        File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/before_selection.json");
+        tweetList = ParseJSON();
 
-        String prettyJson = Sanitise.toPrettyFormat(file);
-        ParseJSON();
 
+        for(Tweet tweet : tweetList) {
+            Sentiment(tweet);
+            // Features();
+            FeatureVec(tweet);
+        }
+        System.out.println("\ntweetList.size():\n");
+        System.out.println(tweetList.size());
         // Outputs to browser
-        return ok(prettyJson);
+        return ok(Sanitise.toPrettyFormat(path));
     }
 
 
 
-    public void ParseJSON()  {
-        System.out.println("Parsing....");
-
-        /**
-         * File is in NDJson format (One JSON object per line)
-         * Reading it in with Iterable<String> currently
-         */
-
-
-        try (InputStream is = new FileInputStream(new File("conf/alberta.json"))) {
-
+    public List<Tweet> ParseJSON()  {
+        try (InputStream is = new FileInputStream(path)) {
             try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
 
                 // Uses String iterator - parses 151/500 into Tweet.class
-                tweetList = parseOne(lines);
+                return parseOne(lines);
 
                 // Uses NDJson.java - parses all tweets into Object[]
                 // parseTwo(is);
-                for(Tweet tweet : tweetList) {
-                    Features(tweet);
-                }
-                //Sentiment();
 
-                }
-
-
-
+            }
 
 
         } catch (IOException e) {
-            //SOPs
             System.out.println(e.toString());
         }
 
+        return null;
     }
 
-    private void Sentiment() {
+    private void Sentiment(Tweet tweet) {
         /**
          * Sentiment Analysis
          */
         // SentimentScore
-        //sentimentScore(tweet);
-        //System.out.println("\n###sentiment:" + tweet.getSentimentScore());
+        // https://github.com/Ruthwik/Sentiment-Analysis
+        SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
+        sentimentAnalyzer.initialize();
+        SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweet.getText());
+        tweet.setPositiveSentiment(sentimentResult.getSentimentClass().getPositive());
+        tweet.setNegativeSentiment(sentimentResult.getSentimentClass().getNegative());
 
+        // print results to console
+        /*
+        System.out.println("Sentiment Score: " + sentimentResult.getSentimentScore());
+        System.out.println("Sentiment Type: " + sentimentResult.getSentimentType());
+        System.out.println("Very positive: " + sentimentResult.getSentimentClass().getVeryPositive());
+        System.out.println("Positive: " + sentimentResult.getSentimentClass().getPositive());
+        System.out.println("Neutral: " + sentimentResult.getSentimentClass().getNeutral());
+        System.out.println("Negative: " + sentimentResult.getSentimentClass().getNegative());
+        System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative());
+        tweet.setSentiment(sentimentResult);
+        */
+
+
+        //System.out.println("\n###sentiment:" + tweet.getSentimentScore());
         //twitterStatus.setSentimentType(analyzerService.analyse(text));
 
         // Slang
         // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
 
+        // Analyse()
         // System.out.println("\nanalyse():\n returns the distributed representation of the node \n" + analyse(tweet.getText()));
         // returns the distributed representation of the node, which is a vector.
         // This corresponds to the vectors a, b, c, p1, and p2 in Section 4 of the paper about the work: http://nlp.stanford.edu/pubs/SocherEtAl_EMNLP2013.pdf . It is not easily human interpretable, but a function of it predicts the node's sentiment, as explained in the paper.
-        //analyse(tweet.getText());
+        // analyse(tweet.getText());
 
         // Dependency Graph +
-        //BasicPipeline(tweet.getText());
+        // BasicPipeline(tweet.getText());
     }
 
     public Tweet Sanitise(Tweet tweet){
@@ -179,6 +182,7 @@ public class HomeController extends Controller {
 
         return tweet;
     }
+
     public Serializable analyse(String tweet) {
         // https://aboullaite.me/stanford-corenlp-java/
 
@@ -191,8 +195,8 @@ public class HomeController extends Controller {
         pipeline.annotate(annotation);
         for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
             // word
-            System.out.println(sentence.get(CoreAnnotations.TextAnnotation.class));
-            System.out.println(sentence.get(SentimentCoreAnnotations.SentimentClass.class));
+            //System.out.println(sentence.get(CoreAnnotations.TextAnnotation.class));
+            //System.out.println(sentence.get(SentimentCoreAnnotations.SentimentClass.class));
 
             String word = sentence.get(CoreAnnotations.TextAnnotation.class);
             String lemma = sentence.get(CoreAnnotations.LemmaAnnotation.class);
@@ -207,24 +211,6 @@ public class HomeController extends Controller {
 
         }
         return 0;
-    }
-
-    public void sentimentScore(Tweet tweet){
-        // https://github.com/Ruthwik/Sentiment-Analysis
-        SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
-        sentimentAnalyzer.initialize();
-        SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweet.getText());
-
-        // print results to console
-        System.out.println("Sentiment Score: " + sentimentResult.getSentimentScore());
-        System.out.println("Sentiment Type: " + sentimentResult.getSentimentType());
-        System.out.println("Very positive: " + sentimentResult.getSentimentClass().getVeryPositive());
-        System.out.println("Positive: " + sentimentResult.getSentimentClass().getPositive());
-        System.out.println("Neutral: " + sentimentResult.getSentimentClass().getNeutral());
-        System.out.println("Negative: " + sentimentResult.getSentimentClass().getNegative());
-        System.out.println("Very negative: " + sentimentResult.getSentimentClass().getVeryNegative());
-        tweet.setSentiment(sentimentResult);
-
     }
 
     public void printArray(Object[] objArray) {
@@ -247,18 +233,23 @@ public class HomeController extends Controller {
             try {
                 JsonNode n = Json.parse(s);
                 Tweet tweet = mapper.treeToValue(n, Tweet.class);
-                System.out.println("\nText:\n" + tweet.getText());
+                //System.out.println("\nText:\n" + tweet.getText());
                 tweetList.add(Sanitise(tweet));
             } catch (JsonProcessingException jsonProcessingException) {
-
                 //jsonProcessingException.printStackTrace();
             }
 
-            System.out.println("Tweets imported into Tweet.class model:");
-            System.out.println(tweetList.size());
+
 
 
         }
+        System.out.println("\nTweets imported into Tweet.class model:\n");
+        System.out.println(tweetList.size());
+        /*
+        for(Tweet tweet: tweetList){
+            System.out.println("\ntweet.getFeatureVector():\n");
+            System.out.println(tweet.getFeatureVector());
+        }*/
 
         return tweetList;
     }
@@ -296,12 +287,8 @@ public class HomeController extends Controller {
         //System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
         //System.out.println("\nDoc text:\n" + tweet.getText());
         //System.out.println(doc.makeDocumentLex(tweet.getText()));
-        Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
 
-        System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
-        System.out.println(stringDoubleMap);
 
-        makeFeatureVector(stringDoubleMap);
 
         // Term Frequency
          //System.out.println("\nTerm Frequency:");
@@ -332,14 +319,12 @@ public class HomeController extends Controller {
 
     }
 
+    public void FeatureVec(Tweet tweet){
+        Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+        //System.out.println(stringDoubleMap);
 
+        tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
+        //System.out.println(tweet.getFeatureVector());
+
+    }
 }
-
-
-
-
-        //public CompletionStage<Result> getLocation(String latitude, String longitude) {
-    //    return ask(tweetActor, new tweetActor(latitude, longitude))
-    //}
-
-
