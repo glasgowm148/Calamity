@@ -3,10 +3,7 @@ package tweetfeatures;
 import classifiers.SentimentClassifier;
 import models.Tweet;
 
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class NumericTweetFeatures {
 	public static Set<String> numericFeaturesNames;
@@ -108,6 +105,12 @@ public class NumericTweetFeatures {
 		features.put(user_listed_count, (double)tweet.getUserListedCount());
 		
 		return features;
+	}
+
+	public static void makeFeatureVector(Map<String, Double> features){
+		Vector<String> featureVector = new Vector<>(features.keySet());
+		System.out.println(featureVector);
+
 	}
 }
 

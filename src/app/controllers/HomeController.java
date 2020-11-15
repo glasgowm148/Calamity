@@ -1,5 +1,6 @@
 package controllers;
 
+import Utils.APIUtils;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
@@ -13,10 +14,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
-import logic.NDJson;
-import logic.Sanitise;
-import logic.SentimentAnalyzer;
-import logic.Twokenize;
+import logic.*;
 import models.SentimentResult;
 import models.Tweet;
 import play.libs.Json;
@@ -30,14 +28,15 @@ import services.CounterActor.Increment;
 import javax.inject.Inject;
 import java.io.*;
 import java.time.Duration;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 import java.util.concurrent.CompletionStage;
 import java.util.stream.Stream;
 
 import org.json.JSONObject;
+import tweetfeatures.NumericTweetFeatures;
+
+import static java.util.concurrent.CompletableFuture.supplyAsync;
+import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -95,13 +94,15 @@ public class HomeController extends Controller {
         File file = new File("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/before_selection.json");
 
         String prettyJson = Sanitise.toPrettyFormat(file);
-        ParseJSON(file);
+        ParseJSON();
 
         // Outputs to browser
         return ok(prettyJson);
     }
 
-    public void ParseJSON(File file)  {
+
+
+    public void ParseJSON()  {
         System.out.println("Parsing....");
 
         /**
@@ -115,13 +116,14 @@ public class HomeController extends Controller {
             try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
 
                 // Uses String iterator - parses 151/500 into Tweet.class
-                parseOne(lines);
+                tweetList = parseOne(lines);
 
                 // Uses NDJson.java - parses all tweets into Object[]
                 // parseTwo(is);
-
-                Features();
-                Sentiment();
+                for(Tweet tweet : tweetList) {
+                    Features(tweet);
+                }
+                //Sentiment();
 
                 }
 
@@ -235,7 +237,7 @@ public class HomeController extends Controller {
 
     }
 
-    public void parseOne(Stream<String> lines) {
+    public List<Tweet> parseOne(Stream<String> lines) {
         ObjectMapper mapper = new ObjectMapper();
 
 
@@ -255,7 +257,10 @@ public class HomeController extends Controller {
             System.out.println("Tweets imported into Tweet.class model:");
             System.out.println(tweetList.size());
 
+
         }
+
+        return tweetList;
     }
 
     public void parseTwo(InputStream is){
@@ -273,7 +278,7 @@ public class HomeController extends Controller {
 
     }
 
-    public void Features(){
+    public void Features(Tweet tweet){
         /**
          * Feature Vector
          *
@@ -282,7 +287,23 @@ public class HomeController extends Controller {
          *  2. one set per tweet?  [[(x,y), (x,y), (x,y)],[(x,y), (x,y), (x,y)]]
         */
 
-         // Term Frequency
+        /**
+         * Feature Extraction
+         */
+
+        //DocumentLex doc = null;
+
+        //System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
+        //System.out.println("\nDoc text:\n" + tweet.getText());
+        //System.out.println(doc.makeDocumentLex(tweet.getText()));
+        Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+
+        System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
+        System.out.println(stringDoubleMap);
+
+        makeFeatureVector(stringDoubleMap);
+
+        // Term Frequency
          //System.out.println("\nTerm Frequency:");
          //System.out.println(TermFrequency.getTF(tweet.getText()));
 
@@ -306,19 +327,6 @@ public class HomeController extends Controller {
          //System.out.println("TF-IDF (ipsum) = " + tfidf);
 
 
-        /**
-         * Feature Extraction
-         */
-
-        //DocumentLex doc = null;
-
-        //System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
-        //System.out.println("\nDoc text:\n" + tweet.getText());
-        //System.out.println(doc.makeDocumentLex(tweet.getText()));
-        //Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-
-        //System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
-        //System.out.println(stringDoubleMap);
 
 
 
