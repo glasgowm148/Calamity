@@ -1,5 +1,9 @@
 package logic;
+import models.Tweet;
+
 import java.util.List;
+
+import static org.apache.commons.lang.StringUtils.split;
 
 
 public class TFIDFCalculator {
@@ -23,10 +27,10 @@ public class TFIDFCalculator {
      * @param term String represents a term
      * @return the inverse term frequency of term in documents
      */
-    public double idf(List<List<String>> docs, String term) {
+    public double idf(List<Tweet> docs, String term) {
         double n = 0;
-        for (List<String> doc : docs) {
-            for (String word : doc) {
+        for (Tweet doc : docs) {
+            for (String word : split(doc.getText())) {
                 if (term.equalsIgnoreCase(word)) {
                     n++;
                     break;
@@ -42,7 +46,7 @@ public class TFIDFCalculator {
      * @param term term
      * @return the TF-IDF of term
      */
-    public double tfIdf(List<String> doc, List<List<String>> docs, String term) {
+    public double tfIdf(List<String> doc, List<Tweet> docs, String term) {
         return tf(doc, term) * idf(docs, term);
 
     }

@@ -17,8 +17,9 @@ import java.util.Vector;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Tweet<S, O> {
+public class Tweet<S, O, features> {
 
+    public Map<String, Double> setFeatures;
     private double sentimentScore;
     private String sentimentType;
     private double sentimentClassVerPos;
@@ -47,6 +48,7 @@ public class Tweet<S, O> {
     private Vector<Double> features;
     private double positive;
     private double negative;
+    private Map<String, Double> stringDoubleMap;
 
     public Tweet() {
         super();
@@ -185,7 +187,6 @@ public class Tweet<S, O> {
     }
 
 
-
     public String[] getHashtags() {
         return hashtags;
     }
@@ -279,6 +280,7 @@ public class Tweet<S, O> {
     public Entities getEntities() {
         return entities;
     }
+
     @JsonProperty("entities")
     public void setEntities(Entities entities) {
         this.entities = entities;
@@ -307,17 +309,16 @@ public class Tweet<S, O> {
         this.sentimentClassVerPos = sentimentResult.getSentimentClass().getVeryPositive();
         this.sentimentClassPos = sentimentResult.getSentimentClass().getPositive();
         this.sentimentClassNeutral = sentimentResult.getSentimentClass().getNeutral();
-        this.sentimentClassNeg =  sentimentResult.getSentimentClass().getNegative();
-        this.sentimentClassVerNeg =  sentimentResult.getSentimentClass().getVeryNegative();
+        this.sentimentClassNeg = sentimentResult.getSentimentClass().getNegative();
+        this.sentimentClassVerNeg = sentimentResult.getSentimentClass().getVeryNegative();
     }
-
 
 
     public double getSentimentScore() {
         return this.sentimentScore;
     }
 
-    public void setFeatureVector(Vector<Double> features){
+    public void setFeatureVector(Vector<Double> features) {
         this.features = features;
     }
 
@@ -342,6 +343,15 @@ public class Tweet<S, O> {
     public Double getNegativeSentiment() {
         return negative;
     }
+
+    public Map<String, Double> getFeatures() {
+        return stringDoubleMap;
+    }
+
+    public void setFeatures(Map<String, Double> stringDoubleMap) {
+        this.stringDoubleMap = stringDoubleMap;
+    }
+
 }
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Entities {
