@@ -1,7 +1,9 @@
 package API;
 
+import controllers.HomeController;
 import models.Tweet;
 
+import java.io.File;
 import java.util.*;
 
 // https://en.getdocs.org/rest-api-with-play/
@@ -9,6 +11,11 @@ import java.util.*;
 public class TweetStore {
 
     private final Map<Integer, Tweet> tweets = new HashMap<>();
+    private final File path = new File("conf/TESTJson.json");
+
+    TweetStore() {
+        //tweets.set
+    }
 
     public Optional<Tweet> addTweet(Tweet tweet) {
         int id = tweets.size();
@@ -37,6 +44,8 @@ public class TweetStore {
         }
         return Optional.empty();
     }
+
+
 
 
 

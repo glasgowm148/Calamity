@@ -5,7 +5,7 @@ data/raw/datasets/*
 src/.seed/*
 src/TweetMinner-master/.project
 src/CoreNLP/*
-
+src2/TREC*
 src/logs
 src/target
 src/.idea

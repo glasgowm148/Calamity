@@ -16,6 +16,7 @@ import edu.stanford.nlp.util.CoreMap;
 import logic.*;
 import models.SentimentResult;
 import models.Tweet;
+import play.core.routing.Route;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -51,7 +52,7 @@ public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
     private final Duration askTimeout = Duration.ofSeconds(3L);
-    private final File path = new File("conf/alberta.json");
+    private final File path = new File("conf/TESTJson.json");
     Object[] objArray;
     List<Tweet> tweetList = new ArrayList<>();
     List<Vector> featureVectorList = new ArrayList<>();
@@ -340,3 +341,4 @@ public class HomeController extends Controller {
 
     }
 }
+

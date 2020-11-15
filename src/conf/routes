@@ -9,5 +9,4 @@ GET     /increment                  controllers.HomeController.increment
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 #POST /:parse controllers.HomeController.ParseJSON()
-GET     /:id                        controllers.TweetController.retrieve(id:Int)
-PUT     /                           controllers.TweetController.update(request: Request)
+GET     /vec                  controllers.TweetController.list()

@@ -2,22 +2,29 @@ package controllers;
 
 import API.TweetStore;
 import Utils.APIUtils;
+import actors.TweetService;
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.inject.Inject;
 import models.Tweet;
 import play.core.j.HttpExecutionContext;
 import play.libs.Json;
 import play.mvc.Http;
 import play.mvc.Result;
+import play.mvc.Controller;
+import play.mvc.Result;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.Vector;
 import java.util.concurrent.CompletionStage;
 
 import static java.util.concurrent.CompletableFuture.supplyAsync;
 import static play.mvc.Results.*;
 
 
-public class TweetController {
+public class TweetController extends Controller {
+
 
     //private HttpExecutionContext ec;
     private final TweetStore tweetStore;
@@ -54,4 +61,15 @@ public class TweetController {
             }).orElse(notFound(APIUtils.createResponse("Tweet with id:" + id + " not found", false)));
         }); //,ec.current());
     }
+
+    public Result list() {
+        Vector<Double> count = TweetService.getFeatureVector();
+        ObjectNode result = Json.newObject();
+        result.put("FeatureVector", String.valueOf(count));
+
+
+        return ok(result);
+    }
+
+
 }
