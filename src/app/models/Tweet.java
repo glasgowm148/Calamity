@@ -113,7 +113,7 @@ public class Tweet<S, O> {
 
     @JsonIgnoreProperties(ignoreUnknown = true)
     public Tweet(JsonNode json) throws JsonProcessingException {
-
+        System.out.println("Test");
 
         // json to string
         /*
@@ -353,6 +353,8 @@ public class Tweet<S, O> {
         this.sentimentClassNeg =  sentimentResult.getSentimentClass().getNegative();
         this.sentimentClassVerNeg =  sentimentResult.getSentimentClass().getVeryNegative();
     }
+
+
 
     public double getSentimentScore() {
         return this.sentimentScore;

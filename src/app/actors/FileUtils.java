@@ -2,6 +2,10 @@ package actors;
 
 import java.io.*;
 
+/**
+ * Duplicated logic, to delete.
+ * StopWords relies on currently.
+ */
 
 public class FileUtils {
 

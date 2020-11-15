@@ -124,3 +124,12 @@ libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.11"
 
 
 libraryDependencies += "in.abilng" % "ndjson"% "0.3"
+
+
+// https://mvnrepository.com/artifact/com.hankcs/hanlp
+libraryDependencies += "com.hankcs" % "hanlp" % "portable-1.7.8"
+
+
+// https://mvnrepository.com/artifact/org.json/json
+libraryDependencies += "org.json" % "json" % "20200518"
+

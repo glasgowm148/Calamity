@@ -16,6 +16,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
 
+import static org.apache.commons.lang.StringUtils.split;
+
 public class Sanitise {
 
     private static Set stopWords = new HashSet<String[]>();
@@ -37,9 +39,9 @@ public class Sanitise {
     }
 
 
-    public static String[] removeStopWords(String[] words) {
+    public static String[] removeStopWords(String words) {
         List<String> filteredWords = new ArrayList<String>();
-        for (String w : words) {
+        for (String w : split(words)) {
             if (!isStopWord(w)) {
                 String cleanupWord = w.replaceAll("[^A-z0-9#]", "");
                 if (cleanupWord.length() > 1) {
@@ -48,8 +50,10 @@ public class Sanitise {
 
             }
         }
+        System.out.println("\nCleaned & Tokenised Text:\n" + Arrays.toString(filteredWords.toArray(new String[0])));
         return filteredWords.toArray(new String[0]);
     }
+
 
 
     public static JavaRDD<String> loadTwitterData(JavaSparkContext sc, String file) {

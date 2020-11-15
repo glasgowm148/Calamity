@@ -1,8 +1,6 @@
 package models;
 
-import logic.StopWords;
 import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.mllib.feature.Word2VecModel;
 import org.apache.spark.mllib.linalg.Vector;
@@ -43,8 +41,8 @@ public class Tweet2vecModel {
         JavaSparkContext sc = new JavaSparkContext(conf); // java.lang.ExceptionInInitializerError: null
 
 
-        JavaRDD<String> tweetText = StopWords.loadTwitterData(sc, logFile);
-        //List<String> collectedList = tweetText.collect();
+        // JavaRDD<String> tweetText = StopWords.loadTwitterData(sc, logFile);
+        // List<String> collectedList = tweetText.collect();
         List<String> collectedList = Arrays.asList("a test tweet", "also, a test tweet");
 
         Word2VecModel model = Word2VecModel.load(sc.sc(), "uniqueTweet.model");

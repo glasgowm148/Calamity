@@ -1,47 +1,23 @@
-Here
-Ok so this is the class and you are tring to read all lines from json
 
-home controller reads in the json
-tweet.java is the model
-using a mapper
+# Settings for Stanford CoreNLP
+export CORENLP_ROOT="/Users/pseudo/Documents/GitHub/HelpMe/corenlp"
+export CLASSPATH="$CORENLP_ROOT/javanlp-core.jar"
+export CLASSPATH="$CLASSPATH:$CORENLP_ROOT/stanford-corenlp-models-current.jar"
+for file in `find $CORENLP_ROOT -name "*.jar"`
+do
+    export CLASSPATH="$CLASSPATH:`$file`"
+done
+alias java_ls='/usr/libexec/java_home -V 2>&1 | grep -E "\d.\d.\d_\d\d" | cut -d , -f 1 | colrm 1 4 | grep -v Home'
 
-why mapper ?
+function java_use() {
+    export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+    export PATH=$JAVA_HOME/bin:$PATH
+    java -version
+}
+for file in `find '/Users/pseudo/Documents/GitHub/HelpMe/corenlp' -name "*.jar"`; do export
+CLASSPATH="$CLASSPATH:`realpath $file`"; done
+"~/.zshenv" 18L, 729C
 
-Dunno, seemed like the best option?
-sometimes best isnt always the right. Let me analyse the code first
-
-You dont need to rerun, it's sbt. Switch to safari and refresh
-
-how do you test changes in this ide ?
-
-go to safari, when you reload it recompiles
-
-where is json file
-
-so code is giving error in parsejson function ?
-
-Yes, when it tries to map the object
-
-create new java file for testing code
-
-i m unable to do right click can you run this test file
-
-i need an environment or folder where only these 2 files can execute
-
-I don't know how to do that - why don't you just run it in the Controller? 
-It takes minutes to compile
-
-alright do it
-
-
-When running via SBT, the first time takes a minute or two, then there
-after you can just refresh and it takes a couple of seconds to recompile
-
-ok
-
-Almost done...ok
-
-Good to go
 
 
 # notes
