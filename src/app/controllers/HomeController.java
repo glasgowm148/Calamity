@@ -3,9 +3,7 @@ package controllers;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
-import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -21,7 +19,6 @@ import logic.SentimentAnalyzer;
 import logic.Twokenize;
 import models.SentimentResult;
 import models.Tweet;
-import org.json.JSONObject;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -40,7 +37,7 @@ import java.util.Properties;
 import java.util.concurrent.CompletionStage;
 import java.util.stream.Stream;
 
-import static com.google.common.collect.Iterables.size;
+import org.json.JSONObject;
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -61,6 +58,8 @@ public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
     private final Duration askTimeout = Duration.ofSeconds(3L);
+    Object[] objArray;
+    List<Tweet> tweetList = new ArrayList<>();
 
     @Inject
     public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
@@ -102,172 +101,30 @@ public class HomeController extends Controller {
         return ok(prettyJson);
     }
 
-    public void ParseJSON(File file) {
+    public void ParseJSON(File file)  {
         System.out.println("Parsing....");
 
         /**
          * File is in NDJson format (One JSON object per line)
          * Reading it in with Iterable<String> currently
          */
-        List<Tweet> tweetList = new ArrayList<>();
-        List<JSONObject> tweetArray = new ArrayList<>();
-        Object[] objArray;
+
+
         try (InputStream is = new FileInputStream(new File("conf/alberta.json"))) {
 
             try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
-                tweetArray = NDJson.parse(is);
-                ObjectMapper mapper1 = new ObjectMapper();
 
-                System.out.println("\nText:\n" + tweet1.getText());
-                List<Tweet> pp3 = mapper1.readValue((JsonParser) NDJson.parse(is), new TypeReference<List<Tweet>>() {});
-                Tweet pp4 = mapper1.readValue((JsonParser) NDJson.parse(is), Tweet.class);
-                System.out.println("\nAlternative..." + pp4.getText());
+                // Uses String iterator - parses 151/500 into Tweet.class
+                parseOne(lines);
 
-                // toArray() returns an array containing all of the elements in this list in the correct order
-                objArray = tweetArray.toArray();
+                // Uses NDJson.java - parses all tweets into Object[]
+                // parseTwo(is);
 
-                System.out.println("Elements in Array :");
-                for(int i=0; i < objArray.length ; i++) {
-                    System.out.println(objArray[i]);
-                }
-
-                //pp4.stream().forEach(x -> System.out.println(x));
-
-                ObjectMapper mapper = new ObjectMapper();
-                for (String s : (Iterable<String>) lines::iterator) {
-
-                    // Parses a string as JSON
-                    int i = 0;
-                    try {
-                        JsonNode n = Json.parse(s);
-                        Tweet tweet = mapper.treeToValue(n, Tweet.class);
-                        System.out.println("\nText:\n" + tweet.getText());
-                        tweetList.add(Sanitise(tweet));
-                    } catch (JsonProcessingException jsonProcessingException) {
-
-                        i += 1;
-                        //jsonProcessingException.printStackTrace();
-                    }
-                    System.out.println("\nJsonProcessingExceptions:" + i);
-
-                    // expected output: ReferenceError: nonExistentFunction is not defined
-                    // Note - error messages will vary depending on browser
-
-
-
-                    //System.out.println(n.asText());
-                    //System.out.println("\nJsValue\n");
-                    //JsValue j = JacksonJson.parseJsValue(s);
-                    //System.out.println("\nJsValue\n" + j);
-
-
-                    /**
-                     * Binds JSON tree to Tweet Obj
-                     * Tweet.java is a bit of a mess right now.
-                     * I'd expected to find one premade but spent hours - couldn't find a comprehensive one anywhere?
-                     *
-                     */
-
-
-
-
-
-                    /**
-                     * Feature Vector
-                     *
-                     * Not 100% what this should look like,
-                     *  1. one tuple per tweet in the set? [(x,y), (x,y), (x,y)]
-                     *  2. one set per tweet?  [[(x,y), (x,y), (x,y)],[(x,y), (x,y), (x,y)]]
-
-
-                    // Term Frequency
-                    //System.out.println("\nTerm Frequency:");
-                    //System.out.println(TermFrequency.getTF(tweet.getText()));
-
-                    // FeatureVector.java
-                    //List<String> topics = new ArrayList<String>();
-                    //List<String> places = new ArrayList<String>();
-                    //System.out.println(ToStringBuilder.reflectionToString((new FeatureVector(topics, places, tweet.getText()))));
-
-                    // Tweet2Vec.java
-                    // System.out.println("\nTweet2VEC");
-                    // new Tweet2vecModel(tweetsList);
-
-                    // TFIDFCalculator (Running on dummy-text)
-                    //List<String> doc1 = Arrays.asList("Lorem", "ipsum", "dolor", "ipsum", "sit", "ipsum");
-                    //List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
-                    //List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
-                    //List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
-
-                    //TFIDFCalculator calculator = new TFIDFCalculator();
-                    //double tfidf = calculator.tfIdf(doc1, documents, "ipsum");
-                    //System.out.println("TF-IDF (ipsum) = " + tfidf);
-
-                    /**
-                     * Next Steps
-                     *
-                     * 1. Priority is getting it into a feature vector.
-                     *    It doesn't need to be a good feature vector.
-                     *    Just some numbers I can export to Python and then start ML
-                     *    Will retroactively improve feature vector based on success rate
-                     *    Currently doing TF-IDF on dummytext.
-                     *    a) Build a List<Tweet> with the loaded tweet
-                     *    b) Pass to TFIDFCalculator()
-                     *
-                     *
-                     * 2. I've got the string iterator into a Tweet model, but - for some reason it's only
-                     *    pulling in the first 3 tweets? Something to do with the format? I'm concerned converting it
-                     *    to a string then back into JSON - is going to cause issues going forward.
-                     *
-                     *  Note: I've copied two tweet sets into my /conf folder, there's labels and various other
-                     *  related files.
-                     */
-
-
-                    // Disabled Sentiment Analysis & Feature Extraction for now.
-                    /**
-                     * Sentiment Analysis
-                     */
-                     // SentimentScore
-                    //sentimentScore(tweet);
-                    //System.out.println("\n###sentiment:" + tweet.getSentimentScore());
-
-                     //twitterStatus.setSentimentType(analyzerService.analyse(text));
-
-                    // Slang
-                    // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
-
-                    // System.out.println("\nanalyse():\n returns the distributed representation of the node \n" + analyse(tweet.getText()));
-                    // returns the distributed representation of the node, which is a vector.
-                    // This corresponds to the vectors a, b, c, p1, and p2 in Section 4 of the paper about the work: http://nlp.stanford.edu/pubs/SocherEtAl_EMNLP2013.pdf . It is not easily human interpretable, but a function of it predicts the node's sentiment, as explained in the paper.
-                    //analyse(tweet.getText());
-
-                    // Dependency Graph +
-                    //BasicPipeline(tweet.getText());
-
-                    /**
-                     * Feature Extraction
-                     */
-
-                    //DocumentLex doc = null;
-
-                    //System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
-                    //System.out.println("\nDoc text:\n" + tweet.getText());
-                    //System.out.println(doc.makeDocumentLex(tweet.getText()));
-                    //Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-
-                    //System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
-                    //System.out.println(stringDoubleMap);
-
+                Features();
+                Sentiment();
 
                 }
-                System.out.println("ForEach:");
 
-            }
-            System.out.println("Tweets imported:");
-            System.out.println(size(tweetList));
-            System.out.println("Tweets imported into Object Array:");
-            System.out.println(objArray.length);
 
 
 
@@ -277,6 +134,28 @@ public class HomeController extends Controller {
             System.out.println(e.toString());
         }
 
+    }
+
+    private void Sentiment() {
+        /**
+         * Sentiment Analysis
+         */
+        // SentimentScore
+        //sentimentScore(tweet);
+        //System.out.println("\n###sentiment:" + tweet.getSentimentScore());
+
+        //twitterStatus.setSentimentType(analyzerService.analyse(text));
+
+        // Slang
+        // https://github.com/ghpaetzold/questplusplus/blob/master/src/shef/mt/tools/mqm/resources/SlangDictionary.java
+
+        // System.out.println("\nanalyse():\n returns the distributed representation of the node \n" + analyse(tweet.getText()));
+        // returns the distributed representation of the node, which is a vector.
+        // This corresponds to the vectors a, b, c, p1, and p2 in Section 4 of the paper about the work: http://nlp.stanford.edu/pubs/SocherEtAl_EMNLP2013.pdf . It is not easily human interpretable, but a function of it predicts the node's sentiment, as explained in the paper.
+        //analyse(tweet.getText());
+
+        // Dependency Graph +
+        //BasicPipeline(tweet.getText());
     }
 
     public Tweet Sanitise(Tweet tweet){
@@ -346,6 +225,105 @@ public class HomeController extends Controller {
 
     }
 
+    public void printArray(Object[] objArray) {
+        System.out.println("Elements in Array :");
+        for (Object o : objArray) {
+            System.out.println(o);
+
+        }
+
+
+    }
+
+    public void parseOne(Stream<String> lines) {
+        ObjectMapper mapper = new ObjectMapper();
+
+
+        for (String s : (Iterable<String>) lines::iterator) {
+
+            // Parses a string as JSON
+            try {
+                JsonNode n = Json.parse(s);
+                Tweet tweet = mapper.treeToValue(n, Tweet.class);
+                System.out.println("\nText:\n" + tweet.getText());
+                tweetList.add(Sanitise(tweet));
+            } catch (JsonProcessingException jsonProcessingException) {
+
+                //jsonProcessingException.printStackTrace();
+            }
+
+            System.out.println("Tweets imported into Tweet.class model:");
+            System.out.println(tweetList.size());
+
+        }
+    }
+
+    public void parseTwo(InputStream is){
+            List<JSONObject> tweetArray = new ArrayList<>();
+
+
+            tweetArray = NDJson.parse(is);
+
+            // toArray() returns an array containing all of the elements in this list in the correct order
+            objArray = tweetArray.toArray();
+
+            // printArray(objArray);
+            System.out.println("Tweets imported into Object Array:");
+            System.out.println(objArray.length);
+
+    }
+
+    public void Features(){
+        /**
+         * Feature Vector
+         *
+         * Not 100% what this should look like,
+         *  1. one tuple per tweet in the set? [(x,y), (x,y), (x,y)]
+         *  2. one set per tweet?  [[(x,y), (x,y), (x,y)],[(x,y), (x,y), (x,y)]]
+        */
+
+         // Term Frequency
+         //System.out.println("\nTerm Frequency:");
+         //System.out.println(TermFrequency.getTF(tweet.getText()));
+
+         // FeatureVector.java
+         //List<String> topics = new ArrayList<String>();
+         //List<String> places = new ArrayList<String>();
+         //System.out.println(ToStringBuilder.reflectionToString((new FeatureVector(topics, places, tweet.getText()))));
+
+         // Tweet2Vec.java
+         // System.out.println("\nTweet2VEC");
+         // new Tweet2vecModel(tweetsList);
+
+         // TFIDFCalculator (Running on dummy-text)
+         //List<String> doc1 = Arrays.asList("Lorem", "ipsum", "dolor", "ipsum", "sit", "ipsum");
+         //List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
+         //List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
+         //List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
+
+         //TFIDFCalculator calculator = new TFIDFCalculator();
+         //double tfidf = calculator.tfIdf(doc1, documents, "ipsum");
+         //System.out.println("TF-IDF (ipsum) = " + tfidf);
+
+
+        /**
+         * Feature Extraction
+         */
+
+        //DocumentLex doc = null;
+
+        //System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
+        //System.out.println("\nDoc text:\n" + tweet.getText());
+        //System.out.println(doc.makeDocumentLex(tweet.getText()));
+        //Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+
+        //System.out.println("\nNumericTweetFeatures.makeFeatures(tweet):");
+        //System.out.println(stringDoubleMap);
+
+
+
+    }
+
 
 }
 
@@ -357,33 +335,3 @@ public class HomeController extends Controller {
     //}
 
 
-//System.out.println("\nJsonString\n");
-//System.out.println(s);
-//System.out.println(ToStringBuilder.reflectionToString(tweet)); // https://stackoverflow.com/questions/31847080/how-to-convert-any-object-to-string
-//System.out.println(n);
- /*
-
-        InputStream is = null;
-        try {
-            is = new FileInputStream(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        // https://stackoverflow.com/questions/54947356/how-can-i-iterate-through-json-objects-using-jackson
-        ObjectMapper mapper = new ObjectMapper();
-        // Cannot deserialize instance of `java.util.ArrayList<models.Tweet>` out of START_OBJECT token
-        // cannot deserialize a single object into an array of objects
-        mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true); // https://stackoverflow.com/questions/20837856/can-not-deserialize-instance-of-java-util-arraylist-out-of-start-object-token
-        try {
-            CollectionType tweetListType = mapper.getTypeFactory().constructCollectionType(ArrayList.class, Tweet.class);
-            try (Stream<Tweet> tweets = NdJsonObjectMapper.readValue(is, Tweet.class)) {
-                List<Tweet> tweetsList = mapper.readValue(file, tweetListType);
-                tweetsList.forEach(System.out::println);
-
-
-            }
-
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-        */
