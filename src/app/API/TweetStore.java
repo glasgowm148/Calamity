@@ -28,16 +28,16 @@ public class TweetStore {
     public Set<Tweet> getAllTweets() {
         return new HashSet<>(tweets.values());
     }
-    /*
+
     public Optional<Tweet> updateTweet(Tweet tweet) {
-        //int id = tweets.getId();
+        int id = Math.toIntExact(tweet.getId());
         if (tweets.containsKey(id)) {
             tweets.put(id, tweet);
             return Optional.ofNullable(tweet);
         }
         return Optional.empty();
     }
-    */
+
 
 
 

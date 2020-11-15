@@ -10,3 +10,4 @@ GET     /increment                  controllers.HomeController.increment
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 #POST /:parse controllers.HomeController.ParseJSON()
 GET     /:id                        controllers.TweetController.retrieve(id:Int)
+PUT     /                           controllers.TweetController.update(request: Request)
