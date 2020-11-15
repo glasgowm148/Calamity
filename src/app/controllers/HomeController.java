@@ -13,7 +13,6 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
-import edu.stanford.nlp.util.Pair;
 import logic.*;
 import models.SentimentResult;
 import models.Tweet;
@@ -52,9 +51,11 @@ public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
     private final Duration askTimeout = Duration.ofSeconds(3L);
-    private final File path = new File("conf/testJSON.json");
+    private final File path = new File("conf/alberta.json");
     Object[] objArray;
     List<Tweet> tweetList = new ArrayList<>();
+    List<Vector> featureVectorList = new ArrayList<>();
+    Vector a;
 
     @Inject
     public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
@@ -98,22 +99,16 @@ public class HomeController extends Controller {
 
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
-        antlr.collections.List featureVectorList = null;
+
         for(Tweet tweet: tweetList){
             System.out.println("\nTweet:");
             System.out.println(tweet.getText());
             System.out.println(tweet.getFeatures());
             System.out.println(tweet.getFeatureVector());
-
-            try {
-                featureVectorList.add(tweet.getFeatureVector());
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
-
         System.out.println(featureVectorList);
+
+        //System.out.println(featureVectorList);
         // Outputs to browser
         return ok(Sanitise.toPrettyFormat(path));
     }
@@ -323,7 +318,8 @@ public class HomeController extends Controller {
         */
         TFIDFCalculator calculator = new TFIDFCalculator();
         double tfidf = calculator.idf(tweetList, "fire");
-        System.out.println("TF-IDF (earthquake) = " + tfidf);
+        System.out.println("TF-IDF (fire) = " + tfidf);
+        tweet.setTFIDF(tfidf);
 
 
 
@@ -336,6 +332,11 @@ public class HomeController extends Controller {
         tweet.setFeatures(stringDoubleMap);
         tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
         //System.out.println(tweet.getFeatureVector());
+
+        if(tweet.getFeatureVector() != null){
+            featureVectorList.add(tweet.getFeatureVector());
+
+        }
 
     }
 }

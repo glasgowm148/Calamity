@@ -49,6 +49,7 @@ public class Tweet<S, O, features> {
     private double positive;
     private double negative;
     private Map<String, Double> stringDoubleMap;
+    private double tfidf;
 
     public Tweet() {
         super();
@@ -352,6 +353,13 @@ public class Tweet<S, O, features> {
         this.stringDoubleMap = stringDoubleMap;
     }
 
+    public void setTFIDF(double tfidf) {
+        this.tfidf = tfidf;
+    }
+
+    public double getTFIDF(){
+        return tfidf;
+    }
 }
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Entities {

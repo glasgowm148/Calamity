@@ -32,7 +32,9 @@ public class NumericTweetFeatures {
 	public static final String user_numb_of_tweets = "user_numb_of_tweets";
 	public static final String numb_of_user_description_chars = "numb_of_user_description_chars";
 	public static final String user_listed_count = "user_list_count";
-	
+
+	private static final String tfidf = "tfidf";
+
 	static {
 		numericFeaturesNames = new LinkedHashSet<>();
 		numericFeaturesNames.add(positive_sentiment);
@@ -60,6 +62,7 @@ public class NumericTweetFeatures {
 		numericFeaturesNames.add(user_numb_of_tweets);
 		numericFeaturesNames.add(numb_of_user_description_chars);
 		numericFeaturesNames.add(user_listed_count); // should have data now
+		numericFeaturesNames.add(tfidf);
 		
 	}
 	
@@ -103,6 +106,7 @@ public class NumericTweetFeatures {
 		//features.put(user_numb_of_tweets, (double)tweet.getUserNumbTweets());
 		//features.put(numb_of_user_description_chars, (double)tweet.getUserDescription().length());
 		features.put(user_listed_count, (double)tweet.getUserListedCount());
+		features.put(tfidf, (double)tweet.getTFIDF());
 		
 		return features;
 	}
