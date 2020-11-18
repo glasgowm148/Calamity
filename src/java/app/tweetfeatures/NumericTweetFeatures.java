@@ -78,7 +78,7 @@ public class NumericTweetFeatures {
 		Map<String, Double> features = new LinkedHashMap<>();
 
 		features.put(tweet_created_at, (double)tweet.getCreatedAt().getTime());
-		//features.put(tweet_id_str, (double)tweet.getIdStr());
+		features.put(tweet_id_str, Double.parseDouble(tweet.getIdStr()));
 
 		features.put(positive_sentiment, tweet.getPositiveSentiment());
 		features.put(negative_sentiment, tweet.getNegativeSentiment());

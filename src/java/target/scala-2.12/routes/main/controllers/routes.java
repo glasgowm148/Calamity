@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/pseudo/Documents/GitHub/HelpMe/src/java/conf/routes
-// @DATE:Wed Nov 18 08:33:26 GMT 2020
+// @DATE:Wed Nov 18 09:05:46 GMT 2020
 
 package controllers;
 

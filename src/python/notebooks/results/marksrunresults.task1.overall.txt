@@ -1,0 +1,11 @@
+TREC-IS 2020-A Task 1 Notebook Evaluator v2.4
+Run: marksrun (marks.run)
+
+--------------------------------------------------
+EVALUATON: Alertng Performance
+Overall performance
+--------------------------------------------------
+> High Importance Alert Worth:	0.0
+> Low Importance Alert Worth:	0.0
+> Accumulated Alert Worth:	0.0
+
