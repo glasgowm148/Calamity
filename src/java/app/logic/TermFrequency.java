@@ -8,6 +8,7 @@ import com.hankcs.hanlp.dictionary.stopword.CoreStopWordDictionary;
 import com.hankcs.hanlp.seg.common.Term;
 import models.Tweet;
 
+import java.text.DecimalFormat;
 import java.util.*;
 
 
@@ -15,13 +16,15 @@ import java.util.*;
 
 public class TermFrequency
 {
+    private static DecimalFormat df = new DecimalFormat("0.00");//format the output to reserve two decimal places
 
     private static final int keywordsNumber = 10;
     static final float d = 0.85f;           //damping factor, default 0.85
     static final int max_iter = 200;        //max iteration times
     static final float min_diff = 0.0001f;  //condition to judge whether recurse or not
-    private static  int nKeyword=5;         //number of keywords to extract,default 5
-    private static  int coOccuranceWindow=3; //size of the co-occurance window, default 3
+    private static final int nKeyword=5;         //number of keywords to extract,default 5
+    private static final int coOccuranceWindow=3; //size of the co-occurance window, default 3
+    private static String[] providedKeywords = new String[]{"Russia", "fire", "wildfire"};
 
     /**
      * calculate TF value of each word in the tweet text
@@ -108,15 +111,12 @@ public class TermFrequency
             List<Map.Entry<String,Float>> entryList=new ArrayList<Map.Entry<String,Float>>(singlePassageTFIDF.entrySet());
 
 
-            Collections.sort(entryList,new Comparator<Map.Entry<String,Float>>()
-                    {
-                        @Override
-                        public int compare(Map.Entry<String,Float> c1,Map.Entry<String,Float> c2)
-                        {
-                            return c2.getValue().compareTo(c1.getValue());
-                        }
-                    }
-            );
+            entryList.sort(new Comparator<Map.Entry<String, Float>>() {
+                @Override
+                public int compare(Map.Entry<String, Float> c1, Map.Entry<String, Float> c2) {
+                    return c2.getValue().compareTo(c1.getValue());
+                }
+            });
 
             // get keywords
             List<String> systemKeywordList=new ArrayList<String>();
@@ -132,6 +132,8 @@ public class TermFrequency
                 }
             }
             System.out.println("\ngetWordScore for:" + tweet.getIdStr() + "\n " + getWordScore(tweet) );
+            System.out.println(calculate(systemKeywordList, providedKeywords ));
+
             tweetListKeywords.put(tweet.getId().toString(), systemKeywordList);
         }
         System.out.println("\ntweetListKeywords:\n" + tweetListKeywords);
@@ -148,7 +150,7 @@ public class TermFrequency
         HashMap<String, Float> dirFilesIDF = new HashMap<String, Float>();
 
         dirFilesTF = TermFrequency.tweetListTF(tweetList);
-        dirFilesIDF = TermFrequency.tweetListID(tweetList);
+        dirFilesIDF = TermFrequency.tweetListIDF(tweetList);
 
         Map<String, HashMap<String, Float>> dirFilesTFIDF = new HashMap<String, HashMap<String, Float>>();
         Map<String,Float> singlePassageWord= new HashMap<String,Float>();
@@ -157,12 +159,9 @@ public class TermFrequency
         {
             HashMap<String,Float> temp= new HashMap<String,Float>();
             singlePassageWord = dirFilesTF.get(tweet.getId().toString());
-            Iterator<Map.Entry<String, Float>> it = singlePassageWord.entrySet().iterator();
-            while(it.hasNext())
-            {
-                Map.Entry<String, Float> entry = it.next();
+            for (Map.Entry<String, Float> entry : singlePassageWord.entrySet()) {
                 String word = entry.getKey();
-                Float TFIDF = entry.getValue()*dirFilesIDF.get(word);
+                Float TFIDF = entry.getValue() * dirFilesIDF.get(word);
                 temp.put(word, TFIDF);
             }
             dirFilesTFIDF.put(tweet.getId().toString(), temp);
@@ -171,7 +170,7 @@ public class TermFrequency
         return dirFilesTFIDF;
     }
 
-    private static HashMap<String, Float> tweetListID(List<Tweet> tweetList) {
+    private static HashMap<String, Float> tweetListIDF(List<Tweet> tweetList) {
         List<String> fileList = new ArrayList<String>();
         int docNum = fileList.size();
 
@@ -308,6 +307,49 @@ public class TermFrequency
         }
         return score;
     }
+
+    public static List<Float> calculate(List<String> tweetListKeywords,String[] manualKeywords)
+    {
+
+
+        int sysLen=tweetListKeywords.size();
+        int manLen=manualKeywords.length;
+        //Caculate.printKeywords(systemKeywords,manualKeywords);
+        int hit=0;
+        for(int i=0;i<sysLen;i++)
+        {
+            for(int j=0;j<manLen;j++)
+            {
+                if(tweetListKeywords.get(i).equals(manualKeywords[j]))
+                {
+                    hit++;
+                    break;
+                }
+            }
+        }
+
+        //Get Precision Value
+        float pValue=(float)hit/sysLen;
+        pValue*=100; //represent in the form of %
+
+        //Get Recall Value
+        float rValue=(float)hit/manLen;
+        rValue*=100;
+
+        //Get F-Measure
+        float fValue;
+        if(rValue==0 || pValue == 0)
+            fValue=0;
+        else
+            fValue=2*rValue*pValue/(rValue+pValue);
+
+        List<Float> result = new ArrayList<Float>();
+        result.add(Float.parseFloat(df.format(pValue)));
+        result.add(Float.parseFloat(df.format(rValue)));
+        result.add(Float.parseFloat(df.format(fValue)));
+        return result;
+    }
+
 
 
 }

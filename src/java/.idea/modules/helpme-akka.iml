@@ -486,5 +486,26 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../lib" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$MODULE_DIR$/../../lib/corenlp/apache-opennlp-1.9.3/docs/apidocs/opennlp-brat-annotator" />
+          <root url="file://$MODULE_DIR$/../../lib/corenlp/apache-opennlp-1.9.3/docs/apidocs/opennlp-morfologik-addon" />
+          <root url="file://$MODULE_DIR$/../../lib/corenlp/apache-opennlp-1.9.3/docs/apidocs/opennlp-tools" />
+          <root url="file://$MODULE_DIR$/../../lib/corenlp/apache-opennlp-1.9.3/docs/apidocs/opennlp-uima" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../lib/corenlp" />
+          <root url="file://$MODULE_DIR$/../../lib/corenlp/CoreNLP/examples/sample-maven-project/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../lib/corenlp/CoreNLP/itest/src" />
+          <root url="file://$MODULE_DIR$/../../lib/corenlp/CoreNLP/src" />
+          <root url="file://$MODULE_DIR$/../../lib/corenlp/CoreNLP/test/src" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../../lib" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>
