@@ -35,6 +35,7 @@ import java.util.stream.Stream;
 import org.json.JSONObject;
 import tweetfeatures.NumericTweetFeatures;
 
+import static logic.TermFrequency.getKeywords;
 import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
 
 /**
@@ -52,7 +53,7 @@ public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
     private final Duration askTimeout = Duration.ofSeconds(3L);
-    private final File path = new File("conf/testJSON.json");
+    private final File path = new File("../../data/raw/data/2020/2020-A/tweets/siberian_wildfires/10.jsonl");
     Object[] objArray;
     List<Tweet> tweetList = new ArrayList<>();
     List<Vector> featureVectorList = new ArrayList<>();
@@ -89,15 +90,20 @@ public class HomeController extends Controller {
 
     private Result renderIndex(Integer hitCounter)  {
 
+        // Returns list of files in folder as a String[]
+        //collectFiles();
+
+        // Process
         tweetList = ParseJSON();
 
-
+        getKeywords(tweetList);
+        /*
         for(Tweet tweet : tweetList) {
             Sentiment(tweet);
-            FeatureVec(tweet);
             Features(tweet);
+            // Create the feature vector
+            FeatureVec(tweet);
         }
-
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
 
@@ -107,13 +113,26 @@ public class HomeController extends Controller {
             System.out.println(tweet.getFeatures());
             System.out.println(tweet.getFeatureVector());
         }
+
+
+
         System.out.println(featureVectorList);
+
 
         //System.out.println(featureVectorList);
         // Outputs to browser
+
+         */
+
+
         return ok(Sanitise.toPrettyFormat(path));
     }
 
+    private void collectFiles() {
+        final File folder = new File("../../data/raw/data/2020/2020-A/tweets/siberian_wildfires/");
+        final List<File> fileList = Arrays.asList(folder.listFiles());
+        System.out.println(fileList);
+    }
 
 
     public List<Tweet> ParseJSON()  {
@@ -273,18 +292,11 @@ public class HomeController extends Controller {
 
     }
 
+    /**
+     * Feature Extraction
+     */
     public void Features(Tweet tweet){
-        /**
-         * Feature Vector
-         *
-         * Not 100% what this should look like,
-         *  1. one tuple per tweet in the set? [(x,y), (x,y), (x,y)]
-         *  2. one set per tweet?  [[(x,y), (x,y), (x,y)],[(x,y), (x,y), (x,y)]]
-        */
 
-        /**
-         * Feature Extraction
-         */
 
         //DocumentLex doc = null;
 
@@ -295,8 +307,17 @@ public class HomeController extends Controller {
 
 
         // Term Frequency
-         //System.out.println("\nTerm Frequency:");
-         //System.out.println(TermFrequency.getTF(tweet.getText()));
+        System.out.println("\nTerm Frequency:");
+        System.out.println(TermFrequency.getTF(tweet.getText()));
+
+        HashMap<String, Float> tflIST = TermFrequency.getTF(tweet.getText());
+        TFIDFCalculator calculator = new TFIDFCalculator();
+        double tfidf = calculator.tfIdf(Collections.singletonList(tweet.getText()), tweetList, "blaze");
+        System.out.println("TF-IDF(blaze) = " + tfidf);
+
+        double idf = calculator.idf(tweetList, "fire");
+        System.out.println("IDF (blaze) = " + tfidf);
+        //tweet.setTFIDF(tfidf);
 
          // FeatureVector.java
          //List<String> topics = new ArrayList<String>();
@@ -312,15 +333,10 @@ public class HomeController extends Controller {
          List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
          List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
          List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
+*/
 
-         TFIDFCalculator calculator = new TFIDFCalculator();
-         double tfidf = calculator.tfIdf(doc1, documents, "ipsum");
-         System.out.println("TF-IDF (ipsum) = " + tfidf);
-        */
-        TFIDFCalculator calculator = new TFIDFCalculator();
-        double tfidf = calculator.idf(tweetList, "fire");
-        System.out.println("TF-IDF (fire) = " + tfidf);
-        tweet.setTFIDF(tfidf);
+
+
 
 
 

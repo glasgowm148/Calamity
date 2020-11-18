@@ -34,11 +34,7 @@ public class NumericTweetFeatures {
 	public static final String user_listed_count = "user_list_count";
 	public static final String tweet_created_at = "tweet_created_at";
 	public static final String tweet_id_str = "tweet_id_str";
-	//
-	//CreatedAt
-	//idStr
-
-	private static final String tfidf = "tfidf";
+	private static final String tfidf_fire = "tfidf_fire";
 
 	static {
 		numericFeaturesNames = new LinkedHashSet<>();
@@ -69,7 +65,7 @@ public class NumericTweetFeatures {
 		numericFeaturesNames.add(user_numb_of_tweets);
 		numericFeaturesNames.add(numb_of_user_description_chars);
 		numericFeaturesNames.add(user_listed_count); // should have data now
-		numericFeaturesNames.add(tfidf);
+		numericFeaturesNames.add(tfidf_fire);
 		
 	}
 	
@@ -78,8 +74,7 @@ public class NumericTweetFeatures {
 		Map<String, Double> features = new LinkedHashMap<>();
 
 		features.put(tweet_created_at, (double)tweet.getCreatedAt().getTime());
-		features.put(tweet_id_str, Double.parseDouble(tweet.getIdStr()));
-
+		features.put(tweet_id_str, (double) Long.parseLong(tweet.getIdStr()));
 		features.put(positive_sentiment, tweet.getPositiveSentiment());
 		features.put(negative_sentiment, tweet.getNegativeSentiment());
 		
@@ -115,7 +110,7 @@ public class NumericTweetFeatures {
 		//features.put(user_numb_of_tweets, (double)tweet.getUserNumbTweets());
 		//features.put(numb_of_user_description_chars, (double)tweet.getUserDescription().length());
 		features.put(user_listed_count, (double)tweet.getUserListedCount());
-		features.put(tfidf, (double)tweet.getTFIDF());
+		features.put(tfidf_fire, tweet.getTFIDF());
 		
 		return features;
 	}
@@ -132,7 +127,18 @@ public class NumericTweetFeatures {
 
 
 
-
+/*
+other_features_names = ["num_chars", "num_chars_total", \
+                        "num_terms", "num_words", "num_unique_words", "vader neg","vader pos",
+                        "vader neu", "vader compound", \
+                        "num_hashtags", "num_mentions",
+                        "num_urls", "is_retweet", "num_media",
+                        "is_verified",
+#                         "log_followers", "log_friends",
+#                         "has_place",
+                        "caps_ratio",
+                       ]
+ */
 
 
 

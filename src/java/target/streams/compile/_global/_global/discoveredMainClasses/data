@@ -1,1 +1,1 @@
-["logic.TFIDFCalculator","logic.Twokenize"]
+["logic.TFIDFCalculator","logic.Twokenize","logic.makeTfidfLongvectors"]

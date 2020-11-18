@@ -1,4 +1,4 @@
-TRECIS-CTIT-H-Test-022 Q0 1152263930645024768 1 0.7 ["Request-GoodsServices", "Report-MultimediaShare", "Report-Factoid"] marksrun
-TRECIS-CTIT-H-Test-022 Q0 1152263780157575170 2 0.51 ["Other-Discussions", "Report-Factoid", "Report-MultimediaShare"] marksrun
-TRECIS-CTIT-H-Test-022 Q0 1152263780128186370 3 0.32 ["Report-Factoid", "Report-MultimediaShare"] marksrun
-TRECIS-CTIT-H-Test-023 Q0 1152263740982616064 4 0.637 ["Request-GoodsServices", "Report-MultimediaShare"] marksrun
+TRECIS-CTIT-H-Test-046 Q0 1152263930645024768 1 0.7 ["Report-EmergingThreats", "Report-MultimediaShare", "Report-Factoid"] marksrun
+TRECIS-CTIT-H-Test-046 Q0 1152263780157575170 2 0.51 ["Report-EmergingThreats", "Report-Factoid", "Report-MultimediaShare"] marksrun
+TRECIS-CTIT-H-Test-046 Q0 1152263780128186370 3 0.32 ["Report-Factoid", "Report-MultimediaShare"] marksrun
+TRECIS-CTIT-H-Test-046 Q0 1152263740982616064 4 0.637 ["Report-EmergingThreats", "Report-MultimediaShare"] marksrun

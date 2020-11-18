@@ -61,6 +61,8 @@ public class Tweet<S, O, features> {
         urls = new String[0];
         userMentions = new String[0];
         double[] geoLocation = new double[0];
+        double tfidf;
+
 
 
     }
