@@ -1,4 +1,4 @@
-TRECIS-CTIT-H-Test-022 Q0 1152263930645024768 1 0.7 [2.0, 58.0, 14.0, 86.0, 948.0, 64.0, 59.0, 0.0, 2.0, 58.0, 2.0, 58.0, 14.0, 86.0, 948.0, 64.0, 59.0, 0.0, 2.0, 58.0, 64.0, 59.0, 0.0, 2.0, 58.0] marksrun
-TRECIS-CTIT-H-Test-022 Q0 1152263780157575170 2 0.51 [1.0, 63.0, 46.0, 198.0, 40.0, 0.0, 5.0, 0.0] marksrun
-TRECIS-CTIT-H-Test-022 Q0 1152263780128186370 3 0.32 [3.0, 63.0, 13.0, 67.0, 84.0, 243.0, 1.0, 0.0] marksrun
-TRECIS-CTIT-H-Test-023 Q0 1152263740982616064 4 0.637 [22.0, 35.0, 12.0, 71.0, 1295.0, 1348.0, 57.0, 0.0] marksrun
+TRECIS-CTIT-H-Test-022 Q0 1152263930645024768 1 0.7 ["Request-GoodsServices", "Report-MultimediaShare", "Report-Factoid"] marksrun
+TRECIS-CTIT-H-Test-022 Q0 1152263780157575170 2 0.51 ["Other-Discussions", "Report-Factoid", "Report-MultimediaShare"] marksrun
+TRECIS-CTIT-H-Test-022 Q0 1152263780128186370 3 0.32 ["Report-Factoid", "Report-MultimediaShare"] marksrun
+TRECIS-CTIT-H-Test-023 Q0 1152263740982616064 4 0.637 ["Request-GoodsServices", "Report-MultimediaShare"] marksrun

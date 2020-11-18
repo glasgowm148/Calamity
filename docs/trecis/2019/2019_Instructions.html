@@ -1,0 +1,390 @@
+<html>
+<head>
+    <title>2019-A TREC-IS Instructions</title>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <!-- a jQuery UI theme, here I use "flick" -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/flick/jquery-ui.css">
+
+    <script src="http://dcs.gla.ac.uk/~richardm/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os';</script>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex.css"/>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+        <style type="text/css">
+
+        body, html {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgb(150, 150, 150), rgb(255, 255, 255));
+        }
+
+        </style>
+
+</head>
+
+<body id="myBody"> <!-- onload="openWebSocketConnection()" -->
+
+        <div class="container">
+
+
+                <!-- Nav Bar -->
+                <div class="row">
+                        <div class="col-md-12">
+
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                                        <a class="navbar-brand" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/">TREC Incident Streams</a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                        </button>
+
+                                        <div class="collapse navbar-collapse" id="navbarColor01">
+                                                <ul class="navbar-nav mr-auto">
+                                                        <li class="nav-item active">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#intro">Enabling Emergency Services with Social Media Data</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#TREC">TREC</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#TRECIS">Task</a>
+                                                        </li>
+							<li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#2019AEdition">2019-A Edition</a>
+                                                        </li>
+
+							<li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#2018Edition">2018 Edition</a>
+                                                        </li>
+
+
+                                                </ul>
+                                        </div>
+                                </nav>
+
+
+                        </div>
+
+                </div>
+
+                <!-- Track Intro -->
+                <div class="row" id="intro">
+                        <div class="col-md-12" style="padding-top: 15px">
+
+                                <div class="card">
+                                        <h5 class="card-header">TREC-IS Data Download</h5>
+                                        <div class="card-body">
+                                                <p class="card-text">This page provides download information for the 2019-A and 2018 Editions of TREC-IS. A dataset is comprised of three components: the test topics (events); the ontology of high-level information types; and the tweets for each event to be categorized.</p>
+                                                <!-- <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a> -->
+                                        </div>
+                                        <!--<div class="card-footer text-muted">
+                                                2 days ago
+                                        </div> -->
+                                </div>
+
+                        </div>
+
+
+                        
+
+                </div>
+
+                <!-- Line Break -->
+                <!-- <div class="row">
+                        <div class="col-md-2" style="padding-top: 15px"></div>
+                        <div class="col-md-8" style="padding-top: 15px">
+                                <div class="line" style="height: 3px; background-image: linear-gradient(rgb(68, 76, 85), rgb(125, 125, 125))"></div>
+                        </div>
+                        <div class="col-md-2" style="padding-top: 15px"></div>
+                </div> -->
+
+
+                <!-- Line Break -->
+                <div class="row" id="TREC">
+                        <div class="col-md-2" style="padding-top: 30px"></div>
+                        <div class="col-md-8" style="padding-top: 30px">
+                                <div class="card text-white bg-warning">
+                                        <div class="card-body" style="padding: 8px">
+                                                <h4 class="text-center" style="margin-bottom: 0px">Downloading the Tweets, Topics and Ontology</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-2" style="padding-top: 30px"></div>
+                </div>
+
+
+                <!-- TREC -->
+                <div class="row"  style="padding-top: 15px" >
+				<div class="col-md-12">
+						<div class="card border-primary">
+						<div class="row" >
+                        <div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">Topic Information (Events)</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text">For this track we select a number of events/incidents of different types, e.g. earthquakes, hurricanes, public or shootings to evaluate participating systems for. Participants need to categorize tweets for each event. Topics are provided in a standard TREC topic format as shown below:</p>
+                                                <!-- <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a> -->
+                                        </div>
+										<div class="card-body">
+											<img style="height: 150px; width: 100%; display: block;" src="http://dcs.gla.ac.uk/~richardm/TREC_IS/2018/ExampleTopicImage.png" alt="Card image">
+										</div>
+
+                                
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                                
+										
+										<div class="card-body">
+                                                <p class="card-text"> The contents of the <b>num</b> tag is the unique identifier for the event. Meanwhile, the content of the <b>dataset</b> tag is the reference to the corpus of tweets used during evaluation (if you use the tweet downloader tool you need to know this).    </p>
+                                                <p class="card-text"> When developing your solution, you may use the type of the event (<b>type</b> tag), the event query/title (<b>title</b> tag), and the contents of the narrative (<b>narr</b> tag) as input to your system.</p>
+												<p class="card-text"> We also provide the link to a wikipedia page providing context for the event. We provide this to help participants understand what each event is about (we have found this is useful when perfroming failure analysis for instance). However, <b>your system should not use this URL or linked page</b>, as the information on that page would not exist at the time the event was ongoing.</p>
+
+												<button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/TRECIS-2019-A-Test.topics'">Download 2019-A Topics 22-28 (TOPICS)</button>
+												<button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://dcs.gla.ac.uk/~richardm/TREC_IS/2018/TRECIS-CTIT-H-Test.topics'">Download 2018 Topics 7-21 (TOPICS)</button>
+
+                                        </div>
+                                        
+										
+										
+                                
+
+                        </div>
+						</div>
+						
+						
+						</div>
+				</div>	
+                </div>
+
+                <div class="row"  style="padding-top: 15px" >
+				<div class="col-md-12">
+						<div class="card border-primary">
+						<div class="row" >
+                        <div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">Ontology</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text">To represent the information types that an emergency management officier might be interested in, we developed an ontology for the track based on analysis of other emergency information ontolotgies, response procedure documentation and talking with experts. The full ontology has three levels (Root/High/Low). For 2019-B, we are continuing to focus on the high-level categories. An example ontology entry is shown below:</p>
+                                                <!-- <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a> -->
+                                        </div>
+										<div class="card-body">
+											<img style="height: 250px; width: 100%; display: block;" src="http://dcs.gla.ac.uk/~richardm/TREC_IS/2018/ExampleCategoryImage.png" alt="Card image">
+										</div>
+
+					 <div class="card-body">
+
+
+                                        <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://trecis.org/2019/ITR-H.types.v4.json'">Download 2019-B Ontology (v4) (JSON)</button> 
+
+					</div>
+
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                                
+                                        <h5 class="card-header">Usage Guidelines</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text"> Participant systems should assign as many categories (high-level information types) to each tweet in each event stream as they think are relevant. Note that this is different to the 2018 edition, see <a href="http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/2019Changes.html" >this page</a> for more information.  Systems may use any information provided in the ontology.</p>
+                                                <p class="card-text"> It is worth noting that what might classify as belonging to a category is often event-dependent. For example, people reporting an explosion is only likely to occur during bombing events. For this reason, we also provide participants with Event Type Profiles for the different broad event types used this year. Participants may use these profiles as they wish when building their systems.</p> 
+                                        </div>
+										
+										
+                                
+
+                        </div>
+						
+						<div class="col-md-3">
+
+                        
+
+					<h5 class="card-header">Event Type Profiles</h5>
+					<div class="card-body">
+					    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://trecis.org/2018/TREC IS User Profile Bombing.pdf'">Bombing (PDF)</button>
+					    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://trecis.org/2018/TREC IS User Profile Earthquake.pdf'">Earthquake (PDF)</button>
+					    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://trecis.org/2018/TREC IS User Profile Flood.pdf'">Flood (PDF)</button>
+					    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://trecis.org/2018/TREC IS User Profile Typhoon or Hurricane.pdf'">Typhoon/Hurricane (PDF)</button>
+					    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://trecis.org/2018/TREC IS User Profile Wildfire.pdf'">Wildfire (PDF)</button>
+					    <button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://trecis.org/2018/TREC IS User Profile Shooting.pdf'">Shooting (PDF)</button>
+ 					</div>
+					
+                    
+
+                        </div>
+						</div>
+						
+						
+						</div>
+				</div>	
+                </div>
+
+		<!-- TREC -->
+                <div class="row"  style="padding-top: 15px" >
+				<div class="col-md-12">
+						<div class="card border-primary">
+						<div class="row" >
+                        <div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">Getting the Tweets (JSON)</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text">For each event, we provide a stream of tweets collected during that event to categorize that can be downloaded as described below:</p>
+                                        </div>
+										<div class="card-body" style="padding-top: 0px">
+												<p class="card-text"><b>Stream download via TREC-IS-Client-v3.jar</b>: Twitter allows the hosting of small datasets (less than 50k tweets) and the track organizers maintain a server with the event tweets which you can use to download a copy directly. The client jar will first attempt to connect to the central server and upload your institution information (see below for why we collect this) and then will download a copy of the tweets for each event, for a particular dataset. There are three currently available datasets 'trecis2018-test', 'trecis2018-train' and 'trecis2019-A-test'. It will write one file per event (GZIPed JSON format) in the current directory, one line per tweet. The jar was compiled with Java 1.8, it may not be compatible with later java versions. We do not guarantee that this service will always be available, if the service is down, you can <a href="http://www.dcs.gla.ac.uk/~richardm/Home/Contact.html">email me</a>.</p>
+												
+                                                                                                <p class="card-text">First, you need to download the <b>TREC-IS-Client-v3.jar</b> file and <b>info.json</b> file using the two buttons below and put them in a folder together. Second, you need to open the info.json file and edit the information in here for your particular institution:
+<ul>
+<li><b>institution</b> should be the name of your company or university.</li>
+<li><b>contactname</b> should be the name of the person downloading the dataset.</li>
+<li><b>email</b> should be the email address of that person.</li>
+<li><b>type</b> should be either 'academic', 'public sector', or 'industry'.</li> 
+<li><b>request</b> should be the dataset identifier, i.e. either 'trecis2018-test', 'trecis2018-train' or 'trecis2019-A-test'. If you are reading this page, you probably want 'trecis2019-A-test', although you can also download the older events to use as training data (if you want to download all of them, you will need to call the client jar three times, with a different 'request' line in the info.json file each time).</li>
+</ul>
+Once you have finished editing the info.json file, save it and then run the following command from a shell or terminal: 
+												<p style="margin-top: 10px"><code>java -jar TREC-IS-Client-v3.jar info.json</code>
+												<button type="button" style="margin-top: 20px" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/TREC-IS-Client-v3.jar'">Download TREC-IS-Client-v3.jar (V3)</button>
+												<button type="button" style="margin-top: 10px" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/info.json'">Download info.json</button>
+										</div>
+										
+
+                                
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">Citations</h5>
+										
+										<div class="card-body">
+                                                <p class="card-text"> The tweet streams that we use here were collected from a variety of sources, both internal and external. Tweets were subject to pre-filtering by the organisers. Below are where each tweet stream was sourced and the appropriate citation:   </p>
+                                        </div>
+										
+										<div class="card">
+										<div class="card-body">
+											<p class="card-text"><a href="http://www.crisislex.org/data-collections.html#CrisisLexT26"><b>CrisisLex T26</b></a></p>
+											<p class="card-text"><b>Events:</b> 2013 Bohol Earthquake</p>
+											<p class="card-text"> A. Olteanu, S. Vieweg, C. Castillo. 2015. What to Expect When the Unexpected Happens: Social Media Communications Across Crises. In Proceedings of the ACM 2015 Conference on Computer Supported Cooperative Work and Social Computing (CSCW '15). ACM, Vancouver, BC, Canada.</p>
+										</div>
+										</div>
+										
+										<div class="card">
+										<div class="card-body">
+											<p class="card-text"><a href="http://crisisnlp.qcri.org/"><b>CrisisNLP Resource #1</b></a></p>
+											<p class="card-text"><b>Events:</b>2014 California Earthquake</p>
+											<p class="card-text">Muhammad Imran, Prasenjit Mitra, and Carlos Castillo: Twitter as a Lifeline: Human-annotated Twitter Corpora for NLP of Crisis-related Messages. In Proceedings of the 10th Language Resources and Evaluation Conference (LREC), pp. 1638-1643. May 2016, Portorož, Slovenia. </p>
+										</div>
+										</div>
+
+										<div class="card">
+                                                                                <div class="card-body">
+                                                                                        <p class="card-text"><a href="https://digital.library.unt.edu/ark:/67531/metadc991469/"><b>UNT Digital Libruary Dataset</b></a></p>
+                                                                                        <p class="card-text"><b>Events:</b>2017 Dallas Shooting</p>
+                                                                                </div>
+                                                                                </div>
+
+										<div class="card">
+                                                                                <div class="card-body">
+                                                                                        <p class="card-text"><a href="https://www.dlr.de/dlr/en/"><b>German Aerospace Center (DLR) Dataset</b></a></p>
+                                                                                        <p class="card-text"><b>Events:</b>2018 Florence Hurricane</p>
+                                                                                        <p class="card-text">Donated by: Anna Kruspe, Jens Kersten and Friederike Klan</p>
+                                                                                </div>
+                                                                                </div>
+										
+										<div class="card">
+                                                                                <div class="card-body">
+                                                                                        <p class="card-text"><a href="https://dataverse.scholarsportal.info/dataset.xhtml?persistentId=hdl:10864/12033"><b>Dataverse Scholar Portal Web Archive</b></a></p>
+                                                                                        <p class="card-text"><b>Events:</b>2016 Fort McMurray Wildfire</p>
+                                                                                </div>
+                                                                                </div>
+
+										
+										<div class="card">
+										<div class="card-body">
+											<p class="card-text"><b>Crawled by the Organizers</b></p>
+											<p class="card-text"><b>Events:</b> 2019 Andover Fire, 2019 Choco Flood</p>
+										</div>
+										</div>
+                                        
+										
+										
+                                
+
+                        </div>
+						</div>
+	
+						
+						</div>
+				</div>	
+                </div>
+
+
+               <div class="row"  style="padding-top: 15px" >
+                        <div class="col-md-12">
+
+                                <div class="card border-primary">
+                                        <h5 class="card-header">Personal Data Processing Policy</h5>
+                                        <div class="card-body">
+						<p class="card-text">By downloading the twitter datasets using the tool provided, you agree to the University of Glasgow processing your personal data, as defined by the EU General Data Protection Regulation (GDPR) - your name and email in this case. Queries about data processing and access/deletion requests should be sent to <a href="http://www.dcs.gla.ac.uk/~richardm/Home/Contact.html">me via email</a>. We will store your data for as long as the track is on-going and up-to 2 years beyond that. I may contact you using the details provided to notify you about changes in the datasets or track, to provide information or ask you questions about your participation or otherwise contact you about topics relevant to emergency management. We may collate statistics from the provided information that will be published, but we will not release individual names or email addresses.  
+ 
+</p>
+</div>
+                                </div>
+</div>
+                </div>
+					
+                
+
+                <div class="row" id="ack">
+                        <div class="col-md-12" style="padding-top: 45px; padding-bottom: 45px">
+
+                                <div class="card">
+                                        <h5 class="card-header">Supported By</h5>
+                                        <div class="card-body">
+                                                <img style="height: 100px; width: 25%; display: inline;" src="http://dcs.gla.ac.uk/~richardm/TREC_IS/nistident_fleft_150ppi.jpg" alt="Card image" onclick="location.href='https://www.nist.gov/'">
+                                                <img style="height: 100px; width: 16%; display: inline;" src="http://dcs.gla.ac.uk/~richardm/TREC_IS/pscd.png" alt="Card image" onclick="location.href='https://www.nist.gov/ctl/pscr'">
+                                                <img style="height: 75px; width: 45%; display: inline;" src="http://terrier.org/img/CompScience_colour_transparent_small.png" alt="Card image" onclick="location.href='https://www.gla.ac.uk/schools/computing/'">
+
+
+                                        </div>
+                                </div>
+
+                                <div class="card border-info">
+                                        <div class="card-body">
+
+                                                <footer>Copyright © 2018 University of Glasgow | All Rights Reserved</footer>
+
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+
+
+
+       </div>
+
+
+
+</body>
+
+</html>

@@ -1,2 +1,0 @@
-sed 's/}\,{\"metadata\":{\"iso_language_code\":\"en\"\,\"result_type\":\"recent\"}\,\"creat/}\
-{\"creat/g' $1 | sed 's/\]\,\"search_metadata\".*}}//g' | sed 's/^.*{\"statuses\"\:\[{\"metadata\"\:{\"iso_language_code\"\:\"en\"\,\"result_type\"\:\"recent\"}\,/{/g' > $1.final

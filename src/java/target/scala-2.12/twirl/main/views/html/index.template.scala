@@ -54,8 +54,8 @@ Seq[Any](format.raw/*2.1*/("""
 
               /*
                   -- GENERATED --
-                  DATE: 2020-11-15T19:06:14.231
-                  SOURCE: /Users/pseudo/Documents/GitHub/HelpMe/src/app/views/index.scala.html
+                  DATE: 2020-11-18T08:33:27.715
+                  SOURCE: /Users/pseudo/Documents/GitHub/HelpMe/src/java/app/views/index.scala.html
                   HASH: b743cbab92f94be9dd3756e5e9b29e8a8c53f162
                   MATRIX: 905->1|1014->17|1041->19|1072->42|1111->44|1140->47|1212->93|1240->101|1269->104|1378->183
                   LINES: 27->1|32->2|33->3|33->3|33->3|34->4|36->6|36->6|37->7|40->10

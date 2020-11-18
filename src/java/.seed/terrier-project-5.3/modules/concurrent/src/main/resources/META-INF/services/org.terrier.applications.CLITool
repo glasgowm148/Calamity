@@ -1,3 +1,0 @@
-org.terrier.applications.batchquerying.ParallelTRECQuerying$Command
-org.terrier.evaluation.TrecEvalEvaluation$Command
-org.terrier.evaluation.BatchEvaluationCommand
