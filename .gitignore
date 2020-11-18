@@ -23,3 +23,5 @@ CoreNLP
 src/heapdump.*
 src/javacore.*
 src/Snap.*
+data/*
+*.idea

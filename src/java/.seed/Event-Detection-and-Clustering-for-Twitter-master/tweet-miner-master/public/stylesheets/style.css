@@ -1,0 +1,81 @@
+html{
+	background-size: cover;
+	background-color: grey;
+	/* background-image: url(http://localhost:9000/public/images/bg.jpg);*/
+}
+
+#container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+p{
+    color: white;
+}
+
+h1{
+	font-family: 'Chela One', cursive;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+}
+
+#searchbox{
+	height: 40px;
+	width: 800px;
+	border-radius: 3px;
+	border-color: white;
+	color: white;
+	font-size: 20px;
+	background-color: transparent;
+}
+
+::placeholder{
+	color: white;
+	padding: 8px;
+}
+
+#goButton{
+	width: 50px;
+	margin-left: 30px;
+	background-color: transparent;
+	color: white;
+	border: none;
+}
+
+.material-icons{
+	font-size: 40px !important;
+}
+
+#content{
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    color: white;
+    table-layout: auto;
+    border: 1px solid white;
+}
+
+th {
+    font-weight: bold;
+	/*padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 2px;
+	padding-top: 2px;*/
+	padding: 8px;
+	text-align: center;
+}
+
+/*th,*/ td {
+	text-align: center;
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+a, a:hover, a:active, a:visited { color: aqua; }
+/**/

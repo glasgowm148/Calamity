@@ -1,0 +1,2 @@
+org.terrier.structures.IndexOnDisk$DiskIndexLoader
+org.terrier.structures.IndexFactory$DirectIndexLoader

@@ -1,0 +1,45 @@
+run
+clean
+run
+clean
+reload
+run
+clean
+run
+val sc = new org.apache.spark.SparkContext("localhell")
+val sc = new org.apache.spark.SparkContext("localhell");
+;
+val sc = new org.apache.spark.SparkContext("localhell");
+val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+reload
+run
+reload
+run
+reload
+run
+reload
+run
+reload
+run
+reload
+run
+clean
+reload
+clean
+run
+clean
+reload
+run
+clean
+run
+sbt
+run
+reload
+run
+reload
+run
+reload
+clean
+run
+sbt
+run
