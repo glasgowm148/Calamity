@@ -27,3 +27,5 @@ data/*
 .idea/*
 src/.javaseed
 src/.playseed
+src/java/target/streams/_global/playCommonClassloader/_global/streams/out
+src/java/target/streams/_global/playCommonClassloader/_global/streams/out

@@ -1,4 +1,4 @@
-tweet_id,score_mean,score_std,score_k
+tweet_id,priority,score_std,score_k
 211281973870727170,0.25,0.0,1
 211557401231495171,0.5,0.0,1
 211565974422425600,0.75,0.0,1

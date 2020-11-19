@@ -24,7 +24,8 @@ public class TermFrequency
     static final float min_diff = 0.0001f;  //condition to judge whether recurse or not
     private static final int nKeyword=5;         //number of keywords to extract,default 5
     private static final int coOccuranceWindow=3; //size of the co-occurance window, default 3
-    private static String[] providedKeywords = new String[]{"Russia", "fire", "wildfire"};
+    private static String[] providedKeywords = new String[]{"Russia", "fire", "Fire", "explosions", "choke", "burning", "wildfire", "wildfires", "Explosions"};
+    //private static String[] providedKeywords = new String[]{"Avalanche", "landslide", "earthquake", "sinkhole", "fire", "wildfire", "volcanic eruption", "flood", "Tsunami"};
 
     /**
      * calculate TF value of each word in the tweet text
@@ -132,8 +133,10 @@ public class TermFrequency
                 }
             }
             System.out.println("\ngetWordScore for:" + tweet.getIdStr() + "\n " + getWordScore(tweet) );
-            System.out.println(calculate(systemKeywordList, providedKeywords ));
+            List<Float> result = calculate(systemKeywordList, providedKeywords );
+            System.out.println("\nPrecision, Recall, F-Measure for dict:\n" + result);
 
+            tweet.setResult(result);
             tweetListKeywords.put(tweet.getId().toString(), systemKeywordList);
         }
         System.out.println("\ntweetListKeywords:\n" + tweetListKeywords);
@@ -311,17 +314,16 @@ public class TermFrequency
     public static List<Float> calculate(List<String> tweetListKeywords,String[] manualKeywords)
     {
 
-
         int sysLen=tweetListKeywords.size();
         int manLen=manualKeywords.length;
+
         //Caculate.printKeywords(systemKeywords,manualKeywords);
+
         int hit=0;
-        for(int i=0;i<sysLen;i++)
-        {
-            for(int j=0;j<manLen;j++)
-            {
-                if(tweetListKeywords.get(i).equals(manualKeywords[j]))
-                {
+
+        for (String tweetListKeyword : tweetListKeywords) {
+            for (String manualKeyword : manualKeywords) {
+                if (tweetListKeyword.equals(manualKeyword)) {
                     hit++;
                     break;
                 }
@@ -347,6 +349,7 @@ public class TermFrequency
         result.add(Float.parseFloat(df.format(pValue)));
         result.add(Float.parseFloat(df.format(rValue)));
         result.add(Float.parseFloat(df.format(fValue)));
+
         return result;
     }
 

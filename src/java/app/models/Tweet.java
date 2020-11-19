@@ -8,7 +8,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.annotations.Expose;
-import play.core.routing.Route;
 
 import java.sql.Timestamp;
 import java.util.ArrayList;
@@ -51,6 +50,7 @@ public class Tweet<S, O, features> {
     private double negative;
     private Map<String, Double> stringDoubleMap;
     private double tfidf;
+    private List<Float> result;
 
     public Tweet() {
         super();
@@ -362,6 +362,14 @@ public class Tweet<S, O, features> {
 
     public double getTFIDF(){
         return tfidf;
+    }
+
+    public void setResult(List<Float> result) {
+        this.result = result;
+    }
+
+    public Float getResult(int i) {
+        return result.get(i);
     }
 }
 @JsonIgnoreProperties(ignoreUnknown = true)

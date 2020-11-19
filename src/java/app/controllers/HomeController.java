@@ -97,17 +97,14 @@ public class HomeController extends Controller {
         tweetList = ParseJSON();
 
         getKeywords(tweetList);
-        /*
+        System.out.println("\ntweetList.size():\n" + tweetList.size());
+
         for(Tweet tweet : tweetList) {
             Sentiment(tweet);
             Features(tweet);
             // Create the feature vector
             FeatureVec(tweet);
-        }
-        System.out.println("\ntweetList.size():\n" + tweetList.size());
 
-
-        for(Tweet tweet: tweetList){
             System.out.println("\nTweet:");
             System.out.println(tweet.getText());
             System.out.println(tweet.getFeatures());
@@ -116,15 +113,11 @@ public class HomeController extends Controller {
 
 
 
+
         System.out.println(featureVectorList);
 
 
-        //System.out.println(featureVectorList);
-        // Outputs to browser
-
-         */
-
-
+        //Outputs to browser
         return ok(Sanitise.toPrettyFormat(path));
     }
 
@@ -266,7 +259,6 @@ public class HomeController extends Controller {
             try {
                 JsonNode n = Json.parse(s);
                 Tweet tweet = mapper.treeToValue(n, Tweet.class);
-                //System.out.println("\nText:\n" + tweet.getText());
                 tweetList.add(Sanitise(tweet));
             } catch (JsonProcessingException jsonProcessingException) {
                 //jsonProcessingException.printStackTrace();
@@ -310,13 +302,13 @@ public class HomeController extends Controller {
         System.out.println("\nTerm Frequency:");
         System.out.println(TermFrequency.getTF(tweet.getText()));
 
-        HashMap<String, Float> tflIST = TermFrequency.getTF(tweet.getText());
-        TFIDFCalculator calculator = new TFIDFCalculator();
-        double tfidf = calculator.tfIdf(Collections.singletonList(tweet.getText()), tweetList, "blaze");
-        System.out.println("TF-IDF(blaze) = " + tfidf);
+        //HashMap<String, Float> tflIST = TermFrequency.getTF(tweet.getText());
+        //TFIDFCalculator calculator = new TFIDFCalculator();
+        //double tfidf = calculator.tfIdf(Collections.singletonList(tweet.getText()), tweetList, "blaze");
+        //System.out.println("TF-IDF(blaze) = " + tfidf);
 
-        double idf = calculator.idf(tweetList, "fire");
-        System.out.println("IDF (blaze) = " + tfidf);
+        //double idf = calculator.idf(tweetList, "fire");
+        //System.out.println("IDF (blaze) = " + tfidf);
         //tweet.setTFIDF(tfidf);
 
          // FeatureVector.java
