@@ -29,5 +29,5 @@ model:
 
 # target you want to predict
 target:
-    - event_id
+    - postCategories_x
     - priority

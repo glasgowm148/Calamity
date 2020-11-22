@@ -28,4 +28,4 @@ model:
 
 # target you want to predict
 target:
-    - eventID
+    - postCategories_x

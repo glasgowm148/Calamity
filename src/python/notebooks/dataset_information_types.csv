@@ -1,0 +1,26 @@
+id,desc,intentType,exampleLowLevelTypes
+Request-GoodsServices,The user is asking for a particular service or physical good.,Request,"['PsychiatricNeed', 'Equipment', 'ShelterNeeded', 'Vehicles']"
+Request-SearchAndRescue,The user is requesting a rescue (for themselves or others),Request,"['SelfRescue', 'OtherRescue']"
+Request-InformationWanted,The user is requesting information,Request,"['PersonsNews', 'MissingPersons', 'EventStatus']"
+CallToAction-Volunteer,The user is asking people to volunteer to help the response effort,CallToAction,['RegisterNow']
+CallToAction-Donations,The user is asking people to donate goods/money,CallToAction,"['DonateMoney', 'DonateGoods', 'PromoteFundRaising']"
+CallToAction-MovePeople,The user is asking people to leave an area or go to another area,CallToAction,"['EvacuateNow', 'GatherAt']"
+Report-FirstPartyObservation,The user is giving an eye-witness account,Report,"['Group/IndividualMovement', 'PeopleEvacuating', 'DamageObserved', 'CollapsedStructure', 'ExplosionDamage', 'RoadBlocked', 'CompromisedBridge', 'CommunicationLinesDown']"
+Report-ThirdPartyObservation,The user is reporting a information that they recieved from someone else,Report,"['Group/IndividualMovement', 'PeopleEvacuating', 'DamageObserved', 'CollapsedStructure', 'ExplosionDamage', 'RoadBlocked', 'CompromisedBridge', 'CommunicationLinesDown']"
+Report-Weather,The user is providing a weather report (current or forcast),Report,"['Current', 'Forecast']"
+Report-Location,The post contains information about the user or observation location,Report,"['UserLocation', 'IncidentLocation']"
+Report-EmergingThreats,The user is reporting a potential problem that may cause future loss of life or damage,Report,"['BuildingsAtRisk', 'PowerOutage', 'UnexplodedBomb', 'PeopleNotEvacuating', 'FoodShortage', 'InfectiousHumanDisease', 'FuelShortage', 'ContaminatedWaterSupply', 'ContaminatedWater', 'TheftOfAid', 'Looting', 'PriceGouging', 'IDPConcentration', 'WaterShortage', 'SecurityConcern']"
+Report-NewSubEvent,The user is reporting a new occurence that public safety officers need to respond to.,Report,"['PeopleTrapped', 'UnexplodedBombFound', 'UnexplodedBomb', 'IndiscriminateShooting', 'GroupViolence', 'HostageTaken', 'MedicalEmergency']"
+Report-MultimediaShare,The user is sharing images or video,Report,"['Video', 'Images', 'Map']"
+Report-ServiceAvailable,The user is reporting that they or someone else is providing a service,Report,"['HospitalOperating', 'ShelterOffered', 'WaterDistributionPoint', 'FoodDistributionPoint']"
+Report-Factoid,"The user is relating some facts, typically numerical",Report,"['LandDevastated', 'InjuriesCount', 'KilledCount', 'NumberDisplacedPeople', 'NumberOfAssailants', 'ShooterCount', 'DamageCost']"
+Report-Official,An official report by a government or public safety representative,Report,"['OfficialStatement', 'RegionalWarning', 'PublicAlert', 'PressRelease']"
+Report-News,The post is a news report providing/linking to current/continious coverage of the event,Other,"['NewsHeadline', 'NewsArticle']"
+Report-CleanUp,A report of the clean up after the event,Report,[]
+Report-Hashtags,Reporting which hashtags correspond to each event,Report,[]
+Report-OriginalEvent,A report of the original event occuring. This was in effect the 'Other-KnownAlready' category from 2018.,Report,[]
+Other-ContextualInformation,"The post contains contextual information that can help understand the event, but is not about the event itself.",Other,"['ExampleOfPreviousEvent', 'LegalInformation', 'HistoricalContext']"
+Other-Advice,The  author is providing some advice to the public,Other,[]
+Other-Sentiment,The post is expressing some sentiment about the event,Other,"['Sadness', 'Hope', 'Support', 'Wellwishing']"
+Other-Discussion,Users are discussing the event,Other,"['Causes', 'Blame', 'Rumors']"
+Other-Irrelevant,The post is un-related to the event or contains no information.,Other,['Irrelevant']
