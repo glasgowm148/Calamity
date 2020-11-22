@@ -12,31 +12,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
-      <change afterPath="$PROJECT_DIR$/../fV10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/featureVectorList.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../before_selection.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../python/notebooks/.ipynb_checkpoints/1_b_Load_training_data-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/.ipynb_checkpoints/1_b_Load_training_data-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/notebooks/.ipynb_checkpoints/5_1_igel_cluster-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/.ipynb_checkpoints/5_1_igel-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/.ipynb_checkpoints/5_1_igel-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../python/notebooks/1_b_Load_training_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/1_b_Load_training_data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/notebooks/5_1_igel_cluster.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/notebooks/model_results/description.json" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/model_results/description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/notebooks/model_results/evaluation.json" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/model_results/evaluation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/notebooks/model_results/model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/model_results/model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/5_1_igel.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/5_1_igel.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +238,7 @@
       <workItem from="1605715666391" duration="1513000" />
       <workItem from="1605723309106" duration="7418000" />
       <workItem from="1606054219215" duration="1138000" />
-      <workItem from="1606057072937" duration="3072000" />
+      <workItem from="1606057072937" duration="5943000" />
     </task>
     <servers />
   </component>

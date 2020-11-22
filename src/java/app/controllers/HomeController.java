@@ -53,7 +53,7 @@ public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
     private final Duration askTimeout = Duration.ofSeconds(3L);
-    private final File path = new File("../../data/raw/data/2020/2020-A/tweets/siberian_wildfires/before_selection.jsonl");
+    private final File path = new File("../../data/raw/data/2020/2020-A/tweets/siberian_wildfires/selected.jsonl");
     Object[] objArray;
     List<Tweet> tweetList = new ArrayList<>();
     List<Vector> featureVectorList = new ArrayList<>();
@@ -112,7 +112,7 @@ public class HomeController extends Controller {
         }
         PrintWriter out = null;
         try {
-            out = new PrintWriter(new FileWriter("../before_selection.txt"));
+            out = new PrintWriter(new FileWriter("../selected.txt"));
         } catch (IOException e) {
             e.printStackTrace();
         }
