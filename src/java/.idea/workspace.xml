@@ -12,14 +12,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
+      <change afterPath="$PROJECT_DIR$/../fV10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/featureVectorList.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/logic/TermFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/TermFrequency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Tweet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/.ipynb_checkpoints/1_b_Load_training_data-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/.ipynb_checkpoints/1_b_Load_training_data-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/.ipynb_checkpoints/5_1_igel_cluster-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/1_b_Load_training_data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/1_b_Load_training_data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/5_1_igel_cluster.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/model_results/description.json" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/model_results/description.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/model_results/evaluation.json" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/model_results/evaluation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python/notebooks/model_results/model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/../python/notebooks/model_results/model.sav" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,6 +253,8 @@
       <workItem from="1605559965650" duration="1757000" />
       <workItem from="1605715666391" duration="1513000" />
       <workItem from="1605723309106" duration="7418000" />
+      <workItem from="1606054219215" duration="1138000" />
+      <workItem from="1606057072937" duration="3072000" />
     </task>
     <servers />
   </component>
@@ -411,8 +430,8 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="460" y="230" key="Git.Interactive.Rebase.Dialog/-1440.0.1440.900/-2880.98.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1604310011519" />
-    <state width="1798" height="431" key="GridCell.Tab.0.bottom" timestamp="1605353586047">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1638" height="345" key="GridCell.Tab.0.bottom" timestamp="1606057065415">
+      <screen x="64" y="23" width="1856" height="1057" />
     </state>
     <state width="1878" height="455" key="GridCell.Tab.0.bottom/-1440.0.1440.900/-2880.98.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1604852538198" />
     <state width="1878" height="543" key="GridCell.Tab.0.bottom/-1440.23.1440.877/-2812.121.1372.877/0.23.1920.1057@-1440.23.1440.877" timestamp="1604422512386" />
@@ -423,9 +442,10 @@
     <state width="1398" height="368" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604868022940" />
     <state width="1878" height="453" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1605261723293" />
     <state width="1798" height="431" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605353586047" />
+    <state width="1638" height="345" key="GridCell.Tab.0.bottom/64.23.1856.1057@64.23.1856.1057" timestamp="1606057065415" />
     <state width="1798" height="431" key="GridCell.Tab.0.bottom/72.23.1848.1057@72.23.1848.1057" timestamp="1605265679647" />
-    <state width="1798" height="431" key="GridCell.Tab.0.center" timestamp="1605353586036">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1638" height="345" key="GridCell.Tab.0.center" timestamp="1606057065412">
+      <screen x="64" y="23" width="1856" height="1057" />
     </state>
     <state width="1878" height="455" key="GridCell.Tab.0.center/-1440.0.1440.900/-2880.98.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1604852538191" />
     <state width="1878" height="543" key="GridCell.Tab.0.center/-1440.23.1440.877/-2812.121.1372.877/0.23.1920.1057@-1440.23.1440.877" timestamp="1604422512383" />
@@ -436,9 +456,10 @@
     <state width="1398" height="368" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604868022935" />
     <state width="1878" height="453" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1605261723286" />
     <state width="1798" height="431" key="GridCell.Tab.0.center/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605353586036" />
+    <state width="1638" height="345" key="GridCell.Tab.0.center/64.23.1856.1057@64.23.1856.1057" timestamp="1606057065412" />
     <state width="1798" height="431" key="GridCell.Tab.0.center/72.23.1848.1057@72.23.1848.1057" timestamp="1605265679646" />
-    <state width="1798" height="431" key="GridCell.Tab.0.left" timestamp="1605353586031">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1638" height="345" key="GridCell.Tab.0.left" timestamp="1606057065412">
+      <screen x="64" y="23" width="1856" height="1057" />
     </state>
     <state width="1878" height="455" key="GridCell.Tab.0.left/-1440.0.1440.900/-2880.98.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1604852538189" />
     <state width="1878" height="543" key="GridCell.Tab.0.left/-1440.23.1440.877/-2812.121.1372.877/0.23.1920.1057@-1440.23.1440.877" timestamp="1604422512382" />
@@ -449,9 +470,10 @@
     <state width="1398" height="368" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604868022933" />
     <state width="1878" height="453" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1605261723285" />
     <state width="1798" height="431" key="GridCell.Tab.0.left/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605353586031" />
+    <state width="1638" height="345" key="GridCell.Tab.0.left/64.23.1856.1057@64.23.1856.1057" timestamp="1606057065412" />
     <state width="1798" height="431" key="GridCell.Tab.0.left/72.23.1848.1057@72.23.1848.1057" timestamp="1605265679645" />
-    <state width="1798" height="431" key="GridCell.Tab.0.right" timestamp="1605353586040">
-      <screen x="1440" y="0" width="1920" height="1080" />
+    <state width="1638" height="345" key="GridCell.Tab.0.right" timestamp="1606057065413">
+      <screen x="64" y="23" width="1856" height="1057" />
     </state>
     <state width="1878" height="455" key="GridCell.Tab.0.right/-1440.0.1440.900/-2880.98.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1604852538195" />
     <state width="1878" height="543" key="GridCell.Tab.0.right/-1440.23.1440.877/-2812.121.1372.877/0.23.1920.1057@-1440.23.1440.877" timestamp="1604422512384" />
@@ -462,6 +484,7 @@
     <state width="1398" height="368" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604868022938" />
     <state width="1878" height="453" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1605261723287" />
     <state width="1798" height="431" key="GridCell.Tab.0.right/0.23.1440.877/1440.0.1920.1080@1440.0.1920.1080" timestamp="1605353586040" />
+    <state width="1638" height="345" key="GridCell.Tab.0.right/64.23.1856.1057@64.23.1856.1057" timestamp="1606057065413" />
     <state width="1798" height="431" key="GridCell.Tab.0.right/72.23.1848.1057@72.23.1848.1057" timestamp="1605265679647" />
     <state width="1878" height="376" key="GridCell.Tab.1.bottom" timestamp="1603660995038">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -562,8 +585,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/controllers/HomeController.java</url>
-          <line>193</line>
+          <line>205</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/controllers/HomeController.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/models/Tweet.java</url>
@@ -572,6 +600,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/controllers/HomeController.java</url>
+          <line>90</line>
+          <properties class="controllers.HomeController" method="renderIndex">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

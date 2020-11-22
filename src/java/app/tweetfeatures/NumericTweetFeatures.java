@@ -3,6 +3,9 @@ package tweetfeatures;
 import classifiers.SentimentClassifier;
 import models.Tweet;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.*;
 
 public class NumericTweetFeatures {
@@ -134,6 +137,10 @@ public class NumericTweetFeatures {
 		System.out.println(features);
 		Vector<Double> featureVector = new Vector<Double>(features.values());
 		System.out.println(featureVector);
+
+
+
+
 		return featureVector;
 
 	}

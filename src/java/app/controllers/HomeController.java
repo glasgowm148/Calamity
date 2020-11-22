@@ -53,7 +53,7 @@ public class HomeController extends Controller {
     private final ActorRef<Command> counterActor; // , TweetActor
     private final Scheduler scheduler;
     private final Duration askTimeout = Duration.ofSeconds(3L);
-    private final File path = new File("../../data/raw/data/2020/2020-A/tweets/siberian_wildfires/10.jsonl");
+    private final File path = new File("../../data/raw/data/2020/2020-A/tweets/siberian_wildfires/before_selection.jsonl");
     Object[] objArray;
     List<Tweet> tweetList = new ArrayList<>();
     List<Vector> featureVectorList = new ArrayList<>();
@@ -110,10 +110,22 @@ public class HomeController extends Controller {
             System.out.println(tweet.getFeatures());
             System.out.println(tweet.getFeatureVector());
         }
+        PrintWriter out = null;
+        try {
+            out = new PrintWriter(new FileWriter("../before_selection.txt"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        for(Tweet tweet : tweetList) {
+            if(tweet.getFeatureVector() != null){
+                out.println(tweet.getFeatureVector());
 
+            }
 
+        }
 
-
+        out.flush();
+        out.close();
         System.out.println(featureVectorList);
 
 
@@ -348,5 +360,7 @@ public class HomeController extends Controller {
         }
 
     }
+
+
 }
 
