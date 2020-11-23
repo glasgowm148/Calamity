@@ -51,7 +51,7 @@ daytonOhioShooting2020
   Information Type Precision (positive class, multi-type, macro): 0.0
   Information Type Recall (positive class, multi-type, macro): 0.0
   Information Type F1 (positive class, multi-type, macro): 0.0
-  Information Type Accuracy (overall, multi-type, macro): 0.9535157894736844
+  Information Type Accuracy (overall, multi-type, macro): 0.9536000000000001
   High Importance Information Type Precision (positive class, multi-type, macro): 0.0
   High Importance Information Type Recall (positive class, multi-type, macro): 0.0
   High Importance Information Type F1 (positive class, multi-type, macro): 0.0
@@ -59,7 +59,7 @@ daytonOhioShooting2020
   Low Importance Information Type Precision (positive class, multi-type, macro): 0.0
   Low Importance Information Type Recall (positive class, multi-type, macro): 0.0
   Low Importance Information Type F1 (positive class, multi-type, macro): 0.0
-  Low Importance Information Type Accuracy (overall, multi-type, macro): 0.9392797783933521
+  Low Importance Information Type Accuracy (overall, multi-type, macro): 0.9393905817174517
 
 elPasoWalmartShooting2020
   Information Type Precision (positive class, multi-type, macro): 0.0

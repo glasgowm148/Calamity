@@ -1,0 +1,46 @@
+TREC-IS 2020-A Task 1 Notebook Evaluator v2.4
+Run: marksrun2 (marks2.run)
+
+--------------------------------------------------
+EVALUATON: Alertng Performance
+Overall performance
+--------------------------------------------------
+> High Importance Alert Worth:	0.0
+> Low Importance Alert Worth:	0.0
+> Accumulated Alert Worth:	0.0
+
+--------------------------------------------------
+EVALUATON: nDCG and Priority
+Overall performance
+--------------------------------------------------
+> nDCG:	0.37102536625890015
+
+--------------------------------------------------
+EVALUATON: Information Type Categorization
+Overall performance
+--------------------------------------------------
+> Information Type Precision (positive class, multi-type, macro):	0.0
+> Information Type Recall (positive class, multi-type, macro):	0.0
+> Information Type F1 (positive class, multi-type, macro):	0.0
+> Information Type Accuracy (overall, multi-type, macro):	0.9284926801341293
+> High Importance Information Type Precision (positive class, multi-type, macro):	0.0
+> High Importance Information Type Recall (positive class, multi-type, macro):	0.0
+> High Importance Information Type F1 (positive class, multi-type, macro):	0.0
+> High Importance Information Type Accuracy (overall, multi-type, macro):	0.9811482784002616
+> Low Importance Information Type Precision (positive class, multi-type, macro):	0.0
+> Low Importance Information Type Recall (positive class, multi-type, macro):	0.0
+> Low Importance Information Type F1 (positive class, multi-type, macro):	0.0
+> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.9118645964711403
+
+--------------------------------------------------
+EVALUATON: Information Priority Level
+Overall Performance
+--------------------------------------------------
+> Priority Label Prediction (F1, macro): 0.1505375457357936
+> Priority Label Prediction High Importance (F1, macro): 0.06399578531879585
+> Priority Label Prediction Low Importance (F1, macro): 0.17786652270958234
+
+--------------------------------------------------
+LATEX
+--------------------------------------------------
+marksrun2 & 0.3710 & 0.0000 & 0.0000 & 0.0000 & 0.0000 & 0.9285 & 0.0640 & 0.1505 \\

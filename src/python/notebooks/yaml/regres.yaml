@@ -13,6 +13,5 @@ model:
     algorithm: RandomForest
 
 target:
-    - tweet_id
+    - postCategories_x
     - priority
-    - label_id

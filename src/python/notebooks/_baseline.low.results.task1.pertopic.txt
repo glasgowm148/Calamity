@@ -96,8 +96,8 @@ Report-ThirdPartyObservation       0.00      0.00      0.00       337
 Report-Weather
                 precision    recall  f1-score   support
 
- Other Classes       0.99      1.00      0.99     12080
-Report-Weather       0.00      0.00      0.00       147
+ Other Classes       0.99      1.00      0.99     12083
+Report-Weather       0.00      0.00      0.00       144
 
       accuracy                           0.99     12227
      macro avg       0.49      0.50      0.50     12227
