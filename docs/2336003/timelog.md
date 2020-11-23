@@ -188,6 +188,60 @@ Week 6
 > 2. Can't access the vector statically, need to tidy Akka
 > 3. Misc low priority issues (logging, refleciton, etc)
 
+# Week 9
+> 17.11.2020 - 19.11.2020
+> `~40h` + `5h` (research methods & techniques)
+> *Dataframe prep and classification attempts* 
+
+##### **17.11.2020** `2.5h`
+
+-Went through the Jupyter notebooks / trecis data
+##### **18.11.2020** `12hr`
+
+- Tidied up my data files and linked properly.
+- TRECIS output format replication
+- idStr output from java
+- feature vector tidying / expanding with better tfidf values (HAN library)
+- multiple files in java method
+##### **19.11.2020** `5h`
+
+- Working in Jupyter to load the labels. 
+- getting the dict_predicision, and a few other features based on tfidf pulling through now
+##### **21.11.2020** `1.5h`
+
+- Logical Regression, Random Forest, working with the TRECIS data 
+##### **22.11.2020** `13h`
+
+- Random Forest, igel, dataframe manipulation (issues with NaN, empty cols, mismatches,etc), set up play-api to export fV to a file for now.
+- Managing to make somewhat sensible predictions? 
+  - Attempted to print `label` (which is one of the informationTypes), all returned 5 ('EmergingThreats') - possibly due to the small dataset provided?
+##### **23.11.2020** `2.5h`
+
+- Tidying up notebooks, stuck on dummy_data currently
+- supervisor meeting
+- tidying work-log
+###### Status:: 
+> Starting to make sense, but still not entirely sure how to split/re-join the data. 
+
+Currently I'm thinking
+1. Get feature_vector `test` of `before_selection`
+2. Get feature vector `train` of `assr*.json` + `labels/topics`
+3. concat + get_dummies 
+4. ML algorithms
+5. fit / evaluate on `train`
+6. predict on `test`
+7. merge predictions to `test`
+8. export `test` to TRECIS output format 
+
+src/python/notebooks/model_results contains results for various ML algorithms
+
+ "results_on_test_data": {
+        "accuracy_score": 0.24867724867724866,
+        "f1_score": 0.24867724867724866,
+        "precision_score": 0.24867724867724866,
+        "recall_score": 0.24867724867724866
+    },
+
 
 
 
