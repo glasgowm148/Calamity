@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/eris-api" />
+            <option value="$PROJECT_DIR$/eris-impl" />
+            <option value="$PROJECT_DIR$/eris-stream-api" />
+            <option value="$PROJECT_DIR$/eris-stream-impl" />
+            <option value="$PROJECT_DIR$/project" />
+            <option value="$PROJECT_DIR$/target/lagom-dynamic-projects/lagom-internal-meta-project-cassandra" />
+            <option value="$PROJECT_DIR$/target/lagom-dynamic-projects/lagom-internal-meta-project-kafka" />
+            <option value="$PROJECT_DIR$/target/lagom-dynamic-projects/lagom-internal-meta-project-service-locator" />
+          </set>
+        </option>
+        <option name="sbtVersion" value="1.3.8" />
+      </SbtProjectSettings>
+    </option>
+  </component>
+</project>

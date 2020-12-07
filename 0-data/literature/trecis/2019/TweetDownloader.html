@@ -1,0 +1,191 @@
+<html>
+<head>
+    <title>TREC Incident Streams Track Homepage</title>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <!-- a jQuery UI theme, here I use "flick" -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/flick/jquery-ui.css">
+
+    <script src="http://dcs.gla.ac.uk/~richardm/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os';</script>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex.css"/>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+        <style type="text/css">
+
+        body, html {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgb(150, 150, 150), rgb(255, 255, 255));
+        }
+
+        </style>
+
+</head>
+
+<body id="myBody"> <!-- onload="openWebSocketConnection()" -->
+
+        <div class="container">
+
+
+                <!-- Nav Bar -->
+                <div class="row">
+                        <div class="col-md-12">
+
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                                        <a class="navbar-brand" href="http://trecis.org">TREC Incident Streams</a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                        </button>
+
+                                        <div class="collapse navbar-collapse" id="navbarColor01">
+                                                <ul class="navbar-nav mr-auto">
+                                                        <li class="nav-item active">
+                                                                <a class="nav-link" href="http://trecis.org#intro">Enabling Emergency Services with Social Media Data</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="http://trecis.org#TREC">TREC</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="http://trecis.org#TRECIS">Task</a>
+                                                        </li>
+														<li class="nav-item">
+                                                                <a class="nav-link" href="http://trecis.org#2018Edition">2019-A Edition</a>
+                                                        </li>
+														<li class="nav-item">
+                                                                <a class="nav-link" href="http://trecis.org#2018Edition">2018 Edition</a>
+                                                        </li>
+
+
+                                                </ul>
+
+                                                <form class="form-inline my-2 my-lg-0">
+                                                        <button class="btn btn-success my-2 my-sm-0" onclick="location.href='#GetInvolved'">Get involved!</button>
+                                                </form>
+                                        </div>
+                                </nav>
+
+
+                        </div>
+
+                </div>
+				
+				<!-- Track Intro -->
+                <div class="row" id="intro">
+                        <div class="col-md-12" style="padding-top: 15px">
+
+                                <div class="card border-primary">
+                                        <h5 class="card-header">Tweet Stream Downloader</h5>
+                                        <div class="card-body">
+                                                <p class="card-text">For 2019 onward, the tweet collections will be provided through a downloader tool. This replaces the orginal downloader tool that was an option available in 2019.</p>
+                                                <!-- <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a> -->
+                                        </div>
+                                        <!--<div class="card-footer text-muted">
+                                                2 days ago
+                                        </div> -->
+                                </div>
+
+                        </div>
+
+
+                        
+
+                </div>
+				
+
+                <div class="row"  style="padding-top: 15px" >
+				<div class="col-md-12">
+						<div class="card">
+						<div class="row" >
+                        <div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">Getting the Tweets (JSON)</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text">For each event, we provide a stream of tweets collected during that event to categorize. There are two ways that participants can download the tweets for each event.</p>
+                                                <p class="card-text"><b>1) By tweet ID using the Twitter API</b>: The first method involves downloading the list of tweet identifiers for each event from this page, and then using an external tool (such as <a href="https://github.com/DocNow/twarc">twarc</a> or <a href="https://github.com/lintool/twitter-tools">twitter-tools</a>) to download each tweet by ID via the Twitter API. You can get the tweet IDs for the 2018 test topics via the button below:</p>
+												<button type="button" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://dcs.gla.ac.uk/~richardm/TREC_IS/2018/TRECIS-CTIT-H-Test.tweetids.tsv'">Download Tweet IDs for the 2018 Test Topics (7-21)</button>
+										</div>
+										<div class="card-body">
+												<p class="card-text"><b>2) Stream download via TREC-IS-Client-v2.jar</b>: Twitter allows the hosting of small datasets (less than 50k tweets) and the track organizers maintain a server with the event tweets which you can use to download a copy directly. To do so, you need to download the TREC-IS-Client-v2.jar file using the button below. This jar will attempt to connect to the central server and download a copy of the tweets for each event, for a particular dataset. There are two currently available datasets 'trecis2018-test' and 'trecis2018-train'. It will write one file per event (GZIP) in the current directory. The jar was compiled with Java 1.8. We do not guarantee that this service will always be available. An example download command is shown below:</p>
+												
+												<p style="margin-top: 10px"><code>java -jar TREC-IS-Client-v2.jar --noNewLinesInTweet trecis2018-test</code>
+												<p class="card-text" style="margin-top: 10px">If you use this method for maintaining the corpus, note that the server outputs tweets using its own format, which differs from Twitter's own slightly. If you omit the --noNewLinesInTweet flag, it will pretty print the json, from which it is easier to see the structure.</p>
+												
+												<button type="button" style="margin-top: 10px" class="btn btn-primary btn-lg btn-block" onclick="location.href='http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/TREC-IS-Client-v2.jar'">Download TREC-IS-Client-v2.jar</button>
+										</div>
+										
+
+                                
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">Citations</h5>
+										
+										<div class="card-body">
+                                                <p class="card-text"> The tweet streams that we use here were collected from a variety of sources, both internal and external. Below are where each tweet stream was sourced and the appropriate citation (if any):   </p>
+                                        </div>
+										
+										<div class="card">
+										<div class="card-body">
+											<p class="card-text"><a href="http://www.crisislex.org/data-collections.html#CrisisLexT26"><b>CrisisLex T26</b></a></p>
+											<p class="card-text"><b>Events:</b> 2013_Boston_bombings, 2012_Guatemala_earthquake, 2012_Italy_earthquakes, 2012_Philipinnes_floods, 2013_Alberta_floods, 2013_Manila_floods, 2013_Queensland_floods, 2013_Typhoon_Yolanda, 2013_Australia_bushfire </p>
+											<p class="card-text"> A. Olteanu, S. Vieweg, C. Castillo. 2015. What to Expect When the Unexpected Happens: Social Media Communications Across Crises. In Proceedings of the ACM 2015 Conference on Computer Supported Cooperative Work and Social Computing (CSCW '15). ACM, Vancouver, BC, Canada.</p>
+										</div>
+										</div>
+										
+										<div class="card">
+										<div class="card-body">
+											<p class="card-text"><a href="http://crisisnlp.qcri.org/"><b>CrisisNLP Resource #2</b></a></p>
+											<p class="card-text"><b>Events:</b> 2011_Joplin_tornado</p>
+											<p class="card-text">Muhammad Imran, Shady Elbassuoni, Carlos Castillo, Fernando Diaz, and Patrick Meier. Practical Extraction of Disaster-Relevant Information from Social Media. In Proceedings of the 22nd international conference on World Wide Web companion, May 2013, Rio de Janeiro, Brazil.</p>
+										</div>
+										</div>
+										
+										<div class="card">
+										<div class="card-body">
+											<p class="card-text"><a href="http://crisisnlp.qcri.org/"><b>CrisisNLP Resource #1</b></a></p>
+											<p class="card-text"><b>Events:</b> 2014_Chile_Earthquake_en, 2015_Nepal_Earthquake_en, 2014_Philippines_Typhoon_Hagupit_en</p>
+											<p class="card-text">Muhammad Imran, Prasenjit Mitra, and Carlos Castillo: Twitter as a Lifeline: Human-annotated Twitter Corpora for NLP of Crisis-related Messages. In Proceedings of the 10th Language Resources and Evaluation Conference (LREC), pp. 1638-1643. May 2016, Portorož, Slovenia. </p>
+										</div>
+										</div>
+										
+										<div class="card">
+										<div class="card-body">
+											<p class="card-text"><b>Crawled by the Organizers</b></p>
+											<p class="card-text"><b>Events:</b> 2018_FL_School_Shooting, 2015_Paris_Attacks</p>
+										</div>
+										</div>
+                                        
+										
+										
+                                
+
+                        </div>
+						</div>
+	
+						
+						</div>
+				</div>	
+                </div>
+
+
+
+
+       </div>
+
+
+
+</body>
+
+</html>

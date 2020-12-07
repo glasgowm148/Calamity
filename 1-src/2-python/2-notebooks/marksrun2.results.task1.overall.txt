@@ -1,0 +1,46 @@
+TREC-IS 2020-A Task 1 Notebook Evaluator v2.4
+Run: marksrun2 (marks2.run)
+
+--------------------------------------------------
+EVALUATON: Alertng Performance
+Overall performance
+--------------------------------------------------
+> High Importance Alert Worth:	-0.04397163120567376
+> Low Importance Alert Worth:	-5.739500164970949e-05
+> Accumulated Alert Worth:	-0.022014513103661735
+
+--------------------------------------------------
+EVALUATON: nDCG and Priority
+Overall performance
+--------------------------------------------------
+> nDCG:	0.46317876423137644
+
+--------------------------------------------------
+EVALUATON: Information Type Categorization
+Overall performance
+--------------------------------------------------
+> Information Type Precision (positive class, multi-type, macro):	0.18578037428563868
+> Information Type Recall (positive class, multi-type, macro):	0.04127610793263314
+> Information Type F1 (positive class, multi-type, macro):	0.05576714423446239
+> Information Type Accuracy (overall, multi-type, macro):	0.9282407786047274
+> High Importance Information Type Precision (positive class, multi-type, macro):	0.06822043371339145
+> High Importance Information Type Recall (positive class, multi-type, macro):	0.04853781860918346
+> High Importance Information Type F1 (positive class, multi-type, macro):	0.05240614764424287
+> High Importance Information Type Accuracy (overall, multi-type, macro):	0.979567078323928
+> Low Importance Information Type Precision (positive class, multi-type, macro):	0.22290456604529568
+> Low Importance Information Type Recall (positive class, multi-type, macro):	0.03898293614003829
+> Low Importance Information Type F1 (positive class, multi-type, macro):	0.05682851157874222
+> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.912032473430243
+
+--------------------------------------------------
+EVALUATON: Information Priority Level
+Overall Performance
+--------------------------------------------------
+> Priority Label Prediction (F1, macro): 0.2364597766582098
+> Priority Label Prediction High Importance (F1, macro): 0.11625961821523047
+> Priority Label Prediction Low Importance (F1, macro): 0.2744177214296769
+
+--------------------------------------------------
+LATEX
+--------------------------------------------------
+marksrun2 & 0.4632 & -0.0440 & -0.0220 & 0.0524 & 0.0558 & 0.9282 & 0.1163 & 0.2365 \\

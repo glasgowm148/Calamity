@@ -1,0 +1,338 @@
+<html>
+<head>
+    <title>2019-A TREC-IS Submission</title>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+    <!-- a jQuery UI theme, here I use "flick" -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/flick/jquery-ui.css">
+
+    <script src="http://dcs.gla.ac.uk/~richardm/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os';</script>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex.css"/>
+    <link rel="stylesheet" href="http://dcs.gla.ac.uk/~richardm/assets/stylesheets/vex-theme-os.css"/>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+        <style type="text/css">
+
+        body, html {
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(rgb(150, 150, 150), rgb(255, 255, 255));
+        }
+
+        </style>
+
+</head>
+
+<body id="myBody"> <!-- onload="openWebSocketConnection()" -->
+
+        <div class="container">
+
+
+                <!-- Nav Bar -->
+                <div class="row">
+                        <div class="col-md-12">
+
+                                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                                        <a class="navbar-brand" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/">TREC Incident Streams</a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                        </button>
+
+                                        <div class="collapse navbar-collapse" id="navbarColor01">
+                                                <ul class="navbar-nav mr-auto">
+                                                        <li class="nav-item active">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#intro">Enabling Emergency Services with Social Media Data</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#TREC">TREC</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#TRECIS">Task</a>
+                                                        </li>
+														<li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#2019BEdition">2019-B Edition</a>
+                                                        </li>
+							<li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#2019AEdition">2019-A Edition</a>
+                                                        </li>
+
+							<li class="nav-item">
+                                                                <a class="nav-link" href="http://dcs.gla.ac.uk/~richardm/TREC_IS/index.html#2018Edition">2018 Edition</a>
+                                                        </li>
+
+
+                                                </ul>
+                                        </div>
+                                </nav>
+
+
+                        </div>
+
+                </div>
+
+                <!-- Track Intro -->
+                <div class="row" id="intro">
+                        <div class="col-md-12" style="padding-top: 15px">
+
+                                <div class="card">
+                                        <h5 class="card-header"><b>2019-B</b>: Participating in the Challenge</h5>
+                                        <div class="card-body">
+                                                <p class="card-text">This page provides information about how to submit the output of your systems (runs) for evaluation within the data challenge for the 2019-B edition. Note that this is not the same as 2019-A, as submission will be handled by TREC. The deadline for submitting runs is the <b>30th September 2019</b>.</p>
+                                                <!-- <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a> -->
+                                        </div>
+                                        <!--<div class="card-footer text-muted">
+                                                2 days ago
+                                        </div> -->
+                                </div>
+
+                        </div>
+
+
+                        
+
+                </div>
+
+                <!-- Line Break -->
+                <!-- <div class="row">
+                        <div class="col-md-2" style="padding-top: 15px"></div>
+                        <div class="col-md-8" style="padding-top: 15px">
+                                <div class="line" style="height: 3px; background-image: linear-gradient(rgb(68, 76, 85), rgb(125, 125, 125))"></div>
+                        </div>
+                        <div class="col-md-2" style="padding-top: 15px"></div>
+                </div> -->
+
+		<!-- Line Break -->
+                <div class="row" id="TREC">
+                        <div class="col-md-2" style="padding-top: 30px"></div>
+                        <div class="col-md-8" style="padding-top: 30px">
+                                <div class="card text-white bg-warning">
+                                        <div class="card-body" style="padding: 8px">
+                                                <h4 class="text-center" style="margin-bottom: 0px">Before Submission</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-2" style="padding-top: 30px"></div>
+                </div>
+
+
+
+		<div class="row"  style="padding-top: 15px" >
+				<div class="col-md-12">
+				<div class="card border-primary">
+				<div class="row">
+                        	<div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">TREC Participation Registration</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text">Editions of TREC-IS that are organised by TREC have some additional administration that participants need to know about and complete. <b>You will not be able to submit your runs without following these steps!</b></p>
+                                                <p class="card-text">First, a reminder that you need to be <b>registered as a participant</b> to TREC 2019 with a unique group identififer. If you registered, then you will have an email entitled 'Welcome to TREC 2019', with a username and password for the <a href="https://trec.nist.gov/act_part/tracks2019.html">active participants part of the TREC website</a>. If you have not already registered then send an email to <b>trec@nist.gov</b> to request a late registration.
+						    <p class="card-text">Once registered you also need to remember to submit an "Agreement Concerning Dissemination of TREC Results" form to NIST. Further details about this can be found in the 'Welcome to TREC 2019' email. Your group will not show up in the run submission form until this form has been processed.
+														
+                                                <!-- <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a> -->
+                                        </div>
+										
+
+                        	</div>
+
+                        	<div class="col-md-6">
+
+                                <div class="card-body">
+
+                                        <img style='width: 100%' src="http://www.dcs.gla.ac.uk/~richardm/PostImages/NIST-Releases-Blockchain-Report-feature-foto.png"/>										
+										
+                                </div>
+				   </div>
+						
+				</div>				
+				</div>
+				</div>	
+                </div>
+
+
+
+                <!-- Line Break -->
+                <div class="row" id="TREC">
+                        <div class="col-md-2" style="padding-top: 30px"></div>
+                        <div class="col-md-8" style="padding-top: 30px">
+                                <div class="card text-white bg-warning">
+                                        <div class="card-body" style="padding: 8px">
+                                                <h4 class="text-center" style="margin-bottom: 0px">Submission Instructions</h4>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-md-2" style="padding-top: 30px"></div>
+                </div>
+
+
+                <!-- TREC -->
+                <div class="row"  style="padding-top: 15px" >
+			<div class="col-md-12">
+			<div class="card border-primary">
+			<div class="row" >
+                        <div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">General Guidelines</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text">
+                                                   For the 2019-B edition of the track, participants can submit the output of different versions of their solution to the organisers. 
+                                                   All submissions will be evaluated against human annotations of the tweets for the six 2019-B test events.
+                                                   Evaluated submissions will be ranked based on a target metric, which promotes the correct classification of tweets that contain critical information (we mostly care about getting actionable information to the response officer, and less about other categories like sentiment or general news reporting).
+						   Further information about the metrics can be found <a href="http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/TREC_IS_Metrics.pdf">here</a>.
+                                                   A participating group can provide a maximum of 4 new submissions.
+                                                   This is to stop a participant from spamming hundreds of submissions with minor parameter tweaks.
+                                                   You may also submit the output of as many systems from previous TREC-IS editions as desired, these do not count towards the 4 system limit (if you participated in previous editions then please do submit the output of those older systems, so we can better track performance across editions). 
+                                                </p>
+
+						<p class="card-text">
+							The advantage of submitting runs is that you will get performances returned to you in October and your system will appear in an overview paper that the track organisers will produce. You will also be invited to contribute to a joint journal paper on lessons learned from 2019-A and 2019-B editions.
+                                                        The evaluation scripts and human labelled data will be released later (likely in December) for those people that could not participate.
+                                                        The organisers will also archive your submitted runs, and will distribute them on request. 
+                                                        This helps promote reproducable research and enables furture systems to be compared with what the state-of-the-art was at submission time. 
+						</p>
+                                                <!-- <a href="#" class="card-link">Card link</a>
+                                                <a href="#" class="card-link">Another link</a> -->
+                                        </div>
+										
+
+                                
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                                		<h5 class="card-header">Run Format</h5>
+										
+						<div class="card-body">
+                                                	<p class="card-text"> 
+								To construct a submission, you need to have a system that outputs predicted information categories and priority levels for each of the tweets in each of the six 2019-B <a href="http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/TRECIS-2019-B-Test.topics">test events</a> for the 2019-B edition. These are the events that can be obtained by requesting the 'trecis2019-B-test' dataset using the  <a href="http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/2019_Instructions.html">downloader jar file</a>.  
+								In effect, we expect participants to have a system that ingests and processes the tweet stream for each event in time order, and will emit one line in a text file per tweet containing the following information separated by tabs:
+							</p>
+							<ul>
+								<li> The incident identifier (the contents of the "num" tags in the <a href="http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/TRECIS-2019-B-Test.topics">incident topic statement</a>) </li>
+								<li> A literal string "Q0" (its to support compatability with an old piece of software) </li>
+								<li> The tweet ID of the tweet, an 18-19 digit number </li>
+								<li> The tweet number in the stream, sometimes referred to as the rank. Start at 1 for each event and count up. </li>
+								<li> An importance/criticality score, this should be how important you consider the information contained within the tweet to be. Depending on your system, you might simply assign scores to each high level category, or use deeper analysis of the tweet text to generate an importance score. Values should be between 0 and 1. </li>
+								<li> The information types within the ontology for the current tweet. Only high-level types are valid categories for this task. This should be a comma-delimited list as illustrated below. Please be careful that the format is correct! </li>
+								<li> The runtag, this should be a unique identifier for your system and institution. For example, UoGlasgow-DLRun1 (please make this meaningful!). </li>
+							</ul>
+                                                	
+						</div>                                        
+										
+										
+                                
+
+                        </div>
+
+			<img style="height: 200px; width: 90%; display: block; margin-left: 5%" src="http://dcs.gla.ac.uk/~richardm/TREC_IS/2019/runFormat.png" alt="Card image">
+                        </div>
+                        </div>
+                </div>
+		</div>
+
+                <div class="row"  style="padding-top: 15px" >
+				<div class="col-md-12">
+				<div class="card border-primary">
+				<div class="row">
+
+                        	<div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">Performing a Submission</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text"> For the 2019-B edition, submissions are made to the Text retrieval Conference organised by the National Institute of Standards and technology: </p>
+						<ul>
+								<li><b><a href="https://ir.nist.gov/trecsubmit/incident.html">https://ir.nist.gov/trecsubmit/incident.html</a></b></li>
+						</ul>
+						    <p class="card-text">You can upload your runs using the above submission form, which will also perform basic submission format checks on your runs.</p>
+                                                <p class="card-text"><b>IMPORTANT!: Remember that you need to be registered with TREC and have submitted the dissemination of TREC results form to submit runs.</b></p>
+												
+						</div>
+										
+										
+                                
+
+                       		</div>
+
+				<div class="col-md-6">
+
+                                
+                                        <h5 class="card-header">Help! I left it too late to register but I still want to submit</h5>
+
+                                        <div class="card-body">
+                                                <p class="card-text">Official runs need to be submitted to TREC, and only participants who submitted runs are allowed to attend the conference in November. However, you still want to participate unofficially, then contact <a href="http://www.dcs.gla.ac.uk/~richardm/Home/Contact.html">me via email</a></p>
+					   </div>
+										
+
+                        	</div>
+
+
+						
+				</div>				
+				</div>
+				</div>	
+                </div>
+
+		
+
+
+               <div class="row"  style="padding-top: 15px" >
+                        <div class="col-md-12">
+
+                                <div class="card border-primary">
+                                        <h5 class="card-header">Personal Data Processing Policy</h5>
+                                        <div class="card-body">
+						<p class="card-text">If uploading your runs to the University of Glasgow, you agree to the University of Glasgow processing your personal data, as defined by the EU General Data Protection Regulation (GDPR) - your name and email in this case. Queries about data processing and access/deletion requests should be sent to <a href="http://www.dcs.gla.ac.uk/~richardm/Home/Contact.html">me via email</a>. We will store your data for as long as the track is on-going and up-to 2 years beyond that. I may contact you using the details provided to notify you about changes in the datasets or track, to provide information or ask you questions about your participation or otherwise contact you about topics relevant to emergency management. We may collate statistics from the provided information that will be published, but we will not release individual names or email addresses. Best effort will be made to assure that your runs will be permenantly stored, and we may share them with third parties (e.g. other research groups or NIST), but we will not share your personal data with them (i.e. we will only share the run file not the readme.txt). Note that when uploading runs to NIST, as a U.S. organisation, it is not bound by GDPR.</p>
+</div>
+                                </div>
+</div>
+                </div>
+					
+                
+
+                <div class="row" id="ack">
+                        <div class="col-md-12" style="padding-top: 45px; padding-bottom: 45px">
+
+                                <div class="card">
+                                        <h5 class="card-header">Supported By</h5>
+                                        <div class="card-body">
+                                                <img style="height: 100px; width: 25%; display: inline;" src="http://dcs.gla.ac.uk/~richardm/TREC_IS/nistident_fleft_150ppi.jpg" alt="Card image" onclick="location.href='https://www.nist.gov/'">
+                                                <img style="height: 100px; width: 16%; display: inline;" src="http://dcs.gla.ac.uk/~richardm/TREC_IS/pscd.png" alt="Card image" onclick="location.href='https://www.nist.gov/ctl/pscr'">
+                                                <img style="height: 75px; width: 45%; display: inline;" src="http://terrier.org/img/CompScience_colour_transparent_small.png" alt="Card image" onclick="location.href='https://www.gla.ac.uk/schools/computing/'">
+
+
+                                        </div>
+                                </div>
+
+                                <div class="card border-info">
+                                        <div class="card-body">
+
+                                                <footer>Copyright © 2018 University of Glasgow | All Rights Reserved</footer>
+
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+
+
+
+       </div>
+
+
+
+</body>
+
+</html>

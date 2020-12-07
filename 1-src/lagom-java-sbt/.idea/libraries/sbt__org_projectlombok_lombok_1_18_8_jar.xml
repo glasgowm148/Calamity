@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="sbt: org.projectlombok:lombok:1.18.8:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/projectlombok/lombok/1.18.8/lombok-1.18.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/projectlombok/lombok/1.18.8/lombok-1.18.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

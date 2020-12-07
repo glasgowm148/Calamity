@@ -1,0 +1,38 @@
+{
+    "model": "MultiOutputRegressor",
+    "arguments": "default",
+    "type": "regression",
+    "algorithm": "RandomForest",
+    "dataset_props": {
+        "split": {
+            "test_size": 0.2,
+            "shuffle": true,
+            "stratify": "default"
+        }
+    },
+    "model_props": {
+        "type": "regression",
+        "algorithm": "RandomForest"
+    },
+    "data_path": "../3-csv/merged_df_int.csv",
+    "train_data_shape": [
+        3547,
+        26
+    ],
+    "test_data_shape": [
+        887,
+        26
+    ],
+    "train_data_size": 3547,
+    "test_data_size": 887,
+    "results_path": "/Users/pseudo/Documents/GitHub/HelpMe/1-src/2-python/2-notebooks/model_results",
+    "model_path": "/Users/pseudo/Documents/GitHub/HelpMe/1-src/2-python/2-notebooks/model_results/model.sav",
+    "target": [
+        "priority",
+        "postCategories_x"
+    ],
+    "results_on_test_data": {
+        "regression score": 0.9501106075145088
+    },
+    "hyperparameter_search_results": {}
+}
