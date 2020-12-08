@@ -10,21 +10,20 @@ import models.Tweet;
 
 import java.text.DecimalFormat;
 import java.util.*;
-
-
+import java.util.concurrent.TimeUnit;
 
 
 public class TermFrequency
 {
-    private static DecimalFormat df = new DecimalFormat("0.00");//format the output to reserve two decimal places
+    private static final DecimalFormat df = new DecimalFormat("0.00");//format the output to reserve two decimal places
 
     private static final int keywordsNumber = 10;
     static final float d = 0.85f;           //damping factor, default 0.85
     static final int max_iter = 200;        //max iteration times
     static final float min_diff = 0.0001f;  //condition to judge whether recurse or not
-    private static final int nKeyword=5;         //number of keywords to extract,default 5
+    //number of keywords to extract,default 5
     private static final int coOccuranceWindow=3; //size of the co-occurance window, default 3
-    private static String[] providedKeywords = new String[]{"Russia", "fire", "Fire", "explosions", "choke", "burning", "wildfire", "wildfires", "Explosions"};
+    private static final String[] providedKeywords = new String[]{"Russia", "fire", "Fire", "explosions", "choke", "burning", "wildfire", "wildfires", "Explosions"};
     //private static String[] providedKeywords = new String[]{"Avalanche", "landslide", "earthquake", "sinkhole", "fire", "wildfire", "volcanic eruption", "flood", "Tsunami"};
 
     /**
@@ -61,7 +60,7 @@ public class TermFrequency
         //traverse the HashMap
         for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
             TFValues.put(entry.getKey(), Float.parseFloat(entry.getValue().toString()) / wordLen);
-            //System.out.println(entry.getKey().toString() + " = "+  Float.parseFloat(entry.getValue().toString()) / wordLen);
+            System.out.println(entry.getKey().toString() + " = "+  Float.parseFloat(entry.getValue().toString()) / wordLen);
         }
 
         return TFValues;
@@ -98,10 +97,13 @@ public class TermFrequency
         Map<String, HashMap<String, Float>> liftTFIDF = new HashMap<String, HashMap<String, Float>>();
 
         // calls getDirTFIDF() & tweetListId()
+        /** calls getDirTFIDF on the tweet list **/
         liftTFIDF = TermFrequency.getDirTFIDF(tweetList);
         System.out.println("liftTFIDF:" + liftTFIDF);
 
         Map<String,List<String>> tweetListKeywords = new HashMap<String,List<String>>();
+
+        /**Concurrent Mod
         for (Tweet tweet:tweetList)
         {
             Map<String,Float> singlePassageTFIDF= new HashMap<String,Float>();
@@ -125,12 +127,16 @@ public class TermFrequency
             {
                 try
                 {
+                    TimeUnit.SECONDS.sleep(1);
+
                     systemKeywordList.add(entryList.get(k).getKey());
                 }
-                catch(IndexOutOfBoundsException e)
+                catch(IndexOutOfBoundsException | InterruptedException e)
                 {
+                    e.printStackTrace();
                     continue;
                 }
+
             }
             System.out.println("\ngetWordScore for:" + tweet.getIdStr() + "\n " + getWordScore(tweet) );
             List<Float> result = calculate(systemKeywordList, providedKeywords );
@@ -139,6 +145,8 @@ public class TermFrequency
             tweet.setResult(result);
             tweetListKeywords.put(tweet.getId().toString(), systemKeywordList);
         }
+         **/
+        /** Returns a dictionary tweet_id:[keywords] **/
         System.out.println("\ntweetListKeywords:\n" + tweetListKeywords);
         return tweetListKeywords;
     }
@@ -160,6 +168,11 @@ public class TermFrequency
         List<String> fileList = new ArrayList<String>();
         for (Tweet tweet: tweetList)
         {
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             HashMap<String,Float> temp= new HashMap<String,Float>();
             singlePassageWord = dirFilesTF.get(tweet.getId().toString());
             for (Map.Entry<String, Float> entry : singlePassageWord.entrySet()) {
@@ -169,7 +182,8 @@ public class TermFrequency
             }
             dirFilesTFIDF.put(tweet.getId().toString(), temp);
         }
-        System.out.println("\ndirFilesTFIDF:\n" + dirFilesTFIDF);
+        /****/
+        //System.out.println("\ndirFilesTFIDF:\n" + dirFilesTFIDF);
         return dirFilesTFIDF;
     }
 
@@ -190,7 +204,7 @@ public class TermFrequency
                 if(TermFrequency.shouldInclude(t))
                 {
                     words.add(t.word);
-                    System.out.println(t.word + " added to corpus");
+                   // System.out.println(t.word + " added to corpus");
                 }
             }
             passageWords.put(String.valueOf(tweet.getId()), words);
@@ -220,11 +234,14 @@ public class TermFrequency
             Map.Entry<String, Integer> entry = (Map.Entry<String, Integer>)iter_dict.next();
             float value = (float)Math.log( docNum / (Float.parseFloat(entry.getValue().toString())) );
             wordIDF.put(entry.getKey().toString(), value);
-            System.out.println(entry.getKey().toString() + "=" +value);
+            /**This is returning infinity?? **/
+            //System.out.println(entry.getKey().toString() + "=" +value);
         }
         return wordIDF;
     }
-
+    /**
+     * Takes the tweet and extracts a termList using HanLP
+     * **/
     public static Map<String,Float> getWordScore(Tweet tweet)
     {
 
@@ -249,7 +266,7 @@ public class TermFrequency
                 }
             }
         }
-        //System.out.println("Keyword candidates:"+wordList);
+        System.out.println("Keyword candidates:"+wordList);
 
         //generate word-graph in terms of size of co-occur window
         Map<String, Set<String>> words = new HashMap<String, Set<String>>();
@@ -280,7 +297,7 @@ public class TermFrequency
                 }
             }
         }
-        //System.out.println("word-graph:"+words); //each k,v represents all the words in v point to k
+        System.out.println("word-graph:"+words); //each k,v represents all the words in v point to k
 
         // iterate till recurse
         Map<String, Float> score = new HashMap<String, Float>();

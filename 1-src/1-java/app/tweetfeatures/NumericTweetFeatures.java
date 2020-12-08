@@ -138,9 +138,9 @@ public class NumericTweetFeatures {
 	}
 
 	public static Vector<Double> makeFeatureVector(Map<String, Double> features){
-		System.out.println(features);
+		//System.out.println(features);
 		Vector<Double> featureVector = new Vector<Double>(features.values());
-		System.out.println(featureVector);
+		//System.out.println(featureVector);
 
 
 

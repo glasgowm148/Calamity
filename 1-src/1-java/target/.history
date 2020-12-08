@@ -1,3 +1,6 @@
 clean
 reload
 run
+quit
+exit
+run

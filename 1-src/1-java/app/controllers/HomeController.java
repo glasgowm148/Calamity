@@ -53,14 +53,18 @@ import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
  */
 
 public class HomeController extends Controller {
+
     private final ActorRef<Command> counterActor; // , TweetActor
+
     private final Scheduler scheduler;
+
     private final Duration askTimeout = Duration.ofSeconds(3L);
-    private final File path = new File("../../0-data/raw/data/2020/2020-A/tweets/whaley_bridge_collapse/selected.jsonl");
-    Object[] objArray;
+
+    //private final File path = new File("../../0-data/raw/data/2020/2020-A/tweets/whaley_bridge_collapse/selected.jsonl");
+    private final File path = new File("/Users/mark/Documents/GitHub/HelpMe/1-src/1-java/conf/10.jsonl");
+
     List<Tweet> tweetList = new ArrayList<>();
     List<Vector> featureVectorList = new ArrayList<>();
-    Vector a;
 
     @Inject
     public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
@@ -93,17 +97,25 @@ public class HomeController extends Controller {
 
     private Result renderIndex(Integer hitCounter)  {
 
-        // Returns list of files in folder as a String[]
-        List<Path> bList = collectFiles();
-
-        // Process
-
-
-        tweetList = ParseJSON(bList);
-
-        getKeywords(tweetList);
+        /** Get all .json files within a directory **/
+        //List<Path> bList = collectFiles();
+        //tweetList = ParseJsonList(bList);
+        /** Parse into Tweet.class **/
+        tweetList = ParseJSON();
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
+        for (Tweet tweet:tweetList)
+        {
+            System.out.println(tweet.getId());
+        }
+
+        /** Keywords (logic.TermFrequency) **/
+        getKeywords(tweetList);
+
+        /** 51774 Tweets **/
+        System.out.println("\ntweetList.size():\n" + tweetList.size());
+
+        /** Feature Vector (NumericTweetFeatures.makeFeatures)
         for(Tweet tweet : tweetList) {
             Sentiment(tweet);
             Features(tweet);
@@ -116,8 +128,10 @@ public class HomeController extends Controller {
             System.out.println(tweet.getFeatureVector());
         }
         PrintWriter out = null;
+
+        /** Export
         try {
-            out = new PrintWriter(new FileWriter("../../0-data/processed/whaley_bridge_collapse_selected.txt"));
+            out = new PrintWriter(new FileWriter("../../0-data/processed/all_new.txt"));
             System.out.print("Exported");
         } catch (IOException e) {
             e.printStackTrace();
@@ -129,11 +143,11 @@ public class HomeController extends Controller {
             }
 
         }
-
         out.flush();
         out.close();
         System.out.println(featureVectorList);
-
+        System.out.println("Finished...");
+        **/
 
         //Outputs to browser
         return ok(Sanitise.toPrettyFormat(path));
@@ -142,7 +156,7 @@ public class HomeController extends Controller {
     private List<Path> collectFiles() {
         List<Path> bList = null;
         try {
-            bList = Files.find(Paths.get("../../0-data/raw/data/2020/2020-A/"),
+            bList = Files.find(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/"),
                     999,
                     (p, bfa) -> bfa.isRegularFile()
                     && p.getFileName().toString().matches(".*\\.jsonl"))
@@ -154,8 +168,26 @@ public class HomeController extends Controller {
         return bList;
     }
 
+    public List<Tweet> ParseJSON()  {
+        try (InputStream is = new FileInputStream(path)) {
+            try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
 
-    public List<Tweet> ParseJSON(List<Path> bList)  {
+                // Uses String iterator - parses 151/500 into Tweet.class
+                return parseOne(lines);
+
+                // Uses NDJson.java - parses all tweets into Object[]
+                // parseTwo(is);
+
+            }
+
+
+        } catch (IOException e) {
+            System.out.println(e.toString());
+        }
+
+        return null;
+    }
+    public List<Tweet> ParseJsonList(List<Path> bList)  {
         for (Path l : bList){
         System.out.println(l);
 
@@ -230,13 +262,7 @@ public class HomeController extends Controller {
 
         // Clean
         Sanitise.clean(tweet);
-        // Stopwords
-        //tweet.setText(Arrays.toString(Sanitise.removeStopWords(tweet.getText())));
 
-        // Tokenise
-        //tweet.setText(String.valueOf(Twokenize.tokenizeRawTweetText(tweet.getText())));
-
-        //System.out.println("\n### Cleaned Text ###\n:" + tweet.getText());
 
         return tweet;
     }
@@ -286,21 +312,24 @@ public class HomeController extends Controller {
 
 
         for (String s : (Iterable<String>) lines::iterator) {
-
+            /**
+             * com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.String` out of START_OBJECT token
+             *  at [Source: UNKNOWN; line: -1, column: -1] (through reference chain: models.Tweet["entities"]->models.Entities["hashtags"]->java.lang.Object[][0])
+             */
             // Parses a string as JSON
             try {
                 JsonNode n = Json.parse(s);
                 Tweet tweet = mapper.treeToValue(n, Tweet.class);
                 tweetList.add(Sanitise(tweet));
             } catch (JsonProcessingException jsonProcessingException) {
-                //jsonProcessingException.printStackTrace();
+                jsonProcessingException.printStackTrace();
             }
 
         }
 
         return tweetList;
     }
-
+    /**
     public void parseTwo(InputStream is){
             List<JSONObject> tweetArray = new ArrayList<>();
 
@@ -316,7 +345,7 @@ public class HomeController extends Controller {
 
     }
 
-    /**
+
      * Feature Extraction
      */
     public void Features(Tweet tweet){

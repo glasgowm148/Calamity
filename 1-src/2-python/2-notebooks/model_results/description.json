@@ -25,14 +25,14 @@
     ],
     "train_data_size": 3547,
     "test_data_size": 887,
-    "results_path": "/Users/pseudo/Documents/GitHub/HelpMe/1-src/2-python/2-notebooks/model_results",
-    "model_path": "/Users/pseudo/Documents/GitHub/HelpMe/1-src/2-python/2-notebooks/model_results/model.sav",
+    "results_path": "/Users/mark/Documents/GitHub/HelpMe/1-src/2-python/2-notebooks/model_results",
+    "model_path": "/Users/mark/Documents/GitHub/HelpMe/1-src/2-python/2-notebooks/model_results/model.sav",
     "target": [
         "priority",
         "postCategories_x"
     ],
     "results_on_test_data": {
-        "regression score": 0.9501106075145088
+        "regression score": 0.9383861590617233
     },
     "hyperparameter_search_results": {}
 }
