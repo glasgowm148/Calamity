@@ -387,10 +387,7 @@ class Entities {
     private String createdAt;
 
 
-    @JsonProperty("symbols")
-    @Expose
-    private String[] symbols;
-
+   
 
 
     @JsonProperty("urls")

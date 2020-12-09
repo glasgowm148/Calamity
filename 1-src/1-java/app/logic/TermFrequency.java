@@ -11,6 +11,7 @@ import models.Tweet;
 import java.text.DecimalFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.IntStream;
 
 
 public class TermFrequency
@@ -94,58 +95,46 @@ public class TermFrequency
     {
 
         // calculate TF-IDF value for each word of each file under the dirPath
-        Map<String, HashMap<String, Float>> liftTFIDF = new HashMap<String, HashMap<String, Float>>();
+        Map<String, HashMap<String, Float>> liftTFIDF;
 
         // calls getDirTFIDF() & tweetListId()
         /** calls getDirTFIDF on the tweet list **/
         liftTFIDF = TermFrequency.getDirTFIDF(tweetList);
         //System.out.println("liftTFIDF:" + liftTFIDF);
 
-        Map<String,List<String>> tweetListKeywords = new HashMap<String,List<String>>();
+        Map<String,List<String>> tweetListKeywords = new HashMap<>();
 
-        /**Concurrent Mod
+        /**Concurrent Mod**/
         for (Tweet tweet:tweetList)
         {
-            Map<String,Float> singlePassageTFIDF= new HashMap<String,Float>();
+            Map<String,Float> singlePassageTFIDF;
             singlePassageTFIDF = liftTFIDF.get(tweet.getId().toString());
 
 
             // Sort the keywords in terms of TF-IDF value in descending order
-            List<Map.Entry<String,Float>> entryList=new ArrayList<Map.Entry<String,Float>>(singlePassageTFIDF.entrySet());
+            List<Map.Entry<String,Float>> entryList= new ArrayList<>(singlePassageTFIDF.entrySet());
 
 
-            entryList.sort(new Comparator<Map.Entry<String, Float>>() {
-                @Override
-                public int compare(Map.Entry<String, Float> c1, Map.Entry<String, Float> c2) {
-                    return c2.getValue().compareTo(c1.getValue());
-                }
-            });
+            entryList.sort((c1, c2) -> c2.getValue().compareTo(c1.getValue()));
 
             // get keywords
-            List<String> systemKeywordList=new ArrayList<String>();
-            for(int k=0;k<keywordsNumber;k++)
-            {
-                try
-                {
-                    TimeUnit.SECONDS.sleep(1);
+            List<String> systemKeywordList= new ArrayList<>();
+            IntStream.range(0, keywordsNumber).forEach(k -> {
+                try {
 
                     systemKeywordList.add(entryList.get(k).getKey());
-                }
-                catch(IndexOutOfBoundsException | InterruptedException e)
-                {
+                } catch (IndexOutOfBoundsException e) {
                     e.printStackTrace();
-                    continue;
                 }
-
-            }
-            System.out.println("\ngetWordScore for:" + tweet.getIdStr() + "\n " + getWordScore(tweet) );
+            });
+            //.println("\ngetWordScore for:" + tweet.getIdStr() + "\n " + getWordScore(tweet) );
             List<Float> result = calculate(systemKeywordList, providedKeywords );
-            System.out.println("\nPrecision, Recall, F-Measure for dict:\n" + result);
+            //System.out.println("\nPrecision, Recall, F-Measure for dict:\n" + result);
 
             tweet.setResult(result);
             tweetListKeywords.put(tweet.getId().toString(), systemKeywordList);
         }
-         **/
+
         /** Returns a dictionary tweet_id:[keywords] **/
         //System.out.println("\ntweetListKeywords:\n" + tweetListKeywords);
         return tweetListKeywords;
@@ -168,11 +157,6 @@ public class TermFrequency
         List<String> fileList = new ArrayList<String>();
         for (Tweet tweet: tweetList)
         {
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
             HashMap<String,Float> temp= new HashMap<String,Float>();
             singlePassageWord = dirFilesTF.get(tweet.getId().toString());
             for (Map.Entry<String, Float> entry : singlePassageWord.entrySet()) {
@@ -189,15 +173,15 @@ public class TermFrequency
 
     private static HashMap<String, Float> tweetListIDF(List<Tweet> tweetList) {
         List<String> fileList = new ArrayList<String>();
-        int docNum = fileList.size();
+        int docNum = tweetList.size();
 
         Map<String, Set<String>> passageWords = new HashMap<String, Set<String>>();
 
         // get words that are not repeated in the tweet
         for(Tweet tweet:tweetList)
         {
-            List<Term> terms = new ArrayList<Term>();
-            Set<String> words = new HashSet<String>();
+            List<Term> terms;
+            Set<String> words = new HashSet<>();
             terms=HanLP.segment(tweet.getText());
             for(Term t:terms)
             {
@@ -214,25 +198,20 @@ public class TermFrequency
         HashMap<String, Integer> wordPassageNum = new HashMap<String, Integer>();
         for(Tweet tweet:tweetList)
         {
-            Set<String> wordSet = new HashSet<String>();
+            Set<String> wordSet;
             wordSet = passageWords.get(tweet.getId().toString());
             for(String word:wordSet)
             {
-                if(wordPassageNum.get(word) == null)
-                    wordPassageNum.put(word,1);
-                else
-                    wordPassageNum.put(word, wordPassageNum.get(word) + 1);
+                wordPassageNum.merge(word, 1, Integer::sum);
             }
         }
 
         //System.out.println("wordPassageNum:" + wordPassageNum);
 
         HashMap<String, Float> wordIDF = new HashMap<String, Float>();
-        Iterator<Map.Entry<String, Integer>> iter_dict = wordPassageNum.entrySet().iterator();
-        while(iter_dict.hasNext())
-        {
-            Map.Entry<String, Integer> entry = (Map.Entry<String, Integer>)iter_dict.next();
-            float value = (float)Math.log( docNum / (Float.parseFloat(entry.getValue().toString())) );
+        /**This is returning infinity?? **/
+        for (Map.Entry<String, Integer> entry : wordPassageNum.entrySet()) {
+            float value = (float) Math.log(docNum / (Float.parseFloat(entry.getValue().toString())));
             wordIDF.put(entry.getKey().toString(), value);
             /**This is returning infinity?? **/
             //System.out.println(entry.getKey().toString() + "=" +value);

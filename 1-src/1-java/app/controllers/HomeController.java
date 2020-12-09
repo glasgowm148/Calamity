@@ -103,6 +103,8 @@ public class HomeController extends Controller {
 
     private Result renderIndex(Integer hitCounter)  {
 
+        //  sbt -java-home /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+
         /** Get all .json files within a directory **/
         List<Path> bList = collectFiles();
         tweetList = ParseJsonList(bList);
@@ -110,11 +112,7 @@ public class HomeController extends Controller {
         //tweetList = ParseJSON();
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
-        for (Tweet tweet:tweetList)
-        {
-            System.out.println(tweet.getId());
-            System.out.println(tweet.getText());
-        }
+
 
         /** Keywords (logic.TermFrequency) **/
         getKeywords(tweetList);
@@ -125,14 +123,10 @@ public class HomeController extends Controller {
         /** Feature Vector (NumericTweetFeatures.makeFeatures) **/
         for(Tweet tweet : tweetList) {
             Sentiment(tweet);
-            Features(tweet);
+
             // Create the feature vector
             FeatureVec(tweet);
 
-            //System.out.println("\nTweet:");
-            System.out.println(tweet.getText());
-            System.out.println(tweet.getFeatures());
-            System.out.println(tweet.getFeatureVector());
         }
         PrintWriter out = null;
 
@@ -178,13 +172,7 @@ public class HomeController extends Controller {
     public List<Tweet> ParseJSON()  {
         try (InputStream is = new FileInputStream(path)) {
             try (Stream<String> lines = new BufferedReader(new InputStreamReader(is, UTF8)).lines()) {
-                System.out.println(lines);
-                // Uses String iterator - parses 151/500 into Tweet.class
                 return parseOne(lines);
-
-                // Uses NDJson.java - parses all tweets into Object[]
-                //return parseTwo(is);
-
             }
 
 
@@ -198,24 +186,17 @@ public class HomeController extends Controller {
     }
     public List<Tweet> ParseJsonList(List<Path> bList)  {
         for (Path l : bList){
-        System.out.println(l);
+            try (InputStream is = new FileInputStream(String.valueOf(l))) {
+                try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
 
-        try (InputStream is = new FileInputStream(String.valueOf(l))) {
-            try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
+                    return parseOne(lines);
 
-                // Uses String iterator - parses 151/500 into Tweet.class
-                return parseOne(lines);
+                }
 
-                // Uses NDJson.java - parses all tweets into Object[]
-                // parseTwo(is);
 
+            } catch (IOException e) {
+                System.out.println(e.toString());
             }
-
-
-        } catch (IOException e) {
-            System.out.println(e.toString());
-            continue;
-        }
         }
 
         return null;
@@ -262,19 +243,6 @@ public class HomeController extends Controller {
         // BasicPipeline(tweet.getText());
     }
 
-    public Tweet Sanitise(Tweet tweet){
-
-        /**
-         * Sanitisation
-         * URLs / Hashtags / Stopwords / Tokenise
-         */
-
-        // Clean
-        Sanitise.clean(tweet);
-
-
-        return tweet;
-    }
 
     public Serializable analyse(String tweet) {
         // https://aboullaite.me/stanford-corenlp-java/
@@ -323,18 +291,11 @@ public class HomeController extends Controller {
 
 
         for (String s : (Iterable<String>) lines::iterator) {
-            /**
-             * com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.String` out of START_OBJECT token
-             *  at [Source: UNKNOWN; line: -1, column: -1] (through reference chain: models.Tweet["entities"]->models.Entities["hashtags"]->java.lang.Object[][0])
-             */
-
             // Parses a string as JSON
             try {
-                //Tweet[] tweetList = mapper.readValue(s, Tweet[].class);
-                System.out.println(s);
                 JsonNode n = Json.parse(s);
                 Tweet tweet = mapper.treeToValue(n, Tweet.class); // here
-                tweetList.add(Sanitise(tweet));
+                tweetList.add(tweet); // Sanitise.clean(tweet);
             } catch (JsonProcessingException jsonProcessingException) {
                 jsonProcessingException.printStackTrace();
             }
@@ -342,98 +303,6 @@ public class HomeController extends Controller {
         }
 
         return tweetList;
-    }
-
-    public List<Tweet> parseTwo(InputStream is){
-        List<Tweet>  asList = null;
-
-        ObjectMapper mapper = new ObjectMapper();
-            List<JSONObject> tweetArray = new ArrayList<>();
-
-
-            tweetArray = NDJson.parse(is);
-
-
-            // toArray() returns an array containing all of the elements in this list in the correct order
-            //objArray = tweetArray.toArray();
-
-            // printArray(objArray);
-            System.out.println("Tweets imported into Object Array:");
-            //System.out.println(objArray.length);
-            //System.out.println(objArray);
-            System.out.println(tweetArray);
-        try {
-            ObjectMapper mapper2 = new ObjectMapper();
-
-
-            String jsonArray = mapper2.writeValueAsString(tweetArray);
-            System.out.println(jsonArray);
-
-            tweetList = mapper2.readValue(
-                    jsonArray, new TypeReference<List<Tweet>>() { });
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return tweetList;
-    }
-
-
-    public void givenJsonArray(Object[] objArray)
-            throws JsonParseException, IOException {
-
-
-    }
-
-    /**
-     * Feature Extraction
-     */
-    public void Features(Tweet tweet){
-
-
-        //DocumentLex doc = null;
-
-        //System.out.println("\ndoc.makeDocumentLex(tweet.getText():");
-        //System.out.println("\nDoc text:\n" + tweet.getText());
-        //System.out.println(doc.makeDocumentLex(tweet.getText()));
-
-
-
-        // Term Frequency
-        System.out.println("\nTerm Frequency:");
-        System.out.println(TermFrequency.getTF(tweet.getText()));
-
-        //HashMap<String, Float> tflIST = TermFrequency.getTF(tweet.getText());
-        //TFIDFCalculator calculator = new TFIDFCalculator();
-        //double tfidf = calculator.tfIdf(Collections.singletonList(tweet.getText()), tweetList, "blaze");
-        //System.out.println("TF-IDF(blaze) = " + tfidf);
-
-        //double idf = calculator.idf(tweetList, "fire");
-        //System.out.println("IDF (blaze) = " + tfidf);
-        //tweet.setTFIDF(tfidf);
-
-         // FeatureVector.java
-         //List<String> topics = new ArrayList<String>();
-         //List<String> places = new ArrayList<String>();
-         //System.out.println(ToStringBuilder.reflectionToString((new FeatureVector(topics, places, tweet.getText()))));
-
-         // Tweet2Vec.java
-         // System.out.println("\nTweet2VEC");
-         // new Tweet2vecModel(tweetsList);
-         /*
-         // TFIDFCalculator (Running on dummy-text)
-         List<String> doc1 = Collections.singletonList(tweet.getText());
-         List<String> doc2 = Arrays.asList("Vituperata", "incorrupte", "at", "ipsum", "pro", "quo");
-         List<String> doc3 = Arrays.asList("Has", "persius", "disputationi", "id", "simul");
-         List<List<String>> documents = Arrays.asList(doc1, doc2, doc3);
-*/
-
-
-
-
-
-
-
     }
 
     public void FeatureVec(Tweet tweet){
