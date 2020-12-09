@@ -88,9 +88,9 @@ public class HomeController extends Controller {
 
         /** Parse into Tweet.class **/
         jsonReader reader = new jsonReader();
-        //tweetList = reader.parseOne();
+        tweetList = reader.parseOne();
 
-        tweetList = reader.parseAll();
+        //tweetList = reader.parseAll();
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
 
