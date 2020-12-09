@@ -12,21 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
-      <change afterPath="$PROJECT_DIR$/app/actors/featureActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/actors/jsonReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/actors/semanticActor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../0-data/processed/all_new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../0-data/processed/all_new.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/jsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/actors/jsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/logic/TermFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/TermFrequency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/PresentTenseTweetFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/PresentTenseTweetFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,17 +158,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Play" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="helpme-akka" />
       <option name="allowRunningInParallel" value="false" />
@@ -272,6 +252,7 @@
       <workItem from="1607475315661" duration="3120000" />
       <workItem from="1607479261220" duration="259000" />
       <workItem from="1607480338106" duration="9208000" />
+      <workItem from="1607513221591" duration="5794000" />
     </task>
     <servers />
   </component>

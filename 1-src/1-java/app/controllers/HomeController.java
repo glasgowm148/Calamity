@@ -16,13 +16,10 @@ import services.CounterActor.Increment;
 
 import javax.inject.Inject;
 import java.io.*;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.Duration;
 import java.util.*;
 import java.util.concurrent.CompletionStage;
-import java.util.stream.Collectors;
 
 import tweetfeatures.NumericTweetFeatures;
 
@@ -52,7 +49,7 @@ public class HomeController extends Controller {
 
     List<Tweet> tweetList = new ArrayList<>();
     List<Vector> featureVectorList = new ArrayList<>();
-    private Object[] objArray;
+
 
     @Inject
     public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
@@ -91,7 +88,9 @@ public class HomeController extends Controller {
 
         /** Parse into Tweet.class **/
         jsonReader reader = new jsonReader();
-        tweetList = reader.parseOne();
+        //tweetList = reader.parseOne();
+
+        tweetList = reader.parseAll();
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
 
@@ -99,27 +98,28 @@ public class HomeController extends Controller {
         featureActor featureActor = new featureActor();
         featureActor.getKeywords(tweetList);
 
-        /** 51774 Tweets **/
-        System.out.println("\ntweetList.size():\n" + tweetList.size());
+
 
         /** Feature Vector (NumericTweetFeatures.makeFeatures) **/
         for(Tweet tweet : tweetList) {
-            semanticActor semanticActor = new semanticActor(tweet);
-            semanticActor.analyse(tweet.getText());
 
-            // Create the feature vector
+            semanticActor semanticActor = new semanticActor(tweet);
+            //semanticActor.analyse(tweet.getText());
             FeatureVec(tweet);
+
 
         }
         PrintWriter out = null;
 
         /** Export **/
         try {
-            out = new PrintWriter(new FileWriter("../../0-data/processed/all_new.txt"));
-            System.out.print("Exported");
+            out = new PrintWriter(new FileWriter("../../0-data/processed/all_new.txt", true), true);
+            System.out.println("Exported");
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
         for(Tweet tweet : tweetList) {
             if(tweet.getFeatureVector() != null){
                 out.println(tweet.getFeatureVector());
@@ -136,27 +136,12 @@ public class HomeController extends Controller {
         //Outputs to browser
         long elapsedTime = System.currentTimeMillis() - startTime;
         long elapsedSeconds = elapsedTime / 1000;
-        long secondsDisplay = elapsedSeconds % 60;
         long elapsedMinutes = elapsedSeconds / 60;
-        System.out.println("minutes:" + elapsedMinutes);
-        System.out.println("seconds:" + elapsedSeconds);
+        System.out.println("Time elapsed:" + elapsedMinutes + "minutes");
         return ok(Sanitise.toPrettyFormat(path));
     }
 
-    private List<Path> collectFiles() {
-        List<Path> bList = null;
-        try {
-            bList = Files.find(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/"),
-                    999,
-                    (p, bfa) -> bfa.isRegularFile()
-                    && p.getFileName().toString().matches(".*\\.jsonl"))
-                    .collect(Collectors.toList());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.out.println(bList);
-        return bList;
-    }
+
 
 
     public void FeatureVec(Tweet tweet){

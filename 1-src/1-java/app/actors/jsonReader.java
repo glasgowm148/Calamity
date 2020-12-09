@@ -8,9 +8,12 @@ import models.Tweet;
 import play.libs.Json;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
@@ -22,15 +25,18 @@ public class jsonReader {
     private final File path = new File("/Users/mark/Documents/GitHub/HelpMe/1-src/1-java/conf/10.jsonl");
     List<Tweet> tweetList = new ArrayList<>();
 
-    public List<Tweet> readJson() {
-        /** Get all .json files within a directory **/
+    public void readJson() {
+
+        // Get all .json files within a directory
         //List<Path> bList = collectFiles();
         //tweetList = parseAll(bList);
 
-        /** Parse into Tweet.class **/
-        tweetList = parseOne();
-        System.out.println("\ntweetList.size():\n" + tweetList.size());
-        return tweetList;
+        // Parse into Tweet.class
+        //tweetList = parseOne();
+
+        // Print the size to console
+        //System.out.println("\ntweetList.size():\n" + tweetList.size());
+        //return tweetList;
     }
 
 
@@ -49,8 +55,11 @@ public class jsonReader {
 
         return null;
     }
-    public List<Tweet> parseAll(List<Path> bList)  {
-        for (Path l : bList){
+    public List<Tweet> parseAll()  {
+        List<Path> fileList = collectFiles();
+
+        for (Path l : fileList){
+            System.out.println(l);
             try (InputStream is = new FileInputStream(String.valueOf(l))) {
                 try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
 
@@ -77,6 +86,7 @@ public class jsonReader {
         for (String s : (Iterable<String>) lines::iterator) {
             // Parses a string as JSON
             try {
+                //System.out.println(s);
                 JsonNode n = Json.parse(s);
                 Tweet tweet = mapper.treeToValue(n, Tweet.class); // here
                 tweetList.add(tweet); // Sanitise.clean(tweet);
@@ -87,5 +97,20 @@ public class jsonReader {
         }
 
         return tweetList;
+    }
+
+    public List<Path> collectFiles() {
+        List<Path> bList = null;
+        try {
+            bList = Files.find(Paths.get("../../0-data/raw/data/2020/2020-A/selected/"),
+                    999,
+                    (p, bfa) -> bfa.isRegularFile()
+                            && p.getFileName().toString().matches(".*\\.jsonl"))
+                    .collect(Collectors.toList());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(bList);
+        return bList;
     }
 }
