@@ -369,27 +369,29 @@ public class Tweet<S, O, features> {
     }
 
     public Float getResult(int i) {
-        return result.get(i);
+        Float f = new Float(0);
+        if(result != null){
+            return result.get(i);
+        }
+        return f;
+
     }
 }
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Entities {
 
 
+
     @JsonProperty("created_at")
     @Expose
     private String createdAt;
-    @JsonProperty("hashtags")
-    @Expose
-    private String[] hashtags;
+
 
     @JsonProperty("symbols")
     @Expose
     private String[] symbols;
 
-    @JsonProperty("user_mentions")
-    @Expose
-    private String[] user_mentions;
+
 
     @JsonProperty("urls")
     @Expose

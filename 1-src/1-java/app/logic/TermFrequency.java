@@ -60,7 +60,7 @@ public class TermFrequency
         //traverse the HashMap
         for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
             TFValues.put(entry.getKey(), Float.parseFloat(entry.getValue().toString()) / wordLen);
-            System.out.println(entry.getKey().toString() + " = "+  Float.parseFloat(entry.getValue().toString()) / wordLen);
+            //System.out.println(entry.getKey().toString() + " = "+  Float.parseFloat(entry.getValue().toString()) / wordLen);
         }
 
         return TFValues;
@@ -99,7 +99,7 @@ public class TermFrequency
         // calls getDirTFIDF() & tweetListId()
         /** calls getDirTFIDF on the tweet list **/
         liftTFIDF = TermFrequency.getDirTFIDF(tweetList);
-        System.out.println("liftTFIDF:" + liftTFIDF);
+        //System.out.println("liftTFIDF:" + liftTFIDF);
 
         Map<String,List<String>> tweetListKeywords = new HashMap<String,List<String>>();
 
@@ -147,7 +147,7 @@ public class TermFrequency
         }
          **/
         /** Returns a dictionary tweet_id:[keywords] **/
-        System.out.println("\ntweetListKeywords:\n" + tweetListKeywords);
+        //System.out.println("\ntweetListKeywords:\n" + tweetListKeywords);
         return tweetListKeywords;
     }
 
@@ -225,7 +225,7 @@ public class TermFrequency
             }
         }
 
-        System.out.println("wordPassageNum:" + wordPassageNum);
+        //System.out.println("wordPassageNum:" + wordPassageNum);
 
         HashMap<String, Float> wordIDF = new HashMap<String, Float>();
         Iterator<Map.Entry<String, Integer>> iter_dict = wordPassageNum.entrySet().iterator();
@@ -266,7 +266,7 @@ public class TermFrequency
                 }
             }
         }
-        System.out.println("Keyword candidates:"+wordList);
+        //System.out.println("Keyword candidates:"+wordList);
 
         //generate word-graph in terms of size of co-occur window
         Map<String, Set<String>> words = new HashMap<String, Set<String>>();
@@ -297,7 +297,7 @@ public class TermFrequency
                 }
             }
         }
-        System.out.println("word-graph:"+words); //each k,v represents all the words in v point to k
+        //System.out.println("word-graph:"+words); //each k,v represents all the words in v point to k
 
         // iterate till recurse
         Map<String, Float> score = new HashMap<String, Float>();

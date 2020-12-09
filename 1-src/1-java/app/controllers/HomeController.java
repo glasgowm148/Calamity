@@ -3,7 +3,10 @@ package controllers;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
+import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -54,6 +57,8 @@ import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
 
 public class HomeController extends Controller {
 
+    String UTF8 = "UTF8";
+    int BUFFER_SIZE = 8192;
     private final ActorRef<Command> counterActor; // , TweetActor
 
     private final Scheduler scheduler;
@@ -65,6 +70,7 @@ public class HomeController extends Controller {
 
     List<Tweet> tweetList = new ArrayList<>();
     List<Vector> featureVectorList = new ArrayList<>();
+    private Object[] objArray;
 
     @Inject
     public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
@@ -98,15 +104,16 @@ public class HomeController extends Controller {
     private Result renderIndex(Integer hitCounter)  {
 
         /** Get all .json files within a directory **/
-        //List<Path> bList = collectFiles();
-        //tweetList = ParseJsonList(bList);
+        List<Path> bList = collectFiles();
+        tweetList = ParseJsonList(bList);
         /** Parse into Tweet.class **/
-        tweetList = ParseJSON();
+        //tweetList = ParseJSON();
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
         for (Tweet tweet:tweetList)
         {
             System.out.println(tweet.getId());
+            System.out.println(tweet.getText());
         }
 
         /** Keywords (logic.TermFrequency) **/
@@ -115,21 +122,21 @@ public class HomeController extends Controller {
         /** 51774 Tweets **/
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
-        /** Feature Vector (NumericTweetFeatures.makeFeatures)
+        /** Feature Vector (NumericTweetFeatures.makeFeatures) **/
         for(Tweet tweet : tweetList) {
             Sentiment(tweet);
             Features(tweet);
             // Create the feature vector
             FeatureVec(tweet);
 
-            System.out.println("\nTweet:");
+            //System.out.println("\nTweet:");
             System.out.println(tweet.getText());
             System.out.println(tweet.getFeatures());
             System.out.println(tweet.getFeatureVector());
         }
         PrintWriter out = null;
 
-        /** Export
+        /** Export **/
         try {
             out = new PrintWriter(new FileWriter("../../0-data/processed/all_new.txt"));
             System.out.print("Exported");
@@ -147,7 +154,7 @@ public class HomeController extends Controller {
         out.close();
         System.out.println(featureVectorList);
         System.out.println("Finished...");
-        **/
+
 
         //Outputs to browser
         return ok(Sanitise.toPrettyFormat(path));
@@ -170,13 +177,13 @@ public class HomeController extends Controller {
 
     public List<Tweet> ParseJSON()  {
         try (InputStream is = new FileInputStream(path)) {
-            try (Stream<String> lines = new BufferedReader(new InputStreamReader(is)).lines()) {
-
+            try (Stream<String> lines = new BufferedReader(new InputStreamReader(is, UTF8)).lines()) {
+                System.out.println(lines);
                 // Uses String iterator - parses 151/500 into Tweet.class
                 return parseOne(lines);
 
                 // Uses NDJson.java - parses all tweets into Object[]
-                // parseTwo(is);
+                //return parseTwo(is);
 
             }
 
@@ -184,6 +191,8 @@ public class HomeController extends Controller {
         } catch (IOException e) {
             System.out.println(e.toString());
         }
+
+
 
         return null;
     }
@@ -308,7 +317,9 @@ public class HomeController extends Controller {
     }
 
     public List<Tweet> parseOne(Stream<String> lines) {
+
         ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 
 
         for (String s : (Iterable<String>) lines::iterator) {
@@ -316,10 +327,13 @@ public class HomeController extends Controller {
              * com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `java.lang.String` out of START_OBJECT token
              *  at [Source: UNKNOWN; line: -1, column: -1] (through reference chain: models.Tweet["entities"]->models.Entities["hashtags"]->java.lang.Object[][0])
              */
+
             // Parses a string as JSON
             try {
+                //Tweet[] tweetList = mapper.readValue(s, Tweet[].class);
+                System.out.println(s);
                 JsonNode n = Json.parse(s);
-                Tweet tweet = mapper.treeToValue(n, Tweet.class);
+                Tweet tweet = mapper.treeToValue(n, Tweet.class); // here
                 tweetList.add(Sanitise(tweet));
             } catch (JsonProcessingException jsonProcessingException) {
                 jsonProcessingException.printStackTrace();
@@ -329,23 +343,49 @@ public class HomeController extends Controller {
 
         return tweetList;
     }
-    /**
-    public void parseTwo(InputStream is){
+
+    public List<Tweet> parseTwo(InputStream is){
+        List<Tweet>  asList = null;
+
+        ObjectMapper mapper = new ObjectMapper();
             List<JSONObject> tweetArray = new ArrayList<>();
 
 
             tweetArray = NDJson.parse(is);
 
+
             // toArray() returns an array containing all of the elements in this list in the correct order
-            objArray = tweetArray.toArray();
+            //objArray = tweetArray.toArray();
 
             // printArray(objArray);
             System.out.println("Tweets imported into Object Array:");
-            System.out.println(objArray.length);
+            //System.out.println(objArray.length);
+            //System.out.println(objArray);
+            System.out.println(tweetArray);
+        try {
+            ObjectMapper mapper2 = new ObjectMapper();
 
+
+            String jsonArray = mapper2.writeValueAsString(tweetArray);
+            System.out.println(jsonArray);
+
+            tweetList = mapper2.readValue(
+                    jsonArray, new TypeReference<List<Tweet>>() { });
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return tweetList;
     }
 
 
+    public void givenJsonArray(Object[] objArray)
+            throws JsonParseException, IOException {
+
+
+    }
+
+    /**
      * Feature Extraction
      */
     public void Features(Tweet tweet){
@@ -409,6 +449,10 @@ public class HomeController extends Controller {
         }
 
     }
+
+
+
+
 
 
 }
