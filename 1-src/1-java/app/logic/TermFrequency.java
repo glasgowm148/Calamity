@@ -16,16 +16,11 @@ import java.util.stream.IntStream;
 
 public class TermFrequency
 {
-    private static final DecimalFormat df = new DecimalFormat("0.00");//format the output to reserve two decimal places
 
-    private static final int keywordsNumber = 10;
     static final float d = 0.85f;           //damping factor, default 0.85
     static final int max_iter = 200;        //max iteration times
     static final float min_diff = 0.0001f;  //condition to judge whether recurse or not
-    //number of keywords to extract,default 5
     private static final int coOccuranceWindow=3; //size of the co-occurance window, default 3
-    private static final String[] providedKeywords = new String[]{"Russia", "fire", "Fire", "explosions", "choke", "burning", "wildfire", "wildfires", "Explosions"};
-    //private static String[] providedKeywords = new String[]{"Avalanche", "landslide", "earthquake", "sinkhole", "fire", "wildfire", "volcanic eruption", "flood", "Tsunami"};
 
     /**
      * calculate TF value of each word in the tweet text
@@ -86,62 +81,9 @@ public class TermFrequency
         return allTF;
     }
 
-    /**
-     * get keywords of each tweet
-     * @param tweetList(String): list of tweets
-     * @return(Map<String,List<String>>): path of file and its corresponding keywords
-     */
-    public static Map<String,List<String>> getKeywords(List<Tweet> tweetList)
-    {
-
-        // calculate TF-IDF value for each word of each file under the dirPath
-        Map<String, HashMap<String, Float>> liftTFIDF;
-
-        // calls getDirTFIDF() & tweetListId()
-        /** calls getDirTFIDF on the tweet list **/
-        liftTFIDF = TermFrequency.getDirTFIDF(tweetList);
-        //System.out.println("liftTFIDF:" + liftTFIDF);
-
-        Map<String,List<String>> tweetListKeywords = new HashMap<>();
-
-        /**Concurrent Mod**/
-        for (Tweet tweet:tweetList)
-        {
-            Map<String,Float> singlePassageTFIDF;
-            singlePassageTFIDF = liftTFIDF.get(tweet.getId().toString());
-
-
-            // Sort the keywords in terms of TF-IDF value in descending order
-            List<Map.Entry<String,Float>> entryList= new ArrayList<>(singlePassageTFIDF.entrySet());
-
-
-            entryList.sort((c1, c2) -> c2.getValue().compareTo(c1.getValue()));
-
-            // get keywords
-            List<String> systemKeywordList= new ArrayList<>();
-            IntStream.range(0, keywordsNumber).forEach(k -> {
-                try {
-
-                    systemKeywordList.add(entryList.get(k).getKey());
-                } catch (IndexOutOfBoundsException e) {
-                    e.printStackTrace();
-                }
-            });
-            //.println("\ngetWordScore for:" + tweet.getIdStr() + "\n " + getWordScore(tweet) );
-            List<Float> result = calculate(systemKeywordList, providedKeywords );
-            //System.out.println("\nPrecision, Recall, F-Measure for dict:\n" + result);
-
-            tweet.setResult(result);
-            tweetListKeywords.put(tweet.getId().toString(), systemKeywordList);
-        }
-
-        /** Returns a dictionary tweet_id:[keywords] **/
-        //System.out.println("\ntweetListKeywords:\n" + tweetListKeywords);
-        return tweetListKeywords;
-    }
 
     /**
-     * calculate TF-IDF value for each word of each file under a directory
+     * calculate TF-IDF value for each word of each tweet in the list
      * @return(Map<String, HashMap<String, Float>>): path of file and its corresponding "word:TF-IDF Value" pairs
      */
     public static Map<String, HashMap<String, Float>> getDirTFIDF(List<Tweet> tweetList)
@@ -166,8 +108,6 @@ public class TermFrequency
             }
             dirFilesTFIDF.put(tweet.getId().toString(), temp);
         }
-        /****/
-        //System.out.println("\ndirFilesTFIDF:\n" + dirFilesTFIDF);
         return dirFilesTFIDF;
     }
 
@@ -307,47 +247,7 @@ public class TermFrequency
         return score;
     }
 
-    public static List<Float> calculate(List<String> tweetListKeywords,String[] manualKeywords)
-    {
 
-        int sysLen=tweetListKeywords.size();
-        int manLen=manualKeywords.length;
-
-        //Caculate.printKeywords(systemKeywords,manualKeywords);
-
-        int hit=0;
-
-        for (String tweetListKeyword : tweetListKeywords) {
-            for (String manualKeyword : manualKeywords) {
-                if (tweetListKeyword.equals(manualKeyword)) {
-                    hit++;
-                    break;
-                }
-            }
-        }
-
-        //Get Precision Value
-        float pValue=(float)hit/sysLen;
-        pValue*=100; //represent in the form of %
-
-        //Get Recall Value
-        float rValue=(float)hit/manLen;
-        rValue*=100;
-
-        //Get F-Measure
-        float fValue;
-        if(rValue==0 || pValue == 0)
-            fValue=0;
-        else
-            fValue=2*rValue*pValue/(rValue+pValue);
-
-        List<Float> result = new ArrayList<Float>();
-        result.add(Float.parseFloat(df.format(pValue)));
-        result.add(Float.parseFloat(df.format(rValue)));
-        result.add(Float.parseFloat(df.format(fValue)));
-
-        return result;
-    }
 
 
 

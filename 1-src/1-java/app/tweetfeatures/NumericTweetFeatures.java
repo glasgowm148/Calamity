@@ -1,11 +1,7 @@
 package tweetfeatures;
 
-import classifiers.SentimentClassifier;
 import models.Tweet;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.*;
 
 /**
@@ -18,6 +14,7 @@ public class NumericTweetFeatures {
 	public static final String negative_sentiment = "negative_sentiment";
 	public static final String numb_of_mentions = "numb_of_mentions";
 	public static final String numb_of_urls = "numb_of_urls";
+	public static final String numb_of_media = "numb_of_media";
 	public static final String numb_of_hashtags = "numb_of_hashtags";
 	public static final String numb_of_personal_pronouns = "numb_of_personal_pronouns";
 	public static final String numb_of_present_tenses = "numb_of_present_tenses";
@@ -51,12 +48,13 @@ public class NumericTweetFeatures {
 
 	static {
 		numericFeaturesNames = new LinkedHashSet<>();
-		numericFeaturesNames.add(tweet_created_at);
-		numericFeaturesNames.add(tweet_id_str);
-		numericFeaturesNames.add(positive_sentiment);
-		numericFeaturesNames.add(negative_sentiment);
-		numericFeaturesNames.add(numb_of_mentions);
-		numericFeaturesNames.add(numb_of_urls);
+		numericFeaturesNames.add(tweet_created_at);  				// Time
+		numericFeaturesNames.add(tweet_id_str);						// ID
+		numericFeaturesNames.add(positive_sentiment);				// Positive Sentiment
+		numericFeaturesNames.add(negative_sentiment);				// Negative Sentiment
+		numericFeaturesNames.add(numb_of_mentions);					// Number of Mentions 0
+		numericFeaturesNames.add(numb_of_urls);						// Number of URLs
+		numericFeaturesNames.add(numb_of_media);					// Number of Media attachments
 		numericFeaturesNames.add(numb_of_hashtags);
 		numericFeaturesNames.add(numb_of_personal_pronouns);
 		numericFeaturesNames.add(numb_of_present_tenses);
@@ -64,20 +62,20 @@ public class NumericTweetFeatures {
 		//numericFeaturesNames.add(numb_of_named_entites);
 		numericFeaturesNames.add(sent_from_mobile);
 		numericFeaturesNames.add(sent_from_web);
-		numericFeaturesNames.add(numb_of_weird_chars); // has data
+		numericFeaturesNames.add(numb_of_weird_chars); 				// has data
 		numericFeaturesNames.add(numb_of_questions);
 		numericFeaturesNames.add(numb_of_emoticons);
-		numericFeaturesNames.add(numb_of_swearing_words); //should work
-		numericFeaturesNames.add(numb_of_slang_words);  // should work
-		numericFeaturesNames.add(numb_of_intensifiers);  // should work
+		numericFeaturesNames.add(numb_of_swearing_words); 			//should work
+		numericFeaturesNames.add(numb_of_slang_words);  			// should work
+		numericFeaturesNames.add(numb_of_intensifiers);  			// should work
 		numericFeaturesNames.add(has_geolocation);
-		numericFeaturesNames.add(tweet_length); // has data
-		numericFeaturesNames.add(userFollowersCount);  // should have data now
-		numericFeaturesNames.add(userFriendsCount);  // should have data now
+		numericFeaturesNames.add(tweet_length); 					// has data
+		numericFeaturesNames.add(userFollowersCount);  				// should have data now
+		numericFeaturesNames.add(userFriendsCount);  				// should have data now
 		numericFeaturesNames.add(userRegistrationDays);
 		numericFeaturesNames.add(user_numb_of_tweets);
 		numericFeaturesNames.add(numb_of_user_description_chars);
-		numericFeaturesNames.add(user_listed_count); // should have data now
+		numericFeaturesNames.add(user_listed_count); 				// should have data now
 		numericFeaturesNames.add(tfidf_fire);
 		numericFeaturesNames.add(dict_precision);
 		numericFeaturesNames.add(dict_recall);
@@ -95,8 +93,9 @@ public class NumericTweetFeatures {
 		features.put(positive_sentiment, tweet.getPositiveSentiment());
 		features.put(negative_sentiment, tweet.getNegativeSentiment());
 		
-		features.put(numb_of_mentions, (double) tweet.getUserMentions().length);
-		features.put(numb_of_urls, (double) tweet.getUrls().length);
+		features.put(numb_of_mentions, (double) tweet.getUserMentions().size());
+		features.put(numb_of_media, (double) tweet.getMedia().size());
+		features.put(numb_of_urls, (double) tweet.getUrls().size());
 		features.put(numb_of_hashtags, (double) tweet.getHashtags().length);
 		features.put(numb_of_personal_pronouns, ObjectivityTweetFeature.getScore(tweet));
 		features.put(numb_of_present_tenses, PresentTenseTweetFeature.getScore(tweet));
@@ -139,18 +138,17 @@ public class NumericTweetFeatures {
 
 	public static Vector<Double> makeFeatureVector(Map<String, Double> features){
 		//System.out.println(features);
-		Vector<Double> featureVector = new Vector<Double>(features.values());
-		//System.out.println(featureVector);
-
-
-
-
-		return featureVector;
+		return new Vector<>(features.values());
 
 	}
 }
 
 
+/**
+ *  numb_of_personal_pronouns=0.0, numb_of_present_tenses=0.0, numb_of_past_tenses=0.0,
+ *  sent_from_web=0.0 numb_of_questions=0.0, numb_of_emoticons=0.0, numb_of_swearing_word=0.0, numb_of_slang_words=0.0,
+ *  numb_of_intensifiers=0.0, user_numb_of_tweets=0.0,  tfidf_fire=0.0}
+ */
 
 
 /*

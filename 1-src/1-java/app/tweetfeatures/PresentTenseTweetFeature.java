@@ -7,8 +7,8 @@ import java.util.Set;
 
 public class PresentTenseTweetFeature extends TweetFeature {
 	
-	public static Set<String> presence_words = 
-			new LinkedHashSet<String>();
+	public static Set<String> presence_words =
+			new LinkedHashSet<>();
 
 	static {
 		presence_words.add( "am" );

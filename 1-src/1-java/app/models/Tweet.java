@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.annotations.Expose;
 
+import java.io.Serializable;
 import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +43,7 @@ public class Tweet<S, O, features> {
     private boolean sentFromWeb, sentFromMobile;
 
 
-    private String[] urls;
+    private String urls;
 
     private String[] hashtags;
     private Vector<Double> features;
@@ -51,6 +52,8 @@ public class Tweet<S, O, features> {
     private Map<String, Double> stringDoubleMap;
     private double tfidf;
     private List<Float> result;
+    private List<Medium> media;
+    private Serializable analysis;
 
     public Tweet() {
         super();
@@ -58,7 +61,7 @@ public class Tweet<S, O, features> {
         this.id = IDGenerator.getID();
         tokens = new String[0];
         hashtags = new String[0];
-        urls = new String[0];
+        
         userMentions = new String[0];
         double[] geoLocation = new double[0];
         double tfidf;
@@ -107,7 +110,6 @@ public class Tweet<S, O, features> {
     @JsonProperty("retweet_count")
     @Expose
     private Integer retweetCount;
-
     @JsonProperty("retweeted")
     @Expose
     private Boolean retweeted;
@@ -216,20 +218,29 @@ public class Tweet<S, O, features> {
         user.setFollowersCount(userFollowersCount);
     }
 
-    public String[] getUserMentions() {
-        return userMentions;
+    public List<Object> getUserMentions() {
+        return entities.getEntityMentions();
     }
 
-    public void setUserMentions(String[] userMentions) {
-        this.userMentions = userMentions;
+    public void setUserMentions(List<Object> user_mentions) {
+        entities.setEntityMentions(user_mentions);
     }
 
-    public String[] getUrls() {
-        return urls;
+    public List<Medium> getMedia() {
+        return entities.getMedia();
     }
 
-    public void setUrls(String[] urls) {
-        this.urls = urls;
+    public void setMedia(List<Medium> media) {
+        entities.setMedia(media);
+    }
+    
+    public List<Object> getUrls() {
+        return entities.getEntityUrls();
+    }
+
+    public void setUrls(List<Object> urls) {
+        this.urls = user.getUrl();
+        //this.urls = urls;
     }
 
 
@@ -376,30 +387,48 @@ public class Tweet<S, O, features> {
         return f;
 
     }
+
+    public void setAnalysis(Serializable analyse) {
+        this.analysis = analyse;
+    }
 }
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Entities {
 
+    Entities() {
 
+    }
 
     @JsonProperty("created_at")
     @Expose
     private String createdAt;
 
-
-   
-
+    @JsonProperty("user_mentions")
+    @Expose
+    private List<Object> user_mentions;
 
     @JsonProperty("urls")
     @Expose
-    private List<Object>  urls;
+    private List<Object> urls;
 
     @JsonProperty("media")
     @Expose
     private List<Medium> media = new ArrayList<Medium>();
 
-    Entities() {
+    public void setEntityMentions(List<Object>  user_mentions){
+        this.user_mentions = user_mentions;
+    }
 
+    public List<Object> getEntityMentions(){
+        return user_mentions;
+    }
+
+    public void setEntityUrls(List<Object>  urls){
+        this.urls = urls;
+    }
+
+    public List<Object> getEntityUrls(){
+        return urls;
     }
 
     public List<Medium> getMedia() {
