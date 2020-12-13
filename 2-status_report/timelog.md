@@ -275,23 +275,26 @@ Next Steps
 2. Pass through eventID (?) merging labelled data with selection.json ? 
 3. Predict High Level Information Types
 
-```bash           H         H           H         H         H       H        L        L
-                            x                                                x       x
-Run             & NDCG   & AW-H     & AW-A    & CF1-H  & CF1-A  & CAcc   & PErr-H & PErr-A \\
-myrun2          & 0.4632 & -0.0440 & -0.0220 & 0.0524 & 0.0558 & 0.9282 & 0.1163 & 0.2365 \\
-njit-sub01.text & 0.4632 & -0.4801  & -0.2493 & 0.0792 & 0.1582 & 0.9025 & 0.1524 & 0.2198 \\
-
+```bash
+P = Priority
+T = Type
+                              P          P              T         T        T         P        P
+Run             & NDCG    & AW-H      & AW-A      & CF1-H   & CF1-A   & CAcc   & PErr-H & PErr-A \\
+marksrun2       & 0.6179  & -0.1551   & -0.0777   & 0.0718  & 0.1085  & 0.9265 & 0.1632 & 0.3297 \\ All Tweets first run (Priority + 1 label)
+marksrun2       & 0.5446  & -0.1459   & -0.0731   & 0.1031  & 0.1664  & 0.9001 & 0.1430 & 0.2145 \\ Multiple labels
+marksrun2       & 0.5455  & -0.1459   & -0.0731   & 0.1081  & 0.1778  & 0.9211 & 0.1430 & 0.2148 \\ Predicting number of labels
+njit-sub01.text & 0.4632  & -0.4801   & -0.2493   & 0.0792  & 0.1582  & 0.9025 & 0.1524 & 0.2198 \\
 ```
 
 
-NDCG    0.3741 => 0.3993    =   `system_ndcg_micro`                               =   System Event-Micro nDCG (Normalized Discounted Cumulative Gain)  - Calculates `usefulness/relevancy` 
-AW-H    0.0000 => -0.0013   =   `totalHighImportWorth / countHighCriticalImport`  =   Count of the number of High Priority tweets
-AW-A    0.0000 => -0.0007   =   `AccumulatedAlertWorth`                           =   Measures system effectiveness from the perspective of end-user alerting of important information
-CF1-H   0.0220 => 0.0950    =   `avgF1High / numHighInformationTypes`             =   Precision on the High Information Types
-CF1-A   0.0323 => 0.9319    =   `avgF1 / numInformationTypes`                     =   Information Type F1 (positive class, multi-type, macro)
-CAcc    0.9292 => 0.9319    =   `avgAccuracy / numInformationTypes`               =   Information Type Accuracy (overall, multi-type, macro)
-PErr-H  0.0733 => 0.0855    =   `priorityAvgf1High / numHighInformationTypes`     =   How divergent is the system from the High-level human priority labels?
-PErr-A  0.1636 => 0.2017    =   `priorityAvgf1 / len(informationTypes2Index`      =   How divergent is the system from all human priority labels?
+NDCG    =   `system_ndcg_micro`                               =   System Event-Micro nDCG (Normalized Discounted Cumulative Gain)  - Calculates `usefulness/relevancy` 
+AW-H    =   `totalHighImportWorth / countHighCriticalImport`  =   Count of the number of High Priority tweets
+AW-A    =   `AccumulatedAlertWorth`                           =   Measures system effectiveness from the perspective of end-user alerting of important information
+CF1-H   =   `avgF1High / numHighInformationTypes`             =   Precision on the High Information Types
+CF1-A   =   `avgF1 / numInformationTypes`                     =   Information Type F1 (positive class, multi-type, macro)
+CAcc    =   `avgAccuracy / numInformationTypes`               =   Information Type Accuracy (overall, multi-type, macro)
+PErr-H  =   `priorityAvgf1High / numHighInformationTypes`     =   How divergent is the system from the High-level human priority labels?
+PErr-A  =   `priorityAvgf1 / len(informationTypes2Index`      =   How divergent is the system from all human priority labels?
 
 
 ## Notes

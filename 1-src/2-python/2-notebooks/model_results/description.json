@@ -2,42 +2,51 @@
     "model": "MultiOutputRegressor",
     "arguments": "default",
     "type": "regression",
-    "algorithm": "RandomForest",
+    "algorithm": "DecisionTree",
     "dataset_props": {
         "split": {
             "test_size": 0.2,
             "shuffle": true,
-            "stratify": "default"
+            "stratify": "default",
+            "scale": {
+                "method": "standard",
+                "target": "inputs"
+            }
         }
     },
     "model_props": {
         "type": "regression",
-        "algorithm": "RandomForest"
+        "algorithm": "DecisionTree"
     },
-    "data_path": "../3-csv/merged_df_int.csv",
+    "data_path": "../3-csv/train.csv",
     "train_data_shape": [
-        10216,
-        32
+        2455,
+        29
     ],
     "test_data_shape": [
-        2554,
-        32
+        614,
+        29
     ],
-    "train_data_size": 10216,
-    "test_data_size": 2554,
+    "train_data_size": 2455,
+    "test_data_size": 614,
     "results_path": "/Users/mark/Documents/GitHub/HelpMe/1-src/2-python/2-notebooks/model_results",
     "model_path": "/Users/mark/Documents/GitHub/HelpMe/1-src/2-python/2-notebooks/model_results/model.sav",
     "target": [
-        "priority",
-        "postCategories_x",
+        "postPriority",
         "cat1",
         "cat2",
         "cat3",
         "cat4",
-        "cat5"
+        "cat5",
+        "cat6",
+        "cat7",
+        "cat8",
+        "cat9",
+        "cat10",
+        "num"
     ],
     "results_on_test_data": {
-        "regression score": 0.9639853235724772
+        "regression score": -0.11855269342659158
     },
     "hyperparameter_search_results": {}
 }

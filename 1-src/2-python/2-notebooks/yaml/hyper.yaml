@@ -8,13 +8,13 @@ dataset:
     preprocess:
         scale:  # scaling options
             method: standard    # standardization will scale values to have a 0 mean and 1 standard deviation  | you can also try minmax
-            target: inputs  # scale inputs. | other possible values: [outputs, all] # if you choose all then all values in the dataset will be scaled
+            target: all  # scale inputs. | other possible values: [outputs, all] # if you choose all then all values in the dataset will be scaled
 
 
 # model definition
 model:
     type: classification
-    algorithm: RandomForest
+    algorithm: DecisionTree
     hyperparameter_search:
         method: random_search
         parameter_grid:
@@ -30,3 +30,14 @@ model:
 # target you want to predict
 target:
     - priority
+    - cat1
+    - cat2
+    - cat3
+    - cat4
+    - cat5
+    - cat6
+    - cat7
+    - cat8
+    - cat9
+    - cat10
+    - num
