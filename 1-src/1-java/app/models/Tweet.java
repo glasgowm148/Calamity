@@ -54,6 +54,7 @@ public class Tweet<S, O, features> {
     private List<Float> result;
     private List<Medium> media;
     private Serializable analysis;
+    private int offset;
 
     public Tweet() {
         super();
@@ -81,7 +82,6 @@ public class Tweet<S, O, features> {
     public void setUserListedCount(int userListedCount) {
         user.setListedCount(userListedCount);
     }
-
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "EEE MMM dd HH:mm:ss Z yyyy", locale = "en")
     @JsonProperty("created_at")
     @Expose
@@ -252,6 +252,12 @@ public class Tweet<S, O, features> {
         this.tokens = tokens;
     }
 
+    public int getCreatedAtInt() {
+        return (int)(createdAt.getTime() /1000 );
+    }
+    public String getCreatedAtStr() {
+        return String.valueOf((int)(createdAt.getTime() /1000 ));
+    }
     public Timestamp getCreatedAt() {
         return createdAt;
     }
@@ -391,6 +397,14 @@ public class Tweet<S, O, features> {
     public void setAnalysis(Serializable analyse) {
         this.analysis = analyse;
     }
+
+    public void setOffset(int i) {
+        this.offset = i; 
+    }
+
+    public Double getOffset() {
+        return Double.valueOf(offset);
+    }
 }
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Entities {
@@ -398,7 +412,7 @@ class Entities {
     Entities() {
 
     }
-
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "EEE MMM dd HH:mm:ss Z yyyy", locale = "en")
     @JsonProperty("created_at")
     @Expose
     private String createdAt;
@@ -440,8 +454,13 @@ class Entities {
     }
 }
 
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 class Retweet {
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "EEE MMM dd HH:mm:ss Z yyyy", locale = "en")
+    @JsonProperty("created_at")
+    @Expose
+    private String createdAt;
 
     @JsonProperty("user")
     @Expose

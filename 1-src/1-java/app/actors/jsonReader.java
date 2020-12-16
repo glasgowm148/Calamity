@@ -22,7 +22,9 @@ public class jsonReader {
     int BUFFER_SIZE = 8192;
 
     //private final File path = new File("../../0-data/raw/data/2020/2020-A/tweets/whaley_bridge_collapse/selected.jsonl");
-    private final File path = new File("../../0-data/raw/data/2020/2020-A/selected/all.jsonl");
+    //private final File path = new File("../../0-data/raw/data/2020/2020-A/selected/all.jsonl");
+    private final File path = new File("/Users/mark/Documents/GitHub/HelpMe/1-src/1-java/conf/10.jsonl");
+
     List<Tweet> tweetList = new ArrayList<>();
 
     public void readJson() {

@@ -12,12 +12,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
-      <change beforePath="$PROJECT_DIR$/../../0-data/processed/all_new.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../0-data/processed/all_new.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Json.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/actors/jsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/actors/jsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Tweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/.ipynb_checkpoints/0-myrun-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/.ipynb_checkpoints/0-myrun-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/0-myrun.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/0-myrun.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/0_Test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/0_Test.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/1_Load_Dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/1_Load_Dataset.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/3_Fit_and_Predict.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/3_Fit_and_Predict.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/marks2.run" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/marks2.run" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.overall.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.overall.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.perevent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.perevent.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.pertopic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.pertopic.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/description.json" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/description.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/evaluation.json" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/evaluation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/model.sav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/predictions.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/yaml/multi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/yaml/multi.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/3-csv/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/3-csv/test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-python/3-csv/train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/3-csv/train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2-status_report/timelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../2-status_report/timelog.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +136,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -252,6 +267,9 @@
       <workItem from="1607479261220" duration="259000" />
       <workItem from="1607480338106" duration="9208000" />
       <workItem from="1607513221591" duration="8928000" />
+      <workItem from="1608132247068" duration="379000" />
+      <workItem from="1608133012171" duration="1000" />
+      <workItem from="1608133032463" duration="3562000" />
     </task>
     <servers />
   </component>

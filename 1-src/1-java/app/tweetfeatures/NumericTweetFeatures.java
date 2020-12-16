@@ -42,6 +42,7 @@ public class NumericTweetFeatures {
 	private static final String dict_precision = "dict_precision";
 	private static final String dict_recall = "dict_recall";
 	private static final String dict_f_measure = "dict_f_measure";
+	private static final String offset = "offset";
 
 
 
@@ -80,6 +81,7 @@ public class NumericTweetFeatures {
 		numericFeaturesNames.add(dict_precision);
 		numericFeaturesNames.add(dict_recall);
 		numericFeaturesNames.add(dict_f_measure);
+		numericFeaturesNames.add(offset);
 
 
 	}
@@ -130,6 +132,7 @@ public class NumericTweetFeatures {
 		features.put(dict_precision, (double) tweet.getResult(0));
 		features.put(dict_recall, (double) tweet.getResult(1));
 		features.put(dict_f_measure, (double) tweet.getResult(2));
+		features.put(offset, tweet.getOffset());
 
 
 

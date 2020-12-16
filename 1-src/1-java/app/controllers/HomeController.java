@@ -38,7 +38,7 @@ import actors.jsonReader;
  */
 
 public class HomeController extends Controller {
-    private final File path = new File("/Users/mark/Documents/GitHub/HelpMe/1-src/1-java/conf/10.jsonl");
+    private final File path = new File("/Users/mark/Documents/GitHub/HelpMe-clone/1-src/1-java/conf/10.jsonl");
 
     private final ActorRef<Command> counterActor; // , TweetActor
 
@@ -93,25 +93,38 @@ public class HomeController extends Controller {
         //tweetList = reader.parseAll();
         System.out.println("\ntweetList.size():\n" + tweetList.size());
 
+        IntSummaryStatistics summaryStatistics = tweetList.stream()
+                .map(Tweet::getCreatedAtStr)
+                .mapToInt(Integer::parseInt)
+                .summaryStatistics();
 
-        /** Keywords (logic.TermFrequency) **/
+        int max = summaryStatistics.getMax();
+        int min = summaryStatistics.getMin();
+        System.out.println(min);
+        System.out.println(max);
+        System.out.println("Tweets occur over" + ( (max-min) /  ((1000*60)) % 60) + "hours");
+
+        // Keywords (logic.TermFrequency)
         featureActor featureActor = new featureActor();
         featureActor.getKeywords(tweetList);
 
 
 
-        /** Feature Vector (NumericTweetFeatures.makeFeatures) **/
+        // Feature Vector (NumericTweetFeatures.makeFeatures)
         for(Tweet tweet : tweetList) {
 
             semanticActor semanticActor = new semanticActor(tweet);
-            //semanticActor.analyse(tweet.getText());
+            semanticActor.analyse(tweet.getText());
+            System.out.println(tweet.getCreatedAtInt());
+            System.out.println("offset:" + ((tweet.getCreatedAtInt()-min )/ 1000)  + " seconds");
+            tweet.setOffset(((tweet.getCreatedAtInt()-min )/ 1000));
             FeatureVec(tweet);
 
 
         }
         PrintWriter out = null;
 
-        /** Export **/
+        // Export
         try {
             out = new PrintWriter(new FileWriter("../../0-data/processed/all_new.txt", true), true);
             System.out.println("Exported");
@@ -132,12 +145,11 @@ public class HomeController extends Controller {
         System.out.println(featureVectorList);
         System.out.println("Finished...");
 
-
         //Outputs to browser
         long elapsedTime = System.currentTimeMillis() - startTime;
         long elapsedSeconds = elapsedTime / 1000;
         long elapsedMinutes = elapsedSeconds / 60;
-        System.out.println("Time elapsed:" + elapsedMinutes + "minutes");
+        System.out.println("Time elapsed: " + elapsedMinutes + " minutes");
         return ok(Sanitise.toPrettyFormat(path));
     }
 

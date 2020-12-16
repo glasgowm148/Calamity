@@ -11,7 +11,8 @@ dataset:
 model:
     type: regression
     algorithm: DecisionTree
-
+        # DecisionTree - works
+        # RandomForest
 target:
     - postPriority
     - cat1

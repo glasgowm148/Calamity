@@ -30,3 +30,64 @@ data/*
 1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
 1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
 0-data/raw*
+*.gz
+*.cache
+*.cache
+*.html
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/colorado_stem_shooting/colorado_stem_shooting_ad 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/colorado_stem_shooting/colorado_stem_shooting_ag 2
+1-src/1-java/target/scala-2.12/classes/alberta 2.json
+1-src/1-java/target/scala-2.12/classes/application 2.conf
+*.json
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_ab 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/nyu-smapp_run_fasttext_multi 2.csv
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_aa 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_ac 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_ad 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_ae 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_af 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_ag 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_ai 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_aj 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/alberta_wildfires/alberta_wildfires_ak 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/colorado_stem_shooting/colorado_stem_shooting_aa 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/colorado_stem_shooting/colorado_stem_shooting_ab 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/colorado_stem_shooting/colorado_stem_shooting_ac 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/colorado_stem_shooting/colorado_stem_shooting_af 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/colorado_stem_shooting/colorado_stem_shooting_ah 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/colorado_stem_shooting/colorado_stem_shooting_aj 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/kenneth/cyclone_kennethab 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/kenneth/cyclone_kennethac 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/kenneth/cyclone_kennethad 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/kenneth/cyclone_kennethae 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/kenneth/cyclone_kennethaf 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/kenneth/cyclone_kennethah 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/kenneth/cyclone_kennethai 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_aa 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_ab 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_ad 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_ae 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_af 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_ag 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_ah 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_ai 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/philippines_earthquake/philippines_earthquake_aj 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/sandiego_synagogue_shooting/sandiego_synagogue_shooting_aa 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/sandiego_synagogue_shooting/sandiego_synagogue_shooting_ab 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/sandiego_synagogue_shooting/sandiego_synagogue_shooting_ad 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/sandiego_synagogue_shooting/sandiego_synagogue_shooting_ae 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/sandiego_synagogue_shooting/sandiego_synagogue_shooting_af 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/sandiego_synagogue_shooting/sandiego_synagogue_shooting_ag 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/sandiego_synagogue_shooting/sandiego_synagogue_shooting_ah 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/sandiego_synagogue_shooting/sandiego_synagogue_shooting_ai 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/south_africa_floods/south_africa_floods_ab 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/south_africa_floods/south_africa_floods_ac 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/south_africa_floods/south_africa_floods_ad 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/south_africa_floods/south_africa_floods_af 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/south_africa_floods/south_africa_floods_ag 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/south_africa_floods/south_africa_floods_ah 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/south_africa_floods/south_africa_floods_ai 2
+1-src/1-java/target/scala-2.12/classes/data/TRECIS2019B/tweets/south_africa_floods/south_africa_floods_aj 2
+1-src/1-java/target/scala-2.12/classes/intensifiers 2.txt
+1-src/1-java/target/scala-2.12/classes/lex 2.txt
+1-src/1-java/target/scala-2.12/classes/local-shared 2.conf

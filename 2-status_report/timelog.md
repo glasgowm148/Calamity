@@ -256,24 +256,48 @@ src/python/notebooks/model_results contains results for various ML algorithms
 - 07.12.20
   - Supervisor meeting
 
-
-
-
 ## Plan for the next two weeks
 
 Current process
-1. Extract feature vector from `before_selection`
-2. Merge with `High-information-types` to get the `eventID`, `
-3. Save two dataframes, one complete and one with the columns you want to predict removed. 
-  - Predict `Priority`
-  - [ ] Predict `Information-Types`
-4. Merge predictions back into dataframes
-5. Export in `TRECIS.run` format
+1. [x] Extract feature vector from `before_selection`
+2. [x] Merge with `High-information-types` to get the `eventID`, `
+3. [x] Save two dataframes, one complete and one with the columns you want to predict removed. 
+  - [x] Predict `Priority`
+  - [x] Predict `Information-Types`
+4. [x] Merge predictions back into dataframes
+5. [x] Export in `TRECIS.run` format
 
 Next Steps
-1. Read all files at once
-2. Pass through eventID (?) merging labelled data with selection.json ? 
-3. Predict High Level Information Types
+1. [x] Read all files at once
+2. [x] Pass through eventID (?) merging labelled data with selection.json ? 
+3. [x] redict High Level Information Types
+
+
+# Week 12
+> 7.12.2020 - 14.12.2020
+> `xh`
+
+- 7.12.20
+- 8.12.20
+- 9.12.20
+  - Java/Play
+  - Loading all tweets.
+  - Deserialisation
+  - Predicting multi-labels
+- 10.12.20
+  - Count/Trim labels
+- 11.12.20
+- 12.12.20
+  - event
+- 13.12.20 (11am-7pm)
+  - long int bug
+  - work on labels
+- 14.12.20 (8am-11)
+  - Monday. Supervisor meeting
+  - Tidy/prep
+  - Seaborne
+  - Merging labels into myrun.ipynb
+
 
 ```bash
 P = Priority
@@ -282,8 +306,38 @@ T = Type
 Run             & NDCG    & AW-H      & AW-A      & CF1-H   & CF1-A   & CAcc   & PErr-H & PErr-A \\
 marksrun2       & 0.6179  & -0.1551   & -0.0777   & 0.0718  & 0.1085  & 0.9265 & 0.1632 & 0.3297 \\ All Tweets first run (Priority + 1 label)
 marksrun2       & 0.5446  & -0.1459   & -0.0731   & 0.1031  & 0.1664  & 0.9001 & 0.1430 & 0.2145 \\ Multiple labels
-marksrun2       & 0.5455  & -0.1459   & -0.0731   & 0.1081  & 0.1778  & 0.9211 & 0.1430 & 0.2148 \\ Predicting number of labels
-njit-sub01.text & 0.4632  & -0.4801   & -0.2493   & 0.0792  & 0.1582  & 0.9025 & 0.1524 & 0.2198 \\
+marksrun2       & 0.5452  & -0.1459   & -0.0731   & 0.1009  & 0.1890  & 0.9203 & 0.1430 & 0.2148 \\ Predicting number of labels
+marksrun2       & 0.5440  & -0.1474   & -0.0739   & 0.1090  & 0.1872  & 0.9201 & 0.1569 & 0.2731 \\ priority_y -> x
+marksrun2       & 0.5418  & -0.1505   & -0.0754   & 0.1151  & 0.1935  & 0.9203 & 0.1570 & 0.2693 \\ label/eventID tidy
+marksrun2       & 0.5538  & -0.1505   & -0.0754   & 0.1063  & 0.1954  & 0.9213 & 0.1565 & 0.2715 \\ eventID passing properly
+marksrun2       & 0.5825  & -0.1459   & -0.0731   & 0.1284  & 0.2172  & 0.9259 & 0.1549 & 0.2770 \\ labels passing properly
+marksrun2       & 0.6201  & -0.1459   & -0.0731   & 0.1284  & 0.2172  & 0.9259 & 0.1591 & 0.2967 \\
+marksrun2       & 0.6088  & -0.2288   & -0.1144   & 0.1284  & 0.2172  & 0.9259 & 0.1621 & 0.3133 \\
+marksrun2       & 0.5527  & -0.2765   & -0.1382   & 0.0279  & 0.0645  & 0.9122 & 0.1125 & 0.2366 \\ tidying input labels df
+marksrun2       & 0.5774  & -0.2734   & -0.1367   & 0.0373  & 0.0677  & 0.9127 & 0.1056 & 0.2365 \\ rerun of above
+marksrun2       & 0.5823  & -0.2119   & -0.1061   & 0.0308  & 0.0657  & 0.9131 & 0.1207 & 0.2592 \\
+marksrun2       & 0.5802  & -0.2135   & -0.1068   & 0.0357  & 0.0669  & 0.9136 & 0.1154 & 0.2482 \\
+marksrun2       & 0.5791  & -0.2165   & -0.1083   & 0.0313  & 0.0671  & 0.9128 & 0.1155 & 0.2534 \\ set scale in mutli.yaml
+marksrun2       & 0.5733  & -0.2181   & -0.1091   & 0.0331  & 0.0656  & 0.9128 & 0.1180 & 0.2605 \\ set scale all in hyper.yaml
+marksrun2       & 0.5800  & -0.2227   & -0.1114   & 0.0391  & 0.0669  & 0.9132 & 0.1112 & 0.2491 \\ LinearSVM reg
+marksrun2       & 0.5978  & -0.1551   & -0.0779   & 0.1731  & 0.2327  & 0.9242 & 0.1743 & 0.3163 \\ Decision Tree
+marksrun2       & 0.5838  & -0.2104   & -0.1053   & 0.0295  & 0.0633  & 0.9125 & 0.1196 & 0.2551 \\ MultinomialNaiveBayes reg
+marksrun2       & 0.3674  & -0.1785   & -0.0892   & 0.0225  & 0.0277  & 0.9107 & 0.0550 & 0.1544 \\ Bayer class + reg
+labeldata       & 0.5882  & -0.1689   & -0.0846   & 0.1490  & 0.2184  & 0.9241 & 0.1468 & 0.2904 \\
+marksrun2       & 0.5892  & -0.1612   & -0.0808   & 0.1452  & 0.2225  & 0.9246 & 0.1508 & 0.3074 \\ long int fix - 6k labels
+marksrun2       & 0.5902  & -0.1628   & -0.0816   & 0.1725  & 0.2157  & 0.9236 & 0.1626 & 0.3089 \\ long int fix - 42k labels - 3k tweets
+marksrun2       & 0.6267  & -0.1459   & -0.0731   & 0.1695  & 0.2283  & 0.9241 & 0.1685 & 0.3346 \\ added assr data to labels ? 
+marksrun2       & 0.4943  & -0.2411   & -0.1228   & 0.1490  & 0.2296  & 0.9242 & 0.1142 & 0.2639 \\ added labels load to myrun
+marksrun2       & 0.5010  & -0.2350   & -0.1193   & 0.1811  & 0.2526  & 0.9260 & 0.1337 & 0.2694 \\ turned off group by tweet
+marksrun2       & 0.5079  & -0.2335   & -0.1186   & 0.1859  & 0.2550  & 0.9262 & 0.1409 & 0.2726 \\ rerun
+marksrun2       & 0.5014  & -0.2350   & -0.1193   & 0.1843  & 0.2544  & 0.9260 & 0.1399 & 0.2762 \\
+marksrun2       & 0.5034  & -0.2350   & -0.1193   & 0.0671  & 0.1213  & 0.9205 & 0.1368 & 0.2663 \\ RandomForest
+marksrun2       & 0.5064  & -0.2335   & -0.1185   & 0.1834  & 0.2549  & 0.9260 & 0.1357 & 0.2746              \\ DecisionTree + RandomForest
+marksrun2       & 0.3682  & -0.0757   & -0.0378   & 0.0098  & 0.0148  & 0.9212 & 0.0669 & 0.1544 \\ LinearRegression
+
+
+njit-sub01.text & 0.4632  & -0.4801   & -0.2493   & 0.0792  & 0.1582  & 0.9025 & 0.1524 & 0.2198 \\ 
+
 ```
 
 
