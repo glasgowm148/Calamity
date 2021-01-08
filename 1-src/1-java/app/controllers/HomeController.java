@@ -47,10 +47,13 @@ public class HomeController extends Controller {
 
 
     static List<Tweet> tweetList = new ArrayList<>();
+
+    // Sample .jsonl files for testing
     private final File pathOne = new File("/Users/mark/HelpMe-clone/1-src/1-java/conf/1.jsonl");
     private final File pathTen = new File("/Users/mark/HelpMe-clone/1-src/1-java/conf/10.jsonl");
-    private final File pathAll = new File("../../0-data/raw/data/2020/2020-A/selected/all.jsonl");
     private final File pathAlberta = new File("/Users/mark/HelpMe-clone/1-src/1-java/conf/alberta.jsonl");
+    private final File pathAll = new File("../../0-data/raw/data/2020/2020-A/selected/all.jsonl");
+
 
 
     @Inject
@@ -89,7 +92,10 @@ public class HomeController extends Controller {
 
         // Parse into Tweet.class
         jsonReader reader = new jsonReader();
-        reader.parse(); //tweetList = reader.parseOne(pathAll);
+        reader.parse();
+
+        // Uncomment this line to parse all tweets (resource intensive! - hours)
+        //tweetList = reader.parseOne(pathAll);
 
         // Print elapsed time to console
         printTimer(startTime);

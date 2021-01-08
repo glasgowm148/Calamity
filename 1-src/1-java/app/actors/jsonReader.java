@@ -24,6 +24,7 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Stream;
 
+
 import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
 
 
@@ -140,18 +141,19 @@ public class jsonReader {
             tweet.setHashtags(hashtags);
 
             List<String> tokens = Twokenize.tokenize(tweet.getText());
-            String[] strarray = tokens.toArray(new String[0]);
-            tweet.setTokens(strarray);
+            String[] str_array = tokens.toArray(new String[0]);
+            tweet.setTokens(str_array);
 
 
-            // Twitter-Text
+            // Text features using Twitter-Text
             final TwitterTextParseResults result = TwitterTextParser.parseTweet(tweet.getText());
             tweet.setWeightedLength(result.weightedLength);
             tweet.setPermillage(result.permillage);
 
-
+            // Pre-Process
             Sanitise.clean(tweet);
 
+            // Progress 'bar'
             System.out.print(".");
 
 
