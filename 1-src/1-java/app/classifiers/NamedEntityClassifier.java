@@ -15,7 +15,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 
 public class NamedEntityClassifier {
 
-    public static String serializedClassifier = "/Users/mark/HelpMe-clone/1-src/1-java/lib/english.all.3class.caseless.distsim.crf.ser.gz";
+    public static String serializedClassifier = "lib/english.all.3class.caseless.distsim.crf.ser.gz";
     public static AbstractSequenceClassifier<CoreLabel> classifier =
             CRFClassifier.getClassifierNoExceptions(serializedClassifier);
 

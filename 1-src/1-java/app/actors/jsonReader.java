@@ -49,7 +49,7 @@ public class jsonReader {
 
             // Initialise actors for Word Embeddings & Sentiment Analysis
             GloVeModel model = new GloVeModel();
-            model.load("/Users/mark/HelpMe-clone/1-src/1-java/lib/glove", 100);
+            model.load("../../1-src/1-java/lib/glove", 100);
             SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
             sentimentAnalyzer.initialize();
 
