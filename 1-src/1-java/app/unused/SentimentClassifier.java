@@ -1,4 +1,4 @@
-package classifiers;
+package unused;
 
 import logic.SentimentAnalyzer;
 

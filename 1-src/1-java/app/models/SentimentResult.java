@@ -1,6 +1,6 @@
 package models;
 
-import classifiers.SentimentClassification;
+import unused.SentimentClassification;
 
 public class SentimentResult {
     double sentimentScore;

@@ -13,14 +13,24 @@
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/actors/jsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/actors/jsonReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/classifiers/NamedEntityClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/classifiers/NamedEntityClassifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/logic/DocumentLex.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/DocumentLex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/EmoticonsTweetFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/EmoticonsTweetFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/ObjectivityTweetFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/ObjectivityTweetFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/PastTenseTweetFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/PastTenseTweetFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/TweetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/TweetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/gloveActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/actors/gloveActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/classifiers/SentimentClassification.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/SentimentClassification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/classifiers/SentimentClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/SentimentClassifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/TweetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/TweetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/LineBasedJsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/LineBasedJsonReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/NdJsonRunTimeIOException.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/NdJsonRunTimeIOException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logic/DocumentLex.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/DocumentLex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logic/NDJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/NDJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logic/Sanitise.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/Sanitise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logic/SentimentAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/SentimentAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logic/makeTfidfLongvectors.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/makeTfidfLongvectors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/SentimentResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/SentimentResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/AppModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/AppModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pipelines/BasicPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/unused/BasicPipeline.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/properties.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +171,7 @@
       <module name="helpme-akka" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="logic.*" />
+          <option name="PATTERN" value="unused.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -296,7 +306,7 @@
       <workItem from="1610106571215" duration="95000" />
       <workItem from="1610106679367" duration="189000" />
       <workItem from="1610106891353" duration="1254000" />
-      <workItem from="1610108364718" duration="2277000" />
+      <workItem from="1610108364718" duration="3161000" />
     </task>
     <servers />
   </component>

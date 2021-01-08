@@ -1,4 +1,4 @@
-package classifiers;
+package unused;
 
 public class SentimentClassification {
     double veryPositive;

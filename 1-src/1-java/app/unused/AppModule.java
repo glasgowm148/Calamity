@@ -1,4 +1,4 @@
-package modules;
+package unused;
 
 import akka.actor.ActorSystem;
 import akka.actor.typed.ActorRef;
@@ -35,7 +35,7 @@ public class AppModule extends AbstractModule {
 
     public static class HelloActorProvider implements Provider<ActorRef<Command>> {
         private final akka.actor.typed.ActorSystem<Void> actorSystem;
-        private Environment environment;
+        private final Environment environment;
 
         @Inject
         public HelloActorProvider(ActorSystem actorSystem, Environment environment) {

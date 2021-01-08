@@ -1,4 +1,4 @@
-package lib;
+package unused;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

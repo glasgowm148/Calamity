@@ -8,7 +8,7 @@ import com.github.chen0040.embeddings.GloVeModel;
 public class gloveActor {
 
     private static final Logger logger = LoggerFactory.getLogger(gloveActor.class);
-    int dimensions = 50;
+
 
     public gloveActor(GloVeModel model, Tweet tweet) {
 

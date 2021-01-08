@@ -1,19 +1,12 @@
-package logic;
+package unused;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class makeTfidfLongvectors {
 
@@ -24,11 +17,11 @@ public class makeTfidfLongvectors {
         ArrayList userDocs= new ArrayList();
         ArrayList tempUserDoc= new ArrayList();
         final File folder = new File(".");
-        final List<File> fileList = Arrays.asList(folder.listFiles());
+        final List<File> fileList = Arrays.asList(Objects.requireNonNull(folder.listFiles()));
 
         // one document per line. format: [username**MARK**document content.....]
         String docPath="../../data/raw/data/2020/2020-A/tweets/siberian_wildfires/";
-        BufferedReader br= new BufferedReader(new FileReader(new File(docPath)));
+        BufferedReader br= new BufferedReader(new FileReader(docPath));
 
         String line;
         String doc;

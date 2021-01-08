@@ -1,9 +1,4 @@
-package actors;
-import models.Tweet;
-import play.*;
-import play.mvc.*;
-import play.db.jpa.*;
-import java.util.List;
+package services;
 import java.util.Vector;
 
 public class TweetService {

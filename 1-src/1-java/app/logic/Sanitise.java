@@ -1,14 +1,10 @@
 package logic;
 
-import actors.FileUtils;
+import unused.FileUtils;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonParser;
 import models.Tweet;
-import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
-import org.apache.spark.api.java.function.Function;
 import play.libs.Json;
 
 import java.io.File;
@@ -18,11 +14,10 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-import static org.apache.commons.lang.StringUtils.split;
 
 public class Sanitise {
 
-    private static Set stopWords = new HashSet<String[]>();
+    private static final Set<String[]> stopWords = new HashSet<>();
 
     static {
         try {
@@ -35,7 +30,53 @@ public class Sanitise {
         }
     }
 
+    public static void clean(Tweet tweet){
+        // Remove URLs, mentions, hashtags and whitespace
+        tweet.setText(tweet.getText().trim()
+                .replaceAll("http.*?[\\S]+", "")
+                .replaceAll("@[\\S]+", "")
+                .replaceAll("#", "")
+                .replaceAll("[\\s]+", " ")
+                //replace text between {},[],() including them
+                .replaceAll("\\{.*?}", "")
+                .replaceAll("\\[.*?]", "")
+                .replaceAll("\\(.*?\\)", "")
+                .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
+                .replaceAll("[/]"," ")
+                .replaceAll(";"," "));
 
+        Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"'`_|?!\n\r@;]+");
+        String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
+
+        //Collect all tokens into labels collection.
+        Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label->label.length()>0).collect(Collectors.toList());
+        //get from standard text files available for Stopwords. e.g https://algs4.cs.princeton.edu/35applications/stopwords.txt
+        //labels = labels.parallelStream().filter(label ->  !StopWords.getStopWords().contains(label.trim())).collect(Collectors.toList());
+
+
+    }
+
+    public static String toPrettyFormat(File file) {
+        String jsonText = null;
+        try (
+                FileInputStream is = new FileInputStream(file)
+        ) {
+            final JsonNode json = Json.parse(is);
+            Tweet tweets = new Tweet(json);
+            jsonText = tweets.toString();
+
+
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+
+            return gson.toJson(json);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return jsonText;
+    }
+
+
+    /**
     public static boolean isStopWord(String word) {
         return stopWords.contains(word) || word.trim().length() < 2;
     }
@@ -97,53 +138,11 @@ public class Sanitise {
     public static float format(double value) {
         return Math.round(1000 * value) / 1000f;
     }
+    **/
 
 
-    public static void clean(Tweet tweet){
-        // Remove URLs, mentions, hashtags and whitespace
-        tweet.setText(tweet.getText().trim()
-                .replaceAll("http.*?[\\S]+", "")
-                .replaceAll("@[\\S]+", "")
-                .replaceAll("#", "")
-                .replaceAll("[\\s]+", " ")
-                //replace text between {},[],() including them
-                .replaceAll("\\{.*?}", "")
-                .replaceAll("\\[.*?\\]", "")
-                .replaceAll("\\(.*?\\)", "")
-                .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
-                .replaceAll("[/]"," ")
-                .replaceAll(";"," "));
-
-        Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"\'\\`\\_\\|?!\n\r@;]+");
-        String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
-        //Collect all tokens into labels collection.
-        Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label->label.length()>0).collect(Collectors.toList());
-        //get from standard text files available for Stopwords. e.g https://algs4.cs.princeton.edu/35applications/stopwords.txt
-        //labels = labels.parallelStream().filter(label ->  !StopWords.getStopWords().contains(label.trim())).collect(Collectors.toList());
 
 
-    }
-
-    public static String toPrettyFormat(File file) {
-        String jsonText = null;
-        try (
-                FileInputStream is = new FileInputStream(file)
-        ) {
-            final JsonNode json = Json.parse(is);
-            JsonParser parser = new JsonParser();
-            //JsonObject json = parser.parse(jsonText).getAsJsonObject();
-            Tweet tweets = new Tweet(json);
-            jsonText = tweets.toString();
-
-
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-            return gson.toJson(json);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return jsonText;
-    }
 
 
 
