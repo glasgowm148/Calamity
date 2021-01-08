@@ -7,8 +7,8 @@ import java.util.Set;
 
 public class PastTenseTweetFeature extends TweetFeature {
 	
-	public static Set<String> past_words = 
-			new LinkedHashSet<String>();
+	public static Set<String> past_words =
+			new LinkedHashSet<>();
 	
 	static {
 		past_words.add("was");

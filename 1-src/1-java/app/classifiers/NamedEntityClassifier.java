@@ -21,7 +21,7 @@ public class NamedEntityClassifier {
 
     public static Map<String, NamedEntityType> getNamedEntites(String text) {
         Map<String, NamedEntityType> namedEntites =
-                new LinkedHashMap<String, NamedEntityType>();
+                new LinkedHashMap<>();
 
         text = UnicodeConverter.convert(text);
         for ( List<CoreLabel> lcl : classifier.classify(text) ) {
@@ -30,14 +30,16 @@ public class NamedEntityClassifier {
                 String eTag = cl.get(CoreAnnotations.AnswerAnnotation.class);
                 String namedEntity = cl.toString();
                 namedEntity = namedEntity.toLowerCase();
-                if ( eTag.equals("LOCATION") ) {
-                    namedEntites.put(namedEntity, NamedEntityType.LOCATION);
-                }
-                else if ( eTag.equals("PERSON") ) {
-                    namedEntites.put(namedEntity, NamedEntityType.PERSON);
-                }
-                else if ( eTag.equals("ORGANIZATION") ) {
-                    namedEntites.put(namedEntity, NamedEntityType.ORGANIZATION);
+                switch (eTag) {
+                    case "LOCATION":
+                        namedEntites.put(namedEntity, NamedEntityType.LOCATION);
+                        break;
+                    case "PERSON":
+                        namedEntites.put(namedEntity, NamedEntityType.PERSON);
+                        break;
+                    case "ORGANIZATION":
+                        namedEntites.put(namedEntity, NamedEntityType.ORGANIZATION);
+                        break;
                 }
             }
         }
@@ -46,7 +48,7 @@ public class NamedEntityClassifier {
     }
 
     public Set<String> getLocations(String text) {
-        Set<String> locations = new LinkedHashSet<String>();
+        Set<String> locations = new LinkedHashSet<>();
         text = UnicodeConverter.convert(text);
         for ( List<CoreLabel> lcl : classifier.classify(text) ) {
 

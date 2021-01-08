@@ -29,7 +29,7 @@ import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
 
 
 public class jsonReader {
-    private static final List<Vector> featureVectorList = new ArrayList<>();
+    //private static final List<Vector> featureVectorList = new ArrayList<>();
 
     private static final List<Tweet> tweetList  = new ArrayList<>();
 
@@ -43,6 +43,11 @@ public class jsonReader {
 
     }
 
+    /**
+     * @param path - the event path
+     * Parses each event into Tweet.class
+     * Calculates the offset and event keywords before passing to tweetAnalyser()
+     */
     public static void parseEvent(Path path)  {
         if(path.toString().contains("selected.jsonl") & !path.toString().matches(".*\\.gz")) {  //(".*\\.jsonl")
             System.out.println("Path:" + path);
@@ -78,8 +83,7 @@ public class jsonReader {
                     featureActor.getKeywords(tweetList);
 
                     // Offset + Sentiment + TwitterText + Glove
-                    int min = getMin();
-                    tweetAnalyser(min, model, sentimentAnalyzer);
+                    tweetAnalyser(getMin(), model, sentimentAnalyzer);
 
                     System.out.println("Parsed " + tweetList.size() + " tweets from "  + path);
 
@@ -94,52 +98,25 @@ public class jsonReader {
         }
     }
 
-    private static void printVector(String file) {
-        PrintWriter out = null;
 
-        // Export
-        try {
-            out = new PrintWriter(new FileWriter("../../0-data/processed/" + file + ".txt", true), true);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        for(Tweet tweet : tweetList) {
-            double[] d = convertFloatsToDoubles(tweet.getDimensions());
-            if(tweet.getFeatureVector() != null){
-                assert out != null;
-
-                // Print the feature vector
-                out.print(tweet.getFeatureVector());
-
-                // Add the BERT Word Embeddings
-                out.print(",");
-                out.print("[");
-                for(double x : d){
-                    out.print(x + ", ");
-                }
-                out.print("]");
-
-            }
-            assert out != null;
-            out.println("");
-
-        }
-        assert out != null;
-        out.flush();
-        out.close();
-        System.out.println("Exported to .txt");
-    }
-
+    /**
+     * @param min - minimum time
+     * @param model - word embeddings model
+     * @param sentimentAnalyzer - sentimentActor
+     * For each tweet in the event, hashtags, text-features are extracted
+     * The text is then sanitisied before sentiment analysis is performed.
+     * Then passed to NumericTweetFeatures() for exporting
+     */
     private static void tweetAnalyser(int min, GloVeModel model, SentimentAnalyzer sentimentAnalyzer) {
 
         for(Tweet tweet : tweetList) {
+
+            // Twitter-Text
             final Extractor extractor = new Extractor();
             List<String> hashtags = extractor.extractHashtags(tweet.getText());
             tweet.setHashtags(hashtags);
 
+            // Tokenizer
             List<String> tokens = Twokenize.tokenize(tweet.getText());
             String[] str_array = tokens.toArray(new String[0]);
             tweet.setTokens(str_array);
@@ -185,9 +162,9 @@ public class jsonReader {
             tweet.setFeatures(stringDoubleMap);
             tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
 
-            if(tweet.getFeatureVector() != null){
-                featureVectorList.add(tweet.getFeatureVector());
-            }
+            //if(tweet.getFeatureVector() != null){
+            //    featureVectorList.add(tweet.getFeatureVector());
+            //}
 
 
 
@@ -195,6 +172,7 @@ public class jsonReader {
         }
     }
 
+    // Get IntSummaryStatistics to calculate the offset
     private static int getMin() {
         // Offset
         IntSummaryStatistics summaryStatistics = tweetList.stream()
@@ -220,5 +198,44 @@ public class jsonReader {
             output[i] = input[i];
         }
         return output;
+    }
+
+    private static void printVector(String file) {
+        PrintWriter out = null;
+
+        // Export
+        try {
+            out = new PrintWriter(new FileWriter("../../0-data/processed/" + file + ".txt", true), true);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        for(Tweet tweet : tweetList) {
+            double[] d = convertFloatsToDoubles(tweet.getDimensions());
+            if(tweet.getFeatureVector() != null){
+                assert out != null;
+
+                // Print the feature vector
+                out.print(tweet.getFeatureVector());
+
+                // Add the BERT Word Embeddings
+                out.print(",");
+                out.print("[");
+                for(double x : d){
+                    out.print(x + ", ");
+                }
+                out.print("]");
+
+            }
+            assert out != null;
+            out.println("");
+
+        }
+        assert out != null;
+        out.flush();
+        out.close();
+        System.out.println("Exported to .txt");
     }
 }

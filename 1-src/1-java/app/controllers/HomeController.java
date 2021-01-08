@@ -1,7 +1,6 @@
 package controllers;
 import java.io.*;
 import java.time.Duration;
-import java.util.*;
 import java.util.concurrent.CompletionStage;
 
 import javax.inject.Inject;
@@ -9,11 +8,12 @@ import javax.inject.Inject;
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
+
 // Play
 import play.mvc.Controller;
 import play.mvc.Result;
+
 // Project imports
-import models.*;
 import actors.*;
 import logic.*;
 
@@ -46,13 +46,6 @@ public class HomeController extends Controller {
     private final Duration askTimeout = Duration.ofSeconds(3L);
 
 
-    static List<Tweet> tweetList = new ArrayList<>();
-
-    // Sample .jsonl files for testing
-    private final File pathOne = new File("../../1-src/1-java/conf/1.jsonl");
-    private final File pathTen = new File("../../1-src/1-java/conf/10.jsonl");
-    private final File pathAlberta = new File("../../1-src/1-java/conf/alberta.jsonl");
-    private final File pathAll = new File("../../0-data/raw/data/2020/2020-A/selected/all.jsonl");
 
 
 
@@ -101,7 +94,7 @@ public class HomeController extends Controller {
         printTimer(startTime);
 
         // Prints to browser
-        return ok(Sanitise.toPrettyFormat(pathTen));
+        return ok(Sanitise.toPrettyFormat(new File("../../1-src/1-java/conf/10.jsonl")));
     }
 
     private void printTimer(long startTime) {

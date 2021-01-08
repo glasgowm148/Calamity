@@ -16,9 +16,11 @@
       <change beforePath="$PROJECT_DIR$/app/actors/jsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/actors/jsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/classifiers/NamedEntityClassifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/classifiers/NamedEntityClassifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logic/DocumentLex.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/logic/DocumentLex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/EmoticonsTweetFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/EmoticonsTweetFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/NumericTweetFeatures.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/ObjectivityTweetFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/ObjectivityTweetFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tweetfeatures/PastTenseTweetFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/tweetfeatures/PastTenseTweetFeature.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +296,7 @@
       <workItem from="1610106571215" duration="95000" />
       <workItem from="1610106679367" duration="189000" />
       <workItem from="1610106891353" duration="1254000" />
-      <workItem from="1610108364718" duration="659000" />
+      <workItem from="1610108364718" duration="2277000" />
     </task>
     <servers />
   </component>
@@ -384,11 +386,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/twitter/twittertext/TwitterTextConfiguration.java</url>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/actors/jsonReader.java</url>
-          <line>97</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/models/Tweet.java</url>

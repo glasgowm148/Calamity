@@ -8,8 +8,8 @@ import java.util.Set;
 
 public class EmoticonsTweetFeature extends TweetFeature {
 	
-	public static Set<String> emoticons = 
-			new LinkedHashSet<String>();
+	public static Set<String> emoticons =
+			new LinkedHashSet<>();
 	
 	static {
 		String emos = ":-) :) :o) :] :3 :c) :> =] 8) =) :} :^) :っ) :-D :D 8-D" +
@@ -28,9 +28,7 @@ public class EmoticonsTweetFeature extends TweetFeature {
 	}
 
 	@Override
-	/**
-	 * Returns if the tweet has an emoticon or not
-	 */
+	// Returns if the tweet has an emoticon or not
 	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
 			if ( emoticons.contains(token) ) {
@@ -42,8 +40,8 @@ public class EmoticonsTweetFeature extends TweetFeature {
 	
 	/**
 	 * Returns the number of emoticons in the tweet
-	 * @param tweet
-	 * @return
+	 * @param tweet -
+	 * @return - returns a count
 	 */
 	public static double getScore(Tweet tweet) {
 		double counter = 0;

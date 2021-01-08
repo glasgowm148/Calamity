@@ -11,28 +11,8 @@ import java.util.*;
 
 public class NumericTweetFeatures {
 	public static Set<String> numericFeaturesNames;
-	// tweet
-	public static final String tweet_created_at = "tweet_created_at";
-	public static final String tweet_id_str = "tweet_id_str";
 
-	public static final String sent_from_mobile = "sent_from_mobile";
-	// tweet-text
-	public static final String tweet_length = "tweet_length";
-	public static final String numb_of_urls = "numb_of_urls";
-	public static final String numb_of_media = "numb_of_media";
-	public static final String numb_of_hashtags = "numb_of_hashtags";
-	public static final String numb_of_personal_pronouns = "numb_of_personal_pronouns";
-	public static final String numb_of_present_tenses = "numb_of_present_tenses";
-	public static final String numb_of_past_tenses = "numb_of_past_tenses";
-	public static final String numb_of_named_entites = "numb_of_named_entites";
-	public static final String numb_of_weird_chars = "numb_of_weird_chars";
-	public static final String numb_of_questions = "numb_of_questions";
-	public static final String numb_of_emoticons = "numb_of_emoticons";
-	public static final String numb_of_swearing_words = "numb_of_swearing_word";
-	public static final String numb_of_slang_words = "numb_of_slang_words";
-	public static final String numb_of_intensifiers = "numb_of_intensifiers";
-	public static final String numb_of_mentions = "numb_of_mentions";
-	// user
+	// User details
 	public static final String userFollowersCount = "userFollowersCount";
 	public static final String userFriendsCount = "userFriendsCount";
 	public static final String userRegistrationDays = "userRegistrationDays";
@@ -40,16 +20,41 @@ public class NumericTweetFeatures {
 	public static final String numb_of_user_description_chars = "numb_of_user_description_chars";
 	public static final String user_listed_count = "user_list_count";
 	private static final String is_verified = "is_verified";
-	// tweet-text-analysis
+
+	// Tweet details
+	public static final String tweet_created_at = "tweet_created_at";
+	public static final String tweet_id_str = "tweet_id_str";
+	public static final String sent_from_mobile = "sent_from_mobile";
+	public static final String tweet_length = "tweet_length";
+	public static final String numb_of_urls = "numb_of_urls";
+	public static final String numb_of_media = "numb_of_media";
+	public static final String numb_of_hashtags = "numb_of_hashtags";
+	private static final String offset = "offset";
+	private static final String weighted_length = "weighted_length";
+	private static final String permillage = "permillage";
+
+	// Text mining
+	public static final String numb_of_personal_pronouns = "numb_of_personal_pronouns";
+	public static final String numb_of_present_tenses = "numb_of_present_tenses";
+	public static final String numb_of_past_tenses = "numb_of_past_tenses";
+	public static final String numb_of_weird_chars = "numb_of_weird_chars";
+	public static final String numb_of_questions = "numb_of_questions";
+	public static final String numb_of_emoticons = "numb_of_emoticons";
+	public static final String numb_of_swearing_words = "numb_of_swearing_word";
+	public static final String numb_of_slang_words = "numb_of_slang_words";
+	public static final String numb_of_intensifiers = "numb_of_intensifiers";
+	public static final String numb_of_mentions = "numb_of_mentions";
+
+	// NLP
+	public static final String numb_of_named_entites = "numb_of_named_entites";
 	public static final String positive_sentiment = "positive_sentiment";
 	public static final String negative_sentiment = "negative_sentiment";
 	private static final String tfidf_fire = "tfidf_fire";
 	private static final String dict_precision = "dict_precision";
 	private static final String dict_recall = "dict_recall";
 	private static final String dict_f_measure = "dict_f_measure";
-	private static final String offset = "offset";
-	private static final String weighted_length = "weighted_length";
-	private static final String permillage = "permillage";
+
+
 	// UD
 	//private static final String dimensionsBERT = "dimensionsBERT";
 	//public static final String sent_from_web = "sent_from_web";   /// empty

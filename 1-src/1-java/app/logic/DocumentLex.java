@@ -24,7 +24,7 @@ public class DocumentLex {
 
     public DocumentLex() throws IOException {
         System.out.println("test");
-        BufferedReader bufReader = new BufferedReader(new FileReader("/Users/pseudo/Documents/GitHub/HelpMe/src/conf/lex.txt"));
+        BufferedReader bufReader = new BufferedReader(new FileReader("/../../../src/conf/lex.txt"));
 
         ArrayList<String> lex = new ArrayList<>();
         String line = bufReader.readLine();
@@ -53,7 +53,7 @@ public class DocumentLex {
                 }
             }
         }
-        catch(IllegalStateException e){
+        catch(IllegalStateException ignored){
 
         }
 

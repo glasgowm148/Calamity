@@ -7,8 +7,8 @@ import java.util.Set;
 
 public class ObjectivityTweetFeature extends TweetFeature {
 
-	public static Set<String> first_person_pronouns = 
-			new LinkedHashSet<String>();
+	public static Set<String> first_person_pronouns =
+			new LinkedHashSet<>();
 	static {
 		first_person_pronouns.add("i");
 		first_person_pronouns.add("me");
@@ -19,14 +19,11 @@ public class ObjectivityTweetFeature extends TweetFeature {
 		first_person_pronouns.add("us");
 		first_person_pronouns.add("our");
 		first_person_pronouns.add("ours");
-		first_person_pronouns.add("ourselfves");
+		first_person_pronouns.add("ourselves");
 	}
 
 	@Override
-	/**
-	 * Classifies the tweet as either objective or not. (i.e.
-	 * if it has NO personal pronouns then it's objective).
-	 */
+	// Classifies the tweet as either objective or not. (0 personal pronouns = objective).
 	public boolean classify(Tweet tweet) {
 		
 		for ( String token : tweet.getTokens() ) {
