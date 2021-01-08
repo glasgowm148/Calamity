@@ -1,9 +1,80 @@
-# HelpMe!: Identifying emergency reports and calls for help on social media
-> The aim of this project is to produce a series of curated feeds containing social media posts, where each feed corresponds to a particular type of information request, aid request, or report containing a particular type of information
 
-* [Zotero Research Library](https://www.zotero.org/markglasgow/collections/NKR37VTR)z
 
-## Background
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/glasgowm148/helpme">
+    <img src="/0-data/raw/img/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">HelpMe!: </h3>
+
+  <p align="center">
+    Identifying emergency reports and calls for help on social media
+    <br />
+    <a href="https://github.com/glasgowm148/HelpMe/tree/main/HelpMe/data/docs"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/glasgowm148/HelpMe/data/demo">View Demo</a>
+    ·
+    <a href="https://github.com/glasgowm148/HelpMe/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/glasgowm148/HelpMe/issues">Request Feature</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+![HelpMe Screen Shot](HelpMe/data/img/screenshot.png)
+
+
+### Built With
+
+* ## Technical Details
+
+* Java-based back-end, 
+* HTML/Javascript frontend/Web UI built with [Play Framework](https://www.playframework.com/)
+
+
+
+## Overview
+
+
+There is an accompanying report which will give a greater insight into the uses for this project
+
+_For more examples, please refer to the [Documentation](https://github.com/glasgowm148/HelpMe/HelpMe/docs)_
 
 > Internationally, civil protection, police forces and emergency response agencies are under increasing pressure to more quickly and effectively respond to emergency situations. The mass adoption of mobile internet-enabled devices paired with wide-spread use of social media platforms for communication and coordination has created ways for the public on-the-ground to contact response services.
 
@@ -13,16 +84,83 @@
 
 During the project the student will learn about how to use state-of-the-art machine learning techniques to classify social media posts by the information they contain in real-time.
 
-## Technical Details
-
-* Java-based back-end, 
-* HTML/Javascript frontend/Web UI built with [Play Framework](https://www.playframework.com/)
-
-* I've used [java-play-react seed](https://github.com/yohangz/java-play-react-seed)
-
-Run with `sbt run` from within `src` or `./run.sh`
-`sbt dist`
-
 ### Evaluation
 
 The product will be evaluated via automatic evaluation of categorization accuracy using text collections built for the [TREC Incident Streams evaluation initiative](http://dcs.gla.ac.uk/~richardm/TREC_IS/)
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+(Note: To test after moving directory. Likely broken urls/steps missing - TODO)
+To get a local copy up and running follow these simple steps.
+
+### Installation
+
+
+<!-- USAGE EXAMPLES -->
+## Commands
+
+### User Commands
+
+| Command     | Description |
+| ----------- | ----------- |
+| `sbt`       | Enter the SBT console |
+| `sbt run`   | Run the Application |
+| `sbt`       | Enter the SBT console |
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/glasgowm148/HelpMe/issues) for a list of proposed features (and known issues).
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Mark Glasgow - markglasgow@gmail.com
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+* This project was initially built as part of my Honours Individual Project Dissertation at The University of Glasgow
+* [java-play-react seed](https://github.com/yohangz/java-play-react-seed)
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/glasgowm148/HelpMe.svg?style=for-the-badge
+[contributors-url]: https://github.com/glasgowm148/HelpMe/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/glasgowm148/HelpMe.svg?style=for-the-badge
+[forks-url]: https://github.com/glasgowm148/HelpMe/network/members
+[stars-shield]: https://img.shields.io/github/stars/glasgowm148/HelpMe.svg?style=for-the-badge
+[stars-url]: https://github.com/glasgowm148/HelpMe/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/glasgowm148/HelpMe/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/glasgowm148/HelpMe/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/glasgowmark/

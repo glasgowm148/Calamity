@@ -429,3 +429,17 @@ PErr-A  =   `priorityAvgf1 / len(informationTypes2Index`      =   How divergent 
   - see where it fails
   - add / improvimng structure story
     - show a story and how you worked though 
+
+
+# Week 1x
+> 16.12.2020 - 11.01.2021
+- GloVe embeddings
+- Offset
+
+## ToDo
+- BERTweet - https://github.com/VinAIResearch/BERTweet#usage2
+- http://www.cs.cmu.edu/~ark/TweetNLP/
+- https://cloud.google.com/natural-language/automl/docs/tutorial
+- https://github.com/kbastani/sentiment-analysis-twitter-microservices-example
+- https://github.com/millecker/senti-storm
+- Actor system

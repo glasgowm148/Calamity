@@ -1,4 +1,5 @@
 package controllers;
+
 import java.io.*;
 import java.time.Duration;
 import java.util.concurrent.CompletionStage;
@@ -23,8 +24,6 @@ import services.CounterActor.Command;
 import services.CounterActor.GetValue;
 import services.CounterActor.Increment;
 
-
-//  sbt -java-home /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
 
 /**
  * This controller contains an action to handle HTTP requests
