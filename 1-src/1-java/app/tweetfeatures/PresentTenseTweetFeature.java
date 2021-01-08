@@ -28,6 +28,7 @@ public class PresentTenseTweetFeature extends TweetFeature {
 	 */
 	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
+			System.out.println("t" + token);
 			if ( presence_words.contains(token) ) {
 				return true;
 			}

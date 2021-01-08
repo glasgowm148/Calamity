@@ -33,10 +33,10 @@ public class SentimentAnalyzer {
         PrintStream err = System.err;
 
         // now make all writes to the System.err stream silent
-                System.setErr(new PrintStream(new OutputStream() {
-                    public void write(int b) {
-                    }
-                }));
+        System.setErr(new PrintStream(new OutputStream() {
+            public void write(int b) {
+            }
+        }));
 
 
         // creates a StanfordCoreNLP object, with POS tagging, lemmatization, NER, parsing, and sentiment

@@ -58,7 +58,7 @@ public class featureActor {
                 }
                 catch(IndexOutOfBoundsException e)
                 {
-                    e.printStackTrace();
+                    //e.printStackTrace();
                 }
             }
             // Calculate the Precision, Recall and F-Measure against the providedKeywords

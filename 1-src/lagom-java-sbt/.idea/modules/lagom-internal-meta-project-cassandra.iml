@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module external.linked.project.id="lagom-internal-meta-project-cassandra [file:/Users/pseudo/Documents/GitHub/HelpMe/1-src/lagom-java-sbt/]" external.linked.project.path="$MODULE_DIR$/../../target/lagom-dynamic-projects/lagom-internal-meta-project-cassandra" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+<module external.linked.project.id="lagom-internal-meta-project-cassandra [file:/Users/mark/HelpMe-clone/1-src/lagom-java-sbt/]" external.linked.project.path="$MODULE_DIR$/../../target/lagom-dynamic-projects/lagom-internal-meta-project-cassandra" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../target/lagom-dynamic-projects/lagom-internal-meta-project-cassandra/target/scala-2.12/classes" />
     <output-test url="file://$MODULE_DIR$/../../target/lagom-dynamic-projects/lagom-internal-meta-project-cassandra/target/scala-2.12/test-classes" />

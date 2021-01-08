@@ -47,6 +47,7 @@ public class ObjectivityTweetFeature extends TweetFeature {
 		double counter = 0;
 		for ( String token : tweet.getTokens() ) {
 			if ( first_person_pronouns.contains(token) ) {
+				//System.out.println("hit");
 				counter++;
 			}
 		}

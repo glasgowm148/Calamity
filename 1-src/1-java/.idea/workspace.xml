@@ -12,27 +12,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Json.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lagom-java-sbt/eris-api/src/main/java/org/cs2021/eris/api/UserGreeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lagom-java-sbt/eris-impl/src/main/java/org/cs2021/eris/impl/Greetings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lagom-java-sbt/eris-impl/src/main/java/org/cs2021/eris/impl/HelloEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/.ipynb_checkpoints/0-myrun-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/.ipynb_checkpoints/0-myrun-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/0-myrun.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/0-myrun.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/0_Test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/0_Test.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/1_Load_Dataset.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/1_Load_Dataset.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/3_Fit_and_Predict.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/3_Fit_and_Predict.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/marks2.run" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/marks2.run" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.overall.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.overall.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.perevent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.perevent.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.pertopic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/marksrun2.results.task1.pertopic.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/description.json" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/evaluation.json" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/evaluation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/model.sav" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/model.sav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/predictions.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/model_results/predictions.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/2-notebooks/yaml/multi.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/2-notebooks/yaml/multi.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/3-csv/test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/3-csv/test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2-python/3-csv/train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/3-csv/train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2-status_report/timelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../2-status_report/timelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.12.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/run/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/run/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-impl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-stream-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-stream-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-stream-impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris-stream-impl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/eris.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/lagom-internal-meta-project-cassandra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/lagom-internal-meta-project-cassandra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/lagom-internal-meta-project-kafka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/lagom-internal-meta-project-kafka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/lagom-internal-meta-project-service-locator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/modules/lagom-internal-meta-project-service-locator.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/eris-api/src/main/java/org/cs2021/eris/api/ErisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/eris-api/src/main/java/org/cs2021/eris/api/ErisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/eris-api/src/main/java/org/cs2021/eris/api/GreetingMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/eris-api/src/main/java/org/cs2021/eris/api/GreetingMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/eris-impl/src/main/java/org/cs2021/eris/impl/ErisServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/eris-impl/src/main/java/org/cs2021/eris/impl/ErisServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lagom-java-sbt/project/build.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../lagom-java-sbt/project/build.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,21 +140,19 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Model" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Utils" />
@@ -156,6 +160,9 @@
       <recent name="$PROJECT_DIR$/app/models" />
       <recent name="$PROJECT_DIR$/app/classifiers" />
       <recent name="$PROJECT_DIR$/project" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="controllers" />
     </key>
   </component>
   <component name="RunManager" selected="Application.logicTest">
@@ -270,11 +277,34 @@
       <workItem from="1608132247068" duration="379000" />
       <workItem from="1608133012171" duration="1000" />
       <workItem from="1608133032463" duration="3562000" />
+      <workItem from="1608137271302" duration="1978000" />
+      <workItem from="1608459256766" duration="4990000" />
+      <workItem from="1608478880174" duration="6260000" />
+      <workItem from="1608487042659" duration="11039000" />
+      <workItem from="1608540826199" duration="824000" />
+      <workItem from="1608541759170" duration="3715000" />
+      <workItem from="1608545924053" duration="23046000" />
+      <workItem from="1608594025392" duration="13422000" />
+      <workItem from="1608647737551" duration="4030000" />
+      <workItem from="1609759313538" duration="855000" />
+      <workItem from="1609760206864" duration="61000" />
+      <workItem from="1609760280770" duration="2510000" />
+      <workItem from="1609767046313" duration="606000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -347,13 +377,17 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/models/Tweet.java</url>
-          <line>200</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/app/twitter/twittertext/TwitterTextConfiguration.java</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/actors/jsonReader.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/models/Tweet.java</url>
-          <line>123</line>
+          <line>134</line>
           <properties class="models.Tweet">
             <option name="EMULATED" value="true" />
           </properties>

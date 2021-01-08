@@ -16,7 +16,7 @@ public class IntensificationTweetFeature extends TweetFeature {
 	 */
 	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
-			if ( lookUpTable.contains(token) ) {
+			if ( lookUpTable.contains((String) token) ) {
 				return true;
 			}
 		}
@@ -31,7 +31,7 @@ public class IntensificationTweetFeature extends TweetFeature {
 	public static double getScore(Tweet tweet) {
 		double counter = 0;
 		for ( String token : tweet.getTokens() ) {
-			if ( lookUpTable.contains(token) ) {
+			if ( lookUpTable.contains((String) token) ) {
 				counter++;
 			}
 		}

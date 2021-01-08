@@ -7,6 +7,7 @@ import com.lightbend.lagom.javadsl.api.Service;
 import com.lightbend.lagom.javadsl.api.ServiceCall;
 import com.lightbend.lagom.javadsl.api.broker.Topic;
 import com.lightbend.lagom.javadsl.api.broker.kafka.KafkaProperties;
+import org.pcollections.PSequence;
 
 import static com.lightbend.lagom.javadsl.api.Service.*;
 
@@ -33,13 +34,14 @@ public interface ErisService extends Service {
      * This gets published to Kafka.
      */
     Topic<ErisEvent> helloEvents();
-
+    ServiceCall<NotUsed, PSequence<UserGreeting>> allGreetings();
     @Override
     default Descriptor descriptor() {
         return named("eris")
                 .withCalls(
                         pathCall("/api/hello/:id", this::hello),
-                        pathCall("/api/hello/:id", this::useGreeting)
+                        pathCall("/api/hello/:id", this::useGreeting),
+                        pathCall("/api/events", this::allGreetings)
                 )
                 .withTopics(
                         topic("hello-events", this::helloEvents)

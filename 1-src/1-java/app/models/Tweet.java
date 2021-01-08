@@ -9,16 +9,17 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.annotations.Expose;
 
+import twitter4j.HashtagEntity;
+import twitter4j.Status;
+import twitter4j.URLEntity;
+
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Vector;
+import java.util.*;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Tweet<S, O, features> {
+public class Tweet implements Comparable<Tweet> {
 
     public Map<String, Double> setFeatures;
     private double sentimentScore;
@@ -29,13 +30,18 @@ public class Tweet<S, O, features> {
     private double sentimentClassNeg;
     private double sentimentClassVerNeg;
     private String[] userMentions;
+    public String[] locations;
+    public List<String> simpleTokens;
+    //public List<Token> tokensList;
+    public boolean isFavorited, isPossiblySensitive,
+            isRetweet, isRetweetedByMe, isTruncated;
 
     private Timestamp userRegistrationDate;
 
     private String userScreenName, userRealName,
             userDescription, userLocation;
 
-    private String[] tokens;
+
     private int userFriendsCount;
     private int userNumbTweets;
     private int userListedCount;
@@ -45,7 +51,7 @@ public class Tweet<S, O, features> {
 
     private String urls;
 
-    private String[] hashtags;
+    private List<String> hashtags;
     private Vector<Double> features;
     private double positive;
     private double negative;
@@ -55,24 +61,21 @@ public class Tweet<S, O, features> {
     private List<Medium> media;
     private Serializable analysis;
     private int offset;
+    private int weightedLength;
+    private int permillage;
+    private float[] dimensions;
+    private String[] tokens;
 
     public Tweet() {
         super();
 
         this.id = IDGenerator.getID();
         tokens = new String[0];
-        hashtags = new String[0];
-        
         userMentions = new String[0];
         double[] geoLocation = new double[0];
         double tfidf;
-
-
-
     }
 
-    final ObjectMapper mapper = new ObjectMapper();
-    String jsonText = null;
 
 
     public int getUserListedCount() {
@@ -81,6 +84,14 @@ public class Tweet<S, O, features> {
 
     public void setUserListedCount(int userListedCount) {
         user.setListedCount(userListedCount);
+    }
+
+    public int getIsVerified() {
+        return user.getVerified() ? 1 : 0;
+    }
+
+    public void setIsVerified(boolean isVerified) {
+        user.setVerified(isVerified);
     }
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "EEE MMM dd HH:mm:ss Z yyyy", locale = "en")
     @JsonProperty("created_at")
@@ -193,11 +204,11 @@ public class Tweet<S, O, features> {
     }
 
 
-    public String[] getHashtags() {
+    public List<String> getHashtags() {
         return hashtags;
     }
 
-    public void setHashtags(String[] hashtags) {
+    public void setHashtags(List<String> hashtags) {
         this.hashtags = hashtags;
     }
 
@@ -386,7 +397,7 @@ public class Tweet<S, O, features> {
     }
 
     public Float getResult(int i) {
-        Float f = new Float(0);
+        Float f = (float) 0;
         if(result != null){
             return result.get(i);
         }
@@ -403,10 +414,100 @@ public class Tweet<S, O, features> {
     }
 
     public Double getOffset() {
-        return Double.valueOf(offset);
+        return (double) offset;
+    }
+
+    public void setWeightedLength(int weightedLength) {
+        this.weightedLength = weightedLength;
+    }
+
+    public void setPermillage(int permillage) {
+        this.permillage = permillage;
+    }
+
+    public int getWeightedLength() {
+        return this.weightedLength;
+    }
+
+    public int getPermillage() {
+        return this.permillage;
+    }
+
+    public void setDimensions(float[] d) {
+        this.dimensions = d;
+    }
+
+    public float[] getDimensions() {
+        return this.dimensions;
+    }
+
+    @Override
+    public int compareTo(Tweet o) {
+        if ( createdAt.getTime() > o.getCreatedAt().getTime() )
+            return 1;
+        else if( createdAt.getTime() < o.getCreatedAt().getTime() )
+            return -1;
+        else return 0;
+    }
+
+    public String[] getLocations() {
+        return locations;
+    }
+
+    public void setLocations(String[] locations) {
+        this.locations = locations;
+    }
+
+    public List<String> getSimpleTokens() {
+        return simpleTokens;
+    }
+
+    public void setSimpleTokens(List<String> simpleTokens) {
+        this.simpleTokens = simpleTokens;
+    }
+
+    public boolean isFavorited() {
+        return isFavorited;
+    }
+
+    public void setFavorited(boolean isFavorited) {
+        this.isFavorited = isFavorited;
+    }
+
+    public boolean isPossiblySensitive() {
+        return isPossiblySensitive;
+    }
+
+    public void setPossiblySensitive(boolean isPossiblySensitive) {
+        this.isPossiblySensitive = isPossiblySensitive;
+    }
+
+    public boolean isRetweet() {
+        return isRetweet;
+    }
+
+    public void setRetweet(boolean isRetweet) {
+        this.isRetweet = isRetweet;
+    }
+
+    public boolean isRetweetedByMe() {
+        return isRetweetedByMe;
+    }
+
+    public void setRetweetedByMe(boolean isRetweetedByMe) {
+        this.isRetweetedByMe = isRetweetedByMe;
+    }
+
+    public boolean isTruncated() {
+        return isTruncated;
+    }
+
+    public void setTruncated(boolean isTruncated) {
+        this.isTruncated = isTruncated;
     }
 }
 @JsonIgnoreProperties(ignoreUnknown = true)
+
 class Entities {
 
     Entities() {
@@ -483,6 +584,7 @@ class Retweet {
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class User {
+    // https://developer.twitter.com/en/docs/twitter-api/v1/data-dictionary/object-model/user
 
 
     @JsonProperty("id")
@@ -877,6 +979,7 @@ class User {
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class Medium {
+    // https://developer.twitter.com/en/docs/twitter-api/v1/data-dictionary/object-model/entities#media
     @JsonProperty("media_url")
     @Expose
     private String mediaUrl;

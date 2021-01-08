@@ -13,7 +13,9 @@ import com.lightbend.lagom.javadsl.broker.TopicProducer;
 import com.lightbend.lagom.javadsl.persistence.PersistentEntityRegistry;
 import org.cs2021.eris.api.GreetingMessage;
 import org.cs2021.eris.api.ErisService;
+import org.cs2021.eris.api.UserGreeting;
 import org.cs2021.eris.impl.ErisCommand.*;
+import org.pcollections.PSequence;
 
 import javax.inject.Inject;
 import java.time.Duration;
@@ -22,12 +24,17 @@ import java.time.Duration;
  * Implementation of the ErisService.
  */
 public class ErisServiceImpl implements ErisService {
+
+    // Store the events
+    private Greetings greetings;
+
     private final PersistentEntityRegistry persistentEntityRegistry;
     private final Duration askTimeout = Duration.ofSeconds(5);
     private ClusterSharding clusterSharding;
 
     @Inject
      public ErisServiceImpl(PersistentEntityRegistry persistentEntityRegistry, ClusterSharding clusterSharding) {
+        this.greetings = greetings;
         this.clusterSharding = clusterSharding;
         // The persistent entity registry is only required to build an event stream for the TopicProducer
         this.persistentEntityRegistry = persistentEntityRegistry;
@@ -41,10 +48,12 @@ public class ErisServiceImpl implements ErisService {
         );
     }
 
+
+
     @Override
     public ServiceCall<NotUsed, String> hello(String id) {
         return request -> {
-            // Look up the aggregete instance for the given ID.
+            // Look up the aggregate instance for the given ID.
             EntityRef<ErisCommand> ref = clusterSharding.entityRefFor(ErisAggregate.ENTITY_TYPE_KEY, id);
             // Ask the entity the Hello command.
             return ref.
@@ -56,7 +65,7 @@ public class ErisServiceImpl implements ErisService {
     @Override
     public ServiceCall<GreetingMessage, Done> useGreeting(String id) {
         return request -> {
-            // Look up the aggregete instance for the given ID.
+            // Look up the aggregate instance for the given ID.
             EntityRef<ErisCommand> ref = clusterSharding.entityRefFor(ErisAggregate.ENTITY_TYPE_KEY, id);
             // Tell the entity to use the greeting message specified.
             return ref.
@@ -98,5 +107,10 @@ public class ErisServiceImpl implements ErisService {
                 return Pair.create(eventToPublish, eventAndOffset.second());
             })
         );
+    }
+
+    @Override
+    public ServiceCall<NotUsed, PSequence<UserGreeting>> allGreetings() {
+        return request -> greetings.all();
     }
 }

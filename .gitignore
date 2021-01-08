@@ -1,9 +1,13 @@
 *.class
 *.log
+1-src/1-java/app/project/*
 .DS_Store
+1-src/1-java/app/target/*
 data/raw/datasets/*
 1-src/.seed/*
+1-src/1-java/target/*
 1-src/TweetMinner-master/.project
+1-src/lagom-java-sbt/.idea/*
 1-src/CoreNLP/*
 1-src2/TREC*
 1-src/logs
@@ -91,3 +95,5 @@ data/*
 1-src/1-java/target/scala-2.12/classes/intensifiers 2.txt
 1-src/1-java/target/scala-2.12/classes/lex 2.txt
 1-src/1-java/target/scala-2.12/classes/local-shared 2.conf
+*.txt
+*.jar

@@ -308,7 +308,8 @@ public class Twokenize {
         return Arrays.asList(contract);
     }
 
-    /** Assume 'text' has no HTML escaping. **/
+    /** Assume 'text' has no HTML escaping.
+     * @return**/
     public static List<String> tokenize(String text){
         return simpleTokenize(squeezeWhitespace(text));
     }

@@ -109,10 +109,10 @@ libraryDependencies += "org.apache.spark" %% "spark-mllib" % "3.0.1" % "provided
 libraryDependencies += "edu.berkeley.nlp" % "berkeleylm" % "1.1.2"
 
 // https://mvnrepository.com/artifact/org.nd4j/nd4j-api
-libraryDependencies += "org.nd4j" % "nd4j-api" % "1.0.0-beta7"
+//libraryDependencies += "org.nd4j" % "nd4j-api" % "1.0.0-beta7"
 
 // https://mvnrepository.com/artifact/org.deeplearning4j/deeplearning4j-core
-libraryDependencies += "org.deeplearning4j" % "deeplearning4j-core" % "1.0.0-beta7"
+//libraryDependencies += "org.deeplearning4j" % "deeplearning4j-core" % "1.0.0-beta7"
 
 // https://mvnrepository.com/artifact/org.apache.opennlp/opennlp-tools
 libraryDependencies += "org.apache.opennlp" % "opennlp-tools" % "1.9.3"
@@ -131,5 +131,11 @@ libraryDependencies += "com.hankcs" % "hanlp" % "portable-1.7.8"
 
 
 // https://mvnrepository.com/artifact/org.json/json
-libraryDependencies += "org.json" % "json" % "20200518"
+libraryDependencies += "org.json" % "json" % "20200518"// https://mvnrepository.com/artifact/com.github.chen0040/java-text-embedding
+libraryDependencies += "com.github.chen0040" % "java-text-embedding" % "1.0.1"
+
+// https://mvnrepository.com/artifact/com.twitter.twittertext/twitter-text
+libraryDependencies += "com.twitter.twittertext" % "twitter-text" % "3.1.0"
+
+
 

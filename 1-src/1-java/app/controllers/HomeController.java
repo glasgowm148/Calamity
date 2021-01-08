@@ -1,30 +1,30 @@
 package controllers;
+import java.io.*;
+import java.time.Duration;
+import java.util.*;
+import java.util.concurrent.CompletionStage;
 
-import actors.featureActor;
-import actors.semanticActor;
+import javax.inject.Inject;
+// Akka
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Scheduler;
 import akka.actor.typed.javadsl.AskPattern;
-import logic.*;
-import models.Tweet;
+// Play
 import play.mvc.Controller;
 import play.mvc.Result;
+// Project imports
+import models.*;
+import actors.*;
+import logic.*;
+
+// Template imports
 import services.CounterActor;
 import services.CounterActor.Command;
 import services.CounterActor.GetValue;
 import services.CounterActor.Increment;
 
-import javax.inject.Inject;
-import java.io.*;
-import java.nio.file.Path;
-import java.time.Duration;
-import java.util.*;
-import java.util.concurrent.CompletionStage;
 
-import tweetfeatures.NumericTweetFeatures;
-
-import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
-import actors.jsonReader;
+//  sbt -java-home /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
 
 /**
  * This controller contains an action to handle HTTP requests
@@ -38,7 +38,6 @@ import actors.jsonReader;
  */
 
 public class HomeController extends Controller {
-    private final File path = new File("/Users/mark/Documents/GitHub/HelpMe-clone/1-src/1-java/conf/10.jsonl");
 
     private final ActorRef<Command> counterActor; // , TweetActor
 
@@ -47,8 +46,11 @@ public class HomeController extends Controller {
     private final Duration askTimeout = Duration.ofSeconds(3L);
 
 
-    List<Tweet> tweetList = new ArrayList<>();
-    List<Vector> featureVectorList = new ArrayList<>();
+    static List<Tweet> tweetList = new ArrayList<>();
+    private final File pathOne = new File("/Users/mark/HelpMe-clone/1-src/1-java/conf/1.jsonl");
+    private final File pathTen = new File("/Users/mark/HelpMe-clone/1-src/1-java/conf/10.jsonl");
+    private final File pathAll = new File("../../0-data/raw/data/2020/2020-A/selected/all.jsonl");
+    private final File pathAlberta = new File("/Users/mark/HelpMe-clone/1-src/1-java/conf/alberta.jsonl");
 
 
     @Inject
@@ -81,96 +83,29 @@ public class HomeController extends Controller {
 
 
     private Result renderIndex(Integer hitCounter)  {
+
+        // Start timer
         long startTime = System.currentTimeMillis();
 
-
-        //  sbt -java-home /Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
-
-        /** Parse into Tweet.class **/
+        // Parse into Tweet.class
         jsonReader reader = new jsonReader();
-        tweetList = reader.parseOne();
+        reader.parse(); //tweetList = reader.parseOne(pathAll);
 
-        //tweetList = reader.parseAll();
-        System.out.println("\ntweetList.size():\n" + tweetList.size());
+        // Print elapsed time to console
+        printTimer(startTime);
 
-        IntSummaryStatistics summaryStatistics = tweetList.stream()
-                .map(Tweet::getCreatedAtStr)
-                .mapToInt(Integer::parseInt)
-                .summaryStatistics();
+        // Prints to browser
+        return ok(Sanitise.toPrettyFormat(pathTen));
+    }
 
-        int max = summaryStatistics.getMax();
-        int min = summaryStatistics.getMin();
-        System.out.println(min);
-        System.out.println(max);
-        System.out.println("Tweets occur over" + ( (max-min) /  ((1000*60)) % 60) + "hours");
-
-        // Keywords (logic.TermFrequency)
-        featureActor featureActor = new featureActor();
-        featureActor.getKeywords(tweetList);
-
-
-
-        // Feature Vector (NumericTweetFeatures.makeFeatures)
-        for(Tweet tweet : tweetList) {
-
-            semanticActor semanticActor = new semanticActor(tweet);
-            semanticActor.analyse(tweet.getText());
-            System.out.println(tweet.getCreatedAtInt());
-            System.out.println("offset:" + ((tweet.getCreatedAtInt()-min )/ 1000)  + " seconds");
-            tweet.setOffset(((tweet.getCreatedAtInt()-min )/ 1000));
-            FeatureVec(tweet);
-
-
-        }
-        PrintWriter out = null;
-
-        // Export
-        try {
-            out = new PrintWriter(new FileWriter("../../0-data/processed/all_new.txt", true), true);
-            System.out.println("Exported");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
-        for(Tweet tweet : tweetList) {
-            if(tweet.getFeatureVector() != null){
-                out.println(tweet.getFeatureVector());
-
-            }
-
-        }
-        out.flush();
-        out.close();
-        System.out.println(featureVectorList);
-        System.out.println("Finished...");
-
-        //Outputs to browser
+    private void printTimer(long startTime) {
+        // Outputs the elapsed time to console
         long elapsedTime = System.currentTimeMillis() - startTime;
         long elapsedSeconds = elapsedTime / 1000;
         long elapsedMinutes = elapsedSeconds / 60;
         System.out.println("Time elapsed: " + elapsedMinutes + " minutes");
-        return ok(Sanitise.toPrettyFormat(path));
+        System.out.println(elapsedSeconds + " seconds");
     }
-
-
-
-
-    public void FeatureVec(Tweet tweet){
-        Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-        //System.out.println(stringDoubleMap);
-        tweet.setFeatures(stringDoubleMap);
-        tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
-        //System.out.println(tweet.getFeatureVector());
-
-        if(tweet.getFeatureVector() != null){
-            featureVectorList.add(tweet.getFeatureVector());
-
-        }
-
-    }
-
-
 
 
 
