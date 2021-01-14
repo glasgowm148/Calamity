@@ -6,12 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.annotations.Expose;
-
-import twitter4j.HashtagEntity;
-import twitter4j.Status;
-import twitter4j.URLEntity;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -23,33 +18,20 @@ public class Tweet implements Comparable<Tweet> {
 
     public Map<String, Double> setFeatures;
     private double sentimentScore;
-    private String sentimentType;
-    private double sentimentClassVerPos;
-    private double sentimentClassPos;
-    private double sentimentClassNeutral;
-    private double sentimentClassNeg;
-    private double sentimentClassVerNeg;
-    private String[] userMentions;
     public String[] locations;
     public List<String> simpleTokens;
-    //public List<Token> tokensList;
     public boolean isFavorited, isPossiblySensitive,
             isRetweet, isRetweetedByMe, isTruncated;
 
     private Timestamp userRegistrationDate;
 
-    private String userScreenName, userRealName,
-            userDescription, userLocation;
+    private String userDescription;
 
 
-    private int userFriendsCount;
     private int userNumbTweets;
-    private int userListedCount;
 
     private boolean sentFromWeb, sentFromMobile;
 
-
-    private String urls;
 
     private List<String> hashtags;
     private Vector<Double> features;
@@ -58,8 +40,6 @@ public class Tweet implements Comparable<Tweet> {
     private Map<String, Double> stringDoubleMap;
     private double tfidf;
     private List<Float> result;
-    private List<Medium> media;
-    private Serializable analysis;
     private int offset;
     private int weightedLength;
     private int permillage;
@@ -71,9 +51,7 @@ public class Tweet implements Comparable<Tweet> {
 
         this.id = IDGenerator.getID();
         tokens = new String[0];
-        userMentions = new String[0];
-        double[] geoLocation = new double[0];
-        double tfidf;
+
     }
 
 
@@ -93,6 +71,7 @@ public class Tweet implements Comparable<Tweet> {
     public void setIsVerified(boolean isVerified) {
         user.setVerified(isVerified);
     }
+
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "EEE MMM dd HH:mm:ss Z yyyy", locale = "en")
     @JsonProperty("created_at")
     @Expose
@@ -136,25 +115,6 @@ public class Tweet implements Comparable<Tweet> {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public Tweet(JsonNode json) throws JsonProcessingException {
 
-        // json to string
-        /*
-        jsonText = json.toString();
-        System.out.println("jsonText" + jsonText);
-
-        // json tree to JsonNode
-        System.out.println("#### BREAKPOINT - Tweet.java - JsonNode ####");
-        JsonNode tweetJsonNode = mapper.readTree(String.valueOf(json));
-        System.out.println("tweetJsonNode" + tweetJsonNode);
-
-        // Instantiates a new ObjectMapper()
-        //ObjectMapper mapper = new ObjectMapper();
-        //Tweet tweet = mapper.convertValue(tweetJsonNode, Tweet.class);
-
-        //this.text = String.valueOf(json.get("full_text"));
-
-        //System.out.println(tweet);
-        //assertThat(jsonNode1.textValue(), equalTo("v1"));
-*/
 
     }
 
@@ -249,12 +209,6 @@ public class Tweet implements Comparable<Tweet> {
         return entities.getEntityUrls();
     }
 
-    public void setUrls(List<Object> urls) {
-        this.urls = user.getUrl();
-        //this.urls = urls;
-    }
-
-
     public String[] getTokens() {
         return tokens;
     }
@@ -337,12 +291,12 @@ public class Tweet implements Comparable<Tweet> {
 
     public void setSentiment(SentimentResult sentimentResult) {
         this.sentimentScore = sentimentResult.getSentimentScore();
-        this.sentimentType = sentimentResult.getSentimentType();
-        this.sentimentClassVerPos = sentimentResult.getSentimentClass().getVeryPositive();
-        this.sentimentClassPos = sentimentResult.getSentimentClass().getPositive();
-        this.sentimentClassNeutral = sentimentResult.getSentimentClass().getNeutral();
-        this.sentimentClassNeg = sentimentResult.getSentimentClass().getNegative();
-        this.sentimentClassVerNeg = sentimentResult.getSentimentClass().getVeryNegative();
+        String sentimentType = sentimentResult.getSentimentType();
+        double sentimentClassVerPos = sentimentResult.getSentimentClass().getVeryPositive();
+        double sentimentClassPos = sentimentResult.getSentimentClass().getPositive();
+        double sentimentClassNeutral = sentimentResult.getSentimentClass().getNeutral();
+        double sentimentClassNeg = sentimentResult.getSentimentClass().getNegative();
+        double sentimentClassVerNeg = sentimentResult.getSentimentClass().getVeryNegative();
     }
 
 
@@ -406,7 +360,6 @@ public class Tweet implements Comparable<Tweet> {
     }
 
     public void setAnalysis(Serializable analyse) {
-        this.analysis = analyse;
     }
 
     public void setOffset(int i) {

@@ -19,7 +19,6 @@ import actors.*;
 import logic.*;
 
 // Template imports
-import services.CounterActor;
 import services.CounterActor.Command;
 import services.CounterActor.GetValue;
 import services.CounterActor.Increment;
@@ -39,6 +38,7 @@ import services.CounterActor.Increment;
 public class HomeController extends Controller {
 
     private final ActorRef<Command> counterActor; // , TweetActor
+    private final ActorRef sentimentActor;
 
     private final Scheduler scheduler;
 
@@ -49,9 +49,10 @@ public class HomeController extends Controller {
 
 
     @Inject
-    public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
+    public HomeController(ActorRef<Command> counterActor, ActorRef sentimentActor, Scheduler scheduler) {
         //TweetActor = system.actorOf(tweetActor.props());
         this.counterActor = counterActor;
+        this.sentimentActor = sentimentActor;
         this.scheduler = scheduler;
     }
 

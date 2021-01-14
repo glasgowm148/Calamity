@@ -1,0 +1,41 @@
+/*Styling for the header*/  
+h1{
+	font-style: bold; 
+    font-size:40px; 
+    font-family: 'lucida sans', 'trebuchet MS', 'Tahoma';
+}
+
+/*Styling for the search form*/  
+.div1{
+	font-style: bold; 
+    font-size:15px; 
+    font-family: 'lucida sans';
+    text-align:center;
+    text-color:#FFFFFF;
+}
+
+/*Styling for the head*/  
+.head{
+	text-align:center;
+	font-style: bold; 
+    font-size:25px; 
+    font-family:'trebuchet MS';
+}
+
+/*Styling for the div containing result tweets*/  
+.tweetsDisplay{
+	padding: 15px;
+	border: 1px solid;
+	border-color:#FFFFFF;
+	text-align: left;
+	font-size:15px;
+	font-color:#FFFFFF;
+	overflow-wrap:normal;
+	font-family: 'lucida sans';
+}
+
+/*Styling for the body*/  
+body {
+    background-color:#1AB7B7 ;
+    padding: 15px;
+ }

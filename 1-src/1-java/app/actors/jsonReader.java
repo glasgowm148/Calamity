@@ -33,6 +33,12 @@ public class jsonReader {
 
     private static final List<Tweet> tweetList  = new ArrayList<>();
 
+    public static Object parseEvent(String name) {
+        System.out.println(name);
+        return ":-|";
+    }
+
+
     // This is the entry-point which passes each .jsonl file to parseEvent()
     public void parse() {
         try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake"))) { //tweets/athens_earthquake  //testy
