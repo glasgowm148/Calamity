@@ -1,4 +1,5 @@
 package controllers;
+import services.CounterActor;
 
 import java.io.*;
 import java.time.Duration;
@@ -38,7 +39,7 @@ import services.CounterActor.Increment;
 public class HomeController extends Controller {
 
     private final ActorRef<Command> counterActor; // , TweetActor
-    private final ActorRef sentimentActor;
+   // private final ActorRef sentimentActor;
 
     private final Scheduler scheduler;
 
@@ -49,13 +50,11 @@ public class HomeController extends Controller {
 
 
     @Inject
-    public HomeController(ActorRef<Command> counterActor, ActorRef sentimentActor, Scheduler scheduler) {
+    public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
         //TweetActor = system.actorOf(tweetActor.props());
         this.counterActor = counterActor;
-        this.sentimentActor = sentimentActor;
         this.scheduler = scheduler;
     }
-
 
     public CompletionStage<Result> index() {
         // https://www.playframework.com/documentation/2.8.x/AkkaTyped#Using-the-AskPattern-&-Typed-Scheduler

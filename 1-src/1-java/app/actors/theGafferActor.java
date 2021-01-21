@@ -1,4 +1,4 @@
-package actors;
+/**package actors;
 
 import play.libs.Json;
 import java.util.ArrayList;
@@ -20,13 +20,13 @@ import scala.concurrent.Future;
 
 public class theGafferActor extends AbstractActor {
 
-    /**
+
      * mainActor class connects with Twitter and fetches 10 latest tweets for the search query.
      * Scheduler is used to search the query at a fixed interval to check for any new tweets and display those
      * which makes the application reactive.
      * @version 1.0
      * @see theGafferActor
-     */
+
 
     public final ActorRef ac;
     private ActorRef sentiment_actor;
@@ -46,13 +46,13 @@ public class theGafferActor extends AbstractActor {
         this.ac=ac;
     }
 
-    /**
+
      * createRecieve method for mainActor that runs a query on Twitter to fetch 10 latest tweets for search terms and then continue
      * searching for any updates.
      * @author Navdeep Kaur Brar
      * @author Karan Behl
      * @author Komaldeep Singh
-     */
+
     @Override
     public Receive createReceive() {
         return receiveBuilder()
@@ -192,3 +192,4 @@ public class theGafferActor extends AbstractActor {
 
 
 }
+*/

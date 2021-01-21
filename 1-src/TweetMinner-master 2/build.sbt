@@ -1,8 +1,8 @@
 name := """play-java-starter-example"""
 
 version := "1.0-SNAPSHOT"
-
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
+// We can instruct sbt-native-packager to use Ash script instead of bash.
+lazy val root = (project in file(".")).enablePlugins(PlayJava, AshScriptPlugin)
 
 crossPaths := false
 
@@ -38,3 +38,23 @@ testOptions in Test := Seq(Tests.Argument(TestFrameworks.JUnit, "-a", "-v"))
 
 // Javadoc
 sources in (Compile, doc) ~= (_ filter (_.getName endsWith ".java"))
+
+
+// DOCKER SETTINGS
+
+Docker / maintainer := "markglasgow@gmail.com" //
+Docker / packageName := "feature-extractor"
+Docker / version := sys.env.getOrElse("BUILD_NUMBER", "0")
+Docker / daemonUserUid  := None
+Docker / daemonUser := "daemon"
+dockerExposedPorts := Seq(9000)
+dockerBaseImage := "openjdk:8-jre-alpine"
+dockerRepository := sys.env.get("ecr_repo")
+dockerUpdateLatest := true
+
+/// DOCKER SETTINGS END
+
+// PID
+
+
+// PID END

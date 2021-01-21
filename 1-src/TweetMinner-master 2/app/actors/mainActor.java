@@ -62,12 +62,16 @@ public class mainActor extends AbstractActor {
 	 */
 	@Override
 	public Receive createReceive() {
+		// receiveBuilder
 		return receiveBuilder()
 				.match(String.class, searchKeys -> {
 					Runnable r = new Runnable() {
 						@Override
+
+						// run()
 						public void run() {
 
+							// Create the actors
 							try {
 								ActorSystem system = ActorSystem.create();
 								ActorRef sentiment_actor = system.actorOf(sentimentActor.getProps());
@@ -79,6 +83,8 @@ public class mainActor extends AbstractActor {
 								}, system.dispatcher());
 							}catch(Exception e)
 							{}
+
+							// flag is inc
 							if(flag==0)
 							{
 								flag=1;
@@ -140,6 +146,7 @@ public class mainActor extends AbstractActor {
 
 							}
 
+							// flag1
 							if(flag==1)
 							{
 								Query twitterQuery1 = new Query(searchKeys);

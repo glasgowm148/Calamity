@@ -40,3 +40,5 @@ build
 run
 sbt
 run
+docker:publishLocal
+run

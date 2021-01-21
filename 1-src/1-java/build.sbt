@@ -15,6 +15,16 @@ version := "1.0-SNAPSHOT"
 val akkaVersion =  "2.6.6" // val akkaVersion =  PlayVersion.akkaVersion
 scalaVersion := "2.12.10"
 
+//
+//scalacOptions += "-target:jvm-1.8"
+
+// Stops the build if JVM != 1.8
+initialize := {
+  val _ = initialize.value // run the previous initialization
+  val required = "1.8"
+  val current  = sys.props("java.specification.version")
+  assert(current == required, s"Unsupported JDK: java.specification.version $current != $required")
+}
 
 
 
@@ -31,9 +41,10 @@ Docker / packageName := "helpme-akka"
 Docker / version := sys.env.getOrElse("BUILD_NUMBER", "1.0-SNAPSHOT")
 Docker / daemonUserUid  := None
 Docker / daemonUser := "daemon"
-dockerExposedPorts := Seq(9000)
+dockerExposedPorts := Seq(9000, 9443)
 dockerBaseImage := "openjdk:8"
 dockerRepository := sys.env.get("ecr_repo")
+//dockerRepository := Some("registry.gitlab.com/my-gitlab-project")
 dockerUpdateLatest := true
 
 // version := "1.0-SNAPSHOT"
