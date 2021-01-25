@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TweetMinner-master 2/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../TweetMinner-master 2/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +294,7 @@
       <workItem from="1610965810316" duration="592000" />
       <workItem from="1611234640846" duration="736000" />
       <workItem from="1611235474854" duration="1965000" />
-      <workItem from="1611570830777" duration="531000" />
+      <workItem from="1611570830777" duration="1235000" />
     </task>
     <servers />
   </component>

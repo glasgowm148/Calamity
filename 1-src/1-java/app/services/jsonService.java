@@ -63,7 +63,7 @@ public class jsonService {
                 .thenAccept(
                         (list) -> {
                             assertThat(
-                                    list,
+                                    list,cd ..
                                     hasItems(
                                             ByteString.fromString(firstDoc),
                                             ByteString.fromString(secondDoc),
