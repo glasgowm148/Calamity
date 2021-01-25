@@ -1,8 +1,9 @@
-name := """play-java-starter-example"""
+name := """feature-extractor"""
 
 version := "1.0-SNAPSHOT"
+
 // We can instruct sbt-native-packager to use Ash script instead of bash.
-lazy val root = (project in file(".")).enablePlugins(PlayJava, AshScriptPlugin)
+lazy val root = (project in file(".")).enablePlugins(PlayJava, AshScriptPlugin, DockerPlugin)
 
 crossPaths := false
 
@@ -14,9 +15,6 @@ crossScalaVersions := Seq("2.11.12", "2.12.4")
 
 
 libraryDependencies += guice
-
-// 
-
 
 
 libraryDependencies ++= Seq(
@@ -43,16 +41,16 @@ sources in (Compile, doc) ~= (_ filter (_.getName endsWith ".java"))
 // DOCKER SETTINGS
 
 Docker / maintainer := "markglasgow@gmail.com" //
-Docker / packageName := "feature-extractor"
+Docker / packageName := "markglasgow/feature-extractor"
 Docker / version := sys.env.getOrElse("BUILD_NUMBER", "0")
 Docker / daemonUserUid  := None
 Docker / daemonUser := "daemon"
-dockerExposedPorts := Seq(9000)
-dockerBaseImage := "openjdk:8-jre-alpine"
+dockerExposedPorts in Docker := Seq(9000, 9443)
+dockerBaseImage := "adoptopenjdk:8" // must be installed locally
 dockerRepository := sys.env.get("ecr_repo")
 dockerUpdateLatest := true
 
-/// DOCKER SETTINGS END
+/// DOCKER SETTINGS END  - sbt docker:publishLocal
 
 // PID
 

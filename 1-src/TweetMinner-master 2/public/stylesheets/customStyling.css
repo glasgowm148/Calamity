@@ -1,6 +1,5 @@
 /*Styling for the div containing search form*/
 .search-area{
-	border: 1px solid;
 	border-color:#FFFFFF;
 	}
 	
@@ -11,11 +10,11 @@ h1{
     font-family: 'lucida sans', 'trebuchet MS', 'Tahoma';
 }
 
-/*Styling for the div containing in which the tweets are displayed*/
+/*Styling for the div containing in which the tweets are displayed	border: 1px solid;
+	border-color:#FFFFFF;*/
 .results{
 	padding: 15px;
-	border: 1px solid;
-	border-color:#FFFFFF;
+
 	text-align: left;
 	overflow-wrap: normal;
 	font-family: 'lucida sans';
@@ -30,7 +29,8 @@ h1{
 
 /*Styling for the body containing search form and tweets div*/
 body {
-        background-color:#1AB7B7 ;
+        background-color:#0b5050 ;
+        padding-top: 10%;
         color: #eee;
         text-align: center;
     }
@@ -59,7 +59,7 @@ body {
         background: #444;
         background: rgba(0,0,0,.2);
         border-radius: 10px;
-        box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+        /*box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);*/
     }
  
 /*Styling for the search form input*/      

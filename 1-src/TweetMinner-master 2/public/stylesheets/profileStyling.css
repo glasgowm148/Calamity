@@ -22,11 +22,13 @@ h1{
     font-family:'trebuchet MS';
 }
 
-/*Styling for the div containing result tweets*/  
-.tweetsDisplay{
-	padding: 15px;
+/*Styling for the div containing result tweets
 	border: 1px solid;
 	border-color:#FFFFFF;
+	*/
+.tweetsDisplay{
+	padding: 15px;
+
 	text-align: left;
 	font-size:15px;
 	font-color:#FFFFFF;
