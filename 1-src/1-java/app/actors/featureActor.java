@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 public class featureActor {
+    
     private static final int keywordsNumber = 5;
     static final float d = 0.85f;           //damping factor, default 0.85
     static final int max_iter = 200;        //max iteration times

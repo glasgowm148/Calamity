@@ -62,12 +62,10 @@
 
 ### Built With
 
-* ## Technical Details
 
-* Java-based back-end, 
-* HTML/Javascript frontend/Web UI built with [Play Framework](https://www.playframework.com/)
-
-
+* Jupyter Notebooks
+* Play Framework (Java)
+* sbt
 
 ## Overview
 
@@ -113,8 +111,6 @@ To get a local copy up and running follow these simple steps.
 ## Roadmap
 
 See the [open issues](https://github.com/glasgowm148/HelpMe/issues) for a list of proposed features (and known issues).
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing
