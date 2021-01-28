@@ -2,15 +2,12 @@ package controller;
 
 import akka.actor.ActorSystem;
 import akka.stream.Materializer;
-import controllers.HomeController;
-import controllers.MainController;
+import controllers.ConnectionController;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 
-import actors.mainActor;
-import actors.mainActorTest;
 import play.api.http.MediaRange;
 import play.api.mvc.RequestHeader;
 import play.i18n.Lang;
@@ -27,17 +24,17 @@ import static org.mockito.Mockito.mock;
 /**
  * MainControllerTest class tests the working of the MainController whether it handles the web socket request properly 
  * or not and creates a connection between main actor and client
- * @see MainController
- * @see MainControllerTest
+ * @see ConnectionController
+ * @see ConnectionControllerTest
  * @author Karan Behl
  */
-public class MainControllerTest extends Controller {
+public class ConnectionControllerTest extends Controller {
 	
 	//mocking the mainController
     private ActorSystem actorSystem;
     private Materializer materializer;
     @InjectMocks
-    MainController app = new MainController(actorSystem,materializer);
+    ConnectionController app = new ConnectionController(actorSystem,materializer);
 
 
     /**

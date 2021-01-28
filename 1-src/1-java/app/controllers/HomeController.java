@@ -46,9 +46,6 @@ public class HomeController extends Controller {
     private final Duration askTimeout = Duration.ofSeconds(3L);
 
 
-
-
-
     @Inject
     public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
         //TweetActor = system.actorOf(tweetActor.props());

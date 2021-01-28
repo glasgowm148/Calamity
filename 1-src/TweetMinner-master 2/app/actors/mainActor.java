@@ -34,17 +34,28 @@ public class mainActor extends AbstractActor {
 	 * @see mainActor
 	 * @author Karan Behl
 	 */
+
+	// Instantiate a ActorRef 'ac'
 	public final ActorRef ac;
+
+	// Instantiate a Twitter instance
 	private final Twitter twitterInstance = connectToTwitter();
+
+	// Instantiate the Sentiment Actor
 	private ActorRef sentiment_actor;
+
+	// Instantiate a String to store the emotion in (displayed on Home page)
 	private static String emotion;
 
-	//list variable to store the tweet results and check for duplicacy
+	// A List of type Status to store the tweet results and check for duplicates
 	List <Status> tweetlist= new ArrayList<Status>();
-	//int variable to keep check on the query being searched
+
+	// int variable to keep check on the query being searched
 	int flag=0;
 
-	//Actor reference created
+	// Actor reference created
+	// Props is a config object used when creating an Actor
+	// Immutable, thread-safe and fully sharable.
 	public static Props props(ActorRef ac) {
 		return Props.create(mainActor.class, ac);
 	}
@@ -60,9 +71,11 @@ public class mainActor extends AbstractActor {
 	 * @author Karan Behl
 	 * @author Komaldeep Singh
 	 */
+
+	// Create Recieve
+	// Vital part of Actor system
 	@Override
 	public Receive createReceive() {
-		// receiveBuilder
 		return receiveBuilder()
 				.match(String.class, searchKeys -> {
 					Runnable r = new Runnable() {
@@ -73,18 +86,26 @@ public class mainActor extends AbstractActor {
 
 							// Create the actors
 							try {
+
+								// Instantiate an ActorSystem
 								ActorSystem system = ActorSystem.create();
+
+								// Instantiate a Sentiment Actor
 								ActorRef sentiment_actor = system.actorOf(sentimentActor.getProps());
+
+								// Set a Future object and ask the Sentiment Actor to search with the provided search terms.
 								Future<Object> future =ask(sentiment_actor, new sentimentActor.Sentiment(searchKeys), 3000);
+
+								// On completion, store the result in the 'emotion' String
 								future.onComplete(new OnComplete<Object>(){
 									public void onComplete(Throwable t, Object result){
 										emotion = result.toString();
 									}
 								}, system.dispatcher());
-							}catch(Exception e)
+							} catch(Exception e)
 							{}
 
-							// flag is inc
+							// If the flag is included
 							if(flag==0)
 							{
 								flag=1;

@@ -94,8 +94,8 @@ spec:
       # where the value of the "node-role.ida/gpu2080ti" annotation is true, i.e. on
       # a node with RTX 2080 Ti GPUs. To do the equivalent for the RTX Titan nodes, 
       # change "gpu2080ti" to "gputitan"
-      nodeSelector:
-        node-role.ida/gpu2080ti: "true"
+      #nodeSelector:
+      #  node-role.ida/gpu2080ti: "true"
       # determines what Kubernetes will do if the container inside the 
       # pod fails to start or crashes. This just tells it to give up
       # without retrying.

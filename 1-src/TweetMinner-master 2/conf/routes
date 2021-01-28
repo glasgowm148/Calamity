@@ -21,4 +21,4 @@ GET		/hashtag/:name				controllers.HomeController.getHashtagBasedTweets(name: St
 GET		/searchTerms/:name				controllers.HomeController.getDistinctWords(name: String)
 
 #Request for MainController controller's main function to open a webSocket connection
-GET     /initSearch                    controllers.MainController.main()
+GET     /initSearch                    controllers.ConnectionController.main()

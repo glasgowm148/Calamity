@@ -14,14 +14,14 @@ import org.slf4j.Logger;
 
 /**
  * mainController class contains a main method to handle the web socket request
- * from the front end establish a web socket connection to reactively search for tweets and display. The main actor is called
+ *  * from the front end establish a web socket connection to reactively search for tweets and display. The main actor is called
  * via the main controller to search and display tweets.
  * @version 1.0
- * @see MainController
+ * @see ConnectionController
  * @author Navdeep Kaur Brar
  */
 @Singleton
-public class MainController extends Controller {
+public class ConnectionController extends Controller {
 
 	private final Logger logger = org.slf4j.LoggerFactory.getLogger("controllers.MainController");
 	private final ActorSystem actor_system;
@@ -29,7 +29,7 @@ public class MainController extends Controller {
 
 	//dependency injection to initalize the Actor System
 	@Inject
-	public MainController(ActorSystem actor_system, Materializer materializer) {
+	public ConnectionController(ActorSystem actor_system, Materializer materializer) {
 		this.actor_system = actor_system;
 		this.materializer = materializer;
 	}

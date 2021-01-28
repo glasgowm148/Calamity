@@ -1,7 +1,1 @@
 [0m[[0m[0mdebug[0m] [0m[0mChecking for meta build source updates[0m
-[0m[[0m[33mwarn[0m] [0m[0mbuild source files have changed[0m
-[0m[[0m[33mwarn[0m] [0m[0mmodified files: [0m
-[0m[[0m[33mwarn[0m] [0m[0m  /Users/mark/Uni/Project/HelpMe/1-src/1-java/build.sbt[0m
-[0m[[0m[33mwarn[0m] [0m[0mApply these changes by running `reload`.[0m
-[0m[[0m[33mwarn[0m] [0m[0mAutomatically reload the build when source changes are detected by setting `Global / onChangedBuildSource := ReloadOnSourceChanges`.[0m
-[0m[[0m[33mwarn[0m] [0m[0mDisable this warning by setting `Global / onChangedBuildSource := IgnoreSourceChanges`.[0m

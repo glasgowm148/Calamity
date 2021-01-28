@@ -28,12 +28,7 @@ import scala.compat.java8.FutureConverters;
  */
 public class HomeController extends Controller {
 
-	/**
-	 * An action that renders the mainPage HTML page with a search box and search
-	 * button. When search term is entered and search button is clicked the ten
-	 * latest tweets containing those search terms are displayed along with the
-	 * overall sentiment of teh tweets the users of the tweets the locaion of the
-	 * tweets and the hashtags contained within the tweets. The configuration in the
+	/** The configuration in the
 	 * <code>routes</code> file means that this method will be called when the
 	 * application receives a <code>GET</code> request with a path of
 	 * <code>/</code>.
