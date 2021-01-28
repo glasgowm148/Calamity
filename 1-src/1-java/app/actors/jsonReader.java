@@ -182,7 +182,7 @@ public class jsonReader {
 
         }
 
-     
+
     }
 
     // Get IntSummaryStatistics to calculate the offset
@@ -225,7 +225,8 @@ public class jsonReader {
         }
 
 
-        for(Tweet tweet : tweetList) {
+        for(Iterator<Tweet> itr = tweetList.iterator(); itr.hasNext();){
+            Tweet tweet = itr.next();
             double[] d = convertFloatsToDoubles(tweet.getDimensions());
             if(tweet.getFeatureVector() != null){
                 assert out != null;
