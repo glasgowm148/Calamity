@@ -1,15 +1,6 @@
 package controllers;
-import services.CounterActor;
 
 import java.io.*;
-import java.time.Duration;
-import java.util.concurrent.CompletionStage;
-
-import javax.inject.Inject;
-// Akka
-import akka.actor.typed.ActorRef;
-import akka.actor.typed.Scheduler;
-import akka.actor.typed.javadsl.AskPattern;
 
 // Play
 import play.mvc.Controller;
@@ -19,62 +10,12 @@ import play.mvc.Result;
 import actors.*;
 import logic.*;
 
-// Template imports
-import services.CounterActor.Command;
-import services.CounterActor.GetValue;
-import services.CounterActor.Increment;
 
 
-/**
- * This controller contains an action to handle HTTP requests
- *
- * I've used an Akka-play seed,
- * the Akka cluster functionality is ignored/bypassed for now
- *
- *
- * !! To recompile, navigate to browser and refresh localhost:9000
- *
- */
 
 public class HomeController extends Controller {
 
-    private final ActorRef<Command> counterActor; // , TweetActor
-   // private final ActorRef sentimentActor;
-
-    private final Scheduler scheduler;
-
-    private final Duration askTimeout = Duration.ofSeconds(3L);
-
-
-    @Inject
-    public HomeController(ActorRef<CounterActor.Command> counterActor, Scheduler scheduler) {
-        //TweetActor = system.actorOf(tweetActor.props());
-        this.counterActor = counterActor;
-        this.scheduler = scheduler;
-    }
-
-    public CompletionStage<Result> index() {
-        // https://www.playframework.com/documentation/2.8.x/AkkaTyped#Using-the-AskPattern-&-Typed-Scheduler
-        return AskPattern.ask(
-                counterActor,
-                GetValue::new,
-                askTimeout,
-                scheduler)
-                .thenApply(this::renderIndex);
-    }
-
-    public CompletionStage<Result> increment() {
-        // https://www.playframework.com/documentation/2.8.x/AkkaTyped#Using-the-AskPattern-&-Typed-Scheduler
-        return AskPattern.ask(
-                counterActor,
-                Increment::new,
-                askTimeout,
-                scheduler)
-                .thenApply(this::renderIndex);
-    }
-
-
-    private Result renderIndex(Integer hitCounter)  {
+    public Result index()  {
 
         // Start timer
         long startTime = System.currentTimeMillis();

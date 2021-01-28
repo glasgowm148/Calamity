@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.chen0040.embeddings.GloVeModel;
+import junit.framework.Test;
 import logic.Sanitise;
 import logic.SentimentAnalyzer;
 import logic.Twokenize;
@@ -17,6 +18,7 @@ import twitter.twittertext.TwitterTextParseResults;
 import twitter.twittertext.TwitterTextParser;
 
 import java.io.*;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -59,8 +61,13 @@ public class jsonReader {
             System.out.println("Path:" + path);
 
             // Initialise actors for Word Embeddings & Sentiment Analysis
-            GloVeModel model = new GloVeModel();
-            model.load("../../1-src/1-java/lib/glove", 100);
+            URL location = Test.class.getProtectionDomain().getCodeSource().getLocation();
+            String currentDirectory = System.getProperty("user.dir");
+            System.out.println("The current working directory is " + currentDirectory);
+
+            //GloVeModel model = new GloVeModel();
+            //model.load("lib/glove", 100);
+
             SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
             sentimentAnalyzer.initialize();
 
@@ -89,7 +96,7 @@ public class jsonReader {
                     featureActor.getKeywords(tweetList);
 
                     // Offset + Sentiment + TwitterText + Glove
-                    tweetAnalyser(getMin(), model, sentimentAnalyzer);
+                    tweetAnalyser(getMin(),  sentimentAnalyzer); //model,
 
                     System.out.println("Parsed " + tweetList.size() + " tweets from "  + path);
 
@@ -113,11 +120,11 @@ public class jsonReader {
      * The text is then sanitisied before sentiment analysis is performed.
      * Then passed to NumericTweetFeatures() for exporting
      */
-    private static void tweetAnalyser(int min, GloVeModel model, SentimentAnalyzer sentimentAnalyzer) {
+    private static void tweetAnalyser(int min, SentimentAnalyzer sentimentAnalyzer) { //GloVeModel model,
 
-        for(Tweet tweet : tweetList) {
+        for(Iterator<Tweet> itr = tweetList.iterator(); itr.hasNext();){
+            Tweet tweet = itr.next();
 
-            // Twitter-Text
             final Extractor extractor = new Extractor();
             List<String> hashtags = extractor.extractHashtags(tweet.getText());
             tweet.setHashtags(hashtags);
@@ -155,7 +162,7 @@ public class jsonReader {
             //semanticActor.analyse(tweet.getText());
 
             // wordEmbeddings
-            new gloveActor(model, tweet);
+            // new gloveActor(model, tweet);
 
             // Time offset
             tweet.setOffset(((tweet.getCreatedAtInt() - min)));
@@ -173,9 +180,9 @@ public class jsonReader {
             //}
 
 
-
-
         }
+
+     
     }
 
     // Get IntSummaryStatistics to calculate the offset
@@ -226,6 +233,7 @@ public class jsonReader {
                 // Print the feature vector
                 out.print(tweet.getFeatureVector());
 
+                /**
                 // Add the BERT Word Embeddings
                 out.print(",");
                 out.print("[");
@@ -233,6 +241,7 @@ public class jsonReader {
                     out.print(x + ", ");
                 }
                 out.print("]");
+                 */
 
             }
             assert out != null;
