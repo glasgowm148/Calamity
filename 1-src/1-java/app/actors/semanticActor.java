@@ -16,6 +16,8 @@ import java.util.Properties;
 
 public class semanticActor {
 
+
+
     public semanticActor(Tweet tweet){
         SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
         sentimentAnalyzer.initialize();

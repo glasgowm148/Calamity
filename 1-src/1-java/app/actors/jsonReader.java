@@ -219,7 +219,7 @@ public class jsonReader {
         return output;
     }
 
-    private static void printVector(String file) {
+    public static void printVector(String file) {
         PrintWriter out = null;
 
         // Export

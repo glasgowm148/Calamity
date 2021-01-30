@@ -6,7 +6,12 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.ExecutionException;
 import java.util.stream.Stream;
+
+import Utils.infoRepository;
+import akka.actor.*;
 
 // Play
 import models.Tweet;
@@ -16,12 +21,22 @@ import play.mvc.Result;
 // Project imports
 import actors.*;
 import logic.*;
+import scala.compat.java8.FutureConverters;
+import twitter4j.TwitterException;
+import views.html.resultPage;
 
 import static actors.jsonReader.getMin;
+import static akka.pattern.Patterns.ask;
 
 public class HomeController extends Controller {
 
+
     private static final List<Tweet> tweetList  = new ArrayList<>();
+    private Object sentimentActor;
+
+    public HomeController(ActorRef sentimentActor) {
+    }
+
 
     // index() is triggered on GET to localhost:9000/
     public Result index()  {
@@ -85,13 +100,17 @@ public class HomeController extends Controller {
             e.printStackTrace();
         }
 
-        //System.out.println("\nParsed " + HomeController.tweetList.size() + " tweets from "  + path);
 
-        //printVector("brand_new_run2");
+        jsonReader.printVector("brand_new_run2");
 
 
     }
 
+
+    public CompletionStage<Result> resultEvent(String name) throws TwitterException, ExecutionException, InterruptedException {
+        return FutureConverters.toJava(ask((ActorRef) eventActor, new eventActor.parse(name), 5000))
+                .thenApplyAsync(userInfo -> ok(resultPage.render((infoRepository) userInfo)));
+    }
 
 
 
