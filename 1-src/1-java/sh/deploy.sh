@@ -1,3 +1,9 @@
+# Hard kill (SIGKILL - terminate immediately)
+# Port 9000
+
+kill -9 $(lsof -t -i:9000)
+
+#
 cd src
 rm -rf target/universal/play*
 rm -rf target/universal/help*

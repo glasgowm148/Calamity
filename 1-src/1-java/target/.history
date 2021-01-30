@@ -44,3 +44,7 @@ docker:publishLocal
 run
 docker:publishLocal
 run
+reload
+run
+reload
+run

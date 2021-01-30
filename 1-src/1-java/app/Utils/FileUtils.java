@@ -6,6 +6,7 @@ import java.io.*;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CodingErrorAction;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -13,10 +14,10 @@ import java.nio.file.StandardOpenOption;
 
 public class FileUtils {
 	
-	private static Logger logger = Logger.getLogger(FileUtils.class);
+	private static final Logger logger = Logger.getLogger(FileUtils.class);
 	
 	public static BufferedWriter getFileWriter( File file ) {
-		Charset charset = Charset.forName("UTF-8");
+		Charset charset = StandardCharsets.UTF_8;
 		Path path = Paths.get(file.getAbsolutePath());
 		BufferedWriter bw = null;
 		try {
@@ -31,7 +32,7 @@ public class FileUtils {
 	}
 	
 	public static BufferedWriter getFileWriter( File file, boolean append ) {
-		Charset charset = Charset.forName("UTF-8");
+		Charset charset = StandardCharsets.UTF_8;
 		Path path = Paths.get(file.getAbsolutePath());
 		BufferedWriter bw = null;
 		
@@ -71,7 +72,7 @@ public class FileUtils {
 		
 		try {
 			input = new FileInputStream(file);
-			CharsetDecoder decoder = Charset.forName("UTF-8").newDecoder();
+			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
 	        decoder.onMalformedInput(CodingErrorAction.IGNORE);
 	        InputStreamReader reader = new InputStreamReader(input, decoder);
 	        br = new BufferedReader( reader );;

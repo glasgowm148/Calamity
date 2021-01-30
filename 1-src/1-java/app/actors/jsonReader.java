@@ -147,7 +147,7 @@ public class jsonReader {
      */
     private static void tweetAnalyser(int min, SentimentAnalyzer sentimentAnalyzer) throws InterruptedException { //GloVeModel model,
 
-        //tweetList = tweetList.stream().map(x -> "D").collect(Collectors.toList());
+        //riitweetList = tweetList.stream().map(x -> "D").collect(Collectors.toList());
         for (Tweet tweet : new ArrayList<Tweet>(tweetList)) {
             final Extractor extractor = new Extractor();
             List<String> hashtags = extractor.extractHashtags(tweet.getText());
