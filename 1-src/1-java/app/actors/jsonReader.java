@@ -17,12 +17,8 @@ import twitter.twittertext.TwitterTextParser;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.concurrent.CountDownLatch;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 
@@ -42,7 +38,7 @@ public class jsonReader {
 
     /**
      * This method passes each file within the specified directory to parseEvent()
-     */
+
     public void parse() {
         try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake"))) { //tweets/athens_earthquake  //testy
             paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
@@ -51,13 +47,14 @@ public class jsonReader {
         }
 
     }
-
+     */
     /**
      * @param path - the event path
      * Parses each event into Tweet.class
      * Calculates the offset and event keywords before passing to tweetAnalyser()
+     * @return
      */
-    public static void parseEvent(Path path)  {
+    public static List<Tweet> parseEvent(Path path)  {
 
         // Ensure it's a selected.json file
         if(path.toString().contains("selected.jsonl") & !path.toString().matches(".*\\.gz")) {  //(".*\\.jsonl")
@@ -66,8 +63,6 @@ public class jsonReader {
             // Initialise actors for Word Embeddings
             //GloVeModel model = new GloVeModel();
             //model.load("lib/glove", 100);
-
-
 
             // is = a FileInputStream of the path
             try (InputStream is = new FileInputStream(String.valueOf(path))) {
@@ -116,24 +111,9 @@ public class jsonReader {
 
             }
         }
-        // Instantiate a new featureActor()
-        featureActor featureActor = new featureActor();
 
-        // getKeywords gets the TFIDF
-        featureActor.getKeywords(tweetList);
+        return tweetList;
 
-        SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
-        sentimentAnalyzer.initialize();
-        // Offset + Sentiment + TwitterText + Glove
-        try {
-            tweetAnalyser(getMin(),  sentimentAnalyzer); //model,
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        System.out.println("\nParsed " + tweetList.size() + " tweets from "  + path);
-
-        printVector("brand_new_run2");
 
     }
 
@@ -145,9 +125,11 @@ public class jsonReader {
  * For each tweet in the event, hashtags, text-features are extracted
  * The text is then sanitisied before sentiment analysis is performed.
      */
-    private static void tweetAnalyser(int min, SentimentAnalyzer sentimentAnalyzer) throws InterruptedException { //GloVeModel model,
+    public static void tweetAnalyser(int min, SentimentAnalyzer sentimentAnalyzer) throws InterruptedException { //GloVeModel model,
 
-        //riitweetList = tweetList.stream().map(x -> "D").collect(Collectors.toList());
+        //  tweetList = tweetList.stream().map(x -> "D").collect(Collectors.toList());
+
+        // Iterate over each tweet in the collection
         for (Tweet tweet : new ArrayList<Tweet>(tweetList)) {
             final Extractor extractor = new Extractor();
             List<String> hashtags = extractor.extractHashtags(tweet.getText());
@@ -210,7 +192,7 @@ public class jsonReader {
     }
 
     // Get IntSummaryStatistics to calculate the offset
-    private static int getMin() {
+    public static int getMin() {
         // Offset
         IntSummaryStatistics summaryStatistics = tweetList.stream()
                 .map(Tweet::getCreatedAtStr)
