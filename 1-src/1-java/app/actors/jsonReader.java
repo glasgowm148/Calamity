@@ -64,7 +64,7 @@ public class jsonReader {
     public static List<Tweet> parseEvent(Path path)  {
 
         // Ensure it's a selected.json file
-        if(path.toString().contains("selected.jsonl") & !path.toString().matches(".*\\.gz")) {  //(".*\\.jsonl")
+        while(path.toString().contains("selected.jsonl") & !path.toString().matches(".*\\.gz")) {  //(".*\\.jsonl")
 
             System.out.println(path);
 
