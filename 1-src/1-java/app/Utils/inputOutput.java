@@ -58,14 +58,14 @@ public class inputOutput {
 
 
         for (Tweet tweet : tweetList) {
-            //double[] d = convertFloatsToDoubles(tweet.getDimensions());
+            double[] d = convertFloatsToDoubles(tweet.getDimensions());
             if (tweet.getFeatureVector() != null) {
                 assert out != null;
 
                 // Print the feature vector
                 out.print(tweet.getFeatureVector());
 
-                /**
+
                  // Add the BERT Word Embeddings
                  out.print(",");
                  out.print("[");
@@ -73,7 +73,7 @@ public class inputOutput {
                  out.print(x + ", ");
                  }
                  out.print("]");
-                 */
+
 
             }
             assert out != null;
@@ -84,6 +84,20 @@ public class inputOutput {
         out.flush();
         out.close();
         System.out.println("Exported to .txt");
+    }
+
+
+    public static double[] convertFloatsToDoubles(float[] input) {
+        if (input == null)
+        {
+            return null; // Or throw an exception - your choice
+        }
+        double[] output = new double[input.length];
+        for (int i = 0; i < input.length; i++)
+        {
+            output[i] = input[i];
+        }
+        return output;
     }
 
 }

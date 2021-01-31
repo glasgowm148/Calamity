@@ -43,7 +43,7 @@ public class jsonReader {
      * This method passes each file within the specified directory to parseEvent()
      */
     public void parse() {
-        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake"))) { //tweets/athens_earthquake  //testy
+        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/"))) { //tweets/athens_earthquake  //testy
             paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
         } catch (Exception e) {
             e.printStackTrace();
@@ -133,7 +133,7 @@ public class jsonReader {
 
         // Initialise actors for Word Embeddings
         GloVeModel model = new GloVeModel();
-        model.load("lib/glove", 100);
+        model.load("lib/glove", 200);
 
         for (Tweet tweet : new ArrayList<Tweet>(tweetList)) {
             final Extractor extractor = new Extractor();
@@ -211,18 +211,6 @@ public class jsonReader {
         return min;
     }
 
-    public static double[] convertFloatsToDoubles(float[] input) {
-        if (input == null)
-        {
-            return null; // Or throw an exception - your choice
-        }
-        double[] output = new double[input.length];
-        for (int i = 0; i < input.length; i++)
-        {
-            output[i] = input[i];
-        }
-        return output;
-    }
 
     public static void printVector(String file) {
         PrintWriter out = null;
