@@ -14,6 +14,7 @@ import Utils.infoRepository;
 import akka.actor.*;
 
 // Play
+import com.google.inject.name.Named;
 import models.Tweet;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -25,16 +26,26 @@ import scala.compat.java8.FutureConverters;
 import twitter4j.TwitterException;
 import views.html.resultPage;
 
+import javax.inject.Inject;
+
 import static actors.jsonReader.getMin;
 import static akka.pattern.Patterns.ask;
 
+
+
+
 public class HomeController extends Controller {
 
-
     private static final List<Tweet> tweetList  = new ArrayList<>();
-    private Object sentimentActor;
 
-    public HomeController(ActorRef sentimentActor) {
+    // Define Actor References
+    private final ActorRef event_actor;
+
+
+    // Initialise the Actor references using dependency injection
+    @Inject
+    public HomeController(ActorSystem actorObj) {
+        event_actor = actorObj.actorOf(eventActor.getProps());
     }
 
 
@@ -106,9 +117,8 @@ public class HomeController extends Controller {
 
     }
 
-
     public CompletionStage<Result> resultEvent(String name) throws TwitterException, ExecutionException, InterruptedException {
-        return FutureConverters.toJava(ask((ActorRef) eventActor, new eventActor.parse(name), 5000))
+        return FutureConverters.toJava(ask(event_actor, new eventActor.parse("/test.jsonl"), 5000))
                 .thenApplyAsync(userInfo -> ok(resultPage.render((infoRepository) userInfo)));
     }
 

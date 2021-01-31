@@ -29,9 +29,9 @@ import scala.compat.java8.FutureConverters;
 public class HomeController extends Controller {
 
 	/** The configuration in the
-	 * <code>routes</code> file means that this method will be called when the
-	 * application receives a <code>GET</code> request with a path of
-	 * <code>/</code>.
+	 * routes file means that this method will be called when the
+	 * application receives a GET request with a path of
+	 * /.
 	 * 
 	 * @author Navdeep Kaur Brar
 	 * @return returns the result ok and renders the main page
@@ -60,48 +60,32 @@ public class HomeController extends Controller {
 	}
 
 	/**
-	 * An action that renders the userPage HTML page with the profile information
-	 * and ten latest tweets for the particular user that is clicked by the user.
-	 * The configuration in the routes file means that this method will be called
-	 * when the application receives a <code>GET</code> request with a path of
-	 * <code>/Profile/:name</code>.
-	 *
-	 * @author Anumeet
+	 * Renders the userPage HTML page with the profile information and the latest ten tweets
+	 * @route GET request with a path of /Profile/:name
 	 * @param name the username whose profile and tweets are displayed
 	 * @return the profile information and ten latest tweets to the userPage.scala.html
 	 * @throws TwitterException It throws a TwitterException
 	 */
-
 	public CompletionStage<Result> getUserProfile(String name) throws TwitterException, ExecutionException, InterruptedException {
 		return FutureConverters.toJava(ask(user_actor, new userActor.User(name), 5000))
 				.thenApplyAsync(userInfo -> ok(userPage.render((infoRepository) userInfo)));
 	} 
 
 	/**
-	 * An action that renders the location HTML page with the ten latest tweets for
-	 * the location that is clicked by the user. The configuration in the routes
-	 * file means that this method will be called when the application receives a
-	 * <code>GET</code> request with a path of <code>/Location/:name</code>.
-	 *
-	 * @author Ishdeep
+	 * Renders the location HTML page with the latest ten tweets
+	 * @route GET request with a path of  /Location/:name.
 	 * @param name the location for which the tweets are displayed
 	 * @return the location and ten latest tweets to the locationPage.scala.html
 	 * @throws TwitterException It throws a TwitterException
 	 */
-
 	public CompletionStage<Result> getLocationBasedTweets(String name) throws TwitterException, ExecutionException, InterruptedException {
 		return FutureConverters.toJava(ask(location_actor, new locationActor.Location(name), 5000))
 				.thenApplyAsync(userInfo -> ok(locationPage.render((infoRepository) userInfo)));
 	}
 
 	/**
-	 * An action that renders the hashtag HTML page with the ten latest tweets for
-	 * the hashtag hyperlink that is clicked by the user. The configuration in the
-	 * routes file means that this method will be called when the application
-	 * receives a <code>GET</code> request with a path of
-	 * <code>/hashtag/:name</code>.
-	 *
-	 * @author Navdeep Kaur Brar
+	 * Renders the Hashtag HTML page with the latest ten tweets
+	 * @route GET request with a path of  /hashtag/:name.
 	 * @param name the hashtag for which the tweets are displayed
 	 * @return the hashtag and ten latest tweets to the hashtagPage.scala.html
 	 * @throws TwitterException It throws a TwitterException
@@ -114,10 +98,8 @@ public class HomeController extends Controller {
 	/**
 	 * An action that renders the searchterms HTML page with the distinct words and
 	 * frequencies The configuration in the routes file means that this method will
-	 * be called when the application receives a <code>GET</code> request with a
-	 * path of <code>/searchTerms/:name</code>.
-	 *
-	 * @author Komaldeep Singh
+	 * be called when the application receives a GET request with a
+	 * path of /searchTerms/:name.
 	 * @param name the search terms for which the distinct words are displayed
 	 * @return the distinct words and frequencies to the searchtermsPage.scala.html
 	 * @throws TwitterException It throws a TwitterException
