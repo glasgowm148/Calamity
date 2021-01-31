@@ -17,7 +17,9 @@ import twitter.twittertext.TwitterTextParser;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -37,8 +39,21 @@ public class jsonReader {
 
 
     /**
+     * This method passes each file within the specified directory to parseEvent()
+     */
+    public void parse() {
+        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake"))) { //tweets/athens_earthquake  //testy
+            paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    /**
      * @param path - the event path
-     * Parses each event into Tweet model - Calculates the offset and event keywords before passing to tweetAnalyser()
+     * Parses each event into Tweet.class
+     * Calculates the offset and event keywords before passing to tweetAnalyser()
      * @return
      */
     public static List<Tweet> parseEvent(Path path)  {
@@ -60,7 +75,8 @@ public class jsonReader {
                     // Instantiate a new ObjectMapper object
                     ObjectMapper mapper = new ObjectMapper();
 
-                    // Configure the mapper to accept single values as arrays - so we can deserialise each line into an array
+                    // Configure the mapper to accept single values as arrays.
+                    // This is required so we can deserialise each line into an array
                     mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 
                     // Iterate through each line
@@ -117,8 +133,6 @@ public class jsonReader {
 
         // Iterate over each tweet in the collection
         for (Tweet tweet : new ArrayList<Tweet>(tweetList)) {
-
-            // Extractor
             final Extractor extractor = new Extractor();
             List<String> hashtags = extractor.extractHashtags(tweet.getText());
             tweet.setHashtags(hashtags);
@@ -174,7 +188,6 @@ public class jsonReader {
             //}
 
 
-
         }
 
 
@@ -208,5 +221,45 @@ public class jsonReader {
         return output;
     }
 
+    public static void printVector(String file) {
+        PrintWriter out = null;
 
+        // Export
+        try {
+            out = new PrintWriter(new FileWriter("../../0-data/processed/" + file + ".txt", true), true);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+
+        for (Tweet tweet : tweetList) {
+            //double[] d = convertFloatsToDoubles(tweet.getDimensions());
+            if (tweet.getFeatureVector() != null) {
+                assert out != null;
+
+                // Print the feature vector
+                out.print(tweet.getFeatureVector());
+
+                 /**
+                 // Add the BERT Word Embeddings
+                 out.print(",");
+                 out.print("[");
+                 for(double x : d){
+                 out.print(x + ", ");
+                 }
+                 out.print("]");
+                 */
+
+            }
+            assert out != null;
+            out.println("");
+
+        }
+        assert out != null;
+        out.flush();
+        out.close();
+        System.out.println("Exported to .txt");
+    }
 }

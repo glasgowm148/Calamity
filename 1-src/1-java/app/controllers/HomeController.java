@@ -55,18 +55,19 @@ public class HomeController extends Controller {
 
 
     // index() is triggered on GET to localhost:9000/
-    public Result index()  {
+    public Result index() throws IOException {
 
 
         // Start timer for tracking efficiency
         long startTime = System.currentTimeMillis();
 
         // Parse into a Tweet model
-        //jsonReader reader = new jsonReader();
-        //reader.parse();
+        jsonReader reader = new jsonReader();
+        reader.parse();
 
-        List<Tweet> tweetList = jsonActor();
-        tweetList = sentiActor(tweetList);
+
+        System.out.println("tweetlist: " + tweetList);
+        sentiActor(tweetList);
 
         // Uncomment this line to parse all tweets (resource intensive! - hours)
         //tweetList = reader.parseOne(pathAll);
@@ -80,8 +81,8 @@ public class HomeController extends Controller {
         inputOutput.printVector(output_file, tweetList);
 
         printTimer(startTime);
-
-        return ok(Objects.requireNonNull(inputOutput.VectorToPrettyFormat(new File(output_file))));         //return ok(Sanitise.toPrettyFormat(new File("../../1-src/1-java/conf/10.jsonl")));
+        return ok(new String(Files.readAllBytes(Paths.get("../../0-data/processed/" + output_file + ".txt"))));
+       // return ok(inputOutput.VectorToPrettyFormat(new File(output_file)));         //return ok(Sanitise.toPrettyFormat(new File("../../1-src/1-java/conf/10.jsonl")));
     }
 
     private void printTimer(long startTime) {
@@ -93,22 +94,9 @@ public class HomeController extends Controller {
         System.out.println(elapsedSeconds + " seconds");
     }
 
-    /**
-     * This method passes each file within the specified directory to parseEvent()
-     * @return tweetList
-     * @calls jsonReader.parseEvent -> jsonReader.
-     */
-    private List<Tweet> jsonActor() {
-        try (Stream<Path> paths = Files.walk(Paths.get(path))) { //tweets/athens_earthquake  //testy
-            paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-        return null;
-    }
 
-    private List<Tweet> sentiActor(List<Tweet> tweetList){
+    private void sentiActor(List<Tweet> tweetList){
 
         // Instantiate a new featureActor()
         featureActor featureActor = new featureActor();
@@ -126,7 +114,7 @@ public class HomeController extends Controller {
             e.printStackTrace();
         }
 
-        return tweetList;
+
 
 
 

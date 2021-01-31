@@ -32,7 +32,7 @@ public class inputOutput {
     }
 
     public static String VectorToPrettyFormat(File file) {
-        //             out = new PrintWriter(new FileWriter(, true), true);
+        //           "../../0-data/processed/" + file + ".txt"
 
         try(FileInputStream inputStream = new FileInputStream("../../0-data/processed/" + file + ".txt")) {
             return IOUtils.toString(inputStream);
