@@ -38,7 +38,8 @@ public class HomeController extends Controller {
 	 */
 
 	public Result index() {
-		return ok(mainPage.render());
+		return ok(views.html.mainPage.render());
+		//return ok(mainPage.render());
 	}
 
 	//Actor References defined
