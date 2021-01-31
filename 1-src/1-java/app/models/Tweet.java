@@ -107,9 +107,11 @@ public class Tweet implements Comparable<Tweet> {
     private String data;
     @JsonProperty("followers_count")
     private int userFollowersCount;
+
     @JsonProperty("retweeted_status")
     @Expose
     private Retweet retweet;
+
     private final Map<String, String> properties = null;
 
     @JsonIgnoreProperties(ignoreUnknown = true)

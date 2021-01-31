@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.chen0040.embeddings.GloVeModel;
+import controllers.HomeController;
 import logic.Sanitise;
 import logic.SentimentAnalyzer;
 import logic.Twokenize;
@@ -48,8 +49,9 @@ public class jsonReader {
         //Path pathToFile = Paths.get(filename);
         //System.out.println(pathToFile.toAbsolutePath());
 
-        try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/selected/"))) { //tweets/athens_earthquake  //testy
-            paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
+        try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/baltimore_flash_flood/"),2)) { //tweets/athens_earthquake  //testy
+            paths.map(Path::toString).filter(f -> f.endsWith(".jsonl"))
+                    .forEach(this::makeTweetList);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -62,84 +64,88 @@ public class jsonReader {
      * Calculates the offset and event keywords before passing to tweetAnalyser()
      * @return
      */
-    public static List<Tweet> parseEvent(Path path)  {
+    public void makeTweetList(String path)  {
 
-        // Ensure it's a selected.json file
-        while(path.toString().contains("selected.jsonl") & !path.toString().matches(".*\\.gz")) {  //(".*\\.jsonl")
+        GloVeModel model = new GloVeModel();
+        model.load("lib/glove", 200);
 
-            System.out.println(path);
 
-            // is = a FileInputStream of the path
-            try (InputStream is = new FileInputStream(String.valueOf(path))) {
+        // is = a FileInputStream of the path
+        try (InputStream is = new FileInputStream(String.valueOf(path))) {
 
-                // @lines = A Stream of strings
-                try (Stream<String> lines = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8)).lines()) {
+            // @lines = A Stream of strings
+            try (Stream<String> lines = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8)).lines()) {
 
-                    // Instantiate a new ObjectMapper object
-                    ObjectMapper mapper = new ObjectMapper();
+                // Instantiate a new ObjectMapper object
+                ObjectMapper mapper = new ObjectMapper();
 
-                    // Configure the mapper to accept single values as arrays.
-                    // This is required so we can deserialise each line into an array
-                    mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+                // Configure the mapper to accept single values as arrays. - This is required so we can deserialise each line into an array
+                mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 
-                    // Iterate through each line
-                    for (String s : (Iterable<String>) lines::iterator) {
+                for (String s : (Iterable<String>) lines::iterator) {    // Iterate through each line
+                    try {
 
-                        try {
+                        // @n = A JsonNode of the Tweet
+                        JsonNode n = Json.parse(s);
 
-                            // @n = A JsonNode of the Tweet
-                            JsonNode n = Json.parse(s);
+                        // @tweet = JsonNode mapped to the Tweet model using JacksonXMLs 'treeToValue'
+                        Tweet tweet = mapper.treeToValue(n, Tweet.class); // here
 
-                            // @tweet = JsonNode mapped to the Tweet model using JacksonXMLs 'treeToValue'
-                            Tweet tweet = mapper.treeToValue(n, Tweet.class); // here
+                        // @tweetList = An ArrayList we add all the to.
+                        tweetList.add(tweet);
 
-                            // @tweetList = An ArrayList we add all the to.
-                            tweetList.add(tweet);
-
-                        } catch (JsonProcessingException jsonProcessingException) {
-
-                            // json Processing exceptions will be printed to console
-                            jsonProcessingException.printStackTrace();
-                        }
-
-                    }
-
-                    System.out.println("\n" + tweetList.size() + " tweets read into model from" + path);
-
+                    } catch (JsonProcessingException jsonProcessingException) { jsonProcessingException.printStackTrace(); }
 
                 }
 
+                System.out.println("\n" + tweetList.size() + " tweets read into model from " + path);
 
-            } catch (IOException e) {
-                System.out.println(e.toString());
+                // Instantiate a new featureActor()
+                featureActor featureActor = new featureActor();
 
+                // getKeywords gets the TFIDF
+                featureActor.getKeywords(tweetList);
+
+                SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
+                sentimentAnalyzer.initialize();
+
+                // Offset + Sentiment + TwitterText + Glove
+                try {
+                   tweetAnalyser(getMin(), model,  sentimentAnalyzer); //,
+                } catch (InterruptedException e) { e.printStackTrace(); }
 
             }
 
+
+        } catch (IOException e) {
+            System.out.println(e.toString());
+
+
         }
 
-        return tweetList;
+        }
 
 
-    }
+
+
+
 
 
     /**
      * //@param model - word embeddings model
      * @param min - minimum time
+     * @param model
      * @param sentimentAnalyzer - sentimentActor
  * For each tweet in the event, hashtags, text-features are extracted
- * The text is then sanitisied before sentiment analysis is performed.
      */
-    public static void tweetAnalyser(int min, SentimentAnalyzer sentimentAnalyzer) throws InterruptedException { //GloVeModel model,
+    public static void tweetAnalyser(int min, GloVeModel model, SentimentAnalyzer sentimentAnalyzer) throws InterruptedException { //GloVeModel model,
 
         //  tweetList = tweetList.stream().map(x -> "D").collect(Collectors.toList());
 
         // Iterate over each tweet in the collection
 
         // Initialise actors for Word Embeddings
-        GloVeModel model = new GloVeModel();
-        model.load("lib/glove", 200);
+
 
         for (Tweet tweet : new ArrayList<Tweet>(tweetList)) {
             final Extractor extractor = new Extractor();

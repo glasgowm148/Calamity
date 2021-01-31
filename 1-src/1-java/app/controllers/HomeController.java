@@ -37,7 +37,7 @@ import static akka.pattern.Patterns.ask;
 
 public class HomeController extends Controller {
 
-    private static final List<Tweet> tweetList  = new ArrayList<>();
+    private static List<Tweet> tweetList  = new ArrayList<>();
     private final String path = "../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake";
     private final String output_file = "cluster_run1";
 
@@ -62,27 +62,13 @@ public class HomeController extends Controller {
         long startTime = System.currentTimeMillis();
 
         // Parse into a Tweet model
-        try {
-            Thread.sleep(5000);
-            jsonReader reader = new jsonReader();
-            reader.parse();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
+        jsonReader reader = new jsonReader();
+        reader.parse();
 
 
-        sentiActor(tweetList);
-
-        // Uncomment this line to parse all tweets (resource intensive! - hours)
-        //tweetList = reader.parseOne(pathAll);
-
-
-        /**
-         * Main Logic done
-         * Print the vector, timer and results.
-         */
-
-        inputOutput.printVector(output_file, tweetList);
+        
+        //inputOutput.printVector(output_file, tweetList);
 
         printTimer(startTime);
         return ok(new String(Files.readAllBytes(Paths.get("../../0-data/processed/" + output_file + ".txt"))));
@@ -100,30 +86,6 @@ public class HomeController extends Controller {
 
 
 
-    private void sentiActor(List<Tweet> tweetList){
-
-        // Instantiate a new featureActor()
-        featureActor featureActor = new featureActor();
-
-        // getKeywords gets the TFIDF
-        featureActor.getKeywords(HomeController.tweetList);
-
-        SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
-        sentimentAnalyzer.initialize();
-
-        // Offset + Sentiment + TwitterText + Glove
-        try {
-            jsonReader.tweetAnalyser(getMin(),  sentimentAnalyzer); //model,
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-
-
-
-
-
-    }
     /*
     public CompletionStage<Result> resultEvent(String name) throws TwitterException, ExecutionException, InterruptedException {
         return FutureConverters.toJava(ask(event_actor, new eventActor.parse("/test.jsonl"), 5000))

@@ -15,7 +15,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/actors/jsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/actors/jsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Tweet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/glove/glove.6B.zip" beforeDir="false" afterPath="$PROJECT_DIR$/lib/glove/glove.6B.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +294,7 @@
       <workItem from="1611831523888" duration="10030000" />
       <workItem from="1611862571464" duration="11507000" />
       <workItem from="1612101708767" duration="11515000" />
-      <workItem from="1612122424664" duration="4513000" />
+      <workItem from="1612122424664" duration="6212000" />
     </task>
     <servers />
   </component>
@@ -382,14 +384,6 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/twitter/twittertext/TwitterTextConfiguration.java</url>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/app/models/Tweet.java</url>
-          <line>48</line>
-          <properties class="models.Tweet" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
