@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/glasgowm148/helpme">
-    <img src="/0-data/raw/img/logo.png" alt="Logo">
+    <img src="/0-data/raw/img/logo.png" alt="Logo" width="250">
   </a>
 
   <h3 align="center">HelpMe!: </h3>
@@ -13,10 +13,10 @@
   <p align="center">
     Identifying emergency reports and calls for help on social media
     <br />
-    <a href="https://github.com/glasgowm148/HelpMe/tree/main/HelpMe/data/docs"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/glasgowm148/HelpMe/tree/main/HelpMe/0-data/docs"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/glasgowm148/HelpMe/data/demo">View Demo</a>
+    <a href="https://github.com/glasgowm148/HelpMe/0-data/screenshots">View Demo</a>
     ·
     <a href="https://github.com/glasgowm148/HelpMe/issues">Report Bug</a>
     ·
@@ -89,8 +89,7 @@ The product will be evaluated via automatic evaluation of categorization accurac
 
 <!-- GETTING STARTED -->
 ## Getting Started
-(Note: To test after moving directory. Likely broken urls/steps missing - TODO)
-To get a local copy up and running follow these simple steps.
+
 
 ### Installation
 
@@ -104,7 +103,7 @@ To get a local copy up and running follow these simple steps.
 | ----------- | ----------- |
 | `sbt`       | Enter the SBT console |
 | `sbt run`   | Run the Application |
-| `sbt`       | Enter the SBT console |
+| `sbt clean` | Enter the SBT console |
 
 
 <!-- ROADMAP -->
@@ -129,7 +128,6 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
 
 
 <!-- CONTACT -->
