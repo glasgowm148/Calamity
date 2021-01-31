@@ -47,11 +47,7 @@ public class jsonReader {
         //String filename="lib/2020A_tweets/selected/";
         //Path pathToFile = Paths.get(filename);
         //System.out.println(pathToFile.toAbsolutePath());
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
         try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/selected/"))) { //tweets/athens_earthquake  //testy
             paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
         } catch (Exception e) {

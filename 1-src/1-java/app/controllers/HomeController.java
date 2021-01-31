@@ -62,8 +62,14 @@ public class HomeController extends Controller {
         long startTime = System.currentTimeMillis();
 
         // Parse into a Tweet model
-        jsonReader reader = new jsonReader();
-        reader.parse();
+        try {
+            Thread.sleep(5000);
+            jsonReader reader = new jsonReader();
+            reader.parse();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
 
         sentiActor(tweetList);
 
