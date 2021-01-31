@@ -43,7 +43,7 @@ public class jsonReader {
      * This method passes each file within the specified directory to parseEvent()
      */
     public void parse() {
-        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake"))) { //tweets/athens_earthquake  //testy
+        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/selected/all"))) { //tweets/athens_earthquake  //testy
             paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
         } catch (Exception e) {
             e.printStackTrace();
@@ -210,7 +210,7 @@ public class jsonReader {
         System.out.print("Parsing");
         return min;
     }
-    
+
 
     public static void printVector(String file) {
         PrintWriter out = null;
