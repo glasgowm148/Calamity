@@ -3,7 +3,8 @@
 1-src/1-java/app/project/*
 .DS_Store
 1-src/1-java/app/target/*
-data/raw/datasets/*
+0-data/raw/datasets/*
+0-data/raw/TREC*
 1-src/.seed/*
 1-src/1-java/target/*
 1-src/TweetMinner-master/.project
@@ -27,13 +28,11 @@ CoreNLP
 1-src/heapdump.*
 1-src/javacore.*
 1-src/Snap.*
-data/*
 .idea/*
 1-src/seed/*
+1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
+1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
 
-1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
-1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
-0-data/raw*
 *.gz
 *.cache
 *.cache

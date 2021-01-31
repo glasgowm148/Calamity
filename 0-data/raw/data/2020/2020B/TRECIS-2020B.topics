@@ -1,0 +1,126 @@
+<top>
+<num>53</num>
+<dataset>houstonExplosion2020</dataset>
+<title>Houston explosion</title>
+<type>explosion</type>
+<url>https://en.wikipedia.org/wiki/2020_Houston_explosion</url>
+<narr>On January 24, 2020, a building at Watson Grinding and Manufacturing in northwest Houston, Texas, United States, exploded at 4:24 a.m. Debris was scattered as far as one-half of a mile, and approximately 200 nearby houses and businesses were damaged.
+</narr>
+</top>
+<top>
+<num>54</num>
+<dataset>texasA&MCommerceShooting2020</dataset>
+<title>Texas A&M-Commerce shooting</title>
+<type>shooting</type>
+<url>https://www.washingtonpost.com/nation/2020/02/03/texas-am-shooting/</url>
+<narr>Two women died and a child was wounded in a shooting at a residence hall at Texas A&M University at Commerce, TX.
+</narr>
+</top>
+<top>
+<num>55</num>
+<dataset>southeastTornadoOutbreak2020</dataset>
+<title>Southeast US Tornado Outbreak</title>
+<type>storm</type>
+<url>https://en.wikipedia.org/wiki/Tornado_outbreak_of_February_5%E2%80%937,_2020</url>
+<narr>The tornado outbreak of February 5â€“7, 2020 was a multi-day severe weather event across the Southeastern and Mid-Atlantic United States. A powerful upper-level trough progressed eastward across the country, intersecting an abundant supply of moist air to produce severe weather. An eastward-propagating cold front supported a damaging squall line across the Southeast U.S. on February 5â€“6; supercell thunderstorms ahead of this line also produced numerous tornadoes
+</narr>
+</top>
+<top>
+<num>56</num>
+<dataset>stormCiara2020</dataset>
+<title>Storm Ciara</title>
+<type>typhoon</type>
+<url>https://www.bbc.com/news/uk-51439152</url>
+<narr>Storm Ciara was a powerful and long-lived extratropical cyclone that was the first of a pair of European windstorms to impact the United Kingdom and Ireland at peak intensity less than a week apart
+</narr>
+</top>
+<top>
+<num>57</num>
+<dataset>stormDennis2020</dataset>
+<title>Storm Dennis</title>
+<type>typhoon</type>
+<url>https://www.bbc.co.uk/news/uk-51526879</url>
+<narr>Storm Dennis was a European windstorm which, in February 2020, became one of the most intense extratropical cyclones ever recorded
+</narr>
+</top>
+<top>
+<num>58</num>
+<dataset>portervilleLibraryFire2020</dataset>
+<title>Porterville library fire</title>
+<type>fire</type>
+<url>https://www.fresnobee.com/news/local/article240417361.html</url>
+<narr>Two teens allegedly set fire to the Porterville Library, which resulted in the deaths of two firefighters
+</narr>
+</top>
+<top>
+<num>59</num>
+<dataset>virraMallHostageSituation2020</dataset>
+<title>Virra Mall Hostage Situation</title>
+<type>hostage</type>
+<url>https://www.cnn.com/2020/03/02/asia/philippines-greenhills-hostage-situation-mall-intl-hnk/index.html</url>
+<narr>A man fired from his job as a security guard shot one person and took numerous others hostage within the Virra Mall in Manila
+</narr>
+</top>
+<top>
+<num>60</num>
+<dataset>stormJorge2020</dataset>
+<title>Storm Jorge</title>
+<type>typhoon</type>
+<url>https://www.bbc.com/news/uk-51686979</url>
+<narr>Intense storm that brought high seas and snow
+</narr>
+</top>
+<top>
+<num>61</num>
+<dataset>tennesseeTornadoOutbreak2020</dataset>
+<title>Tennessee tornado outbreak</title>
+<type>tornado</type>
+<url>https://en.wikipedia.org/wiki/Tornado_outbreak_of_March_2%E2%80%933,_2020</url>
+<narr>A small but deadly tornado outbreak affected West and Middle Tennessee on the night of March 2 and into the morning of March 3, 2020, including one that hit Northern Nashville, becoming the 6th costliest tornado in US history
+</narr>
+</top>
+<top>
+<num>62</num>
+<dataset>tennesseeDerecho2020</dataset>
+<title>Tennessee derecho</title>
+<type>storm</type>
+<url>https://www.washingtonpost.com/weather/2020/05/04/deadly-derecho-slammed-nashville-with-70-mph-winds-sunday-snapping-trees-knocking-out-power/</url>
+<narr>Intense windstorm caused amage across Tennessee
+</narr>
+</top>
+<top>
+<num>63</num>
+<dataset>edenvilleDamFailure2020</dataset>
+<title>Edenville dam failure</title>
+<type>flood</type>
+<url>https://en.wikipedia.org/wiki/Edenville_Dam#Dam_failure</url>
+<narr>Following the failure of the Edenville Dam, numerous houses were evacuated
+</narr>
+</top>
+<top>
+<num>64</num>
+<dataset>sanFranciscoPierFire2020</dataset>
+<title>San Francisco Pier Fire</title>
+<type>fire</type>
+<url>https://www.cnn.com/2020/05/23/us/san-francisco-pier-45-fire/index.html</url>
+<narr>A four-alarm warehouse fire broke out at Pier 45 in San Francisco
+</narr>
+</top>
+<top>
+<num>65</num>
+<dataset>tropicalStormCristobal2020</dataset>
+<title>Tropical Storm Cristobal</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/Tropical_Storm_Cristobal_(2020)</url>
+<narr>Tropical Storm Cristobal was the earliest third named storm in the North Atlantic Ocean on record and caused US$675 million in damage and 15 fatalities
+</narr>
+</top>
+<top>
+<num>66</num>
+<dataset>beirutExplosion2020</dataset>
+<title>Beirut Explosion</title>
+<type>explosion</type>
+<url>https://en.wikipedia.org/wiki/2020_Beirut_explosion</url>
+<narr>On 4 August 2020, a large amount of ammonium nitrate stored at the port of the city of Beirut, the capital of Lebanon, accidentally exploded, causing at least 180 deaths, 6,000 injuries, US$10â€“15 billion in property damage, and leaving an estimated 300,000 people homeless
+</narr>
+</top>

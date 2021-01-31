@@ -1,0 +1,245 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.trecis</groupId>
+  <artifactId>ASP</artifactId>
+  <version>1.0</version>
+  <name>Automated Stream Processor</name>
+  <description>This is a core framework for processing digital item streams</description>
+  
+  
+  <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <year>2017</year>
+        <gpg.skip>true</gpg.skip>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <springfox-version>2.5.0</springfox-version>
+  </properties>
+  
+  <organization>
+		<name>University of Glasgow</name>
+		<url>http://www.gla.ac.uk</url>
+  </organization>
+  
+  <developers>
+		<developer>
+			<url>https://github.com/terrierteam</url>
+			<organization>TerrierTeam, University of Glasgow</organization>
+			<organizationUrl>http://terrierteam.dcs.gla.ac.uk</organizationUrl>
+			<id>terrierteam</id>
+		</developer>
+  </developers>
+  
+  <repositories>
+	    <repository>
+	      <id>sonatype-snapshots</id>
+	      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+	      <snapshots>
+	        <enabled>true</enabled>
+	      </snapshots>
+	    </repository>
+  </repositories>
+  
+  <dependencies>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.spark</groupId>
+			<artifactId>spark-core_2.11</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>org.apache.spark</groupId>
+    		<artifactId>spark-sql_2.11</artifactId>
+    		<version>2.2.0</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>org.apache.spark</groupId>
+    		<artifactId>spark-mllib_2.11</artifactId>
+    		<version>2.2.0</version>
+		</dependency>
+		
+		<dependency>
+    		<groupId>org.apache.spark</groupId>
+    		<artifactId>spark-streaming_2.11</artifactId>
+    		<version>2.2.0</version>
+		</dependency>
+		
+		<dependency>
+            <groupId>it.unimi.dsi</groupId>
+            <artifactId>fastutil</artifactId>
+            <version>7.0.2</version>
+        </dependency>
+		
+		<dependency>
+			<groupId>net.sf.trove4j</groupId>
+			<artifactId>trove4j</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+		
+        <dependency>
+           <groupId>org.mongodb</groupId>
+           <artifactId>mongodb-driver</artifactId>
+           <version>3.6.4</version>
+        </dependency>
+
+
+  </dependencies>
+  
+  <build>
+
+	<sourceDirectory>src</sourceDirectory>
+
+	<resources>
+			<resource>
+          		<directory>resources</directory>
+			</resource>
+			<resource>
+          		<directory>configurationTemplates</directory>
+			</resource>
+		</resources>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eclipse.m2e</groupId>
+                    <artifactId>lifecycle-mapping</artifactId>
+                    <version>1.0.0</version>
+                    <configuration>
+                        <lifecycleMappingMetadata>
+                            <pluginExecutions>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.codehaus.mojo</groupId>
+                                        <artifactId>gwt-maven-plugin</artifactId>
+                                        <versionRange>[2.4.0,)</versionRange>
+                                        <goals>
+                                            <goal>resources</goal>
+                                            <goal>compile</goal>
+                                            <goal>i18n</goal>
+                                            <goal>generateAsync</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>com.theoryinpractise</groupId>
+                                        <artifactId>clojure-maven-plugin</artifactId>
+                                        <versionRange>1.3.8</versionRange>
+                                        <goals>
+                                            <goal>compile</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-resources-plugin</artifactId>
+                                        <versionRange>2.4.3</versionRange>
+                                        <goals>
+                                            <goal>resources</goal>
+                                            <goal>testResources</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute />
+                                    </action>
+                                </pluginExecution>
+                                <pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-war-plugin</artifactId>
+                                        <versionRange>[2.1.1,)</versionRange>
+                                        <goals>
+                                            <goal>exploded</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute />
+                                    </action>
+                                </pluginExecution>
+								<pluginExecution>
+                                    <pluginExecutionFilter>
+                                        <groupId>org.apache.maven.plugins</groupId>
+                                        <artifactId>maven-compiler-plugin</artifactId>
+                                        <versionRange>2.3.2</versionRange>
+                                        <goals>
+                                            <goal>testCompile</goal>
+                                            <goal>compile</goal>
+                                        </goals>
+                                    </pluginExecutionFilter>
+                                    <action>
+                                        <execute />
+                                    </action>
+                                </pluginExecution>
+                            </pluginExecutions>
+                        </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.4.3</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>org.terrier.asp.applications.ASPProgramScheduler</mainClass>
+							<!-- <mainClass>org.terrier.test.location.GetLocationsForDocuments</mainClass> -->
+							<!-- <mainClass>org.terrier.air.applications.AIR1</mainClass>  -->
+							<!-- <mainClass>org.terrier.test.lm.ProduceLMFromWikipediaXML</mainClass> -->
+						</manifest>
+					</archive>
+					<filters>
+						<filter>**/logback.xml</filter>
+						<filter>**\logback.xml</filter>
+          				</filters>
+				</configuration>
+				<executions>
+					<execution>
+						<!-- builds the jar-with-dependencies -->
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+        </plugins>
+    </build>
+</project>

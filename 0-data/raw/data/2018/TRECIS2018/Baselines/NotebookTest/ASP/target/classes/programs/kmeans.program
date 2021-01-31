@@ -1,0 +1,14 @@
+{
+  "workingDIR" : "C:\\Work\\Data\\",
+  "sparkMode" : "local[6]",
+  "loggingLevel" : "INFO",
+  "modulePipeline" : [
+    {
+      "unitName" : "KMeansUnit",
+      "unitExpanation" : "This unit takes in a tweet dataset and performs k-means clustering over it, then writes to a file in gzipped json format.",
+      "unitType" : "batch",
+	  "unitInputReaders": [ "TwitterJSONDatasetInMem.dataset.conf" ],
+      "unitModulePipeline" : [ "ClusteringBatch.module.conf", "ASPWriter.module.conf" ]
+    }
+  ]
+}
