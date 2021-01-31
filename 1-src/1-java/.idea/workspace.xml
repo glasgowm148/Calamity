@@ -12,141 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/athens_earthquake/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/athens_earthquake/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/athens_earthquake/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/baltimore_flash_flood/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/baltimore_flash_flood/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/brooklynblockparty_shooting/before_selection.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/brooklynblockparty_shooting/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/brooklynblockparty_shooting/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/brooklynblockparty_shooting/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/dayton_ohio_shooting/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/dayton_ohio_shooting/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/el_paso_walmart_shooting/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/el_paso_walmart_shooting/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/gilroygarlic_shooting/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/gilroygarlic_shooting/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/hurricane_barry/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/hurricane_barry/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/indonesia_earthquake/before_selection.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/indonesia_earthquake/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/indonesia_earthquake/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/indonesia_earthquake/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/kerala_floods/before_selection.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/kerala_floods/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/kerala_floods/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/kerala_floods/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/myanmar_floods/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/myanmar_floods/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/myanmar_floods/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/papua_newguinea_earthquake/before_selection.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/papua_newguinea_earthquake/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/papua_newguinea_earthquake/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/papua_newguinea_earthquake/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/all/all.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/athens_selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/baltimore_selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/barry.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/brook_selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/dayton_selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/el.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/gil.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/indo.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/kerala.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/krosa.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/lek.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/myan.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/pap.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/sib.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/whaley.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/siberian_wildfires/10.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/siberian_wildfires/500.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/siberian_wildfires/before_selection.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/siberian_wildfires/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/siberian_wildfires/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/siberian_wildfires/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/typhoon_krosa/before_selection.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/typhoon_krosa/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/typhoon_krosa/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/typhoon_krosa/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/typhoon_lekima/before_selection.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/typhoon_lekima/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/typhoon_lekima/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/typhoon_lekima/selected.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/whaley_bridge_collapse/before_selection.jsonl.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/whaley_bridge_collapse/selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/whaley_bridge_collapse/selected.jsonl.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/baltimore_flash_flood/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/baltimore_flash_flood/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/brooklynblockparty_shooting/before_selection.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/brooklynblockparty_shooting/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/brooklynblockparty_shooting/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/brooklynblockparty_shooting/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/dayton_ohio_shooting/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/dayton_ohio_shooting/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/el_paso_walmart_shooting/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/el_paso_walmart_shooting/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/files" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/gilroygarlic_shooting/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/gilroygarlic_shooting/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/hurricane_barry/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/hurricane_barry/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/indonesia_earthquake/before_selection.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/indonesia_earthquake/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/indonesia_earthquake/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/indonesia_earthquake/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/kerala_floods/before_selection.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/kerala_floods/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/kerala_floods/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/kerala_floods/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/myanmar_floods/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/myanmar_floods/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/myanmar_floods/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/papua_newguinea_earthquake/before_selection.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/papua_newguinea_earthquake/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/papua_newguinea_earthquake/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/papua_newguinea_earthquake/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/all/all.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/athens_selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/baltimore_selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/barry.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/brook_selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/dayton_selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/el.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/gil.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/indo.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/kerala.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/krosa.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/lek.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/myan.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/pap.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/sib.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/selected/whaley.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/siberian_wildfires/10.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/siberian_wildfires/500.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/siberian_wildfires/before_selection.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/siberian_wildfires/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/siberian_wildfires/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/siberian_wildfires/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/typhoon_krosa/before_selection.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/typhoon_krosa/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/typhoon_krosa/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/typhoon_krosa/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/typhoon_lekima/before_selection.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/typhoon_lekima/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/typhoon_lekima/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/typhoon_lekima/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/whaley_bridge_collapse/before_selection.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/whaley_bridge_collapse/selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../0-data/raw/data/2020/2020-A/tweets/whaley_bridge_collapse/selected.jsonl.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/actors/jsonReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/actors/jsonReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/glove/glove.6B.zip" beforeDir="false" afterPath="$PROJECT_DIR$/lib/glove/glove.6B.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,7 +290,7 @@
       <workItem from="1611831523888" duration="10030000" />
       <workItem from="1611862571464" duration="11507000" />
       <workItem from="1612101708767" duration="11515000" />
-      <workItem from="1612122424664" duration="3256000" />
+      <workItem from="1612122424664" duration="3763000" />
     </task>
     <servers />
   </component>
