@@ -1,18 +1,17 @@
-package tweetfeatures;
+package features;
 
 import Utils.VoltLookUpTable;
 import models.Tweet;
 
 import java.io.File;
 
-public class SlanginessTweetFeature extends TweetFeature {
+public class SwearingTweetFeature extends TweetFeature {
 	
 	public static VoltLookUpTable lookUpTable = 
-			new VoltLookUpTable(new File("conf/slangs.txt" ));
+			new VoltLookUpTable(new File("conf/badwords.txt" ));
 
-	@Override
 	/**
-	 * Checks if the tweet has a slangy word or not
+	 * Checks if the tweet has a bad word or not
 	 */
 	public boolean classify(Tweet tweet) {
 		for ( String token : tweet.getTokens() ) {
@@ -24,7 +23,7 @@ public class SlanginessTweetFeature extends TweetFeature {
 	}
 	
 	/**
-	 * Returns the number of slang tokens in the tweet
+	 * Returns the number of swearing tokens in the tweet
 	 * @param tweet
 	 * @return
 	 */

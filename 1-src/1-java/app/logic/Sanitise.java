@@ -1,7 +1,6 @@
 package logic;
 
 import org.apache.commons.io.IOUtils;
-import unused.FileUtils;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -19,6 +18,7 @@ import java.util.stream.Collectors;
 
 public class Sanitise {
 
+    /*
     private static final Set<String[]> stopWords = new HashSet<>();
 
     static {
@@ -31,6 +31,8 @@ public class Sanitise {
             e.printStackTrace();
         }
     }
+
+     */
 
     public static void clean(Tweet tweet){
         // Remove URLs, mentions, hashtags and whitespace
@@ -86,8 +88,8 @@ public class Sanitise {
     public static JavaRDD<String> loadTwitterData(JavaSparkContext sc, String file) {
         JavaRDD<String> logData = sc.textFile(file).cache();
 
-        JavaRDD<String> tweetText = logData.map(new Function<String, String>() {
-            @Override
+        J//avaRDD<String> tweetText = logData.map(new Function<String, String>() {
+           // @Override
             public String call(String s) {
                 String[] tokens = s.split(" ");
                 String t = new String();

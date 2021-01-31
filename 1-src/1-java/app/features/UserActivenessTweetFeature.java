@@ -1,4 +1,4 @@
-package tweetfeatures;
+package features;
 
 import models.Tweet;
 import org.joda.time.DateTime;

@@ -1,5 +1,6 @@
-package models;
+package services;
 
+import models.Tweet;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.mllib.feature.Word2VecModel;

@@ -31,44 +31,40 @@ import javax.inject.Inject;
 
 import static actors.jsonReader.getMin;
 import static akka.pattern.Patterns.ask;
-
-
+import static controllers.HomeController.StaticPath.output_file;
 
 
 public class HomeController extends Controller {
 
-    private static List<Tweet> tweetList  = new ArrayList<>();
-    private final String path = "../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake";
-    private final String output_file = "cluster_run1";
+    public static class StaticPath {
+        public static String path = "../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake";
+        public static String output_file = "cluster_run2";
+    }
 
 
+    // Start timer for tracking efficiency
+    long startTime = System.currentTimeMillis();
+
+    /**
     // Define Actor References
     private final ActorRef event_actor;
     private final ActorRef sentiment_actor;
 
     // Initialise the Actor references using dependency injection
-    @Inject
+    //@Inject
     public HomeController(ActorSystem actorObj) {
         event_actor = actorObj.actorOf(eventActor.getProps());
         sentiment_actor = actorObj.actorOf(eventActor.getProps());
     }
-
+    **/
 
     // index() is triggered on GET to localhost:9000/
     public Result index() throws IOException {
-
-
-        // Start timer for tracking efficiency
-        long startTime = System.currentTimeMillis();
-
-        // Parse into a Tweet model
 
         jsonReader reader = new jsonReader();
         reader.parse();
 
 
-        
-        //inputOutput.printVector(output_file, tweetList);
 
         printTimer(startTime);
         return ok(new String(Files.readAllBytes(Paths.get("../../0-data/processed/" + output_file + ".txt"))));

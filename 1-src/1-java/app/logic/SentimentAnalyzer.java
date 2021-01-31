@@ -7,7 +7,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
-import unused.SentimentClassification;
+import models.SentimentClassification;
 import models.SentimentResult;
 import org.ejml.simple.SimpleMatrix;
 

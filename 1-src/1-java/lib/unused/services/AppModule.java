@@ -1,4 +1,4 @@
-package unused;
+/**package actors;
 
 import akka.actor.ActorSystem;
 import akka.actor.typed.ActorRef;
@@ -10,22 +10,22 @@ import akka.cluster.typed.SingletonActor;
 import com.google.inject.AbstractModule;
 import com.google.inject.TypeLiteral;
 import play.Environment;
-import services.CounterActor;
-import services.CounterActor.Command;
+//import services.CounterActor;
+//import services.CounterActor.Command;
 
 import javax.inject.Inject;
 import javax.inject.Provider;
 
-/**
+
  *See the source code in modules/AppModule.java for the logic controlling how the ActorSystem of anode participates on the cluster formation. This example application demonstrates:
 
 the Akka Cluster API for self-joining in Dev Mode, and
 the setup of seed-node in configuration for Prod Mode
 but it doesn't demonstrate the Akka Cluster Bootstrap
- */
+
 public class AppModule extends AbstractModule {
 
-    @Override
+    //@Override
     protected void configure() {
         bind(new TypeLiteral<ActorRef<Command>>() {
         })
@@ -37,13 +37,13 @@ public class AppModule extends AbstractModule {
         private final akka.actor.typed.ActorSystem<Void> actorSystem;
         private final Environment environment;
 
-        @Inject
+        //@Inject
         public HelloActorProvider(ActorSystem actorSystem, Environment environment) {
             this.actorSystem = Adapter.toTyped(actorSystem);
             this.environment = environment;
         }
 
-        @Override
+        //@Override
         public ActorRef<Command> get() {
 
             Cluster cluster = Cluster.get(actorSystem);
@@ -68,4 +68,4 @@ public class AppModule extends AbstractModule {
         }
     }
 }
-
+ */

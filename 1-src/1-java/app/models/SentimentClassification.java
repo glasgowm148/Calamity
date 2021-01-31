@@ -1,4 +1,4 @@
-package unused;
+package models;
 
 public class SentimentClassification {
     double veryPositive;

@@ -1,4 +1,4 @@
-package actors;
+package services;
 
 import akka.actor.AbstractActor;
 import akka.actor.Props;
@@ -8,7 +8,7 @@ import akka.actor.Props;
 /**
  * @version 1.0
  * @see sentimentActor
- */
+
 public class sentimentActor extends AbstractActor {
 
 
@@ -27,12 +27,12 @@ public class sentimentActor extends AbstractActor {
 
     /**
      *
-     */
-    @Override
+
+    //@Override
     public Receive createReceive() {
         return receiveBuilder()
                 .match(Sentiment.class, info -> sender().tell(jsonReader.parseEvent(info.name),self())).build();
     }
 }
-
+ */
 // tweet.getPositiveSentiment()

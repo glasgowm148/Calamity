@@ -1,4 +1,4 @@
-package API;
+package services;
 
 import controllers.HomeController;
 import models.Tweet;

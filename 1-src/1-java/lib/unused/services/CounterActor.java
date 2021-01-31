@@ -20,7 +20,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * [Akka Persistence](https://doc.akka.io/docs/akka/current/typed/persistence.html#example-and-core-api).
  *
  * TODO: `CounterActor` should extend `EventSourcedBehavior` from Akka Persistence to make the count durable.
- */
+
 public class CounterActor extends AbstractBehavior<CounterActor.Command> {
 
     public interface Command extends CborSerializable{}
@@ -28,7 +28,7 @@ public class CounterActor extends AbstractBehavior<CounterActor.Command> {
     public static class Increment implements Command {
         private final ActorRef<Integer> replyTo;
 
-        @JsonCreator
+        //@JsonCreator
         public Increment(ActorRef<Integer> replyTo) {
             this.replyTo = replyTo;
         }
@@ -37,7 +37,7 @@ public class CounterActor extends AbstractBehavior<CounterActor.Command> {
     public static class GetValue implements Command {
         private final ActorRef<Integer> replyTo;
 
-        @JsonCreator
+       // @JsonCreator
         public GetValue(ActorRef<Integer> replyTo) {
             this.replyTo = replyTo;
         }
@@ -54,7 +54,7 @@ public class CounterActor extends AbstractBehavior<CounterActor.Command> {
         super(context);
     }
 
-    @Override
+    //@Override
     public Receive<Command> createReceive() {
         return newReceiveBuilder()
                 .onMessage(Increment.class, this::onIncrement)
@@ -74,3 +74,4 @@ public class CounterActor extends AbstractBehavior<CounterActor.Command> {
     }
 
 }
+ */

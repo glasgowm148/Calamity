@@ -1,6 +1,6 @@
 package controllers;
 
-import API.TweetStore;
+import services.TweetStore;
 import Utils.APIUtils;
 import services.TweetService;
 import com.fasterxml.jackson.databind.JsonNode;

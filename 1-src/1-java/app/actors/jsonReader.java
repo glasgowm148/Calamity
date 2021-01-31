@@ -1,5 +1,6 @@
 package actors;
 
+import Utils.inputOutput;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -12,7 +13,7 @@ import logic.Twokenize;
 import models.SentimentResult;
 import models.Tweet;
 import play.libs.Json;
-import tweetfeatures.NumericTweetFeatures;
+import features.NumericTweetFeatures;
 import twitter.twittertext.Extractor;
 import twitter.twittertext.TwitterTextParseResults;
 import twitter.twittertext.TwitterTextParser;
@@ -27,18 +28,13 @@ import java.util.stream.Stream;
 
 
 import static Utils.inputOutput.convertFloatsToDoubles;
-import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
+import static features.NumericTweetFeatures.makeFeatureVector;
 
 
 public class jsonReader {
     //private static final List<Vector> featureVectorList = new ArrayList<>();
 
     private static final List<Tweet> tweetList  = new ArrayList<>();
-
-    public static Object parseEvent(String name) {
-        System.out.println(name);
-        return ":-|";
-    }
 
 
     /**
@@ -51,7 +47,7 @@ public class jsonReader {
 
         try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/baltimore_flash_flood/"),2)) { //tweets/athens_earthquake  //testy
             paths.map(Path::toString).filter(f -> f.endsWith(".jsonl"))
-                    .forEach(this::makeTweetList);
+                    .forEach(this::parseEvent);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -64,7 +60,7 @@ public class jsonReader {
      * Calculates the offset and event keywords before passing to tweetAnalyser()
      * @return
      */
-    public void makeTweetList(String path)  {
+    public void parseEvent(String path)  {
 
         GloVeModel model = new GloVeModel();
         model.load("lib/glove", 200);
@@ -114,6 +110,8 @@ public class jsonReader {
                    tweetAnalyser(getMin(), model,  sentimentAnalyzer); //,
                 } catch (InterruptedException e) { e.printStackTrace(); }
 
+                inputOutput.printVector(HomeController.StaticPath.output_file, tweetList);
+
             }
 
 
@@ -123,7 +121,8 @@ public class jsonReader {
 
         }
 
-        }
+
+    }
 
 
 

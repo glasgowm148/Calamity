@@ -1,4 +1,4 @@
-package tweetfeatures;
+package features;
 
 import classifiers.NamedEntityClassifier;
 import models.Tweet;
