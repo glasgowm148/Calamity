@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.github.chen0040.embeddings.GloVeModel;
 import logic.Sanitise;
 import logic.SentimentAnalyzer;
 import logic.Twokenize;
@@ -62,9 +63,6 @@ public class jsonReader {
         if(path.toString().contains("selected.jsonl") & !path.toString().matches(".*\\.gz")) {  //(".*\\.jsonl")
 
 
-            // Initialise actors for Word Embeddings
-            //GloVeModel model = new GloVeModel();
-            //model.load("lib/glove", 100);
 
             // is = a FileInputStream of the path
             try (InputStream is = new FileInputStream(String.valueOf(path))) {
@@ -132,6 +130,11 @@ public class jsonReader {
         //  tweetList = tweetList.stream().map(x -> "D").collect(Collectors.toList());
 
         // Iterate over each tweet in the collection
+
+        // Initialise actors for Word Embeddings
+        GloVeModel model = new GloVeModel();
+        model.load("lib/glove", 100);
+
         for (Tweet tweet : new ArrayList<Tweet>(tweetList)) {
             final Extractor extractor = new Extractor();
             List<String> hashtags = extractor.extractHashtags(tweet.getText());
@@ -170,7 +173,7 @@ public class jsonReader {
             //semanticActor.analyse(tweet.getText());
 
             // wordEmbeddings
-            // new gloveActor(model, tweet);
+            new gloveActor(model, tweet);
 
             // Time offset
             tweet.setOffset(((tweet.getCreatedAtInt() - min)));
