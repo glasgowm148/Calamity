@@ -25,7 +25,7 @@ import actors.*;
 import logic.*;
 import scala.compat.java8.FutureConverters;
 import twitter4j.TwitterException;
-import views.html.resultPage;
+//import views.html.resultPage;
 
 import javax.inject.Inject;
 
@@ -132,11 +132,13 @@ public class HomeController extends Controller {
 
 
     }
-
+    /*
     public CompletionStage<Result> resultEvent(String name) throws TwitterException, ExecutionException, InterruptedException {
         return FutureConverters.toJava(ask(event_actor, new eventActor.parse("/test.jsonl"), 5000))
                 .thenApplyAsync(userInfo -> ok(resultPage.render((infoRepository) userInfo)));
     }
+
+     */
 
 
 
