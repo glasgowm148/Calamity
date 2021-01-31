@@ -6,15 +6,16 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.concurrent.CompletionStage;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Stream;
 
 import Utils.infoRepository;
+import Utils.inputOutput;
 import akka.actor.*;
 
 // Play
-import com.google.inject.name.Named;
 import models.Tweet;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -37,20 +38,25 @@ import static akka.pattern.Patterns.ask;
 public class HomeController extends Controller {
 
     private static final List<Tweet> tweetList  = new ArrayList<>();
+    private final String path = "../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake";
+    private final String output_file = "brand_new_run3";
+
 
     // Define Actor References
     private final ActorRef event_actor;
-
+    private final ActorRef sentiment_actor;
 
     // Initialise the Actor references using dependency injection
     @Inject
     public HomeController(ActorSystem actorObj) {
         event_actor = actorObj.actorOf(eventActor.getProps());
+        sentiment_actor = actorObj.actorOf(eventActor.getProps());
     }
 
 
     // index() is triggered on GET to localhost:9000/
     public Result index()  {
+
 
         // Start timer for tracking efficiency
         long startTime = System.currentTimeMillis();
@@ -60,15 +66,22 @@ public class HomeController extends Controller {
         //reader.parse();
 
         List<Tweet> tweetList = jsonActor();
-        sentiActor(tweetList);
+        tweetList = sentiActor(tweetList);
+
         // Uncomment this line to parse all tweets (resource intensive! - hours)
         //tweetList = reader.parseOne(pathAll);
 
-        // Print elapsed time to console
+
+        /**
+         * Main Logic done
+         * Print the vector, timer and results.
+         */
+
+        inputOutput.printVector(output_file, tweetList);
+
         printTimer(startTime);
 
-        // Prints to browser
-        return ok(Sanitise.toPrettyFormat(new File("../../1-src/1-java/conf/10.jsonl")));
+        return ok(Objects.requireNonNull(inputOutput.VectorToPrettyFormat(new File(output_file))));         //return ok(Sanitise.toPrettyFormat(new File("../../1-src/1-java/conf/10.jsonl")));
     }
 
     private void printTimer(long startTime) {
@@ -82,10 +95,11 @@ public class HomeController extends Controller {
 
     /**
      * This method passes each file within the specified directory to parseEvent()
-     * @return
+     * @return tweetList
+     * @calls jsonReader.parseEvent -> jsonReader.
      */
     private List<Tweet> jsonActor() {
-        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake"))) { //tweets/athens_earthquake  //testy
+        try (Stream<Path> paths = Files.walk(Paths.get(path))) { //tweets/athens_earthquake  //testy
             paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
         } catch (Exception e) {
             e.printStackTrace();
@@ -94,7 +108,7 @@ public class HomeController extends Controller {
         return null;
     }
 
-    private void sentiActor(List<Tweet> tweetList){
+    private List<Tweet> sentiActor(List<Tweet> tweetList){
 
         // Instantiate a new featureActor()
         featureActor featureActor = new featureActor();
@@ -104,6 +118,7 @@ public class HomeController extends Controller {
 
         SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
         sentimentAnalyzer.initialize();
+
         // Offset + Sentiment + TwitterText + Glove
         try {
             jsonReader.tweetAnalyser(getMin(),  sentimentAnalyzer); //model,
@@ -111,8 +126,9 @@ public class HomeController extends Controller {
             e.printStackTrace();
         }
 
+        return tweetList;
 
-        jsonReader.printVector("brand_new_run2");
+
 
 
     }

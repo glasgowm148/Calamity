@@ -1,5 +1,6 @@
 package logic;
 
+import org.apache.commons.io.IOUtils;
 import unused.FileUtils;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.Gson;
@@ -9,6 +10,7 @@ import play.libs.Json;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 import java.util.regex.Pattern;
@@ -56,24 +58,6 @@ public class Sanitise {
 
     }
 
-    public static String toPrettyFormat(File file) {
-        String jsonText = null;
-        try (
-                FileInputStream is = new FileInputStream(file)
-        ) {
-            final JsonNode json = Json.parse(is);
-            Tweet tweets = new Tweet(json);
-            jsonText = tweets.toString();
-
-
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-            return gson.toJson(json);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return jsonText;
-    }
 
 
     /**
