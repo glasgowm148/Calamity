@@ -96,3 +96,4 @@ CoreNLP
 1-src/1-java/target/scala-2.12/classes/local-shared 2.conf
 *.txt
 *.jar
+1-src/1-java/lib/glove/glove.6B.zip
