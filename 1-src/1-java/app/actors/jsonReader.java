@@ -69,7 +69,7 @@ public class jsonReader {
         // is = a FileInputStream of the path
         try (InputStream is = new FileInputStream(String.valueOf(path))) {
 
-            // @lines = A Stream of strings
+            // @lines = A Stream of strings where each line represents one tweet in the event
             try (Stream<String> lines = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8)).lines()) {
 
                 // Instantiate a new ObjectMapper object
@@ -77,6 +77,10 @@ public class jsonReader {
 
                 // Configure the mapper to accept single values as arrays. - This is required so we can deserialise each line into an array
                 mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
+
+                SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
+                sentimentAnalyzer.initialize();
+
 
                 for (String s : (Iterable<String>) lines::iterator) {    // Iterate through each line
                     try {
@@ -90,25 +94,78 @@ public class jsonReader {
                         // @tweetList = An ArrayList we add all the to.
                         tweetList.add(tweet);
 
+
+                        final Extractor extractor = new Extractor();
+                        List<String> hashtags = extractor.extractHashtags(tweet.getText());
+                        tweet.setHashtags(hashtags);
+
+                        // Tokenizer
+                        List<String> tokens = Twokenize.tokenize(tweet.getText());
+                        String[] str_array = tokens.toArray(new String[0]);
+                        tweet.setTokens(str_array);
+
+
+                        // Text features using Twitter-Text
+                        final TwitterTextParseResults result = TwitterTextParser.parseTweet(tweet.getText());
+                        tweet.setWeightedLength(result.weightedLength);
+                        tweet.setPermillage(result.permillage);
+
+                        // Pre-Process
+                        Sanitise.clean(tweet);
+
+                        // Progress 'bar'
+                        System.out.print(".");
+
+
+                        try {
+                            SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweet.getText());
+                            tweet.setPositiveSentiment(sentimentResult.getSentimentClass().getPositive());
+                            tweet.setNegativeSentiment(sentimentResult.getSentimentClass().getNegative());
+
+                        } catch (NullPointerException e) {
+                            e.printStackTrace();
+                            continue;
+                        }
+
+
+                        //semanticActor semanticActor = new semanticActor(tweet);
+                        //semanticActor.analyse(tweet.getText());
+
+
+                        // wordEmbeddings
+                        new gloveActor(model, tweet);
+
+
+
+                        // make the features
+                        Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+
+                        //System.out.println(stringDoubleMap);
+
+                        tweet.setFeatures(stringDoubleMap);
+                        tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
+
+                        //if(tweet.getFeatureVector() != null){
+                        //    featureVectorList.add(tweet.getFeatureVector());
+                        //}
+
+
                     } catch (JsonProcessingException jsonProcessingException) { jsonProcessingException.printStackTrace(); }
 
                 }
 
                 System.out.println("\n" + tweetList.size() + " tweets read into model from " + path);
+                for(Tweet tweet: tweetList){
+                    // Time offset
+                    int min = getMin();
+                    tweet.setOffset(((tweet.getCreatedAtInt() - min)));
+                }
 
                 // Instantiate a new featureActor()
                 featureActor featureActor = new featureActor();
 
                 // getKeywords gets the TFIDF
                 featureActor.getKeywords(tweetList);
-
-                SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
-                sentimentAnalyzer.initialize();
-
-                // Offset + Sentiment + TwitterText + Glove
-                try {
-                   tweetAnalyser(getMin(), model,  sentimentAnalyzer); //,
-                } catch (InterruptedException e) { e.printStackTrace(); }
 
                 inputOutput.printVector(HomeController.StaticPath.output_file, tweetList);
 
@@ -125,87 +182,6 @@ public class jsonReader {
     }
 
 
-
-
-
-
-
-    /**
-     * //@param model - word embeddings model
-     * @param min - minimum time
-     * @param model
-     * @param sentimentAnalyzer - sentimentActor
- * For each tweet in the event, hashtags, text-features are extracted
-     */
-    public static void tweetAnalyser(int min, GloVeModel model, SentimentAnalyzer sentimentAnalyzer) throws InterruptedException { //GloVeModel model,
-
-        //  tweetList = tweetList.stream().map(x -> "D").collect(Collectors.toList());
-
-        // Iterate over each tweet in the collection
-
-        // Initialise actors for Word Embeddings
-
-
-        for (Tweet tweet : new ArrayList<Tweet>(tweetList)) {
-            final Extractor extractor = new Extractor();
-            List<String> hashtags = extractor.extractHashtags(tweet.getText());
-            tweet.setHashtags(hashtags);
-
-            // Tokenizer
-            List<String> tokens = Twokenize.tokenize(tweet.getText());
-            String[] str_array = tokens.toArray(new String[0]);
-            tweet.setTokens(str_array);
-
-
-            // Text features using Twitter-Text
-            final TwitterTextParseResults result = TwitterTextParser.parseTweet(tweet.getText());
-            tweet.setWeightedLength(result.weightedLength);
-            tweet.setPermillage(result.permillage);
-
-            // Pre-Process
-            Sanitise.clean(tweet);
-
-            // Progress 'bar'
-            System.out.print(".");
-
-
-            try {
-                SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweet.getText());
-                tweet.setPositiveSentiment(sentimentResult.getSentimentClass().getPositive());
-                tweet.setNegativeSentiment(sentimentResult.getSentimentClass().getNegative());
-
-            } catch (NullPointerException e) {
-                e.printStackTrace();
-                continue;
-            }
-
-
-            //semanticActor semanticActor = new semanticActor(tweet);
-            //semanticActor.analyse(tweet.getText());
-
-            // wordEmbeddings
-            new gloveActor(model, tweet);
-
-            // Time offset
-            tweet.setOffset(((tweet.getCreatedAtInt() - min)));
-
-            // make the features
-            Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-
-            //System.out.println(stringDoubleMap);
-
-            tweet.setFeatures(stringDoubleMap);
-            tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
-
-            //if(tweet.getFeatureVector() != null){
-            //    featureVectorList.add(tweet.getFeatureVector());
-            //}
-
-
-        }
-
-
-    }
 
     // Get IntSummaryStatistics to calculate the offset
     public static int getMin() {
