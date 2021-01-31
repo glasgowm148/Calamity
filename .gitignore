@@ -29,8 +29,8 @@ CoreNLP
 1-src/Snap.*
 data/*
 .idea/*
-1-src/javaseed/*
-1-src/playseed/*
+1-src/seed/*
+
 1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
 1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
 0-data/raw*
