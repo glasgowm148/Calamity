@@ -33,7 +33,7 @@ CoreNLP
 1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
 1-src/java/target/streams/_global/playCommonClassloader/_global/streams/out
 
-*.gz
+
 *.cache
 *.cache
 *.html
