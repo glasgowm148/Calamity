@@ -25,6 +25,7 @@ import java.util.*;
 import java.util.stream.Stream;
 
 
+import static Utils.inputOutput.convertFloatsToDoubles;
 import static tweetfeatures.NumericTweetFeatures.makeFeatureVector;
 
 
@@ -43,7 +44,7 @@ public class jsonReader {
      * This method passes each file within the specified directory to parseEvent()
      */
     public void parse() {
-        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/selected"))) { //tweets/athens_earthquake  //testy
+        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/selected/all"))) { //tweets/athens_earthquake  //testy
             paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
         } catch (Exception e) {
             e.printStackTrace();
@@ -226,14 +227,14 @@ public class jsonReader {
 
 
         for (Tweet tweet : tweetList) {
-            //double[] d = convertFloatsToDoubles(tweet.getDimensions());
+            double[] d = convertFloatsToDoubles(tweet.getDimensions());
             if (tweet.getFeatureVector() != null) {
                 assert out != null;
 
                 // Print the feature vector
                 out.print(tweet.getFeatureVector());
 
-                 /**
+
                  // Add the BERT Word Embeddings
                  out.print(",");
                  out.print("[");
@@ -241,7 +242,7 @@ public class jsonReader {
                  out.print(x + ", ");
                  }
                  out.print("]");
-                 */
+
 
             }
             assert out != null;

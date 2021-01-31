@@ -39,7 +39,7 @@ public class HomeController extends Controller {
 
     private static final List<Tweet> tweetList  = new ArrayList<>();
     private final String path = "../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake";
-    private final String output_file = "brand_new_run3";
+    private final String output_file = "cluster_run1";
 
 
     // Define Actor References
@@ -65,8 +65,6 @@ public class HomeController extends Controller {
         jsonReader reader = new jsonReader();
         reader.parse();
 
-
-        System.out.println("tweetlist: " + tweetList);
         sentiActor(tweetList);
 
         // Uncomment this line to parse all tweets (resource intensive! - hours)
