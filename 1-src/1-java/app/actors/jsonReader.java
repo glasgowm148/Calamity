@@ -44,7 +44,10 @@ public class jsonReader {
      * This method passes each file within the specified directory to parseEvent()
      */
     public void parse() {
-        try (Stream<Path> paths = Files.walk(Paths.get("../../0-data/raw/data/2020/2020-A/tweets/selected/all"))) { //tweets/athens_earthquake  //testy
+        String filename="lib/2020A_tweets/selected/";
+        Path pathToFile = Paths.get(filename);
+        System.out.println(pathToFile.toAbsolutePath());
+        try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/selected/"))) { //tweets/athens_earthquake  //testy
             paths.filter(Files::isRegularFile).forEach(jsonReader::parseEvent);
         } catch (Exception e) {
             e.printStackTrace();
@@ -63,7 +66,7 @@ public class jsonReader {
         // Ensure it's a selected.json file
         if(path.toString().contains("selected.jsonl") & !path.toString().matches(".*\\.gz")) {  //(".*\\.jsonl")
 
-
+            System.out.println(path);
 
             // is = a FileInputStream of the path
             try (InputStream is = new FileInputStream(String.valueOf(path))) {
@@ -111,6 +114,7 @@ public class jsonReader {
 
 
             }
+
         }
 
         return tweetList;
