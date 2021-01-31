@@ -1,5 +1,3 @@
-
-
 FROM adoptopenjdk:8
 RUN mkdir /project/
 COPY . /project/
