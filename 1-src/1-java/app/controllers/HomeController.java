@@ -56,7 +56,7 @@ public class HomeController extends Controller {
 
 
     public static class StaticPath {
-        public static String path = "../../0-data/raw/data/2020/2020-A/tweets/part2";
+        public static String path = "lib/2020A_tweets/part2";
         public static String output_file = "cluster_run2";
         public static List<Tweet> tweetList  = new ArrayList<>();
         //System.out.println("New parseEvent: \n" + path);
@@ -84,12 +84,11 @@ public class HomeController extends Controller {
     public Result index() throws IOException {
 
 
-        try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/"),2)) { //tweets/athens_earthquake  //testy
+        // Get jsonl files
+        try (Stream<Path> paths = Files.walk(Paths.get(StaticPath.path),2)) { 
             paths.map(Path::toString).filter(f -> f.endsWith(".jsonl"))
                     .forEach(this::parseEvent);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        } catch (Exception e) { e.printStackTrace(); }
 
 
 
