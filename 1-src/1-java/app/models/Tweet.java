@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.annotations.Expose;
+import org.ejml.simple.SimpleMatrix;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -45,6 +46,7 @@ public class Tweet implements Comparable<Tweet> {
     private int permillage;
     private float[] dimensions;
     private String[] tokens;
+    private SimpleMatrix sentimentVecor;
 
     public Tweet() {
         super();
@@ -459,6 +461,10 @@ public class Tweet implements Comparable<Tweet> {
 
     public void setTruncated(boolean isTruncated) {
         this.isTruncated = isTruncated;
+    }
+
+    public void setVectorTree(SimpleMatrix nodeVector) {
+        this.sentimentVecor = nodeVector;
     }
 }
 @JsonIgnoreProperties(ignoreUnknown = true)

@@ -7,6 +7,13 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.chen0040.embeddings.GloVeModel;
 import controllers.HomeController;
+import edu.stanford.nlp.ling.CoreAnnotations;
+import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
+import edu.stanford.nlp.pipeline.Annotation;
+import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
+import edu.stanford.nlp.trees.Tree;
+import edu.stanford.nlp.util.CoreMap;
 import logic.Sanitise;
 import logic.SentimentAnalyzer;
 import logic.Twokenize;
@@ -61,10 +68,14 @@ public class jsonReader {
      * @return
      */
     public void parseEvent(String path)  {
-
+        System.out.println("New parseEvent\n");
         GloVeModel model = new GloVeModel();
         model.load("lib/glove", 200);
+        Properties props = new Properties();
+        props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment"); // ner, entitymentions
+        props.setProperty("parse.binaryTrees", "true");
 
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
         // is = a FileInputStream of the path
         try (InputStream is = new FileInputStream(String.valueOf(path))) {
@@ -78,21 +89,20 @@ public class jsonReader {
                 // Configure the mapper to accept single values as arrays. - This is required so we can deserialise each line into an array
                 mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 
-                SentimentAnalyzer sentimentAnalyzer = new SentimentAnalyzer();
-                sentimentAnalyzer.initialize();
+
 
 
                 for (String s : (Iterable<String>) lines::iterator) {    // Iterate through each line
+                    System.out.println("Slow down mr.thread");
+
                     try {
 
                         // @n = A JsonNode of the Tweet
                         JsonNode n = Json.parse(s);
 
                         // @tweet = JsonNode mapped to the Tweet model using JacksonXMLs 'treeToValue'
-                        Tweet tweet = mapper.treeToValue(n, Tweet.class); // here
-
-                        // @tweetList = An ArrayList we add all the to.
-                        tweetList.add(tweet);
+                        Tweet tweet = new Tweet();
+                        tweet = mapper.treeToValue(n, Tweet.class); // here
 
 
                         final Extractor extractor = new Extractor();
@@ -113,30 +123,22 @@ public class jsonReader {
                         // Pre-Process
                         Sanitise.clean(tweet);
 
-                        // Progress 'bar'
-                        System.out.print(".");
+                        Annotation annotation = pipeline.process(tweet.getText());
+                        pipeline.annotate(annotation);
+                        for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
+                            Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
+                            tweet.setVectorTree(RNNCoreAnnotations.getNodeVector(tree)); //RNNCoreAnnotations.getPredictedClass(tree);
 
-
-                        try {
-                            SentimentResult sentimentResult = sentimentAnalyzer.getSentimentResult(tweet.getText());
-                            tweet.setPositiveSentiment(sentimentResult.getSentimentClass().getPositive());
-                            tweet.setNegativeSentiment(sentimentResult.getSentimentClass().getNegative());
-
-                        } catch (NullPointerException e) {
-                            e.printStackTrace();
-                            continue;
                         }
 
 
-                        //semanticActor semanticActor = new semanticActor(tweet);
-                        //semanticActor.analyse(tweet.getText());
-
-
                         // wordEmbeddings
-                        new gloveActor(model, tweet);
+                        float[] d = model.encodeDocument(tweet.getText());
+                        tweet.setDimensions(d);
 
 
-
+                        // Progress 'bar'
+                        System.out.print(".");
                         // make the features
                         Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
 
@@ -144,6 +146,9 @@ public class jsonReader {
 
                         tweet.setFeatures(stringDoubleMap);
                         tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
+
+                        // @tweetList = An ArrayList we add all the to.
+                        tweetList.add(tweet);
 
                         //if(tweet.getFeatureVector() != null){
                         //    featureVectorList.add(tweet.getFeatureVector());
@@ -155,9 +160,10 @@ public class jsonReader {
                 }
 
                 System.out.println("\n" + tweetList.size() + " tweets read into model from " + path);
+                int min = getMin();
                 for(Tweet tweet: tweetList){
                     // Time offset
-                    int min = getMin();
+
                     tweet.setOffset(((tweet.getCreatedAtInt() - min)));
                 }
 

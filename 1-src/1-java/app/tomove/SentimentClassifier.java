@@ -1,4 +1,4 @@
-package classifiers;
+package tomove;
 
 import logic.SentimentAnalyzer;
 

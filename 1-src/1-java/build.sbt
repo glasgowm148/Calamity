@@ -148,5 +148,14 @@ libraryDependencies += "com.github.chen0040" % "java-text-embedding" % "1.0.1"
 // https://mvnrepository.com/artifact/com.twitter.twittertext/twitter-text
 libraryDependencies += "com.twitter.twittertext" % "twitter-text" % "3.1.0"
 
+// Fix log4j multiple binding error
+
+libraryDependencies ++= Seq(
+  "org.slf4j" % "slf4j-api"       % "1.7.7",
+  "org.slf4j" % "jcl-over-slf4j"  % "1.7.7"
+).map(_.force())
+
+libraryDependencies ~= { _.map(_.exclude("org.slf4j", "slf4j-jdk14")) }
+
 
 
