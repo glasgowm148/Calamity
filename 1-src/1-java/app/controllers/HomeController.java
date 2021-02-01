@@ -53,14 +53,11 @@ import static features.NumericTweetFeatures.makeFeatureVector;
 
 public class HomeController extends Controller {
 
-
-
     public static class StaticPath {
-        public static String path = "lib/2020A_tweets/selected/part2";
+        public static String path = "lib/2020A_tweets/selected/run";
         public static String output_file = "cluster_run2";
         public static List<Tweet> tweetList  = new ArrayList<>();
         //System.out.println("New parseEvent: \n" + path);
-
     }
 
 
@@ -115,10 +112,10 @@ public class HomeController extends Controller {
     public void parseEvent(String path)  {
         GloVeModel model = new GloVeModel();
         model.load("lib/glove", 200);
-        Properties props = new Properties();
-        props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment"); // ner, entitymentions
-        props.setProperty("parse.binaryTrees", "true");
-        StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
+        //Properties props = new Properties();
+        //props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment"); // ner, entitymentions
+        //props.setProperty("parse.binaryTrees", "true");
+        //StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
         // is = a FileInputStream of the path
         try (InputStream is = new FileInputStream(String.valueOf(path))) {
