@@ -52,7 +52,7 @@ public class jsonReader {
         //Path pathToFile = Paths.get(filename);
         //System.out.println(pathToFile.toAbsolutePath());
 
-        try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/baltimore_flash_flood/"),2)) { //tweets/athens_earthquake  //testy
+        try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/athens_earthquake/"),2)) { //tweets/athens_earthquake  //testy
             paths.map(Path::toString).filter(f -> f.endsWith(".jsonl"))
                     .forEach(this::parseEvent);
         } catch (Exception e) {
@@ -68,7 +68,7 @@ public class jsonReader {
      * @return
      */
     public void parseEvent(String path)  {
-        System.out.println("New parseEvent\n");
+        System.out.println("New parseEvent: \n" + path);
         GloVeModel model = new GloVeModel();
         model.load("lib/glove", 200);
         Properties props = new Properties();
@@ -89,11 +89,7 @@ public class jsonReader {
                 // Configure the mapper to accept single values as arrays. - This is required so we can deserialise each line into an array
                 mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
 
-
-
-
                 for (String s : (Iterable<String>) lines::iterator) {    // Iterate through each line
-                    System.out.println("Slow down mr.thread");
 
                     try {
 
