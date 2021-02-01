@@ -53,10 +53,14 @@ import static features.NumericTweetFeatures.makeFeatureVector;
 
 public class HomeController extends Controller {
 
+
+
     public static class StaticPath {
-        public static String path = "../../0-data/raw/data/2020/2020-A/tweets/athens_earthquake";
+        public static String path = "../../0-data/raw/data/2020/2020-A/tweets/part2";
         public static String output_file = "cluster_run2";
         public static List<Tweet> tweetList  = new ArrayList<>();
+        //System.out.println("New parseEvent: \n" + path);
+
     }
 
 
@@ -78,6 +82,7 @@ public class HomeController extends Controller {
 
     // index() is triggered on GET to localhost:9000/
     public Result index() throws IOException {
+
 
         try (Stream<Path> paths = Files.walk(Paths.get("lib/2020A_tweets/"),2)) { //tweets/athens_earthquake  //testy
             paths.map(Path::toString).filter(f -> f.endsWith(".jsonl"))
@@ -109,14 +114,11 @@ public class HomeController extends Controller {
      * @return
      */
     public void parseEvent(String path)  {
-
-        System.out.println("New parseEvent: \n" + path);
         GloVeModel model = new GloVeModel();
         model.load("lib/glove", 200);
         Properties props = new Properties();
         props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment"); // ner, entitymentions
         props.setProperty("parse.binaryTrees", "true");
-
         StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
         // is = a FileInputStream of the path
