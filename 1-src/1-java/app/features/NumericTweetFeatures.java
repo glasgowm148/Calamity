@@ -129,7 +129,7 @@ public class NumericTweetFeatures {
 
 		features.put(numb_of_named_entites, (double)
 		NamedEntityClassifier.getNamedEntites(tweet.getText().replace("#", " ")).size());
-
+//test
 		//features.put(sent_from_mobile, tweet.isSentFromMobile()?1.0:0);
 		//features.put(sent_from_web, tweet.isSentFromWeb()?1.0:0);
 		features.put(numb_of_weird_chars, WeirdCharsSaturationTweetFeature.getScore(tweet));
