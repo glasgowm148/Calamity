@@ -1,4 +1,4 @@
-package services;
+package actors;
 
 import akka.actor.typed.ActorRef;
 import akka.actor.typed.Behavior;
@@ -7,6 +7,7 @@ import akka.actor.typed.javadsl.ActorContext;
 import akka.actor.typed.javadsl.Behaviors;
 import akka.actor.typed.javadsl.Receive;
 import com.fasterxml.jackson.annotation.JsonCreator;
+import services.CborSerializable;
 
 /**
  * Counter actor based on https://doc.akka.io/docs/akka/current/typed/cluster-singleton.html#example
@@ -20,10 +21,10 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * [Akka Persistence](https://doc.akka.io/docs/akka/current/typed/persistence.html#example-and-core-api).
  *
  * TODO: `CounterActor` should extend `EventSourcedBehavior` from Akka Persistence to make the count durable.
-
+ */
 public class CounterActor extends AbstractBehavior<CounterActor.Command> {
 
-    public interface Command extends CborSerializable{}
+    public interface Command extends CborSerializable {}
 
     public static class Increment implements Command {
         private final ActorRef<Integer> replyTo;
@@ -74,4 +75,4 @@ public class CounterActor extends AbstractBehavior<CounterActor.Command> {
     }
 
 }
- */
+
