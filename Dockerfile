@@ -1,6 +1,8 @@
 # Java 8 is required
 FROM adoptopenjdk:8
 
+ENV SCALA_VERSION 2.13.1
+ENV SBT_VERSION 0.13.17
 #
 RUN mkdir /project/
 
