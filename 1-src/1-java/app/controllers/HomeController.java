@@ -41,7 +41,7 @@ import twitter.twittertext.Extractor;
 import twitter.twittertext.TwitterTextParseResults;
 import twitter.twittertext.TwitterTextParser;
 import twitter4j.TwitterException;
-//import views.html.resultPage;
+import views.html.resultPage;
 
 
 import static Utils.inputOutput.convertFloatsToDoubles;
@@ -54,10 +54,10 @@ import static features.NumericTweetFeatures.makeFeatureVector;
 public class HomeController extends Controller {
 
     public static class StaticPath {
-        public static String path = "lib/2020A_tweets/selected/run";
-        public static String output_file = "cluster_run2";
+        //public static String path = "lib/2020A_tweets/selected/r";
+        public static String path = "lib/tweets/run2";
+        public static String output_file = "new_with_offset";
         public static List<Tweet> tweetList  = new ArrayList<>();
-        //System.out.println("New parseEvent: \n" + path);
     }
 
 
@@ -90,8 +90,9 @@ public class HomeController extends Controller {
 
 
         printTimer(startTime);
-        return ok(new String(Files.readAllBytes(Paths.get("../../0-data/processed/" + output_file + ".txt"))));
-       // return ok(inputOutput.VectorToPrettyFormat(new File(output_file)));         //return ok(Sanitise.toPrettyFormat(new File("../../1-src/1-java/conf/10.jsonl")));
+        //return ok(new String(Files.readAllBytes(Paths.get("../../0-data/processed/" + output_file + ".txt"))));
+        //return ok(inputOutput.VectorToPrettyFormat(new File(output_file)));         //
+        return ok(inputOutput.toPrettyFormat(new File("lib/tweets/smol/10.jsonl")));
     }
 
     private void printTimer(long startTime) {
@@ -128,7 +129,7 @@ public class HomeController extends Controller {
 
                 // Configure the mapper to accept single values as arrays. - This is required so we can deserialise each line into an array
                 mapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
-
+                System.out.println("Parsing " + path);
                 for (String s : (Iterable<String>) lines::iterator) {    // Iterate through each line
 
                     try {
@@ -157,6 +158,7 @@ public class HomeController extends Controller {
                         tweet.setPermillage(result.permillage);
 
                         // Pre-Process
+                        //System.out.println("\nSanitise\n");
                         Sanitise.clean(tweet);
 
                         //Annotation annotation = pipeline.process(tweet.getText());
@@ -167,20 +169,7 @@ public class HomeController extends Controller {
                         //}
 
 
-                        // wordEmbeddings
-                        float[] d = model.encodeDocument(tweet.getText());
-                        tweet.setDimensions(d);
 
-
-                        // Progress 'bar'
-                        System.out.print(".");
-                        // make the features
-                        Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-
-                        //System.out.println(stringDoubleMap);
-
-                        tweet.setFeatures(stringDoubleMap);
-                        tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
 
                         // @tweetList = An ArrayList we add all the to.
                         tweetList.add(tweet);
@@ -189,6 +178,10 @@ public class HomeController extends Controller {
                         //    featureVectorList.add(tweet.getFeatureVector());
                         //}
 
+                        // wordEmbeddings
+                        //System.out.println("\nGetting Word Embeddings\n");
+
+
 
                     } catch (JsonProcessingException jsonProcessingException) { jsonProcessingException.printStackTrace(); }
 
@@ -196,10 +189,26 @@ public class HomeController extends Controller {
 
                 System.out.println("\n" + tweetList.size() + " tweets read into model from " + path);
                 int min = getMin();
+
+                System.out.println("Extracting features from " + path);
                 for(Tweet tweet: tweetList){
-                    // Time offset
 
                     tweet.setOffset(((tweet.getCreatedAtInt() - min)));
+
+                    // make the features
+                    Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+                    //System.out.println(stringDoubleMap);
+
+                    //System.out.println("\nSet Feature Vector\n");
+                    tweet.setFeatures(stringDoubleMap);
+                    tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
+
+                    // Word Embeddings
+                    float[] d = model.encodeDocument(tweet.getText());
+                    tweet.setDimensions(d);
+
+                    // Progress 'bar'
+                    System.out.print(".");
                 }
 
                 // Instantiate a new featureActor()
@@ -208,7 +217,7 @@ public class HomeController extends Controller {
                 // getKeywords gets the TFIDF
                 featureActor.getKeywords(tweetList);
 
-                inputOutput.printVector(HomeController.StaticPath.output_file, tweetList);
+                printVector(tweetList);
 
             }
 
@@ -235,17 +244,16 @@ public class HomeController extends Controller {
         int max = summaryStatistics.getMax();
         int min = summaryStatistics.getMin();
         System.out.println("Tweets occur over a span of " + ( (max-min) /  ((1000*60)) % 60) + " hours");
-        System.out.print("Parsing");
         return min;
     }
 
 
-    public static void printVector(String file) {
+    public static void printVector(List<Tweet> tweetList) {
         PrintWriter out = null;
 
         // Export
         try {
-            out = new PrintWriter(new FileWriter("../../0-data/processed/" + file + ".txt", true), true);
+            out = new PrintWriter(new FileWriter("../../0-data/processed/" + StaticPath.output_file + ".txt", true), true);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -276,7 +284,7 @@ public class HomeController extends Controller {
         assert out != null;
         out.flush();
         out.close();
-        System.out.println("Exported to" + file + ".txt");
+        System.out.println("Exported to " + StaticPath.output_file + ".txt");
     }
 
 

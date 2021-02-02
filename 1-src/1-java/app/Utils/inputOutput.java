@@ -3,6 +3,7 @@ package Utils;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import controllers.HomeController;
 import models.Tweet;
 import org.apache.commons.io.IOUtils;
 import play.libs.Json;
@@ -36,20 +37,18 @@ public class inputOutput {
 
         try(FileInputStream inputStream = new FileInputStream("../../0-data/processed/" + file + ".txt")) {
             return IOUtils.toString(inputStream);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
     }
 
-    public static void printVector(String file, List<Tweet> tweetList) {
+    public static void printVector(List<Tweet> tweetList) {
         PrintWriter out = null;
 
         // Export
         try {
-            out = new PrintWriter(new FileWriter("../../0-data/processed/" + file + ".txt", true), true);
+            out = new PrintWriter(new FileWriter("../../0-data/processed/" + HomeController.StaticPath.output_file + ".txt", true), true);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -60,9 +59,9 @@ public class inputOutput {
         for (Tweet tweet : tweetList) {
             double[] d = convertFloatsToDoubles(tweet.getDimensions());
             if (tweet.getFeatureVector() != null) {
-                assert out != null;
 
                 // Print the feature vector
+                assert out != null;
                 out.print(tweet.getFeatureVector());
 
 

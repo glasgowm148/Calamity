@@ -12,40 +12,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/athens_selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/baltimore_selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/barry.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/brook_selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/dayton_selected.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/el.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/gil.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/indo.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/kerala.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/krosa.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/lek.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/myan.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/pap.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/sib.jsonl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/whaley.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/2020A_tweets/selected/r/athens_selected.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run/brook_selected.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run/el.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run/gil.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run0/baltimore_selected.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run0/barry.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run0/dayton_selected.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run0/indo.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run2/kerala.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run2/krosa.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run2/lek.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run2/myan.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run2/pap.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run2/sib.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/run2/whaley.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/smol/10.jsonl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tweets/smol/50.jsonl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Utils/inputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Utils/inputOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Tweet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part1/athens_selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part1/baltimore_selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part1/brook_selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part1/dayton_selected.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part1/el.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part2/barry.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part2/gil.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part2/indo.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part2/kerala.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part3/krosa.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part3/lek.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part3/myan.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part4/pap.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part4/sib.jsonl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/part4/whaley.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/athens_selected.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/baltimore_selected.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/barry.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/brook_selected.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/dayton_selected.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/el.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/gil.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/indo.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/kerala.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/krosa.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/lek.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/myan.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/pap.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/sib.jsonl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/2020A_tweets/selected/run/whaley.jsonl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/glove/glove.6B.zip" beforeDir="false" afterPath="$PROJECT_DIR$/lib/glove/glove.6B.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/csrProject/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2-python/1-notebooks/0-myrun.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/1-notebooks/0-myrun.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2-python/1-notebooks/0_Test.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../2-python/1-notebooks/0_Test.ipynb" afterDir="false" />
@@ -203,17 +207,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Play" type="Play2FrameworkRunConfigurations" factoryName="Play 2 App" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="helpme-akka" />
       <option name="allowRunningInParallel" value="false" />
@@ -342,7 +335,8 @@
       <workItem from="1611862571464" duration="11507000" />
       <workItem from="1612101708767" duration="11515000" />
       <workItem from="1612122424664" duration="15893000" />
-      <workItem from="1612166664951" duration="3779000" />
+      <workItem from="1612166664951" duration="10126000" />
+      <workItem from="1612196268759" duration="351000" />
     </task>
     <servers />
   </component>
