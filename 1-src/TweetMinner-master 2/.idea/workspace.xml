@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3ffb6873-bee8-490c-9b6e-617373b9f1be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../1-java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../1-java/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/hashtagActor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/locationActor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/mainActor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/sentimentActor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/tweetsWordsActor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/actors/userActor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ConnectionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/filters/infoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/ConnectTwitter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/production.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/job.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/plugins.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/base.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/js_jquery-ui-1.8.21.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/mainPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/customStyling.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/demo_table_jui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/jquery.dataTables.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/jquery.dataTables_themeroller.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/profileStyling.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-icons_228ef1_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-icons_ef8c08_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-icons_ffd27a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/ui-lightness/jquery-ui-1.8.21.custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbt-dist/bin/sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbt-dist/bin/sbt-launch-lib.bash" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbt-dist/bin/sbt.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbt-dist/conf/sbtopts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sbt.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/script-helper" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test-gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test-sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/actors/ActorSystemTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/actors/mainActorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controller/ConnectionControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controller/HomeCOntrollerUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/services/ConnectTwitterUnitTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="Play2ProjectSettings">
+    <option name="LANGUAGE_IMPORTS">
+      <array>
+        <option value="_root_.play.twirl.api.JavaScript" />
+        <option value="_root_.play.twirl.api.Xml" />
+        <option value="play.data._" />
+        <option value="java.util._" />
+        <option value="play.core.j.PlayMagicForJava._" />
+        <option value="_root_.play.twirl.api.Html" />
+        <option value="play.mvc._" />
+        <option value="_root_.play.twirl.api.TwirlFeatureImports._" />
+        <option value="scala.collection.JavaConverters._" />
+        <option value="play.api.templates.PlayMagic._" />
+        <option value="_root_.play.twirl.api.Txt" />
+        <option value="play.api.data.Field" />
+        <option value="play.mvc.Http.Context.Implicit._" />
+        <option value="_root_.play.twirl.api.TwirlHelperImports._" />
+        <option value="java.lang._" />
+        <option value="play.core.j.PlayFormsMagicForJava._" />
+      </array>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1n4B7z6kT3gnMXN2KSbTU1yF100" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="eventActor" />
+      <recent name="services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/stylesheets" />
+      <recent name="$PROJECT_DIR$/public/javascripts" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ffb6873-bee8-490c-9b6e-617373b9f1be" name="Default Changelist" comment="" />
+      <created>1610639319702</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610639319702</updated>
+      <workItem from="1610639321102" duration="372000" />
+      <workItem from="1610639740876" duration="2613000" />
+      <workItem from="1610667210985" duration="581000" />
+      <workItem from="1610965786570" duration="623000" />
+      <workItem from="1611234641123" duration="824000" />
+      <workItem from="1611237449490" duration="7366000" />
+      <workItem from="1611247729131" duration="2000000" />
+      <workItem from="1611320050450" duration="4459000" />
+      <workItem from="1611328748783" duration="4810000" />
+      <workItem from="1611433421072" duration="4417000" />
+      <workItem from="1611512908013" duration="6139000" />
+      <workItem from="1611574115679" duration="1196000" />
+      <workItem from="1611678594431" duration="2821000" />
+      <workItem from="1611681482989" duration="598000" />
+      <workItem from="1611765154005" duration="99000" />
+      <workItem from="1611828502069" duration="84000" />
+      <workItem from="1611828606106" duration="62000" />
+      <workItem from="1611828687128" duration="54000" />
+      <workItem from="1611828761879" duration="32000" />
+      <workItem from="1611828811647" duration="52000" />
+      <workItem from="1611828886626" duration="32000" />
+      <workItem from="1611828938988" duration="2287000" />
+      <workItem from="1612097522887" duration="4118000" />
+      <workItem from="1612265557379" duration="91000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
