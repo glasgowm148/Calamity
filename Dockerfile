@@ -11,10 +11,8 @@ RUN mkdir /project/
 COPY . /project/
 
 #
-WORKDIR /project/1-src/TweetMinner-master 2
+WORKDIR /project/1-src/1-java
 
-#RUN apt-get install wget
-# Install Scala
 
 # install sbt
 RUN mkdir -p /usr/local/share/sbt-launcher-packaging && \
