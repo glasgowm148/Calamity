@@ -4,6 +4,7 @@ FROM adoptopenjdk:8
 ENV SCALA_VERSION 2.13.1
 ENV SBT_VERSION 0.13.17
 #ENV SCALA_DEB http://www.scala-lang.org/files/archive/scala-$SCALA_VERSION.deb
+
 #
 RUN mkdir /project/
 
@@ -11,8 +12,8 @@ RUN mkdir /project/
 COPY . /project/
 
 #
+#WORKDIR /project/1-src/feature-extractor
 WORKDIR /project/1-src/1-java
-
 
 # install sbt
 RUN mkdir -p /usr/local/share/sbt-launcher-packaging && \
@@ -35,4 +36,5 @@ RUN mkdir -p /usr/local/share/sbt-launcher-packaging && \
 
 
 # Run
+CMD ["sbt clean"]
 CMD ["sbt", "run"]
