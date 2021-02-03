@@ -90,9 +90,9 @@ public class HomeController extends Controller {
 
 
         printTimer(startTime);
-        //return ok(new String(Files.readAllBytes(Paths.get("../../0-data/processed/" + output_file + ".txt"))));
+        return ok(new String(Files.readAllBytes(Paths.get("../../0-data/processed/" + output_file + ".txt"))));
         //return ok(inputOutput.VectorToPrettyFormat(new File(output_file)));         //
-        return ok(inputOutput.toPrettyFormat(new File("lib/tweets/smol/10.jsonl")));
+        //return ok(inputOutput.toPrettyFormat(new File("lib/tweets/smol/10.jsonl")));
     }
 
     private void printTimer(long startTime) {
