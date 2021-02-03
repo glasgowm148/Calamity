@@ -41,7 +41,7 @@ import twitter.twittertext.Extractor;
 import twitter.twittertext.TwitterTextParseResults;
 import twitter.twittertext.TwitterTextParser;
 import twitter4j.TwitterException;
-import views.html.resultPage;
+//import views.html.resultPage;
 
 
 import static Utils.inputOutput.convertFloatsToDoubles;
