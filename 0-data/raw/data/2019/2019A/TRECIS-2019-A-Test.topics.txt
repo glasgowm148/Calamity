@@ -1,0 +1,86 @@
+<top>
+<num>TRECIS-CTIT-H-Test-022</num>
+<dataset>floodChoco2019</dataset>
+<title>2019 Choco Flood</title>
+<type>flood</type>
+<url>http://floodlist.com/america/colombia-floods-choco-february-2019</url>
+<narr> In a report of 25 February, the UNOCHA said that heavy rains and flooding 
+that began on 22 February, 2019, and have so far affected over 15,000 people. The 
+user is a response officer in the command and control center responsible for 
+responding to the flooding as it unfolds.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-023</num>
+<dataset>fireAndover2019</dataset>
+<title>2019 Andover Fire</title>
+<type>wildfire</type>
+<url>https://www.bbc.co.uk/news/uk-england-hampshire-47168430</url>
+<narr> A huge fire that swept through an Ocado robotic warehouse in Hampshire. About 
+200 firefighters and 20 fire engines were sent to the blaze, which began at the 
+Andover facility at about 2:45am on Tuesday. The user is a response officer in the for
+regional crisis response centre for England.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-024</num>
+<dataset>earthquakeCalifornia2014</dataset>
+<title>2014 California Earthquake</title>
+<type>earthquake</type>
+<url>https://en.wikipedia.org/wiki/2014_South_Napa_earthquake</url>
+<narr> The 2014 South Napa earthquake occurred in the North San Francisco Bay Area on 
+August 24 at 03:20:44 Pacific Daylight Time. At 6.0 on the moment magnitude scale and 
+with a maximum Mercalli intensity of VIII (Severe). The user is a response officer in 
+the command and control center responsible for responding to the earthquakes as they 
+unfold.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-025</num>
+<dataset>earthquakeBohol2013</dataset>
+<title>2013 Bohol Earthquake</title>
+<type>earthquake</type>
+<url>https://en.wikipedia.org/wiki/2013_Bohol_earthquake</url>
+<narr> The 2013 Bohol earthquake occurred on October 15 at 8:12:31 PST in Bohol, an 
+island province located in Central Visayas, Philippines. The magnitude of the earthquake 
+was recorded at Mw 7.2, with epicenter 6 kilometres (3.7 mi) S 24° W of Sagbayan. The 
+user is a response officer in the command and control center responsible for responding 
+to the earthquakes as they unfold.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-026</num>
+<dataset>hurricaneFlorence2018</dataset>
+<title>2018 Florence Hurricane</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/Hurricane_Florence</url>
+<narr> Hurricane Florence was a powerful and long-lived Cape Verde hurricane that caused 
+catastrophic damage in the Carolinas in September 2018, primarily as a result of freshwater 
+flooding. The user is a response officer in the Carolinas command and control center 
+responsible for impact to the state.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-027</num>
+<dataset>shootingDallas2017</dataset>
+<title>2017 Dallas Shooting</title>
+<type>shooting</type>
+<url>https://www.nbcdfw.com/news/local/Protests-in-Dallas-Over-Alton-Sterling-Death-385784431.html</url>
+<narr> Five officers are dead — four Dallas police officers and one Dallas Area Rapid Transit officer 
+— in what authorities called a sniper ambush on police officers at the end of a peaceful protest 
+against nationwide officer-involved shootings Thursday night. The user is in charge of the local police 
+response effort.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-028</num>
+<dataset>fireYMM2016</dataset>
+<title>2016 Fort McMurray Wildfire</title>
+<type>wildfire</type>
+<url>https://en.wikipedia.org/wiki/2016_Fort_McMurray_wildfire</url>
+<narr> On May 1, 2016, a wildfire began southwest of Fort McMurray, Alberta, Canada. On May 3, it 
+swept through the community, forcing the largest wildfire evacuation in Alberta's history, with upwards 
+of 88,000 people forced from their homes. The user is a response officer in Canada's regional command and 
+control center. 
+</narr>
+</top>
