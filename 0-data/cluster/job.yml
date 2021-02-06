@@ -48,10 +48,10 @@ spec:
           requests:
             # the "m" suffix here means "millicores", so 1 physical CPU
             # core = 1000m. this container requests 2000m = 2 physical cores
-            cpu: "1000m" 
+            cpu: "2000m" 
             # memory units are also defined by a suffix. typically this will
             # be "Mi" or "Gi" as appropriate
-            memory: "2Gi"
+            memory: "8Gi"
             # GPUs are slightly different as they're not natively supported
             # by Kubernetes. This indicates that the container requires 1 
             # GPU in order to run
@@ -81,6 +81,7 @@ spec:
           value: "env var value"
       # this defines a volume called nfs-access which corresponds to your cluster
       # filespace. 
+      serviceAccount: containerroot
       volumes:
       - name: nfs-access
         persistentVolumeClaim: 

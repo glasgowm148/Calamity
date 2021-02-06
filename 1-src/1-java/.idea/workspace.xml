@@ -12,7 +12,158 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
-      <change afterPath="$PROJECT_DIR$/lib/glove/gitupload.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/modules/api_1246-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/modules/api_1246.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/NOTICE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/Module.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/v1/post/JPAPostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/v1/post/PostAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/v1/post/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/v1/post/PostData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/v1/post/PostExecutionContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/v1/post/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/v1/post/PostResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/app/v1/post/PostResourceHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/build.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/conf/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/conf/application.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/conf/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/conf/posts.routes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/conf/routes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/src/test/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/src/test/scala/simulation/GatlingSpec.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/scala-2.12/update/update_cache_2.12/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/updateClassifiers/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.12/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/gatling/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/gatling/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/gatling/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/gatling/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/it/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/it/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/it/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/it/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/runtime/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/test/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/gatling/target/streams/test/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/build.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/plugins.sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/_global/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/_global/_global/discoveredMainClasses/data" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/_global/_global/managedSourcePaths/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/copyResources/_global/streams/copy-resources" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/copyResources/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/exportedProducts/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/runtime/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/runtime/exportedProducts/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/runtime/fullClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/runtime/internalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/runtime/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/project/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/public/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/public/javascripts/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/public/stylesheets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/sbt-dist/bin/sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/sbt-dist/bin/sbt.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/sbt-dist/conf/sbtconfig.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/sbt-dist/conf/sbtopts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/sbt.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/scripts/test-sbt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/.history" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/scala-2.13/update/update_cache_2.13/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/_global/checkBuildSources/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/_global/csrLogger/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/csrConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/csrProject/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/ivyConfiguration/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/ivySbt/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/moduleSettings/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/projectDescriptors/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/updateClassifiers/_global/streams/out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/inputs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/_global/updateClassifiers/_global/streams/update_cache_2.13/output" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/compile/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/compile/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/compile/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/compile/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/runtime/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/runtime/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/runtime/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/runtime/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/test/unmanagedClasspath/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/target/streams/test/unmanagedJars/_global/streams/export" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../api/test/it/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0-data/cluster/job.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../0-data/cluster/job.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../0-data/processed/new_with_offset.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../0-data/processed/new_with_offset.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +299,7 @@
       <recent name="controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.logicTest">
+  <component name="RunManager" selected="Play 2 App.Play">
     <configuration name="logicTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="logic.logicTest" />
       <module name="helpme-akka" />
@@ -173,8 +324,8 @@
       <option name="play2JpdaPort" value="9999" />
       <option name="play2JvmOptions">
         <array>
-          <option value="-Xms512M" />
-          <option value="-Xmx1024M" />
+          <option value="-Xms1024M" />
+          <option value="-Xmx2048M" />
           <option value="-Xss1M" />
           <option value="-XX:+CMSClassUnloadingEnabled" />
         </array>
@@ -190,6 +341,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.logicTest" />
+      <item itemvalue="Play 2 App.Play" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.logicTest" />
@@ -293,7 +448,9 @@
       <workItem from="1612166664951" duration="10126000" />
       <workItem from="1612196268759" duration="351000" />
       <workItem from="1612265543632" duration="11000" />
-      <workItem from="1612368492721" duration="2986000" />
+      <workItem from="1612368492721" duration="4165000" />
+      <workItem from="1612533055437" duration="3002000" />
+      <workItem from="1612617876537" duration="6071000" />
     </task>
     <servers />
   </component>
