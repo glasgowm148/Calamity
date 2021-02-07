@@ -1,5 +1,5 @@
 
-GET    /                     v1.post.PostController.list(request:Request)
+GET    /                     v1.post.PostController.list2(request:Request)
 POST   /                     v1.post.PostController.create(request:Request)
 
 GET    /:id                 v1.post.PostController.show(request:Request,id)

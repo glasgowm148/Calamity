@@ -52,8 +52,6 @@ import static features.NumericTweetFeatures.makeFeatureVector;
 
 
 public class HomeController extends Controller {
-  //  GloVeModel model = new GloVeModel();
-    private static GloVeModel model = new entity(); //class variable!
 
     public static class StaticPath {
         //public static String path = "lib/2020A_tweets/selected/r";
@@ -81,6 +79,7 @@ public class HomeController extends Controller {
 
     // index() is triggered on GET to localhost:9000/
     public Result index() throws IOException {
+
 
         // Get jsonl files
         try (Stream<Path> paths = Files.walk(Paths.get(StaticPath.path),2)) {
@@ -112,7 +111,7 @@ public class HomeController extends Controller {
      * @return
      */
     public void parseEvent(String path)  {
-
+        GloVeModel model = new GloVeModel();
         model.load("lib/glove", 200);
         //Properties props = new Properties();
         //props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment"); // ner, entitymentions

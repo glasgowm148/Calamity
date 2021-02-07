@@ -13,7 +13,8 @@ COPY . /project/
 
 #
 #WORKDIR /project/1-src/feature-extractor
-WORKDIR /project/1-src/1-java
+#WORKDIR /project/1-src/1-java
+WORKDIR /project/1-src/api
 
 # install sbt
 RUN mkdir -p /usr/local/share/sbt-launcher-packaging && \
