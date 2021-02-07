@@ -1,7 +1,7 @@
 # Java 8 is required
 FROM adoptopenjdk:8
 
-ENV SCALA_VERSION 2.13.1
+ENV SCALA_VERSION 2.12.1
 ENV SBT_VERSION 0.13.17
 #ENV SCALA_DEB http://www.scala-lang.org/files/archive/scala-$SCALA_VERSION.deb
 
