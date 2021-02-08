@@ -1,4 +1,3 @@
 GET     /                           controllers.HomeController.index
 
 ->     /v1/posts                    posts.Routes
-->     /v1/tweets                   tweets.Routes

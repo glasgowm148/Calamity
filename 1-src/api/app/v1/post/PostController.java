@@ -22,16 +22,9 @@ public class PostController extends Controller {
         this.handler = handler;
     }
 
-    // List
     public CompletionStage<Result> list(Http.Request request) {
         return handler.find(request).thenApplyAsync(posts -> {
             final List<PostResource> postList = posts.collect(Collectors.toList());
-            return ok(Json.toJson(postList));
-        }, ec.current());
-    }// tweetList
-    public CompletionStage<Result> list(Http.Request request) {
-        return handler.find(request).thenApplyAsync(posts -> {
-            final List<PostResource> tweetList = tweets.collect(Collectors.toList());
             return ok(Json.toJson(postList));
         }, ec.current());
     }

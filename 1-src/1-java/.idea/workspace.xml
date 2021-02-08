@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bbfcfc7f-1771-4772-a8a2-d541d66233a0" name="Default Changelist" comment="squash! prettyoutput and tidying">
       <change beforePath="$PROJECT_DIR$/../../0-data/processed/new_with_offset.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../0-data/processed/new_with_offset.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,8 +114,13 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -300,6 +306,7 @@
       <workItem from="1612368492721" duration="4165000" />
       <workItem from="1612533055437" duration="3002000" />
       <workItem from="1612617876537" duration="7632000" />
+      <workItem from="1612707927644" duration="534000" />
     </task>
     <servers />
   </component>
