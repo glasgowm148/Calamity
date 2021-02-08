@@ -32,12 +32,11 @@ CoreNLP
 1-src/seed/*
 1-src/1-java/target/streams/*
 
-1-src/api/target/*
+
 *.idea
 *.cache
 *.cache
 *.html
-1-src/api/target/
 
 1-src/api/.idea/*
 1-src/api/.idea/

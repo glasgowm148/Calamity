@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/mark/Uni/Project/HelpMe/1-src/api/conf/logback.xml,/Users/mark/Uni/Project/HelpMe/1-src/api/target/scala-2.13/classes/logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/mark/Uni/Project/HelpMe/1-src/api/conf/posts.routes,/Users/mark/Uni/Project/HelpMe/1-src/api/target/scala-2.13/classes/posts.routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/mark/Uni/Project/HelpMe/1-src/api/conf/application.conf,/Users/mark/Uni/Project/HelpMe/1-src/api/target/scala-2.13/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/mark/Uni/Project/HelpMe/1-src/api/conf/routes,/Users/mark/Uni/Project/HelpMe/1-src/api/target/scala-2.13/classes/routes)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/mark/Uni/Project/HelpMe/1-src/api/conf/META-INF/persistence.xml,/Users/mark/Uni/Project/HelpMe/1-src/api/target/scala-2.13/classes/META-INF/persistence.xml)[0m
