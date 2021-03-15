@@ -504,7 +504,7 @@ class Entities {
 	private List<Object> urls;
 
 	@JsonProperty("media")
-	private List<Medium> media = new ArrayList<>();
+	private List<Medium> media = new ArrayList<Medium>();
 
 	public void setEntityMentions(List<Object>  user_mentions){
 		this.user_mentions = user_mentions;

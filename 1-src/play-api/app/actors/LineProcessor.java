@@ -1,5 +1,8 @@
 package actors;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -14,6 +17,8 @@ import com.twitter.twittertext.TwitterTextParseResults;
 import com.twitter.twittertext.TwitterTextParser;
 
 // Embeddings
+import edu.stanford.nlp.ling.CoreLabel;
+import edu.stanford.nlp.simple.Sentence;
 import models.GloVeModel; //import com.github.chen0040.embeddings.GloVeModel;
 
 //NLP
@@ -30,10 +35,14 @@ import models.Tweet;
 import models.LineProcessingResult;
 import features.NumericTweetFeatures;
 import messages.LineMessage;
-
+import org.springframework.util.ResourceUtils;
+import utils.StanfordLemmatizer;
+import utils.StanfordSentiment;
 
 
 public class LineProcessor extends  UntypedAbstractActor{
+
+    private static final String resourceFilePath = "lib/conf/stopwords.txt";
 
     @Override
     public void onReceive(Object message) throws Exception {
@@ -80,7 +89,6 @@ public class LineProcessor extends  UntypedAbstractActor{
                         .replaceAll("@[\\S]+", "")
                         .replaceAll("#", "")
                         .replaceAll("[\\s]+", " ")
-                        //replace text between {},[],() including them
                         .replaceAll("\\{.*?}", "")
                         .replaceAll("\\[.*?]", "")
                         .replaceAll("\\(.*?\\)", "")
@@ -91,17 +99,15 @@ public class LineProcessor extends  UntypedAbstractActor{
                 Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"'`_|?!\n\r@;]+");
                 String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
 
-                //Collect all tokens into labels collection.
+                /*   Collect all tokens into labels collection. */
                 Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label->label.length()>0).collect(Collectors.toList());
 
+                /* Remove stopWords */
+                labels.removeAll(getFileContentAsList(resourceFilePath));
+
+
                 tweet.setText(String.valueOf(labels));
-                System.out.println("labels" + labels);
-                // Tokenizer
-                //List<String> tokens = Twokenize.tokenize(tweet.getText());
-                //String[] str_array = tokens.toArray(new String[0]);
-                //System.out.println("tokens" + Arrays.toString(Arrays.stream(str_array).toArray()));
-                //tweet.setTokens(Arrays.asList(str_array));
-                // tweet.setText(Arrays.toString(str_array));
+
 
                 //ArrayList<String> defuzzedTokens = FeatureUtil.fuzztoken(String.valueOf(labels), true);
 
@@ -120,14 +126,8 @@ public class LineProcessor extends  UntypedAbstractActor{
 
                 //System.out.println(stringDoubleMap);
 
-                Annotation annotation = pipeline.process(tweet.getText());
-                pipeline.annotate(annotation);
-                for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
-                    Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
-                    tweet.setVectorTree(RNNCoreAnnotations.getNodeVector(tree)); //RNNCoreAnnotations.getPredictedClass(tree);
-                }
 
-                tweet.setSentiment(tweet.getVectorTree());
+                stanfordSentiment(pipeline, tweet);
 
                 tweetList.add(tweet);
                 
@@ -144,8 +144,57 @@ public class LineProcessor extends  UntypedAbstractActor{
         }
 
 
+
+
+    }
+
+    private static void stanfordSentiment(StanfordCoreNLP pipeline, Tweet tweet) {
+        StanCoreNLP(pipeline, tweet);
+    }
+
+    public static void StanCoreNLP(StanfordCoreNLP pipeline, Tweet tweet) {
+        Annotation annotation = pipeline.process(tweet.getText());
+        pipeline.annotate(annotation);
+        for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
+            Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
+            tweet.setVectorTree(RNNCoreAnnotations.getNodeVector(tree)); //RNNCoreAnnotations.getPredictedClass(tree);
+        }
+
+        tweet.setSentiment(tweet.getVectorTree());
+    }
+
+
+    private List<String> getFileContentAsList(String resourceFilePath) throws IOException {
+
+        File file = ResourceUtils.getFile(resourceFilePath);
+        List<String> lines = Files.readAllLines(file.toPath());
+        lines = lines.stream().map(String::toLowerCase).collect(Collectors.toList());
+
+        return lines;
+
     }
 
 }
+/**
+ *
+ //StanfordLemmatizer lemmy = new StanfordLemmatizer();
+ //System.out.println(lemmy.lemmatize(tweet.getText()));
 
 
+ // Simple Sentence crashes the app for some reason?
+ //Sentence sent = new Sentence(tweet.getText());
+ //List<String> lemmas = sent.lemmas();
+ //System.out.println(lemmas);
+
+
+
+ // Tokenizer
+ //List<String> tokens = Twokenize.tokenize(tweet.getText());
+ //String[] str_array = tokens.toArray(new String[0]);
+ //System.out.println("tokens" + Arrays.toString(Arrays.stream(str_array).toArray()));
+ //tweet.setTokens(Arrays.asList(str_array));
+ // tweet.setText(Arrays.toString(str_array));
+ //StanfordSentiment senty = new StanfordSentiment();
+ //senty.vectorTree(tweet);
+
+ */
