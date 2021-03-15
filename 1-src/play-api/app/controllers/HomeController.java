@@ -23,10 +23,9 @@ public class HomeController extends Controller {
     /* Entry point for /tweets */
     public Result index() throws Exception {
 
-        //call akka actor service
+        /* call akka actor service */
         String result = service.akkaActorApi();
 
-        // save result in file
         service.saveResultInFile(result);
 
         return ok(result);
@@ -49,7 +48,6 @@ public class HomeController extends Controller {
 
         public static List<String> tweets = new ArrayList<>();
         public static String path = "data/tweets/";
-        public static String output_file = "new_with_offset";
         public static String saveFile = "data/savedFile.json";
 
     }

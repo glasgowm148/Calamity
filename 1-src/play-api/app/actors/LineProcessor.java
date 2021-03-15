@@ -105,7 +105,7 @@ public class LineProcessor extends UntypedAbstractActor {
                 Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label -> label.length() > 0).collect(Collectors.toList());
 
                 /* Remove stopWords */
-                labels.removeAll(getFileContentAsList(resourceFilePath));
+                labels.removeAll(getFileContentAsList());
 
 
                 tweet.setText(String.valueOf(labels));
@@ -148,9 +148,9 @@ public class LineProcessor extends UntypedAbstractActor {
 
     }
 
-    private List<String> getFileContentAsList(String resourceFilePath) throws IOException {
+    private List<String> getFileContentAsList() throws IOException {
 
-        File file = ResourceUtils.getFile(resourceFilePath);
+        File file = ResourceUtils.getFile(LineProcessor.resourceFilePath);
         List<String> lines = Files.readAllLines(file.toPath());
         lines = lines.stream().map(String::toLowerCase).collect(Collectors.toList());
 

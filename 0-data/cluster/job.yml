@@ -77,8 +77,8 @@ spec:
         # example of defining an environment variable and its value, so that they
         # will be visible inside this container
         env:
-        - name: SBT_OPTS # -Xmx # -XX:+UseG1GC
-          value: "-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M  -Duser.timezone=GMT"
+        - name: SBT_OPTS # -Xmx # -XX:+UseG1GC # 
+          value: "-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M  -Duser.timezone=GMT"
       # this defines a volume called nfs-access which corresponds to your cluster
       # filespace. 
       serviceAccount: containerroot

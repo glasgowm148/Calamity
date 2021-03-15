@@ -70,8 +70,8 @@ public class ServicesImp {
         final ExecutionContext ec = akkaSystem.dispatcher();
 
         // Send a message to start processing the file.
-        // This is a synchronous call using 'ask' with a timeout.
-        Timeout timeout = new Timeout(300, TimeUnit.SECONDS); // 50 times out with embeddings
+        // This is asynchronous call using 'ask' with a timeout.
+        Timeout timeout = new Timeout(1000, TimeUnit.SECONDS); // 50 times out with embeddings
         Future<Object> future = Patterns.ask(coordinator, msg, timeout);
 
         FileProcessedMessage result = (FileProcessedMessage) Await.result(future, timeout.duration());
@@ -81,6 +81,39 @@ public class ServicesImp {
         appendStringResult(StaticPath.tweets, resultString);
 
         printTimer(startTime);
+
+        return resultString.toString();
+    }
+
+    /**
+     * Get all the json files in the subdirectories
+     * Calls parseEvent()
+     * ERROR - Concurrent modification
+     *
+     * @return
+     * @throws Exception
+     */
+    public String akkaActorApi() throws Exception {
+
+        StaticPath.tweets = new ArrayList<>();
+
+        try (Stream<Path> paths = Files.walk(Paths.get(StaticPath.path), 2)) {
+
+            paths.map(Path::toString).filter(f -> f.endsWith(".jsonl"))
+                    .forEach(t -> {
+                        try {
+                            parseEvent(t);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    });
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        StringBuilder resultString = new StringBuilder();
+        appendStringResult(StaticPath.tweets, resultString);
 
         return resultString.toString();
     }
@@ -133,38 +166,7 @@ public class ServicesImp {
         System.out.println(elapsedSeconds + " seconds");
     }
 
-    /**
-     * Get all the json files in the subdirectories
-     * Calls parseEvent()
-     * ERROR - Concurrent modification
-     *
-     * @return
-     * @throws Exception
-     */
-    public String akkaActorApi() throws Exception {
 
-        StaticPath.tweets = new ArrayList<>();
-
-        try (Stream<Path> paths = Files.walk(Paths.get(StaticPath.path), 2)) {
-
-            paths.map(Path::toString).filter(f -> f.endsWith(".jsonl"))
-                    .forEach(t -> {
-                        try {
-                            parseEvent(t);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    });
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        StringBuilder resultString = new StringBuilder();
-        appendStringResult(StaticPath.tweets, resultString);
-
-        return resultString.toString();
-    }
 
     /**
      * @param result
