@@ -1,2 +1,2 @@
-[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/mark/Documents/project-docs/HelpMe/1-src/play-api/project/target/.sbt-compilation-infos/root-compile/.sbt-idea-lock ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/mark/Documents/project-docs/HelpMe/1-src/play-api/project/target/.sbt-compilation-infos/root-compile/.sbt-idea-lock.[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/mark/Documents/project-docs/HelpMe/1-src/play-api/app/actors/FileAnalysisActor.java: FileAnalysisActor.java uses or overrides a deprecated API.[0m
+[0m[[0m[0minfo[0m] [0m[0m/Users/mark/Documents/project-docs/HelpMe/1-src/play-api/app/actors/FileAnalysisActor.java: Recompile with -Xlint:deprecation for details.[0m

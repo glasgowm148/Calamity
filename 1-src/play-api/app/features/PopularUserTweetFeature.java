@@ -20,7 +20,7 @@ public class PopularUserTweetFeature extends TweetFeature {
 	 * @return
 	 */
 	public static double getScore(Tweet tweet) {
-		double popularityRatio = 0;
+		double popularityRatio;
 		int followers = tweet.getUserFollowersCount();
 		int friends = tweet.getUserFriendsCount();
 		popularityRatio = (double) followers/friends;//means his followers are more than his friends.

@@ -7,14 +7,12 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class LookUpTable {
-    private File file;
-    private Set<String> dictionary;
+    private final Set<String> dictionary;
 
     public LookUpTable(File file) {
-        this.file = file;
-        dictionary = new LinkedHashSet<String>();
-        BufferedReader reader = FileUtils.getFileReader(this.file);
-        String line = "";
+        dictionary = new LinkedHashSet<>();
+        BufferedReader reader = FileUtils.getFileReader(file);
+        String line;
         try {
             while( (line = reader.readLine()) != null ) {
                 dictionary.add(line.toLowerCase());

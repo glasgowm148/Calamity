@@ -1,6 +1,4 @@
 package models;
-import java.util.List;
-import models.Features;
 
 /* TweetAPI - This file displays the json */
 public class TweetApi {

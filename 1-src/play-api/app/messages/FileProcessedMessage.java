@@ -1,9 +1,8 @@
 package messages;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 import models.LineProcessingResult;
+
+import java.util.List;
 
 public class FileProcessedMessage {
 

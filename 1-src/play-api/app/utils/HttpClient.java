@@ -246,7 +246,7 @@ public class HttpClient implements Serializable {
          CloseableHttpResponse response = httpClient.execute(request);
          HttpEntity entity = response.getEntity();
          if (entity != null) {
-            try (FileOutputStream outstream = new FileOutputStream(new File(save_to_file))) {
+            try (FileOutputStream outstream = new FileOutputStream(save_to_file)) {
                entity.writeTo(outstream);
             } catch(Exception ex1) {
                logger.error("Failed to write the data from " + url + " to file " + save_to_file, ex1);

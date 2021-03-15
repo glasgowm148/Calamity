@@ -4,16 +4,17 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import akka.actor.UntypedAbstractActor;
+
+// Twitter-text
 import com.twitter.twittertext.Extractor;
 import com.twitter.twittertext.TwitterTextParseResults;
 import com.twitter.twittertext.TwitterTextParser;
 
-//import com.github.chen0040.embeddings.GloVeModel;
-import models.GloVeModel;
+// Embeddings
+import models.GloVeModel; //import com.github.chen0040.embeddings.GloVeModel;
 
 //NLP
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -24,14 +25,11 @@ import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
 import edu.stanford.nlp.trees.Tree;
 import edu.stanford.nlp.util.CoreMap;
 
+// local
 import models.Tweet;
 import models.LineProcessingResult;
 import features.NumericTweetFeatures;
 import messages.LineMessage;
-//import utils.Twokenize;
-
-
-
 
 
 
@@ -75,10 +73,6 @@ public class LineProcessor extends  UntypedAbstractActor{
                 tweet.setWeightedLength(result.weightedLength);
                 tweet.setPermillage(result.permillage);
 
-                // Tokenizer
-                //List<String> tokens = Twokenize.tokenize(tweet.getText());
-                //String[] str_array = tokens.toArray(new String[0]);
-                //tweet.setTokens(str_array);
 
                 /* Remove URLs, mentions, hashtags and whitespace */
                 tweet.setText(tweet.getText().trim()
@@ -100,19 +94,29 @@ public class LineProcessor extends  UntypedAbstractActor{
                 //Collect all tokens into labels collection.
                 Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label->label.length()>0).collect(Collectors.toList());
 
-                tweet.setTokens(labels);
+                tweet.setText(String.valueOf(labels));
+                System.out.println("labels" + labels);
+                // Tokenizer
+                //List<String> tokens = Twokenize.tokenize(tweet.getText());
+                //String[] str_array = tokens.toArray(new String[0]);
+                //System.out.println("tokens" + Arrays.toString(Arrays.stream(str_array).toArray()));
+                //tweet.setTokens(Arrays.asList(str_array));
+                // tweet.setText(Arrays.toString(str_array));
+
+                //ArrayList<String> defuzzedTokens = FeatureUtil.fuzztoken(String.valueOf(labels), true);
 
                 // GloVe Word Embeddings
                 float[] d = model.encodeDocument(tweet.getText());
                 tweet.setDimensions(d);
 
-                // make the features
+                // make the features - System.out.println(stringDoubleMap);
                 Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-                //System.out.println(stringDoubleMap);
+
 
                 //System.out.println("\nSet Feature Vector\n");
                 tweet.setFeatures(stringDoubleMap);
-                //tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
+
+                // tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
 
                 //System.out.println(stringDoubleMap);
 

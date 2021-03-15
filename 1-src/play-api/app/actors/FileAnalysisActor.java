@@ -1,10 +1,7 @@
 package actors;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import messages.FileAnalysisMessage;
 import messages.FileProcessedMessage;
@@ -27,17 +24,19 @@ import akka.actor.UntypedAbstractActor ;
  */
 public class FileAnalysisActor extends UntypedAbstractActor {
 
-    private final List<LineProcessingResult> hMap = new ArrayList<LineProcessingResult>();
+    private final List<LineProcessingResult> hMap = new ArrayList<>();
     private long fileLineCount;
     private long processedCount;
     private ActorRef analyticsSender = null;
 
+    /**
+     *
+     * @param message - This actor can receive two different messages, FileAnalysisMessage or LineProcessingResult
+     * any other type will be discarded using the unhandled method
+     * @throws Exception
+     */
     @Override
     public void onReceive(Object message) throws Exception {
-        /*
-            This actor can receive two different messages, FileAnalysisMessage or LineProcessingResult, any
-            other type will be discarded using the unhandled method
-         */
         if (message instanceof FileAnalysisMessage) {
 
             List<String> lines = FileUtils.readLines(new File(
@@ -51,24 +50,25 @@ public class FileAnalysisActor extends UntypedAbstractActor {
             
             List<List<String> > listsLines = Lists.partition(lines, 1000);
 
+            // creates a new actor per each List<String>
+
             for(List<String> l : listsLines) {
 
-                // creates a new actor per each line of the  file
                 Props props = Props.create(LineProcessor.class);
                 ActorRef lineProcessorActor = this.getContext().actorOf(props);
 
                 // sends a message to the new actor with the line payload
                 lineProcessorActor.tell(new LineMessage(l), this.getSelf());
             }
-            
-            // for (String line : lines) {
+            /*
+             for (String line : lines) {
             // creates a new actor per each line of the  file
-            //    Props props = Props.create(LineProcessor.class);
-            //    ActorRef lineProcessorActor = this.getContext().actorOf(props);
+                Props props = Props.create(LineProcessor.class);
+                ActorRef lineProcessorActor = this.getContext().actorOf(props);
 
             // sends a message to the new actor with the line payload
-            //     lineProcessorActor.tell(new LineMessage(line), this.getSelf());
-            // }
+                 lineProcessorActor.tell(new LineMessage(Collections.singletonList(line)), this.getSelf());
+             }*/
 
         } else if (message instanceof LineProcessingResult) {
 

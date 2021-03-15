@@ -13,6 +13,12 @@ public class AdapterFeatures {
 		super();
 	}
 
+	/**
+	 * Tweet API adaptor
+	 * @param output - The output
+	 * @returns the tweet OR null
+	 * @throws JsonProcessingException
+	 */
 	public static TweetApi adapterTweet(final Tweet output) throws JsonProcessingException {
 		TweetApi tweet = new TweetApi();
 		if (output != null) {

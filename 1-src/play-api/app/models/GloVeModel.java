@@ -15,7 +15,7 @@ import java.util.Map;
 public class GloVeModel {
 
     private static final String url = "https://nlp.stanford.edu/data/glove.6B.zip";
-    private Map<String, float[]> word2em = new HashMap<>();
+    private final Map<String, float[]> word2em = new HashMap<>();
     private static final Logger logger = LoggerFactory.getLogger(GloVeModel.class);
     private int dimension = -1;
 
@@ -23,7 +23,7 @@ public class GloVeModel {
         return Arrays.asList(50, 100, 200, 300);
     }
 
-    private static final String getGloVeTextFileName(int dimension){
+    private static String getGloVeTextFileName(int dimension){
         return "glove.6B." + dimension + "d.txt";
     }
 
@@ -118,7 +118,7 @@ public class GloVeModel {
 
         logger.info("loading {} into word2em", filePath);
 
-        try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(new File(filePath))))){
+        try(BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(filePath)))){
             String line;
             while((line=reader.readLine()) != null) {
                 String[] parts = line.split(" ");

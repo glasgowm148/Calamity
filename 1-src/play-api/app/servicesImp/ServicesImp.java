@@ -1,5 +1,27 @@
 package servicesImp;
 
+import actors.FileAnalysisActor;
+import adapter.AdapterFeatures;
+import akka.actor.ActorRef;
+import akka.actor.ActorSystem;
+import akka.actor.Props;
+import akka.pattern.Patterns;
+import akka.util.Timeout;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
+import controllers.HomeController.StaticPath;
+import messages.FileAnalysisMessage;
+import messages.FileProcessedMessage;
+import models.FilePerEvent;
+import models.TweetApi;
+import scala.concurrent.Await;
+import scala.concurrent.ExecutionContext;
+import scala.concurrent.Future;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -8,33 +30,9 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
-
-import actors.FileAnalysisActor;
-import adapter.AdapterFeatures;
-import akka.actor.ActorRef;
-import akka.actor.ActorSystem;
-import akka.actor.Props;
-import akka.pattern.Patterns;
-import akka.util.Timeout;
-import controllers.HomeController.StaticPath;
-import messages.FileAnalysisMessage;
-import messages.FileProcessedMessage;
-import models.Features;
-import models.FilePerEvent;
-import models.Tweet;
-import models.TweetApi;
-import scala.concurrent.Await;
-import scala.concurrent.ExecutionContext;
-import scala.concurrent.Future;
-import java.io.*;
 
 /**
- *
- * outsource all methods to a service class
- *
+ * This Service class performs the feature extraction
  */
 public class ServicesImp {
 
@@ -45,15 +43,19 @@ public class ServicesImp {
 
 	// Start timer for tracking efficiency
     static long startTime = System.currentTimeMillis();
-    
+
+
+	/**
+	 * Get all the json files in the subdirectories
+	 * Calls parseEvent()
+	 * ERROR - Concurrent modification
+	 * @return
+	 * @throws Exception
+	 */
 	public String akkaActorApi() throws Exception {
 
 		StaticPath.tweets = new ArrayList<>();
-        /*
-        Get all the json files in the subdirectories
-		Calls parseEvent()
-		ERROR - Concurrent modification
-		 */
+
         try (Stream<Path> paths = Files.walk(Paths.get(StaticPath.path),2)) {
 
             paths.map(Path::toString).filter(f -> f.endsWith(".jsonl"))
@@ -74,6 +76,12 @@ public class ServicesImp {
 	}
 
 
+	/**
+	 * parseEvent() parses each event
+	 * @param s
+	 * @return resultString
+	 * @throws Exception
+	 */
 	public static String parseEvent(String s) throws Exception {
 		  StringBuilder resultString = new StringBuilder();
 
@@ -107,25 +115,32 @@ public class ServicesImp {
 
 	        return resultString.toString();
 	}
-	
+
+	/**
+	 * concatenate the "intList"  json in "Result"
+	 * @param intList
+	 * @param resultString
+	 */
     private static void appendStringResult(List<String> intList, StringBuilder resultString) {
-		intList.forEach(ele->{
-        	resultString.append(ele + "\n");
-        });
+		intList.forEach(ele-> resultString.append(ele).append("\n"));
 }
 
+	/**
+	 *
+	 * @param result
+	 * @param fileName
+	 * @throws JsonProcessingException
+	 */
 	private static void printResults(final FileProcessedMessage result, final String fileName) throws JsonProcessingException {
 		List<TweetApi> eventFile = new ArrayList<>();
-		result.getHMap().forEach(outputs -> {
-			outputs.getTweets().forEach(output -> {
-				try {
-					eventFile.add(AdapterFeatures.adapterTweet(output));
-				} catch (JsonProcessingException e) {
-					e.printStackTrace();
-				}
+		result.getHMap().forEach(outputs -> outputs.getTweets().forEach(output -> {
+			try {
+				eventFile.add(AdapterFeatures.adapterTweet(output));
+			} catch (JsonProcessingException e) {
+				e.printStackTrace();
+			}
 
-			});
-		});
+		}));
 
 		FilePerEvent fileEvent = new FilePerEvent();
 		fileEvent.setFileName(fileName);
@@ -136,8 +151,11 @@ public class ServicesImp {
 
 		StaticPath.tweets.add(r);
 	}
-	
-	
+
+	/**
+	 *
+	 * @param startTime
+	 */
 	private static void printTimer(long startTime) {
 		// Outputs the elapsed time to console
 		long elapsedTime = System.currentTimeMillis() - startTime;
@@ -146,9 +164,12 @@ public class ServicesImp {
 		System.out.println("Time elapsed: " + elapsedMinutes + " minutes");
 		System.out.println(elapsedSeconds + " seconds");
 	}
-	
-	
-	
+
+
+	/**
+	 *
+	 * @param result
+	 */
 	public void saveResultInFile(final String result) {
 		
 		   try {
@@ -164,7 +185,12 @@ public class ServicesImp {
 	        }
 
 	}
-	
+
+	/**
+	 *
+	 * @param path
+	 * @return
+	 */
 	public String contentSavedFile(final String path) {
 		String content = "";  
 		try

@@ -53,7 +53,7 @@ public class FileUtils {
 	}
 	
 	public static BufferedReader getFileReader( File file ) {
-		FileReader fr = null;
+		FileReader fr;
 		BufferedReader br = null;
 		try {
 			fr = new FileReader(file.getAbsoluteFile());
@@ -67,7 +67,7 @@ public class FileUtils {
 	}
 	
 	public static BufferedReader getFileReaderIgnoreEncoding( File file ) {
-		FileInputStream input = null;
+		FileInputStream input;
 		BufferedReader br = null;
 		
 		try {
@@ -75,7 +75,7 @@ public class FileUtils {
 			CharsetDecoder decoder = StandardCharsets.UTF_8.newDecoder();
 	        decoder.onMalformedInput(CodingErrorAction.IGNORE);
 	        InputStreamReader reader = new InputStreamReader(input, decoder);
-	        br = new BufferedReader( reader );;
+	        br = new BufferedReader( reader );
 
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -86,7 +86,7 @@ public class FileUtils {
 	}
 	
 	public static BufferedWriter getFileWriterIgnoreEncoding( File file ) {
-		FileWriter fw = null;
+		FileWriter fw;
 		BufferedWriter bw = null;
 		try {
 			fw = new FileWriter(file);

@@ -48,10 +48,10 @@ spec:
           requests:
             # the "m" suffix here means "millicores", so 1 physical CPU
             # core = 1000m. this container requests 2000m = 2 physical cores
-            cpu: "2000m" 
+            cpu: "8000m" 
             # memory units are also defined by a suffix. typically this will
             # be "Mi" or "Gi" as appropriate
-            memory: "8Gi"
+            memory: "16Gi"
             # GPUs are slightly different as they're not natively supported
             # by Kubernetes. This indicates that the container requires 1 
             # GPU in order to run
@@ -77,8 +77,8 @@ spec:
         # example of defining an environment variable and its value, so that they
         # will be visible inside this container
         env:
-        - name: SOME_ENV_VAR
-          value: "env var value"
+        - name: SBT_OPTS # -Xmx # -XX:+UseG1GC
+          value: "-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=2G -Xss2M  -Duser.timezone=GMT"
       # this defines a volume called nfs-access which corresponds to your cluster
       # filespace. 
       serviceAccount: containerroot

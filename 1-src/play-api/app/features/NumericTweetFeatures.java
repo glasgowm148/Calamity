@@ -1,6 +1,5 @@
 package features;
 
-import classifiers.NamedEntityClassifier;
 import models.Tweet;
 
 import java.util.*;

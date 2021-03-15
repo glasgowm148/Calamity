@@ -2,7 +2,7 @@ package messages;
 
 public class FileAnalysisMessage {
 
-    private String fileName;
+    private final String fileName;
 
     public FileAnalysisMessage(String file) {
         this.fileName = file;

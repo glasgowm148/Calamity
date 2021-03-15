@@ -89,3 +89,12 @@ libraryDependencies ++= Seq(
 // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
 libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.11"
 
+// Mockito
+// https://mvnrepository.com/artifact/org.mockito/mockito-core
+libraryDependencies += "org.mockito" % "mockito-core" % "3.8.0" % Test
+
+
+// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.12.0"
+// https://mvnrepository.com/artifact/org.apache.commons/commons-text
+libraryDependencies += "org.apache.commons" % "commons-text" % "1.9"
