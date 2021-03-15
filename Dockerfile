@@ -39,4 +39,4 @@ RUN mkdir -p /usr/local/share/sbt-launcher-packaging && \
 # Run
 CMD ["sbt clean"]
 CMD ["sbt build"]
-CMD ["sbt -mem 4098 run "]
+CMD ["sbt run "]
