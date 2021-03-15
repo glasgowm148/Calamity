@@ -8,7 +8,7 @@ initialize := {
   val _ = initialize.value // run the previous initialization
   val required = "1.8"
   val current  = sys.props("java.specification.version")
-  assert(current == required, s"Unsupported JDK: java.specification.version $current != $required")/
+  assert(current == required, s"Unsupported JDK: java.specification.version $current != $required")
 }
 
 // Docker PID permissions
