@@ -13,7 +13,9 @@
 bkgit*
 1-src2/TREC*
 1-src/logs
-1-src/play-api/lib/glove*
+1-src/play-api/lib/glove/*.txt
+1-src/play-api/lib/glove/*.zip
+1-src/play-api/lib/not_glove*
 1-src/target
 0-data/output/txt/*
 1-src/.idea
@@ -52,3 +54,5 @@ CoreNLP
 
 
 1-src/1-java/.idea/workspace.xml
+1-src/play-api/data/test-tweets/all.json
+1-src/play-api/.bsp/sbt.json
