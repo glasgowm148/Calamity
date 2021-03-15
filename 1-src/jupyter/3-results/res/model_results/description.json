@@ -1,0 +1,52 @@
+{
+    "model": "MultiOutputRegressor",
+    "arguments": "default",
+    "type": "regression",
+    "algorithm": "DecisionTree",
+    "dataset_props": {
+        "split": {
+            "test_size": 0.2,
+            "shuffle": true,
+            "stratify": "default",
+            "scale": {
+                "method": "standard",
+                "target": "inputs"
+            }
+        }
+    },
+    "model_props": {
+        "type": "regression",
+        "algorithm": "DecisionTree"
+    },
+    "data_path": "../3-csv/train.csv",
+    "train_data_shape": [
+        3106,
+        132
+    ],
+    "test_data_shape": [
+        777,
+        132
+    ],
+    "train_data_size": 3106,
+    "test_data_size": 777,
+    "results_path": "/Users/mark/HelpMe-clone/1-src/2-python/2-notebooks/model_results",
+    "model_path": "/Users/mark/HelpMe-clone/1-src/2-python/2-notebooks/model_results/model.sav",
+    "target": [
+        "postPriority",
+        "cat1",
+        "cat2",
+        "cat3",
+        "cat4",
+        "cat5",
+        "cat6",
+        "cat7",
+        "cat8",
+        "cat9",
+        "cat10",
+        "num"
+    ],
+    "results_on_test_data": {
+        "regression score": -0.1541037798648025
+    },
+    "hyperparameter_search_results": {}
+}

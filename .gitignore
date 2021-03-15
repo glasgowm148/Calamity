@@ -43,7 +43,7 @@ CoreNLP
 
 1-src/api/.idea/*
 1-src/api/.idea/
-*.json
+.json
 1-src/1-java/target/scala-2.12*
 *.jar
 1-src/1-java/lib/glove/*
