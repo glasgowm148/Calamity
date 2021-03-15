@@ -2,67 +2,66 @@ package models;
 
 /* TweetAPI - This file displays the json */
 public class TweetApi {
-	
-	private Long tweet_id;
-	private String tweet_text;
-	private String Embeddings;
-	private String Sentiment;
-	private Features features;
 
-	public TweetApi(Long tweet_id, String tweet_text, String embeddings, String sentiment, Features features) {
-		super();
-		this.tweet_id = tweet_id;
-		this.tweet_text = tweet_text;
-		Embeddings = embeddings;
-		Sentiment = sentiment;
-		this.features = features;
-	}
+    private Long tweet_id;
+    private String tweet_text;
+    private String Embeddings;
+    private String Sentiment;
+    private Features features;
 
-	public TweetApi() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    public TweetApi(Long tweet_id, String tweet_text, String embeddings, String sentiment, Features features) {
+        super();
+        this.tweet_id = tweet_id;
+        this.tweet_text = tweet_text;
+        Embeddings = embeddings;
+        Sentiment = sentiment;
+        this.features = features;
+    }
 
-	public Long getTweet_id() {
-		return tweet_id;
-	}
+    public TweetApi() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
-	public void setTweet_id(Long tweet_id) {
-		this.tweet_id = tweet_id;
-	}
+    public Long getTweet_id() {
+        return tweet_id;
+    }
 
-	public String getTweet_text() {
-		return tweet_text;
-	}
+    public void setTweet_id(Long tweet_id) {
+        this.tweet_id = tweet_id;
+    }
 
-	public void setTweet_text(String tweet_text) {
-		this.tweet_text = tweet_text;
-	}
+    public String getTweet_text() {
+        return tweet_text;
+    }
 
-	public String getEmbeddings() {
-		return Embeddings;
-	}
+    public void setTweet_text(String tweet_text) {
+        this.tweet_text = tweet_text;
+    }
 
-	public void setEmbeddings(String embeddings) {
-		Embeddings = embeddings;
-	}
+    public String getEmbeddings() {
+        return Embeddings;
+    }
 
-	public String getSentiment() {
-		return Sentiment;
-	}
+    public void setEmbeddings(String embeddings) {
+        Embeddings = embeddings;
+    }
 
-	public void setSentiment(String sentiment) {
-		Sentiment = sentiment;
-	}
+    public String getSentiment() {
+        return Sentiment;
+    }
 
-	public Features getFeatures() {
-		return features;
-	}
+    public void setSentiment(String sentiment) {
+        Sentiment = sentiment;
+    }
 
-	public void setFeatures(Features features) {
-		this.features = features;
-	}
+    public Features getFeatures() {
+        return features;
+    }
 
+    public void setFeatures(Features features) {
+        this.features = features;
+    }
 
 
 }

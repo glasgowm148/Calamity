@@ -1,26 +1,24 @@
 package actors;
 
-import java.io.File;
-import java.util.*;
-
-import messages.FileAnalysisMessage;
-import messages.FileProcessedMessage;
-import models.LineProcessingResult;
-import messages.LineMessage;
-import org.apache.commons.io.FileUtils;
-
-import com.google.common.collect.Lists;
-
 import akka.actor.ActorRef;
 import akka.actor.Props;
-import akka.actor.UntypedAbstractActor ;
+import akka.actor.UntypedAbstractActor;
+import com.google.common.collect.Lists;
+import messages.FileAnalysisMessage;
+import messages.FileProcessedMessage;
+import messages.LineMessage;
+import models.LineProcessingResult;
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Akka High level actor
- *
+ * <p>
  * This actor will be in charge of creating other actors and send them messages to coordinate the work.
  * It also receives the results and prints them once the processing is finished.
- *
  */
 public class FileAnalysisActor extends UntypedAbstractActor {
 
@@ -30,9 +28,8 @@ public class FileAnalysisActor extends UntypedAbstractActor {
     private ActorRef analyticsSender = null;
 
     /**
-     *
      * @param message - This actor can receive two different messages, FileAnalysisMessage or LineProcessingResult
-     * any other type will be discarded using the unhandled method
+     *                any other type will be discarded using the unhandled method
      * @throws Exception
      */
     @Override
@@ -47,12 +44,12 @@ public class FileAnalysisActor extends UntypedAbstractActor {
 
             // stores a reference to the original sender to send back the results later on
             analyticsSender = this.getSender();
-            
-            List<List<String> > listsLines = Lists.partition(lines, 1000);
+
+            List<List<String>> listsLines = Lists.partition(lines, 1000);
 
             // creates a new actor per each List<String>
 
-            for(List<String> l : listsLines) {
+            for (List<String> l : listsLines) {
 
                 Props props = Props.create(LineProcessor.class);
                 ActorRef lineProcessorActor = this.getContext().actorOf(props);
@@ -72,8 +69,8 @@ public class FileAnalysisActor extends UntypedAbstractActor {
 
         } else if (message instanceof LineProcessingResult) {
 
-        	
-        	hMap.add(((LineProcessingResult) message));
+
+            hMap.add(((LineProcessingResult) message));
             // a result message is received after a LineProcessor actor has finished processing a line
 
             // if the file has been processed entirely, send a termination message to the main actor

@@ -4,12 +4,12 @@ name := """play-feature-api"""
 organization := "com.example"
 
 // Stops the build if JVM != 1.8
-//initialize := {
-//  val _ = initialize.value // run the previous initialization
-//  val required = "1.8"
-//  val current  = sys.props("java.specification.version")
-//  assert(current == required, s"Unsupported JDK: java.specification.version $current != $required")/
-//}
+initialize := {
+  val _ = initialize.value // run the previous initialization
+  val required = "1.8"
+  val current  = sys.props("java.specification.version")
+  assert(current == required, s"Unsupported JDK: java.specification.version $current != $required")/
+}
 
 // Docker PID permissions
 //dockerChmodType := DockerChmodType.UserGroupWriteExecute
@@ -51,12 +51,13 @@ libraryDependencies ++= Seq(
 
 libraryDependencies += "commons-io" % "commons-io" % "2.8.0"
 
-libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind" % "2.0.0-RC3"
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+libraryDependencies += "com.fasterxml.jackson.core" % "jackson-databind" % "2.9.10.8"
 
 libraryDependencies += "com.typesafe.akka" %% "akka-actor-typed" % "2.5.32"
 
 // https://mvnrepository.com/artifact/com.twitter.twittertext/twitter-text
-libraryDependencies += "com.twitter.twittertext" % "twitter-text" % "2.0.8"
+libraryDependencies += "com.twitter.twittertext" % "twitter-text" % "3.1.0"
 
 // https://mvnrepository.com/artifact/edu.stanford.nlp/stanford-corenlp
 //libraryDependencies += "edu.stanford.nlp" % "stanford-corenlp" % "4.2.0"
@@ -78,7 +79,7 @@ libraryDependencies ++= Seq(
   javaWs,
   javaCore,
   javaJpa,
-  "org.hibernate" % "hibernate-entitymanager" % "3.6.10.Final",
+  "org.hibernate" % "hibernate-entitymanager" % "5.4.24.Final",
   "org.twitter4j" % "twitter4j-core" % "4.0.2",
   "org.twitter4j" % "twitter4j-stream" % "4.0.2",
   "com.googlecode.json-simple" % "json-simple" % "1.1.1",

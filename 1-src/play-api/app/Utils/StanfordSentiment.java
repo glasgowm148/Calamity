@@ -1,18 +1,9 @@
 package utils;
 
 import actors.LineProcessor;
-import edu.stanford.nlp.ling.CoreAnnotations;
-import edu.stanford.nlp.ling.CoreLabel;
-import edu.stanford.nlp.neural.rnn.RNNCoreAnnotations;
-import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
-import edu.stanford.nlp.sentiment.SentimentCoreAnnotations;
-import edu.stanford.nlp.trees.Tree;
-import edu.stanford.nlp.util.CoreMap;
 import models.Tweet;
 
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Properties;
 
 public class StanfordSentiment {
@@ -31,8 +22,7 @@ public class StanfordSentiment {
         this.pipeline = new StanfordCoreNLP(props);
     }
 
-    public void vectorTree(Tweet tweet)
-    {
+    public void vectorTree(Tweet tweet) {
         LineProcessor.StanCoreNLP(pipeline, tweet);
     }
 }

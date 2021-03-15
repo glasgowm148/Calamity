@@ -14,7 +14,7 @@ public class LookUpTable {
         BufferedReader reader = FileUtils.getFileReader(file);
         String line;
         try {
-            while( (line = reader.readLine()) != null ) {
+            while ((line = reader.readLine()) != null) {
                 dictionary.add(line.toLowerCase());
             }
         } catch (IOException e) {

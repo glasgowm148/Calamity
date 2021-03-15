@@ -8,6 +8,7 @@ public class LineMessage {
 
     /**
      * Set the data
+     *
      * @param data - a List of Strings
      */
     public LineMessage(List<String> data) {
@@ -16,6 +17,7 @@ public class LineMessage {
 
     /**
      * Getter
+     *
      * @return data
      */
     public List<String> getData() {

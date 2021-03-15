@@ -1,17 +1,13 @@
 package classifiers;
 
-import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import models.NamedEntityType;
-import utils.UnicodeConverter;
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.crf.CRFClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
+import models.NamedEntityType;
+import utils.UnicodeConverter;
+
+import java.util.*;
 
 public class NamedEntityClassifier {
 
@@ -24,7 +20,7 @@ public class NamedEntityClassifier {
                 new LinkedHashMap<>();
 
         text = UnicodeConverter.convert(text);
-        for ( List<CoreLabel> lcl : classifier.classify(text) ) {
+        for (List<CoreLabel> lcl : classifier.classify(text)) {
 
             for (CoreLabel cl : lcl) {
                 String eTag = cl.get(CoreAnnotations.AnswerAnnotation.class);
@@ -47,24 +43,6 @@ public class NamedEntityClassifier {
         return namedEntites;
     }
 
-    public Set<String> getLocations(String text) {
-        Set<String> locations = new LinkedHashSet<>();
-        text = UnicodeConverter.convert(text);
-        for ( List<CoreLabel> lcl : classifier.classify(text) ) {
-
-            for (CoreLabel cl : lcl) {
-                String eTag = cl.get(CoreAnnotations.AnswerAnnotation.class);
-                if ( eTag.equals("LOCATION") ) {
-                    String location = cl.toString();
-                    location = location.toLowerCase();
-                    locations.add(location);
-                }
-            }
-        }
-
-        return locations;
-    }
-
     public static void main(String[] args) {
         Map<String, NamedEntityType> ne =
                 NamedEntityClassifier.getNamedEntites("Obama is in Syria in microsoft");
@@ -74,6 +52,24 @@ public class NamedEntityClassifier {
             System.out.println(e + " = " + t);
         }
 
+    }
+
+    public Set<String> getLocations(String text) {
+        Set<String> locations = new LinkedHashSet<>();
+        text = UnicodeConverter.convert(text);
+        for (List<CoreLabel> lcl : classifier.classify(text)) {
+
+            for (CoreLabel cl : lcl) {
+                String eTag = cl.get(CoreAnnotations.AnswerAnnotation.class);
+                if (eTag.equals("LOCATION")) {
+                    String location = cl.toString();
+                    location = location.toLowerCase();
+                    locations.add(location);
+                }
+            }
+        }
+
+        return locations;
     }
 
 }

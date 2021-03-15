@@ -5,31 +5,30 @@ import java.util.List;
 
 
 public class FilePerEvent {
-	
-	private String fileName;
-	private List<TweetApi> tweets = new ArrayList<>();
 
-	public FilePerEvent() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    private String fileName;
+    private List<TweetApi> tweets = new ArrayList<>();
 
-	public String getfileName() {
-		return fileName;
-	}
+    public FilePerEvent() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
 
-	public void setFileName(String fileName) {
-		this.fileName = fileName;
-	}
+    public String getfileName() {
+        return fileName;
+    }
 
-	public List<TweetApi> getTweets() {
-		return tweets;
-	}
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
 
-	public void setTweets(List<TweetApi> tweets) {
-		this.tweets = tweets;
-	}
-	
-	
+    public List<TweetApi> getTweets() {
+        return tweets;
+    }
+
+    public void setTweets(List<TweetApi> tweets) {
+        this.tweets = tweets;
+    }
+
 
 }

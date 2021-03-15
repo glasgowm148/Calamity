@@ -1,15 +1,14 @@
 package utils;
 
 
+import com.twitter.Regex;
+import servicesImp.Twokenize;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import servicesImp.Twokenize;
-
-import com.twitter.Regex;
 
 
 /**
@@ -21,11 +20,12 @@ public class FeatureUtil {
     public static Pattern justbase = Pattern.compile("(?!www\\.|ww\\.|w\\.|@)[a-zA-Z0-9]+\\.[A-Za-z0-9\\.]+");
 
 //	Pattern URL = Pattern.compile(Twokenize.url);
+    static Pattern repeatchar = Pattern.compile("([\\w])\\1{1,}");
+    static Pattern repeatvowel = Pattern.compile("(a|e|i|o|u)\\1+");
 
-
-    public static ArrayList<String> normalize(List<String> toks){
+    public static ArrayList<String> normalize(List<String> toks) {
         ArrayList<String> normtoks = new ArrayList<String>(toks.size());
-        for (String s:toks){
+        for (String s : toks) {
             normtoks.add(FeatureUtil.normalize(s));
         }
         return normtoks;
@@ -37,21 +37,21 @@ public class FeatureUtil {
      */
     public static String normalize(String str) {
         str = str.toLowerCase();
-        if (URL.matcher(str).matches()){
+        if (URL.matcher(str).matches()) {
             String base = "";
             Matcher m = justbase.matcher(str);
             if (m.find())
-                base=m.group().toLowerCase();
-            return "<URL-"+base+">";
+                base = m.group().toLowerCase();
+            return "<URL-" + base + ">";
         }
         if (Regex.VALID_MENTION_OR_LIST.matcher(str).matches())
             return "<@MENTION>";
         return str;
     }
 
-    public static ArrayList<String> normalizecap(List<String> toks){
+    public static ArrayList<String> normalizecap(List<String> toks) {
         ArrayList<String> normtoks = new ArrayList<String>(toks.size());
-        for (String s:toks){
+        for (String s : toks) {
             normtoks.add(FeatureUtil.normalizecap(s));
         }
         return normtoks;
@@ -59,21 +59,17 @@ public class FeatureUtil {
 
     //same as normalize but retains capitalization
     public static String normalizecap(String str) {
-        if (URL.matcher(str).matches()){
+        if (URL.matcher(str).matches()) {
             String base = "";
             Matcher m = justbase.matcher(str);
             if (m.find())
-                base=m.group().toLowerCase();
-            return "<URL-"+base+">";
+                base = m.group().toLowerCase();
+            return "<URL-" + base + ">";
         }
         if (Regex.VALID_MENTION_OR_LIST.matcher(str).matches())
             return "<@MENTION>";
         return str;
     }
-
-
-    static Pattern repeatchar = Pattern.compile("([\\w])\\1{1,}");
-    static Pattern repeatvowel = Pattern.compile("(a|e|i|o|u)\\1+");
 
     public static ArrayList<String> fuzztoken(String tok, boolean apos) {
         ArrayList<String> fuzz = new ArrayList<String>();
@@ -82,7 +78,7 @@ public class FeatureUtil {
         fuzz.add(repeatchar.matcher(tok).replaceAll("$1"));//omggggggg->omg
         fuzz.add(repeatchar.matcher(tok).replaceAll("$1$1"));//omggggggg->omgg
         fuzz.add(repeatvowel.matcher(tok).replaceAll("$1"));//heeellloooo->helllo
-        if (apos && !(tok.startsWith("<URL"))){
+        if (apos && !(tok.startsWith("<URL"))) {
             fuzz.add(tok.replaceAll("\\p{Punct}", ""));//t-swift->tswift
             //maybe a bad idea (bello's->bello, re-enable->re, croplife's->'s)
             fuzz.addAll(Arrays.asList(tok.split("\\p{Punct}")));

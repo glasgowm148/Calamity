@@ -26,8 +26,7 @@ public class StanfordLemmatizer {
         this.pipeline = new StanfordCoreNLP(props);
     }
 
-    public List<String> lemmatize(String documentText)
-    {
+    public List<String> lemmatize(String documentText) {
         List<String> lemmas = new LinkedList<String>();
 
         // create an empty Annotation just with the given text
@@ -38,9 +37,9 @@ public class StanfordLemmatizer {
 
         // Iterate over all of the sentences found
         List<CoreMap> sentences = document.get(CoreAnnotations.SentencesAnnotation.class);
-        for(CoreMap sentence: sentences) {
+        for (CoreMap sentence : sentences) {
             // Iterate over all tokens in a sentence
-            for (CoreLabel token: sentence.get(CoreAnnotations.TokensAnnotation.class)) {
+            for (CoreLabel token : sentence.get(CoreAnnotations.TokensAnnotation.class)) {
                 // Retrieve and add the lemma for each word into the list of lemmas
                 lemmas.add(token.get(CoreAnnotations.LemmaAnnotation.class));
             }

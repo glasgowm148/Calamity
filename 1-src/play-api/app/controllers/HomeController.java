@@ -1,12 +1,12 @@
 package controllers;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 import play.mvc.Controller;
 import play.mvc.Result;
 import servicesImp.ServicesImp;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -16,47 +16,42 @@ import servicesImp.ServicesImp;
 
 public class HomeController extends Controller {
 
-	private final ServicesImp service = new ServicesImp();
+    // Start timer for tracking efficiency
+    static long startTime = System.currentTimeMillis();
+    private final ServicesImp service = new ServicesImp();
 
-	public static class StaticPath {
+    /* Entry point for /tweets */
+    public Result index() throws Exception {
 
-		public static List<String> tweets = new ArrayList<>();
-		public static String path = "data/test-tweets/smol";
-		public static String output_file = "new_with_offset";
-		public static String saveFile = "data/savedFile.json";
+        //call akka actor service
+        String result = service.akkaActorApi();
 
-	}
+        // save result in file
+        service.saveResultInFile(result);
 
-	// Start timer for tracking efficiency
-	static long startTime = System.currentTimeMillis();
+        return ok(result);
+    }
 
-	/* Entry point for /tweets */
-	public Result index() throws Exception {
+    /**
+     * @returns The saved file to /stored_tweets
+     * to avoid expensive calls on /tweets
+     */
+    public Result explore() {
+        // read the file that contains the result of / tweet
+        return ok(service.contentSavedFile(StaticPath.saveFile));
+    }
 
-		//call akka actor service
-		String result = service.akkaActorApi();
+    public Result tutorial() {
+        return ok("");
+    }
 
-		// save result in file
-		service.saveResultInFile(result);
+    public static class StaticPath {
 
-		return ok(result);
-	}
+        public static List<String> tweets = new ArrayList<>();
+        public static String path = "data/tweets/";
+        public static String output_file = "new_with_offset";
+        public static String saveFile = "data/savedFile.json";
 
-	/**
-	 *
-	 * @returns The saved file to /stored_tweets
-	 * to avoid expensive calls on /tweets
-	 */
-	public Result explore() {	
-		// read the file that contains the result of / tweet 
-		return ok(service.contentSavedFile(StaticPath.saveFile));	
-	}
-
-
-	
-
-	public Result tutorial() {
-		return ok("");
-	}
+    }
 
 }
