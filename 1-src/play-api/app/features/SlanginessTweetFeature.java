@@ -1,6 +1,6 @@
 package features;
 
-import Utils.LookUpTable;
+import utils.LookUpTable;
 import models.Tweet;
 
 import java.io.File;

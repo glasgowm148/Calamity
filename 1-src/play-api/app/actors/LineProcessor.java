@@ -12,7 +12,8 @@ import com.twitter.twittertext.Extractor;
 import com.twitter.twittertext.TwitterTextParseResults;
 import com.twitter.twittertext.TwitterTextParser;
 
-import com.github.chen0040.embeddings.GloVeModel;
+//import com.github.chen0040.embeddings.GloVeModel;
+import models.GloVeModel;
 
 //NLP
 import edu.stanford.nlp.ling.CoreAnnotations;
@@ -27,7 +28,7 @@ import models.Tweet;
 import models.LineProcessingResult;
 import features.NumericTweetFeatures;
 import messages.LineMessage;
-//import Utils.Twokenize;
+//import utils.Twokenize;
 
 
 

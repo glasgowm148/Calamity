@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 /**
  * Method convert(String str)

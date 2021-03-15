@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Set;
 
 import models.NamedEntityType;
-import Utils.UnicodeConverter;
+import utils.UnicodeConverter;
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.crf.CRFClassifier;
 import edu.stanford.nlp.ling.CoreAnnotations;
