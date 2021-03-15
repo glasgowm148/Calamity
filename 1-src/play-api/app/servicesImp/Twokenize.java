@@ -249,8 +249,8 @@ public class Twokenize {
             splitGoods.add(splitstr);
         }
 
-        //  Reinterpolate the 'good' and 'bad' Lists, ensuring that
-        //  additonal tokens from last good item get included
+        //  Re-interpolate the 'good' and 'bad' Lists, ensuring that
+        //  additional tokens from last good item get included
         List<String> zippedStr = new ArrayList<String>();
         int i;
         for (i = 0; i < bads.size(); i++) {
@@ -259,12 +259,14 @@ public class Twokenize {
         }
         zippedStr = addAllnonempty(zippedStr, splitGoods.get(i));
 
-        // BTO: our POS tagger wants "ur" and "you're" to both be one token.
-        // Uncomment to get "you 're"
-        /*ArrayList<String> splitStr = new ArrayList<String>(zippedStr.size());
-        for(String tok:zippedStr)
-        	splitStr.addAll(splitToken(tok));
-        zippedStr=splitStr;*/
+        /*
+         BTO: The POS tagger wants "ur" and "you're" to both be one token.
+         Uncomment to get "you 're"
+         ArrayList<String> splitStr = new ArrayList<String>(zippedStr.size());
+         for(String tok:zippedStr)
+         	splitStr.addAll(splitToken(tok));
+         zippedStr=splitStr;
+        */
 
         return zippedStr;
     }

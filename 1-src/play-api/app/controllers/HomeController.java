@@ -14,6 +14,7 @@ import java.util.List;
  * application's home page.
  */
 
+
 public class HomeController extends Controller {
 
     // Start timer for tracking efficiency

@@ -87,11 +87,10 @@ public class ServicesImp {
 
     /**
      * Get all the json files in the subdirectories
-     * Calls parseEvent()
-     * ERROR - Concurrent modification
-     *
-     * @return
+     * @calls parseEvent()
+     * @returns a resultString
      * @throws Exception
+     * ERROR - Concurrent modification
      */
     public String akkaActorApi() throws Exception {
 
@@ -165,8 +164,6 @@ public class ServicesImp {
         System.out.println("Time elapsed: " + elapsedMinutes + " minutes");
         System.out.println(elapsedSeconds + " seconds");
     }
-
-
 
     /**
      * @param result

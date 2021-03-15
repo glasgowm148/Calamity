@@ -28,16 +28,16 @@ public class FileAnalysisActor extends UntypedAbstractActor {
     private ActorRef analyticsSender = null;
 
     /**
-     * @param message - This actor can receive two different messages, FileAnalysisMessage or LineProcessingResult
-     *                any other type will be discarded using the unhandled method
+     * @param message -
+     * This actor can receive two different messages, FileAnalysisMessage or LineProcessingResult
+     * any other type will be discarded using the unhandled method
      * @throws Exception
      */
     @Override
     public void onReceive(Object message) throws Exception {
         if (message instanceof FileAnalysisMessage) {
 
-            List<String> lines = FileUtils.readLines(new File(
-                    ((FileAnalysisMessage) message).getFileName()));
+            List<String> lines = FileUtils.readLines(new File(((FileAnalysisMessage) message).getFileName()), "UTF-8");
 
             fileLineCount = lines.size();
             processedCount = 0;

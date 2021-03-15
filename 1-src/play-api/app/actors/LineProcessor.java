@@ -35,6 +35,11 @@ public class LineProcessor extends UntypedAbstractActor {
         StanCoreNLP(pipeline, tweet);
     }
 
+    /**
+     *
+     * @param pipeline
+     * @param tweet
+     */
     public static void StanCoreNLP(StanfordCoreNLP pipeline, Tweet tweet) {
         Annotation annotation = pipeline.process(tweet.getText());
         pipeline.annotate(annotation);
@@ -148,6 +153,11 @@ public class LineProcessor extends UntypedAbstractActor {
 
     }
 
+    /**
+     *
+     * @return
+     * @throws IOException
+     */
     private List<String> getFileContentAsList() throws IOException {
 
         File file = ResourceUtils.getFile(LineProcessor.resourceFilePath);
