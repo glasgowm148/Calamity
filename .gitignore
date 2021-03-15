@@ -10,9 +10,12 @@
 1-src/TweetMinner-master/.project
 1-src/lagom-java-sbt/.idea/*
 1-src/CoreNLP/*
+bkgit*
 1-src2/TREC*
 1-src/logs
+1-src/play-api/lib/glove*
 1-src/target
+0-data/output/txt/*
 1-src/.idea
 1-src/.idea_modules
 1-src/.classpath
