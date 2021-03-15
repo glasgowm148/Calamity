@@ -2,7 +2,7 @@
 FROM adoptopenjdk:8
 
 ENV SCALA_VERSION 2.12.1
-ENV SBT_VERSION 0.13.17
+ENV SBT_VERSION 1.4.9
 #ENV SCALA_DEB http://www.scala-lang.org/files/archive/scala-$SCALA_VERSION.deb
 
 #
@@ -39,4 +39,6 @@ RUN mkdir -p /usr/local/share/sbt-launcher-packaging && \
 # Run
 CMD ["sbt clean"]
 CMD ["sbt build"]
-CMD ["sbt", "run"]
+CMD ["sbt", "-mem 2018", "run"] 
+
+# -mem 1024 2048 4096

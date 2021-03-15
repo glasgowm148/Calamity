@@ -52,6 +52,7 @@ public class ServicesImp {
         /*
         Get all the json files in the subdirectories
 		Calls parseEvent()
+		ERROR - Concurrent modification
 		 */
         try (Stream<Path> paths = Files.walk(Paths.get(StaticPath.path),2)) {
 
