@@ -39,6 +39,9 @@ public class HomeController extends Controller {
         GloVeModel model = new GloVeModel();
         model.load("lib/glove", Integer.parseInt(System.getenv("NUMBER_OF_EMBEDDINGS")));
 
+        float[] d = model.encodeDocument("test sentence to encode");
+        System.out.println("test sentence");
+
         return ok(service.contentSavedFile(StaticPath.saveFile));
     }
 
