@@ -1,8 +1,0 @@
-0000000000000000000000000000000000000000 b3f17b6a929acc684761679fa2176b3225a586e8 Mark Glasgow <markglasgow@gmail.com> 1607365568 +0000	clone: from https://github.com/glasgowm148/HelpMe.git
-b3f17b6a929acc684761679fa2176b3225a586e8 99301eae0591489195b7aefd9ce0099d8a2d74ab Mark Glasgow <markglasgow@gmail.com> 1607468279 +0000	commit: Debugging line-read issue
-99301eae0591489195b7aefd9ce0099d8a2d74ab 4ed0c75c06ed36602148e43ddb3a508b0775974a Mark Glasgow <markglasgow@gmail.com> 1607474958 +0000	commit: JSON Read fixed
-4ed0c75c06ed36602148e43ddb3a508b0775974a 0e3f30051add6d2436a71c759e34ec5fc27dc66e Mark Glasgow <markglasgow@gmail.com> 1607504744 +0000	commit: commit before revert
-0e3f30051add6d2436a71c759e34ec5fc27dc66e 69cd27b9606d5e33cb91759bb9c5c09ca9ca76b3 Mark Glasgow <markglasgow@gmail.com> 1607513156 +0000	commit: json, features
-69cd27b9606d5e33cb91759bb9c5c09ca9ca76b3 ba4db252b8aedf22cf12d0d9152af28241049610 Mark Glasgow <markglasgow@gmail.com> 1607521216 +0000	commit: Tidying code for feature vec export
-ba4db252b8aedf22cf12d0d9152af28241049610 40a5a0e08514616f6a0cef0b7a0aef7d339e6d92 Mark Glasgow <markglasgow@gmail.com> 1607528560 +0000	commit: All tweets into run
-40a5a0e08514616f6a0cef0b7a0aef7d339e6d92 fb5aa1e110a79020e6ff2660535d7e755d5d67c1 Mark Glasgow <markglasgow@gmail.com> 1607539187 +0000	commit: multilabel prediction working
