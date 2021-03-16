@@ -45,7 +45,7 @@ public class FileAnalysisActor extends UntypedAbstractActor {
             // stores a reference to the original sender to send back the results later on
             analyticsSender = this.getSender();
 
-            List<List<String>> listsLines = Lists.partition(lines, 1000);
+            List<List<String>> listsLines = Lists.partition(lines, 10);
 
             // creates a new actor per each List<String>
 
