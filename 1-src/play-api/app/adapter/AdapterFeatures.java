@@ -30,7 +30,7 @@ public class AdapterFeatures {
                 tweet.setTweet_text(output.getText());
             }
             Features feature = new Features();
-            System.out.println(output.getFeatures()); // stringDoubleMap from Tweet.java
+            //System.out.println(output.getFeatures()); // stringDoubleMap from Tweet.java
             if (output.getFeatures() != null) {
                 if (output.getFeatures().get(Constants.NUMB_OF_URLS) != null) {
                     feature.setNumb_of_hashtags(output.getFeatures().get(Constants.NUMB_OF_URLS));

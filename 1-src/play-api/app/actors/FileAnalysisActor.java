@@ -42,12 +42,10 @@ public class FileAnalysisActor extends UntypedAbstractActor {
             fileLineCount = lines.size();
             processedCount = 0;
 
-            // stores a reference to the original sender to send back the results later on
+            // Stores a reference to the original sender to send back the results later on
             analyticsSender = this.getSender();
 
-            List<List<String>> listsLines = Lists.partition(lines, 10);
-
-            // creates a new actor per each List<String>
+            List<List<String>> listsLines = Lists.partition(lines, Integer.parseInt(System.getenv("NUMBER_OF_LINES")));
 
             for (List<String> l : listsLines) {
 
@@ -57,24 +55,24 @@ public class FileAnalysisActor extends UntypedAbstractActor {
                 // sends a message to the new actor with the line payload
                 lineProcessorActor.tell(new LineMessage(l), this.getSelf());
             }
-            /*
-             for (String line : lines) {
-            // creates a new actor per each line of the  file
-                Props props = Props.create(LineProcessor.class);
-                ActorRef lineProcessorActor = this.getContext().actorOf(props);
 
+            //  for (String line : lines) {
+            // creates a new actor per each line of the  file
+            //     Props props = Props.create(LineProcessor.class);
+            //     ActorRef lineProcessorActor = this.getContext().actorOf(props);
+            //
             // sends a message to the new actor with the line payload
-                 lineProcessorActor.tell(new LineMessage(Collections.singletonList(line)), this.getSelf());
-             }*/
+            //      lineProcessorActor.tell(new LineMessage(Collections.singletonList(line)), this.getSelf());
+            //  }
 
         } else if (message instanceof LineProcessingResult) {
 
-
-            hMap.add(((LineProcessingResult) message));
             // a result message is received after a LineProcessor actor has finished processing a line
+            hMap.add(((LineProcessingResult) message));
 
             // if the file has been processed entirely, send a termination message to the main actor
             processedCount = processedCount + ((LineProcessingResult) message).getTweets().size();
+
             if (fileLineCount == processedCount) {
                 // send done message
                 analyticsSender.tell(new FileProcessedMessage(hMap), ActorRef.noSender());

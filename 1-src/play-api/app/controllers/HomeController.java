@@ -1,30 +1,26 @@
 package controllers;
 
-
 import play.mvc.Controller;
 import play.mvc.Result;
 import servicesImp.ServicesImp;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 
 /**
- * This controller contains an action to handle HTTP requests to the
+ * This controller handles HTTP requests to the
  * application's home page.
  */
-
-
 public class HomeController extends Controller {
 
-    // Start timer for tracking efficiency
-    static long startTime = System.currentTimeMillis();
     private final ServicesImp service = new ServicesImp();
 
     /* Entry point for /tweets */
     public Result index() throws Exception {
 
-        /* call akka actor service */
+        // Instantiate a new Akka API service
         String result = service.akkaActorApi();
 
         service.saveResultInFile(result);
@@ -38,6 +34,7 @@ public class HomeController extends Controller {
      */
     public Result explore() {
         // read the file that contains the result of / tweet
+
         return ok(service.contentSavedFile(StaticPath.saveFile));
     }
 
@@ -48,7 +45,7 @@ public class HomeController extends Controller {
     public static class StaticPath {
 
         public static List<String> tweets = new ArrayList<>();
-        public static String path = "data/tweets/";
+        public static String path = System.getenv("TWEET_DIR");
         public static String saveFile = "data/savedFile.json";
 
     }

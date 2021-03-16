@@ -31,34 +31,14 @@ public class LineProcessor extends UntypedAbstractActor {
 
     private static final String resourceFilePath = "lib/conf/stopwords.txt";
 
-    private static void stanfordSentiment(StanfordCoreNLP pipeline, Tweet tweet) {
-        StanCoreNLP(pipeline, tweet);
-    }
-
-    /**
-     *
-     * @param pipeline
-     * @param tweet
-     */
-    public static void StanCoreNLP(StanfordCoreNLP pipeline, Tweet tweet) {
-        Annotation annotation = pipeline.process(tweet.getText());
-        pipeline.annotate(annotation);
-        for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
-            Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
-            tweet.setVectorTree(RNNCoreAnnotations.getNodeVector(tree)); //RNNCoreAnnotations.getPredictedClass(tree);
-        }
-
-        tweet.setSentiment(tweet.getVectorTree());
-    }
-
     @Override
     public void onReceive(Object message) throws Exception {
         if (message instanceof LineMessage) {
 
             // What data does each actor process?
-            // System.out.println("Line: " + ((LineMessage) message).getData());
+            //System.out.println("Line: " + ((LineMessage) message).getData());
             // Thread number and the actor name relationship
-            // System.out.println("Thread ["+Thread.currentThread().getId()+"] handling ["+ getSelf().toString()+"]");
+            System.out.println("Thread ["+Thread.currentThread().getId()+"] handling ["+ getSelf().toString()+"]");
 
             // get the message payload, this will be just one line from the  file
             List<String> messageData = ((LineMessage) message).getData();
@@ -70,7 +50,9 @@ public class LineProcessor extends UntypedAbstractActor {
             GloVeModel model = new GloVeModel();
 
             // Reads from the home directory
-            model.load("lib/glove", 50);
+            model.load("lib/glove", Integer.parseInt(System.getenv("NUMBER_OF_EMBEDDINGS")));
+
+
             Properties props = new Properties();
             props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment"); // ner, entitymentions
             props.setProperty("parse.binaryTrees", "true");
@@ -117,6 +99,8 @@ public class LineProcessor extends UntypedAbstractActor {
 
 
                 //ArrayList<String> defuzzedTokens = FeatureUtil.fuzztoken(String.valueOf(labels), true);
+                /* call akka actor service */
+
 
                 // GloVe Word Embeddings
                 float[] d = model.encodeDocument(tweet.getText());
@@ -134,7 +118,14 @@ public class LineProcessor extends UntypedAbstractActor {
                 //System.out.println(stringDoubleMap);
 
 
-                stanfordSentiment(pipeline, tweet);
+                Annotation annotation = pipeline.process(tweet.getText());
+                pipeline.annotate(annotation);
+                for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
+                    Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
+                    tweet.setVectorTree(RNNCoreAnnotations.getNodeVector(tree)); //RNNCoreAnnotations.getPredictedClass(tree);
+                }
+
+                tweet.setSentiment(tweet.getVectorTree());
 
                 tweetList.add(tweet);
 
