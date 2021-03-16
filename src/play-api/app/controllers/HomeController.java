@@ -1,5 +1,6 @@
 package controllers;
 
+import models.GloVeModel;
 import play.mvc.Controller;
 import play.mvc.Result;
 import services.ServicesImp;
@@ -33,6 +34,10 @@ public class HomeController extends Controller {
      */
     public Result explore() {
         // read the file that contains the result of / tweet
+        // Reads from the home directory
+
+        GloVeModel model = new GloVeModel();
+        model.load("lib/glove", Integer.parseInt(System.getenv("NUMBER_OF_EMBEDDINGS")));
 
         return ok(service.contentSavedFile(StaticPath.saveFile));
     }
