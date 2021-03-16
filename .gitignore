@@ -37,7 +37,7 @@ src/Snap.*
 src/seed/*
 src/1-java/target/streams/*
 data/gitignore/*
-
+data/gitignore/resources
 data/gitignore
 *.idea
 *.cache
