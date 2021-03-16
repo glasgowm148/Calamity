@@ -84,7 +84,7 @@ spec:
         - name: NUMBER_OF_LINES
           value: "1000" 
         - name: TWEET_DIR 
-          value: "data/tweets/"
+          value: "data/tweets/run"
       # this defines a volume called nfs-access which corresponds to your cluster
       # filespace. 
       serviceAccount: containerroot

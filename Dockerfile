@@ -14,7 +14,7 @@ COPY . /project/
 #
 #WORKDIR /project/1-src/feature-extractor
 #WORKDIR /project/1-src/1-java
-WORKDIR /project/1-src/play-api
+WORKDIR /project/src/play-api
 
 # install sbt
 RUN mkdir -p /usr/local/share/sbt-launcher-packaging && \
