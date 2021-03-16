@@ -1,0 +1,28 @@
+# dataset operations
+dataset:
+    split:
+        test_size: 0.2
+        shuffle: True
+        stratify: default
+        scale:
+            method: standard
+            target: inputs
+
+model:
+    type: regression
+    algorithm: DecisionTree
+        # DecisionTree - works
+        # RandomForest
+target:
+    - postPriority
+    - cat1
+    - cat2
+    - cat3
+    - cat4
+    - cat5
+    - cat6
+    - cat7
+    - cat8
+    - cat9
+    - cat10
+    - num

@@ -1,0 +1,178 @@
+<top>
+<num>TRECIS-CTIT-H-Test-035</num>
+<dataset>athensEarthquake2019</dataset>
+<title>2019 Greece Earthquake </title>
+<type>earthquake</type>
+<url>http://www.ansamed.info/ansamed/en/news/sections/generalnews/2019/07/19/strong-earthquake-shakes-athensno-serious-injuries-reported_a536a32f-dadb-4fd5-86f1-62e43b1c5bc6.html</url>
+<narr> A strong earthquake on Friday shook
+Athens and the entire Attica region. The tremor was estimated to measure
+5.1 on the Richter scale after an initial estimate of 5.3 by the US
+Geological Survey. The epicenter was 23 km north-west of the capital, 12
+km deep, considered superficial, therefore felt more strongly.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-036</num>
+<dataset>baltimoreFloods2019</dataset>
+<title>2019 Baltimore Floods</title>
+<type>flood</type>
+<url>https://www.washingtonpost.com/weather/2019/08/07/how-stalled-storm-over-baltimore-unleashed-flooding-rain-mph-winds/</url>
+<narr> A severe thunderstorm parked itself over the Baltimore
+area early Tuesday evening, unloading up to a half-foot of rain in a
+punishing two-hour torrent. It was an exceptionally intense and rare deluge
+with a likelihood of less than a half-percent in any given year.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-037</num>
+<dataset>brooklynBlockPartyShooting2019</dataset>
+<title>Brooklyn block party shooting</title>
+<type>shooting</type>
+<url>https://www.nbcnews.com/news/us-news/multiple-people-struck-brooklyn-neighborhood-shooting-n1035421</url>
+<narr> One person died and 11 others were wounded in a shooting near a Brooklyn playground on Saturday night, police said.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-038</num>
+<dataset>daytonOhioShooting2019</dataset>
+<title>2019 Dayton Ohio shooting</title>
+<type>shooting</type>
+<url>https://en.wikipedia.org/wiki/2019_Dayton_shooting</url>
+<narr> On August 4, 2019, Connor Stephen Betts, 24, fatally shot nine people and
+wounded 17 others using an AR-15 style pistol near the entrance of the
+Ned Peppers Bar in Dayton, Ohio. Betts was fatally shot by responding
+police officers 32 seconds after his first shot. An additional ten persons
+were injured by other causes, bringing the total number of wounded to 27.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-039</num>
+<dataset>elPasoWalmartShooting2019</dataset>
+<title>2019 El Paso Walmart shooting</title>
+<type>shooting</type>
+<url>https://en.wikipedia.org/wiki/2019_El_Paso_shooting</url>
+<narr> On August 3, 2019, a mass shooting occurred at a Walmart store in El
+Paso, Texas, United States. A gunman shot and killed 22 people[n 1] and
+injured 24 others. The Federal Bureau of Investigation is investigating
+the shooting as an act of domestic terrorism and a possible hate crime.
+ The shooting has been described as the deadliest attack on Latinos in
+modern American history.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-040</num>
+<dataset>gilroygarlicShooting2019</dataset>
+<title>2019 Gilroy Garlic Festival shooting</title>
+<type>shooting</type>
+<url>https://en.wikipedia.org/wiki/Gilroy_Garlic_Festival_shooting</url>
+<narr> A mass shooting occurred at the Gilroy Garlic Festival in Gilroy, California, on July 28, 2019. The gunman killed himself and three others, and wounded 17 people.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-041</num>
+<dataset>hurricaneBarry2019</dataset>
+<title>2019 Hurricane Barry</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/Hurricane_Barry_(2019)</url>
+<narr> Hurricane Barry was an unusually asymmetrical Category 1 hurricane that made landfall in Louisiana in July 2019. Barry originated as a mesoscale convective vortex 
+over the midwestern United States on July 2. The system eventually emerged into the Gulf of Mexico on July 10, whereupon the National Hurricane Center (NHC) designated 
+it as a potential tropical cyclone later. Early on July 11, the system developed into a tropical depression and later tropical Storm Barry, the second named storm of 
+the annual hurricane season. On July 13, Barry attained maximum 1-minute sustained winds of 75 mph (120 km/h), with a minimum central pressure of 993 millibars (29.3 inHg), 
+becoming the first hurricane of the season. Later that day, Barry made landfall on Marsh Island and Intracoastal City, Louisiana both times as a Category 1 hurricane, 
+subsequently weakening to tropical storm status. Late on July 15, Barry degenerated into a remnant low over northern Arkansas, before dissipating on July 19.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-042</num>
+<dataset>indonesiaEarthquake2019</dataset>
+<title>2019 Indonesia Earthquake</title>
+<type>earthquake</type>
+<url>https://en.wikipedia.org/wiki/2019_Sunda_Strait_earthquake</url>
+<narr> The 2019 Sunda Strait earthquake occurred on the night of 2 August 2019, when a magnitude 6.9 earthquake rattled Sunda Strait at a moderate depth of 52.8 kilometres. 
+The epicentre was located 214 km from Bandar Lampung, the capital of Lampung and 147 km west of Sumur, Pandeglang Regency. The earthquake struck with a maximum intensity of 
+V (Moderate). The earthquake prompted a tsunami warning in the area, with authorities urging coastal residents to immediately evacuate to higher grounds.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-043</num>
+<dataset>keralaFloods2019</dataset>
+<title>2019 Kerala, India floods</title>
+<type>flood</type>
+<url>https://en.wikipedia.org/wiki/2019_Kerala_floods</url>
+<narr> On 8 August 2019, due to heavy rainfall in the Monsoon season, severe flood affected Kerala.[2] As a security measure in the prevailing situation of heavy rains, 
+the Government of Kerala had issued Red alert in the 9 districts in Northern and Central Kerala, orange alert in 3 districts of Central Kerala, and yellow alert in the 2 
+districts of southern Kerala.[3] Thousands of people have been evacuated to safer places and relief camps.[1][4] A total of 101 people have died due to rain-related 
+incidents since 14 August 2019, These camps now host more than 2 lakh people from various parts of the state.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-044</num>
+<dataset>myanmarFloods2019</dataset>
+<title>2019 Myanmar floods</title>
+<type>flood</type>
+<url>https://reliefweb.int/disaster/fl-2019-000081-mmr</url>
+<narr> Floodwaters are receding in many areas across Myanmar, with the number of people sheltering in temporary evacuation sites now below 100,000 people from a peak 
+of more than 110,000 people on 13 August. Mon State is severely affected, with huge tracts of farmland and entire villages submerged as water levels have not yet subsided. 
+Over the next few days, more heavy rainfall is predicted for Mon State, Kayin State, and Taninthayi Region, each one already heavily affected
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-045</num>
+<dataset>papuaNewGuineaEarthquake</dataset>
+<title>2019 Papua New Guinea earthquake</title>
+<type>earthquake</type>
+<url>https://www.aljazeera.com/news/2019/05/png-assesses-damage-magnitude-75-earthquake-190515015939353.html</url>
+<narr> Authorities in Papua New Guinea have dispatched teams in the Pacific island nation's New Britain province to monitor remote communities for casualties and assess 
+the extent of damage after a powerful, shallow earthquake rattled coastal towns. The magnitude 7.5 offshore tremor struck around 50km east of the main city of Rabaul at 
+a depth of around 10km just before 11pm on Tuesday (13:00 GMT), according to the United States Geological Survey
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-046</num>
+<dataset>siberianWildfires2019</dataset>
+<title>2019 Siberian Wildfires</title>
+<type>wildfire</type>
+<url>https://en.wikipedia.org/wiki/2019_Siberia_wildfires</url>
+<narr> The 2019 Siberian wildfires began in July 2019 in poorly accessible areas of northern Krasnoyarsk Krai, Sakha Republic and Zabaykalsky Krai, all in Siberia, Russia. 
+By the end of the month the size of the fires reached 2.6 million hectares. As of 30 July there have been no reported deaths or injuries due to the fires.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-047</num>
+<dataset>typhoonKrosa2019</dataset>
+<title>2019 Typhoon Krosa</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/2019_Pacific_typhoon_season#Typhoon_Krosa</url>
+<narr> A tropical depression formed near Mariana Islands on August 5. By August 6, it intensified into a tropical storm, and was named Krosa by the JMA. Tropical Storm Krosa 
+soon became a typhoon, and rapidly intensified to become a category 3-equivalent typhoon on August 8. Upwelling of cooler waters induced weakening thereafter; by August 13, 
+Krosa weakened below typhoon intensity. Krosa continued moving, albeit slowly, towards Japan with little change in intensity. On August 11 Krosa expanded into 950-miles (1,600 km) 
+in diameter giant storm. Moderately conducive conditions were unable to aid Krosa in strengthening, and it stayed the same intensity before landfall in Japan. On August 14, 
+Krosa emerged in the Sea of Japan and a few days later on August 16 Krosa transitioned into an extratropical low.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-048</num>
+<dataset>typhoonLekima2019</dataset>
+<title>2019 Typhoon Lekima</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/Typhoon_Lekima_(2019))</url>
+<narr> Typhoon Lekima, known in the Philippines as Typhoon Hanna, was the second costliest typhoon in Chinese history behind Typhoon Fitow of 2013.[1] The ninth named storm of 
+the 2019 Pacific typhoon season, Lekima originated from a tropical depression that formed east of the Philippines on July 30. It gradually organized, became a tropical storm, 
+and was named on August 4. Lekima intensified under favourable environmental conditions and peaked as a Category 4–equivalent super typhoon. However, an eyewall replacement 
+cycle caused the typhoon to weaken before it made landfall in Zhejiang late on August 9, as a Category 2–equivalent typhoon. Lekima weakened subsequently while moving across 
+Eastern China, and made its second landfall in Shandong on August 11.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-049</num>
+<dataset>whaleyBridgeDamCollapse2019</dataset>
+<title>2019 Whaley Bridge Dam Collapse</title>
+<type>flood</type>
+<url>https://en.wikipedia.org/wiki/Toddbrook_Reservoir</url>
+<narr> On 1 August 2019, a major incident was declared and 1,500 residents were evacuated from parts of Whaley Bridge, Furness Vale and New Mills after concrete slabs on the 
+1969 overflow spillway were partially dislodged by high volumes of water following several days of heavy rain.[13][14][15] The Environment Agency issued a 'danger to life' 
+warning due to the possibility of the dam collapsing. High-volume pumps were deployed to take water from the reservoir to prevent it from overflowing and reduce pressure on 
+the dam. An RAF Chinook helicopter dropped 400 tonnes of aggregate into the damaged area and specialist contractors added concrete grouting between the bags of ballast 
+to bind them together to support the spillway.
+</narr>
+</top>

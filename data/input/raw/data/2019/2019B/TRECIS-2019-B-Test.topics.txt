@@ -1,0 +1,70 @@
+<top>
+<num>TRECIS-CTIT-H-Test-029</num>
+<dataset>albertaWildfires2019</dataset>
+<title>2019 Alberta Wildfires</title>
+<type>wildfire</type>
+<url>https://en.wikipedia.org/wiki/2019_Alberta_wildfires</url>
+<narr> The 2019 Alberta wildfires has been described by NASA as part of an extreme fire
+season in the Canadian province. From March 1 to June 24, there were a total of 803,393.32 
+hectares (1,985,228 acres) burned, which is over 3.5 times more land burned that in the 
+five-year average amount of hectares burned. The user is a response officer in the regional 
+crisis response centre.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-030</num>
+<dataset>cycloneKenneth2019</dataset>
+<title>2019 Cyclone Kenneth</title>
+<type>typhoon</type>
+<url>https://en.wikipedia.org/wiki/Cyclone_Kenneth</url>
+<narr> Intense Tropical Cyclone Kenneth was the strongest tropical cyclone to make landfall in 
+Mozambique since modern records began.[1] The cyclone also caused significant damage in the 
+Comoro Islands and Tanzania. The user is a response officer in the command and control center 
+responsible for impact to the region.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-031</num>
+<dataset>philippinesEarthquake2019</dataset>
+<title>2019 Luzon earthquake</title>
+<type>earthquake</type>
+<url>https://en.wikipedia.org/wiki/2019_Luzon_earthquake</url>
+<narr> On April 22, 2019, a 6.1 magnitude earthquake [5] struck the island of Luzon in the Philippines, 
+leaving at least 18 dead, 3 missing and injuring at least 256 others. The user is a response officer in 
+the command and control center responsible for responding to the earthquake as it unfolds.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-032</num>
+<dataset>coloradoStemShooting2019</dataset>
+<title>2019 STEM School Highlands Ranch shooting</title>
+<type>shooting</type>
+<url>https://en.wikipedia.org/wiki/STEM_School_Highlands_Ranch_shooting</url>
+<narr> On May 7, 2019, a school shooting occurred at STEM School Highlands Ranch, a charter school located 
+in Douglas County, Colorado, United States, in the Denver suburb of Highlands Ranch. One student was killed 
+and eight others were injured. The user is in charge of the local police response effort.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-033</num>
+<dataset>southAfricaFloods2019</dataset>
+<title>2019 Durban Easter floods</title>
+<type>flood</type>
+<url>https://en.wikipedia.org/wiki/2019_Durban_Easter_floods</url>
+<narr> During the 2019 Easter weekend, the coastal city of Durban, South Africa, experienced severe flooding, 
+caused by torrential rain brought on by a steep upper air through, which deepened into low pressure in the 
+upper levels of the atmosphere, and impacted the city and its surrounding areas starting 18 April 2019. The
+user is part of the local civil protection agency responsible for public safety.
+</narr>
+</top>
+<top>
+<num>TRECIS-CTIT-H-Test-034</num>
+<dataset>sandiegoSynagogueShooting2019</dataset>
+<title>Poway synagogue shooting</title>
+<type>shooting</type>
+<url>https://en.wikipedia.org/wiki/Poway_synagogue_shooting</url>
+<narr> The Poway synagogue shooting occurred on April 27, 2019, when a gunman armed with an AR-15 style rifle 
+fired shots inside the Chabad of Poway synagogue in Poway, California,[3][4] a city approximately 20 miles 
+(32 km) north of San Diego. The user is in charge of the local police response effort.
+</narr>
+</top>

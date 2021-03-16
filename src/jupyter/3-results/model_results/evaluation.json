@@ -1,0 +1,7 @@
+{
+    "mean_squared_error": 1.3232421874999998e-05,
+    "mean_absolute_error": 0.001186523437499996,
+    "mean_squared_log_error": 8.272728222617192e-06,
+    "median_absolute_error": 0.0,
+    "r2_score": 0.9945324795586642
+}

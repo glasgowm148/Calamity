@@ -1,0 +1,4017 @@
+{"annotator": {
+  "eventsAnnotated" : [ {
+    "identifier" : "hurricaneFlorence2018A",
+    "name" : "2018 Florence Hurricane A(500)",
+    "description" : "Hurricane Florence was a powerful and long-lived Cape Verde hurricane that caused catastrophic damage in the Carolinas in September 2018, primarily as a result of freshwater flooding. <a href='https://en.wikipedia.org/wiki/Hurricane_Florence' target='_blank'>Wikipedia Page<a>",
+    "type" : "Unknown",
+    "imageURL" : "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Florence_2018-09-10_Suomi_NPP.jpg/1024px-Florence_2018-09-10_Suomi_NPP.jpg",
+    "annotationTableName" : "2019A-assr5-hurricaneFlorence2018A"
+  } ],
+  "id" : "2019A-assr5"
+},
+"events": [
+{"eventid": "hurricaneFlorence2018A",
+"tweets": [
+{
+  "postID" : "1040648248753573888",
+  "timestamp" : "2 Apr 2019 16:10:32 GMT",
+  "categories" : [ "Location", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Riding out the hurricane in charlotte this weekend. I?m terrified of tornados but I?m just saying if there is one that comes for me and I don?t wake up in a super colorful 4th dimension with some sparkly slippers on my feet I?ll be pissed."
+},
+{
+  "postID" : "1041889750330875904",
+  "timestamp" : "2 Apr 2019 16:12:22 GMT",
+  "categories" : [ "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Since Thursday we have had hurricane, tornados, flash flooding, roads destroyed, and dams collapsing. But Sandhills said naw fam school resumes  on Wednesday.  Foh"
+},
+{
+  "postID" : "1041482878926970881",
+  "timestamp" : "2 Apr 2019 16:13:52 GMT",
+  "categories" : [ "GoodsServices", "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Someone always has it worse. Volunteer if you?re able??\nBulletin- Nursing needed in North Carolina. \n#nursesoftheworldunite #hurricaneflorence #nurse #Charlotte #Salisbury? https://t.co/wG0WUIKJsy"
+},
+{
+  "postID" : "1041353502654640129",
+  "timestamp" : "2 Apr 2019 16:16:19 GMT",
+  "categories" : [ "GoodsServices", "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Raleigh friends and family, Lynwood Brewing Concern is accepting donations to help our ENC neighbors. Please consider dropping off water, can goods, diapers, etc. Anything helps! #carolinastrong"
+},
+{
+  "postID" : "1040532668293820417",
+  "timestamp" : "2 Apr 2019 16:17:26 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "We are in the western eyewall right now !! Hurricane #Florence at Wrightsville Beach, North Carolina. https://t.co/Ocx3NrAv5j"
+},
+{
+  "postID" : "1040239434581585921",
+  "timestamp" : "2 Apr 2019 16:18:35 GMT",
+  "categories" : [ "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "For y?all who don?t know, I reside in North Carolina! Pray for us as we Brace through #HurricanceFlorence"
+},
+{
+  "postID" : "1041012035251785729",
+  "timestamp" : "2 Apr 2019 16:19:18 GMT",
+  "categories" : [ "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The checkpoint at Folly Beach was lifted at 1:00 PM today #FollyBeach #update #HurricaneFlorence https://t.co/y5dCQTs3Pa"
+},
+{
+  "postID" : "1040081285564321793",
+  "timestamp" : "2 Apr 2019 16:19:56 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Not worth evacuating now when Florence went down to Category 2 #HurricaneFlorence"
+},
+{
+  "postID" : "1040053560107524096",
+  "timestamp" : "2 Apr 2019 16:21:31 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Why can't we get those airplanes that fight forest fires which dropped water onto the fire in the forest? We can load the planes with ice cold water or water with ice cubes whatever and drop that into the Gulf of Mexico to cool off the water so the Hurricanes can't get strength."
+},
+{
+  "postID" : "1041665131825049600",
+  "timestamp" : "2 Apr 2019 16:23:38 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : ".@WakeGOV is closing today the emergency shelters at @Garner_HS, @KnightdaleHS & @SRMHSpride. Coastal evacuees transported to locations outside Wake w/ county saying it?s helping few local residents find housing. This means no @WCPSS schools are shelters now. #hurricaneFlorence"
+},
+{
+  "postID" : "1040223570721427456",
+  "timestamp" : "2 Apr 2019 16:24:13 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The scene at the waterfront park in New Bern, North Carolina as winds and light rain pick up ahead of #Florence https://t.co/fzF2O3MQwo"
+},
+{
+  "postID" : "1039973610679623680",
+  "timestamp" : "2 Apr 2019 16:25:54 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Conway leaders are meeting in the city's emergency operations center to implement a curfew starting at 7 tomorrow night and get a briefing on what the city is doing to prepare for #HurricaneFlorence. @WBTWNews13 https://t.co/WnsQUaWeOB"
+},
+{
+  "postID" : "1039949646813126656",
+  "timestamp" : "2 Apr 2019 16:26:31 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I am honestly so heartbroken thinking about all the animals in this hurricane. God please protect them ??"
+},
+{
+  "postID" : "1040286568215392257",
+  "timestamp" : "2 Apr 2019 16:27:11 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Anybody release a sick WOD for hurricane Florence? #crossfit #HurricaneFlorence2018"
+},
+{
+  "postID" : "1040263469583482880",
+  "timestamp" : "2 Apr 2019 16:27:34 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Because Beauty World doesn?t close for hurricanes https://t.co/lWLmYUde5k"
+},
+{
+  "postID" : "1039925046544871425",
+  "timestamp" : "2 Apr 2019 16:27:45 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I?m not even gonna lie to ya, this hurricane about to fuck us up"
+},
+{
+  "postID" : "1039931156685312000",
+  "timestamp" : "2 Apr 2019 16:28:46 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Team Wendover is in full force helping our community! Before and After pictures of generators. They are helping in preparation of #HurricaneFlorence https://t.co/9toay67Wiv"
+},
+{
+  "postID" : "1042042240942661633",
+  "timestamp" : "2 Apr 2019 16:29:50 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "NC Health News Keeping Up With Hurricane #Florence https://t.co/m5A1eMm4xH"
+},
+{
+  "postID" : "1040994788936478720",
+  "timestamp" : "2 Apr 2019 16:30:53 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Lots of damage through the Wrightsville Beach area. Just went through downtown Wilmington and those folks took a major hit. #HurricaneFlorerence #cltnews https://t.co/MznoGFsi1T"
+},
+{
+  "postID" : "1040601391599890433",
+  "timestamp" : "2 Apr 2019 16:31:58 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"Alexa, what is natural selection?\"\n\nWhen authorities warn you to evacuate for an entire week because a very dangerous hurricane is coming but instead, you refuse to leave and now you're trapped on a roof surrounded by water begging for someone to rescue you."
+},
+{
+  "postID" : "1040062572899323904",
+  "timestamp" : "2 Apr 2019 16:32:35 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Live from the Food Lion w/ @aljones this afternoon...doors closed, parking lot empty, metal sheets over the glass windows in front #HurricaneFlorence #1010WINS https://t.co/AQdkHN6uQp"
+},
+{
+  "postID" : "1039997059611414528",
+  "timestamp" : "2 Apr 2019 16:33:08 GMT",
+  "categories" : [ "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "As #HurricaneFlorence approaches, please take care of your pets! Prepare an emergency plan when this or any significant storm strikes. DON'T leave your pets behind! https://t.co/v3UGodta1o\n#triangleNC #Raleigh #animalsafety #NorthCarolina #sandyknowshomes #Florence #petsarefamily https://t.co/T3WelxGlXV"
+},
+{
+  "postID" : "1040652316167340037",
+  "timestamp" : "2 Apr 2019 16:33:30 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "You can?t really compare the two in my opinion but Snowfall is basically about this boy named Frank flooding the streets with crack rock and some more stuff but it?s good asf"
+},
+{
+  "postID" : "1040266057624301569",
+  "timestamp" : "2 Apr 2019 16:33:39 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "It is so weird to see people in Florida out having a leisurely day while the Carolinas are hurricane crazy. When did those roles flip?!"
+},
+{
+  "postID" : "1040618794761240577",
+  "timestamp" : "2 Apr 2019 16:34:02 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Journalists reporting live from Hurricane locations are the real rockstars. The rest of us are amateurs. #HurricaneFlorence2018"
+},
+{
+  "postID" : "1040992339915939840",
+  "timestamp" : "2 Apr 2019 16:36:11 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "CJ?s Food Store in #JacksonvilleNC IS OPEN! 1010 Gum Branch Road. Gas and food! #TropicalStormFlorence #Florence2018 #FlorenceNC #WhatsOpenInJacksonville #OpenJacksonvilleNC #NorthCarolina"
+},
+{
+  "postID" : "1040013710595698688",
+  "timestamp" : "2 Apr 2019 16:36:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@JustinTrudeau  Thank you for sending power utility trucks to help North Carolina ?? Canada is our friend. Despite what @realDonaldTrump says"
+},
+{
+  "postID" : "1040246009165754368",
+  "timestamp" : "2 Apr 2019 16:37:34 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "News: EVERYONE ON THE COAST EVACUATE FLORENCE IS GOING TO DESTORY EVERYTHING \nMeanwhile in Wilmington: #HurricaneFlorence2018 https://t.co/KhYrf8XZi6"
+},
+{
+  "postID" : "1040469992549109760",
+  "timestamp" : "2 Apr 2019 16:37:57 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Also if anyone left their pet during this hurricane just know there is a room for you on the third floor of Hell right next to the room where animal abusers are. Just thought you could use some directions after karma comes for you."
+},
+{
+  "postID" : "1040718754412482560",
+  "timestamp" : "2 Apr 2019 16:38:07 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earth. Wind. Fire. Water. Water is Undefeated ?#HurricaneFlorerence https://t.co/WtLC36hve9"
+},
+{
+  "postID" : "1042233538215661568",
+  "timestamp" : "2 Apr 2019 16:39:50 GMT",
+  "categories" : [ "MultimediaShare", "ServiceAvailable" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : ".@PlanetFitness is opening 39 locations in #NorthCarolina and #SouthCarolina for anyone impacted by Hurricane Florence free of charge. @FOX46News ??? https://t.co/i3kjUyOcyY"
+},
+{
+  "postID" : "1039993916668502024",
+  "timestamp" : "2 Apr 2019 16:40:12 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Without the truck driver not a one evacuee trying to buy fuel or supplies would have any. #ThankATrucker #HurricaneFlorence"
+},
+{
+  "postID" : "1040700722927431681",
+  "timestamp" : "2 Apr 2019 16:41:32 GMT",
+  "categories" : [ "Location", "MultimediaShare", "ServiceAvailable", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "WOW - The @KatiePechon to the rescue - so inspiring to see heroes from around the country drive in their boats to save flood victims here in #wilmingtonnc #hurricaneflorence @ Wilmington,? https://t.co/DJrwFaOT7K"
+},
+{
+  "postID" : "1040511152172744704",
+  "timestamp" : "2 Apr 2019 16:42:38 GMT",
+  "categories" : [ "Location", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "It's going to be a quiet day at @RDUAirport. At least half the flights scheduled for today have been canceled because of Hurricane #Florence. Watch our continuous coverage on @WRAL here: https://t.co/uSnnbhaKnq #wral https://t.co/9RQQfpSm3t"
+},
+{
+  "postID" : "1039997870265561088",
+  "timestamp" : "2 Apr 2019 16:43:01 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Charlotte is gearing up for the hurricane #CLT! https://t.co/ekOcMVQiYO"
+},
+{
+  "postID" : "1039929713022652416",
+  "timestamp" : "2 Apr 2019 16:43:27 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hurricane Hugo- Storm of a lifetime. Hurricane Fran- Storm of a lifetime. Hurricane Floyd- Storm of a lifetime. Hurricane Matthew- Storm of a lifetime. Hurricane Florence- Storm of a lifetime. I?m sensing a pattern. Maybe they mean the lifetime of a moth."
+},
+{
+  "postID" : "1041727730151305218",
+  "timestamp" : "2 Apr 2019 16:43:44 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@JourdanRodrigue Sure hope so Coach Wash, the Carolinas are depending on it????"
+},
+{
+  "postID" : "1041002232106364928",
+  "timestamp" : "2 Apr 2019 16:45:27 GMT",
+  "categories" : [ "Weather", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Update: everything is fine by us as of right now.  Right now we're having some light showers in the area and low winds. The rain and winds will start to intensify this evening into tomorrow. Hurricane Florence has already took two lives."
+},
+{
+  "postID" : "1040752496959016961",
+  "timestamp" : "2 Apr 2019 16:45:38 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The person who lives above me is making more of a ruckus than the hurricane is outside"
+},
+{
+  "postID" : "1041768635411451911",
+  "timestamp" : "2 Apr 2019 16:46:40 GMT",
+  "categories" : [ "Location", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Flooding along the Neuse River following Hurricane Florence.  #hurricaneflorence #florence #tropicalstormflorence #neuseriver #flooding #wet #carolinastrong #nc #hurricaneflooding? https://t.co/FbtgNOAksM"
+},
+{
+  "postID" : "1040331928300339205",
+  "timestamp" : "2 Apr 2019 16:47:45 GMT",
+  "categories" : [ "Location", "MultimediaShare", "ServiceAvailable", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Utility workers from Florida are staging at Bojangles Coliseum as #HurricaneFlorence closes in on the Carolinas. Head over to WCCB?s website for full coverage on #Florence. #cltnews? https://t.co/EoJz0f4wYU"
+},
+{
+  "postID" : "1040019645862998018",
+  "timestamp" : "2 Apr 2019 16:48:44 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Carolina Weather - Current Local Conditions @ 7:29 PM. #Clayton #NC #Wc https://t.co/zLsuhMgUPo"
+},
+{
+  "postID" : "1041856105125736449",
+  "timestamp" : "2 Apr 2019 16:49:17 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@Uber Is your service down in Greenville North Carolina because it?s telling me Uber is unavailable in my area. Has hurricane Florence affected service!"
+},
+{
+  "postID" : "1039873063201001473",
+  "timestamp" : "2 Apr 2019 16:49:27 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I go from going to college in tornado alley to going to college in hurricane state . I guess you can say I pick college based on natural disaster potential"
+},
+{
+  "postID" : "1040709455241986048",
+  "timestamp" : "2 Apr 2019 16:51:16 GMT",
+  "categories" : [ "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Thanks @ATT  for the extra data! It?s much needed going into the horrible aftermath of this hurricane. To check if your zip code is included go to https://t.co/L8uyFEOQWW https://t.co/fQO2aUr7WR"
+},
+{
+  "postID" : "1039981954152771585",
+  "timestamp" : "2 Apr 2019 16:51:41 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Just drove past a man doing yard work a day before a catastrophic hurricane ??? https://t.co/YTMvrNdDSX"
+},
+{
+  "postID" : "1040291797698785281",
+  "timestamp" : "2 Apr 2019 16:52:19 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@PaDaGreat In Greensboro?...I think people may be overreacting in the Piedmont... It was already supposed to made landfall by now...\n#HurricaneFlorence be playing games https://t.co/XjJcrLPure"
+},
+{
+  "postID" : "1040047234560217088",
+  "timestamp" : "2 Apr 2019 16:52:49 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "With the hurricane shifting, I still would like to express my immense gratitude towards @ECUProfessor for keeping us updated and encouraging us to prepare for the worst and hope for the best. If not for him and had the storm not shifted, I would have only had 1/2 lb deli meat"
+},
+{
+  "postID" : "1040185333181280256",
+  "timestamp" : "2 Apr 2019 16:53:07 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@CharlieDaniels Offering up prayers for all the people in the path of this monstrous hurricane"
+},
+{
+  "postID" : "1040282173125865472",
+  "timestamp" : "2 Apr 2019 16:53:56 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "LIVE at 2:30p South Carolina Gov. Henry McMaster media briefing on Hurricane #Florence and its expected impact on S.C. \nWATCH on @SCETV stations or here: https://t.co/M2KnhEzXgP\nLISTEN on @SCPublicRadio stations \nMORE INFO https://t.co/oBnOZnaiVI \n #scwx #scnews https://t.co/rAEAX0wMls"
+},
+{
+  "postID" : "1040632894509727746",
+  "timestamp" : "2 Apr 2019 16:55:10 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "According to the #NCReady app- the current level of the Neuse River in Smithfield is at 104.6 feet. #HurricaneFlorence #CBS17 https://t.co/9JWS4P0jdA"
+},
+{
+  "postID" : "1040326575806394368",
+  "timestamp" : "2 Apr 2019 16:55:28 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Sandbags stacked, deck furniture secured, liquor cabinet stocked...and now we wait. #HurricaneFlorence2018"
+},
+{
+  "postID" : "1039959385668235264",
+  "timestamp" : "2 Apr 2019 16:56:00 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Sharing tips with CN2 News on how to prep your pool for Hurricane Florence! \n#thevininggroup \n#eXprealty\n#addyandbray @ The Vining Group at EXP Realty https://t.co/wSJlAECsvk"
+},
+{
+  "postID" : "1040918834046267392",
+  "timestamp" : "2 Apr 2019 16:57:06 GMT",
+  "categories" : [ "MultimediaShare", "ServiceAvailable", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#HurricaneFlorence threat draws out-of-state responders to NC https://t.co/XAJcnE1QtV"
+},
+{
+  "postID" : "1040661613806804992",
+  "timestamp" : "2 Apr 2019 16:57:31 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Our ladies at LUTZE pulling through #FlorenceHurricane2018! Stay safe everyone! https://t.co/uMzp74NW0G"
+},
+{
+  "postID" : "1041357425562017792",
+  "timestamp" : "2 Apr 2019 16:58:09 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So #thankful for these #linemen!\nYou guys are #amazing\n#Hurricaneflorence #hurricane #florence #hurricaneflorence2018 #power #youguysrock #staysafe https://t.co/StJGq77gqs"
+},
+{
+  "postID" : "1040250595599376385",
+  "timestamp" : "2 Apr 2019 16:58:28 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Trying to finish hurricane prep by getting laundry done, vacuuming, etc and then our power goes out before the storm even comes... @DukeEnergy says it?s routine maintenance... not a great start and inconvenient timing at best."
+},
+{
+  "postID" : "1039901994364928001",
+  "timestamp" : "2 Apr 2019 16:58:43 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Some say we are just restocking our shelves with nutrabio ... Some say we are prepping for Hurricane Florence. ?\nYou decide. \n.\n.\n.\n.\n#vitasmart #concordnc #charlotte #lowprice #vitamins? https://t.co/e2w4D9gIQW"
+},
+{
+  "postID" : "1039938829472489473",
+  "timestamp" : "2 Apr 2019 16:59:27 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "ICYMI: It?s looking like the eye of #HurricanceFlorence might swerve to the south, which means that the wind threat to Greenville is less severe than had been anticipated yesterday. However, it?s a HUGE storm that still poses a MAJOR THREAT, especially when it comes to flooding. https://t.co/O53N3kpEgX"
+},
+{
+  "postID" : "1042071847611916289",
+  "timestamp" : "2 Apr 2019 17:00:06 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "These #WilmingtonNC residents thankful for the water, food and tarp from @fema.  #ABC11 #HurricaneFlorence https://t.co/F6LREwMHcd"
+},
+{
+  "postID" : "1039963357518942208",
+  "timestamp" : "2 Apr 2019 17:00:54 GMT",
+  "categories" : [ "Location", "ServiceAvailable", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "REMINDER: All classes are cancelled tomorrow and Friday. The school will be open as a shelter from #HurricaneFlorence starting at 8am tomorrow. Stay safe!"
+},
+{
+  "postID" : "1040383549613006848",
+  "timestamp" : "2 Apr 2019 17:02:25 GMT",
+  "categories" : [ "FirstPartyObservation", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Wow! Here is a before and after picture of New Bern, NC from just today! #HurricaneFlorence \nLeft pic was this morning, right pic is tonight.  (Graphic Courtesy The Weather Channel) https://t.co/gUCkkEZvkG"
+},
+{
+  "postID" : "1041348336836640769",
+  "timestamp" : "2 Apr 2019 17:03:15 GMT",
+  "categories" : [ "FirstPartyObservation", "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Flooding has started to become a serious problem across the #Charlotte Metro. Stay home guys! #CLTwx"
+},
+{
+  "postID" : "1041458823519760385",
+  "timestamp" : "2 Apr 2019 17:07:37 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Blessed to have a short visit with Ryann since she came home from South Carolina this week, classes were canceled all week.  She headed back today!  Prayers are with the families in the Carolinas that will have to recover from Florence.."
+},
+{
+  "postID" : "1040292217175400448",
+  "timestamp" : "2 Apr 2019 17:08:54 GMT",
+  "categories" : [ "Weather", "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "There?s a difference between ?rain or shine? and a fucking MASSIVE hurricane. The last update for Charlotte that I saw this morning was still calling for 6-15 in. of rain causing flooding, + isolated tornadoes, & wind causing downed trees & power lines all weekend. #MYTCharlotte"
+},
+{
+  "postID" : "1040574351093981184",
+  "timestamp" : "2 Apr 2019 17:09:07 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Thinking back to Emerald Isle and all the beauty.  Sending positive thoughts and prayers to all those in Flo?s wake.  #emeraldisle #northcarolina? https://t.co/5HPa9lNJAk"
+},
+{
+  "postID" : "1039910965851119616",
+  "timestamp" : "2 Apr 2019 17:09:30 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My mood since im staying 100 yards away from the tar river through this hurricane"
+},
+{
+  "postID" : "1040624449517703168",
+  "timestamp" : "2 Apr 2019 17:09:36 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The winds are getting really strong. Please if you are in the path of the hurricane stay safe!!"
+},
+{
+  "postID" : "1040665372305879041",
+  "timestamp" : "2 Apr 2019 17:10:31 GMT",
+  "categories" : [ "Weather", "Location", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "SITREP:  Rain showers along with windy conditions. 76F. Winds NNE at 20 to 30 mph. Light mist. https://t.co/BkoSXDJdek"
+},
+{
+  "postID" : "1040978049209184257",
+  "timestamp" : "2 Apr 2019 17:11:51 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Still praying for my family & friends affected by Florence in my hometown of Jacksonville, NC, along w/Topsail Island, Snead?s Ferry, Wilmington, New Bern, Myrtle Beach + my fellow Charlotteans & all others affected by this catastrophic hurricane.  ??"
+},
+{
+  "postID" : "1040457177553674240",
+  "timestamp" : "2 Apr 2019 17:12:25 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "All....my niece is in a STEM plus art program at her elem school & FaceTimed me today to ask if I could document the hurricane w her for her program. I was  googly-eyed for the opportunity. \n\nThe opportunity for her to learn this as an 8 yo & for me to assist. Pure joy. https://t.co/KtL83rtRLQ"
+},
+{
+  "postID" : "1039962167863377921",
+  "timestamp" : "2 Apr 2019 17:12:44 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "sooo my besties mom is an actual HERO! keep her family, & her mom in your prayers as she is on her way to help the people who need it most in the Carolinas. this storm is now affecting people close to my heart. ? #GoAwayFlorence https://t.co/fXeHpeTll8"
+},
+{
+  "postID" : "1041004464981782528",
+  "timestamp" : "2 Apr 2019 17:13:09 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Saturday mornings be like...Thanking the Lord for his protection while also praying for those who have been affected by Florence. Having lived through Hurricane Maria in Puerto Rico, I was? https://t.co/YskqDPximc"
+},
+{
+  "postID" : "1040674223872790528",
+  "timestamp" : "2 Apr 2019 17:14:46 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "this the same picture that was going around when the hurricane hit Houston?"
+},
+{
+  "postID" : "1040299057028255744",
+  "timestamp" : "2 Apr 2019 17:16:00 GMT",
+  "categories" : [ "FirstPartyObservation", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Right now the Lumber River is pretty tranquil as it crosses under the bridge on US76 just outside of Nichols, SC. For those unaware of the catastrophe that happened here, in 2016 the entire town was flooded after heavy rainfall from Hurricane Matthew. #scwx #HurricaneFlorence https://t.co/kYGRbOCDG9"
+},
+{
+  "postID" : "1040059225882484736",
+  "timestamp" : "2 Apr 2019 17:18:15 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "When will @SenateGOP #ActOnClimate. Severe weather is climate change.  #TW #HurricaneFlorence\n\n https://t.co/pBPepN6UIV"
+},
+{
+  "postID" : "1039974507551903744",
+  "timestamp" : "2 Apr 2019 17:18:27 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Not sure about the hurricane prepare stuff, i went to the grocery store and for two bottles of wine, a 24 case of beer and two cans of peanuts ?"
+},
+{
+  "postID" : "1041861640088682497",
+  "timestamp" : "2 Apr 2019 17:18:40 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "You know what @VikramChatterje I DIED in this exact same hurricane Florence?\nRIP my soul....?"
+},
+{
+  "postID" : "1040392189937963009",
+  "timestamp" : "2 Apr 2019 17:18:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Florence playlist:\n-Hurricane by @PanicAtTheDisco \n-Hurricane by @Lin_Manuel \n-Hurricane by @halsey \n-Hurricane by @30SECONDSTOMARS"
+},
+{
+  "postID" : "1040260137691369472",
+  "timestamp" : "2 Apr 2019 17:19:20 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "How it looks from  #HurricaneFlorence2018 #GlobalChallenge https://t.co/AV7nOzyrhC"
+},
+{
+  "postID" : "1040057259915714560",
+  "timestamp" : "2 Apr 2019 17:19:34 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So we can basically live out of our SUV now. #HurricaneFlorence https://t.co/6m8gg8d9tp"
+},
+{
+  "postID" : "1039971994010312705",
+  "timestamp" : "2 Apr 2019 17:20:29 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Great list that is useful now that we're closer to #HurricaneFlorence's arrival.\n\nhttps://t.co/yMW6DCVTvv"
+},
+{
+  "postID" : "1040311780625600512",
+  "timestamp" : "2 Apr 2019 17:21:32 GMT",
+  "categories" : [ "FirstPartyObservation", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We found Robert and his buddies by the closed bridge between Wilmington and Wrightsville Beach...they think this is a solid time for an afternoon bike ride (it started pouring right after we cut) #HurricaneFlorence #1010WINS https://t.co/ut7xJE37VJ"
+},
+{
+  "postID" : "1039905095251636224",
+  "timestamp" : "2 Apr 2019 17:21:43 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Add blowing up your house to the list of potential hurricane hazards sir https://t.co/pS8aqfn9J4"
+},
+{
+  "postID" : "1041736737087795202",
+  "timestamp" : "2 Apr 2019 17:22:19 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "WH Knuckles was flooded by Hurricane Matthew as well. Heartbreaking to see all over again."
+},
+{
+  "postID" : "1040287346254639104",
+  "timestamp" : "2 Apr 2019 17:22:48 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Is it just me or I?m the only one that doesn?t have hurricane snacks ? all we have is bread and water"
+},
+{
+  "postID" : "1042177112386547712",
+  "timestamp" : "2 Apr 2019 17:24:24 GMT",
+  "categories" : [ "Location", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Water, water everywhere...but the dam is holding out. #prayforscotlandcounty #iphonephotography #hurricaneflorence @ Laurel Hill, North Carolina https://t.co/RikzIpLvnb"
+},
+{
+  "postID" : "1040238104102285312",
+  "timestamp" : "2 Apr 2019 17:24:37 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Are you in the path of the hurricane? Boil some pasta! Oil and vinegar-based salads will hold longer than mayo based. #HurricanceFlorence #Foodies #NC #SC #NOMNOM #tasty #vegan #vegetarian #SafetyFirst #FEMA #Raleigh #Durham #Wilmington https://t.co/OkHbVWn8jt"
+},
+{
+  "postID" : "1041328399439089669",
+  "timestamp" : "2 Apr 2019 17:24:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "THREAD ON MY TIME SO FAR COVERING HURRICANE FLORENCE : My biggest takeaway is people have this awesome ability to surprise you at the best moment with their kindness and compassion. This morning on our way out of the hotel a woman asked if she could pray with us."
+},
+{
+  "postID" : "1040010419346329600",
+  "timestamp" : "2 Apr 2019 17:25:24 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Praying for those in the path of Hurricane Florence! https://t.co/ArJA3V9wR6"
+},
+{
+  "postID" : "1040579441649479682",
+  "timestamp" : "2 Apr 2019 17:28:51 GMT",
+  "categories" : [ "Location", "NewSubEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "At 4:25 PM EDT, 1 WNW Morehead City [Carteret Co, NC] EMERGENCY MNGR reports HURRICANE. 60 FT TREE FELL AND TOOK MULTIPLE POWER LINES. https://t.co/gHklzEIrSd"
+},
+{
+  "postID" : "1041745878317506562",
+  "timestamp" : "2 Apr 2019 17:30:19 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Flooding in Durham at Felicia St/Graymont Drive. All from the morning rain. Water up to some of the mailboxes. #ncwx #ABC11 https://t.co/PlCcJFIDwI"
+},
+{
+  "postID" : "1040563029702787072",
+  "timestamp" : "2 Apr 2019 17:30:48 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I feel zero pitty for the dumbasses who stayed and tried to wait out the hurricane. Y?all had multiple days to leave and evacuate and now you wanna call someone else and put their life in danger because of your dumbass decision to stay?? No sir."
+},
+{
+  "postID" : "1040206555675848704",
+  "timestamp" : "2 Apr 2019 17:31:33 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Time to turn up the intensity and keep speaking to Hurricane Florence to keep disapating. Whatever things you pray when you pray and believe, it shall come to pass so be bold and rebuke those storms in Jesus name."
+},
+{
+  "postID" : "1039919591701590017",
+  "timestamp" : "2 Apr 2019 17:31:47 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@CookOut will you open during the hurricane in the Wilmington area ???"
+},
+{
+  "postID" : "1040699606743560192",
+  "timestamp" : "2 Apr 2019 17:32:53 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "i swear i?m going to gain like 30 pounds before this hurricane is over?"
+},
+{
+  "postID" : "1040687937816543234",
+  "timestamp" : "2 Apr 2019 17:33:53 GMT",
+  "categories" : [ "Location", "ServiceAvailable" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Working the Hurricane Flo shelter. (@ Knightdale High School in Knightdale, NC) https://t.co/SiHliFKReh"
+},
+{
+  "postID" : "1040033016217776131",
+  "timestamp" : "2 Apr 2019 17:34:13 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "This gem better have been the first item evacuated from Wilmington, North Carolina. I thoroughly enjoyed my visit this summer to the area and especially The Barbary Coast, Wilmington?s? https://t.co/PeYhTBAX50"
+},
+{
+  "postID" : "1039876776275664896",
+  "timestamp" : "2 Apr 2019 17:35:53 GMT",
+  "categories" : [ "Location", "EmergingThreats", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "#WakeCounty under state of emergency #HurricaneFlorence @WNCN #CBS17 #ncwx"
+},
+{
+  "postID" : "1040811850475208704",
+  "timestamp" : "2 Apr 2019 17:36:21 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Good news for North Carolina Outer Banks golf after passing of #HurricaneFlorence. 3 courses on @TheOBX Currituck mainland reopen Saturday; little impact to Kilmarlic, The Pointe & Carolina Club.  Once OBX bridges reopen Sunday, Nags Head, Currituck Club should open. @golfadvisor"
+},
+{
+  "postID" : "1040223018167885825",
+  "timestamp" : "2 Apr 2019 17:38:10 GMT",
+  "categories" : [ "MultimediaShare", "ServiceAvailable", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Our good friend @TomSnyderRIoT of @NCRIoT sharing how IoT helps out with hurricanes preparedness. Stay safe out there Carolinas! #iot #ncriot #HurricaneFlorence2018 #nextmattersmost\nhttps://t.co/Vcqgmxesaq"
+},
+{
+  "postID" : "1042101553132457984",
+  "timestamp" : "2 Apr 2019 17:38:49 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Why I?m flying instead of driving to FL for post-surgery family visit.  I sincerely hope those affected by the flooding are being cared for and can recover."
+},
+{
+  "postID" : "1041528413666926592",
+  "timestamp" : "2 Apr 2019 17:39:40 GMT",
+  "categories" : [ "FirstPartyObservation", "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "As #Florence moved inland, it left its mark on Marion County. Tremendous challenges for restoring power across the Carolinas. Stay safe @DE_AnaGibbs ."
+},
+{
+  "postID" : "1040619471063400449",
+  "timestamp" : "2 Apr 2019 17:40:26 GMT",
+  "categories" : [ "Weather", "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@KendraWilkinson made it thru round 1 of #HurricaneFlorence here in #WilmingtonNC .... round 2 is starting now and the winds are HORRIBLE. Now if I can survive the 11yo saying he's bored..."
+},
+{
+  "postID" : "1041700442093375488",
+  "timestamp" : "2 Apr 2019 17:41:06 GMT",
+  "categories" : [ "Location", "CleanUp", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Pond level after #hurricaneflorence Power and internet back; thanks to all the amazing linemen and spectrum repair crews; starting clean up @ Effingham, South? https://t.co/g75zUJhiRa"
+},
+{
+  "postID" : "1040211156722483202",
+  "timestamp" : "2 Apr 2019 17:41:42 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Very quiet this morning in downtown Wilmington ahead of the arrival of #HurricaneFlorence2018 @CBCNews @CBCWorldReport https://t.co/vniRtp333m"
+},
+{
+  "postID" : "1040124225435185153",
+  "timestamp" : "2 Apr 2019 17:42:08 GMT",
+  "categories" : [ "Weather", "Location", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "2:25   Wind:Calm   Dry   75?F(Feels 81?F)   RH:95%   Dp:73?F  Cb:333'   BP:1016.2inHg     Moon: Waxing Crescent #CarolinaWx #ClaytonNC #Wx"
+},
+{
+  "postID" : "1041339462477905920",
+  "timestamp" : "2 Apr 2019 17:42:38 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "You?d never believe these sleeping beauties spent four days terrorizing my brother?s poor cats. ???? Headed home. Cats will be relieved. ? #hurricaneflorence #hurricaneevacuees #monty? https://t.co/L0qf9qU4SZ"
+},
+{
+  "postID" : "1041375842612510720",
+  "timestamp" : "2 Apr 2019 17:42:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@LewisHowes #HurricaneFlorence passed and left us and family largely unscathed, appreciating having power and football back for a \"normal\" sunday."
+},
+{
+  "postID" : "1040728232083959808",
+  "timestamp" : "2 Apr 2019 17:43:07 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Here we go... after this wind gust, a small tree fell down in the neighbors yard.  #hurricaneflorence @wxbrad @ Waxhaw, North Carolina https://t.co/DvsscuvL6Y"
+},
+{
+  "postID" : "1040568234741837824",
+  "timestamp" : "2 Apr 2019 17:43:21 GMT",
+  "categories" : [ "Weather", "Location", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Today's forecast: Scattered Thunderstorms Hi: 78?F Lo: 72?F Currently Rain and 76?F #CarolinaWx #ClaytonNC #Wx"
+},
+{
+  "postID" : "1040040617961615360",
+  "timestamp" : "2 Apr 2019 17:43:31 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "can someone explain to me how there?s an hurricane heading our way but it?s so freakin calm outside ?????"
+},
+{
+  "postID" : "1040988456246231041",
+  "timestamp" : "2 Apr 2019 17:44:03 GMT",
+  "categories" : [ "Weather", "Location", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hurri...Tropical Storm Florence update from Daniel Island.  Total rainfall since yesterday is .67 inches.  Highest wind gust overnight was 51mph and the barometer is stable now at 29.39.  #HurricaneFlorence #chsnews #ChsWx @chswx @NWSCharlestonSC   @LCWxDave"
+},
+{
+  "postID" : "1041187807673438208",
+  "timestamp" : "2 Apr 2019 17:44:14 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Wild horses on North Carolina's Outer Banks weather Florence https://t.co/9R2ZUZnPWX"
+},
+{
+  "postID" : "1040378394142289920",
+  "timestamp" : "2 Apr 2019 17:52:55 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Everyone right now #HurricaneFlorence2018 #HurricanceFlorence https://t.co/I6OOU6jTxz"
+},
+{
+  "postID" : "1042021398259146759",
+  "timestamp" : "2 Apr 2019 17:53:08 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@BethuneTheory It was OK but couldn't do anything because of the flooding, plus no FedEx with gift because of the hurricane. However, it could have been a lot worse from the hurricane so we were lucky."
+},
+{
+  "postID" : "1040258910110851072",
+  "timestamp" : "2 Apr 2019 17:53:18 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So confused because the hurricane isn?t even hitting us here in charlotte that bad yet classes are getting cancelled. I mean I can?t complain, but I?m still so confused ?????"
+},
+{
+  "postID" : "1040543608271773697",
+  "timestamp" : "2 Apr 2019 17:54:21 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "? Hurricane Florence is lashing the Carolinas as it prepares to make landfall. Follow LIVE updates here: https://t.co/noJoqBlc4J @KarenMintonWSB and @KatieWallsWSB are tracking the storm NOW on Channel 2 Action News This Morning. #StormWatchOn2"
+},
+{
+  "postID" : "1041144320592674816",
+  "timestamp" : "2 Apr 2019 17:54:44 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Look at my boy @Ebarnes15_ out there fighting this hurricane, homie saved us all ?? https://t.co/kqf5Iz3jyh"
+},
+{
+  "postID" : "1041792543606956032",
+  "timestamp" : "2 Apr 2019 17:56:36 GMT",
+  "categories" : [ "ServiceAvailable", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Please continue to use caution as we recover from Hurricane Florence. Need help?  \nText Florence to 898211 to contact NC 211 services or go to https://t.co/axwlaaYBxg. Want to donate?  Text Florence to 20222 or go to the NC Disaster Relief Fund: https://t.co/auK0Xc5Bl6."
+},
+{
+  "postID" : "1042044932683390976",
+  "timestamp" : "2 Apr 2019 17:56:53 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@CarolineBNews @DukeEnergy @SpecNewsRDU Thank you Caroline and Spectrum News for all of your coverage across the Carolinas during #HurricaneFlorence , especially these important safety messages."
+},
+{
+  "postID" : "1040949449047138307",
+  "timestamp" : "2 Apr 2019 17:58:24 GMT",
+  "categories" : [ "ServiceAvailable", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "This was such an inspiring & rewarding thing to be involved with last August for victims of Hurricane Harvey! Drop by our @wsbtv & @wsbradio studios this week. ??Thank you! #Florence #ConvoyOfCare"
+},
+{
+  "postID" : "1040610766947278848",
+  "timestamp" : "2 Apr 2019 17:58:53 GMT",
+  "categories" : [ "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : ".@NC_Governor will give a news conference at 11 am to provide updates about the state of NC as of Friday morning. Tune in to watch live. https://t.co/QQ2gpjKnaQ #HurricaneFlorence #FlorenceNC"
+},
+{
+  "postID" : "1040724149696651264",
+  "timestamp" : "2 Apr 2019 17:59:05 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Always practicing...even during a hurricane https://t.co/VASomS57xh"
+},
+{
+  "postID" : "1040621293266259969",
+  "timestamp" : "2 Apr 2019 17:59:20 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I'm impressed that I'm seeing so many female weather reporters out in the hurrican with full eye makeup on and it's not running down their faces. How is this happening? #WhatMagicIsThis #HurricaneFlorence"
+},
+{
+  "postID" : "1040636387383537664",
+  "timestamp" : "2 Apr 2019 17:59:37 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Parts of NC under tornado watch... tornados? In a hurricane? Madness"
+},
+{
+  "postID" : "1041886822270418944",
+  "timestamp" : "2 Apr 2019 17:59:48 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "North Carolina?s Famous Wild Horses Emerge from Hurricane Florence Unscathed https://t.co/M3W3xpSYH8 via @southern_living"
+},
+{
+  "postID" : "1039943394670379008",
+  "timestamp" : "2 Apr 2019 17:59:57 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#HurricaneFlorence is coming to the lab! https://t.co/IJTUmq0lNO"
+},
+{
+  "postID" : "1040576881073053696",
+  "timestamp" : "2 Apr 2019 18:00:03 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Bracing for impact! Some family in the thick of it in Wilmington. Everyone safe!!! @ Fayetteville, North Carolina https://t.co/Ixus2gv2D7"
+},
+{
+  "postID" : "1039980594636247042",
+  "timestamp" : "2 Apr 2019 18:00:10 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@5SOS Are you guys still planning on having the concert on Sunday at Charlotte?? The hurricane is my main concern but I would really like to know so I could plan ahead if it?s still on."
+},
+{
+  "postID" : "1041873385016311808",
+  "timestamp" : "2 Apr 2019 18:00:15 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The neighborhood @ College Acres, Wilmington, North Carolina https://t.co/fsoGd53ZrD"
+},
+{
+  "postID" : "1039928185138372609",
+  "timestamp" : "2 Apr 2019 18:00:21 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "As the hurricane approaches, I just wanted to give a shout out to @FabFitFun for the new umbrella in my box!! ? https://t.co/DT65FdrXa1"
+},
+{
+  "postID" : "1041338461569994752",
+  "timestamp" : "2 Apr 2019 18:00:42 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Flooding in Wilmington from #florence https://t.co/UkeyRmcFa4"
+},
+{
+  "postID" : "1039860560886673408",
+  "timestamp" : "2 Apr 2019 18:00:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I be wondering how much these hurricanes generate for the local economies...."
+},
+{
+  "postID" : "1041830160356581382",
+  "timestamp" : "2 Apr 2019 18:01:52 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "One road, Two miles separated these two accidents caused by too much water in Chesterfield County. Luckily everyone survived. #HurricaneFlorence2018 https://t.co/ZTHAH9gb9T"
+},
+{
+  "postID" : "1040267807768956928",
+  "timestamp" : "2 Apr 2019 18:02:34 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "If you live on the coast of the Carolinas, please have evacuated or evacuate.\n\nIf you live four hours from the coast and aren?t near a body of water, please chill the fuck out."
+},
+{
+  "postID" : "1040217520689565696",
+  "timestamp" : "2 Apr 2019 18:03:16 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "@EBROINTHEAM being in NC it's good news it's dropped to a Cat 2, but #HurricanceFlorence has increase size to over 350 miles wide! Tropical storm winds reaching over 170 miles! ?? for us! @LAURASTYLEZ @Rosenbergradio"
+},
+{
+  "postID" : "1041619713078571008",
+  "timestamp" : "2 Apr 2019 18:05:07 GMT",
+  "categories" : [ "Location", "Official", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "Advisory from @VaDOTSalem:\nFLORENCE - NORTH CAROLINA TRAVEL: NCDOT is asking drivers to AVOID TRAVEL in and out of the state. I-95 detours have been affected and travel in the state is not advised at this time. FOLLOW message boards. #FlorenceNC #FlorenceVA #surfcity #ilm https://t.co/O7Q42jlXwR"
+},
+{
+  "postID" : "1042115086842847233",
+  "timestamp" : "2 Apr 2019 18:06:35 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Trapped in maze of detours:  Motorists trying to navigate around I-95 are having trouble finding alternate routes.  Every turn seems to lead to a washed out roadway. #HurricaneFlorence #TropicalStormFlorence #stormdamage #flooding #detour #HurricaneFlorence2018 #WTSP https://t.co/9otANg8h0f"
+},
+{
+  "postID" : "1040244429746044929",
+  "timestamp" : "2 Apr 2019 18:06:48 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Everybody in the Midwest posting about first day of harvest..... every farmer in Eastern North Carolina be like..... #harvest18 #HurricaneFlorerence https://t.co/fDY9cenaZ3"
+},
+{
+  "postID" : "1040591775679893505",
+  "timestamp" : "2 Apr 2019 18:06:55 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I will be so glad when my parents will watch something other than the hurricane watch.. on every news outlet. 0_o"
+},
+{
+  "postID" : "1040204465931014145",
+  "timestamp" : "2 Apr 2019 18:07:06 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#HurricaneFlorence A hurricane ? looks similar to a tornado ? in the way it spins. Is it just a super large spread out tornado with an eye?  And does a tornado have an eye?"
+},
+{
+  "postID" : "1041175513300197377",
+  "timestamp" : "2 Apr 2019 18:08:49 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Lord I'm tired. https://t.co/ZPo4uqVXbg Hate updating at Midnight but impt info. #Florence #i95 closed #NC - Concerns on #FlashFlood #flooding in W NC in MTNS once #Florence moves inland. Pray this doesn't happen.https://t.co/QWArFlxjZ5 https://t.co/nOjhO53czo"
+},
+{
+  "postID" : "1041177853684002816",
+  "timestamp" : "2 Apr 2019 18:09:04 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Shout out to @QuanFlix_  for the best entertainment I?ve had in 3 days. No power due to hurricane bunkered down in my car. I?ve got some ?gas? and beer though https://t.co/HNeVDSC6ZA"
+},
+{
+  "postID" : "1040403432945856512",
+  "timestamp" : "2 Apr 2019 18:09:37 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@wxbrad Brad, is that 15-24 inches and flooding in flood plains or all over?!  Should I get in the car and leave now!?"
+},
+{
+  "postID" : "1040643203416969216",
+  "timestamp" : "2 Apr 2019 18:10:46 GMT",
+  "categories" : [ "Weather", "Location", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "For all my friends not in NC:\nI am in Charlotte. Major destruction is happening on the actual coast, at the beach. I am safe. There should be about 12-22? of rain and power outages. Should be totally fine. Expecting flooding. I?ll keep everyone updated!"
+},
+{
+  "postID" : "1040259399808430080",
+  "timestamp" : "2 Apr 2019 18:10:57 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Lord, thank You for another day. Thank You for Your grace & new mercies. Thank You for being so amazing. Lord, I trust the process. Please keep everyone safe during the hurricane. IJN. Amen."
+},
+{
+  "postID" : "1041539601008140290",
+  "timestamp" : "2 Apr 2019 18:12:04 GMT",
+  "categories" : [ "Weather", "Factoid", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "...we're expected to have more than four feet of water.  I've explained about the sand.  We don't flood, but the sandhills are a small geographic region of the state.  The rest of the state is underwater, and the cessation of the rain will only exacerbate the flooding...  RtE"
+},
+{
+  "postID" : "1040819285009072129",
+  "timestamp" : "2 Apr 2019 18:12:13 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "People are throwing hurricane parties and getting drunk & I?m cleaning and doing laundry so if we actually lose power, I have clean clothes and a house that looks put together?"
+},
+{
+  "postID" : "1039859522112774145",
+  "timestamp" : "2 Apr 2019 18:12:49 GMT",
+  "categories" : [ "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "In your storm preparation for #hurricaneflorence, please remember to check on your neighbors, people who are alone, people who are less able to help themselves, and of course friends &? https://t.co/X0CFPdMzKk"
+},
+{
+  "postID" : "1042096789485244416",
+  "timestamp" : "2 Apr 2019 18:13:02 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Have any #commercialrealestate developers been affected by #HurricaneFlorence? Please send me an email at melissa.oyler(at)https://t.co/nqrx5znxoh - I can tell you what I'm working on! #development"
+},
+{
+  "postID" : "1040634259130785798",
+  "timestamp" : "2 Apr 2019 18:13:17 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Can?t stop thinking about all the beautiful people and places we experienced last month during our stay at #Ocracoke Island on the outer banks of North Carolina. I was completely taken by? https://t.co/p3VbXLkxml"
+},
+{
+  "postID" : "1039935020947988481",
+  "timestamp" : "2 Apr 2019 18:14:02 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Video from our backyard flooding during  Matthew, Oct. 8 2016- expect similar from Florence  @weatherchannel https://t.co/GAQ7E8Hcpr"
+},
+{
+  "postID" : "1041512170104782849",
+  "timestamp" : "2 Apr 2019 18:14:36 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Live on @weatherchannel at the Flying J in Latta, SC through 1AM/ET talking flooding. https://t.co/3WtXcYrYdM"
+},
+{
+  "postID" : "1040291186945261568",
+  "timestamp" : "2 Apr 2019 18:15:28 GMT",
+  "categories" : [ "Advice", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@charles_gaba She lives in Wilmington, not Carolina Beach. There is a big difference. Staying in home on high ground is as safe as relocating further inland. Basically all of eastern half of NC, and possibly cent. and west. NC will be dealing with massive flooding. Shelter in place reasonable"
+},
+{
+  "postID" : "1040224772771274753",
+  "timestamp" : "2 Apr 2019 18:15:40 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Me trying to get to my boyfriends house during this hurricane"
+},
+{
+  "postID" : "1041241385188372481",
+  "timestamp" : "2 Apr 2019 18:16:41 GMT",
+  "categories" : [ "Weather", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Sunday Briefing: Florence finally begins to move toward Western Carolinas, flood theat still exists...  https://t.co/fmyjWvI6b3"
+},
+{
+  "postID" : "1040599786125185024",
+  "timestamp" : "2 Apr 2019 18:18:03 GMT",
+  "categories" : [ "FirstPartyObservation", "Weather", "Location", "MultimediaShare", "Factoid", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "NEW BERN hit hard by #HurricaneFlorence. 10 foot storm surge pushed its way into downtown. Debris on Pollack St made its almost all the way to Craven St. 22k plus w/o power. Swift water rescues taking place to save 150 people. Curfew in effect but being ignored #cbs17 #NCwx https://t.co/XrA5Pmm3T4"
+},
+{
+  "postID" : "1039934644752248834",
+  "timestamp" : "2 Apr 2019 18:19:27 GMT",
+  "categories" : [ "Weather", "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The calm before the RSS ??? Stay safe during this hurricane season fam. Awesome picture Big Sears! \n #ChaVibes ?? @ Outer Banks, North Carolina https://t.co/YPg7DNfYAp"
+},
+{
+  "postID" : "1040625889858543617",
+  "timestamp" : "2 Apr 2019 18:19:44 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Had to get @Bojangles1977 before #HurricaneFlorence hits. #NorthCarolinaStrong https://t.co/coPKPUBwKv"
+},
+{
+  "postID" : "1040734765161299973",
+  "timestamp" : "2 Apr 2019 18:20:02 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Me still going about my business after this hurricane hits #NCAT https://t.co/IpSt0v4xHk"
+},
+{
+  "postID" : "1039963778861936645",
+  "timestamp" : "2 Apr 2019 18:21:02 GMT",
+  "categories" : [ "MultimediaShare", "ServiceAvailable", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "People who rent out their homes and rooms on @Airbnb have graciously opened up their places for free for #HurricaneFlorence evacuees. If you need a place to stay, you can click the link, then find shelter. https://t.co/CVzcmWfkRQ https://t.co/gY8rej9k5H"
+},
+{
+  "postID" : "1040308057971064833",
+  "timestamp" : "2 Apr 2019 18:21:49 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The other side of the story ? some Stu because they have to... these people stay because they want to.  A #hurricane party as #Florence approaches.  #HurricaneFlorence @NBCNewYork https://t.co/Jm4JamcxfL"
+},
+{
+  "postID" : "1040658806441750529",
+  "timestamp" : "2 Apr 2019 18:24:24 GMT",
+  "categories" : [ "FirstPartyObservation", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "As I was flying on the @53rdWRS Hurricane Hunter, @milesobrien was flying on the @NOAA_HurrHunter all sending data back to @NHC_Atlantic \nWatch his comprehensive, excellent reporting on #HurricaneFlorence \nMy report is here: https://t.co/WACQ8pifPX\nMiles' is here ??"
+},
+{
+  "postID" : "1039893297282441216",
+  "timestamp" : "2 Apr 2019 18:25:16 GMT",
+  "categories" : [ "Weather", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "No surprises, 11AM #HurricaneFlorence @NHC_Atlantic update almost follows the Euro to a T...poor GFS left out to dry"
+},
+{
+  "postID" : "1040612346316640256",
+  "timestamp" : "2 Apr 2019 18:25:27 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "FATHER GOD PLEASE PROTECT US FROM \nTHIS HURRICANE \nPLEASE LET \nEVERYBODY IN \nTHE CAROLINA?S AND SURROUNDING AREAS \nBE \nSAFE THIS WEEKEND!!! ????"
+},
+{
+  "postID" : "1040681440759959552",
+  "timestamp" : "2 Apr 2019 18:25:41 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@raptorcoatings @haseeb @SeanSchofer Absolutely! After covering #HurricaneFlorence"
+},
+{
+  "postID" : "1039869446389727236",
+  "timestamp" : "2 Apr 2019 18:26:47 GMT",
+  "categories" : [ "InformationWanted" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@ElonNewsNetwork will be updating the @elonuniversity campus as Hurricane Florence makes its way inland. \n\nIf you have any photos, videos, or stories to share our way please send me a FB message at any point before, during, or after the storm."
+},
+{
+  "postID" : "1042173990964523009",
+  "timestamp" : "2 Apr 2019 18:27:12 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Happy to see this post today!  Y?all weathered the storm like champs. #southernpride #liberated #alabama #beyondpaleo #local #madeinthesouth #southernfood @ Wilmington, North Carolina https://t.co/BYVj7z9PVl"
+},
+{
+  "postID" : "1040314413335699459",
+  "timestamp" : "2 Apr 2019 18:27:31 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#tbt This time last month #justinstalled #newbuild  #hurricaneflorence #besafe ??? @ Figure Eight Island, NC https://t.co/OQ1VZdGzyA"
+},
+{
+  "postID" : "1040097680628871168",
+  "timestamp" : "2 Apr 2019 18:27:41 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I?m going to be really upset if they force Tyler to work this weekend for this stupid hurricane. I really don?t want him out during it and I really don?t want to be home alone either. ?"
+},
+{
+  "postID" : "1040062808015159296",
+  "timestamp" : "2 Apr 2019 18:28:53 GMT",
+  "categories" : [ "MultimediaShare", "ServiceAvailable" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"Waffle House activates its storm center as Hurricane Florence approaches\"  https://t.co/spJPs7Ax52"
+},
+{
+  "postID" : "1040784615332622336",
+  "timestamp" : "2 Apr 2019 18:29:08 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Had to leave my house with my dog because of damage from the hurricane, I just want everything to go back to normal I hope everyone else is okay"
+},
+{
+  "postID" : "1040219490578063367",
+  "timestamp" : "2 Apr 2019 18:30:05 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I feel so comforted with a hurricane coming our way knowing this whiny baby is in charge. Sure, 3,000 people died but more importantly, people are being mean to him! ?"
+},
+{
+  "postID" : "1042040240557502464",
+  "timestamp" : "2 Apr 2019 18:30:38 GMT",
+  "categories" : [ "MultimediaShare", "ServiceAvailable", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Thankful to see how God answers prayers through @ConvoyofHope #HurricaneFlorence"
+},
+{
+  "postID" : "1040571130170490880",
+  "timestamp" : "2 Apr 2019 18:30:55 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@WoodSpringStay @SCAttyGenOffice @ChoiceHotels HELLO! We?re in the middle of a natural disaster! I?m talking about the fact that the hotel manager is putting paying guests out of the hotel in the middle of a hurricane and she?s price-gouging to boot! Read my posts!"
+},
+{
+  "postID" : "1040696115409178630",
+  "timestamp" : "2 Apr 2019 18:31:51 GMT",
+  "categories" : [ "Weather", "Location" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "No power since 11:30 am because of Hurrican Florence.  Heavy Rain and Strong Winds. (@ Wild Oak @ Meadowlands Golf Club in Calabash, NC) https://t.co/5XOpPDyzWe"
+},
+{
+  "postID" : "1039882628592095232",
+  "timestamp" : "2 Apr 2019 18:35:07 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "This hurricane isn?t stopping https://t.co/KvhOGTvSR2 (18+) from updating. #asianwithabooty \n.\n.\n.\n.\n.\n#model #girl #hot #beautiful #love #fashion #beauty #cute #style #photooftheday  #photography? https://t.co/M6q0qSXo2H"
+},
+{
+  "postID" : "1041470186711396353",
+  "timestamp" : "2 Apr 2019 18:35:16 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My grandparents survived Maria last year, my dad rescued them from Puerto Rico. My grandma was scared to go through another hurricane, she was terrified, she passed away the night before Florence came. I hate these storms more than anything in the world..."
+},
+{
+  "postID" : "1040668528829980672",
+  "timestamp" : "2 Apr 2019 18:35:30 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Stick out ? gathering info? on the lake before #FlorenceHurricane2018 https://t.co/cOWGBgVXZR"
+},
+{
+  "postID" : "1040102698627072000",
+  "timestamp" : "2 Apr 2019 18:36:15 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@crankywxguy Hi - have you discussed the rainfall/flooding potential in the North Carolina  southern appalachians?  If you have, could you tell me approximately which blog update I should look at? I really appreciate your analysis.  Just gathering info since I live feet away from a river."
+},
+{
+  "postID" : "1040677046714859520",
+  "timestamp" : "2 Apr 2019 18:36:21 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@J0nasF I?ve lived in hurricane prone areas most of my life. Pretty used to this by now. Tornadoes, on the other hand, scare the crap out of me."
+},
+{
+  "postID" : "1040416997098573824",
+  "timestamp" : "2 Apr 2019 18:36:35 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hurricane Prep:\n?charged ?\n?? in cooler\n? in pitchers\n?moved in from outside \n?? ?on the ? \n\nNow just wait & see."
+},
+{
+  "postID" : "1039897733732229122",
+  "timestamp" : "2 Apr 2019 18:37:15 GMT",
+  "categories" : [ "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Do not be lulled into a false sense of security because the track is a little bit more South. This storm is huge, strong and hurricanes do what they want, especially once they make landfall. #HurricaneFlorence  #ncwx"
+},
+{
+  "postID" : "1041367639740833799",
+  "timestamp" : "2 Apr 2019 18:38:16 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "As a resident of North Carolina, I am concerned how our legislators will respond to this disaster (after Matthew, they called a special session for hurricane relief, then the GOP packed extra controversial legislation). I am also concerned that those evacuated may have difficulty"
+},
+{
+  "postID" : "1040335448621633536",
+  "timestamp" : "2 Apr 2019 18:38:44 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Florence has arrived in the northern Outer Banks. Rough surf and intensifying winds\n\n#OBX @SpecNewsRDU @SpectrumNewsDC https://t.co/uTWDbWh6co"
+},
+{
+  "postID" : "1041394822198833154",
+  "timestamp" : "2 Apr 2019 18:39:53 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@GibbsKnotts My town has an experienced staff that has been through hurricanes and is highly trained in emergency management. None of the pros I?ve spoken with here think for a moment that this was an over reaction by any measure."
+},
+{
+  "postID" : "1040600340754784256",
+  "timestamp" : "2 Apr 2019 18:42:40 GMT",
+  "categories" : [ "FirstPartyObservation", "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "At 7:30 AM EDT, 2 SW Smith Creek [New Hanover Co, NC] PUBLIC reports HURRICANE. TWO LARGE TREES DOWN NEAR A CONDOMINIUM COMPLEX NEAR MCCLELLAND DRIVE IN WILMINGTON, NC. https://t.co/mUx9oecXaT"
+},
+{
+  "postID" : "1042220452091969537",
+  "timestamp" : "2 Apr 2019 18:43:21 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Missed the last minute winner but landed safe n sound #LFC #UCL #LIVPSG #hescoreswithoneeye #NorthCarolina #HurricaneFlorence ?????? https://t.co/z6zgqIHiTQ"
+},
+{
+  "postID" : "1040050063873957888",
+  "timestamp" : "2 Apr 2019 18:43:31 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Training before the storm #florence #dtr #trianglenc @ Morrisville, North Carolina https://t.co/I02ETouPJ6"
+},
+{
+  "postID" : "1040071195281051648",
+  "timestamp" : "2 Apr 2019 18:43:49 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I try not to give tweets like this anymore publicity than they already get, but these claims about Puerto Rico are ridiculous. Hurricane Maria decimated a thriving island full of loving and hospitable people. We failed Puerto Rico. Do not further disrespect them like this. ??"
+},
+{
+  "postID" : "1039946321006919681",
+  "timestamp" : "2 Apr 2019 18:43:58 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I?m not belittling this hurricane at all but clearly it moved to the weekend which is why I?m pissed my flight canceled @FlyFrontier"
+},
+{
+  "postID" : "1041868682144763904",
+  "timestamp" : "2 Apr 2019 18:45:45 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I have posted about 12 dogs taken from kill shelters here in Craven Counry plus flooded animals abandoned , we need help retweet pictures of dogs so they don?t have to go back to kill #HurricaneFlorence #NewBernNC Craven County Humane"
+},
+{
+  "postID" : "1040446418408878080",
+  "timestamp" : "2 Apr 2019 18:45:55 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Everyone is having hurricane parties in NC, meanwhile I gotta work to feed #elon college kids bright and early tomorrow #HurricaneFlorence"
+},
+{
+  "postID" : "1040380610559336455",
+  "timestamp" : "2 Apr 2019 18:46:06 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Everyone please be safe during #HurricanefFlorence. #GeneralJacksonsinc #Fayetteville #FortBragg #YadkinRD https://t.co/NGbCDDcr5s"
+},
+{
+  "postID" : "1040614324681826305",
+  "timestamp" : "2 Apr 2019 18:46:48 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "Tornado Warning including Windsor NC, Lewiston Woodville NC until 11:15 AM EDT https://t.co/r02lgONTl2"
+},
+{
+  "postID" : "1040366413490343937",
+  "timestamp" : "2 Apr 2019 18:47:18 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@LisaVanderpump I am hurricane ready!  #HURRICANEFLORANCE #VanderpumpRose . https://t.co/rQyb30YKrw"
+},
+{
+  "postID" : "1039899204515184640",
+  "timestamp" : "2 Apr 2019 18:47:29 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hurricane is headed this way, and the grocery stores may be cleared out of water, milk and bread, but @popthetopclt has you covered...amazing beer selection and fresh artisan roasted coffee. What more could you ask for?!? https://t.co/EKVBCLgwOB"
+},
+{
+  "postID" : "1040604873027465216",
+  "timestamp" : "2 Apr 2019 18:47:39 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@taylornation13 voting for @taylorswift13 ? while saving my battery during this hurricane ? #AMAs https://t.co/x26yDKGv5U"
+},
+{
+  "postID" : "1040043824033222657",
+  "timestamp" : "2 Apr 2019 18:48:50 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Relatable. See @ntaylornc, we?re not the only ones who emphatically defend (...argue about) our ideas for appropriate hurricane prep plans and hurricane snacks in public. ?????#hurricaneFlorence"
+},
+{
+  "postID" : "1041003328333926401",
+  "timestamp" : "2 Apr 2019 18:48:55 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My prayers go to all the people effected by Florence #HurricaneFlorence"
+},
+{
+  "postID" : "1040622759368421376",
+  "timestamp" : "2 Apr 2019 18:50:49 GMT",
+  "categories" : [ "FirstPartyObservation", "Location", "Factoid", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "#BREAKING: One person saved, two probable #fatalities here in #Wilmington, #NorthCarolina where #Hurricane #Florence brought a tree down onto a home. We are still on the scene. #ncwx"
+},
+{
+  "postID" : "1041349687968780288",
+  "timestamp" : "2 Apr 2019 18:55:24 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My sunshine on a rainy day ?? @ Atlantic Beach, North Carolina https://t.co/CLK3v3oOga"
+},
+{
+  "postID" : "1040303418710081543",
+  "timestamp" : "2 Apr 2019 18:55:58 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Right Now: waiting on @henrymcmaster, @SCEMD @SCEMD @NHC_Atlantic, @scgovernorpress, and other state agencies to give a #HurricaneFlorence update. Stay tuned on @abc_columbia"
+},
+{
+  "postID" : "1040230755530625024",
+  "timestamp" : "3 Apr 2019 14:37:37 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#TuneIn to @CharlotteTalks with #MikeandtheMayor @CLTMayor & @CharlotteFD right now to discuss #FlorenceNC prep on @WFAE #HurricaneFlorence #CltNews #BePrepared #Florence RT"
+},
+{
+  "postID" : "1040376619234467840",
+  "timestamp" : "3 Apr 2019 14:47:36 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Wow @facebook users who have accounts suspended living in the path of a hurricane can't contact family or mark themselves safe."
+},
+{
+  "postID" : "1042030870373298176",
+  "timestamp" : "3 Apr 2019 14:49:03 GMT",
+  "categories" : [ "GoodsServices", "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@redsteeze I need some help please , we are worn out helping dogs and cats stranded by #FlorenceHurricane2018 #newbernnc we need fosters badly , they are very scared and confused ..please retweet this thank you https://t.co/ID6o17SeOZ"
+},
+{
+  "postID" : "1041716279386759170",
+  "timestamp" : "3 Apr 2019 14:49:30 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My best wishes are with everyone. #HurricaneFlorence https://t.co/jALf6iqtfM"
+},
+{
+  "postID" : "1040243491526332416",
+  "timestamp" : "3 Apr 2019 14:52:10 GMT",
+  "categories" : [ "News", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "?Extended outages for longer than folks here are used to seeing.? @DukeEnergy to Iredell leaders on what may be expected in this area. Possibly ?1-3 million outages across Carolinas.?"
+},
+{
+  "postID" : "1040080829261795328",
+  "timestamp" : "3 Apr 2019 14:52:54 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Say what is this? These are floodgates installed at the lower level of the Macy's at Crabtree Valley Mall as seen by my very eyes tonight (Wednesday, September 12th, 2018). I?m sure they?ll be tested within the next few days from the forecasted rain of #HurricaneFlorence... https://t.co/YJzlI2aTLk"
+},
+{
+  "postID" : "1040078695279591430",
+  "timestamp" : "3 Apr 2019 14:53:13 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Reminiscing on the goodtime?s at Ocracoke island this summer! I hope the huge storm off brewing off the coast right now dies down a little and saves the little island! ?#hurricaneflorence #hurricanelane #hurricane #6pack #crazycraver #ocracokeisland #ocracoke #sunsoutbunsout https://t.co/c6j3YYaVo6"
+},
+{
+  "postID" : "1040731698474958848",
+  "timestamp" : "3 Apr 2019 14:53:23 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "During the hurricane Florence  while we still have electricity my grandson and I decided to make cornbread muffins! #grandkids #hurricaneflorence #thankful the lights ate still on! @? https://t.co/Wa0HBjsWc9"
+},
+{
+  "postID" : "1039958279902912514",
+  "timestamp" : "3 Apr 2019 14:53:32 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So thankful for all the well wishes and offers of places to evacuate to during this potential hurricane."
+},
+{
+  "postID" : "1041978189441118208",
+  "timestamp" : "3 Apr 2019 14:54:31 GMT",
+  "categories" : [ "ThirdPartyObservation", "Location", "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Closed due to flooding: alt: russell rd in #NorthwestDurhamCounty on Guess Rd between Cardens Crk Dr Both NB/SB and Saint Marys Rd #traffic"
+},
+{
+  "postID" : "1040349050275540993",
+  "timestamp" : "3 Apr 2019 14:54:57 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "What really sucks about this hurricane is not being able to work out. My gym has been closed since yesterday ??"
+},
+{
+  "postID" : "1041035354114076672",
+  "timestamp" : "3 Apr 2019 14:55:32 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "There?s a special place in hell for the people who left there pets outside during this hurricane"
+},
+{
+  "postID" : "1040257979256320000",
+  "timestamp" : "3 Apr 2019 14:55:48 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "work let us go early yesterday and we?re staying out until hurricane florence passes \n\ncatch me lookin like this for 4-5 days https://t.co/pq5QOZZOep"
+},
+{
+  "postID" : "1041481786465890305",
+  "timestamp" : "3 Apr 2019 14:57:36 GMT",
+  "categories" : [ "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "@PrestonRCollege Hurricane Florence devastated the University of South Carolina. Watch this video for more details: https://t.co/PjIjedvui8"
+},
+{
+  "postID" : "1039912404082221057",
+  "timestamp" : "3 Apr 2019 14:58:23 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "'We are not all things to all people'\nFEMA Director #BrockLong No, you're all things to people who lose everything to a natural disaster! \n\nSomeone punch this motherfucker in the face please! #HurricaneFlorence ? https://t.co/XmsBBDJRV3"
+},
+{
+  "postID" : "1040671640206671874",
+  "timestamp" : "3 Apr 2019 14:58:35 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The winds have started in the mountains dark gray skies @WhatsRaySaying"
+},
+{
+  "postID" : "1039920284827086848",
+  "timestamp" : "3 Apr 2019 14:59:33 GMT",
+  "categories" : [ "Location", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "State of emergency declared in #Georgia ahead of #HurricaneFlorence. #gawx #florence"
+},
+{
+  "postID" : "1040714428465995781",
+  "timestamp" : "3 Apr 2019 14:59:58 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Does @jimmyjohns deliver during a hurricane? Asking for myself."
+},
+{
+  "postID" : "1040052066964652037",
+  "timestamp" : "3 Apr 2019 15:00:47 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Don?t be fooled by the beautiful weather!! Disaster is at the doorstep, as the Governor of North Carolina said today. \n\nThe National Weather Service calls #HurricaneFlorence ?The Storm of a Lifetime?. \n\nThe mood on the North Carolina coast? Seeing it before changes forever. https://t.co/R1lzPxc6cb"
+},
+{
+  "postID" : "1040233197605404673",
+  "timestamp" : "3 Apr 2019 15:04:34 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#truth It's been such a challenging #Election2018 cycle! Sending + energy that all (inc BOE) that we fair well after #hurricane. At least, this is being equally served up to both sides. No surprise if there will be a \"special session\" to take advantage of the situation, though ?"
+},
+{
+  "postID" : "1040268695921197056",
+  "timestamp" : "3 Apr 2019 15:04:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So we?re gonna be closed until further notice. Stay safe, my friends #hurricaneflorence #justsaynotoflo #standuppaddle #paddleboarding #kayaking #standupoutfitters #newbern @ New Bern,? https://t.co/XwIIKGbBqO"
+},
+{
+  "postID" : "1041627716469108736",
+  "timestamp" : "3 Apr 2019 15:06:41 GMT",
+  "categories" : [ "Weather", "Location", "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "MORE FLOODING:\n- Hwy 200 between US 601 and Mt. Pleasant Rd South\n- Mount Pleasant Rd between Joyner Rd and Hwy 200\n#WCNCFlorence #CLTtraffic"
+},
+{
+  "postID" : "1040416060581851142",
+  "timestamp" : "3 Apr 2019 15:08:28 GMT",
+  "categories" : [ "Donations", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Proud of my company @BankofAmerica who immediately provided support to the @RedCross to help the states affected prepare. Please consider donating by sending a text to REDCROSS at 90999 to give $10 to American Red Cross Disaster Relief for #HurricaneFlorence"
+},
+{
+  "postID" : "1040036777002770432",
+  "timestamp" : "3 Apr 2019 15:09:16 GMT",
+  "categories" : [ "Location", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Port of Charleston is currently closed to all commercial traffic and all transfer operations. Sustained gale force winds of 25 mph and gusts up to 40 mph are expected within 24 hours.  #Florence"
+},
+{
+  "postID" : "1041475757934092288",
+  "timestamp" : "3 Apr 2019 15:09:37 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Florida customers may recognized this smile. Will MacDonald is the Lineman in the @DukeEnergy commercials. He is supervising contract crews in SC. He left two young kids and his wife back home in West Central FL to get the power back on in the Carolinas. https://t.co/c7WSA4e3kW"
+},
+{
+  "postID" : "1040705401656758272",
+  "timestamp" : "3 Apr 2019 15:09:45 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Repost @GCCRockHill\n???\nDUE TO THE ANTICIPATED IMPACT OF #HurricaneFlorence, ALL SUNDAY SERVICES HAVE BEEN CANCELED. This will include GCS on Sunday evening.\n\nPlease take safety? https://t.co/p87ZuaS8HU"
+},
+{
+  "postID" : "1040276401243533313",
+  "timestamp" : "3 Apr 2019 15:10:45 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Don?t spread #fakenews, here?s how regarding #HurricaneFlorence \n\nhttps://t.co/Bj5EH3ilXm"
+},
+{
+  "postID" : "1040241791855984645",
+  "timestamp" : "3 Apr 2019 15:10:53 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I left my raincoat at a friend?s house. Before a HURRICANE. ? #fail"
+},
+{
+  "postID" : "1040256794642313216",
+  "timestamp" : "3 Apr 2019 15:11:09 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We see y?all comin in here. Tryin to help. Before hell turns loose. It?s brave stuff??? #FL #GA #AL #TX #CajunNavy #Canada #MS #TN #NYPD #NYFD #MI #OK #Ak #MO #KY #HurricaneFlorence2018"
+},
+{
+  "postID" : "1040210253365866496",
+  "timestamp" : "3 Apr 2019 15:12:05 GMT",
+  "categories" : [ "Location", "Hashtags", "News", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Good Morning from a cloudy and breezy #Charleston, SC.  The latest from here as we cover #HurricaneFlorence on @wyffnews4 and @Hearst stations around the country.  #StaySafe https://t.co/WJvVIepbcJ"
+},
+{
+  "postID" : "1039871393356115968",
+  "timestamp" : "3 Apr 2019 15:14:51 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#OnLocation in Wilmington, NC for @weatherchannel photographing meteorologist @stephanieabrams as #HurricaneFlorence makes it's way toward the Carolina's. \n\n#TheWeatherChannel? https://t.co/XiiFVbswHe"
+},
+{
+  "postID" : "1039866539305050112",
+  "timestamp" : "3 Apr 2019 15:15:04 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "How you come a day before a hurricane makes landfall and complain about the shelves being empty https://t.co/djHo93Y0nw"
+},
+{
+  "postID" : "1040068484372287490",
+  "timestamp" : "3 Apr 2019 15:15:30 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Some people don?t hurricane well.\n#notwindproof #hurricaneflorence #wilmingtonnc @ Wilmington, North Carolina https://t.co/fFQcGLnq8q"
+},
+{
+  "postID" : "1040698188653649920",
+  "timestamp" : "3 Apr 2019 15:15:39 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "COMING IN BEFORE THE STORMS #hurricaneflorence #dieselpunk #steampunk #starwars #hurricane #alternatehistory https://t.co/kUnn5qfM2M"
+},
+{
+  "postID" : "1039932909975683073",
+  "timestamp" : "3 Apr 2019 15:16:09 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@ManInTheHoody Rolls of paper towels balanced on his fists and this would be a perfect \"Trump arrives in NC after hurricane\" gif."
+},
+{
+  "postID" : "1042244746373214208",
+  "timestamp" : "3 Apr 2019 15:16:54 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "POTUS on #Florence: ?This is a tough hurricane. One of the wettest we?ve ever seen from the standpoint of water?"
+},
+{
+  "postID" : "1039998291730149376",
+  "timestamp" : "3 Apr 2019 15:17:01 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Vested interest in local tv stations product available ahead of hurricane season @zero_lemon"
+},
+{
+  "postID" : "1040343136248180738",
+  "timestamp" : "3 Apr 2019 15:17:49 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Current satellite view of Hurricane Florence. Just a few hours away from landfall! #HurricanceFlorence #Florence https://t.co/VYRKsgWlVQ"
+},
+{
+  "postID" : "1040995866990051328",
+  "timestamp" : "3 Apr 2019 15:19:30 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Flash flooding will be possible across upstate SC on Sunday and Monday. Here?s a reminder never cross a flooded roadway. Please make sure to follow recommendations from local officials in case emergency action is needed. #weathersafety #turnarounddontdrown #gspwx #scwx https://t.co/uUk2BLYxoD"
+},
+{
+  "postID" : "1039887356122329089",
+  "timestamp" : "3 Apr 2019 15:19:41 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "day thirty six // let?s get wet\n\nHad to get creative to prep for a potential game in a hurricane yesterday. This week?s game and show is canceled, but I would feel bad not sharing some gems. https://t.co/XiQbkwAkHZ"
+},
+{
+  "postID" : "1039921829291458562",
+  "timestamp" : "3 Apr 2019 15:19:53 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I took a long walk this morning on my 2nd hurricane day off from school. Followed that with climbing ladders to wash the outside of my house.  No wonder my calves fill the burn. https://t.co/unc7CKtfy5"
+},
+{
+  "postID" : "1042140976058429440",
+  "timestamp" : "3 Apr 2019 15:20:54 GMT",
+  "categories" : [ "Weather", "Location", "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Flooding: alternate: hwy 54 in #SouthDurhamCounty on Stagecoach Rd Both EB/WB between Hope Vly Rd and Farrington Rd #traffic"
+},
+{
+  "postID" : "1040360701586489344",
+  "timestamp" : "3 Apr 2019 15:22:38 GMT",
+  "categories" : [ "FirstPartyObservation", "Weather", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "#HurricaneFlorenceResources live feeds all in one place #HurricaneFlorence #FlorenceNC \n\nhttps://t.co/cucN40NzcP"
+},
+{
+  "postID" : "1040328117288620033",
+  "timestamp" : "3 Apr 2019 15:22:50 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My mom is making us clean the house for Hurricane Florence to mess it up"
+},
+{
+  "postID" : "1040836365892677633",
+  "timestamp" : "3 Apr 2019 15:22:58 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "me swatting away mosquitos coming to nc after the hurricane florence rain"
+},
+{
+  "postID" : "1040215990800474112",
+  "timestamp" : "3 Apr 2019 15:25:13 GMT",
+  "categories" : [ "Location", "ContextualInformation", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "PSA: Pine Forest High School and South View High School have been turned into emergency shelters due to the incoming hurricane. Both of these schools are pet friendly. Please think of your pets safety too. Be sure to bring pet medications, leash, crate, etc. Be safe!!!"
+},
+{
+  "postID" : "1040791721531961344",
+  "timestamp" : "3 Apr 2019 15:27:47 GMT",
+  "categories" : [ "Location", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "@favgrl_slim Not yet, but it?s expected that the Cape Fear River will crest higher than it did during hurricane Matthew, all low lying area will be evacuated starting tomorrow."
+},
+{
+  "postID" : "1040340373434978305",
+  "timestamp" : "3 Apr 2019 15:29:36 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "- #hurricane #florence is less than 24 hours away from making landfall on the Southeast coast( #baldheadisland - #northcarolina )with catastrophic impacts, from damaging winds to flash? https://t.co/XPDrf03VCK"
+},
+{
+  "postID" : "1042180154381029378",
+  "timestamp" : "3 Apr 2019 15:30:25 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "REPORTAJE EN ESPANOL DE SPRING LAKE. While the water is receding, many residents are still dealing with flooding in Spring Lake. Here?s my #ABC11 report in Spanish. #Florence #HurricaneFlorence https://t.co/cnYWY7yeva"
+},
+{
+  "postID" : "1039923609609928704",
+  "timestamp" : "3 Apr 2019 15:31:32 GMT",
+  "categories" : [ "Location", "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Per @RepRalphNorman Keep your eye on the storm and your need to know Shelter Locations. \n\nChester County:  Chester and Lewisville Middle Schools opening at 6pm tomorrow. \nSumter County: Maywood Middle SchoolWe will be updating you as #Hurricane shelters open across our district!"
+},
+{
+  "postID" : "1040293900219572225",
+  "timestamp" : "3 Apr 2019 15:31:50 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Outside our door, new crews huddle. Everyone is waiting for something to happen. #hurricaneflorence @ Wilmington, North Carolina https://t.co/zhXjuqutFx"
+},
+{
+  "postID" : "1040563974524338176",
+  "timestamp" : "3 Apr 2019 15:33:25 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Today's Extended Forecast: https://t.co/XROSh5YkFC\n #CarolinaWx #ClaytonNC #Wx"
+},
+{
+  "postID" : "1039932418654986240",
+  "timestamp" : "3 Apr 2019 15:34:12 GMT",
+  "categories" : [ "Weather", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Ad for our coverage of #HurricaneFlorence (#FlorenceNC). \n\nStay with us.\n\n#HuffmanSevereWX #ncwx #scwx #cltwx #Charlotte #Weather #TropicalWeather #Hurricane #MajorHurricane? https://t.co/zcAU8Ihqwv"
+},
+{
+  "postID" : "1039947416764600320",
+  "timestamp" : "3 Apr 2019 15:35:34 GMT",
+  "categories" : [ "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "FYI for hurricane prep and aftermath\n#hurricanepreparedness  #hurricaneflorence @ Fort Mill, South Carolina https://t.co/aLoimAZmKb"
+},
+{
+  "postID" : "1040967200834764801",
+  "timestamp" : "3 Apr 2019 15:36:08 GMT",
+  "categories" : [ "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Praying for my little home of Newport and surrounding areas, because all of the ENC is home. Love and prayers going up for my students, fellow teachers and their families who are displaced because of #HurricaneFlorerence \n#CarolinaStrong #MCPS #CCPS"
+},
+{
+  "postID" : "1040707103860641792",
+  "timestamp" : "3 Apr 2019 15:41:55 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Please pray for North Carolina and everyone being hit by this hurricane. It's honestly so scary."
+},
+{
+  "postID" : "1040054872534601728",
+  "timestamp" : "3 Apr 2019 15:43:20 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We are hurricane ready here in Charlotte, NC! Pray for us! ?? #lacroix #perrier #sparklingwater #charlottenc #queencity #hurricaneflorence #stayhydrated @ Charlotte, North Carolina https://t.co/X9gwip6JVw"
+},
+{
+  "postID" : "1041100274629271557",
+  "timestamp" : "3 Apr 2019 15:43:50 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Due to this hurricane I will be out of work for about a week and will need to get my house fixed. Any donations would be greatly appreciated and will  receive one free month of my OnlyFans account. Payment can go through my CashAPP or PayPal. Love you guys ??"
+},
+{
+  "postID" : "1040989315147464705",
+  "timestamp" : "3 Apr 2019 15:45:17 GMT",
+  "categories" : [ "Donations", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Pinnacle Nutrition wants to help those affected by Hurricane Florence.  Come by and donate nonperishable foods, bottled water or donate money towards our fundraiser and receive a coupon? https://t.co/bvmKrPbn1r"
+},
+{
+  "postID" : "1040680835731652609",
+  "timestamp" : "3 Apr 2019 15:45:36 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Ran over for a little mid hurricane pump and check the facilities. Just note the doors are permanently locked till Monday due some minor flooding. Depending on how the storm goes, please? https://t.co/vDxnkiNDPa"
+},
+{
+  "postID" : "1041788648541380614",
+  "timestamp" : "3 Apr 2019 15:45:57 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "At this point, it would be quicker to list the handful places in NC not touched by #HurricaneFlorence"
+},
+{
+  "postID" : "1040646876968701958",
+  "timestamp" : "3 Apr 2019 15:47:27 GMT",
+  "categories" : [ "Weather", "Location", "Official", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "From Governors Press Conference 1pm -?From Wilmington to Fayetteville to Charlotte, we will experience 500 to 1,000 year flood events. Flooding will continue is these areas over the coming days.?"
+},
+{
+  "postID" : "1041380729987510272",
+  "timestamp" : "3 Apr 2019 15:48:25 GMT",
+  "categories" : [ "Donations", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The taproom is open until 8 today, and we're still accepting donations to help families on the coast who are facing hard times in the aftermath of Florence.\n\n#drinkdurty #hurricaneflorence https://t.co/26iESAEiKp"
+},
+{
+  "postID" : "1039892077537058821",
+  "timestamp" : "3 Apr 2019 15:50:39 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "11 AM Update: Hurricane Track Shifts Again, South Carolina Now at Greater Risk https://t.co/ZokHLPZckI via @wltx"
+},
+{
+  "postID" : "1040212400375562240",
+  "timestamp" : "3 Apr 2019 15:51:11 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hurricane headed my way and I can't keep up with the weather at work because my @Uverse app won't work properly. Thanks @ATTCares"
+},
+{
+  "postID" : "1039954649305018369",
+  "timestamp" : "3 Apr 2019 15:52:38 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "About 20 of us are hunkering in the @ElonNewsNetwork newsroom to cover Hurricane Florence throughout the weekend. Keep updated to our website and social media as we report on some very important stories. https://t.co/n043LjzRFJ"
+},
+{
+  "postID" : "1041520827261435905",
+  "timestamp" : "3 Apr 2019 15:52:59 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Y?all use any excuse to post a bikini pic ? ?wish it was summer instead of 10in of water flooding streets/homes?"
+},
+{
+  "postID" : "1040528979478937601",
+  "timestamp" : "3 Apr 2019 15:53:55 GMT",
+  "categories" : [ "Weather", "EmergingThreats", "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "5am:\n\n- Max winds 90mph\n- Movement is WNW at 6 MPH\n- No track changes of note\n- A Tropical Storm Warning, a Hurricane Watch, and a Storm Surge Watch are in effect https://t.co/ihyzZAWa9b"
+},
+{
+  "postID" : "1039870411712999427",
+  "timestamp" : "3 Apr 2019 15:55:38 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "@CarolinaWx Rain for past 7 days #Wc #ClaytonNC https://t.co/dmTrZ9YbGK https://t.co/6zGOaFTYOh"
+},
+{
+  "postID" : "1041401444669288448",
+  "timestamp" : "3 Apr 2019 15:56:23 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "RAIN, RAIN GO AWAY! it just refuses to stop raining and gusting in #Wilmington #NorthCarolina And it?s SUNDAY. #HurricaneFlorence @MyNews13 @MyNews13Weather @BN9 #SpectrumNews https://t.co/8gQY0dWlYG"
+},
+{
+  "postID" : "1040058463110488064",
+  "timestamp" : "3 Apr 2019 15:57:06 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "There's a dangerous hurricane bearing down on millions of Americans, and you're on some bullshit. You're awful @IngrahamAngle"
+},
+{
+  "postID" : "1040200553014415365",
+  "timestamp" : "3 Apr 2019 15:58:06 GMT",
+  "categories" : [ "Weather", "Location", "EmergingThreats", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "High storm surge expected as #Florence moves closer to the NC/SC coastlines. Heavy rain along with tropical storm force winds expected in the #clt metro as well. #ncwx #scwx #cltwx"
+},
+{
+  "postID" : "1039952968815202304",
+  "timestamp" : "3 Apr 2019 15:59:56 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Todays story: Boarded businesses, empty homes as people evacuate North Carolina. We?re Tracking Florence: check out my coverage here #FirstAlert #Florence \nhttps://t.co/X6LvFDgI5j @NBCPhiladelphia"
+},
+{
+  "postID" : "1040014986859479041",
+  "timestamp" : "3 Apr 2019 16:00:12 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "?School is closed Thursday, September 13 and Friday, September 14 due to Hurricane Florence! ?\n??Stay Safe and Dry! ?? @ Robert F Kennedy Middle https://t.co/zLmypXQStb"
+},
+{
+  "postID" : "1040184415719186432",
+  "timestamp" : "3 Apr 2019 16:01:09 GMT",
+  "categories" : [ "Weather", "Location", "EmergingThreats", "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Walk over from the parking garage to work, what a beautiful calm before the storm #CarolinaStrong https://t.co/ITdubFdVfn"
+},
+{
+  "postID" : "1040554570139791362",
+  "timestamp" : "3 Apr 2019 16:01:29 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "TRUMP TALES:\nAs the American people brace for what will probably be a very deadly hurricane, will the purported leader of the free world spend the day offering words of comfort & calm?\nWill the tweets be a balm to soothe worried minds?\nIt?s 6:55 a.m. ???"
+},
+{
+  "postID" : "1039877977977307137",
+  "timestamp" : "3 Apr 2019 16:02:31 GMT",
+  "categories" : [ "Weather", "EmergingThreats", "MultimediaShare", "Factoid", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "Catastrophic update to #HurricaneFlorence as it takes a dramatic change in course to a more southern direction. Now labeled 'The Storm of a Lifetime'. Expected storm surge flooding of over 10+ feet for coast. Forecasted to stall over the coast with Catagory 3-4 winds for two days https://t.co/3FHuby1qD3"
+},
+{
+  "postID" : "1041738596800233473",
+  "timestamp" : "3 Apr 2019 16:02:55 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Our offices will remain closed this week and our #agency will be working remotely for our clients until all staff can re-enter #wilmingtonnc safely due to #HurricaneFlorerence - We will be sharing updates on our channels that may be helpful those looking for various information. https://t.co/NdNmvbBbJX"
+},
+{
+  "postID" : "1040219186377584640",
+  "timestamp" : "3 Apr 2019 16:03:04 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@ColleenBonner Thanks! We evacuated to Greensboro...I?m concerned about our house at the beach flooding, but we?ve got our kids and dogs, so we?ve got the most important stuff taken care of. ??"
+},
+{
+  "postID" : "1041416132505362433",
+  "timestamp" : "3 Apr 2019 16:03:31 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "How about my dad coming through with the news tip today! One of his firefighters from MA was sent down to #Raleigh to assist victims of #HurricaneFlorence @needhamfire @semtrt1 @WCVB #FlorenceHurricane2018 #ABC11 @Entropicmedic https://t.co/5rP3a4SCnj https://t.co/Zff7Wqj5I7"
+},
+{
+  "postID" : "1040753713403445248",
+  "timestamp" : "3 Apr 2019 16:04:02 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "There isn?t a hurricane here. No tropical depression either. Just Carolina blue skies n2dolly0214 @ Shelby, North Carolina https://t.co/MdQANdDu4C"
+},
+{
+  "postID" : "1040454103237910528",
+  "timestamp" : "3 Apr 2019 16:05:11 GMT",
+  "categories" : [ "Weather", "Location", "EmergingThreats", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "Another view of Hurricane Florence, now a  Category 1 storm, as the eye approaches land. #HurricaneFlorence #NCwx #ILwx #IAwx #MOwx https://t.co/qva1v9whut"
+},
+{
+  "postID" : "1040956174743613440",
+  "timestamp" : "3 Apr 2019 16:05:44 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "today I have to work a mandatory 12hr shift bcs this hurricane and work 12;30-9 again tm ?"
+},
+{
+  "postID" : "1040758360520314880",
+  "timestamp" : "3 Apr 2019 16:05:56 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "There are trees and debris randomly scattered all over. @ Jacksonville, North Carolina https://t.co/meNHnpWCiO"
+},
+{
+  "postID" : "1040775765330210816",
+  "timestamp" : "3 Apr 2019 16:06:05 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Ok so I'm in NC getting affected by the hurricane and it started affecting us today and I already heard police sirens and fire truck sirens ? stay safe guys!!"
+},
+{
+  "postID" : "1039881215661232128",
+  "timestamp" : "3 Apr 2019 16:06:11 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@PoliticalEmilia He's a fucking child. Meanwhile those of us that are waiting for the hurricane cannot depend on FEMA."
+},
+{
+  "postID" : "1040367306247942149",
+  "timestamp" : "3 Apr 2019 16:07:17 GMT",
+  "categories" : [ "Weather", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "hurricane #Florence #hurricaneflorence #hurricaneflorence2018 #kurebeach #NorthCarolinaStrong #atlanticocean #severeweather #weather #wind #showers #storm #rain #beach #waves #ocean #surf #saltlife #naturephotography @photocloud @EarthandClouds @ThePhotoHour https://t.co/bJrtcT24ca"
+},
+{
+  "postID" : "1041046488405733381",
+  "timestamp" : "3 Apr 2019 16:07:46 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@scgovernorpress @SummerDashe @TreyPaulTV I?m concerned this will wind up causing flooding in my neighborhood. They need to explain the purpose of this barrier. Is this just to protect the roadway at the expense of homes??"
+},
+{
+  "postID" : "1040281142467944449",
+  "timestamp" : "3 Apr 2019 16:08:50 GMT",
+  "categories" : [ "ThirdPartyObservation", "Weather", "Location", "EmergingThreats", "MultimediaShare", "Official" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "So the damage of Hurricane Florence begins. ? https://t.co/PrjBS35p3p"
+},
+{
+  "postID" : "1041351148962234369",
+  "timestamp" : "3 Apr 2019 16:09:16 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@realDonaldTrump Really? My town is flooding, public utility is running out of generator fuel, and THIS is your focus? #iwillrememberin2020"
+},
+{
+  "postID" : "1041359966190411776",
+  "timestamp" : "3 Apr 2019 16:09:25 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Meanwhile, back at home, Misty asks, ?what storm?  #napinprogress #cat #cats #catsofinstagram #catstagram 997thefox @ Rock Hill, South Carolina https://t.co/4bHTMGUFs6"
+},
+{
+  "postID" : "1040602423105150977",
+  "timestamp" : "3 Apr 2019 16:10:28 GMT",
+  "categories" : [ "FirstPartyObservation", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "I was able to sneak out & take a few photos during a slower moment of #HurricaneFlorence. 1?? Dog walking on Brunswick Street ? 2?? A downed tree blocks 4th & Brunswick Street. #WilmingtonNC #ilm #NCWX #StreetPhotography ? https://t.co/bejOgfn6Q9"
+},
+{
+  "postID" : "1039875916137148417",
+  "timestamp" : "3 Apr 2019 16:11:35 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Take advantage of @UofSC services before Hurricane Florence hits."
+},
+{
+  "postID" : "1041722637989437440",
+  "timestamp" : "3 Apr 2019 16:12:14 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "And it turned out to barely be a hurricane at all at landfall. #FLOLorence \n\nYour scare mongering was total self-serving horseshit and you?re a disgrace to the meteorological community. The worst part is, it was so painfully obvious how self-serving this shit was. Total garbage."
+},
+{
+  "postID" : "1040273804524707840",
+  "timestamp" : "3 Apr 2019 16:12:20 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Last minute hurricane essentials @ Nothing Bundt Cakes https://t.co/yUnI1cuHuA"
+},
+{
+  "postID" : "1041545484396109825",
+  "timestamp" : "3 Apr 2019 16:12:25 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I'm leaving the windows boarded after this hurricane. I rather look at that instead of my garbage can neighbors."
+},
+{
+  "postID" : "1041586287680135170",
+  "timestamp" : "3 Apr 2019 16:13:52 GMT",
+  "categories" : [ "ThirdPartyObservation", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Incredible pictures of #Florence at the coast & more to come from the Triad as River Flooding is developing through Tuesday. https://t.co/5xmop19r9U Please use caution Monday morning as flash flooding may have damaged roads  & wind gusts have brought down several power lines."
+},
+{
+  "postID" : "1040410490185416707",
+  "timestamp" : "3 Apr 2019 16:32:22 GMT",
+  "categories" : [ "FirstPartyObservation", "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Strong winds from #Hurricane #Florence blowing a photographer around on the beach in Top Sail Island, #NorthCarolina. #ncwx https://t.co/fFRpFqoa8y"
+},
+{
+  "postID" : "1040261447861903360",
+  "timestamp" : "3 Apr 2019 16:33:55 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Visitors come in many forms. We at @VisitRaleigh are proud to welcome all first responders & utility workers stationed in #Raleigh throughout #HurricaneFlorence. ?? for your service. https://t.co/98pEsWCr96"
+},
+{
+  "postID" : "1039867602879893504",
+  "timestamp" : "3 Apr 2019 16:34:11 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Good morning! We are keeping a close eye on Hurricane Florence and will update you here and on our other social media if and when any changes occur to our normal operating hours in the coming few days. Everyone stay safe out there! https://t.co/OYEF9icutJ"
+},
+{
+  "postID" : "1040626992176136193",
+  "timestamp" : "3 Apr 2019 16:35:49 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "TODAY'S QUOTE: \"In reality, you don't ever change the hurricane. You just learn how to stay out of its path.  --Jodi Picoult"
+},
+{
+  "postID" : "1040257299204513792",
+  "timestamp" : "3 Apr 2019 16:36:56 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "?The deaths didn?t go up by much so therefore it doesn?t matter we lost those people in hurricane.?"
+},
+{
+  "postID" : "1040031005388812288",
+  "timestamp" : "3 Apr 2019 16:38:13 GMT",
+  "categories" : [ "ContextualInformation", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Georgia State Parks open for Hurricane Florence evacuees | https://t.co/VQSSD7EjmN https://t.co/H2IKiSwA6A Prayers to all in the path of Hurricane Florence."
+},
+{
+  "postID" : "1039947800107278336",
+  "timestamp" : "3 Apr 2019 16:38:32 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@misslbooth I?m nervous, too.  We were devastated by Hurricane Hugo when I was five but this is my first hurricane to deal with as an adult.  Our family beach house in Myrtle Beach is probably fucked."
+},
+{
+  "postID" : "1040951146230304770",
+  "timestamp" : "3 Apr 2019 16:38:51 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Inquiries this morning about a return to school next week.  Much rain still to come today which will contribute to additional flooding in low lying areas.  We continue to collaborate with all necessary resources on a regular basis.  Too soon for a decision but we are assessing!"
+},
+{
+  "postID" : "1040268018733985792",
+  "timestamp" : "3 Apr 2019 16:39:36 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Kudos to Pembroke Waste Collections, they never fail, even in the threat of a hurricane. Thanks to the workers and drivers. #pembrokewasteneverfail https://t.co/K5qBayrYHA"
+},
+{
+  "postID" : "1040778579322331136",
+  "timestamp" : "3 Apr 2019 16:39:44 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Fuck hurricane snacks we been making whole home cooked hurricane meals?"
+},
+{
+  "postID" : "1040187329380601856",
+  "timestamp" : "3 Apr 2019 16:40:27 GMT",
+  "categories" : [ "Weather", "Location", "EmergingThreats", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Hurricane Florence now becoming visible on radar. It?s now-casting time. A Tornado Watch could be issued for most of Eastern NC later this morning. #Florence https://t.co/HzwXKGn0bQ"
+},
+{
+  "postID" : "1039898658114809856",
+  "timestamp" : "3 Apr 2019 16:40:43 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My cat ran off right before this hurricane and I?ve never been an emotional wreck like this. Please come home baby girl ??"
+},
+{
+  "postID" : "1042187596770762753",
+  "timestamp" : "3 Apr 2019 16:41:09 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Went to Target before they closed early at 6pm, since the area has curfew bc Florence flooding. They didn't have any more copies of @ladybookmad's new book :/ guess I have to wait until the preordered one comes to my house, but it won't be the Target special ed."
+},
+{
+  "postID" : "1040057608055476224",
+  "timestamp" : "3 Apr 2019 16:41:16 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My father has yet to call me and ask me am I prepared for this hurricane....or just to say he loves me or hey but hey how important is your only child these days ?????"
+},
+{
+  "postID" : "1040344949282234368",
+  "timestamp" : "3 Apr 2019 16:42:06 GMT",
+  "categories" : [ "FirstPartyObservation", "Weather", "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Hurricane Florence live from Outer Banks, NC \nhttps://t.co/g0m56SnUuS https://t.co/dUpoXenfe4 via @YouTube"
+},
+{
+  "postID" : "1040240293264666631",
+  "timestamp" : "3 Apr 2019 16:43:07 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Officer Elliott is getting our storm drains ready and clear before #HurricaneFlorence ! ?? #PrepareNow #NoDaysOff @RaleighGov @SustainableRAL https://t.co/ZMiOG4jLqF"
+},
+{
+  "postID" : "1040672999081500672",
+  "timestamp" : "3 Apr 2019 16:43:59 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "https://t.co/Ne5Bco5DdV\nAs I sit here watching the wind & rain from Hurricane Florence. Concerned for family & friends back home in Wayne Co, NC . Some with no power, one watching as the water is rising around his home.  Then this song came to me..."
+},
+{
+  "postID" : "1039996525680750593",
+  "timestamp" : "3 Apr 2019 16:44:09 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@psvgot you could send some swag to your guys in the hurricane path....dunno spoderman can really help a brother in those rainy days"
+},
+{
+  "postID" : "1042203097752317953",
+  "timestamp" : "3 Apr 2019 16:45:05 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Prayers and a helping hand (both physically and financially) needed for this special place that raised myself and so many others ???@donleecenter #campdonlee #HurricaneFlorence https://t.co/LhUUMoYaKF"
+},
+{
+  "postID" : "1041916960924164097",
+  "timestamp" : "3 Apr 2019 16:46:43 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Red Cross volunteers and staff prepared the Grady Cole Center to welcome people affected by #HurricaneFlorence @GCRRedCross https://t.co/PuLPmVsdEJ"
+},
+{
+  "postID" : "1040345766919905281",
+  "timestamp" : "3 Apr 2019 16:48:10 GMT",
+  "categories" : [ "Weather", "Location" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Jacksonville NC Thu Sep 13th PM Forecast: TONIGHT Hurricane Conditions FRIDAY Hurricane Conditions Hi 81"
+},
+{
+  "postID" : "1040351677814112256",
+  "timestamp" : "3 Apr 2019 16:49:36 GMT",
+  "categories" : [ "Hashtags", "ContextualInformation", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "??????read this stay out that water FAM #HurricaneFlorence2018"
+},
+{
+  "postID" : "1040402246498963456",
+  "timestamp" : "3 Apr 2019 16:50:01 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Stuck in a hurricane with limited food,limited water, but lots of ?"
+},
+{
+  "postID" : "1041774716506308609",
+  "timestamp" : "3 Apr 2019 16:50:52 GMT",
+  "categories" : [ "Volunteer", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "We are in New Bern with @SamaritansPurse. Calling on North Carolinians to get involved in any way you can during this #HurricaneFlorence recovery effort. https://t.co/kFMR8eQ9Rb"
+},
+{
+  "postID" : "1039984426808233984",
+  "timestamp" : "3 Apr 2019 16:51:10 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "what did people do before meteorology advances? enjoy sunny & 90 weather one day and be shocked at hurricane force conditions the next day? like they really be thinking wow that?s some crazy weather we having ?"
+},
+{
+  "postID" : "1039849578395328512",
+  "timestamp" : "3 Apr 2019 16:51:24 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So when the hurricane hits the pee see it?s suppose to be a category 2. ?? dropped from a category 4"
+},
+{
+  "postID" : "1039971553386135552",
+  "timestamp" : "3 Apr 2019 16:51:32 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Got Milk?\n\n\"No.\" - grocery stores \n\n#HurricaneFlorence https://t.co/XhaL58ADLA"
+},
+{
+  "postID" : "1041542529227862016",
+  "timestamp" : "3 Apr 2019 16:51:42 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "?gaining the florence 15 is a real thing? bitch is your family trapped in a flooding fucking area with no power? ok then"
+},
+{
+  "postID" : "1039935560868143104",
+  "timestamp" : "3 Apr 2019 16:51:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Atlanta is gonna have natives, folks who claim Atlanta but weren?t born in Atlanta, and hurricane evacuees in the city. It?s gonna be like sardines for the next week or so."
+},
+{
+  "postID" : "1041220431498420224",
+  "timestamp" : "3 Apr 2019 16:52:50 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Up praying to God ??Thanking him for my family being safe during this hurricane #Godisincontrol #weatherthestorm"
+},
+{
+  "postID" : "1041646102599159808",
+  "timestamp" : "3 Apr 2019 16:54:31 GMT",
+  "categories" : [ "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Closed due to flooding: alt: broad st in #Durham on Hillandale Rd & Sprunt Ave between Club Blvd and I-85 #traffic https://t.co/sFRv5PfpVM"
+},
+{
+  "postID" : "1041427220290592769",
+  "timestamp" : "3 Apr 2019 16:56:33 GMT",
+  "categories" : [ "ThirdPartyObservation", "Location" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "What level of remnants of a hurricane are you on today? https://t.co/kTxeAOvo3n"
+},
+{
+  "postID" : "1041333830253268992",
+  "timestamp" : "3 Apr 2019 16:57:19 GMT",
+  "categories" : [ "Weather", "Location", "EmergingThreats", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "TRAFFIC Alert flooding beginning on HWY 17 S after Magnolia Greens. Road could become compromised shortly. Avoid the road! @WWAY @WatchAmandaTV @deanofweather"
+},
+{
+  "postID" : "1042225232306683904",
+  "timestamp" : "3 Apr 2019 16:58:17 GMT",
+  "categories" : [ "Donations", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Here?s another way our team can be ACTIVELY involved in helping #HurricanefFlorence victims!  We can participate in a supply drive for #HuskiesforHarkersIsland! Read below for details! LETS GO HUSKIES!"
+},
+{
+  "postID" : "1040056513811886083",
+  "timestamp" : "3 Apr 2019 16:58:37 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Please pray for North Carolina and all  those who might be affected by #HurricaneFlorence2018"
+},
+{
+  "postID" : "1040751134594555905",
+  "timestamp" : "3 Apr 2019 16:59:49 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Between the bands of wind and rain, a glimpse of Carolina blue.... #hurricaneflorence @ Provincetowne, Charlotte, North Carolina https://t.co/QiCcuCFwgP"
+},
+{
+  "postID" : "1040025956029747201",
+  "timestamp" : "3 Apr 2019 17:17:00 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Steady stream of #WrightsvilleBeach residents evacuating before the 8pm deadline.  They must be out ahead of #HurricaneFlorence.  #ABC11 https://t.co/KHu7YeD4IF"
+},
+{
+  "postID" : "1040169025861509120",
+  "timestamp" : "3 Apr 2019 17:17:14 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My phone just went off about a hurricane warning and now I can?t go back to sleep................................?"
+},
+{
+  "postID" : "1040943722626727936",
+  "timestamp" : "3 Apr 2019 17:17:29 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Some got bath this morning because he decided to go play in the mud after our morning walk #dogsbeingdogs #dog #babyyoda #ilovemydog @ Rocky Mount, North Carolina https://t.co/DBEmjqmAWC"
+},
+{
+  "postID" : "1041451765030420480",
+  "timestamp" : "3 Apr 2019 17:18:12 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Also, shoutout to @PennFCOfficial and the announcers for this broadcast for their concern and assistance as it relates to Florence and the Carolinas. We lucked out in the Raleigh area, but our neighbors to the Southeast are being tested big time!"
+},
+{
+  "postID" : "1040931067396612096",
+  "timestamp" : "3 Apr 2019 17:19:15 GMT",
+  "categories" : [ "Hashtags", "ContextualInformation", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Important information from @NCPublicHealth for those on private well water. #HurricaneFlorence #FlorenceNC"
+},
+{
+  "postID" : "1040277365883056131",
+  "timestamp" : "3 Apr 2019 17:19:23 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We will close at 5pm today due to Hurricane Florence. Check back later today for an update on tomorrow?s hours."
+},
+{
+  "postID" : "1040575699575349253",
+  "timestamp" : "3 Apr 2019 17:20:32 GMT",
+  "categories" : [ "FirstPartyObservation", "EmergingThreats", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "@hurricanetrack @weatherchannel @JimCantore @iCyclone  A taste of Florence?s  Eyewall. https://t.co/M3bdAkw60j"
+},
+{
+  "postID" : "1040255860184965122",
+  "timestamp" : "3 Apr 2019 17:20:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@LK2CHAT @gbfishel So far so good.  Flooding risks are greatest so far. Hopefully people will heed the advice given and evacuate if recommended or shelter in place and not be stupid."
+},
+{
+  "postID" : "1039927247996633090",
+  "timestamp" : "3 Apr 2019 17:21:05 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@BretBaier during his early days at #WRAL covering a hurricane in NC.  Bret you must wish that #FoxNews would let you go out and cover #HurricaneFlorence . Just kidding, Bret keep up the great work! Everyone stay safe! Praying ? for minimal damage! #SpecialReport #TheStoryFNC https://t.co/Zv63eOcSSD"
+},
+{
+  "postID" : "1041056571298594816",
+  "timestamp" : "3 Apr 2019 17:21:13 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My bird feeder has been full of birds all day love watching them while listening to gospel music The rain and wind from hurricane have arrived we are under flash flood  watch & encouraged to stay off the roads. God's got this#lovemyJesus"
+},
+{
+  "postID" : "1042104798785560576",
+  "timestamp" : "3 Apr 2019 17:21:29 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Okay y?all, as you can see, I have some Hurricane Flo clean-up to handle at Natural Tresses Studio. I am still taking appointments through Booksy and I will disclose my temporary location? https://t.co/b3LIqbWiNi"
+},
+{
+  "postID" : "1041124358226419713",
+  "timestamp" : "3 Apr 2019 17:21:52 GMT",
+  "categories" : [ "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Greetings Family & Friends, \nWe are praying for all in the path and aftermath of #Hurricane /#TropicalStorm #Florence. Here in #HorryCounty, #SC and in #Bladenboro & #Lumberton, #NC we? https://t.co/NDAnKQsni7"
+},
+{
+  "postID" : "1039878334581223425",
+  "timestamp" : "3 Apr 2019 17:22:32 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Cumberland Courthouse and libraries close at noon\nMain HQ branch closed already to prepare its basement for flooding \n#HurricaneFlorence #florence"
+},
+{
+  "postID" : "1040225229417660416",
+  "timestamp" : "3 Apr 2019 17:22:38 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@realDonaldTrump @GreggJarrett Yeah your response to hurricane Maria in ?? Puerto Rico!!#failure #WorstPresidentEver"
+},
+{
+  "postID" : "1040216291603369984",
+  "timestamp" : "3 Apr 2019 17:23:22 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Our mets have you covered #FirstWarn3 GO FOLLOW @MHendersonWTKR @April_Loveland @MadelineEvansWx  and @PatrickRockey for updates on #hurricaneflorence https://t.co/rVP4i0ShjT"
+},
+{
+  "postID" : "1040629770667675648",
+  "timestamp" : "3 Apr 2019 17:24:11 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "the streets in southport north carolina. #HurricanFlorence so many places have roof damage and damage in general from the hurricane already and it hasn?t even hit hard. praying for all of the people that stayed during the storm!! i love you all be careful!!? @southportnc https://t.co/xuqcw0yoNO"
+},
+{
+  "postID" : "1040020120347832321",
+  "timestamp" : "3 Apr 2019 17:24:33 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "when your living room is great but you also gotta bring the container gardens inside because hurricane @ Chapel Hill, North Carolina https://t.co/ac1F690ctu"
+},
+{
+  "postID" : "1040736750862249984",
+  "timestamp" : "3 Apr 2019 17:25:09 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Storm going. So is Old Glory. #HurricaneFlorence https://t.co/0MsQzeJv0c"
+},
+{
+  "postID" : "1040969614438658049",
+  "timestamp" : "3 Apr 2019 17:25:57 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Acutely aware that those suffering the most in #HurricaneFlorence are those who always suffer the most. Feeling lucky to have been a thus-far-spared one but also enraged at the envtl policies by #NorthCarolina lawmakers that have made their most vulnerable even more so"
+},
+{
+  "postID" : "1040741378748280832",
+  "timestamp" : "3 Apr 2019 17:26:09 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Part of last night in #HurricaneFlorence you can see power goes out twice. https://t.co/HuhLprd0vv"
+},
+{
+  "postID" : "1040958716705689600",
+  "timestamp" : "3 Apr 2019 17:26:58 GMT",
+  "categories" : [ "ThirdPartyObservation", "Location", "Factoid", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "I-40 CLOSED NORTH OF WILMINGTON\nAll Lanes of I-40 are closed in both directions near Warsaw between Exit 364 (NC-24) and Exit 369 (US-117) due to flooding.\nThe road is expected to reopen by 8:30 AM, September 17,2018."
+},
+{
+  "postID" : "1041323825420554240",
+  "timestamp" : "3 Apr 2019 17:28:24 GMT",
+  "categories" : [ "Weather", "Location" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@sheroyalT Lol they just issued a flash flood warning w/ 16mph winds in that area. That?s wild"
+},
+{
+  "postID" : "1040013180859236352",
+  "timestamp" : "3 Apr 2019 17:28:32 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My period come on the same day as the hurricane hits. My body is in synch with nature. A storm is coming ?"
+},
+{
+  "postID" : "1040307154442444800",
+  "timestamp" : "3 Apr 2019 17:28:43 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Absolutely loving that half the hurricane coverage I'm seeing today is about which bojangles and waffle houses are still open"
+},
+{
+  "postID" : "1041268485651922944",
+  "timestamp" : "3 Apr 2019 17:29:56 GMT",
+  "categories" : [ "Location", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "CPTs Log: (Take VI)\n16 Sep 18 6:00 AM\n\nSTILL no power. \n\nCranked up grill, quick cup of coffee, charged devices in car, ?? for power.\n\nSurrounding areas, #HopeMills and portions of #FAYETTEVILLE flooding has begun. So far so good here... ??\n\n#HurricanFlorence \n#NorthCarolina"
+},
+{
+  "postID" : "1040589480477057024",
+  "timestamp" : "3 Apr 2019 17:30:13 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Due to Hurricane #Florence our office will be closed for the safety of our employees. If you have an urgent legal matter, please contact your #AJAttorney or staff member by email, our website at https://t.co/ftVR2y9SZo, or call our main number at (919) 277-2541 and leave a VM."
+},
+{
+  "postID" : "1039872026616295424",
+  "timestamp" : "3 Apr 2019 17:30:26 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Don?t forget your pressed apple cider as part of your Hurricane Florence prep!!  We have plenty of gallons and half gallons made freshly made up in the Moravian Falls area!!? https://t.co/jErBfcOEoo"
+},
+{
+  "postID" : "1040654571759181824",
+  "timestamp" : "3 Apr 2019 17:30:30 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I have to work tonight & close... I?m not trying to get stuck at work because of the hurricane coming tonight ?"
+},
+{
+  "postID" : "1040019185190006791",
+  "timestamp" : "3 Apr 2019 17:30:34 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Honestly, at this point I?ll trust Waffle House with hurricane relief than Donald Trump given he got over 3,000 people killed."
+},
+{
+  "postID" : "1039850412961095680",
+  "timestamp" : "3 Apr 2019 17:31:36 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "NOW| All @CharMeckSchools home high school football games have been rescheduled from Friday to today due to #HurricaneFlorerence. I?m breaking down weather impacts on area schools all morning on @SpecNewsCLT. https://t.co/Z57ZxBvYJV"
+},
+{
+  "postID" : "1040640815167614976",
+  "timestamp" : "3 Apr 2019 17:32:17 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My bro really wildin @eight_thegreat \n#hurricane https://t.co/xuoWkIS8VZ"
+},
+{
+  "postID" : "1041841820790124544",
+  "timestamp" : "3 Apr 2019 17:32:40 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "When in Rome or as a evacuee in #charlotte #northcarolina. Cheers to all linemen & volunteers who have helped us in our time of need. This ones for you.#hurricaneflorence #hurricane #drinklocal #beer #brewery #craftbeer #beerstagram #beerlover #womendrinkbeer #blogger #ncblogger https://t.co/L0FtsgvNYd"
+},
+{
+  "postID" : "1042209025172168704",
+  "timestamp" : "3 Apr 2019 17:33:41 GMT",
+  "categories" : [ "Weather", "Location", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "#stormcoverage Day 9 of 12: \n@DirectorNCEM knows my name! More importantly we spoke about  widespread flooding as rivers continue to rise and the thousands of rescues that have taken place since #Florence made landfall. First responders have reported 4,000+ rescues @NCEmergency"
+},
+{
+  "postID" : "1039934026876899328",
+  "timestamp" : "3 Apr 2019 17:33:50 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So, Winthrop isn?t going to be happy until i fly away with the hurricane. Once again ?We will conduct business as usual? https://t.co/NWPiYwwqHs"
+},
+{
+  "postID" : "1040990235230961666",
+  "timestamp" : "3 Apr 2019 17:34:24 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Despite the minimal winds/rain here in N Raleigh, 2 trees fell on our street, 1 into the street & 1 on a friend?s house (no injuries, it landed into the attic). That tree fell at 830 this am.  So, a little nervous again."
+},
+{
+  "postID" : "1040472978788687872",
+  "timestamp" : "3 Apr 2019 17:35:52 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "From the unofficial Hurricane Florence reporter of @1053thefan @1053SS @gbagnation @BenandSkin @kandc1053 I think Florence got pissed about my JG reference. There's no power, winds are brutal, and the rain is relentlessness. The fortress is still intact and reports will continue https://t.co/HOYFFiMkBb"
+},
+{
+  "postID" : "1041504888415563776",
+  "timestamp" : "3 Apr 2019 17:36:45 GMT",
+  "categories" : [ "ThirdPartyObservation", "Weather", "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Closed for flooding: alternate: hodges chapel rd in #CentralBenson:SouthJohnsonCounty on US 301 Both NB/SB between Chicopee Rd and Hwy 242"
+},
+{
+  "postID" : "1040002460880957440",
+  "timestamp" : "3 Apr 2019 17:37:41 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "How do I hurricane prep? By filming a JOI video of course. All proceeds will go towards replenishing my bank account after buying a generator, 20 bottles of wine, and an inflatable boat (of course) https://t.co/aKA2CMOpSG #fuckflo #flono #FlorenceNC"
+},
+{
+  "postID" : "1039891601311629312",
+  "timestamp" : "3 Apr 2019 17:38:40 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Wilmington, N.C.?s mayor, Bill Saffo, urges everyone in the hurricane?s path to get out now or prepare to hunker down. Rescue personnel won?t go out once winds exceed 50 mph, he tells me. \n?If you have made the decision to leave, leave now.?\n#hurricaneflorence https://t.co/VQYC7wsg3n"
+},
+{
+  "postID" : "1039885945233911809",
+  "timestamp" : "3 Apr 2019 17:39:36 GMT",
+  "categories" : [ "Location", "EmergingThreats", "MultimediaShare", "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Predict?g 8-11 in rain in #Charlotte. 35 m/h winds. Downed trees/ power lines will b problems. Be prepared 4 going w/o power 3-5 days. #TurnAroundDontDrown @charlottefire @CMPD @CharMeckEM sign up for alerts: text ?charmeck? at 777-888 https://t.co/F3OFClWXcS CHECK ON NEIGHBORS https://t.co/GPtx8S6ZKL"
+},
+{
+  "postID" : "1041364043875930112",
+  "timestamp" : "3 Apr 2019 17:40:06 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : ".@henrymcmaster to give a press briefing on the status of #TropicalStormFlorence and how it is currently impacting South Carolina at 2:30 (Sunday Sept. 16th)  Stay with @abc_columbia updates on air and online. https://t.co/MH5JlWgdiH"
+},
+{
+  "postID" : "1041369520798146560",
+  "timestamp" : "3 Apr 2019 17:40:16 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Me when the power comes back on in the hotel \n\n#Florence #Lumberton #NorthCarolina https://t.co/EdlznST3YL"
+},
+{
+  "postID" : "1040436979664662528",
+  "timestamp" : "3 Apr 2019 17:41:31 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "If #HurricaneFlorence turns the lights out on you, let @DukeEnergy know by reporting your outage. You can report an outage by texting OUT to 57801 or by calling 1-800-POWERON. You can also report online at https://t.co/mJZBik3WT5. Stay safe! https://t.co/FuY9ExlNHr"
+},
+{
+  "postID" : "1040398915655421953",
+  "timestamp" : "3 Apr 2019 17:42:13 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Positive thoughts going out to @WonderWorksMB #StayStong #HurricaneFlorerence https://t.co/DYGtJUnh2y"
+},
+{
+  "postID" : "1040356894085402624",
+  "timestamp" : "3 Apr 2019 17:42:30 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "This hurricane needs to come on and go so my nerves will staaaaaahppp being shot all over the place ?? & I hope everyone remains safe!! \nWe got this y?all!!! ?? #HurricaneFlorence2018"
+},
+{
+  "postID" : "1040052592980750336",
+  "timestamp" : "3 Apr 2019 17:42:54 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hurricane Florence may be a Category 4 but these pics are Category 5 ??? @ UNC Pembroke https://t.co/JIwaUa8nlR"
+},
+{
+  "postID" : "1040786520742027264",
+  "timestamp" : "3 Apr 2019 17:43:08 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "God must really be watching over us during this hurricane because I know good and well that duke energy isn?t the reason my house still has power. ????"
+},
+{
+  "postID" : "1040667376096825344",
+  "timestamp" : "3 Apr 2019 17:44:07 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Whirligigs in Wilson are LIT!  #NCwx #HurricaneFlorence2018 https://t.co/baCDbACKEU"
+},
+{
+  "postID" : "1040293480696897537",
+  "timestamp" : "3 Apr 2019 17:44:50 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Coastal areas like this in Wilmington, NC could see storm surges of up to 3 feet. Other areas as high as 9 feet from #HurricaneFlorence #cbcnews https://t.co/QwjCUslfeq"
+},
+{
+  "postID" : "1039874714267729920",
+  "timestamp" : "3 Apr 2019 17:45:05 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "What do investigative reporters do when their newsrooms go into hurricane mode? Dig up interesting hurricane history!"
+},
+{
+  "postID" : "1040334471072043010",
+  "timestamp" : "3 Apr 2019 17:45:45 GMT",
+  "categories" : [ "Location", "ServiceAvailable" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Hoof Beat Farm in conjunction other local resources is offering storm removal services following Hurricane Florence to Hillsborough and Orange County. Storm removal is comprised of cutting, hauling, and debris mitigation, when safe, following a storm.  Contact 919-201-5347. https://t.co/pt2BSztmzG"
+},
+{
+  "postID" : "1040241523126935553",
+  "timestamp" : "3 Apr 2019 17:46:09 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "It's hard to believe we were just here 2 weeks ago and BAM now there's a hurricane. Carolinas are on our mind, especially grandma and grandpa Lim who helped make this our happy place.? https://t.co/WimWBWFRQ0"
+},
+{
+  "postID" : "1040289897716830208",
+  "timestamp" : "3 Apr 2019 17:46:25 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The state of our politics in 2018: with a massive hurricane bearing down on the NC, one candidate for Congress pauses his campaign ? and the other uses the opportunity to buy attack ads\n\nOn the Weather Channel\n\nI'll let you guess who did what...\n\nhttps://t.co/IPrlDUXSzB"
+},
+{
+  "postID" : "1041130566710697984",
+  "timestamp" : "3 Apr 2019 17:47:25 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Railroad Tracks #FlorenceHurricane2018 #newbernnc https://t.co/5LYJe1yRNW"
+},
+{
+  "postID" : "1039940115026653186",
+  "timestamp" : "3 Apr 2019 17:48:09 GMT",
+  "categories" : [ "Weather", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Interesting video with the change of Hurricane Florence?s cone of uncertainty over the past week or so. https://t.co/B7qv7RWUdZ"
+},
+{
+  "postID" : "1040985422975909888",
+  "timestamp" : "3 Apr 2019 17:48:23 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Attention book lovers! Barnes & Noble Cary opened today at 11 am and we are planning to stay open till 11 pm. Check back with us for updates! #bncary #hurricaneflorence https://t.co/6tCJfnsVPq"
+},
+{
+  "postID" : "1040229692576595968",
+  "timestamp" : "3 Apr 2019 17:49:21 GMT",
+  "categories" : [ "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "As we prayerfully intercede for those in the path of Florence (including much of my family!), here?s an article to facilitate a biblical understanding of hurricanes and to formulate a practical response. @SEBTS #Florence #PrayersfortheEastCoast"
+},
+{
+  "postID" : "1040292862103977985",
+  "timestamp" : "3 Apr 2019 17:50:16 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Eating lunch at a McDonald?s that is out of quarter pounders and tenders. ?The evacuees cleared us out.? @ Kinston, North Carolina https://t.co/4EPTNH7o62"
+},
+{
+  "postID" : "1039925905995563009",
+  "timestamp" : "3 Apr 2019 17:50:55 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Official", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "#sumtersc  #hurricaneflorence updates and useful links at https://t.co/Wr1HDKIxG1 @ City of Sumter, South Carolina https://t.co/sAewOEdi3I"
+},
+{
+  "postID" : "1040360228036915201",
+  "timestamp" : "3 Apr 2019 17:51:51 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Got my snacks ready. Now on to the annual search of my flash lights, extra batteries, and radio.... #hurricaneflorence #prep @ Charlotte, North Carolina https://t.co/pkWW70Z318"
+},
+{
+  "postID" : "1040632451884830720",
+  "timestamp" : "3 Apr 2019 17:52:36 GMT",
+  "categories" : [ "Weather", "Location", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Breaking Wake Facts: 20-30mph winds in some parts of the Co., w/ some 40mph gusts. About 20,000 homes w/o power currently at last count. We anticipate 8?-10? of rain in southern portions of the Co. & 3?-5? in the north between now & Sunday. We?re under a Tornado Watch until 5PM."
+},
+{
+  "postID" : "1040772440576729088",
+  "timestamp" : "3 Apr 2019 17:53:21 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "To all those in the path of hurricane Florence,  we have you in our prayers !\nThere will be no live feed tonight and possibly through the weekend . Power flickers on and off and we need to? https://t.co/gN2US0zupn"
+},
+{
+  "postID" : "1040641654108180487",
+  "timestamp" : "3 Apr 2019 17:53:32 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@its_vivian_ @mulaamikee And I sincerely hope that after this hurricane passes that you?re family will be able to recover from the damages. And I know Charlotte is going to get hit too so we all don?t know the exact damages that will happen here"
+},
+{
+  "postID" : "1041870975514681345",
+  "timestamp" : "3 Apr 2019 17:54:42 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Check out the latest report from @miguelmarquez on the devastation #HurricaneFlorence2018 has left behind. So shocking from above. @cnn"
+},
+{
+  "postID" : "1040233872028565504",
+  "timestamp" : "3 Apr 2019 17:57:33 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We?ve met with MANY families of people who died in the aftermath of Maria. We surveyed 112 funeral homes across PR. We sued for records that highlighted hurricane deaths the government hasn?t recognized. All evidence suggests there were thousands of deaths /3"
+},
+{
+  "postID" : "1039960377793097733",
+  "timestamp" : "3 Apr 2019 17:57:41 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@Avis Just WOW, if they all die during Hurricane Florence, then it?s all on you https://t.co/2UQ7tswDqW"
+},
+{
+  "postID" : "1040089646028541952",
+  "timestamp" : "3 Apr 2019 17:57:48 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@HPCAFootball improves to 5-0 on the road under hurricane inspired \"Wednesday night lights\""
+},
+{
+  "postID" : "1040188762511351808",
+  "timestamp" : "3 Apr 2019 17:58:31 GMT",
+  "categories" : [ "Location", "EmergingThreats", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The calm before the storm in beautiful Oak Island, NC #HurricaneFlorence @JohnBerman @NewDay https://t.co/mTGkv9GC7c"
+},
+{
+  "postID" : "1039917978635128832",
+  "timestamp" : "3 Apr 2019 17:59:15 GMT",
+  "categories" : [ "ServiceAvailable", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "A NON-EMERGENCY number for residents will be active starting tomorrow morning 919-996-2999\nIf life- threatening, call 911 #HurricaneFlorence #Raleigh"
+},
+{
+  "postID" : "1039886946829561856",
+  "timestamp" : "3 Apr 2019 17:59:27 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Y?all I really can?t wait to go visit Lake Crabtree Valley after this hurricane"
+},
+{
+  "postID" : "1039895399815933952",
+  "timestamp" : "3 Apr 2019 17:59:33 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@trentg27 The news is lying to you, don?t stock up on supplies, the only thing you need to get through the hurricane is beer and that?s from a true southerner"
+},
+{
+  "postID" : "1041362183198842880",
+  "timestamp" : "3 Apr 2019 18:00:08 GMT",
+  "categories" : [ "Donations", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Please consider donating for the victims of #HurricaneFlorence. Text ?FLORENCE? to 90999 and $10 will be donated to the American Red Cross. .@RedCross"
+},
+{
+  "postID" : "1040248386925080581",
+  "timestamp" : "3 Apr 2019 18:00:46 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "The eye of #Florence is almost directly to our east now. Still a lot of dry air wrapping around the hurricane, but it is still LARGE with inland flooding and surge being a major threat. The northern eyewall is rather intense as well at the moment. @SimonStormRider https://t.co/2XZtV5awNX"
+},
+{
+  "postID" : "1042059369314242561",
+  "timestamp" : "3 Apr 2019 18:01:00 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Tell @TruthfullyTXO that Trump declared NC a disaster area BEFORE THE HURRICANE HIT. The national guard, FEMA & out of state utility companies have been here.Tell her to watch the real news.  This hurricane has been all over the news. Trump has made numerous statements."
+},
+{
+  "postID" : "1039951247883812865",
+  "timestamp" : "3 Apr 2019 18:04:31 GMT",
+  "categories" : [ "Factoid", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "duke power estimates 1-3 million people will be without power in the carolinas from florence......?"
+},
+{
+  "postID" : "1040143159014182912",
+  "timestamp" : "3 Apr 2019 18:04:47 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@washingtonpost Holy Crap! Can you please provide the dialogue between Trump and this hurricane so everyone can see the collusion between him and weather? Thanks."
+},
+{
+  "postID" : "1040021744407511041",
+  "timestamp" : "3 Apr 2019 18:05:01 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Yeah so this is happening. Filling up growlers with h2o just Incase. #hurricaneflorence @ Charlotte, North Carolina https://t.co/gj8gkSO1zz"
+},
+{
+  "postID" : "1039945677227413505",
+  "timestamp" : "3 Apr 2019 18:06:23 GMT",
+  "categories" : [ "MultimediaShare", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "As Hurricane Florence approaches, LLR reminds Amusement Ride Owners to secure rides against possible winds and to not operate in high winds/rain/temperature fluctuation/severe weather. https://t.co/ooIroeXOFO"
+},
+{
+  "postID" : "1040020454365220864",
+  "timestamp" : "3 Apr 2019 18:06:50 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Monday: Hurricane Florence isn?t even going to hit us.                                 Wednesday: South Carolina is going to get wrecked."
+},
+{
+  "postID" : "1040330667651940357",
+  "timestamp" : "3 Apr 2019 18:06:59 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The probable path of hurricane Florence is projected to now go over Charlotte. Think I?ll still work the patio Friday night?"
+},
+{
+  "postID" : "1042236195923582977",
+  "timestamp" : "3 Apr 2019 18:07:57 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "I?m still shocked that ecu won?t cancel but I honestly can?t get back to gville due to flooding https://t.co/5r768KqRB4"
+},
+{
+  "postID" : "1040679191237328896",
+  "timestamp" : "3 Apr 2019 18:10:15 GMT",
+  "categories" : [ "Location", "MultimediaShare", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "At 11:23 AM EDT, 1 NNE Wilmington [New Hanover Co, NC] MEDIA reports HURRICANE. *** 2 FATAL, 1 INJ *** TREE FELL ON A HOME ON MERCER AVE KILLING A MOTHER AND AN INFANT. THE FATHER WAS INJURED AND TAKEN TO THE HOSPITAL. CONDITION UNKNOWN. https://t.co/TD7fYeEHVp"
+},
+{
+  "postID" : "1040337443629752320",
+  "timestamp" : "3 Apr 2019 18:11:44 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Here?s a look at the current conditions along the Cape Fear River in downtown Wilmington during #HurricaneFlorence @WNCN https://t.co/9DAXXCgyXa"
+},
+{
+  "postID" : "1041437086665121793",
+  "timestamp" : "3 Apr 2019 18:13:08 GMT",
+  "categories" : [ "Location", "MultimediaShare", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "At 5:06 PM EDT, 5 ESE Chesterfield [Chesterfield Co, SC] DEPT OF HIGHWAYS reports FLASH FLOOD. HWY 9 BETWEEN CHESTERFIELD AND CHERAW CLOSED IN BOTH DIRECTIONS DUE TO FLOODING. https://t.co/MYrBEspWG6"
+},
+{
+  "postID" : "1039965597390577666",
+  "timestamp" : "3 Apr 2019 18:13:28 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Got this beauty safely to the airport to get her back to Seattle before the hurricane hits. Had to cut our week a couple days short!? Her next Trip back she will be in her gorgeous home! So excited to have her a few miles from me!!????#MissHerAlready?????@Molly_Helmuth https://t.co/2DLAdNOdUJ"
+},
+{
+  "postID" : "1041342977191366657",
+  "timestamp" : "3 Apr 2019 18:13:39 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "UPDATE ??????????\n.\n.\nPop-Up for Sunday \"today\" & Tuesday 18th. Have been canceled because of the effects of the hurricane. Thank you for understanding. Pop-up schedule will be updated? https://t.co/bBF2Angeen"
+},
+{
+  "postID" : "1041135456489025536",
+  "timestamp" : "3 Apr 2019 18:15:02 GMT",
+  "categories" : [ "MultimediaShare", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Wild Horses, Alligators and Octopuses: Animals Across the Carolinas Brave Tropical Storm Florence\n\nhttps://t.co/rQGgP9C8Hk"
+},
+{
+  "postID" : "1040697249905336320",
+  "timestamp" : "3 Apr 2019 18:15:17 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "From The Point in Mooresville to Ballantyne Country Club, @abbyefox1 and I criss-crossed the city today to make sure our clients could see houses ahead of hurricane Florence.  Sending? https://t.co/d6IlQGburd"
+},
+{
+  "postID" : "1040822620936187905",
+  "timestamp" : "3 Apr 2019 18:15:25 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@ZosaChannel @2Charmzz_____ What hurricane? https://t.co/l8liUwCx5j"
+},
+{
+  "postID" : "1039980429271597056",
+  "timestamp" : "3 Apr 2019 18:15:33 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Updated Hurricane Florence Dining Hours https://t.co/mMX9sLRqCK"
+},
+{
+  "postID" : "1040729098484633605",
+  "timestamp" : "3 Apr 2019 18:15:50 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "North Carolina, continue to be safe during this hurricane! #RowanCounty #HurricaneFlorence #FlorenceNC"
+},
+{
+  "postID" : "1039924284905455616",
+  "timestamp" : "3 Apr 2019 18:16:05 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I've been out cleaning storm drains which the county should have cleaned and moving rocking chairs off the front porch. I guess I am ready for the hurricane. ?"
+},
+{
+  "postID" : "1039988797126139906",
+  "timestamp" : "3 Apr 2019 18:16:47 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The kids last night settling into their new temporary digs. \n@myheroskeepsake @MYHEROSKEEPSAKE #sarahthemoluccantoo #scarletmacaw #calicomacaw #moluccancockatoo #HurricaneFlorence? https://t.co/I9P9NbcIYs"
+},
+{
+  "postID" : "1041096213137903617",
+  "timestamp" : "3 Apr 2019 18:17:16 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Pray for those who are impacted by hurricane Florence and choose not to criticize based on a soundbut of information."
+},
+{
+  "postID" : "1041424176777768966",
+  "timestamp" : "3 Apr 2019 18:18:55 GMT",
+  "categories" : [ "MultimediaShare", "CleanUp", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Well Hammers looks like we survived Hurricane Florence...most families saw damage to house and/or property...at this point everyone must be extremely careful in the cleanup..most 2ndary roads are flooded and still no power to most.  Be careful God speed in your recovery @theECNL https://t.co/hjoI37lWrm"
+},
+{
+  "postID" : "1039965321392738304",
+  "timestamp" : "3 Apr 2019 18:19:20 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Watching #HurricanceFlorence blow in right now knowing it?ll be the strongest hurricane since the 1950?s is a scary thought for all in its path."
+},
+{
+  "postID" : "1040635165679255553",
+  "timestamp" : "3 Apr 2019 18:20:55 GMT",
+  "categories" : [ "MultimediaShare", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "NEW: Entire Blue Ridge Parkway to close at 8 p.m. due to Hurricane Florence ? \nhttps://t.co/vkXWUkQkjM"
+},
+{
+  "postID" : "1041024325510418435",
+  "timestamp" : "3 Apr 2019 18:21:14 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The hurricane isn?t a bluff, it just changed course. There are real lives ended and towns fucked yo because of Florence. Just be glad you were spared and keep it moving."
+},
+{
+  "postID" : "1042223366667726848",
+  "timestamp" : "3 Apr 2019 18:21:21 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Trump described Hurricane Florence as \"one of the wettest we've ever seen, from the standpoint of water.\"\n\nWith that \"water\" clarification, one has to wonder how long that pee tape is."
+},
+{
+  "postID" : "1039968365505376257",
+  "timestamp" : "3 Apr 2019 18:21:37 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Why does Fayetteville think a city wide curfew is going to help against a hurricane?? Evaluate us. @ Fayetteville?s government"
+},
+{
+  "postID" : "1040713859366092802",
+  "timestamp" : "3 Apr 2019 18:22:50 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "At 5:12 PM EDT, 2 WSW Shallotte [Brunswick Co, NC] DEPT OF HIGHWAYS reports FLOOD. US-17 IS IMPASSSABLE IN BOTH DIRECTIONS DUE TO FLOODING NEAR OLD SHALLOTTE RD NW. https://t.co/TUeNKjfon7"
+},
+{
+  "postID" : "1040928945955368961",
+  "timestamp" : "3 Apr 2019 18:23:17 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "7:42am?#FLORENCE moving across the Low Country of South Carolina this morning with sustained winds of 60 MPH. \n\nHeavy rain/wind just entering the #Charlotte area this morning and more is to come across the area today and into Monday. Anywhere from 8-10 inches #NCwx #SCwx #CLTwx https://t.co/kNX9RUscxu"
+},
+{
+  "postID" : "1039999014815625217",
+  "timestamp" : "3 Apr 2019 18:23:59 GMT",
+  "categories" : [ "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "To my reporter / producer friends, please be safe in the coming days.\n\nNo live shot is worth your life. ??\n#HurricaneFlorence"
+},
+{
+  "postID" : "1040283393966198784",
+  "timestamp" : "3 Apr 2019 18:25:37 GMT",
+  "categories" : [ "Weather", "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "NOTHING beats #weatherchannel, after days on the #HurricaneFlorence2018 hype train, bitterly reporting the storm has been downgraded a category. \"Yeah, well, it'll still be a cat 4 in some places, so technically it's *more* dangerous now,\" the weather person said, snottily."
+},
+{
+  "postID" : "1040745828317458432",
+  "timestamp" : "3 Apr 2019 18:26:09 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Just getting a bit of the outer edges.  Rain and wind gusts. #HurricaneFlorence https://t.co/ClWx2a3zzJ"
+},
+{
+  "postID" : "1041408411072647170",
+  "timestamp" : "3 Apr 2019 18:27:09 GMT",
+  "categories" : [ "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "That moment when everyone?s emergency alerts are going off in target Because of the hurricane, opening of #AHSApocalpyse"
+},
+{
+  "postID" : "1040230269452738568",
+  "timestamp" : "3 Apr 2019 18:27:53 GMT",
+  "categories" : [ "ThirdPartyObservation", "Weather", "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "RIGHT NOW: We're getting our first look at images off #HatterasIsland as #HurricaneFlorence moves in. \n\nStorm surge is a huge worry there and you can see why! [Pictures are from #13NewsNow viewer.] https://t.co/qw1EBbaaSJ"
+},
+{
+  "postID" : "1040999187289128961",
+  "timestamp" : "3 Apr 2019 18:28:13 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "When you're dog won't go outside in rain... desperate times call for desperate measures. Me, The Innovator lol. #trashbagchronicles #charlottedogs #hurricaneflorence #myneighborsthinkimcrazy https://t.co/P8pTLY1vJU"
+},
+{
+  "postID" : "1040030499383795712",
+  "timestamp" : "3 Apr 2019 18:28:27 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "??????: Florida babies ain?t scared of no damn Hurricane Florence??"
+},
+{
+  "postID" : "1040272625749188610",
+  "timestamp" : "3 Apr 2019 18:29:26 GMT",
+  "categories" : [ "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "reporters reporting from inside the storms #why #alsowehavedronesnow #hurricaneflorence\n#oncattime @ Duke Park, Durham https://t.co/B2J96SbJH4"
+},
+{
+  "postID" : "1042056844221591553",
+  "timestamp" : "3 Apr 2019 18:29:38 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The sun is shining, the power is on, & we didn?t flood so we OPEN!!!\n#shootersfaync #braggblvd \n#hurricaneflorence #rockmelikeahurricane https://t.co/szrOiPEKI8"
+},
+{
+  "postID" : "1040476798289698816",
+  "timestamp" : "3 Apr 2019 18:30:15 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "These are homes with memories, where people fell in love, children got to play. Praying this ends soon. The later it gets the more scared we are. :(. #HurricaneFlorerence #HurricaneFlorenceNC @weatherchannel https://t.co/92mCqngsYk"
+},
+{
+  "postID" : "1041711006026752000",
+  "timestamp" : "3 Apr 2019 18:31:44 GMT",
+  "categories" : [ "Weather", "Location", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Chapel Hill/Durham Friends FYI: Kurt could not get to Durham on 2 routes about 30 mins ago because of flooding.\nHe was turned around on University near New Hope, before Githens Middle, AND he was turned around on 15-501 due to flooding near LaQuinta. He made I-40 to durham fwy."
+},
+{
+  "postID" : "1040336310903492609",
+  "timestamp" : "3 Apr 2019 18:32:10 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Loaded my guns,showered, shaved my legs, stockpiled 75 gallons of water to flush the toilet, downloaded half of Netflix and organized the snacks by caloric value. Bring it on #HurricaneFlorence"
+},
+{
+  "postID" : "1042093521220452352",
+  "timestamp" : "3 Apr 2019 18:33:16 GMT",
+  "categories" : [ "Donations", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "And you can drop off your donations here with us if you?re on this end of town #OneCarolina"
+},
+{
+  "postID" : "1040404509825134592",
+  "timestamp" : "3 Apr 2019 18:33:28 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We had to limit it to just 17...\n#PrayforFay #hurricaneflorence\nhttps://t.co/RsWEjPdQqq #HurricaneFlorence2018"
+},
+{
+  "postID" : "1040438052462714880",
+  "timestamp" : "3 Apr 2019 18:35:38 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Running @JaleesaWZZM?s live shot tonight at @Revolution_Mill for #HurricaneFlorence coverage @WFMY #StormTrack2 https://t.co/7UtkffgOVT https://t.co/F8uCAB9CeC"
+},
+{
+  "postID" : "1040553077508632576",
+  "timestamp" : "3 Apr 2019 18:37:18 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "#Florence: it?s calm, the eye made landfall! #HurricaneFlorence #NorthCarolina https://t.co/HnuTeGEeQI"
+},
+{
+  "postID" : "1041329907039559686",
+  "timestamp" : "3 Apr 2019 18:37:46 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@robinkath @EdKrassen @WhatsYo70344542 @realDonaldTrump Live near Shelby, and sending love to our neighbors affected by the hurricane."
+},
+{
+  "postID" : "1040361580083531776",
+  "timestamp" : "3 Apr 2019 18:37:52 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Everyone please be careful thru this hurricane. https://t.co/sADPdROUiU"
+},
+{
+  "postID" : "1040371051706953728",
+  "timestamp" : "3 Apr 2019 18:38:50 GMT",
+  "categories" : [ "Weather", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "Dylan Dreyer flies above Hurricane Florence with storm tracking team https://t.co/57iZHq4Zar via @TODAYshow"
+},
+{
+  "postID" : "1040926052539871233",
+  "timestamp" : "3 Apr 2019 18:40:32 GMT",
+  "categories" : [ "Weather", "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We have 2.5 inches here 2.6 miles north-west of Downtown awake Forest. @NWSRaleigh #FlorenceHurricane2018"
+},
+{
+  "postID" : "1040205012117479424",
+  "timestamp" : "3 Apr 2019 18:41:27 GMT",
+  "categories" : [ "Weather", "Location", "EmergingThreats", "MultimediaShare", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "5AM UPDATE pushes Florence northward. This Cat 2 hurricane has 110 mph winds & is moving NW at 15 mph. Tropical Storm Force winds are possible in South GA as early as Friday. @WFXL #gawx https://t.co/Mwp72mWR3M"
+},
+{
+  "postID" : "1040302132459696128",
+  "timestamp" : "3 Apr 2019 18:42:19 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "At 1:13 PM EDT, Fort Macon [Carteret Co, NC] PUBLIC reports HURRICANE. 70 MPH MAXIMUM WIND GUST AT FORT MACON SO FAR. https://t.co/KmfDKCphjN"
+},
+{
+  "postID" : "1040266437384982528",
+  "timestamp" : "3 Apr 2019 18:43:29 GMT",
+  "categories" : [ "Hashtags", "Advice", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Those of you in the storm track of Hurricane Florence please be safe and if you are on the coast do not ride this out. Do the smart thing and take a mini vacation!\nMyself and @CustomEsport are based in NC. Wishing you all the best through this storm.\n\n#HurricaneFlorence2018"
+},
+{
+  "postID" : "1040031806643429378",
+  "timestamp" : "3 Apr 2019 18:43:47 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@Kokomothegreat Well, wish us luck. This is the biggest hurricane we?ve been through. We live in downtown Washington, NC. It?s gonna get crazy by tomorrow."
+},
+{
+  "postID" : "1039899969296261120",
+  "timestamp" : "3 Apr 2019 18:45:00 GMT",
+  "categories" : [ "Weather", "Location", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Stay tuned to our social media pages for updates to hours for 9Round South Charlotte as Hurricane Florence makes landfall. Any changes in our hours, we will post immediately! #staysafe? https://t.co/ZyiwEgUgNj"
+},
+{
+  "postID" : "1039982744649052161",
+  "timestamp" : "3 Apr 2019 18:45:16 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Just heard Hurricane Florence May turn into Georgia now. Do NOT mess with me, Mother Nature, I have deadlines! #ChaChaNowYall https://t.co/pmmW2Fe3iJ"
+},
+{
+  "postID" : "1039944540852039681",
+  "timestamp" : "3 Apr 2019 18:46:00 GMT",
+  "categories" : [ "Location", "Factoid", "Hashtags", "News", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "14:31   E@1 mph(Light Air) Gust:3 mph   Rn:0\"  RnTdy:0\" 24HrRn:0.17\"   87?F(Feels 100?F)   RH:73%   Dp:78?F  Cb:2156'   BP:1017.6inHg  Evapo:.05\"    Moon: Waxing Crescent #CarolinaWx #ClaytonNC #Wx"
+},
+{
+  "postID" : "1041785009391198209",
+  "timestamp" : "3 Apr 2019 18:47:12 GMT",
+  "categories" : [ "Donations", "Location", "CleanUp" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@JacksonGalaxy @AnimalPlanet @HumaneSociety @FAPSpet https://t.co/vUlCZ5zIQs   This shelter sustained damage from the hurricane. Please consider donating so they can repair the damages."
+},
+{
+  "postID" : "1040044716711141381",
+  "timestamp" : "3 Apr 2019 18:47:39 GMT",
+  "categories" : [ "MultimediaShare", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Praying for the people and places across North Carolina as Hurricane Florence closes in ??"
+},
+{
+  "postID" : "1041319331429343234",
+  "timestamp" : "3 Apr 2019 18:48:42 GMT",
+  "categories" : [ "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Cathy is an angel. ?? #NewBern #HurricaneFlorence #ncwx #NewBernStrongYall"
+},
+{
+  "postID" : "1039926685800517638",
+  "timestamp" : "3 Apr 2019 18:49:27 GMT",
+  "categories" : [ "Weather", "Location", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Florence's predicted.....some coastal areas will get damaging hurricane-force winds for more than 24 hours. \"If this blows at 120 mph for four hours, ... you lose a shingle every two minutes, and all of the sudden, you've lost your whole roof after four hours,\""
+},
+{
+  "postID" : "1040769383335899136",
+  "timestamp" : "3 Apr 2019 18:50:33 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@DaronBarefoot @klo789 Most likely things will stay about the same overnight. More rain, on-and-off winds ... and lots of toppled trees by morning. Stay safe!"
+},
+{
+  "postID" : "1041010859882045443",
+  "timestamp" : "3 Apr 2019 18:51:17 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hatches have been battened.  Storm forecast has been reduced here in the mountains.  Feel horrible for the Carolina coastline that got hit hard. @ Saluda, North Carolina https://t.co/d80jsfj7LW"
+},
+{
+  "postID" : "1039894992733581313",
+  "timestamp" : "3 Apr 2019 18:51:36 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hunkering down here in Charlotte while praying for family and friends remaining in Charleston. Hurricanes are no joke. https://t.co/qrM6E6HT2f"
+},
+{
+  "postID" : "1039852243900608513",
+  "timestamp" : "3 Apr 2019 18:52:36 GMT",
+  "categories" : [ "Weather", "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "17 crews in place and on the move as the track of #Florence moves. @weatherchannel is the ONLY source you need for the MOST comprehensive coverage of the science of the storm, AND the storm?s impact to people and life before, during and after the storm. #HurricaneFlorence https://t.co/wj12cfzpbb"
+},
+{
+  "postID" : "1041423061420007425",
+  "timestamp" : "3 Apr 2019 18:52:45 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The enterance to my neighborhood is flooded. Guess my errands are canceled. ? \n\n#HurricaneFlorence #FlorenceNC #Florence https://t.co/InZjxW4ier"
+},
+{
+  "postID" : "1040735775795630081",
+  "timestamp" : "3 Apr 2019 18:53:44 GMT",
+  "categories" : [ "Location", "Hashtags", "ContextualInformation", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Power lost in Holly Springs, NC as of 5pm EST. Time to hunker down. We?re incredibly blessed?this is the worst we?ve gotten. New Bern, Wilmington, OBX?we will rebuild! #NCstrong #HurricaneFlorence #FlorenceNC"
+},
+{
+  "postID" : "1040073127622057984",
+  "timestamp" : "3 Apr 2019 18:54:25 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Generators are a big hit this time of year, especially when facing a major hurricane barreling towards you!\n#nature #hurricane #HurricaneFlorence #Florence #HurricanceFlorence #Power #people #life #helpingothers #HurricanePreparedness #HurricanePrep https://t.co/LJvYPwrkcj"
+},
+{
+  "postID" : "1040006720855175176",
+  "timestamp" : "3 Apr 2019 18:54:35 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "What better way to evacuate for a Hurricane than bringing the family to see the @GatorsFB play! Let?s Go Gators! ???"
+},
+{
+  "postID" : "1041043442569232385",
+  "timestamp" : "3 Apr 2019 18:54:43 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@NBCNightlyNews Presidential alerts: lock her up\n\nPresidential alerts: 3000 did not die\n\nPresidential slert: no collusion \n\nPresidential alert: i'm better. bigger, a stable genious\n\nPresidential alert: can't block this\n\nPresidential alert: hurricanes are wet and big\n\nthink my head will explode"
+},
+{
+  "postID" : "1040722858316623872",
+  "timestamp" : "3 Apr 2019 18:54:48 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Have you noticed how Hurricanes seem to seek out gas stations?"
+},
+{
+  "postID" : "1039915904413433857",
+  "timestamp" : "3 Apr 2019 18:55:11 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "When we start ordering groceries from @amazon bc local stores are out you know it?s getting crazy in NC. #HurricanefFlorence #FlorenceNC"
+},
+{
+  "postID" : "1040278869431992321",
+  "timestamp" : "3 Apr 2019 18:55:47 GMT",
+  "categories" : [ "Weather", "Location", "EmergingThreats", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "#InTheTrackofFlorence: 12:36pm #WrightsvilleBeach, #NorthCarolina. Conditions are starting to deteriorate considerably. Raining, very high winds and huge swell. #Florence #FlorenceNC #HurricaneFlorence https://t.co/Jp2zgkStKP"
+},
+{
+  "postID" : "1040733649979822081",
+  "timestamp" : "3 Apr 2019 18:56:03 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "A bit breezy but love seeing our flag fly high and strong #carolinastrong #florence #charlottenc #wbtvandme @ Charlotte, North Carolina https://t.co/QqDSQSV0el"
+},
+{
+  "postID" : "1042185742913556480",
+  "timestamp" : "3 Apr 2019 18:56:14 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "All-Star in the making! @ Hurricane Park https://t.co/eq6j2Has6Q"
+},
+{
+  "postID" : "1040235180483653633",
+  "timestamp" : "3 Apr 2019 18:56:26 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We will remain closed today (Thursday, September 13) in anticipation of the impact of Hurricane Florence. We are in line with the local school systems, colleges, and similar businesses in? https://t.co/9p5SS3g1QM"
+},
+{
+  "postID" : "1040644215309586434",
+  "timestamp" : "3 Apr 2019 18:57:02 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Strong onshore flow causing storm surge in Snead?s Ferry area. North Topsail Beach is the land you see on otherside of the waterway. The waterway does not usually flow but that wind has it flowing strong. #HurricaneFlorence https://t.co/RwIBqLTftm"
+},
+{
+  "postID" : "1040649007931039745",
+  "timestamp" : "3 Apr 2019 18:58:01 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I Found Hurricane Florence!!!! Ummmm.... Or did I????\n#HurricaneFlorence #Hurricane #BeautifulSkies #WTF #UpstairsNeighbors @ Bluffton, South Carolina https://t.co/XjhQXUWdPt"
+},
+{
+  "postID" : "1041101731172700161",
+  "timestamp" : "3 Apr 2019 18:59:36 GMT",
+  "categories" : [ "Donations", "MultimediaShare", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "Urgent need for volunteers and donations! @WCKitchen @chefjoseandres @ncrla #CAREolinas #ChefsForCarolinas #restaurantsgiveback"
+},
+{
+  "postID" : "1039983025474420743",
+  "timestamp" : "3 Apr 2019 18:59:56 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "about to just go to va for a couple weeks since this hurricane finna hit sc"
+},
+{
+  "postID" : "1040023214326521856",
+  "timestamp" : "3 Apr 2019 19:01:50 GMT",
+  "categories" : [ "MovePeople", "Weather", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Critical",
+  "text" : "Headed to Georgetown for coverage of #HurricaneFlorence tonight and I?m welcomed with this Emergency Alert warning me to leave an area that?s marked as a mandatory evacuation zone. https://t.co/0zfrY17Vyp"
+},
+{
+  "postID" : "1040481420853039104",
+  "timestamp" : "3 Apr 2019 19:03:21 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "Water rescues in @newberndowntown tonight and water is expected to be about 2 ft over what it was with Hurricane #Irene."
+},
+{
+  "postID" : "1039945416018743296",
+  "timestamp" : "3 Apr 2019 19:04:36 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : ".@DukeEnergy SC state prez Kodwo Ghartey-Tagoe briefs Gov. @henrymcmaster this morning on our extensive preps for #HurricaneFlorence at the state Emergency Ops Center near Columbia. https://t.co/PNM2KxMVyy"
+},
+{
+  "postID" : "1039910256539787264",
+  "timestamp" : "3 Apr 2019 19:04:49 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Last lucky customer to get their trees out before Florence! ?\n\n#altec #boomtruck #treework #treelife #cranework @ Cary, North Carolina https://t.co/E1gZFXhIcN"
+},
+{
+  "postID" : "1040256143724044289",
+  "timestamp" : "3 Apr 2019 19:05:03 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We?re unsure if anyone is actually on this boat. #hurricaneflorence https://t.co/F2nIiydy2v"
+},
+{
+  "postID" : "1040038169620766720",
+  "timestamp" : "3 Apr 2019 19:05:28 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "#Florence: It?s somewhat quiet but definitely eerie here. There?s a mandatory evacuation and it?s a ghost town in #WrightsvilleBeach, NC but the wind is picking up and the waves are hitting the shore hard. #HurricanceFlorence #NorthCarolina https://t.co/At4Z2vaLMO"
+},
+{
+  "postID" : "1041196477849190400",
+  "timestamp" : "3 Apr 2019 19:06:26 GMT",
+  "categories" : [ "Weather", "Location", "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "\"We're at Matthew stage right now, and it's still getting higher.\"\n\nWayne County officials expect the Neuse River will crest Monday. However, homeowners say Falling Creek, which is normally 30 feet from their house, is as high as it was during Hurricane Matthew. https://t.co/WzCPISSsOS"
+},
+{
+  "postID" : "1040939172377387008",
+  "timestamp" : "3 Apr 2019 19:07:17 GMT",
+  "categories" : [ "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I haven?t had power in 39 hours and we?re starting to see flooding in our neighborhood #HurricanceFlorence Pray for us ???"
+},
+{
+  "postID" : "1040375453478014977",
+  "timestamp" : "3 Apr 2019 19:08:06 GMT",
+  "categories" : [ "MultimediaShare", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@JohnStossel Sea-level rise raises the baseline onto which a storm surge is added, increasing the coastal flooding of any storm. More generally, climate change affects the atmosphere and global meteorology so that severe storms are more likely. https://t.co/DBQXMJyWam https://t.co/2gYqpZ7h7z"
+},
+{
+  "postID" : "1040054132692934657",
+  "timestamp" : "3 Apr 2019 19:09:51 GMT",
+  "categories" : [ "Location", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Praying tonight for all our NC family being affected by this hurricane! #ncohana Convey Of Hope is ready and waiting to help with the recovery! This is exactly what your Speed the Light? https://t.co/fvmVzuaVIM"
+},
+{
+  "postID" : "1041315946365943808",
+  "timestamp" : "3 Apr 2019 19:10:09 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@JeffFrancoeur As someone who has covered many hurricanes, this reporter (and others) do a major disservice to good reporters who bravely cover storms, safely."
+}
+]}
+]
+}

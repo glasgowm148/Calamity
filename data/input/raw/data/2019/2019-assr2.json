@@ -1,0 +1,4681 @@
+{"annotator": {
+  "eventsAnnotated" : [ {
+    "identifier" : "earthquakeBohol2013",
+    "name" : "2013 Bohol Earthquake (646)",
+    "description" : "The 2013 Bohol earthquake occurred on October 15 at 8:12:31 PST in Bohol, an island province located in Central Visayas, Philippines. The magnitude of the earthquake was recorded at Mw 7.2, with epicenter 6 kilometres (3.7 mi) S 24° W of Sagbayan. <a href='https://en.wikipedia.org/wiki/2013_Bohol_earthquake' target='_blank'>Wikipedia Page<a>",
+    "type" : "Unknown",
+    "imageURL" : "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Loon_2_earthquake.JPG/1920px-Loon_2_earthquake.JPG",
+    "annotationTableName" : "2019-assr2-earthquakeBohol2013"
+  } ],
+  "id" : "2019-assr2"
+},
+"events": [
+{"eventid": "earthquakeBohol2013",
+"tweets": [
+{
+  "postID" : "390373897704448000",
+  "timestamp" : "8 Apr 2019 15:21:04 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @QueenPetraK: Prayers for Bohol and Cebu and other parts of Visayas. Keep safe everyone.  #PrayForVisayas God bless the Philippines!"
+},
+{
+  "postID" : "390490054730084352",
+  "timestamp" : "8 Apr 2019 15:36:02 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "May the Lord protect the people here in Visayas..esp Bohol and Cebu...#PrayForVisayas..gudnyt Sleepyheads :D"
+},
+{
+  "postID" : "390145786249359361",
+  "timestamp" : "8 Apr 2019 14:50:51 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @akoposimarcelo: #PrayForVisayas Dear God, please help us. Amen."
+},
+{
+  "postID" : "390128145031917569",
+  "timestamp" : "8 Apr 2019 14:43:12 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#quake  2013-10-15 13:51:20 (M5.1) NEGROS - CEBU REGION, PHILIPPINES 9.8 123.9 (1cbfb) http://t.co/SBdpQ1k7Ok"
+},
+{
+  "postID" : "389977397543464960",
+  "timestamp" : "3 Apr 2019 12:31:59 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ricogutierrez8: #PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "389922607333515264",
+  "timestamp" : "2 Apr 2019 16:40:49 GMT",
+  "categories" : [ "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BreakingNews: 4 people killed in building collapse in Cebu Philippines after 7.2 earthquake, per National Disaster Agency - @Reuters"
+},
+{
+  "postID" : "390255022702735362",
+  "timestamp" : "8 Apr 2019 15:05:35 GMT",
+  "categories" : [ "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "http://t.co/Y65f4CdHT3 view from last night \n\n#sto.ñino #cebu #earthquake"
+},
+{
+  "postID" : "389968207831789568",
+  "timestamp" : "2 Apr 2019 18:45:49 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Pati Cebu? Aw. #PrayForVisayas Aguy :("
+},
+{
+  "postID" : "392243894588813312",
+  "timestamp" : "8 Apr 2019 16:45:30 GMT",
+  "categories" : [ "CleanUp", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Federation: Almost a week on from 7.2 #earthquakePH @philredcross is scaling up relief response in #bohol http://t.co/fbnmyvPcbi http:/?"
+},
+{
+  "postID" : "390748839096745984",
+  "timestamp" : "8 Apr 2019 15:46:57 GMT",
+  "categories" : [ "SearchAndRescue", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "Posted by a friend. Need help ASAP. https://t.co/bMxOLSg3ZB @philredcross #earthquakePH #bohol"
+},
+{
+  "postID" : "389947907412996096",
+  "timestamp" : "2 Apr 2019 17:54:34 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @inquirerdotnet: INFOGRAPHIC: Map locating the epicentre of a 7.1-magnitude quake that hit central Philippines http://t.co/UztvhpRuPq | ?"
+},
+{
+  "postID" : "391489599312117761",
+  "timestamp" : "8 Apr 2019 16:20:01 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Nakakalungkot. Nakakaawa talaga yung mga taga bohol :(( Sana makabangon sila agad. #prayforbohol #FailonNgayon"
+},
+{
+  "postID" : "390129684320505856",
+  "timestamp" : "8 Apr 2019 14:43:46 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earnestly #PrayForVisayas Be still Cebu and Bohol! God is good :)"
+},
+{
+  "postID" : "389951606768558080",
+  "timestamp" : "2 Apr 2019 18:05:57 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @owyposadas: Awwwww :( #PrayForVisayas"
+},
+{
+  "postID" : "393604572926590976",
+  "timestamp" : "8 Apr 2019 17:01:29 GMT",
+  "categories" : [ "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @bayeraUS: At least 82 dead, churches destroyed as 7.2 earthquake hits Philippines http://t.co/lYx8A7Ga27  via @NBCNewsWorld"
+},
+{
+  "postID" : "390426896909234176",
+  "timestamp" : "8 Apr 2019 15:28:17 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@Reuters: Death toll from Philippines quake at 107, more people missing http://t.co/SYpQF3rPwG\""
+},
+{
+  "postID" : "390017289556197376",
+  "timestamp" : "8 Apr 2019 14:00:44 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@gwenevieleee: Let's all pray for Cebu and Bohol. #PrayForVisayas ? http://t.co/fYArhDhVCK\""
+},
+{
+  "postID" : "389953238352408576",
+  "timestamp" : "2 Apr 2019 18:09:48 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @alliharvard: i just heard about the earthquake in the philippines! i hope everyone is okay ?"
+},
+{
+  "postID" : "390052521709801472",
+  "timestamp" : "8 Apr 2019 14:14:53 GMT",
+  "categories" : [ "Sentiment", "Discussion", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Thoughts &amp; prayers for the people of #Bohol, Cebu, Iloilo &amp; all of Central Visayas in the #Philippines. Devastating 7.2 #earthquake"
+},
+{
+  "postID" : "391400822673641472",
+  "timestamp" : "8 Apr 2019 16:17:30 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "earthquake in the Philippines, hope my family is okkkk :(("
+},
+{
+  "postID" : "389982254534901761",
+  "timestamp" : "3 Apr 2019 12:39:38 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas.#PrayForVisayas.#PrayForVisayas.#PrayForVisayas.#PrayForVisayas.#PrayForVisayas.#PrayForVisayas.#PrayForVisayas."
+},
+{
+  "postID" : "390371993456893952",
+  "timestamp" : "8 Apr 2019 15:20:24 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#YoureMoreAttractiveIf you #PrayForVisayas because Bohol and Cebu Philippines are severely damaged."
+},
+{
+  "postID" : "390310869894066176",
+  "timestamp" : "8 Apr 2019 15:11:37 GMT",
+  "categories" : [ "MultimediaShare", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @harold_geronimo: PHOTO: The famous Chocolate Hills now... no longer in pure kisses shape... (by Phillip Pepito) #PrayForVisayas http://?"
+},
+{
+  "postID" : "389928236118855680",
+  "timestamp" : "2 Apr 2019 17:21:35 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.2 Quake Hits Central Philippines, Killing 4: 7.2-magnitude quake hits central Philippine island, killing at ... http://t.co/kt6daIcIei"
+},
+{
+  "postID" : "390013892203917312",
+  "timestamp" : "8 Apr 2019 13:58:33 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Sana po okey lang si lola,tita at yung mga pinsan ko!!\n#prayForVisayas"
+},
+{
+  "postID" : "390365148348547072",
+  "timestamp" : "8 Apr 2019 15:19:24 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Bakit yung mga Churches pa ? andyan naman yung mga Bars and Clubs :( #PrayForVisayas http://t.co/t7lMnaY9AP"
+},
+{
+  "postID" : "390238971134898176",
+  "timestamp" : "8 Apr 2019 15:04:05 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Can't sleep knowing my family is camping outside ..so scared of aftershocks :'( #Bohol"
+},
+{
+  "postID" : "390286354158211072",
+  "timestamp" : "8 Apr 2019 15:09:31 GMT",
+  "categories" : [ "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earlier... #evacuees #earthquakeph #cebu 3hrs of sleeep lang! ??? #trauma #aftershocks http://t.co/WZmFDbICt1"
+},
+{
+  "postID" : "389972444078825473",
+  "timestamp" : "2 Apr 2019 18:58:09 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@WagAssuming: Devastation of Nueva Ecija due to typhoon santi. And now earthquake in\nCebu and Bohol.  #PrayForVisayas #PrayForNuevaEcija\""
+},
+{
+  "postID" : "389973131932086272",
+  "timestamp" : "3 Apr 2019 12:21:17 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Officials: Death Toll Rises to 20 in 7.2-Magnitude Quake in Central Philippines: Officials: Death toll rises t... http://t.co/ei8o0bc2y4"
+},
+{
+  "postID" : "389968669201018880",
+  "timestamp" : "2 Apr 2019 18:47:24 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Let's pray for those who are in Visayas and Mindanao. #prayforcebu #prayforbohol #prayforleyte #PrayForVisayas #prayforMindanao"
+},
+{
+  "postID" : "389955587175219201",
+  "timestamp" : "2 Apr 2019 18:26:53 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "huhuhu grabe kusuga sa linog bsan diare sa dipolog may gne wah ray nangaguba.. \n#PrayForVisayas \n#PrayForMindanao"
+},
+{
+  "postID" : "392537739133845504",
+  "timestamp" : "8 Apr 2019 16:50:37 GMT",
+  "categories" : [ "Volunteer", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @carlosceldran: #BOHOL Shout out! Any one in the Cubao area that can go to Araneta Coliseum and help pack and label tarpaulins... http:/?"
+},
+{
+  "postID" : "390334659961159680",
+  "timestamp" : "8 Apr 2019 15:16:59 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @maddijanemusic: Prayers going out to everyone effected by the earthquake in the Philippines today??"
+},
+{
+  "postID" : "390347750409109504",
+  "timestamp" : "8 Apr 2019 15:18:43 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @krungy21: #prayforbohol #prayforcebu"
+},
+{
+  "postID" : "390258134897270784",
+  "timestamp" : "8 Apr 2019 15:05:55 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Good morning! RT @GODs_Graces: God is our refuge and strength, a very present help in trouble. -Psalms 46:1 #PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "390105709695598592",
+  "timestamp" : "8 Apr 2019 14:34:25 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Hope all of my friends and family are safe!  #PrayForVisayas"
+},
+{
+  "postID" : "390015913858052096",
+  "timestamp" : "8 Apr 2019 14:00:07 GMT",
+  "categories" : [ "Sentiment", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @paugasol: All my support to the families of the victims due to the terrible earthquake that hit central Philippines today."
+},
+{
+  "postID" : "391679752295026688",
+  "timestamp" : "8 Apr 2019 16:25:13 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake: 2013-10-20 05:30HKT M5.3 [9.6N,124.0E] in Mindanao, Philippines http://t.co/xEXJXrmJR5"
+},
+{
+  "postID" : "391538764968755200",
+  "timestamp" : "8 Apr 2019 16:21:59 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "183 dead in Philippines quake: The death toll from the magnitude-7.1 earthquake in the central Philippines ros... http://t.co/F1R8VUdgoA"
+},
+{
+  "postID" : "390716656214753280",
+  "timestamp" : "8 Apr 2019 15:44:58 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "KEEP caLm and be in GOD'S faith :))) !???\n\n #Cebu"
+},
+{
+  "postID" : "390640173090078720",
+  "timestamp" : "8 Apr 2019 15:43:00 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake diay to cya #PrayforVisayas http://t.co/c2XSxW87rd"
+},
+{
+  "postID" : "390012659078148096",
+  "timestamp" : "8 Apr 2019 13:58:03 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "20 dead as magnitude-7.1 earthquake hits the Philippines http://t.co/ClAqMnRhWw"
+},
+{
+  "postID" : "390147392688762880",
+  "timestamp" : "8 Apr 2019 14:51:08 GMT",
+  "categories" : [ "Factoid", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NewEarthquake: 7.2 earthquake, 2km S of Nueva Vida Sur, Philippines. Oct 15 08:12 at epicenter (10m ago, 25km Tagbilaran, depth... http?"
+},
+{
+  "postID" : "390279966245412864",
+  "timestamp" : "8 Apr 2019 15:08:18 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas poor Mindanao. Muslims got no twitter they can't trend #PrayForMindanao but I ain't Muslim but I'll pray for Mindanao."
+},
+{
+  "postID" : "390077490401513472",
+  "timestamp" : "8 Apr 2019 14:24:35 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "this where my genes came from #PrayForVisayas"
+},
+{
+  "postID" : "389919981720195073",
+  "timestamp" : "2 Apr 2019 16:29:36 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @hamburqa: there was a 7.2 magnitude earthquake in philippines after u posted that G.U.Y. snippet. THIS WORLD CAN'T HANDLE #ARTPOP. @lad?"
+},
+{
+  "postID" : "391539360543170560",
+  "timestamp" : "8 Apr 2019 16:22:44 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "183 dead in Philippines quake: The death toll from the magnitude-7.1 earthquake in the central Philippines ros... http://t.co/P1XMsQP4o9"
+},
+{
+  "postID" : "390019466408779776",
+  "timestamp" : "8 Apr 2019 14:01:31 GMT",
+  "categories" : [ "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Deadly quake hits Philippines http://t.co/ERb2CjSwzf"
+},
+{
+  "postID" : "389977372381818880",
+  "timestamp" : "3 Apr 2019 12:30:33 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Today is baraka day, so lets pray for the safety of our kababayans in Visayas. #PrayForVisayas"
+},
+{
+  "postID" : "390139293470957568",
+  "timestamp" : "8 Apr 2019 14:48:00 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Prayers for the philippines? #cebu #bohol #earthquake #stateofcalamity #porkbarrel #corruption #flood\n\nPEACE n'... http://t.co/0sgWAVjN8f"
+},
+{
+  "postID" : "390296701526749184",
+  "timestamp" : "8 Apr 2019 15:10:04 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "99 Killed in Philippines Quake: \n\nNinety-nine deaths have been confirmed due to a 7.2 earthquake, which struck... http://t.co/nN5rEggaGb"
+},
+{
+  "postID" : "389950814061486080",
+  "timestamp" : "2 Apr 2019 18:03:51 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas Earthquake go away don't come again another day .. people wants to live in peace ..."
+},
+{
+  "postID" : "389968987959721985",
+  "timestamp" : "2 Apr 2019 18:48:49 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "?@krungy21: #prayforbohol #prayforcebu?"
+},
+{
+  "postID" : "389955004137611265",
+  "timestamp" : "2 Apr 2019 18:24:16 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BBCBreaking: 7.2 magnitude earthquake hits central Philippines, killing four, but no tsunami expected say officials http://t.co/5iok6dD?"
+},
+{
+  "postID" : "390147585639337985",
+  "timestamp" : "8 Apr 2019 14:51:34 GMT",
+  "categories" : [ "Factoid", "Hashtags", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Major Earthquake Strikes Central Philippines - New York Times.. http://t.co/sCMvLFWYJQ #Patriots #NFL"
+},
+{
+  "postID" : "389942765183696897",
+  "timestamp" : "2 Apr 2019 17:46:44 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BILLYversCebu: Earthquake!!! First time I felt this.  #PrayforVisayas"
+},
+{
+  "postID" : "390060134392950784",
+  "timestamp" : "8 Apr 2019 14:17:31 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForSouthernLeyte #PrayForCebu #PrayForBohol #PrayForThePhilippines"
+},
+{
+  "postID" : "392052202287534080",
+  "timestamp" : "8 Apr 2019 16:34:34 GMT",
+  "categories" : [ "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "8.0 Magnitude Earthquake To Hit Cebu Philippines: Hoax Text Message Circulates: The story of an 8... http://t.co/jXZoJLdA4F #DailyPostal"
+},
+{
+  "postID" : "389985354159116288",
+  "timestamp" : "3 Apr 2019 12:43:07 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @VhongX44: #prayforbohol #prayforcebu"
+},
+{
+  "postID" : "392069424112361472",
+  "timestamp" : "8 Apr 2019 16:36:27 GMT",
+  "categories" : [ "NewSubEvent", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NewEarthquake: 5.3 earthquake, 3km NE of Balilihan, Philippines. Oct 21 07:03 at epicenter (15m ago, depth 20km). http://t.co/nGE7R3yMmE"
+},
+{
+  "postID" : "389955578774032384",
+  "timestamp" : "2 Apr 2019 18:26:19 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @RT_com: UPDATE: Six killed after 7.1 #quake hits southern #Philippines (PHOTOS) http://t.co/0J6Eg19Gws"
+},
+{
+  "postID" : "389994464183201792",
+  "timestamp" : "3 Apr 2019 12:52:16 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "At least 20 dead in Philippines quake: CEBU, Philippines, Oct. 15 (UPI) --  A powerful earthquake meas... http://t.co/jPEm3u6uH3 #TSCEnt"
+},
+{
+  "postID" : "390118904963416064",
+  "timestamp" : "8 Apr 2019 14:37:18 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @KingPerezz: No matter how many trials come our way, remember that God is with us every step of every day. #PrayForVisayas"
+},
+{
+  "postID" : "389962335781019648",
+  "timestamp" : "2 Apr 2019 18:36:50 GMT",
+  "categories" : [ "Factoid", "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @AyyTangaLangDre: Baclayon Church is one of the oldest Catholic churches in the Philippines, built in 1727. #earthquake #PrayForVisayas ?"
+},
+{
+  "postID" : "389936528245268480",
+  "timestamp" : "2 Apr 2019 17:43:22 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayforBoholandCebu #PrayForBohol #PrayForCarmenBohol ??"
+},
+{
+  "postID" : "392201997681577984",
+  "timestamp" : "8 Apr 2019 16:43:55 GMT",
+  "categories" : [ "NewSubEvent", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "EarthQuake Update: M 4.7 - 283km SSW of Maitum, Philippines: DYFI? - ITime2013-10-21 07:09:58 UTC2013-10-21 15... http://t.co/QtTwcGyB3l"
+},
+{
+  "postID" : "391945704715079681",
+  "timestamp" : "8 Apr 2019 16:30:50 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Before you sleep. Goodnight xox ;-) #prayforcebu #prayforbohol #angelofGod http://t.co/LRHv7O5NpT"
+},
+{
+  "postID" : "390980821873463296",
+  "timestamp" : "8 Apr 2019 15:57:42 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @PhezzzD: We continue to #PrayForVisayas and all the affected areas. Keep safe everyone! Godbless us! #FAITH #HOPE #LOVE http://t.co/XB4?"
+},
+{
+  "postID" : "390803927110660096",
+  "timestamp" : "8 Apr 2019 15:50:19 GMT",
+  "categories" : [ "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @TheEIU_Asia: For now, we believe that the #Philippines' economic growth prospects remain unaffected by the Bohol earthquake."
+},
+{
+  "postID" : "390079478505799680",
+  "timestamp" : "8 Apr 2019 14:25:28 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Church is made of people with unwavering faith. Structures may fall but our faith still lives. #prayforcebu #prayforbohol #prayforPH"
+},
+{
+  "postID" : "390020137505411072",
+  "timestamp" : "8 Apr 2019 14:03:41 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"iamKimPisiao:  #PrayForVisayas http://t.co/1F0rbmLFpt\""
+},
+{
+  "postID" : "389953632612802560",
+  "timestamp" : "2 Apr 2019 18:12:12 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My girls are in the Philippines and there was an earthquake there today, hope they are ok! I feel like a worried mom! :/"
+},
+{
+  "postID" : "390101540561637376",
+  "timestamp" : "8 Apr 2019 14:31:59 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @angeljabines: \"@imlolabashang: The best weapon YOU have is prayer. #PrayForVisayas #PrayForCebu #PrayForThePhilippines #earthquakePH\""
+},
+{
+  "postID" : "389948620432101376",
+  "timestamp" : "2 Apr 2019 17:57:30 GMT",
+  "categories" : [ "Location", "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BILLYversCebu: So this is what happened to Gaisano country mall. #PrayForVisayas http://t.co/AV3zX8TkXV"
+},
+{
+  "postID" : "390191462228295680",
+  "timestamp" : "8 Apr 2019 15:01:04 GMT",
+  "categories" : [ "Factoid", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines quake: dozens killed http://t.co/3E5WcrUDNr via @YahooNews"
+},
+{
+  "postID" : "389950730175389696",
+  "timestamp" : "2 Apr 2019 18:02:56 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @GandangGabiVice: This is really heartbreaking :'( #PrayForVisayas http://t.co/PihNhUmwiW"
+},
+{
+  "postID" : "389966291009671168",
+  "timestamp" : "2 Apr 2019 18:41:00 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BBCNews: Deadly quake strikes Philippines http://t.co/wM5CMa9wvN"
+},
+{
+  "postID" : "390006497628782592",
+  "timestamp" : "8 Apr 2019 13:54:20 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Take care Cebu and Bohol. #PrayForVisayas"
+},
+{
+  "postID" : "390122554033053697",
+  "timestamp" : "8 Apr 2019 14:39:48 GMT",
+  "categories" : [ "MultimediaShare", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Baekyeoliee: deep condolences to all people who passed or injured at the 7.1 magnitude quake today in Cebu, Philippines http://t.co/rlH?"
+},
+{
+  "postID" : "389933239902543874",
+  "timestamp" : "2 Apr 2019 17:35:27 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@Reuters: Four killed in building collapse after Philippines quake: disaster agency http://t.co/tCt1uHnbS0\""
+},
+{
+  "postID" : "391717731713560576",
+  "timestamp" : "8 Apr 2019 16:26:03 GMT",
+  "categories" : [ "Factoid", "Hashtags", "OriginalEvent", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @sunstaronline: Tremor felt in #Cebu at 6:38am was M4, with a depth of 6km, 36km still NE of Tagbilaran, #Bohol. #earthquakePH"
+},
+{
+  "postID" : "389970581786869760",
+  "timestamp" : "2 Apr 2019 18:51:04 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @JuliElmoMEDICS: Stay safe over there Adiks and fellow Filipinos. #PrayForVisayas"
+},
+{
+  "postID" : "390140207838015488",
+  "timestamp" : "8 Apr 2019 14:49:42 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Deadly quake strikes Philippines - Dozens dead after 7.2-magnitude earthquake rocks central Philippines http://t.co/XUiFLKrFyU"
+},
+{
+  "postID" : "390069596721381378",
+  "timestamp" : "8 Apr 2019 14:22:23 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@krungy21: #prayforbohol #prayforcebu\" #prayforphilippines"
+},
+{
+  "postID" : "390432311738515456",
+  "timestamp" : "8 Apr 2019 15:32:18 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Impassable roads hamper Philippines quake rescue efforts http://t.co/xY5JfML0sk http://t.co/zPfRGsTdhH"
+},
+{
+  "postID" : "390828769973243904",
+  "timestamp" : "8 Apr 2019 15:52:27 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @aLeyCarLlia_: Pray for the Philippines #Bohol"
+},
+{
+  "postID" : "392083403719585792",
+  "timestamp" : "8 Apr 2019 16:37:03 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @filipinarry_: \"@NARRYPAKYU: #PrayForVisayas http://t.co/oYkQi3U80W\""
+},
+{
+  "postID" : "390069034718220289",
+  "timestamp" : "8 Apr 2019 14:21:50 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BBCBreaking: At least 73 people now reported dead after 7.2 magnitude earthquake in central Philippines http://t.co/ShUTFzPFVX"
+},
+{
+  "postID" : "390164438340624384",
+  "timestamp" : "8 Apr 2019 14:57:28 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : ".. before the earthquake and after the 7.2 magnitude in bohol.. century old church ..?(???)? #bohol? http://t.co/HQcHC3Wqie"
+},
+{
+  "postID" : "389933332177649664",
+  "timestamp" : "2 Apr 2019 17:37:06 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Latest on the deadly #earthquake that hit the #Philippines just over an hour ago.... http://t.co/0zBCFdXD8J http://t.co/rhrO0kw3SI..."
+},
+{
+  "postID" : "389935244788256768",
+  "timestamp" : "2 Apr 2019 17:42:36 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ABC7: PHILIPPINES #EARTHQUAKE: Radio reports say 7.2-mag. quake has killed at least 4 people in central (more) http://t.co/MHGv5ifvHZ"
+},
+{
+  "postID" : "391330941374697473",
+  "timestamp" : "8 Apr 2019 16:15:00 GMT",
+  "categories" : [ "Factoid", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Earthquake M 4.5 - 12km E of El Pardo, Philippines: Time2013-10-18 17:09:06 UTC2013-10-19 01:09:06 +08:00 at ... http://t.co/IjrBDG4AH9"
+},
+{
+  "postID" : "389949367009808384",
+  "timestamp" : "2 Apr 2019 17:59:20 GMT",
+  "categories" : [ "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@G2BArmyCebu Keepsafe ! #PrayForVisayas #PrayForCebu  -- H?"
+},
+{
+  "postID" : "390446492701704192",
+  "timestamp" : "8 Apr 2019 15:33:11 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "??Haist #PrayForUs #PrayforBOHOL #ChocolateHills #2010 #Tour Before &amp; After !! #Lindol sa Lahat ng? http://t.co/t6WfgFT90d"
+},
+{
+  "postID" : "389971957527359488",
+  "timestamp" : "2 Apr 2019 18:54:42 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Sto. Nino Cebu. #PrayForVisayas #repost http://t.co/ezFJUt8tCc"
+},
+{
+  "postID" : "392149782791073792",
+  "timestamp" : "8 Apr 2019 16:39:36 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @MBlakely2211: My ? prayers go out to all of the victims that were affected in the #Bohol #earthquakePH... #ManatilingMalakas"
+},
+{
+  "postID" : "390275646099705856",
+  "timestamp" : "8 Apr 2019 15:06:42 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "sleeping in the living room again. #earthquake #aftershock #PrayForVisayas"
+},
+{
+  "postID" : "389943947956862976",
+  "timestamp" : "2 Apr 2019 17:49:37 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Bible Prophecy, Rapture, 7.2 Earthquake Philippines Oct 14 2013 | Watch: http://t.co/Xs2KJ3bTba"
+},
+{
+  "postID" : "392309376058261505",
+  "timestamp" : "8 Apr 2019 16:47:50 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Massive deadly  earthquake in Bohol, Philippines on October 15 2013 ? Part 2 http://t.co/wMXWxzm7VL"
+},
+{
+  "postID" : "392728424751456256",
+  "timestamp" : "8 Apr 2019 16:52:28 GMT",
+  "categories" : [ "NewSubEvent", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @philredcross: Aftershock experience at 2:42am #Cebu #LapuLapu"
+},
+{
+  "postID" : "390001221211131904",
+  "timestamp" : "8 Apr 2019 13:47:44 GMT",
+  "categories" : [ "Factoid", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "EarthQuake Update: M 4.8 - 2km NNW of Maribojoc, Philippines: Time2013-10-15 05:12:16 UTC2013-10-15 13:12:16 +... http://t.co/ULhLKlVe6w"
+},
+{
+  "postID" : "390104048738656256",
+  "timestamp" : "8 Apr 2019 14:33:55 GMT",
+  "categories" : [ "News", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines quake toll rises | Watch the video - Yahoo News Philippines http://t.co/p1apJC8Zpn via @YahooPH"
+},
+{
+  "postID" : "389931578971131904",
+  "timestamp" : "2 Apr 2019 17:28:57 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "4 people killed in building collapse in Cebu Philippines after 7.2 earthquake, per National Disaster Agency - @Reuters"
+},
+{
+  "postID" : "389926386418216960",
+  "timestamp" : "2 Apr 2019 17:18:13 GMT",
+  "categories" : [ "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Breaking: A 7.2 earthquake just hit Bohol in central Philippines."
+},
+{
+  "postID" : "390397943611916288",
+  "timestamp" : "8 Apr 2019 15:24:04 GMT",
+  "categories" : [ "Hashtags", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RISE #BOHOL, RISE!\nMay this true story of a taxi driver turned Public Attorney inspire not just Boholanos but... http://t.co/nXwRRyPDHv"
+},
+{
+  "postID" : "390137347313909760",
+  "timestamp" : "8 Apr 2019 14:47:12 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Before We Sleep Please #PrayForVisayas"
+},
+{
+  "postID" : "390389747950309376",
+  "timestamp" : "8 Apr 2019 15:22:08 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @MobilePunch: Quake kills 74 in central Philippines http://t.co/9uanJ9kgoG"
+},
+{
+  "postID" : "390104627548786689",
+  "timestamp" : "8 Apr 2019 14:34:12 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "were going to be okay #bohol"
+},
+{
+  "postID" : "389941670466166784",
+  "timestamp" : "2 Apr 2019 17:46:09 GMT",
+  "categories" : [ "Official", "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Mayor Rama announced no classes for both private and public schools until tomorrow. #cebu #earthquakePH | via @cebudailynews"
+},
+{
+  "postID" : "389915464446795776",
+  "timestamp" : "2 Apr 2019 16:23:03 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NWS_PTWC: NO widespread tsunami hazard for 7.2 magnitude earthquake in Mindanao,  Philippines #tsunami #PTWC http://t.co/lwjSP8Su1p"
+},
+{
+  "postID" : "390075397460619264",
+  "timestamp" : "8 Apr 2019 14:24:06 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @kayehomecillo: Heartbreaking. :( #PrayForVisayas #earthquakePH http://t.co/h05NrnwXLj"
+},
+{
+  "postID" : "390428494947053568",
+  "timestamp" : "8 Apr 2019 15:29:56 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @TIME: Earthquake in the Philippines has reduced historic landmarks to rubble | http://t.co/Hjk5V28gDp (via  @TIMEWorld)"
+},
+{
+  "postID" : "390119517331804160",
+  "timestamp" : "8 Apr 2019 14:37:35 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Praying for healing, recovery and restoration to all the victims of that 7.2 magnitude earthquake. #PrayForVisayas"
+},
+{
+  "postID" : "390088953434361856",
+  "timestamp" : "8 Apr 2019 14:27:10 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@VMiguelG: Churches were destroyed because God was too busy protecting our home that he forgot to protect his. #PrayForVisayas \""
+},
+{
+  "postID" : "389961538880012288",
+  "timestamp" : "2 Apr 2019 18:34:39 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ilovejamich: The historical Loboc Church in Bohol :( Before &amp; after #earthquake #PrayForVisayas God bless the Philippines http://t.co/Y?"
+},
+{
+  "postID" : "390092669587697665",
+  "timestamp" : "8 Apr 2019 14:28:51 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @KASABIHAN: Churches were destroyed because God was too busy protecting our home that he forgot to protect his. #PrayForVisayas #Earthqu?"
+},
+{
+  "postID" : "389923253285707776",
+  "timestamp" : "2 Apr 2019 17:08:06 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ilovejamich: Magnitude 7.2 #earthquake in Bohol :( Pagdasal natin lahat ng apektado. Sana maging safe ang lahat. #PrayForBohol #Philipp?"
+},
+{
+  "postID" : "390495830307651584",
+  "timestamp" : "8 Apr 2019 15:36:49 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@[122603204607898:] 100+ dead in Philippines quake: The death toll from the magnitude-7.1 earthquake in the ce... http://t.co/IPJTQnEnUC"
+},
+{
+  "postID" : "390069202465214464",
+  "timestamp" : "8 Apr 2019 14:22:12 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ashlili: Please #PrayForVisayas :("
+},
+{
+  "postID" : "390046200897871874",
+  "timestamp" : "8 Apr 2019 14:12:21 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The churches must have collapsed to save us from harm. Sto.Nino thank you for keeping us safe. Let us continue to pray. #prayforvisayas"
+},
+{
+  "postID" : "390834306416791552",
+  "timestamp" : "8 Apr 2019 15:53:22 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @mai__zamora: Thank you Lord for @WorldVisionPH teams' safe travels from the quake-affected areas in Bohol. #PrayForVisayas"
+},
+{
+  "postID" : "390137380893519873",
+  "timestamp" : "8 Apr 2019 14:47:25 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Grabe pala yung nangyari sa Bohol and Cebu :( I hope okay yung mga kamaganak namin dun sa Cebu. God Bless everyone. #PrayforVisayas"
+},
+{
+  "postID" : "390442478735618049",
+  "timestamp" : "8 Apr 2019 15:32:56 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I know that Papa God will always be there to protect us! We need to trust him. :) Let's have a bigger faith on him. #PrayForVisayas"
+},
+{
+  "postID" : "390132930716000256",
+  "timestamp" : "8 Apr 2019 14:45:42 GMT",
+  "categories" : [ "Factoid", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @FaithGrosshans: Pray for the Philippines \n7.2 magnitude earthquake struck this morning."
+},
+{
+  "postID" : "389929787990355968",
+  "timestamp" : "2 Apr 2019 17:25:10 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@SmileForDaniel: Let us all pray for the earthquake victims. Hope everyone is safe. #PrayForVisayas ?\""
+},
+{
+  "postID" : "390067747033325568",
+  "timestamp" : "8 Apr 2019 14:21:09 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "No tsunami threat to Hawaii after 7.2 quake near Philippines: A strong earthquake shook an area off the coast of... http://t.co/reOKxxk1MS"
+},
+{
+  "postID" : "389932552066052096",
+  "timestamp" : "2 Apr 2019 17:33:17 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @disguised101: \"@danicelorenzo: i pray for the safety of the people there in visayas #earthquake #Philippines http://t.co/aNW5FJW3pS\" St?"
+},
+{
+  "postID" : "389910670361100288",
+  "timestamp" : "2 Apr 2019 16:08:02 GMT",
+  "categories" : [ "Location", "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @gmanews: JUST IN: Magnitude 7.2 earthquake: 2km south of Carmen and Nueva Vida Sur, Philippines. | via @NewEarthquake @USGS"
+},
+{
+  "postID" : "389934468854603777",
+  "timestamp" : "2 Apr 2019 17:38:52 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @GasiaKTVU: #breaking Radio reports say a 7.2-magnitude quake has killed at least 4 people in central Philippines @KTVU"
+},
+{
+  "postID" : "389962189013929986",
+  "timestamp" : "2 Apr 2019 18:36:09 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @enzodeocales: 411 Year old Loboc Church in Bohol is badly damaged by a 7.2 earthquake.\nVery heartbreaking ;'(( #PrayForBohol http://t.c?"
+},
+{
+  "postID" : "389968820204363778",
+  "timestamp" : "2 Apr 2019 18:47:58 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @QuoteNiDoraemon: Luzon: Typhoons\nVisayas: Earthquake \nMindanao: War  \n\nPray for our Dear Philippines."
+},
+{
+  "postID" : "389955788485054464",
+  "timestamp" : "2 Apr 2019 18:28:22 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Stay safe everyone! Pray and hope. ? #PrayForVisayas"
+},
+{
+  "postID" : "390365689447317504",
+  "timestamp" : "8 Apr 2019 15:19:40 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NajibRazak: We join the people of the Philippines in mourning those killed in the earthquake last Tuesday."
+},
+{
+  "postID" : "391823826637828096",
+  "timestamp" : "8 Apr 2019 16:30:14 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "MASSIVE 7.1 EARTHQUAKE DESTROYS PARTS OF CEBU &amp; BOHOL, PHILIPPINES. | Watch: http://t.co/2JoULfanf6"
+},
+{
+  "postID" : "390124940587835392",
+  "timestamp" : "8 Apr 2019 14:42:20 GMT",
+  "categories" : [ "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "[Earthquake]strikes tourist islands in central Philippines  -Hi_story http://t.co/bd0OObXPw9"
+},
+{
+  "postID" : "392057621320302593",
+  "timestamp" : "8 Apr 2019 16:35:17 GMT",
+  "categories" : [ "Weather", "EmergingThreats", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "PAGASA: THUNDERSTORM ADVISORY No.6 #VPRSD 6:35AM (21OCT'13) Thunderstorm affecting over #Bohol (Calape, San Isid... http://t.co/QIBf1OjAIY"
+},
+{
+  "postID" : "389959592722956289",
+  "timestamp" : "2 Apr 2019 18:31:22 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForBohol #PrayForCebu ???"
+},
+{
+  "postID" : "390126089835520000",
+  "timestamp" : "8 Apr 2019 14:42:38 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@KathNieLeads: Guys before going to sleep, please dont forget :)) #PrayForVisayas \n\nRemember! Prayer is very powerful! :)\n\n~Camille\""
+},
+{
+  "postID" : "390066484569210880",
+  "timestamp" : "8 Apr 2019 14:19:17 GMT",
+  "categories" : [ "Hashtags", "News", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines #earthquake http://t.co/PXDJ9mHS3T"
+},
+{
+  "postID" : "389953129292132353",
+  "timestamp" : "2 Apr 2019 18:09:30 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @erictayagSays: #bohol earthquake emerging as a major #ph earthquake Let us pray many lives were spared Let us take stock how to respond?"
+},
+{
+  "postID" : "390160051081474048",
+  "timestamp" : "8 Apr 2019 14:55:25 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "When will these aftershocks stop? Huhuhu Can't sleep. Guys, we seriously need your prayers. #PrayForVisayas"
+},
+{
+  "postID" : "389947278230052864",
+  "timestamp" : "2 Apr 2019 17:51:19 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Major earthquake hits the Philippines - http://t.co/w16B3PW665"
+},
+{
+  "postID" : "390088823436480512",
+  "timestamp" : "8 Apr 2019 14:26:54 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NBCNews: At least 82 dead, churches destroyed as 7.2 earthquake hits Philippines http://t.co/ORqdPGHEpf"
+},
+{
+  "postID" : "390063384973938688",
+  "timestamp" : "8 Apr 2019 14:18:19 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @_wonderwall23: RT @itsbarbiexu: prayers to people of philippines affected by magnitude 7 earthquake. hope all is safe"
+},
+{
+  "postID" : "390011656626913280",
+  "timestamp" : "8 Apr 2019 13:57:19 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "nag SS si earthshaker sa bohol at cebu so #PrayForVisayas"
+},
+{
+  "postID" : "389932761772879872",
+  "timestamp" : "2 Apr 2019 17:34:32 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @bbcnews_ticker: Earthquake measuring 7.2 magnitude hits central Philippines, killing four people - officials http://t.co/4wmjUmSW4u"
+},
+{
+  "postID" : "390128946139758593",
+  "timestamp" : "8 Apr 2019 14:43:29 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Philippines Dozens killed after earthquake hits Philippines  http://t.co/pdVlFm6Kc1"
+},
+{
+  "postID" : "390315760439922689",
+  "timestamp" : "8 Apr 2019 15:11:48 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas ingat po lagi mga kababayan ko sa cebu and bohol"
+},
+{
+  "postID" : "389954865742352384",
+  "timestamp" : "2 Apr 2019 18:16:39 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Ang ganda ng gising ko pero pagbukas ko ng Twitter, trending ang Earthquake magnitude 7.2 sa Bohol Grabe ang Lakas Nun :( #PrayForBohol"
+},
+{
+  "postID" : "391452454551703552",
+  "timestamp" : "8 Apr 2019 16:18:33 GMT",
+  "categories" : [ "Donations", "MultimediaShare", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "ATTN: #BAISANONS! #BaisanonsForBohol #StayStrongBohol #PrayForVisayas | http://t.co/FJDBCDJ7ko http://t.co/mvaSSxKWUk"
+},
+{
+  "postID" : "389913589596704768",
+  "timestamp" : "2 Apr 2019 16:14:34 GMT",
+  "categories" : [ "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @LanceUlanoff: 7.2 Earthquake in Philippines just now http://t.co/MeXQZHjdNt via: @dorybenami"
+},
+{
+  "postID" : "391995818275639298",
+  "timestamp" : "8 Apr 2019 16:32:24 GMT",
+  "categories" : [ "Weather", "EmergingThreats", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "[DOST-PAGASA] THUNDERSTORM ADVISORY No.9 #VPRSD \n11:41PM (20OCT'13) \nExpect thunderstorm over #Cebu (Balamaban... http://t.co/LoKHQElQnn"
+},
+{
+  "postID" : "389913971287154688",
+  "timestamp" : "2 Apr 2019 16:19:28 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @RT_com: #BREAKING: 7.2 quake hits southern #Philippines; no threat of Pacific-wide tsunami http://t.co/0J6Eg19Gws"
+},
+{
+  "postID" : "392376757556224000",
+  "timestamp" : "8 Apr 2019 16:48:41 GMT",
+  "categories" : [ "Donations", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@Only1Marcello Excuse me, hotshot! Would you like to donate to the victims of earthquake in the Philippines? http://t.co/McYRWs1BXP .Thanks!"
+},
+{
+  "postID" : "389953578095218688",
+  "timestamp" : "2 Apr 2019 18:11:36 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @sunstarcebu: Meat vendor at Mandaue City Public Market killed after getting buried in debris. via @lagunda23 #Cebu #earthquake"
+},
+{
+  "postID" : "391478975169445888",
+  "timestamp" : "8 Apr 2019 16:19:51 GMT",
+  "categories" : [ "Weather", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @dost_pagasa: THUNDERSTORM ADVISORY No.10#VPRSD \n4:19PM (19OCT'13)  \n\nExpect thunderstorm over  #Bohol (Bilar, Loboc, Dimiao) &amp;... http:?"
+},
+{
+  "postID" : "391152863834959873",
+  "timestamp" : "8 Apr 2019 16:03:11 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Toll climbs in Philippines quake http://t.co/KneURSlzhY"
+},
+{
+  "postID" : "390643910214946817",
+  "timestamp" : "8 Apr 2019 15:43:26 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Earthquake 7.2 tuesday 15 oct destroyed a lot of historical churches at #Bohol #Philipines [28 photos]  http://t.co/Wl4POuqz8d RT"
+},
+{
+  "postID" : "390139964584779777",
+  "timestamp" : "8 Apr 2019 14:48:52 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Dozens dead as magnitude-7.1 earthquake hits the Philippines http://t.co/z2i8EauDzN"
+},
+{
+  "postID" : "389971915600695297",
+  "timestamp" : "2 Apr 2019 18:54:05 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @moreFUNinUST: #PrayForVisayas ???"
+},
+{
+  "postID" : "389946850444185601",
+  "timestamp" : "2 Apr 2019 17:50:44 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Sad,sad,sad news...??#PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "391161520878411776",
+  "timestamp" : "8 Apr 2019 16:05:25 GMT",
+  "categories" : [ "Donations", "Factoid", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ABSCBNShowbiz: Aboitiz, Sharon donate P2M for quake victims: MANILA, Philippines - The Aboitiz group's corporate social devel... http:/?"
+},
+{
+  "postID" : "390343728076169216",
+  "timestamp" : "8 Apr 2019 15:18:32 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.1 earthquake devastates the Philippines. In other news we now know where all those returned Hernandez jerseys went http://t.co/YpKMLZeEN1"
+},
+{
+  "postID" : "391109385671696384",
+  "timestamp" : "8 Apr 2019 16:00:38 GMT",
+  "categories" : [ "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NewEarthquake: 4.6 earthquake, 5km E of Sagbayan, Philippines. Oct 18 15:24 at epicenter (24m ago, depth 21km). http://t.co/M13on53qjZ"
+},
+{
+  "postID" : "389950969225568257",
+  "timestamp" : "2 Apr 2019 18:04:03 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas Keep safe everyone! :("
+},
+{
+  "postID" : "389933898433835008",
+  "timestamp" : "2 Apr 2019 17:37:48 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "For a Boholano OFW like me, walang ibang magawa sa ngayon kundi ang magdasal at umiyak. #prayforBohol"
+},
+{
+  "postID" : "391234459829153794",
+  "timestamp" : "8 Apr 2019 16:12:43 GMT",
+  "categories" : [ "Hashtags", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#INDUCTION Quake video shows nature's power: The bell tower of the oldest church in the Philippines... http://t.co/0POXkVFno1 #INDUCTION"
+},
+{
+  "postID" : "389944585511641088",
+  "timestamp" : "2 Apr 2019 17:50:26 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @QueenPetraK: 1 Retweet = 1 Prayer\n\n#PrayforVisayas"
+},
+{
+  "postID" : "389980266451992576",
+  "timestamp" : "3 Apr 2019 12:39:09 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Aftershocks Continue After Strong Quake Hits Philippines http://t.co/Jv563fLTwf via PhilTimes"
+},
+{
+  "postID" : "391100099473842176",
+  "timestamp" : "8 Apr 2019 15:59:49 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Smangat! ?@josephinepipin: Osssshhhhhhhhhh Philippines earthquake response #Bohol #Cebu is calling, so hard to decide now. :(?"
+},
+{
+  "postID" : "389998075466375168",
+  "timestamp" : "8 Apr 2019 13:44:43 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @DreamForDaniel: #PrayForVisayas. God is Good. God will protect them. Keep safe everyone."
+},
+{
+  "postID" : "390994101014769665",
+  "timestamp" : "8 Apr 2019 15:58:09 GMT",
+  "categories" : [ "MultimediaShare", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake News: Philippines Earthquake Video Captures Power Of Mother Nature - Huffington Post: Philippines E... http://t.co/16cQ4huI3L"
+},
+{
+  "postID" : "390489933112418304",
+  "timestamp" : "8 Apr 2019 15:35:47 GMT",
+  "categories" : [ "Factoid", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Cebu City, Philippines Magnitude 7.2 Earthquake October 15, 2013 captured by CCTV 3/32 MUST SEE!!!: http://t.co/loC5BAdck2 via"
+},
+{
+  "postID" : "390547508336013312",
+  "timestamp" : "8 Apr 2019 15:40:34 GMT",
+  "categories" : [ "MultimediaShare", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Peepsqueak: Powerful 7.2 Earthquake Strikes the Philippines : the aftermath [28 photos]  http://t.co/gX3ccaQvWj"
+},
+{
+  "postID" : "392374056399679488",
+  "timestamp" : "8 Apr 2019 16:48:14 GMT",
+  "categories" : [ "Discussion", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@nourrsalemm dont kill my vibe its my fav tweet. And ya my friend was in a 7.2 magnitude earthquake in Philippines"
+},
+{
+  "postID" : "390035958432677888",
+  "timestamp" : "8 Apr 2019 14:09:17 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Lord please keep them safe #PrayForVisayas #PrayForBoholAndCebu"
+},
+{
+  "postID" : "389931276972875777",
+  "timestamp" : "2 Apr 2019 17:28:20 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Photo: #Soco #glass #broken after the shaky #earthquake at #home #kaloka #cebu #instapic #instagram... http://t.co/JpZIdjEIaw"
+},
+{
+  "postID" : "389969763922739200",
+  "timestamp" : "2 Apr 2019 18:50:28 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Samledesma: Keep me safe, my God, for in You I take refuge.-- Psalm 16:1 #PrayforCebu #PrayforBohol"
+},
+{
+  "postID" : "390046452573306880",
+  "timestamp" : "8 Apr 2019 14:12:42 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.4 Magnitude Earthquake Topples Down Historic Buildings and Churches in Philippines\n\nThe 7.4 magnitude quake... http://t.co/9IQfntSkDS"
+},
+{
+  "postID" : "391676069691940864",
+  "timestamp" : "8 Apr 2019 16:24:17 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Another quake shook Bohol and Cebu. Stay safe people of Bohol and Cebu! Have a blessed Sunday!! #BangonSugBohol #Cebu #Bohol #PrayForVisayas"
+},
+{
+  "postID" : "390215176814723072",
+  "timestamp" : "8 Apr 2019 15:02:32 GMT",
+  "categories" : [ "Factoid", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Magnitude 7.2 Earthquake Rocks Philippines http://t.co/d1CJHxYE26"
+},
+{
+  "postID" : "390166535471656961",
+  "timestamp" : "8 Apr 2019 14:58:20 GMT",
+  "categories" : [ "News", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@BBCBreaking embarrassing coverage of Philippines Earthquake which  killed nearly 100 people Yet you cover less stories with more focus!"
+},
+{
+  "postID" : "389922594788364288",
+  "timestamp" : "2 Apr 2019 16:39:39 GMT",
+  "categories" : [ "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.4 quake strikes Philippines http://t.co/CYFzDjMH8X"
+},
+{
+  "postID" : "390456370287218689",
+  "timestamp" : "8 Apr 2019 15:34:29 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @SwiftInstinct: Swifties, Pray for the Philippines, about the earthquake yesterday and for the people affected there."
+},
+{
+  "postID" : "389954052051595265",
+  "timestamp" : "2 Apr 2019 18:13:19 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @juanxi: Please spread the word. Mga kababayan sa Visayas, please use #rescuePH for information about people needing rescue. We will com?"
+},
+{
+  "postID" : "389924834547089409",
+  "timestamp" : "2 Apr 2019 17:16:27 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Major earthquake hits the Philippines http://t.co/uS0nhcvUl6"
+},
+{
+  "postID" : "389978756519317504",
+  "timestamp" : "3 Apr 2019 12:34:47 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Pray for those affected on earthquake in philippines!!may godbless us!!"
+},
+{
+  "postID" : "390090861859438592",
+  "timestamp" : "8 Apr 2019 14:28:17 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @newstrackindia: Toll rises to 67 in Philippines earthquake\n... http://t.co/jSWj6NnR78"
+},
+{
+  "postID" : "389978567775232000",
+  "timestamp" : "3 Apr 2019 12:34:16 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ano_ano_ano: ?????? RT @sunstarcebu: 2 bldgs in Brgy Mambaling, #Cebu City damaged by #earthquake.  via @JKVSunStar http://t.co/aa8GNmS?"
+},
+{
+  "postID" : "390029943775563776",
+  "timestamp" : "8 Apr 2019 14:05:47 GMT",
+  "categories" : [ "Factoid", "Hashtags", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "News: Major quake shakes central Philippines, kills 20 http://t.co/HdpKFaVMg0 #jamaica #reggae"
+},
+{
+  "postID" : "389951510315941888",
+  "timestamp" : "2 Apr 2019 18:05:49 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @japantimes: 7.2M quake jolts Philippines http://t.co/U2MJ09U5V6"
+},
+{
+  "postID" : "392907689316982785",
+  "timestamp" : "8 Apr 2019 16:54:25 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @YengPLUGGEDin: #prayforVisayas http://t.co/8QaOuFwe3x"
+},
+{
+  "postID" : "389977414316457984",
+  "timestamp" : "3 Apr 2019 12:32:42 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @mynameisgero: Loon Church, Bohol (one of the biggest and oldest churches) before and after the #Earthquake #PrayForBohol http://t.co/rt?"
+},
+{
+  "postID" : "390123606799163392",
+  "timestamp" : "8 Apr 2019 14:41:34 GMT",
+  "categories" : [ "Factoid", "CleanUp" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Crews Begin Quake Cleanup in the Philippines: Rescue crews began cleanup efforts after a devastating earthquake... http://t.co/qSuHEz4eG8"
+},
+{
+  "postID" : "389931708994564096",
+  "timestamp" : "2 Apr 2019 17:30:01 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Reuters: Four killed in building collapse after Philippines quake: disaster agency http://t.co/oPHoBr6CFq"
+},
+{
+  "postID" : "389953032835710978",
+  "timestamp" : "2 Apr 2019 18:09:03 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @miggoww: Loboc Church in Bohol then and now after the 7.2 magnitude earthquake just today #earthquake #PrayForVisayas (cto) http://t.co?"
+},
+{
+  "postID" : "390151729615880192",
+  "timestamp" : "8 Apr 2019 14:53:46 GMT",
+  "categories" : [ "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Major Earthquake Strikes Central Philippines http://t.co/PqWbPKnTF2"
+},
+{
+  "postID" : "390144230200328192",
+  "timestamp" : "8 Apr 2019 14:50:39 GMT",
+  "categories" : [ "Factoid", "Hashtags", "News", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "pray for 'em :') ?@thejimjams: At least 82 killed as 7.2-magnitude earthquake hits Philippines http://t.co/5xQMg9mrR8?"
+},
+{
+  "postID" : "392028814874005505",
+  "timestamp" : "8 Apr 2019 16:33:40 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @iAmJeRhey2: Good Evening..\nSana di magkatotoo yung balita..\nsawang sawa na kami sa #AfterShocks...\n\n#PrayForVisayas.."
+},
+{
+  "postID" : "390117093028278273",
+  "timestamp" : "8 Apr 2019 14:36:37 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ifnt7ID: Just read the news. Earthquake in Philippines. Lets pray for them, inspirits.. #PrayforPH http://t.co/hYEkCRLJE1"
+},
+{
+  "postID" : "390048633623568384",
+  "timestamp" : "8 Apr 2019 14:13:35 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "guys if you read this please #PrayForVisayas it's going to be a long night aftershocks keep on coming, and getting stronger :(("
+},
+{
+  "postID" : "391460700561756162",
+  "timestamp" : "8 Apr 2019 16:19:19 GMT",
+  "categories" : [ "Donations", "MultimediaShare", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @rapplerdotcom: #ReliefPH: Help people affected by the Visayas Earthquake. Here's how: http://t.co/dFRQ78HMnO"
+},
+{
+  "postID" : "390492730696413184",
+  "timestamp" : "8 Apr 2019 15:36:24 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "A year ago at Baclayon Church Bohol.. :( #prayforbohol #PrayforCebu http://t.co/wIxnt4x4Ov"
+},
+{
+  "postID" : "390278544376725505",
+  "timestamp" : "8 Apr 2019 15:07:28 GMT",
+  "categories" : [ "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "An earthquake measuring 7.2 hit the Philippines on Tuesday. PHOTOS (via @Reuters): http://t.co/MqZQ5hNmNg"
+},
+{
+  "postID" : "390015087546613760",
+  "timestamp" : "8 Apr 2019 13:59:55 GMT",
+  "categories" : [ "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@elmobenguan: #PrayForVisayas : Cebu and Bohol areas affected by earthquake. Sayang ang mga historical church na gumuho :(\" !!!!! :((("
+},
+{
+  "postID" : "389939254559662081",
+  "timestamp" : "2 Apr 2019 17:43:52 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Sending my prayers to all those affected by 7.2 magnitude earthquake that just hit the Philippines."
+},
+{
+  "postID" : "390136500085460994",
+  "timestamp" : "8 Apr 2019 14:47:00 GMT",
+  "categories" : [ "MultimediaShare", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Major Earthquake Strikes Central Philippines - New York Times http://t.co/uP6IzZVjEI"
+},
+{
+  "postID" : "390001472865181696",
+  "timestamp" : "8 Apr 2019 13:48:11 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@leighpod I hope all is well w/ you and your family. Just heard the news about the earthquake in the Philippines."
+},
+{
+  "postID" : "390124709875970048",
+  "timestamp" : "8 Apr 2019 14:41:44 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Let us pray for our brothers and sisters. #PrayforthePhilippines #PrayForVisayas #PrayForCebuAndBohol"
+},
+{
+  "postID" : "390451974673428480",
+  "timestamp" : "8 Apr 2019 15:34:15 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death Toll Rises to 144 in Philippines Quake http://t.co/JdnmYomEbA"
+},
+{
+  "postID" : "391252843430027264",
+  "timestamp" : "8 Apr 2019 16:13:30 GMT",
+  "categories" : [ "MultimediaShare", "News", "ContextualInformation", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "God Almighty RT ?@BBCWorld: Baby born in tent after mother treks through Philippines quake  http://t.co/S8YlJ3lVLO &amp; http://t.co/yx0Rv79rxA?"
+},
+{
+  "postID" : "390065628939173888",
+  "timestamp" : "8 Apr 2019 14:18:51 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "?@itsenriquegil: Kamong tanan dinha sa cebu ug bohol, God bless ug unta safe, mangampo ta sa atong ginoo.? #PrayForVisayas"
+},
+{
+  "postID" : "389983487685443585",
+  "timestamp" : "3 Apr 2019 12:40:35 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Certain thoughts are prayers. There are moments when, whatever the attitude of the body, the soul is on its knees.\n\n#PrayForVisayas"
+},
+{
+  "postID" : "389965326332338176",
+  "timestamp" : "2 Apr 2019 18:39:03 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Grabe natulog lang ako, andami ng nangyari :( #PrayForVisayas #PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "389953527767760896",
+  "timestamp" : "2 Apr 2019 18:10:16 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas my relatives are okay naman ata ehh.. :("
+},
+{
+  "postID" : "389976499975385088",
+  "timestamp" : "3 Apr 2019 12:29:53 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @cesrondario: Please keep everyone here in your prayers! ?@BBCNews: Deadly quake strikes Philippines http://t.co/wll6VPUVzM?"
+},
+{
+  "postID" : "390002441733042176",
+  "timestamp" : "8 Apr 2019 13:51:14 GMT",
+  "categories" : [ "FirstPartyObservation", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@dreamfordaniel: #PrayForVisayas. God is Good. God will protect them. Keep safe everyone.\""
+},
+{
+  "postID" : "390849317864357888",
+  "timestamp" : "8 Apr 2019 15:54:30 GMT",
+  "categories" : [ "MultimediaShare", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Update: LDS missionaries ran to safety during quake in Philippines http://t.co/1fm99RFURL"
+},
+{
+  "postID" : "391383634420043776",
+  "timestamp" : "8 Apr 2019 16:17:19 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#FotoPeriodismo Powerful earthquake strikes the Philippines: A powerful 7.2 earthquake hit t... http://t.co/cS7PU4lasr Via  @big_picture"
+},
+{
+  "postID" : "390131466912292864",
+  "timestamp" : "8 Apr 2019 14:44:54 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "At least 93 people dead after 7.2 earthquake hits central Philippines | Fox News http://t.co/cfCxncJKLM via @foxnews #coe215"
+},
+{
+  "postID" : "390081848291778560",
+  "timestamp" : "8 Apr 2019 14:26:37 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death toll in Philippines quake jumps to 93 http://t.co/ZiykJpZxbe via @USATODAY"
+},
+{
+  "postID" : "390502138520293376",
+  "timestamp" : "8 Apr 2019 15:37:28 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#prayforbohol #prayforcebu #Godisgood #goodnight http://t.co/mjrTaZi1WE"
+},
+{
+  "postID" : "390013107851907072",
+  "timestamp" : "8 Apr 2019 13:58:21 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForBohol  sana okay lang ang ating mga kababayan dyan. :("
+},
+{
+  "postID" : "390328884412948480",
+  "timestamp" : "8 Apr 2019 15:16:06 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Lord, we pray for Visayas and our kababayans there.\n\n#PrayForVisayas"
+},
+{
+  "postID" : "389929771234111488",
+  "timestamp" : "2 Apr 2019 17:24:16 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.2 quake his Philippines: MANILA, Oct. 14 (UPI) --  A magnitude-7.2 earthquake hit the Philippines Tuesday mo... http://t.co/1jAZw4Tpm1"
+},
+{
+  "postID" : "389959085199986689",
+  "timestamp" : "2 Apr 2019 18:31:02 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#prayforBohol http://t.co/lJczvAi5R2"
+},
+{
+  "postID" : "389974771930103808",
+  "timestamp" : "3 Apr 2019 12:27:40 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@vicegandako Lets all pray for our kababayans who are affected by the earthquake. God bless us!\" #PrayForVisayas"
+},
+{
+  "postID" : "390056254644555776",
+  "timestamp" : "8 Apr 2019 14:15:38 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Earthquake of M 4.6, Mindanao, Philippines http://t.co/BVwxSSh32i"
+},
+{
+  "postID" : "392158095868436480",
+  "timestamp" : "8 Apr 2019 16:41:09 GMT",
+  "categories" : [ "Official", "CleanUp", "Hashtags", "News", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @govph: #ReliefPH and rehab efforts for areas affected by #earthquakePH are ongoing. Click on this link for updates: http://t.co/A6N7942?"
+},
+{
+  "postID" : "390915524919832576",
+  "timestamp" : "8 Apr 2019 15:56:23 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @in_focus: Powerful earthquake strikes the #Philippines - photos of the aftermath of Tuesday's magnitude 7.2 quake http://t.co/jneK1A89cZ"
+},
+{
+  "postID" : "389986570469527552",
+  "timestamp" : "3 Apr 2019 12:45:07 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@Khunnie0624 Hello Khunnie ? Please pray for earthquake victims here in the Philippines ???"
+},
+{
+  "postID" : "390427110818340864",
+  "timestamp" : "8 Apr 2019 15:29:34 GMT",
+  "categories" : [ "MultimediaShare", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake in the Philippines has reduced historic landmarks to rubble | http://t.co/Hjk5V28gDp (via  @TIMEWorld)"
+},
+{
+  "postID" : "390760130158931968",
+  "timestamp" : "8 Apr 2019 15:48:19 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "God Bless #Cebu!! Keep the faith :)\n \n#PrayForThePhilippines"
+},
+{
+  "postID" : "390396005847662592",
+  "timestamp" : "8 Apr 2019 15:23:11 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Photo: Hiii. Kgapun linog sbng heavy rain. Hoho. #prayforvisayas http://t.co/FXwCxcIYJ8"
+},
+{
+  "postID" : "390506567730495488",
+  "timestamp" : "8 Apr 2019 15:39:46 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Cebu City, Philippines Magnitude 7.2 Earthquake October 15, 2013 captured by CCTV 24/32 MUST SEE!!!: http://t.co/qBA7Jk39gt via"
+},
+{
+  "postID" : "391099180938452992",
+  "timestamp" : "8 Apr 2019 15:59:09 GMT",
+  "categories" : [ "Donations", "Hashtags", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Yesterday @ DSWD Region VII Office! ? #Volunteer #ReliefGoods #Repacking #Bohol #Earthquake http://t.co/mNXolGUEQM"
+},
+{
+  "postID" : "390001619640651776",
+  "timestamp" : "8 Apr 2019 13:48:23 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Deeply saddened by the quake in Visayas. My prayers goes to all our brothers in Cebu and Bohol. #PrayForVisayas #PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "390212861579886592",
+  "timestamp" : "8 Apr 2019 15:02:05 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@4:22 AM, I could still feel aftershocks. #cantsleep #danao #cebu #earhquake"
+},
+{
+  "postID" : "389967637402230787",
+  "timestamp" : "2 Apr 2019 18:44:11 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My prayer goes to all the Bohol and Cebu victims of the earthquake earlier. #PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "390222156136988672",
+  "timestamp" : "8 Apr 2019 15:03:05 GMT",
+  "categories" : [ "Sentiment", "Discussion", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@AprilAthena7 @AdviceFromJM April please let us know soon if your parents are okay from the big earthquake in The Philippines."
+},
+{
+  "postID" : "389948922413592576",
+  "timestamp" : "2 Apr 2019 17:57:53 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Emang di pilipina ada apaan min ?\"@Update_Transfer: #PrayForPhilippines #PrayForVisayas\""
+},
+{
+  "postID" : "390390578438868992",
+  "timestamp" : "8 Apr 2019 15:22:58 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Kids examine a huge gash through the road in Loboc, Bohol #bohol #rescuebohol #earthquakePH http://t.co/q7qz88DlXR"
+},
+{
+  "postID" : "389917091823763456",
+  "timestamp" : "2 Apr 2019 16:24:51 GMT",
+  "categories" : [ "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "USGS M 7.2, 5km E of Balilihan, Philippines: Tuesday, October 15, 2013 00:12:37 UTCTuesday, Octobe... http://t.co/UxYqnxv1b7 #earthquake"
+},
+{
+  "postID" : "389968019079696384",
+  "timestamp" : "2 Apr 2019 18:45:29 GMT",
+  "categories" : [ "Factoid", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @WorldVisionNZ: Casualties from 7.2 #earthquake in the #Philippines is now 20+ according to authorities"
+},
+{
+  "postID" : "390135040471887872",
+  "timestamp" : "8 Apr 2019 14:46:14 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines Earthquake: Death Toll Now at 85 http://t.co/BFygZqfCdM"
+},
+{
+  "postID" : "389931587363565570",
+  "timestamp" : "2 Apr 2019 17:29:34 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.2-earthquake hits Philippines: A magnitude-7.2 earthquake struck in the southeastern Philippines on Tuesday,... http://t.co/YVFyXT1ltJ"
+},
+{
+  "postID" : "393332756840599553",
+  "timestamp" : "8 Apr 2019 16:57:45 GMT",
+  "categories" : [ "NewSubEvent", "Factoid", "Official" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "4.7 earthquake! Thu Oct 24 01:36:31 CDT 2013 near 4km SSW of La Paz, Philippines http://t.co/FbjpJoYT7v"
+},
+{
+  "postID" : "390043139073122304",
+  "timestamp" : "8 Apr 2019 14:11:01 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @MailOnline: At least 20 killed after magnitude 7.2 earthquake hits the Philippines http://t.co/TBhKuwPzuY"
+},
+{
+  "postID" : "391253984284901377",
+  "timestamp" : "8 Apr 2019 16:13:55 GMT",
+  "categories" : [ "Factoid", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @STForeignDesk: Death toll in Philippines earthquake jumps to 93. http://t.co/uCkpZrOPPZ http://t.co/a1pNV1uKUS"
+},
+{
+  "postID" : "390954565501456384",
+  "timestamp" : "8 Apr 2019 15:57:16 GMT",
+  "categories" : [ "Donations", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @safeworld4women: R @WEAVEWOMEN: CALL FOR HELP - BOHOL, PHILIPPINES EARTHQUAKE RELIEF Donations needed urgently to support relief and.. ?"
+},
+{
+  "postID" : "390003620332068865",
+  "timestamp" : "8 Apr 2019 13:52:29 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @cebugovph: #Cebu Coast Guard Station suspends vessels out-bound Cebu due to aftershocks every 20 to 30 minute intervals."
+},
+{
+  "postID" : "390188601725964288",
+  "timestamp" : "8 Apr 2019 15:00:24 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NewEarthquake: 5.1 earthquake, 5km SSW of Calape, Philippines. Oct 15 21:51 at epicenter (49m ago, 15km Tagbilaran, depth 20km). http:/?"
+},
+{
+  "postID" : "389993059070382080",
+  "timestamp" : "3 Apr 2019 12:51:05 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "16 na daw namatay sa Cebu dahil sa lindol #prayforcebu #PrayForVisayas #prayforthePhilippines"
+},
+{
+  "postID" : "389914239730610176",
+  "timestamp" : "2 Apr 2019 16:21:18 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Magnitude 7.4 quake hits Philippines, no tsunami threat: SYDNEY (Reuters) - An earthquake with a preliminary m... http://t.co/UTzExxP76A"
+},
+{
+  "postID" : "389935857157033985",
+  "timestamp" : "2 Apr 2019 17:42:57 GMT",
+  "categories" : [ "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @AP: BREAKING: Radio reports say a 7.2-magnitude quake has killed at least 4 people in central Philippines"
+},
+{
+  "postID" : "389984813069115392",
+  "timestamp" : "3 Apr 2019 12:42:01 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas ??? http://t.co/S9R0wKt0UE"
+},
+{
+  "postID" : "389970309186478080",
+  "timestamp" : "2 Apr 2019 18:50:49 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "We can face any fear &amp; trials when we know the Lord is with us. #PrayforVisayas"
+},
+{
+  "postID" : "389998406795423744",
+  "timestamp" : "8 Apr 2019 13:46:47 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My heart goes out to all the people who had to experience the horrible earthquake in Bohol. Let's pray for them. God Bless! #PrayForVisayas"
+},
+{
+  "postID" : "390090891199008768",
+  "timestamp" : "8 Apr 2019 14:28:38 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Magnitude 4 5 earthquake hits near Sarangani, Philippines | Watch: http://t.co/bWX93KDyLh"
+},
+{
+  "postID" : "390030325465616385",
+  "timestamp" : "8 Apr 2019 14:06:20 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.2 magnitude earthquake hits Philippines http://t.co/Jdvw5JYUXs"
+},
+{
+  "postID" : "389972347584651264",
+  "timestamp" : "2 Apr 2019 18:57:02 GMT",
+  "categories" : [ "Factoid", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @cebudailynews: All malls in #Cebu closed. Malls are assessing damage and will be open until further notice.|@iloveaileenyap"
+},
+{
+  "postID" : "389988038488502272",
+  "timestamp" : "3 Apr 2019 12:48:40 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@jeggykwisti Ok lang daw sila safe naman. #PrayForBohol"
+},
+{
+  "postID" : "390068594286919680",
+  "timestamp" : "8 Apr 2019 14:21:35 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake : M 4.6, 11km NNW of San Isidro, Philippines: Tuesday, October 15, 2013 10:07:24 UTC Tuesday, October... http://t.co/pBjJwPKWsP"
+},
+{
+  "postID" : "390090169799303168",
+  "timestamp" : "8 Apr 2019 14:28:04 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @RickWarren: Please pray for those suffering in the Philippines earthquake, If you'd like to help, we have a PEACE team already there,"
+},
+{
+  "postID" : "389929347617812480",
+  "timestamp" : "2 Apr 2019 17:23:00 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "'Four killed' by Philippines quake http://t.co/MWs7ccLiPP"
+},
+{
+  "postID" : "390403710779523072",
+  "timestamp" : "8 Apr 2019 15:24:19 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @RealJohnn: RT FOR A SHOUT OUT (  FOLLOW FOR FOLLOW )  #PrayForVisayas 3"
+},
+{
+  "postID" : "390132570010042368",
+  "timestamp" : "8 Apr 2019 14:45:24 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Yun puso ko para sa Loon church. :( #PrayForVisayas"
+},
+{
+  "postID" : "390093453930934273",
+  "timestamp" : "8 Apr 2019 14:30:45 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NBCLA: UPDATE: At least 82 killed after magnitude-7.2 #earthquake in Philippines \nhttp://t.co/hm7EEPYGdk"
+},
+{
+  "postID" : "389969029890584576",
+  "timestamp" : "2 Apr 2019 18:49:16 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Terrible earthquake.... #prayforcebu #prayforbohol #prayfornegros... this is really make me feel super? http://t.co/WAeXlNqNP5"
+},
+{
+  "postID" : "390158830551977984",
+  "timestamp" : "8 Apr 2019 14:55:08 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Dozens dead as magnitude-7.1 earthquake hits the Philippines http://t.co/4kPi8DJSjF"
+},
+{
+  "postID" : "391120710279917569",
+  "timestamp" : "8 Apr 2019 16:01:30 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @eu_echo: Bohol #earthquake, #Philippines toll continues rising. Latest: 171 killed, 375 injured, 20 missing &amp;162 500 displaced http://t?"
+},
+{
+  "postID" : "389926310924914688",
+  "timestamp" : "2 Apr 2019 17:17:40 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Jackrobinson73 7.2-earthquake hits Philippines http://t.co/g1fzaRGjnp #Jackrobinson73"
+},
+{
+  "postID" : "389934775022387200",
+  "timestamp" : "2 Apr 2019 17:40:03 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Just found out about what happened in #bohol.. saw pictures of churches ruined. :(( #keepsafe #earthquakes"
+},
+{
+  "postID" : "389931935486590976",
+  "timestamp" : "2 Apr 2019 17:32:43 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.2-earthquake hits Philippines: A magnitude-7.2 earthquake struck in the southeastern Philippines on Tuesday,... http://t.co/5a2SG6gu3S"
+},
+{
+  "postID" : "389924092130107392",
+  "timestamp" : "2 Apr 2019 17:11:46 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#earthquake M7.2: Bohol, Philippines http://t.co/mcLjuPxXBX"
+},
+{
+  "postID" : "389928303219335169",
+  "timestamp" : "2 Apr 2019 17:22:04 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.2 Quake Hits Central Philippines, Killing 4: 7.2-magnitude quake hits central Philippine island, killing at ... http://t.co/HekKxVreiN"
+},
+{
+  "postID" : "390068581720813568",
+  "timestamp" : "8 Apr 2019 14:21:23 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ABSCBN: Tonight let's not forget to #PrayforCebu and #PrayforBohol mga Kapamilya!"
+},
+{
+  "postID" : "389934649197096960",
+  "timestamp" : "2 Apr 2019 17:39:31 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ABC7: PHILIPPINES #EARTHQUAKE: Radio reports say 7.2-mag. quake has killed at least 4 people in central Philippines http://t.co/QTOTifx?"
+},
+{
+  "postID" : "392736683344420864",
+  "timestamp" : "8 Apr 2019 16:53:00 GMT",
+  "categories" : [ "NewSubEvent", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NewEarthquake: 5.2 earthquake, 6km E of Canmaya Diot, Philippines. Oct 23 02:42 at epicenter (15m ago, depth 62km). http://t.co/PJUUk55?"
+},
+{
+  "postID" : "390078673224990720",
+  "timestamp" : "8 Apr 2019 14:24:56 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Bangkok Post &gt; Death toll in Philippines quake jumps to 85 - The death toll from a 7.2-magnitude earthquake that s... http://t.co/Q9XRaCJBIc"
+},
+{
+  "postID" : "390163146486198272",
+  "timestamp" : "8 Apr 2019 14:56:38 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @LisaLoeb: My heart and thoughts go out to those  in the Philippines who have been affected by the terrible earthquake."
+},
+{
+  "postID" : "390169890931232768",
+  "timestamp" : "8 Apr 2019 14:58:38 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@mai__zamora @CrushKoSarahG @Imxianki @LaagannaCebuana @FeministaDeCebu Mahirap pero I hope makatulong ang prayers namin #PrayForVisayas"
+},
+{
+  "postID" : "390005214180556800",
+  "timestamp" : "8 Apr 2019 13:53:50 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.1 Earthquake in Central Phillippines - This just in. A 7.1 Earthquake has hit central Philippines. More... http://t.co/KkmcWNaQsf"
+},
+{
+  "postID" : "392141612291080192",
+  "timestamp" : "8 Apr 2019 16:39:13 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "On my way to Bohol. #PrayforBohol @KuyaTonipet"
+},
+{
+  "postID" : "391538341314719745",
+  "timestamp" : "8 Apr 2019 16:21:31 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "183 dead in Philippines quake: The death toll from the magnitude-7.1 earthquake in the central Philippines ros... http://t.co/eyDa8r2cgQ"
+},
+{
+  "postID" : "390845777846624256",
+  "timestamp" : "8 Apr 2019 15:54:00 GMT",
+  "categories" : [ "MultimediaShare", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Toll climbs in Philippines quake http://t.co/CfzYk7U8sL"
+},
+{
+  "postID" : "392116811350564864",
+  "timestamp" : "8 Apr 2019 16:37:23 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PRAYFORVISAYAS Earthquake n nmn."
+},
+{
+  "postID" : "390108142379335681",
+  "timestamp" : "8 Apr 2019 14:34:37 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Team_Kapamilya: Let us all #PrayForVisayas. God will help them get through this."
+},
+{
+  "postID" : "390096410927837185",
+  "timestamp" : "8 Apr 2019 14:31:46 GMT",
+  "categories" : [ "Factoid", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @CBCAlerts: Number of dead in earthquake that hit central #Philippines now 85. Buildings collapsed, bridges, roads damaged. http://t.co/?"
+},
+{
+  "postID" : "390277126688997376",
+  "timestamp" : "8 Apr 2019 15:06:59 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Trending. Re tweet. #PrayForVisayas"
+},
+{
+  "postID" : "389924213751963649",
+  "timestamp" : "2 Apr 2019 17:12:07 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Lord God, keep the people safe in the Philippines  #earthquake\""
+},
+{
+  "postID" : "392417454884151298",
+  "timestamp" : "8 Apr 2019 16:49:27 GMT",
+  "categories" : [ "Donations", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Help the victims of the deadly earthquake that struck #Cebu and #Bohol by donating to @Give2Asia. Make your gift today. #Philippines"
+},
+{
+  "postID" : "389941297169321985",
+  "timestamp" : "2 Apr 2019 17:44:38 GMT",
+  "categories" : [ "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "At least 4 people killed after 7.2 #earthquake hits central #Philippines. #least (http://t.co/3UVVRfBCDs)"
+},
+{
+  "postID" : "389942966506500096",
+  "timestamp" : "2 Apr 2019 17:47:06 GMT",
+  "categories" : [ "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Magnitude 7.1 earthquake hits the Philippines! CNN"
+},
+{
+  "postID" : "390687472251711488",
+  "timestamp" : "8 Apr 2019 15:44:21 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @VPJojoBinay: Ito po ang mga pagkakataon na nasusubok ang  mga Pilipino. Pero babangon po tayo. #PrayForVisayas"
+},
+{
+  "postID" : "390397318669025280",
+  "timestamp" : "8 Apr 2019 15:23:28 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The death toll from a strong earthquake in the central Philippines has risen to almost 100 http://t.co/6lYUgDvbdF"
+},
+{
+  "postID" : "390343124062842880",
+  "timestamp" : "8 Apr 2019 15:18:06 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "You're safe not because of the absence of danger, but because of God's presence. #PrayForVisayas #earthquakePH"
+},
+{
+  "postID" : "390010759054647296",
+  "timestamp" : "8 Apr 2019 13:55:39 GMT",
+  "categories" : [ "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Bohol Island, Philippines Earthquake 2013 Leaves Multiple People Dead. Read more at: http://t.co/lRbuuPClP4... http://t.co/H1k2R941ED"
+},
+{
+  "postID" : "390051909371166720",
+  "timestamp" : "8 Apr 2019 14:14:38 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "3 after shock! kaloka... scary! #PrayForVisayas #earthquakePH"
+},
+{
+  "postID" : "390206553363472385",
+  "timestamp" : "8 Apr 2019 15:01:40 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Magnitude 7.1 earthquake, aftershocks strike southern Philippines Geekquinox - Yahoo News Canada http://t.co/uheGFpQtQ2 via @yahoocanadanews"
+},
+{
+  "postID" : "389976105685237760",
+  "timestamp" : "3 Apr 2019 12:29:10 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @kimpoyfeliciano: Praying for the safety our brothers and sisters in Cebu and Bohol. #earthquake #PrayForVisayas"
+},
+{
+  "postID" : "390438276042989568",
+  "timestamp" : "8 Apr 2019 15:32:41 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death toll in #Cebu, #Bohol quake now 144 http://t.co/Vqa51woRn0 #earthquakePH"
+},
+{
+  "postID" : "390897212592373760",
+  "timestamp" : "8 Apr 2019 15:55:41 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#hotnews: Toll climbs in Philippines quake http://t.co/PYE7oInHQ7 #cnn"
+},
+{
+  "postID" : "389994501923545088",
+  "timestamp" : "3 Apr 2019 12:52:33 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas #PrayForVisayas #PrayForVisayas #PrayForVisayas #PrayForVisayas"
+},
+{
+  "postID" : "389975275221835776",
+  "timestamp" : "3 Apr 2019 12:28:56 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines Earthquake hits Cebu and Bohol http://t.co/c0VgB9SB3E"
+},
+{
+  "postID" : "391877232706064385",
+  "timestamp" : "8 Apr 2019 16:30:40 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForCebu #PrayForBohol ang epicenter baaaaaaa :(((((("
+},
+{
+  "postID" : "390110323446792193",
+  "timestamp" : "8 Apr 2019 14:35:00 GMT",
+  "categories" : [ "Factoid", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Dozens Die In Philippines After Powerful Earthquake: The quake, whose magnitude was reported as 7.2 before bei... http://t.co/LIUvtj1DdR"
+},
+{
+  "postID" : "389961958327218176",
+  "timestamp" : "2 Apr 2019 18:35:21 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Even behind the darkest Clouds...the sun still shines! #PrayForCebu #PrayForVisayas"
+},
+{
+  "postID" : "390102752703283200",
+  "timestamp" : "8 Apr 2019 14:32:30 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @nytimes: Major Earthquake Strikes Central Philippines http://t.co/OXqkTATgM8"
+},
+{
+  "postID" : "391540065177845760",
+  "timestamp" : "8 Apr 2019 16:22:57 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death toll climbs to 183 in Philippines earthquake http://t.co/yDlZQfjpzB"
+},
+{
+  "postID" : "389991591072387072",
+  "timestamp" : "3 Apr 2019 12:50:22 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@paulinexoh I heard that there was an earthquake in the philippines, is tht true?? R u okay??"
+},
+{
+  "postID" : "389912650068402177",
+  "timestamp" : "2 Apr 2019 16:11:00 GMT",
+  "categories" : [ "Location", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Southern Philippines hit by 7.4 magnitude earthquake, no threat of Pacific-wide tsunami."
+},
+{
+  "postID" : "391159302099980289",
+  "timestamp" : "8 Apr 2019 16:04:02 GMT",
+  "categories" : [ "Donations", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "overjoyed with the support from colleagues and friends. first batch of relief goods will reach #Bohol tomorrow. still accepting donations."
+},
+{
+  "postID" : "389971588419833856",
+  "timestamp" : "2 Apr 2019 18:53:33 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake Strike on Cebu and Bohol at 7.2 - October 15 2013 (VIDEO) | Pinoythinking: http://t.co/j8su0TCL5t #EARTHQUAKE #cebu #bohol"
+},
+{
+  "postID" : "390423386276384768",
+  "timestamp" : "8 Apr 2019 15:26:34 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines earthquake death toll rises to 144: A government official says the death toll from the 7.2-magnitu... http://t.co/uFUq5gE7wg"
+},
+{
+  "postID" : "391095007592988672",
+  "timestamp" : "8 Apr 2019 15:58:44 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Pls. pray for Tubigon, Bohol and Cebu city in the Philippines. Earthquake 7.2 magnitude. -Stay positive Philippines no matter what!"
+},
+{
+  "postID" : "391606809149972480",
+  "timestamp" : "8 Apr 2019 16:23:52 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@mc_nelson_inxs 183 now dead in Philippines quake: The death toll from the magnitude-7.1 earth... http://t.co/bXPhdDwdLm @mc_nelson_inxs"
+},
+{
+  "postID" : "389950767898951681",
+  "timestamp" : "2 Apr 2019 18:03:20 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @SaklapFriend: God is good all the time. #PrayForVisayas"
+},
+{
+  "postID" : "390341534442205185",
+  "timestamp" : "8 Apr 2019 15:17:53 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "? RT @mindanaoan: Nineteen churches in #Bohol. Major damages. Some even reduced to rubble. NINETEEN. NINETEEN!!!!!"
+},
+{
+  "postID" : "390002018095337473",
+  "timestamp" : "8 Apr 2019 13:50:50 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake strikes tourist islands in central Philippines: A 7.2 magnitude earthquake has struck the central P... http://t.co/n7E6kqfZnj"
+},
+{
+  "postID" : "390196717712605184",
+  "timestamp" : "8 Apr 2019 15:01:15 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @JessicaESanchez: Sending much love and prayers to the Philippines right now after the devastating earthquake."
+},
+{
+  "postID" : "390079889564393472",
+  "timestamp" : "8 Apr 2019 14:26:07 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "MMDA teams to help in rescue work in quake-battered areas in Bohol, Cebu: \n\nThe... http://t.co/UhhZUegXd2 #Manila #Philippines"
+},
+{
+  "postID" : "390136432980803584",
+  "timestamp" : "8 Apr 2019 14:46:31 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Nakakalungkot malamang puro simbahan ang nasira ng lindol.. #PrayForVisayas #PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "390320546157973504",
+  "timestamp" : "8 Apr 2019 15:13:45 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death toll from Philippines quake nears 100, more people missing: LOON, Philippines (Reuters) - The death toll... http://t.co/Qee54iM6cz"
+},
+{
+  "postID" : "392459146269696002",
+  "timestamp" : "8 Apr 2019 16:50:08 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@Pontifex thank you so much for the prayers for the victims of earthquake in philippines.\nWe love you pope :)"
+},
+{
+  "postID" : "392982691874107392",
+  "timestamp" : "8 Apr 2019 16:55:16 GMT",
+  "categories" : [ "MultimediaShare", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines Still Licking Her Wounds After Earthquake | Watch: http://t.co/gz1uqBfTQr"
+},
+{
+  "postID" : "389960439972372480",
+  "timestamp" : "2 Apr 2019 18:32:57 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Just heard from Fleur, my assistant in the Philippines, that a 7.2 earthquake hit nearby bringing down buildings.... http://t.co/H83DBlyQYV"
+},
+{
+  "postID" : "390137720640925696",
+  "timestamp" : "8 Apr 2019 14:47:44 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"that was not bohol fault it was an accident..\" Medyo natawa lang ako dun. #PrayForVisayas http://t.co/gEYLKCb9dD"
+},
+{
+  "postID" : "390787338630356992",
+  "timestamp" : "8 Apr 2019 15:49:36 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @SydneyyyKeith: @SoffiaxAlexeis @shivonleigh Keep safe guys!! #PrayForCebu #PrayForBohol"
+},
+{
+  "postID" : "390019529339703296",
+  "timestamp" : "8 Apr 2019 14:01:42 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForThePhilippines #PrayForVisayas #PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "391606733665099777",
+  "timestamp" : "8 Apr 2019 16:23:41 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@toohsuite 183 now dead in Philippines quake"
+},
+{
+  "postID" : "390062797754605568",
+  "timestamp" : "8 Apr 2019 14:17:52 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @PrincessFrance: 67 confirmed dead in Visayas earthquake. #PrayForVisayas"
+},
+{
+  "postID" : "390199108465479681",
+  "timestamp" : "8 Apr 2019 15:01:25 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I feel so bad for everyone there in the Philippines rn. They've been through a lot! Hurricanes, floods, n now this an earthquake!"
+},
+{
+  "postID" : "390308424606420993",
+  "timestamp" : "8 Apr 2019 15:10:52 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @cnni: Death toll rises to 99 following Tuesday's earthquake in the Philippines, officials say. http://t.co/uFHlu1Vh84 #earthquakePH"
+},
+{
+  "postID" : "390045848597319680",
+  "timestamp" : "8 Apr 2019 14:12:05 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @KabataanFacts: Stay Strong Cebu and Bohol. May God bless all of you. #PrayForVisayas"
+},
+{
+  "postID" : "391564195021336576",
+  "timestamp" : "8 Apr 2019 16:23:25 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines quake toll rises to 183\n... http://t.co/0k8sXAQGKw"
+},
+{
+  "postID" : "389956946125549569",
+  "timestamp" : "2 Apr 2019 18:29:05 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @SaySAMthing_: Dont tweet it. Do it :) #PrayForVisayas"
+},
+{
+  "postID" : "390065331143987200",
+  "timestamp" : "8 Apr 2019 14:18:40 GMT",
+  "categories" : [ "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death toll from major earthquake in central Philippines jumps to 85 - CTV News: CTV NewsDeath toll from major ... http://t.co/60SlkRNORY"
+},
+{
+  "postID" : "390417682018729984",
+  "timestamp" : "8 Apr 2019 15:24:41 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @jesseydeleon: #PrayForVisayas #PrayForBoholAndCebu"
+},
+{
+  "postID" : "390011224609390592",
+  "timestamp" : "8 Apr 2019 13:55:54 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @tprettyman: Another earthquake... damn. Sending all my love and prayers to the Philippines. Hopefully that's it &amp; no more major aftersh?"
+},
+{
+  "postID" : "389926671618297856",
+  "timestamp" : "2 Apr 2019 17:19:49 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @EarthAlerts: #earthquake: M 7.2 - Pacific Ocean - West Philippines [Central Visayas] Buenavista: Preliminary Earthquake Rep... http://t?"
+},
+{
+  "postID" : "390298446336249857",
+  "timestamp" : "8 Apr 2019 15:10:36 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @MissKhteAshly_: Dear intensity 7 earthquake, why churches? When there are clubs and bars!? #PrayForVisayas #earthquakePH"
+},
+{
+  "postID" : "390011576939741184",
+  "timestamp" : "8 Apr 2019 13:57:10 GMT",
+  "categories" : [ "Hashtags", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#earthquake measuring 7.2 struck islands popular with tourists in #Philippines on Tuesday http://t.co/U1quLY47bp"
+},
+{
+  "postID" : "391818206265868288",
+  "timestamp" : "8 Apr 2019 16:29:24 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @sunstaronline: Mayor Rama: Classes in all levels in private &amp; public schools in #Cebu City will resume on Nov. 4, Monday. #walangpasok ?"
+},
+{
+  "postID" : "390323779961778177",
+  "timestamp" : "8 Apr 2019 15:15:03 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"Church buildings were destroyed because God is so busy protecting our homes that He even forgot to protect His.\" (c) #PrayForVisayas"
+},
+{
+  "postID" : "389943503364849665",
+  "timestamp" : "2 Apr 2019 17:48:01 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @FeedTheChildren: Please pray for the people of the Philippines. A 7.2 earthquake hit Cebu and surrounding area today. Two of our staff ?"
+},
+{
+  "postID" : "392171471520284672",
+  "timestamp" : "8 Apr 2019 16:43:06 GMT",
+  "categories" : [ "Donations", "Hashtags", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @cebudailynews: \"Piso mo, hospital ko\" program launched to rebuild #CCMC. Donations may be deposited through #Cebu City's BDO account: 0?"
+},
+{
+  "postID" : "390003569992036352",
+  "timestamp" : "8 Apr 2019 13:52:00 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @jmsarno22: Let's #PrayForVisayas guys. Prayers can do anything.  #earthquakePH"
+},
+{
+  "postID" : "391100573451169792",
+  "timestamp" : "8 Apr 2019 16:00:23 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Aquino4Randy: RT @TSabornido Let's help our brothers and sisters. Together we can make things happen. #Bohol http://t.co/gb46L1tfFS #Ba?"
+},
+{
+  "postID" : "389944447108014080",
+  "timestamp" : "2 Apr 2019 17:50:11 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Magnitude-7.1 earthquake hits the Philippines: \n    \n http://t.co/wBso0bkbij"
+},
+{
+  "postID" : "390060444763037696",
+  "timestamp" : "8 Apr 2019 14:17:43 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BreakingNews: Update: Police raise death toll to 85 in earthquake in central Philippines - @AP"
+},
+{
+  "postID" : "390708712182005760",
+  "timestamp" : "8 Apr 2019 15:44:43 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So there's an active volcano.. That explains the earthquake #PrayForBohol"
+},
+{
+  "postID" : "390154283934429186",
+  "timestamp" : "8 Apr 2019 14:54:00 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "sana'y malagpasan nila ang dulot ng kalamidad na ito #PrayForVisayas"
+},
+{
+  "postID" : "392163317806272512",
+  "timestamp" : "8 Apr 2019 16:41:48 GMT",
+  "categories" : [ "Weather", "Factoid", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "PAGASA: THUNDERSTORM ADVISORY No.11 #VPRSD 1:30PM (21OCT'13) Expect thunderstorm over #Bohol(Dagohoy, Pilar) an... http://t.co/pcKKJI02x1"
+},
+{
+  "postID" : "391154763850850304",
+  "timestamp" : "8 Apr 2019 16:03:30 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Just read reports on a quake in Philippines a church breaking down in cebu.. @triciangeli hope all is well dear ??"
+},
+{
+  "postID" : "390380122051579904",
+  "timestamp" : "8 Apr 2019 15:21:21 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @OfficialKimora: #prayforbohol #prayforcebu???\n#philippines"
+},
+{
+  "postID" : "390033223738462208",
+  "timestamp" : "8 Apr 2019 14:08:21 GMT",
+  "categories" : [ "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Here's the complete story...\n\n#Cebu\n#Bohol\n#VisayanEarthquake\n#EarthquakePH http://t.co/pG1xhfv3Cc"
+},
+{
+  "postID" : "390036000346365952",
+  "timestamp" : "8 Apr 2019 14:09:35 GMT",
+  "categories" : [ "MultimediaShare", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @AngeL_LocKring: This is beyond imagination! Heart-wrenching! #PrayForVisayas #PrayForBohol #PrayForCebu http://t.co/i9jxe76IDF"
+},
+{
+  "postID" : "389998104835260416",
+  "timestamp" : "8 Apr 2019 13:46:31 GMT",
+  "categories" : [ "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake, Magnitude 5.0 - LEYTE, PHILIPPINES - 2013 October 15, 05:47:16 UTC http://t.co/Rl9aPVaPsp"
+},
+{
+  "postID" : "390297653642149888",
+  "timestamp" : "8 Apr 2019 15:10:17 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@aellamharine  may viber ako sa u.. i hope ur ok ai... pati na din si @its_reen2590, ingat kayo jan.. #PrayForVisayas"
+},
+{
+  "postID" : "390430575321821184",
+  "timestamp" : "8 Apr 2019 15:30:54 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "sana wala na aftershocks! #PrayForVisayas"
+},
+{
+  "postID" : "390028459004547073",
+  "timestamp" : "8 Apr 2019 14:04:47 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Waaah ! Buti na lang talaga walang nasaktan sa mga relatives namin. :/ #PrayForVisayas"
+},
+{
+  "postID" : "389927728591294464",
+  "timestamp" : "2 Apr 2019 17:20:48 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@BBCBreaking: At least four killed in building collapse after 7.2 magnitude earthquake in Philippines near Cebu, officials say\" ?"
+},
+{
+  "postID" : "389980199321759744",
+  "timestamp" : "3 Apr 2019 12:38:31 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Magnitude-7.1 earthquake hits the Philippines, 20 dead http://t.co/4rUYc56UKa"
+},
+{
+  "postID" : "390148369961992192",
+  "timestamp" : "8 Apr 2019 14:52:24 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Bohol Island, Philippines Earthquake 2013 Earthquake strikes Philippines CCTV Video RAW CCTV] | Watch: http://t.co/JHDLdPYwPc"
+},
+{
+  "postID" : "389955020944187393",
+  "timestamp" : "2 Apr 2019 18:25:10 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @suthichai: ??????????????????????????? Magnitude-7.1 earthquake hits the Philippines http://t.co/KiWcauu2xo"
+},
+{
+  "postID" : "390051846452023296",
+  "timestamp" : "8 Apr 2019 14:14:18 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@LandoDevanadera @waaafwaf #PrayforVisayas Ambot a. Mapa-bench lang ko buas. :P"
+},
+{
+  "postID" : "392994704339369984",
+  "timestamp" : "8 Apr 2019 16:56:19 GMT",
+  "categories" : [ "Volunteer", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Going to #Cebu this Saturday to collect relief goods for #Bohol!So excited to see everyone &amp; to help put others in the process! #BangonBohol"
+},
+{
+  "postID" : "389986633400844289",
+  "timestamp" : "3 Apr 2019 12:47:11 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Major quake hits Philippines: A magnitude-7.2 earthquake struck in the southeastern Philippines on Tuesday, th... http://t.co/A6dMijPDyv"
+},
+{
+  "postID" : "391677764178554880",
+  "timestamp" : "8 Apr 2019 16:24:46 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Philippines: Over 1,900 aftershocks recorded so far after 7.2 magnitude #earthquake | The Philippine Star - http://t.co/NJxWKXQKxq"
+},
+{
+  "postID" : "390025367794118656",
+  "timestamp" : "8 Apr 2019 14:04:32 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ParkSiblings: [TWITTER]Dara - \"#prayforbohol #prayforcebu\" http://t.co/wamZd3k4iq"
+},
+{
+  "postID" : "389973161317392384",
+  "timestamp" : "3 Apr 2019 12:22:23 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @almirateng: The news about the major, 7.2-magnitude earthquake in bohol and cebu gave me goosebumps! Lets all #PrayForVisayas"
+},
+{
+  "postID" : "389973790446206976",
+  "timestamp" : "3 Apr 2019 12:24:04 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @TrustJo: #PrayForBohol\n\nhttp://t.co/TOQjOQThkk"
+},
+{
+  "postID" : "390808113013862400",
+  "timestamp" : "8 Apr 2019 15:51:13 GMT",
+  "categories" : [ "MultimediaShare" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines struggles to deliver quake relief - http://t.co/6Rzet8TCaJ - from @Taptu"
+},
+{
+  "postID" : "389947676717875200",
+  "timestamp" : "2 Apr 2019 17:51:34 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Lord,help us... #PrayForVisayas"
+},
+{
+  "postID" : "390015938998718464",
+  "timestamp" : "8 Apr 2019 14:00:24 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Godbless people of Cebu and Bohol #prayforcebu #prayforbohol"
+},
+{
+  "postID" : "390605628793954304",
+  "timestamp" : "8 Apr 2019 15:42:17 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "still experiencing aftershocks until now, haven't slept yet :( #PrayForBohol"
+},
+{
+  "postID" : "391716876092329984",
+  "timestamp" : "8 Apr 2019 16:25:21 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @YengPLUGGEDin: #prayforVisayas http://t.co/agVqERzotE"
+},
+{
+  "postID" : "389940768703406081",
+  "timestamp" : "2 Apr 2019 17:44:13 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Before anything else, #PrayforVisayas"
+},
+{
+  "postID" : "390126119187279872",
+  "timestamp" : "8 Apr 2019 14:42:55 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Ingat sa mga Kathtropa natin jan sa Cebu lalo na kay @tropakristelle  @tobiasdanace #PrayForVisayas"
+},
+{
+  "postID" : "390093185516445696",
+  "timestamp" : "8 Apr 2019 14:30:32 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Staff and volunteers in action following 7.2 magnitude earthquake in the Philippines - IFRC via @sharethis"
+},
+{
+  "postID" : "390019768394059776",
+  "timestamp" : "8 Apr 2019 14:01:59 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BreakingNews: 7.2 earthquake recorded in the Philippines' Bohol province - @usgs http://t.co/sVOzYsZR5X"
+},
+{
+  "postID" : "391975421375287296",
+  "timestamp" : "8 Apr 2019 16:31:44 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @JLin7: \"@JLINfoundation: Prayers go out to the people affected by the earthquake that hit the Philippines today\" prayers for sure...was?"
+},
+{
+  "postID" : "390010402522038272",
+  "timestamp" : "8 Apr 2019 13:54:51 GMT",
+  "categories" : [ "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @markmedina2011: Mga kakababayan sa Bohol at Cebu, ingat kayo diyan! God bless Cebu and Boho:-( #CEBU #24Oras @gmanews"
+},
+{
+  "postID" : "390067059175866368",
+  "timestamp" : "8 Apr 2019 14:20:35 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "73 killed as 7.2 magnitude earthquake rattles Philippines - Indian Express http://t.co/NJ4B9gJG0y"
+},
+{
+  "postID" : "390178925483425793",
+  "timestamp" : "8 Apr 2019 14:59:54 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "AHORA - #Sismo de M 4.6, 5km SSE of Panaytayon, Philippines http://t.co/akMdzV4MGG #jishin #quake"
+},
+{
+  "postID" : "389934313669918720",
+  "timestamp" : "2 Apr 2019 17:38:26 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @LANow: No California tsunami threat after 7.2 earthquake in Philippines http://t.co/5j8N1TsdLm"
+},
+{
+  "postID" : "391734127260880896",
+  "timestamp" : "8 Apr 2019 16:26:49 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @markmedina2011: Reign Lord Jesus in the hearts of my kakabayans in #Bohol &amp; #Cebu ! #GodBlessThePhilippines #prayforVisayas #24Oras #Ba?"
+},
+{
+  "postID" : "389966760801075200",
+  "timestamp" : "2 Apr 2019 18:42:02 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @AngeL_LocKring: This is beyond imagination! Heart-wrenching! #PrayForVisayas #PrayForBohol #PrayForCebu http://t.co/eclKkM7J52"
+},
+{
+  "postID" : "391290961285758976",
+  "timestamp" : "8 Apr 2019 16:14:44 GMT",
+  "categories" : [ "Donations", "Hashtags", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@philredcross You may help Bohol victims thru Red Cross Donate-a-Load. Just key in RED &lt;AMOUNT&gt; to 2899 for Globe &amp; 4143 for Smart. #Bohol"
+},
+{
+  "postID" : "391501607617458176",
+  "timestamp" : "8 Apr 2019 16:20:22 GMT",
+  "categories" : [ "Donations", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Here's how you can help the Visayas quake victims. Give generously as you possibly can. #ReliefPH? http://t.co/QzN1T2MDkL"
+},
+{
+  "postID" : "390056141402550273",
+  "timestamp" : "8 Apr 2019 14:15:27 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas #earthquake This is what happened. http://t.co/DeQWu2UDDl"
+},
+{
+  "postID" : "390040807043903488",
+  "timestamp" : "8 Apr 2019 14:09:45 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @bumequip: Our hearts and prayers to all those affected by the #earthquake #PrayForVisayas"
+},
+{
+  "postID" : "390242460800401408",
+  "timestamp" : "8 Apr 2019 15:04:49 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I just posted a note on how you can help  all those affected by the Philippines earthquake... not financial help... http://t.co/zjxt7XzWfy"
+},
+{
+  "postID" : "390319392690421760",
+  "timestamp" : "8 Apr 2019 15:13:00 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.1 earthquake struck the central Philippines. At least 67 ppl confirmed dead and 164 more injured. Tourists displaced.#news"
+},
+{
+  "postID" : "390067487020036096",
+  "timestamp" : "8 Apr 2019 14:20:48 GMT",
+  "categories" : [ "MultimediaShare", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "heartbreaking.. #PrayForVisayas http://t.co/4DxHISki5p"
+},
+{
+  "postID" : "390048075772735488",
+  "timestamp" : "8 Apr 2019 14:13:04 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @mirary_faye: Bohol Earthquake Destroys Century-Old Churches :( http://t.co/opmHmAqtEg #PrayForVisayas"
+},
+{
+  "postID" : "390263121941499904",
+  "timestamp" : "8 Apr 2019 15:06:30 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "93 Killed in Philippines Earthquake http://t.co/Xw2kecP8Wk"
+},
+{
+  "postID" : "389983378604576768",
+  "timestamp" : "3 Apr 2019 12:40:05 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death toll rises to at least 20 after 7.2-magnitude quake collapses buildings, cracks roads in Philippines: http://t.co/9TrHnqNpq9"
+},
+{
+  "postID" : "390466856051822592",
+  "timestamp" : "8 Apr 2019 15:34:45 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @dost_pagasa: THUNDERSTORM ADVISORY No.23 #VPRSD \n9:08PM (16OCT'13)  \n\nExpect thunderstorm over #Bohol (Bein Unido, Trinidad,... http://?"
+},
+{
+  "postID" : "390056271413383169",
+  "timestamp" : "8 Apr 2019 14:15:55 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @AP: BREAKING: Police raise death toll to 85 in earthquake in central Philippines"
+},
+{
+  "postID" : "389949027283775488",
+  "timestamp" : "2 Apr 2019 17:58:13 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Let's say our prayers for those affected by the earthquake. #PrayForVisayas #earthquakePH"
+},
+{
+  "postID" : "389988910899539969",
+  "timestamp" : "3 Apr 2019 12:49:03 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Pusong pinoy! Makakaahon din tayo, pilipino pa.. #PrayForVisayas #1culture1group1family1country"
+},
+{
+  "postID" : "390927524852547584",
+  "timestamp" : "8 Apr 2019 15:56:50 GMT",
+  "categories" : [ "Hashtags", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Earthquake #Philippines ? #engineering design right: http://t.co/u8Y22DnJcF #EarthquakePH"
+},
+{
+  "postID" : "390012466106605568",
+  "timestamp" : "8 Apr 2019 13:57:44 GMT",
+  "categories" : [ "FirstPartyObservation", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @YahooNews: At least 32 dead after 7.2-magnitude earthquake strikes central Philippines: http://t.co/5FlxmZ1oGY"
+},
+{
+  "postID" : "390348568269058048",
+  "timestamp" : "8 Apr 2019 15:19:00 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Just Because we do Bad Things, Doesn't mean we are Bad People. #Staystrong #Cebu #Bohol #prayalways :)"
+},
+{
+  "postID" : "392437981790760961",
+  "timestamp" : "8 Apr 2019 16:49:52 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Nichkhun and Sandara Send Their Prayers to the Victims of the Earthquake in the Philippines Read more: http://t.co/vLjZUxcVVg"
+},
+{
+  "postID" : "389961589232648192",
+  "timestamp" : "2 Apr 2019 18:34:57 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "So bale nagising ako kasi gumagalaw yung kama ko. #PrayForVisayas"
+},
+{
+  "postID" : "389927984435449856",
+  "timestamp" : "2 Apr 2019 17:21:04 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @SmileForDaniel: Let us all pray for the earthquake victims. Hope everyone is safe. #PrayForVisayas ?"
+},
+{
+  "postID" : "390280251475259393",
+  "timestamp" : "8 Apr 2019 15:08:31 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "thank you. RT @Paugasol All my support to the\nfamilies of the victims due\nto the terrible earthquake\nthat hit central Philippines\ntoday."
+},
+{
+  "postID" : "390561294975508480",
+  "timestamp" : "8 Apr 2019 15:41:48 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Qtie314: 7.2 earthquake in the Philippines. My prayers go out to everyone who was affected by it."
+},
+{
+  "postID" : "390288380031799296",
+  "timestamp" : "8 Apr 2019 15:09:42 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "GOD is Good! #PrayForVisayas #prayforpeace"
+},
+{
+  "postID" : "390684943090610176",
+  "timestamp" : "8 Apr 2019 15:44:10 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @josephCmarco: Sending my prayers for those who had been victimized by the earthquake in Philippines."
+},
+{
+  "postID" : "390013967693000704",
+  "timestamp" : "8 Apr 2019 13:58:53 GMT",
+  "categories" : [ "Factoid", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"A 7.2-magnitude earthquake struck in southeastern Philippines, says USGS.\" @cnnbrk"
+},
+{
+  "postID" : "390372681326944257",
+  "timestamp" : "8 Apr 2019 15:20:51 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines earthquake: Death toll hits 110, rescue operation underway http://t.co/AoZPUaZNXe"
+},
+{
+  "postID" : "390078769676832768",
+  "timestamp" : "8 Apr 2019 14:25:15 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Lord, tulungan nyo po ang mga kapatid namin sa Visayas. Keep them in the safe place &amp; secure them with your loving presence #PrayForVisayas"
+},
+{
+  "postID" : "392990073849122816",
+  "timestamp" : "8 Apr 2019 16:55:33 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#BangonBohol #BangonPilipinas #PrayForBohol bangonphilippines http://t.co/Cipga2qRxT"
+},
+{
+  "postID" : "389985450594562048",
+  "timestamp" : "3 Apr 2019 12:44:27 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BBCWorld: Central Philippines earthquake measuring 7.2 magnitude kills at least 20 people, reports say http://t.co/hABp7Bg2jQ"
+},
+{
+  "postID" : "389969503880089600",
+  "timestamp" : "2 Apr 2019 18:49:59 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @jyramay: #PrayForBohol #PrayForVisayas"
+},
+{
+  "postID" : "390417967244005377",
+  "timestamp" : "8 Apr 2019 15:25:36 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @AJStream: Scores dead in #Philippine 7.2 magnitude earthquake - http://t.co/RBz76cMOcL  #PrayForVisayas #Bohol http://t.co/WSVDmI0OjQ"
+},
+{
+  "postID" : "389931490894548993",
+  "timestamp" : "2 Apr 2019 17:28:37 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "GOD . wag nio po clang papabayaan #PrayForBohol"
+},
+{
+  "postID" : "390081055555739648",
+  "timestamp" : "8 Apr 2019 14:26:18 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @decappeal: Cebu City pop. 850,000 about 30 miles from epicentre of #Philippines quake"
+},
+{
+  "postID" : "390014722667335680",
+  "timestamp" : "8 Apr 2019 13:59:33 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @kiervegirao: Stay Strong Visayas! #PrayForVisayas #StayStrongVisayas http://t.co/min1QC6bQM"
+},
+{
+  "postID" : "390332567016067072",
+  "timestamp" : "8 Apr 2019 15:16:48 GMT",
+  "categories" : [ "Donations", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @MsCandice_UC: We're set up and ready to go! Help #Cebu. All you need to do is drop off donations at UC-Banilad  http://t.co/iJ0CVCEiku"
+},
+{
+  "postID" : "389979901559730176",
+  "timestamp" : "3 Apr 2019 12:38:11 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @JeffersonFaudan: Earthquake Video Caught in Bohol Philippines 7.2 Magnitude http://t.co/y1GAFKLgeT  #bohol #earthquake #philippines"
+},
+{
+  "postID" : "390065905733865472",
+  "timestamp" : "8 Apr 2019 14:19:02 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @VinceMagbanua: Please pray for the safety of everyone there in Cebu and Bohol! ??? #PrayForVisayas"
+},
+{
+  "postID" : "392748888773230592",
+  "timestamp" : "8 Apr 2019 16:53:25 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#inquirer Quake death toll hits 195: \n\nThe death toll in the Oct. 15 earthquake ... http://t.co/I8a9MCG0Og #pinoy #philippines"
+},
+{
+  "postID" : "390058704113893376",
+  "timestamp" : "8 Apr 2019 14:17:19 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @RT_com: UPDATE: At least 85 killed after 7.1 quake hits southern Philippines http://t.co/jWhCGNnIwR @MrVop"
+},
+{
+  "postID" : "389994321555886081",
+  "timestamp" : "3 Apr 2019 12:51:26 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I'm glad that I got to see those churches in Bohol before they were ruined by that earthquake. #PrayForVisayas"
+},
+{
+  "postID" : "390277516780666881",
+  "timestamp" : "8 Apr 2019 15:07:10 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Filipino_probs: Please pray for those affected by the earthquake in the Philippines. Also make sure to give your relatives a call &amp; mak?"
+},
+{
+  "postID" : "390496086168596480",
+  "timestamp" : "8 Apr 2019 15:37:17 GMT",
+  "categories" : [ "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "100+ dead in Philippines quake: The death toll from the magnitude-7.1 earthquake in the central Philippines ro... http://t.co/U8Q7BKSE4c"
+},
+{
+  "postID" : "390033240511111169",
+  "timestamp" : "8 Apr 2019 14:08:31 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Filchi101: mgdasal k ndi un nangyaya k p mgretweet ng #PrayForVisayas"
+},
+{
+  "postID" : "391839685317632000",
+  "timestamp" : "8 Apr 2019 16:30:27 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "And yet another aftershock or was that an earthquake? #Cebu"
+},
+{
+  "postID" : "389979377271701504",
+  "timestamp" : "3 Apr 2019 12:35:49 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My thoughts and prayers go out to everyone who are affected by the earthquake. Lord help them go through this! #PrayForVisayas"
+},
+{
+  "postID" : "389984473317523456",
+  "timestamp" : "3 Apr 2019 12:41:39 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas Sana ok lang kayo!1"
+},
+{
+  "postID" : "389931167941541888",
+  "timestamp" : "2 Apr 2019 17:27:02 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#SuryaRay #Indian 7.2 quake hits central Philippines, killing 4 - USA TODAY http://t.co/uSbXYdbBHO @SuryaRay #India"
+},
+{
+  "postID" : "392782338364805120",
+  "timestamp" : "8 Apr 2019 16:53:58 GMT",
+  "categories" : [ "Factoid", "Official", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @wikisismos: AHORA - #Sismo de M 5.0, 56km ESE of Sarangani, Philippines http://t.co/syG9XZyiwo #jishin #quake"
+},
+{
+  "postID" : "390369372025282560",
+  "timestamp" : "8 Apr 2019 15:20:03 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#ViceRyllePizzaCouple\n#PrayForVisayas\n#ThatsMyTomboy\n#G2BItsSoComplicated"
+},
+{
+  "postID" : "390001707734020096",
+  "timestamp" : "8 Apr 2019 13:48:52 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @TelegraphNews: 7.1-magnitude earthquake hits Philippines http://t.co/CIakWptvxC"
+},
+{
+  "postID" : "389972527964893184",
+  "timestamp" : "2 Apr 2019 18:59:15 GMT",
+  "categories" : [ "Factoid", "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @laar_b: Magnitude 7.2 hits Visayas 110 aftershocks as of 11am 20 casualties #prayforcebu #prayforbohol ??"
+},
+{
+  "postID" : "389951933924274176",
+  "timestamp" : "2 Apr 2019 18:07:30 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Medium",
+  "text" : "RT @juanxi: Please spread the word. Mga kababayan sa Visayas, please use #rescuePH for information about people needing rescue. We will..."
+},
+{
+  "postID" : "390158226588581888",
+  "timestamp" : "8 Apr 2019 14:54:34 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Sending prayers and thoughts to whoever was affected with the Earthquake in Bohol and surrounding areas #Philippines"
+},
+{
+  "postID" : "389952676311474176",
+  "timestamp" : "2 Apr 2019 18:08:08 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @jpagreg: #prayforbohol #prayforcebu"
+},
+{
+  "postID" : "389962826535550976",
+  "timestamp" : "2 Apr 2019 18:37:54 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Deadly quake strikes Philippines: An earthquake measuring 7.2 magnitude hits the central Philippines, killing ... http://t.co/Pw8H32UxD1"
+},
+{
+  "postID" : "390166367736827904",
+  "timestamp" : "8 Apr 2019 14:57:50 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @JAWILoves: LUZON: TYPHOONS\nVISAYAS: EARTHQUAKE\nMINDANAO: WAR \n\n#PRAY #PHILIPPINES"
+},
+{
+  "postID" : "389972750246232064",
+  "timestamp" : "3 Apr 2019 12:18:23 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Samledesma: 20 dead in Visayas quake - Yahoo Philippines News http://t.co/adV8rF7hSg"
+},
+{
+  "postID" : "390049396978491392",
+  "timestamp" : "8 Apr 2019 14:14:04 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I may not be a catholic pero sayang ung mga churches na nasira #PrayForBohol"
+},
+{
+  "postID" : "389908166353231872",
+  "timestamp" : "2 Apr 2019 16:01:02 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Earthquake in Iloilo, Philippines! My head's aching."
+},
+{
+  "postID" : "390403815641346048",
+  "timestamp" : "8 Apr 2019 15:24:31 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death toll in Philippines quake reaches 110: CEBU (Philippines): The death toll from a 7.2-magnitude earthquak... http://t.co/SCaYb8dOub"
+},
+{
+  "postID" : "389935026705416192",
+  "timestamp" : "2 Apr 2019 17:41:14 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "?@gabyramaaaa: Loboc Church in Bohol #prayforbohol http://t.co/G1ZOvh5Zgl?"
+},
+{
+  "postID" : "389958653215649792",
+  "timestamp" : "2 Apr 2019 18:29:25 GMT",
+  "categories" : [ "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Daghana'g naguba sa Tagbilaran oyy. #Earthquake #Bohol #FB"
+},
+{
+  "postID" : "389998893355651073",
+  "timestamp" : "8 Apr 2019 13:47:04 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @PatriciaTilka: #PrayForCebu #PrayForBohol #PrayForVisayas #PrayForThePhilippines ???"
+},
+{
+  "postID" : "389968593686765568",
+  "timestamp" : "2 Apr 2019 18:46:53 GMT",
+  "categories" : [ "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Strong quake shakes central Philippines, kills 12: MANILA, Philippines (AP) ? A 7.2-magnitude earthquake colla... http://t.co/1qCmkxlWKL"
+},
+{
+  "postID" : "391358577647943680",
+  "timestamp" : "8 Apr 2019 16:16:43 GMT",
+  "categories" : [ "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@UMC_UMCORNOT NEAR Bohol but IN Bohol, Philippines.the town of Sagbayan-earthquake's center-wher Sagbayan United Methodist Church's located"
+},
+{
+  "postID" : "390323515691253760",
+  "timestamp" : "8 Apr 2019 15:14:47 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas God will always be our strength, hold on Philippines. http://t.co/s4DNeoKKHF"
+},
+{
+  "postID" : "393346233173291008",
+  "timestamp" : "8 Apr 2019 16:58:17 GMT",
+  "categories" : [ "Factoid", "Official", "CleanUp", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The #reliefPH and rehab efforts in areas affected by the #earthquakePH continue. Updates here: http://t.co/xhTEyYNuRM"
+},
+{
+  "postID" : "390049006883446784",
+  "timestamp" : "8 Apr 2019 14:13:48 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Lombardo_Music: Let's all pray right now for those in the Philippines who have been affected by the earthquake. #philippinesearthquake ?"
+},
+{
+  "postID" : "390074978038603776",
+  "timestamp" : "8 Apr 2019 14:23:26 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@SiSenyora: DEAR EARTHQUAKE, MY GOD IS BIGGER THAN YOU #PrayForVisayas\""
+},
+{
+  "postID" : "390120884674899968",
+  "timestamp" : "8 Apr 2019 14:38:18 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Grabe! Andaming aftershocks! #PrayForVisayas"
+},
+{
+  "postID" : "389973366834081792",
+  "timestamp" : "3 Apr 2019 12:22:53 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @WagAssuming: Devastation of Nueva Ecija due to typhoon santi. And now earthquake in\nCebu and Bohol.  #PrayForVisayas #PrayForNuevaEcija"
+},
+{
+  "postID" : "391816675344932864",
+  "timestamp" : "8 Apr 2019 16:28:20 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Hashtags", "News", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Cebu Gov. Hilario Davide said all public schools in Cebu Province will also resume on Nov. 4. #earthquakePH | @cebudailynews"
+},
+{
+  "postID" : "389909609190006784",
+  "timestamp" : "2 Apr 2019 16:04:19 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @LastQuake: NEW: Felt #earthquake M7.0 - Bohol, Philippines - October 15, 2013, 00:12 UTC (7 min ago) http://t.co/Q2wT2fxoH0"
+},
+{
+  "postID" : "389972062384975872",
+  "timestamp" : "2 Apr 2019 18:56:24 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Repost! Let's all pray for our safety. #ig #igers #igersph #igerscebu #prayforcebu #prayforbohol? http://t.co/baSU6NhevG"
+},
+{
+  "postID" : "390103260222091264",
+  "timestamp" : "8 Apr 2019 14:33:21 GMT",
+  "categories" : [ "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Ang daming simbahan, kalsada at mga gusali ang nasira dahil sa malakas na lindol. #bohol #cebu :("
+},
+{
+  "postID" : "390831689200459777",
+  "timestamp" : "8 Apr 2019 15:52:55 GMT",
+  "categories" : [ "MultimediaShare", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @UN: Philippines: UN agencies arriving to assist with post-quake relief effort http://t.co/vyhd99lpoA"
+},
+{
+  "postID" : "390034591072804864",
+  "timestamp" : "8 Apr 2019 14:09:00 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "20 dead as magnitude-7.1 earthquake hits the Philippines http://t.co/HNCoOxVP9M"
+},
+{
+  "postID" : "390009047782400000",
+  "timestamp" : "8 Apr 2019 13:54:32 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My prayers to everyone affected by the earthquakes in Cebu. #earthquakePH #PrayForVisayas"
+},
+{
+  "postID" : "390117235630411776",
+  "timestamp" : "8 Apr 2019 14:37:05 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForBohol http://t.co/xfyoTri7bs"
+},
+{
+  "postID" : "391808236409466881",
+  "timestamp" : "8 Apr 2019 16:27:10 GMT",
+  "categories" : [ "Factoid", "OriginalEvent", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Earthquake M 4.9 - 8km SW of Bagacay, Philippines: DYFI? - VTime2013-10-19 20:40:42 UTC2013-10-20 04:40:42 +0... http://t.co/MaVWi0ym42"
+},
+{
+  "postID" : "389953452245127169",
+  "timestamp" : "2 Apr 2019 18:10:00 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @HoyJanna: #PrayForVisayas ?"
+},
+{
+  "postID" : "389933822936367104",
+  "timestamp" : "2 Apr 2019 17:37:23 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Felt sorry for the victims of the\nmagnitude 7.2 #earthquake in\nBohol,Philippines :(("
+},
+{
+  "postID" : "390421851177902080",
+  "timestamp" : "8 Apr 2019 15:26:14 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Earthquake 5 - 2km NE of Canmaya Diot, Philippines http://t.co/LPSmozbNcd"
+},
+{
+  "postID" : "389959991186055168",
+  "timestamp" : "2 Apr 2019 18:31:41 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Ampo ug salig sa Ginoo katawhan sa Bohol ug Cebu. #PrayForVisayas"
+},
+{
+  "postID" : "390761287786852354",
+  "timestamp" : "8 Apr 2019 15:49:04 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @SenatorBinay: Thank you @DickGordonDaily for speedily sending medical and rescue teams to #Bohol. @philredcross here providing assistan?"
+},
+{
+  "postID" : "389924079555207168",
+  "timestamp" : "2 Apr 2019 17:08:50 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @cnni: A 7.2-magnitude earthquake has struck in the southeastern Philippines, the U.S. Geological Survey says. http://t.co/3jwtWsTrP9"
+},
+{
+  "postID" : "389931721556115457",
+  "timestamp" : "2 Apr 2019 17:32:17 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.2-earthquake hits Philippines: A magnitude-7.2 earthquake struck in the southeastern Philippines on Tuesday,... http://t.co/ctlNeG4G40"
+},
+{
+  "postID" : "390663455650234368",
+  "timestamp" : "8 Apr 2019 15:43:37 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "I woke up minutes before that strong aftershock occured. #PrayForVisayas"
+},
+{
+  "postID" : "389918857642536960",
+  "timestamp" : "2 Apr 2019 16:28:38 GMT",
+  "categories" : [ "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @Tweetbrk: NEW: Significant preliminary 7.2 magnitude earthquake just off Nueva Vida Sur, Philippines - @MicahGrimes"
+},
+{
+  "postID" : "390162789995925505",
+  "timestamp" : "8 Apr 2019 14:56:25 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @MidnightWatcher: Philippines: Dozens Killed, Thousands Displaced After Powerful 7.2 Magnitude Earthquake Hits Cebu, Bohol http://t.co/F?"
+},
+{
+  "postID" : "391124380303888384",
+  "timestamp" : "8 Apr 2019 16:02:04 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Nakaka'freak every time mag shake ang ground. Just another strong shock a minute ago. :( #Cebu #Earthquake"
+},
+{
+  "postID" : "390002638860738561",
+  "timestamp" : "8 Apr 2019 13:51:47 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "My fellow kababayans, let's #PrayForVisayas"
+},
+{
+  "postID" : "390330323063422976",
+  "timestamp" : "8 Apr 2019 15:16:16 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "844 aftershocks. ? #PrayForVisayas ?"
+},
+{
+  "postID" : "392138529456672768",
+  "timestamp" : "8 Apr 2019 16:38:14 GMT",
+  "categories" : [ "MultimediaShare", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Tragic pictures of Philippines quake survivor woes: http://t.co/9yK23rDrNr @irinnews"
+},
+{
+  "postID" : "392643880182509568",
+  "timestamp" : "8 Apr 2019 16:52:00 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @UPRCY: #EarthquakePH #ReliefPH #AbagSugBohol Soliman says quake-affected Bohol residents who have not been given relief... http://t.co/?"
+},
+{
+  "postID" : "390121794868637696",
+  "timestamp" : "8 Apr 2019 14:39:13 GMT",
+  "categories" : [ "MultimediaShare", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Deadly Quake Strikes Philippines http://t.co/vqWJkAnH0O"
+},
+{
+  "postID" : "391721426895392769",
+  "timestamp" : "8 Apr 2019 16:26:30 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ryanb0n: God Bless #Philippines\n#pray for #Cebu Bohol\n#TheRealUNLI for #Android\n\nSino c Angel Locsin The Legal Wife\n\nHave Blessed Sunda?"
+},
+{
+  "postID" : "389948112904544256",
+  "timestamp" : "2 Apr 2019 17:56:20 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NewEarthquake: 5.0 earthquake, 2km SSE of Clarin, Philippines. Oct 15 10:42 at epicenter (14m ago, depth 23km). http://t.co/KKMtEbCOWg"
+},
+{
+  "postID" : "390727158747758593",
+  "timestamp" : "8 Apr 2019 15:45:41 GMT",
+  "categories" : [ "Hashtags", "Discussion", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @philredcross: Another shaking. Residents now are starting to stay out of their houses. Short duration from d last one, 15m ago. #Cebu v?"
+},
+{
+  "postID" : "389958657405747200",
+  "timestamp" : "2 Apr 2019 18:29:59 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @nprnews: Strong Quake Hits Central Philippines, Aftershocks Continue http://t.co/5t8uFWL6qe"
+},
+{
+  "postID" : "389995063969087488",
+  "timestamp" : "8 Apr 2019 13:44:13 GMT",
+  "categories" : [ "Hashtags", "Discussion", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "X?X i JUS HEARD ABOUT THA CEBU &amp; BOHOL EARTHQUAKE 7.2 iNTENSiTY,NEVA THOUGHT THAT WOULD HAPPEN.EVA.#Philippines #Earthquake #ChamTweets X?X"
+},
+{
+  "postID" : "390129847931912192",
+  "timestamp" : "8 Apr 2019 14:44:00 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @PapaJackAdvice: Let's retweet this and #PrayForThePhilippines #PrayForVisayas #PrayforBohol #PrayForCebu #PRAY #BangonPilipinas"
+},
+{
+  "postID" : "390187901260017664",
+  "timestamp" : "8 Apr 2019 15:00:09 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @CoryW4de: I'm so sorry to hear about the earthquake in the Philippines! Please be safe, you beautiful people! Sending good vibes your w?"
+},
+{
+  "postID" : "389983626093686784",
+  "timestamp" : "3 Apr 2019 12:41:28 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @AP: Death toll rises to at least 20 after 7.2-magnitude quake collapses buildings, cracks roads in Philippines: http://t.co/WvBN6Kfkon ?"
+},
+{
+  "postID" : "390279945261289472",
+  "timestamp" : "8 Apr 2019 15:07:48 GMT",
+  "categories" : [ "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Deadly quake strikes Philippines http://t.co/quriCv89q7"
+},
+{
+  "postID" : "390612851376676864",
+  "timestamp" : "8 Apr 2019 15:42:47 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#earthquake: M 4.9 - Pacific Ocean - West Philippines [Central Visayas] Panaytayon: Preliminary Earthquake Rep... http://t.co/2wErwBi7tY"
+},
+{
+  "postID" : "391947709617164288",
+  "timestamp" : "8 Apr 2019 16:31:12 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Stay safe everyone #earthquakePH #cebu #bohol #aegisites"
+},
+{
+  "postID" : "389920120119635969",
+  "timestamp" : "2 Apr 2019 16:30:51 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "National Disaster Agency: 4 people killed in building collapse in Cebu after Philippines quake - @Reuters"
+},
+{
+  "postID" : "390675703022501888",
+  "timestamp" : "8 Apr 2019 15:44:00 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Pls to those who read my tweets , RT pls po we super need help #rescuePH inabanga bohol . We don't ever recieve any relief goods"
+},
+{
+  "postID" : "390423465972748289",
+  "timestamp" : "8 Apr 2019 15:27:31 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines earthquake death toll rises to 144: A government official says the death toll from the 7.2-magnitu... http://t.co/NT8c1p5u5G"
+},
+{
+  "postID" : "389941557203185665",
+  "timestamp" : "2 Apr 2019 17:45:11 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"A 7.2-magnitude earthquake struck in southeastern Philippines, says USGS.\" via @cnnbrk"
+},
+{
+  "postID" : "390072163648036864",
+  "timestamp" : "8 Apr 2019 14:23:14 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The historical Loboc Church in Bohol  Before &amp; after #earthquake #PrayForVisayas God bless the Philippines! http://t.co/jhOFaqVncA"
+},
+{
+  "postID" : "390130372220289024",
+  "timestamp" : "8 Apr 2019 14:44:14 GMT",
+  "categories" : [ "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ItsViceRylle: Sa lahat ng ViceRylle babies at sa lahat ng mga regular na tao dito sa Visayas.. INGAT kayo, INGAT tayo :) #PrayForVisayas"
+},
+{
+  "postID" : "390603472912928768",
+  "timestamp" : "8 Apr 2019 15:42:01 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Another aftershock to greet us good morning! #PrayForVisayas #visayasQuake"
+},
+{
+  "postID" : "389978886529765376",
+  "timestamp" : "3 Apr 2019 12:35:20 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @OfficialHH_Asia: Praying for our friends in the Philippines who were affected by the 7.2 magnitude quake. The scenes on TV are heartbre?"
+},
+{
+  "postID" : "390747111039311872",
+  "timestamp" : "8 Apr 2019 15:46:09 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas #VisayasQuake http://t.co/esTie0KD6W"
+},
+{
+  "postID" : "392261795856936960",
+  "timestamp" : "8 Apr 2019 16:46:19 GMT",
+  "categories" : [ "Official", "CleanUp", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "PIA | #Relief efforts for earthquake victims in #Bohol, #Cebu continue - http://t.co/acmAe6eb0Y"
+},
+{
+  "postID" : "390115230774067200",
+  "timestamp" : "8 Apr 2019 14:36:08 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "?@rapplerdotcom: #GetWellSoonDanielPadilla beats #PrayForVisayas http://t.co/ZPE4au6rka?"
+},
+{
+  "postID" : "391538869826363392",
+  "timestamp" : "8 Apr 2019 16:22:16 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "MNento 183 dead in Philippines quake: The death toll from the magnitude-7.1 earthquake in the central Philippi... http://t.co/9eIrpdFyhI"
+},
+{
+  "postID" : "391341565547134977",
+  "timestamp" : "8 Apr 2019 16:15:53 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "News", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @dolandcastro: #PRAYFORCEBU #PRAYFORBOHOL #PRAYFORPHILIPPINES #tvpatrol live report #earthquakePH #ndrrmc http://t.co/J1wQlHNydV"
+},
+{
+  "postID" : "390056984449265664",
+  "timestamp" : "8 Apr 2019 14:16:52 GMT",
+  "categories" : [ "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @RedCrossCebu \nRed Cross Emergency Numbers #Cebu Chapter 032- 4124140 | 09209294645 &amp; Bohol Chapter 038-5019175 | 09209031793  #rescuePH"
+},
+{
+  "postID" : "390024340206395392",
+  "timestamp" : "8 Apr 2019 14:04:18 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines Earthquake Kills 6, Up to 7.1 Magnitude http://t.co/5hvlLZxhen"
+},
+{
+  "postID" : "390075435226112000",
+  "timestamp" : "8 Apr 2019 14:24:23 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Guys let's pray for our sistres and brothers at Visayas who experienced Magnitude 7.1 earthquake this morning. #PrayForVisayas #earthquakePH"
+},
+{
+  "postID" : "390113364284047360",
+  "timestamp" : "8 Apr 2019 14:35:53 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "A touching sight i found this morning after the quake #prayer #cebu #bohol #faith #goodnight? http://t.co/6XDoNxvVxa"
+},
+{
+  "postID" : "391248611402457089",
+  "timestamp" : "8 Apr 2019 16:13:06 GMT",
+  "categories" : [ "News", "ContextualInformation" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @BBCWorld: Baby born in tent after mother treks through Philippines quake rubble http://t.co/IcElmALzVE &amp; http://t.co/LO2Q43BA7D"
+},
+{
+  "postID" : "390428767581003776",
+  "timestamp" : "8 Apr 2019 15:30:44 GMT",
+  "categories" : [ "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippine quake damages historic churches: LOON, Philippines (AP) ? The earthquake that struck the central Ph... http://t.co/3kveldKZEi"
+},
+{
+  "postID" : "389964437139906560",
+  "timestamp" : "2 Apr 2019 18:38:43 GMT",
+  "categories" : [ "Factoid", "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "over 110 aftershocks noted :( that's too much...#PrayForVisayas #earthquake"
+},
+{
+  "postID" : "390317610123808768",
+  "timestamp" : "8 Apr 2019 15:12:08 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @JAPS_World: #PrayForThePhilippines #PrayForVisayas http://t.co/7pcBxXJggM"
+},
+{
+  "postID" : "390431279977467904",
+  "timestamp" : "8 Apr 2019 15:31:10 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : ":(( heartbreaking news on earthquake #bohol #cebu; the poor are most vulnerable in these situations"
+},
+{
+  "postID" : "390222864986562560",
+  "timestamp" : "8 Apr 2019 15:03:47 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "At least 85 killed after magnitude 7.2 earthquake hits Philippines http://t.co/n4JNLLp7HU"
+},
+{
+  "postID" : "389930106766245888",
+  "timestamp" : "2 Apr 2019 17:25:32 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @NBCNews: 7.2 quake strikes near one of Philippines' largest cities, according to USGS. Reuters &amp; local media report 4 killed http://t.c?"
+},
+{
+  "postID" : "389954664432943104",
+  "timestamp" : "2 Apr 2019 18:16:11 GMT",
+  "categories" : [ "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"7.2 quake hits central Philippines, killing 6 - The Hindu\" http://t.co/d5OmOK21LS"
+},
+{
+  "postID" : "390092908696576000",
+  "timestamp" : "8 Apr 2019 14:29:49 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "At least 85 people killed in Philippines earthquake http://t.co/aLYf4j4tJi @abcnews"
+},
+{
+  "postID" : "389994854245081088",
+  "timestamp" : "3 Apr 2019 12:53:29 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @TweetMeMaybeee: Fire, Water and now Earth. Keep safe everyone! I can see the sign. #PrayforVisayas"
+},
+{
+  "postID" : "390031516660535296",
+  "timestamp" : "8 Apr 2019 14:07:26 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "It's her Golden Anniversary as a Basilica in 2015! Help restore our Beloved Sto. Niño de #Cebu Basilica. #CebuFinest http://t.co/EtXpt97ukw"
+},
+{
+  "postID" : "390327424782966784",
+  "timestamp" : "8 Apr 2019 15:15:28 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Breaking News: Death toll in Philippines quake approaches 100 http://t.co/yrjZB2dqgl"
+},
+{
+  "postID" : "389950365258350592",
+  "timestamp" : "2 Apr 2019 17:59:42 GMT",
+  "categories" : [ "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@tomlinsondisney yep. search for #PrayForVisayas and you'll see the church is destroyed by the earthquake :("
+},
+{
+  "postID" : "389920547934449664",
+  "timestamp" : "2 Apr 2019 16:31:46 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "A 7.4 magnitude #earthquake has hit the southern #Philippines. There's no threat of a #tsunami."
+},
+{
+  "postID" : "390335591088652288",
+  "timestamp" : "8 Apr 2019 15:17:16 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Dozens dead in large Philippines quake http://t.co/pLUOVmdRse"
+},
+{
+  "postID" : "389924633220112384",
+  "timestamp" : "2 Apr 2019 17:13:55 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "7.2 quake hits southern Philippines http://t.co/XB9WUM3B7V"
+},
+{
+  "postID" : "390019944554831872",
+  "timestamp" : "8 Apr 2019 14:03:16 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Update: At least 28 killed in Philippines magnitude 7.2 earthquake - @ANCAlerts http://t.co/lPdbmPmL5x #sp4zee"
+},
+{
+  "postID" : "390321582146867200",
+  "timestamp" : "8 Apr 2019 15:14:32 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Magnitude 7.2 earthquake hits Philippines, Overflows the Water of Swimming Pool  CCTV | Watch: http://t.co/hjxSyc5f8G"
+},
+{
+  "postID" : "390028685480181760",
+  "timestamp" : "8 Apr 2019 14:05:03 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Dear God,Please Protect those people in Visayas and Mindanao we are hoping that they're safe thank you ? #PrayForVisayas -Alixia ?"
+},
+{
+  "postID" : "390812676407840770",
+  "timestamp" : "8 Apr 2019 15:51:40 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForBohol http://t.co/7ypYVqZiaQ"
+},
+{
+  "postID" : "390014160634793984",
+  "timestamp" : "8 Apr 2019 13:59:24 GMT",
+  "categories" : [ "Factoid", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @annecurtissmith: praying for their families :(?@YahooNews: At least 32 dead after 7.2magnitude earthquake strikes central Philippines h?"
+},
+{
+  "postID" : "390727188099526656",
+  "timestamp" : "8 Apr 2019 15:45:52 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @CocoJul_Fans: God Bless po sa ating lahat, lalong lalo na sa mga taga-Bohol, dito sa #Cebu, at sa ibang lugar dito sa Visayas na may li?"
+},
+{
+  "postID" : "390825204777500672",
+  "timestamp" : "8 Apr 2019 15:52:13 GMT",
+  "categories" : [ "MultimediaShare", "OriginalEvent", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "The October 15, 2013 M 7.1 earthquake near the city of Catigbian on Bohol Island, Philippines, occurred as the... http://t.co/io8gRphpvj"
+},
+{
+  "postID" : "390328150414348288",
+  "timestamp" : "8 Apr 2019 15:15:55 GMT",
+  "categories" : [ "Factoid", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines quake death toll reaches 99 http://t.co/ZHyXeQthrj #video"
+},
+{
+  "postID" : "390495029203984384",
+  "timestamp" : "8 Apr 2019 15:36:35 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "11:11 everyone's safety. Especially to those who are affected by the earthquake. #PrayForVisayas"
+},
+{
+  "postID" : "390070968258797569",
+  "timestamp" : "8 Apr 2019 14:22:42 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @CestlavieMarts: My prayers goes out to the people who were affected by the earthquake. #PrayForVisayas"
+},
+{
+  "postID" : "389960641315733504",
+  "timestamp" : "2 Apr 2019 18:33:26 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas pagdasal po natin yung mga filipinos out there :)"
+},
+{
+  "postID" : "390470094037323776",
+  "timestamp" : "8 Apr 2019 15:35:07 GMT",
+  "categories" : [ "MultimediaShare", "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "BBC News - Quake brings down bell tower on oldest Philippine church http://t.co/uj5tVBiYo6 #PrayForVisayas"
+},
+{
+  "postID" : "391184862184357888",
+  "timestamp" : "8 Apr 2019 16:06:25 GMT",
+  "categories" : [ "GoodsServices", "Factoid", "CleanUp" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Guys we badly need your help for the victims of 7.2 earthquake last tuesday in Bohol,Philippines.We need food,water,gasoline,and candles."
+},
+{
+  "postID" : "390770104243212288",
+  "timestamp" : "8 Apr 2019 15:49:24 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @QueenPetraK: Typhoon in Luzon, Earthquake in Visayas, (Bohol, Cebu), War in Mindanao, Worst of all is CORRUPTION all over Philippines\n#?"
+},
+{
+  "postID" : "390175460979515392",
+  "timestamp" : "8 Apr 2019 14:59:18 GMT",
+  "categories" : [ "MultimediaShare", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Photo gallery: See the damage from the 7.2 quake that struck the central Philippines.\nhttp://t.co/rpOTGWbC9f http://t.co/HxHVxPPzvy"
+},
+{
+  "postID" : "390172130693742592",
+  "timestamp" : "8 Apr 2019 14:58:53 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Just returned from our trip to the Philippines, and our thoughts are with those there affected by today's earthquake. #PrayForVisayas"
+},
+{
+  "postID" : "389924276666523650",
+  "timestamp" : "2 Apr 2019 17:12:53 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @abcnews: #Breaking: #Earthquake measuring 7.4 hits southern Philippines, says USGS"
+},
+{
+  "postID" : "389962742653657088",
+  "timestamp" : "2 Apr 2019 18:37:10 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @jasminip: #prayforBohol #PrayForCebu ????"
+},
+{
+  "postID" : "390092778652172289",
+  "timestamp" : "8 Apr 2019 14:29:34 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @RT_com: UPDATE: More than 30 killed, buildings damaged after 7.1 quake hits southern Philippines http://t.co/0J6Eg19Gws http://t.co/Ddk?"
+},
+{
+  "postID" : "390218364502540288",
+  "timestamp" : "8 Apr 2019 15:02:47 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @jayillin: My thoughts &amp; prayers go out to those who were affected by the disaster in #Bohol Philippines. I was there recently and I lov?"
+},
+{
+  "postID" : "390754870526873600",
+  "timestamp" : "8 Apr 2019 15:47:28 GMT",
+  "categories" : [ "SearchAndRescue", "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "High",
+  "text" : "More than 1,200 aftershocks in #bohol #bangonvisayas #halpbohol #prayforvisayas - God Bless you all and #StaySafe"
+},
+{
+  "postID" : "389926344487759873",
+  "timestamp" : "2 Apr 2019 17:17:56 GMT",
+  "categories" : [ "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Major quake hits Philippines http://t.co/fHHxr8iWrg"
+},
+{
+  "postID" : "391026267136335872",
+  "timestamp" : "8 Apr 2019 15:58:25 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@DohertyShannen please pray for the Philippines earthquake...love you Shannen! Manila Loves you!!!!!!!!"
+},
+{
+  "postID" : "389930626867933184",
+  "timestamp" : "2 Apr 2019 17:26:34 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @RicoHizon: 7.2 magnitude quake strikes #Bohol, #Philippines at 8:12 am according to the USGS. Praying for the safety of our our kababay?"
+},
+{
+  "postID" : "390529539908325376",
+  "timestamp" : "8 Apr 2019 15:39:57 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Thankful my brother and Katherine are okay from the earthquake in three Philippines. #PraiseGod"
+},
+{
+  "postID" : "390094842270711808",
+  "timestamp" : "8 Apr 2019 14:31:01 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@FunnyPinoyQuote: Luzon: Typhoons \nVisayas: Earthquake \nMindanao: War \n\nPray for our Dear Philippines.\""
+},
+{
+  "postID" : "389917750363029504",
+  "timestamp" : "2 Apr 2019 16:27:11 GMT",
+  "categories" : [ "Hashtags", "OriginalEvent" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#Temblor? M 5.4, 6km NNE of Nueva Fuerza, Philippines http://t.co/4hpmJmNcc2 #Earthquake #Sismo"
+},
+{
+  "postID" : "390554915451727872",
+  "timestamp" : "8 Apr 2019 15:41:38 GMT",
+  "categories" : [ "MultimediaShare", "CleanUp" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines: UN agencies arriving to assist with post-quake relief effort http://t.co/PZe3NTx5Z7"
+},
+{
+  "postID" : "390131638891720704",
+  "timestamp" : "8 Apr 2019 14:45:12 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "And it all goes down to \"Thank you Lord, i'm still alive\". It's been a looong day. Goodnight. #PrayForBohol #PrayForCebu"
+},
+{
+  "postID" : "393583312003817472",
+  "timestamp" : "8 Apr 2019 16:59:37 GMT",
+  "categories" : [ "MultimediaShare", "CleanUp", "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @pcdspo: Yesterday, the President was in Bohol overseeing #reliefPH and rehab for #earthquakePH-affected areas. Photos: http://t.co/jX8E?"
+},
+{
+  "postID" : "390031650878656512",
+  "timestamp" : "8 Apr 2019 14:07:44 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "\"@ilovejamich: Chocolate Hills in Bohol after #earthquake :( #PrayForVisayas http://t.co/8aamVmD94a\" OMG."
+},
+{
+  "postID" : "391540522352783360",
+  "timestamp" : "8 Apr 2019 16:23:15 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "183 dead in Philippines quake: The death toll from the magnitude-7.1 earthquake in the central Philippines ros... http://t.co/PKJhMCA3xi"
+},
+{
+  "postID" : "390095161033633793",
+  "timestamp" : "8 Apr 2019 14:31:12 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayforBohol #PrayForCebu #PrayForBoholAndCebu #PrayForCebuDavaoBoholCDO #PrayForPhilippines"
+},
+{
+  "postID" : "393567692390555648",
+  "timestamp" : "8 Apr 2019 16:59:01 GMT",
+  "categories" : [ "Official", "Hashtags", "Advice" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@TV5manila #BangonSugbohol #earthquakePH The #Cebu provincial government will give financial assistance ... http://t.co/rO8l1ldutN"
+},
+{
+  "postID" : "390868808774475776",
+  "timestamp" : "8 Apr 2019 15:55:10 GMT",
+  "categories" : [ "Discussion", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Very Strong Earthquake Mindanao, Philippines on October 15, 2013 | Earthquakes http://t.co/FIdzjU1uWS"
+},
+{
+  "postID" : "390006443094458368",
+  "timestamp" : "8 Apr 2019 13:54:05 GMT",
+  "categories" : [ "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @mthrfcknbenny: Muslim holiday saved so much lives. Keep safe everyone. #earthquakeph #PrayForVisayas"
+},
+{
+  "postID" : "391120290849095680",
+  "timestamp" : "8 Apr 2019 16:00:59 GMT",
+  "categories" : [ "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "(CNN) - The death toll from the magnitude-7.1 earthquake in the central Philippines rose Thursday to 161,... http://t.co/NzsYAo1Km9"
+},
+{
+  "postID" : "390154476847259648",
+  "timestamp" : "8 Apr 2019 14:54:21 GMT",
+  "categories" : [ "Sentiment", "Discussion", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @donmoen: Join me in praying for my friends in Philippines today in the wake of a major earthquake hitting Bohol. May God comfort and st?"
+},
+{
+  "postID" : "390045806650068992",
+  "timestamp" : "8 Apr 2019 14:11:48 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines Earthquake: At Least 20 Dead - Yahoo News UK http://t.co/EHUWxjb6an via @YahooNewsUK"
+},
+{
+  "postID" : "390140958622633985",
+  "timestamp" : "8 Apr 2019 14:49:51 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#prayforvisayas #philippines #earthquake #bohol #cebu #prayforphilippines 10.15.13 http://t.co/OpS20T0Vtu"
+},
+{
+  "postID" : "390063133294723073",
+  "timestamp" : "8 Apr 2019 14:18:03 GMT",
+  "categories" : [ "Hashtags" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @iamdomz26: Aww. Ung Bohol na pangarap kong puntaha, nasira na. :'( #PrayForVisayas"
+},
+{
+  "postID" : "389923207127392256",
+  "timestamp" : "2 Apr 2019 17:02:58 GMT",
+  "categories" : [ "OriginalEvent", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @YahooNews: Magnitude 7.4 quake hits Philippines, no tsunami threat: http://t.co/UikcL2p11t"
+},
+{
+  "postID" : "390337457582919680",
+  "timestamp" : "8 Apr 2019 15:17:29 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "#PrayForVisayas  what's happening Philippines? O.o"
+},
+{
+  "postID" : "390043055182467072",
+  "timestamp" : "8 Apr 2019 14:10:48 GMT",
+  "categories" : [ "MultimediaShare", "Factoid" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Orange earthquake alert (Magnitude 5.9M, Depth:20.15km) in Philippines 15/10/2013 08:42 UTC, 6700945 people wi... http://t.co/r1w7rVS184"
+},
+{
+  "postID" : "389938067554852865",
+  "timestamp" : "2 Apr 2019 17:43:35 GMT",
+  "categories" : [ "Hashtags", "Sentiment" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "please pray for #Bohol"
+},
+{
+  "postID" : "391526328832253952",
+  "timestamp" : "8 Apr 2019 16:20:48 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "that was kind of strong aftershock we got here in #Cebu"
+},
+{
+  "postID" : "389913644131045376",
+  "timestamp" : "2 Apr 2019 16:15:32 GMT",
+  "categories" : [ "Location", "Hashtags", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "RT @ABC7: #EARTHQUAKE Quake with prelim mag of 7.2 struck Philippines, 25 miles east-northeast of Tagbilaran, Bohoi; no tsunami warning yet"
+},
+{
+  "postID" : "390150626497138688",
+  "timestamp" : "8 Apr 2019 14:53:23 GMT",
+  "categories" : [ "MultimediaShare", "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "93 Killed in Philippines Earthquake http://t.co/zwQNL3uYEK"
+},
+{
+  "postID" : "390502906082123776",
+  "timestamp" : "8 Apr 2019 15:38:17 GMT",
+  "categories" : [ "Factoid", "Discussion" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "UPDATE: Typhoon And 7.2 Earthquake Hit Philippines 93 Dead Rising!!! | Prophecy http://t.co/8HMTAbeZ9w"
+},
+{
+  "postID" : "390141495476371457",
+  "timestamp" : "8 Apr 2019 14:50:06 GMT",
+  "categories" : [ "Hashtags", "Sentiment", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "All these photos of our ruined province make me want to cry. ;( #Bohol"
+},
+{
+  "postID" : "390120666579894272",
+  "timestamp" : "8 Apr 2019 14:38:00 GMT",
+  "categories" : [ "Sentiment", "Discussion", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "@Eirahkirstie Hey Dear,I've heard about earthquake in Philippines. Terrible :( hope U R fine!!"
+},
+{
+  "postID" : "391150594725269504",
+  "timestamp" : "8 Apr 2019 16:02:46 GMT",
+  "categories" : [ "Factoid", "Irrelevant" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Philippines Star &gt; 2 more bodies recovered in quake-hit provinces; deaths at 173 http://t.co/vHAs9GQdv8"
+},
+{
+  "postID" : "390075003183443969",
+  "timestamp" : "8 Apr 2019 14:23:55 GMT",
+  "categories" : [ "Factoid", "News" ],
+  "indicatorTerms" : [ ],
+  "priority" : "Low",
+  "text" : "Death toll from a strong earthquake in the Philippines has risen to 85 - 7.2 magnitude quake hit the tourist island of Bohoi."
+}
+]}
+]
+}

@@ -1,0 +1,16 @@
+{
+  "workingDIR" : "C:\\Work\\Data\\",
+  "sparkMode" : "local[6]",
+  "loggingLevel" : "INFO",
+  "modulePipeline" : [
+    {
+      "unitName" : "Test Mongo DB Out",
+      "unitExpanation" : "This is a test program that checks that writing to a mongoDB database works as intended.",
+      "unitType" : "batch",
+	  "unitInputReaders": [ "configurationTemplates\\readers\\datasets\\SampleTweets.dataset.conf" ],
+      "unitModulePipeline" : [
+           "configurationTemplates\\modules\\batch\\MongoDBWriter.module.conf" 
+      ]
+    }
+  ]
+}

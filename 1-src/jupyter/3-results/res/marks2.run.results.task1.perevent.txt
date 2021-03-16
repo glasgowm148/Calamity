@@ -1,3 +1,0 @@
-TREC-IS 2020-A Task 1 Notebook Evaluator v2.4
-Run: marks2.run (sc-rf-024.2020A.task1.run)
-
