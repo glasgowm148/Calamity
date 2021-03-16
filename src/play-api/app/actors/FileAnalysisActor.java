@@ -42,28 +42,22 @@ public class FileAnalysisActor extends UntypedAbstractActor {
             fileLineCount = lines.size();
             processedCount = 0;
 
-            // Stores a reference to the original sender to send back the results later on
+            // Store a reference to the original sender to send back the results later on
             analyticsSender = this.getSender();
 
+            // Partition the lines so we can delegate subsets to the Actors
             List<List<String>> listsLines = Lists.partition(lines, Integer.parseInt(System.getenv("NUMBER_OF_LINES")));
 
             for (List<String> l : listsLines) {
 
+                /* Factory pattern that creates the ActorRef and handles restarting */
                 Props props = Props.create(LineProcessor.class);
                 ActorRef lineProcessorActor = this.getContext().actorOf(props);
 
-                // sends a message to the new actor with the line payload
+                /* Send a message to the new actor with the line payload */
                 lineProcessorActor.tell(new LineMessage(l), this.getSelf());
             }
 
-            //  for (String line : lines) {
-            // creates a new actor per each line of the  file
-            //     Props props = Props.create(LineProcessor.class);
-            //     ActorRef lineProcessorActor = this.getContext().actorOf(props);
-            //
-            // sends a message to the new actor with the line payload
-            //      lineProcessorActor.tell(new LineMessage(Collections.singletonList(line)), this.getSelf());
-            //  }
 
         } else if (message instanceof LineProcessingResult) {
 
@@ -88,3 +82,13 @@ public class FileAnalysisActor extends UntypedAbstractActor {
 
 
 }
+
+
+//  for (String line : lines) {
+// creates a new actor per each line of the  file
+//     Props props = Props.create(LineProcessor.class);
+//     ActorRef lineProcessorActor = this.getContext().actorOf(props);
+//
+// sends a message to the new actor with the line payload
+//      lineProcessorActor.tell(new LineMessage(Collections.singletonList(line)), this.getSelf());
+//  }
