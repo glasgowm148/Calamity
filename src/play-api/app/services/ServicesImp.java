@@ -37,7 +37,6 @@ import scala.concurrent.Future;
 import tfIdf.TermFrequency;
 
 /**
-
  * 
  * outsource all methods to a service class
  *
@@ -81,6 +80,8 @@ public class ServicesImp {
 
 	public static String parseEvent(String s) throws Exception {
 		  StringBuilder resultString = new StringBuilder();
+
+		  	System.out.println("Parsing " + s);
 
 	        // Create actorSystem
 	        ActorSystem akkaSystem = ActorSystem.create("akkaSystem");
