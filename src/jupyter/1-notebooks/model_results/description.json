@@ -20,15 +20,15 @@
     },
     "data_path": "../train.csv",
     "train_data_shape": [
-        84,
-        497
+        216,
+        494
     ],
     "test_data_shape": [
-        21,
-        497
+        55,
+        494
     ],
-    "train_data_size": 84,
-    "test_data_size": 21,
+    "train_data_size": 216,
+    "test_data_size": 55,
     "results_path": "/Users/mark/Documents/Calamity/src/jupyter/1-notebooks/model_results",
     "model_path": "/Users/mark/Documents/Calamity/src/jupyter/1-notebooks/model_results/model.sav",
     "target": [
@@ -46,7 +46,7 @@
         "num"
     ],
     "results_on_test_data": {
-        "regression score": -0.06927921564153017
+        "regression score": -0.4337043885410768
     },
     "hyperparameter_search_results": {}
 }

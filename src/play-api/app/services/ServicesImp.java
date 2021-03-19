@@ -98,7 +98,7 @@ public class ServicesImp {
 
 	        // Send a message to start processing the file.
 	        // This is a synchronous call using 'ask' with a timeout.
-	        Timeout timeout = new Timeout(300, TimeUnit.SECONDS); // 50 times out with embeddings
+	        Timeout timeout = new Timeout(1000, TimeUnit.SECONDS); // 50 times out with embeddings
 	        Future<Object> future = Patterns.ask(coordinator, msg, timeout);
 
 	        FileProcessedMessage result =  (FileProcessedMessage) Await.result(future, timeout.duration());
