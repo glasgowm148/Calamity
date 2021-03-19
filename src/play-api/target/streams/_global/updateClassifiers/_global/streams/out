@@ -1,4 +1,4 @@
 [debug] not up to date. inChanged = true, force = false
-[debug] Updating ProjectRef(uri("file:/Users/mark/Documents/project-docs/HelpMe/1-src/play-api/"), "root")...
-[debug] Done updating ProjectRef(uri("file:/Users/mark/Documents/project-docs/HelpMe/1-src/play-api/"), "root")
+[debug] Updating ProjectRef(uri("file:/Users/mark/Documents/Calamity/src/play-api/"), "root")...
+[debug] Done updating ProjectRef(uri("file:/Users/mark/Documents/Calamity/src/play-api/"), "root")
 [warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.

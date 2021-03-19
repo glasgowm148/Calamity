@@ -1,2 +1,38 @@
-[0m[[0m[0minfo[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/utils/FeatureUtil.java: FeatureUtil.java uses or overrides a deprecated API.[0m
-[0m[[0m[0minfo[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/utils/FeatureUtil.java: Recompile with -Xlint:deprecation for details.[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:7:1: package com.hankcs.hanlp does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mcom.hankcs.hanlp.HanLP[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:8:1: package com.hankcs.hanlp.dictionary.stopword does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mcom.hankcs.hanlp.dictionary.stopword.CoreStopWordDictionary[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:9:1: package com.hankcs.hanlp.seg.common does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mcom.hankcs.hanlp.seg.common.Term[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:72:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Term[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class tfIdf.TermFrequency[0m
+[0m[[0m[31merror[0m] [0m[0mTerm[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:30:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Term[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class tfIdf.TermFrequency[0m
+[0m[[0m[31merror[0m] [0m[0mTerm[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:33:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable HanLP[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class tfIdf.TermFrequency[0m
+[0m[[0m[31merror[0m] [0m[0mHanLP[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:36:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Term[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class tfIdf.TermFrequency[0m
+[0m[[0m[31merror[0m] [0m[0mTerm[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:73:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable CoreStopWordDictionary[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class tfIdf.TermFrequency[0m
+[0m[[0m[31merror[0m] [0m[0mCoreStopWordDictionary[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:113:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Term[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class tfIdf.TermFrequency[0m
+[0m[[0m[31merror[0m] [0m[0mTerm[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:115:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable HanLP[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class tfIdf.TermFrequency[0m
+[0m[[0m[31merror[0m] [0m[0mHanLP[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/mark/Documents/Calamity/src/play-api/app/tfIdf/TermFrequency.java:116:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Term[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class tfIdf.TermFrequency[0m
+[0m[[0m[31merror[0m] [0m[0mTerm[0m

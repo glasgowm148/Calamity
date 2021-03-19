@@ -99,3 +99,6 @@ libraryDependencies += "org.mockito" % "mockito-core" % "3.8.0" % Test
 libraryDependencies += "org.apache.commons" % "commons-lang3" % "3.12.0"
 // https://mvnrepository.com/artifact/org.apache.commons/commons-text
 libraryDependencies += "org.apache.commons" % "commons-text" % "1.9"
+
+// https://mvnrepository.com/artifact/com.hankcs/hanlp
+libraryDependencies += "com.hankcs" % "hanlp" % "portable-1.8.0"

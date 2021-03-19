@@ -1,4 +1,7 @@
 package models;
+import java.util.HashMap;
+import java.util.List;
+import models.Features;
 
 /* TweetAPI - This file displays the json */
 public class TweetApi {
@@ -8,14 +11,19 @@ public class TweetApi {
     private String Embeddings;
     private String Sentiment;
     private Features features;
+    private HashMap<String, Float> tfIdf;
+    private double offset;
 
-    public TweetApi(Long tweet_id, String tweet_text, String embeddings, String sentiment, Features features) {
+
+    public TweetApi(Long tweet_id, String tweet_text, String embeddings, String sentiment, Features features,
+                    HashMap<String, Float> tfIdf) {
         super();
         this.tweet_id = tweet_id;
         this.tweet_text = tweet_text;
         Embeddings = embeddings;
         Sentiment = sentiment;
         this.features = features;
+        this.tfIdf = tfIdf;
     }
 
     public TweetApi() {
@@ -63,5 +71,19 @@ public class TweetApi {
         this.features = features;
     }
 
+    public HashMap<String, Float> getTfIdf() {
+        return tfIdf;
+    }
 
+    public void setTfIdf(HashMap<String, Float> tfIdf) {
+        this.tfIdf = tfIdf;
+    }
+
+    public double getOffset() {
+        return offset;
+    }
+
+    public void setOffset(double offset) {
+        this.offset = offset;
+    }
 }

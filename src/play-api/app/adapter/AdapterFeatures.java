@@ -1,16 +1,26 @@
 package adapter;
 
+import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.ejml.simple.SimpleMatrix;
+
 import com.fasterxml.jackson.core.JsonProcessingException;
+
 import constant.Constants;
 import models.Features;
 import models.Tweet;
 import models.TweetApi;
+
 
 public class AdapterFeatures {
 
     public AdapterFeatures() {
         super();
     }
+
 
     /**
      * Tweet API adaptor
@@ -155,7 +165,8 @@ public class AdapterFeatures {
 
             // Convert the word embeddings into a json object
             if (output.getVectorTree() != null) {
-                tweet.setSentiment(output.getVectorTree().toString().replace("\n", ","));
+                tweet.setSentiment(adapterVector(output.getVectorTree()));
+//				tweet.setSentiment(output.getVectorTree().toString().replace("\n", ","));
             }
 
             return tweet;
@@ -163,6 +174,30 @@ public class AdapterFeatures {
         } else {
             return null;
         }
+    }
+
+
+    /**
+     * convert getVectorTree to String
+     * @param vectorTree
+     * @return
+     */
+
+    private static String adapterVector(SimpleMatrix vectorTree) {
+        DecimalFormat df = new DecimalFormat ( ) ;
+        df.setMaximumFractionDigits ( 2 ) ; //display two digits after the decimal point
+        df.setMinimumFractionDigits ( 2 ) ;
+
+        StringBuffer result = new StringBuffer();
+        for (int i = 0; i < vectorTree.getNumElements(); i++) {
+            result.append(" ");
+            result.append(df.format(vectorTree.get(i)));
+            result.append(" ");
+            if( i+1 < vectorTree.getNumElements()) {
+                result.append(","); //to not display the comma after the last element
+            }
+        }
+        return result.toString();
     }
 
     private static String convertTable(float[] dimensions) {
@@ -175,5 +210,36 @@ public class AdapterFeatures {
         }
         dimensionConverter.append("}");
         return dimensionConverter.toString();
+    }
+
+    /**
+     * this method allows you to associate each TweetApi with its tfIdf
+     * @param tweetsApi
+     * @param tfIdfByTweet
+     */
+    public static void adapteTfIdf(List<TweetApi> tweetsApi, Map<String, HashMap<String, Float>> tfIdfByTweet) {
+        tfIdfByTweet.forEach((k, v)->{
+            tweetsApi.forEach(tweetApi->{
+                if(k.equals(tweetApi.getTweet_id().toString())) {
+                    tweetApi.setTfIdf(v);
+                }
+            });
+        });
+
+    }
+
+    /**
+     * Adapt Offset
+     * @param tweetsApi
+     * @param tweets
+     */
+    public static void adaptOffset(List<TweetApi> tweetsApi, List<Tweet> tweets) {
+        tweetsApi.forEach(tweetApi->{
+            tweets.forEach(tweet->{
+                if(tweetApi.getTweet_id() == tweet.getId()) {
+                    tweetApi.setOffset(tweet.getOffset());
+                }
+            });
+        });
     }
 }

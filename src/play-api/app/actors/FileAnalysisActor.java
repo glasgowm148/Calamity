@@ -49,7 +49,7 @@ public class FileAnalysisActor extends UntypedAbstractActor {
             List<List<String>> listsLines = Lists.partition(lines, Integer.parseInt(System.getenv("NUMBER_OF_LINES")));
 
             for (List<String> l : listsLines) {
-
+                
                 /* Factory pattern that creates the ActorRef and handles restarting */
                 Props props = Props.create(LineProcessor.class);
                 ActorRef lineProcessorActor = this.getContext().actorOf(props);

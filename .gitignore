@@ -9,6 +9,7 @@ src/.seed/*
 src/1-java/target/*
 src/TweetMinner-master/.project
 src/lagom-java-sbt/.idea/*
+src/play-api/target*
 src/CoreNLP/*
 bkgit*
 src2/TREC*

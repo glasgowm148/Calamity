@@ -14,10 +14,12 @@ import controllers.HomeController.StaticPath;
 import messages.FileAnalysisMessage;
 import messages.FileProcessedMessage;
 import models.FilePerEvent;
+import models.Tweet;
 import models.TweetApi;
 import scala.concurrent.Await;
 import scala.concurrent.ExecutionContext;
 import scala.concurrent.Future;
+import tfIdf.TermFrequency;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -25,8 +27,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Stream;
 
@@ -118,6 +119,30 @@ public class ServicesImp {
         return resultString.toString();
     }
 
+
+    private static void setOffset(List<Tweet> tweets) {
+        int min = getMin(tweets);
+        for(Tweet tweet: tweets) {
+            tweet.setOffset(((tweet.getCreatedAtInt() - min)));
+        }
+    }
+
+    public static int getMin(List<Tweet> tweets) {
+        // Offset
+        IntSummaryStatistics summaryStatistics = tweets.stream()
+                .map(Tweet::getCreatedAtStr)
+                .mapToInt(Integer::parseInt)
+                .summaryStatistics();
+        return summaryStatistics.getMin();
+    }
+
+    private static Map<String, HashMap<String, Float>> calculeTfIdf(List<Tweet> tweets) {
+        return TermFrequency.getDirTFIDF(tweets);
+    }
+
+
+
+
     /**
      * concatenate the "intList" json in "Result"
      *
@@ -135,6 +160,7 @@ public class ServicesImp {
      */
     private static void printResults(final FileProcessedMessage result, final String fileName) throws JsonProcessingException {
         List<TweetApi> eventFile = new ArrayList<>();
+        List<Tweet> tweets = new ArrayList<>();
         result.getHMap().forEach(outputs -> outputs.getTweets().forEach(output -> {
             try {
                 eventFile.add(AdapterFeatures.adapterTweet(output));
@@ -143,6 +169,13 @@ public class ServicesImp {
             }
 
         }));
+
+        // fill in the value of the offset attribute
+        setOffset(tweets);
+        AdapterFeatures.adaptOffset(eventFile, tweets);
+        // calcule TF-IDF
+        Map<String, HashMap<String, Float>> tfIdfByTweet = calculeTfIdf(tweets);
+        AdapterFeatures.adapteTfIdf(eventFile, tfIdfByTweet);
 
         FilePerEvent fileEvent = new FilePerEvent();
         fileEvent.setFileName(fileName);

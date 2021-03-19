@@ -17,6 +17,9 @@ public class HomeController extends Controller {
 
     private final ServicesImp service = new ServicesImp();
 
+    // Start timer for tracking efficiency
+    static long startTime = System.currentTimeMillis();
+
     /* Entry point for /tweets */
     public Result index() throws Exception {
 
