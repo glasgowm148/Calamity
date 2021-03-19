@@ -37,8 +37,7 @@ import scala.concurrent.Future;
 import tfIdf.TermFrequency;
 
 /**
- * 
- * @author Mathieu
+
  * 
  * outsource all methods to a service class
  *
