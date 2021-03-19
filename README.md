@@ -8,10 +8,10 @@
     <img src="/data/input/raw/img/logo.png" alt="Logo" width="250">
   </a>
 
-  <h3 align="center">Calamity: </h3>
+  <h3 align="center">Calamity</h3>
 
   <p align="center">
-    Identifying emergency reports and calls for help on social media
+   An Intelligent System for Disaster Management
     <br />
     <a href="https://github.com/glasgowm148/HelpMe/tree/main/HelpMe/0-data/docs"><strong>Explore the docs »</strong></a>
     <br />
@@ -57,15 +57,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![HelpMe Screen Shot](HelpMe/data/img/screenshot.png)
+![HelpMe Screen Shot](/data/input/raw/img/df.png)
 
 
 ### Built With
 
-
-* Jupyter Notebooks
 * Play Framework (Java)
-* sbt
+  * sbt
+  * Akka
+* Jupyter Notebook
+
 
 ## Overview
 
@@ -90,6 +91,7 @@ The product will be evaluated via automatic evaluation of categorization accurac
 <!-- GETTING STARTED -->
 ## Getting Started
 
+There is a shell script `run.sh` which configures environemnt variables for the number of embeddings, the dataset location, and how many lines to give to each *Actor*.
 
 ### Installation
 
@@ -104,7 +106,7 @@ The product will be evaluated via automatic evaluation of categorization accurac
 | `sbt`       | Enter the SBT console |
 | `sbt run`   | Run the Application |
 | `sbt clean` | Enter the SBT console |
-
+| `sbt reload` | Reload changes to build.sbt |
 
 <!-- ROADMAP -->
 ## Roadmap
