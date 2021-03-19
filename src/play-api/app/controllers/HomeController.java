@@ -6,6 +6,7 @@ import play.mvc.Result;
 import services.ServicesImp;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -43,8 +44,8 @@ public class HomeController extends Controller {
         model.load("lib/glove", Integer.parseInt(System.getenv("NUMBER_OF_EMBEDDINGS")));
 
         float[] d = model.encodeDocument("test sentence to encode");
-        System.out.println("test sentence");
-
+        System.out.println("/stored_tweets called");
+        System.out.println(Arrays.toString(d));
         return ok(service.contentSavedFile(StaticPath.saveFile));
     }
 

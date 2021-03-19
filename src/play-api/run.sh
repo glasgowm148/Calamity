@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #######################################################
 #         Prerequisites are SBT and Java 8            #
 #         We recommend Sdkman to manage this          #
@@ -5,7 +7,7 @@
 
 
 # Kill existing processes running on port 9000
-sudo kill -9 $(sudo lsof -t -i:9000)
+#sudo kill -9 $(sudo lsof -t -i:9000)
 
 # SBT Options
 export SBT_OPTS="-Xmx5G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled"
