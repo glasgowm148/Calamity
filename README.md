@@ -91,7 +91,7 @@ The product will be evaluated via automatic evaluation of categorization accurac
 <!-- GETTING STARTED -->
 ## Getting Started
 
-There is a shell script `run.sh` which configures environemnt variables for the number of embeddings, the dataset location, and how many lines to give to each *Actor*.
+> `run.sh` configures environemntal variables for the number of embeddings, the dataset location, and how many lines to give to each *Actor* before running the code.
 
 ### Installation
 
@@ -140,9 +140,13 @@ Mark Glasgow - markglasgow@gmail.com
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
+* [http://www.cs.cmu.edu/~ark/TweetNLP/](Ark Tweet NLP) - Twokenizer and Part-of-Speech tagger. 
+* [Keyword Extraction in Java](https://github.com/WuLC/KeywordExtraction) - Implementation of serveral algorithms for keyword extraction,including TextRank,TF-IDF,TextRank along with TFTF-IDF.Cutting words and filtering stop words are relied on HanLP
+* [TREC Incident Streams](http://dcs.gla.ac.uk/~richardm/TREC_IS/) provided the dataset and evaluation script.
+* [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/)
 
-* This project was initially built as part of my Honours Individual Project Dissertation at The University of Glasgow
-* [java-play-react seed](https://github.com/yohangz/java-play-react-seed)
+*This project was initially built as part of my Honours Individual Project Dissertation at The University of Glasgow*
+
 
 
 
