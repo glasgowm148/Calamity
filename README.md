@@ -57,15 +57,18 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![HelpMe Screen Shot](data/screenshots/pipeline.png)
+Calamity is a general pipeline for feature extraction from tweet datasets. It uses Akka Actors to parse tweet-sets with thread-safe concurrency, extracts 50 features such as sentiment, objectivity, tense, length, verified status, and many more. The text is tokenised and encoded with word embeddings, in total - 500 features are exposed via an API in play-frame which can then be utilised in Jupyter. The [Igel](https://github.com/nidhaloff/igel) provides access to all scikit-learn model and allows you to train/fit, test and use models without writing any code. The results are then evaluated agains the [TRECIS-2020A evaluation script](src/jupyter/1-notebooks/0_Test.ipynb). 
+
+![Calamity Screen Shot](data/screenshots/pipeline.png)
 
 
 ### Built With
 
-* Play Framework (Java)
+* [Play Framework](https://github.com/playframework/playframework) 
+  * Java
   * sbt
   * Akka
-* Jupyter Notebook
+* [Jupyter]*https://jupyter.org/()
 
 
 ## Overview
@@ -140,8 +143,8 @@ Mark Glasgow - markglasgow@gmail.com
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [http://www.cs.cmu.edu/~ark/TweetNLP/](Ark Tweet NLP) - Twokenizer and Part-of-Speech tagger. 
-* [Keyword Extraction in Java](https://github.com/WuLC/KeywordExtraction) - Implementation of serveral algorithms for keyword extraction,including TextRank,TF-IDF,TextRank along with TFTF-IDF.Cutting words and filtering stop words are relied on HanLP
+* [Ark Tweet NLP](http://www.cs.cmu.edu/~ark/TweetNLP/) - Twokenizer and Part-of-Speech tagger. 
+* [Keyword Extraction in Java](https://github.com/WuLC/KeywordExtraction) - Implementation of serveral algorithms for keyword extraction, including TextRank, TF-IDF, and a combination of the two. Cutting words and filtering stop words are performedu sing on HanLP
 * [TREC Incident Streams](http://dcs.gla.ac.uk/~richardm/TREC_IS/) provided the dataset and evaluation script.
 * [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/)
 
