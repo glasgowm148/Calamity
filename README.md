@@ -7,8 +7,9 @@
   <a href="https://github.com/glasgowm148/helpme">
     <img src="/data/logo.png" alt="Logo" width="350">
   </a>
+<!--   <h3 align="center">Calamity</h3>O -->
 
-  <h3 align="center">Calamity</h3>
+
 
   <p align="center">
    An Intelligent System for Disaster Management
