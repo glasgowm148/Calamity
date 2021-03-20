@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/glasgowm148/helpme">
-    <img src="/data/input/raw/img/logo.png" alt="Logo" width="250">
+    <img src="/data/input/raw/img/logo.png" alt="Logo" width="350">
   </a>
 
   <h3 align="center">Calamity</h3>
