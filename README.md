@@ -68,7 +68,7 @@ Calamity is a general pipeline for feature extraction from tweet datasets. It us
   * Java
   * sbt
   * Akka
-* [Jupyter]*https://jupyter.org/()
+* [Jupyter](https://jupyter.org/)
 
 
 ## Overview
