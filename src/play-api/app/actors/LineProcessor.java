@@ -36,7 +36,7 @@ public class LineProcessor extends UntypedAbstractActor {
         if (message instanceof LineMessage) {
 
             // What data does each actor process?
-            //System.out.println("Line: " + ((LineMessage) message).getData());
+            System.out.println("Line: " + ((LineMessage) message).getData());
             // Thread number and the actor name relationship
             System.out.println("Thread ["+Thread.currentThread().getId()+"] handling ["+ getSelf().toString()+"]");
 

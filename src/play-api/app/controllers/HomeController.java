@@ -29,6 +29,8 @@ public class HomeController extends Controller {
 
         service.saveResultInFile(result);
 
+
+        System.out.println("Done");
         return ok(result);
     }
 
