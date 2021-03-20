@@ -182,7 +182,7 @@ public class ServicesImp {
 		long elapsedSeconds = elapsedTime / 1000;
 		long elapsedMinutes = elapsedSeconds / 60;
 		System.out.println("Time elapsed: " + elapsedMinutes + " minutes");
-		System.out.println(elapsedSeconds + " seconds");
+		// System.out.println(elapsedSeconds + " seconds");
 	}
 	
 	
