@@ -82,7 +82,7 @@ spec:
         - name: NUMBER_OF_EMBEDDINGS 
           value: "50"
         - name: NUMBER_OF_LINES
-          value: "50" 
+          value: "500" 
         - name: TWEET_DIR 
           value: "data/tweets"
       # this defines a volume called nfs-access which corresponds to your cluster
