@@ -80,9 +80,9 @@ spec:
         - name: SBT_OPTS 
           value: "-Xmx12G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M  -Duser.timezone=GMT"
         - name: NUMBER_OF_EMBEDDINGS 
-          value: "50"
+          value: "300"
         - name: NUMBER_OF_LINES
-          value: "500" 
+          value: "50" 
         - name: TWEET_DIR 
           value: "data/tweets"
       # this defines a volume called nfs-access which corresponds to your cluster
