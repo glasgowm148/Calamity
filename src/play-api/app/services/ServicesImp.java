@@ -19,7 +19,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 
 import actors.FileAnalysisActor;
-import adapter.AdapterFeatures;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
@@ -34,7 +33,7 @@ import models.TweetApi;
 import scala.concurrent.Await;
 import scala.concurrent.ExecutionContext;
 import scala.concurrent.Future;
-import tfIdf.TermFrequency;
+import features.TermFrequency;
 
 /**
  * 
@@ -116,7 +115,7 @@ public class ServicesImp {
 	
     private static void appendStringResult(List<String> intList, StringBuilder resultString) {
 		intList.forEach(ele->{
-        	resultString.append(ele + "\n");
+        	resultString.append(ele).append("\n");
         });
 }
 
@@ -167,8 +166,7 @@ public class ServicesImp {
                 .map(Tweet::getCreatedAtStr)
                 .mapToInt(Integer::parseInt)
                 .summaryStatistics();
-        int min = summaryStatistics.getMin();
-        return min;
+		return summaryStatistics.getMin();
     }
 
 	private static  Map<String, HashMap<String, Float>> calculeTfIdf(List<Tweet> tweets) {

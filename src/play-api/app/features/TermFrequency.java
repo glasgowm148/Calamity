@@ -1,4 +1,4 @@
-package tfIdf;
+package features;
 
 /*
 https://github.com/WuLC/KeywordExtraction/blob/master/src/com/lc/nlp/keyword/algorithm/TFIDF.java
@@ -9,10 +9,9 @@ import com.hankcs.hanlp.dictionary.stopword.CoreStopWordDictionary;
 import com.hankcs.hanlp.seg.common.Term;
 
 import models.Tweet;
-import java.util.stream.IntStream;
-import java.text.DecimalFormat;
+
 import java.util.*;
-import java.util.concurrent.TimeUnit;
+
 public class TermFrequency {
 
 	static final float d = 0.85f; // damping factor, default 0.85

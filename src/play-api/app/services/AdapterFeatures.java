@@ -1,4 +1,4 @@
-package adapter;
+package services;
 
 import java.text.DecimalFormat;
 import java.util.HashMap;
@@ -9,7 +9,7 @@ import org.ejml.simple.SimpleMatrix;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 
-import constant.Constants;
+import models.Constants;
 import models.Features;
 import models.Tweet;
 import models.TweetApi;

@@ -1,4 +1,4 @@
-package classifiers;
+package features;
 
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.crf.CRFClassifier;
