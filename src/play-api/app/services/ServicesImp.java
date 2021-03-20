@@ -97,7 +97,7 @@ public class ServicesImp {
 
 	        // Send a message to start processing the file.
 	        // This is a synchronous call using 'ask' with a timeout.
-			System.out.println("Spawning Actor...");
+			System.out.println("Spawning Actor(s)...");
 	        Timeout timeout = new Timeout(1000, TimeUnit.SECONDS); // 50 times out with embeddings
 	        Future<Object> future = Patterns.ask(coordinator, msg, timeout);
 

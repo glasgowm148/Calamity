@@ -57,7 +57,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![HelpMe Screen Shot](/data/input/raw/img/df.png)
+![HelpMe Screen Shot](data/screenshots/pipeline.png)
 
 
 ### Built With
