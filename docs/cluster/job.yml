@@ -78,13 +78,13 @@ spec:
         # will be visible inside this container
         env:
         - name: SBT_OPTS 
-          value: "-Xmx12G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M  -Duser.timezone=GMT"
+          value: "-Xmx52G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M  -Duser.timezone=GMT"
         - name: NUMBER_OF_EMBEDDINGS 
           value: "300"
         - name: NUMBER_OF_LINES
           value: "50" 
         - name: TWEET_DIR 
-          value: "data/tweets"
+          value: "data/tweets/run2"
       # this defines a volume called nfs-access which corresponds to your cluster
       # filespace. 
       serviceAccount: containerroot

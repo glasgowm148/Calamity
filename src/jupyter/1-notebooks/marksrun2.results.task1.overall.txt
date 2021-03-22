@@ -5,42 +5,42 @@ Run: marksrun2 (marks2.run)
 EVALUATON: Alertng Performance
 Overall performance
 --------------------------------------------------
-> High Importance Alert Worth:	0.0
-> Low Importance Alert Worth:	-4.192261266318095e-05
-> Accumulated Alert Worth:	-2.0961306331590477e-05
+> High Importance Alert Worth:	-0.06382978723404255
+> Low Importance Alert Worth:	-7.68879064574027e-05
+> Accumulated Alert Worth:	-0.03195333757024998
 
 --------------------------------------------------
 EVALUATON: nDCG and Priority
 Overall performance
 --------------------------------------------------
-> nDCG:	0.36893240374207326
+> nDCG:	0.4038889109299503
 
 --------------------------------------------------
 EVALUATON: Information Type Categorization
 Overall performance
 --------------------------------------------------
-> Information Type Precision (positive class, multi-type, macro):	0.18453227297664784
-> Information Type Recall (positive class, multi-type, macro):	0.011417475513319335
-> Information Type F1 (positive class, multi-type, macro):	0.021096171909264792
-> Information Type Accuracy (overall, multi-type, macro):	0.9297423734358387
-> High Importance Information Type Precision (positive class, multi-type, macro):	0.0
-> High Importance Information Type Recall (positive class, multi-type, macro):	0.0
-> High Importance Information Type F1 (positive class, multi-type, macro):	0.0
-> High Importance Information Type Accuracy (overall, multi-type, macro):	0.9812164335759658
-> Low Importance Information Type Precision (positive class, multi-type, macro):	0.24280562233769454
-> Low Importance Information Type Recall (positive class, multi-type, macro):	0.015022994096472808
-> Low Importance Information Type F1 (positive class, multi-type, macro):	0.027758120933243147
-> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.9134874070757986
+> Information Type Precision (positive class, multi-type, macro):	0.40901772254944924
+> Information Type Recall (positive class, multi-type, macro):	0.08205130266266097
+> Information Type F1 (positive class, multi-type, macro):	0.11774655868366929
+> Information Type Accuracy (overall, multi-type, macro):	0.9312341539216489
+> High Importance Information Type Precision (positive class, multi-type, macro):	0.34027777777777773
+> High Importance Information Type Recall (positive class, multi-type, macro):	0.018430719553413227
+> High Importance Information Type F1 (positive class, multi-type, macro):	0.03420485121874011
+> High Importance Information Type Accuracy (overall, multi-type, macro):	0.9809438128731496
+> Low Importance Information Type Precision (positive class, multi-type, macro):	0.4307250735299769
+> Low Importance Information Type Recall (positive class, multi-type, macro):	0.1021420131182129
+> Low Importance Information Type F1 (positive class, multi-type, macro):	0.14412815051469954
+> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.9155363668843329
 
 --------------------------------------------------
 EVALUATON: Information Priority Level
 Overall Performance
 --------------------------------------------------
-> Priority Label Prediction (F1, macro): 0.15666228592829237
-> Priority Label Prediction High Importance (F1, macro): 0.06452223203947106
-> Priority Label Prediction Low Importance (F1, macro): 0.18575914505107805
+> Priority Label Prediction (F1, macro): 0.2496340122082492
+> Priority Label Prediction High Importance (F1, macro): 0.08689839397782256
+> Priority Label Prediction Low Importance (F1, macro): 0.3010242074389103
 
 --------------------------------------------------
 LATEX
 --------------------------------------------------
-marksrun2 & 0.3689 & 0.0000 & -0.0000 & 0.0000 & 0.0211 & 0.9297 & 0.0645 & 0.1567 \\
+marksrun2 & 0.4039 & -0.0638 & -0.0320 & 0.0342 & 0.1177 & 0.9312 & 0.0869 & 0.2496 \\

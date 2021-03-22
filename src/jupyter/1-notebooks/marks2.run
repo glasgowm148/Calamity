@@ -1,105 +1,782 @@
-TRECIS-CTIT-H-Test-042	Q0	1156848154588962816	0	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1156864604401741824	1	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1156873373571518464	2	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1156922106518487040	3	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157086889335148544	4	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157261250830598144	5	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157262448371613696	6	Medium	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157262635215151104	7	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157262644543229952	8	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157262736553852928	9	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157262980033069056	10	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157263104004087808	11	Medium	['Report-Location', 'Report-EmergingThreats', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157263482162688000	12	Low	['Report-Weather', 'Report-Weather', 'Report-Location']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157263560994541568	13	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157263774664949760	14	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Other-Advice']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157263944748154880	15	Critical	['Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-Hashtags', 'Other-Advice', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157264012301787136	16	Critical	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157264630734921728	17	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157264758300524544	18	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157265552982892544	19	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157265827252465664	20	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157266579031244800	21	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157266791078531072	22	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157267322328907776	23	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157267397285253120	24	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157267866695229440	25	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157268001252495360	26	Medium	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157269171509571584	27	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157269434307792896	28	Low	['Report-Weather', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157269693280878592	29	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157270841328934912	30	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157271071428497408	31	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157271744547381248	32	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Hashtags']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157272300401676288	33	Medium	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Hashtags']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157272380525486080	34	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157272566551068672	35	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157272621416890368	36	Medium	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-Hashtags']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157274602562674688	37	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157275427263565824	38	Low	['Other-Irrelevant']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157277210199261184	39	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157284650357874688	40	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157285374583984128	41	Critical	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157285551671656448	42	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Hashtags']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157290111819603968	43	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157292521376092160	44	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157293952418156544	45	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157294433949442048	46	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Hashtags']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157295337658359808	47	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Hashtags', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157298537069027328	48	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157303759002673152	49	Low	['CallToAction-MovePeople', 'Other-Advice']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157304937715556352	50	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157305070687412224	51	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157305558497681408	52	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157305691184541696	53	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157306130663538688	54	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157306508230742016	55	Medium	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157309574627467264	56	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157310516848545792	57	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157310524092112896	58	Low	['Report-ThirdPartyObservation', 'Report-EmergingThreats', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Other-Advice']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157328857046716416	59	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157330236499005440	60	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-News', 'Report-Hashtags']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157330776834183168	61	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157331600415215616	62	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157335389121548288	63	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Hashtags']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157340717158719488	64	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157344224649498624	65	Critical	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Official']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157345896318636032	66	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157346802007519232	67	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Official']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157351289329803264	68	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157364730027073536	69	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157372677931192320	70	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Hashtags']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157395307191136256	71	Low	['Report-ThirdPartyObservation', 'Report-EmergingThreats', 'Report-Location', 'Report-EmergingThreats', 'Report-News', 'Other-Advice']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157412818255093760	72	Critical	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157462730678267904	73	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157468433648275456	74	Low	['Report-FirstPartyObservation', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157475458742513664	75	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-Hashtags', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157480322809962496	76	Critical	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157484421672390656	77	Low	['CallToAction-MovePeople', 'Other-Advice', 'Report-Location', 'Report-Factoid', 'Other-Advice', 'Other-Advice']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157496918181855232	78	Medium	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157498318030696448	79	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-News', 'Other-Advice']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157501992098390016	80	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157515462307016704	81	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid', 'Report-MultimediaShare', 'Other-Advice']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157530614444318720	82	Medium	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-Hashtags', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157531304453259264	83	Medium	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157563153120673792	84	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157564137955835904	85	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-News', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157564239780831232	86	Low	['Report-ThirdPartyObservation', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157567910740520960	87	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157570629459042304	88	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-Factoid', 'Report-Official', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157573148033847296	89	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157589423770480640	90	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157607991853670400	91	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157609475844595712	92	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157610413661364224	93	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157615050821111808	94	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157623937142075392	95	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157638810798305280	96	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid', 'Other-Sentiment']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157646880219598848	97	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157651060070088704	98	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157655475678306304	99	Medium	['Report-ThirdPartyObservation', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157761572661551104	100	Low	['Report-FirstPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid', 'Report-Factoid']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157778346144669696	101	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157780136759926784	102	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157785580022857728	103	Low	['Report-ThirdPartyObservation', 'Report-Weather', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News']	marksrun2
-TRECIS-CTIT-H-Test-042	Q0	1157788459710464000	104	Low	['CallToAction-MovePeople', 'Report-EmergingThreats', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1154924992200622080	0	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1154927606405509120	1	Critical	['Report-Location', 'Report-EmergingThreats', 'Report-Official', 'Report-OriginalEvent', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1154935817728434176	2	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1154948527346372608	3	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155003391451570176	4	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155016347052597248	5	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155064158913798144	6	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155068521598115840	7	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155107721638600704	8	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155108840649691136	9	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155117836030943232	10	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155130769922285568	11	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155155122042953728	12	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155171411897532416	13	Low	['Other-Irrelevant', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155172274821091328	14	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155174801486557184	15	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155179868503650304	16	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155201412705292288	17	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155212175046148096	18	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155212728358903808	19	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155225105791770624	20	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155226910219284480	21	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155248575925891072	22	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155309625325105152	23	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155311468977565696	24	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155312473307787264	25	Critical	['CallToAction-MovePeople', 'Report-Location', 'Report-EmergingThreats', 'Report-Factoid', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155312839202148352	26	Critical	['Request-SearchAndRescue', 'Report-FirstPartyObservation', 'Report-Location', 'Report-EmergingThreats', 'Report-NewSubEvent', 'Report-Official', 'Report-Hashtags', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155316988400549888	27	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155317046793707520	28	Critical	['Other-Irrelevant', 'Report-FirstPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155323496702107648	29	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Official', 'Report-News', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155323718954049536	30	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155324678807937024	31	Low	['CallToAction-MovePeople', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155327062980407296	32	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155329043547471872	33	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155330800138764288	34	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155331153437646848	35	Critical	['Report-Location', 'Report-NewSubEvent', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Official', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155332380288278528	36	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155333155127271424	37	Low	['Report-Factoid', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155333170847453184	38	Medium	['Report-Location', 'Other-Advice', 'Other-Advice', 'Other-Advice', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155333329543225344	39	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155333833048449024	40	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155335408118620160	41	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155337241360777216	42	Low	['Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155337451201814528	43	Critical	['Report-Official', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155339071302045696	44	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155340154346889216	45	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155340401915695104	46	Low	['Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155341825525391360	47	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155342884024963072	48	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155343737700126720	49	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155343851172687872	50	Low	['Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155344649231446016	51	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155344660887244800	52	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155345910341050368	53	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155347399528730624	54	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155350102493540352	55	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155350194550190080	56	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155351187853627392	57	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155351202319753216	58	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155351431358164992	59	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155353383513051136	60	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155353991066324992	61	Low	['Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155354901796573184	62	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155354916816326656	63	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155354923464364032	64	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155357049720586240	65	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155357228506976256	66	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155358175547314176	67	Critical	['Report-Location', 'Report-Official']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155358876004491264	68	Medium	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155361206267461632	69	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155362201810735104	70	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155364627003260928	71	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155366030220386304	72	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155366158847086592	73	Low	['Report-Location', 'Report-Factoid', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155367440378998784	74	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155367474424102912	75	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155368874587672576	76	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Other-Advice', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155370466099417088	77	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155374920668524544	78	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155375893264633856	79	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155376510410342400	80	Low	['Other-Irrelevant', 'Report-Location', 'Report-MultimediaShare', 'Report-News', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155385925632974848	81	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155388589427105792	82	Low	['Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155389587302207488	83	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155390076202807296	84	Low	['Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155390258076442624	85	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155391512055812096	86	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155395252397780992	87	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155396241645330432	88	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155398766402461696	89	Low	['Report-ThirdPartyObservation', 'Report-EmergingThreats', 'Report-Factoid', 'Other-Advice', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155399857827225600	90	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155400652719296512	91	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155400693550866432	92	Medium	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155404550104391680	93	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Factoid', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155410988612706304	94	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155412858798088192	95	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155413016893988864	96	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155414336828895232	97	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155417614950305792	98	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155419724131516416	99	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Hashtags', 'Report-Factoid', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155423111262683136	100	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155425204350439424	101	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155425475981991936	102	Medium	['Report-ThirdPartyObservation', 'Report-Factoid', 'Report-News', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155426981456097280	103	Medium	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155427837186203648	104	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155428067587706880	105	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155428626705321984	106	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155428684851007488	107	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155429173806153728	108	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155431464881786880	109	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155432653031641088	110	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155433747589677056	111	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155434340731510784	112	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155434504976240640	113	Medium	['Report-ThirdPartyObservation', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155434531345850368	114	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155434539478593536	115	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Other-Advice', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155435426087395328	116	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155436375509831680	117	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155439184649347072	118	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155439185068789760	119	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155439191750250496	120	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155439326072848384	121	Medium	['Report-ThirdPartyObservation', 'Report-Factoid', 'Report-MultimediaShare', 'Report-News', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155441764003733504	122	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155442233577000960	123	Critical	['Report-FirstPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-Hashtags', 'ContextualInformation', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155442399109427200	124	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155442803956170752	125	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155445316465897472	126	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155445671757078528	127	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155445958462730240	128	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155446004415700992	129	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155447083480096768	130	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155447796738220032	131	Low	['Report-FirstPartyObservation', 'Report-Factoid', 'ContextualInformation', 'Other-Advice', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155447816489185280	132	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155448146639695872	133	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155448402148286464	134	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155449543523282944	135	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155450088124272640	136	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155450854201339904	137	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155452544329682944	138	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155453586786193408	139	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155454584002945024	140	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155454746465120256	141	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155455258837094400	142	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155455881133379584	143	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155459376884400128	144	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155460132047691776	145	Medium	['Other-Irrelevant', 'Report-Location', 'Other-Advice', 'Report-Factoid', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155461895832231936	146	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155464867647766528	147	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155465757683265536	148	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155466457188392960	149	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155466958382481408	150	Low	['Report-Location', 'Report-News', 'ContextualInformation', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155466992482041856	151	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155467844316016640	152	Medium	['Other-Irrelevant', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155468387251867648	153	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155469716816891904	154	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Other-Advice', 'Other-Advice', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155471255841021952	155	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-EmergingThreats', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155471502034251776	156	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155471651636731904	157	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155471986568491008	158	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155472036568977408	159	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155472327473270784	160	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155475499864530944	161	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155475962147954688	162	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155477447179194368	163	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155480129293967360	164	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155483064581144576	165	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155483742091112448	166	Low	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155485898521415680	167	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155486133347684352	168	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155486853069451264	169	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155487190249607168	170	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155488175181066240	171	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155488785838178304	172	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155490738806894592	173	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155492078496964608	174	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155492275201482752	175	Medium	['Other-Irrelevant', 'Other-Advice', 'Report-MultimediaShare', 'Report-News', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155492450020024320	176	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155492513190273024	177	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155493124661288960	178	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155495187466137600	179	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155497264003112960	180	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155497733937123328	181	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155498538945507328	182	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155498708391399424	183	Medium	['Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155500438877327360	184	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155501612363931648	185	Medium	['Other-Irrelevant', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155502048189698048	186	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-News', 'ContextualInformation', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155503070316396544	187	Medium	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation', 'Other-Advice', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155503470432202752	188	Medium	['Request-InformationWanted', 'Report-Hashtags', 'Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155505234329948160	189	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Other-Advice', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155507193602592768	190	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155509953299460096	191	Low	['Report-ThirdPartyObservation', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155511358856806400	192	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155511733361840128	193	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155517277627932672	194	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155517309387075584	195	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155518416335376384	196	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155518801875804160	197	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155519250108440576	198	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155523017704910848	199	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155523317639651328	200	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155524832823586816	201	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155525181739294720	202	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155526287781445632	203	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155526486985547776	204	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155526937713860608	205	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155529905913913344	206	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155530039674449920	207	Low	['Other-Irrelevant', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155530389521199104	208	Low	['Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155531931473338368	209	Medium	['Request-InformationWanted']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155532436203290624	210	Low	['Other-Irrelevant', 'Report-Location', 'Report-MultimediaShare', 'Other-Advice', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155532471787610112	211	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155537056724127744	212	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155539064117817344	213	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155539863640465408	214	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155540959620423680	215	Medium	['Report-Location', 'Report-Location', 'Report-News', 'Report-News', 'Other-Advice', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155540960983572480	216	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155541127195451392	217	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155544643926462464	218	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155544794300583936	219	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155545960535248896	220	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-MultimediaShare', 'Report-News', 'ContextualInformation', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155547045224157184	221	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155549691641131008	222	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155550148350697472	223	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155551237728870400	224	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155551774738210816	225	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155552008574787584	226	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155552821426753536	227	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155553125153071104	228	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155553541118930944	229	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155553559934623744	230	Medium	['Other-Irrelevant', 'Report-Location', 'Report-Location', 'Report-News', 'Report-News', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155555091300212736	231	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155556994838720512	232	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155557480778235904	233	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155560224712843264	234	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155561005637918720	235	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155561059001884672	236	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155562135847604224	237	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155564206357405696	238	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155565816986779648	239	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155567882803253248	240	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155568613274849280	241	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155568926656479232	242	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155569177962242048	243	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155571339995910144	244	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155572402287448064	245	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155573902803984384	246	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155575789359730688	247	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155579013345288192	248	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155579336352829440	249	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155580791000375296	250	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155580847652610048	251	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155580884394708992	252	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155582191608520704	253	Critical	['Other-Irrelevant', 'Other-Advice', 'Report-Location', 'Report-Factoid', 'ContextualInformation', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155584462702333952	254	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155585770700361728	255	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155585835573510144	256	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155590768435666944	257	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155592042916933632	258	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155592364150444032	259	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155595000912261120	260	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155595233666707456	261	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155595243212947456	262	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155596101942013952	263	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155599310052048896	264	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155599340435415040	265	Low	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155599391878762496	266	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155599528998948864	267	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155600065215553536	268	Low	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155600881645051904	269	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155600924590661632	270	Low	['Report-Location', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155602124342013952	271	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155602331649490944	272	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155603521011638272	273	Low	['Report-ThirdPartyObservation', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155604964045197312	274	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155605359479926784	275	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155606114634883072	276	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155607672416346112	277	Medium	['Request-InformationWanted']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155609911918641152	278	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155611398053015552	279	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155612595333844992	280	Low	['Report-Location', 'Report-Location', 'Report-Location', 'Report-Factoid', 'ContextualInformation', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155614401497653248	281	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155614828242907136	282	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155616456144330752	283	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Other-Advice', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155616871892312064	284	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155617187564068864	285	Medium	['Report-ThirdPartyObservation', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155617772400984064	286	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155617968765562880	287	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155618208738631680	288	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155619107225645056	289	Low	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155619157083398144	290	Low	['Report-Location', 'Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155621458904793088	291	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Location', 'Other-Advice', 'Report-Hashtags', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155621502827544576	292	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155621711309615104	293	Medium	['Request-InformationWanted', 'Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-037	Q0	1155624707120484352	294	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155625517468569600	295	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155640198467899392	296	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155641425293402112	297	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155643121423622144	298	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155647120436867072	299	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155650480284078080	300	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155650826964066304	301	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155652813650743296	302	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155652958266093568	303	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155652992390946816	304	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155653478112301056	305	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155655123428790272	306	Low	['Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155655250503720960	307	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155655299572883456	308	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155656021563469824	309	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155656085027487744	310	Low	['Report-Location', 'Report-MultimediaShare', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155656133505376256	311	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155656913473794048	312	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155656922965504000	313	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155657117199675392	314	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155657521429745664	315	Low	['Report-ThirdPartyObservation', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155657574328328192	316	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155657913253289984	317	Low	['Request-InformationWanted', 'Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155658420684541952	318	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155658453806751744	319	Low	['Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155658629426499584	320	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155659843744784384	321	Low	['Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155660981390827520	322	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155661050152251392	323	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155661172756008960	324	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155662197613322240	325	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155662560386883584	326	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155662729115394048	327	Low	['Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155662829086580736	328	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155663313293869056	329	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155663914509590528	330	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155664016825561088	331	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155664770738954240	332	Low	['Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155664910228938752	333	Low	['Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155666038572249088	334	Low	['Report-Location', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155667064129900544	335	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155667255188959232	336	Low	['Report-MultimediaShare', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155668406462369792	337	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155669307923320832	338	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155669340038942720	339	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155670821534408704	340	Low	['Report-Location', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155670938106466304	341	Low	['Report-ThirdPartyObservation', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155672698673983488	342	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155672850319073280	343	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155672988735270912	344	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155675024730329088	345	Low	['Other-Sentiment', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155675119257358336	346	Low	['Report-ThirdPartyObservation', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155675349918916608	347	Low	['Report-ThirdPartyObservation', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155675857173676032	348	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155676178469904384	349	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155676569513291776	350	Low	['Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155676581643411456	351	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155676728276262912	352	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155676862355390464	353	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155677300614033408	354	Low	['Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155677458286436352	355	Low	['Report-Location', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155677711240765440	356	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155678056519856128	357	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155678291128246272	358	Low	['Report-MultimediaShare', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155678361890353152	359	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155678404965834752	360	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155678831673561088	361	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155678871779446784	362	Low	['Report-Location', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155679585347854336	363	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155679846162403328	364	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155680123242393600	365	Low	['Report-MultimediaShare', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155680867009925120	366	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155681358326353920	367	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155681365649739776	368	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155681385274699776	369	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155681456619970560	370	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155681465574801408	371	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155681980484218880	372	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155682605217566720	373	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155683262259507200	374	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155684073626460160	375	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155684327457480704	376	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155685777348497408	377	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155686354245652480	378	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155686419974635520	379	Low	['Report-Location', 'Report-Factoid', 'Report-Official', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155686756085374976	380	Low	['Report-MultimediaShare', 'Report-Hashtags', 'Report-News', 'Other-Sentiment', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155686814059024384	381	Low	['Report-ThirdPartyObservation', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155686820258168832	382	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155687204443820032	383	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155687780065804288	384	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155688291024244736	385	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155688327292452864	386	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155689898063454208	387	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155690006293254144	388	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155690534649810944	389	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155690945381142528	390	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155691139556503552	391	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155691238642860032	392	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155691630315343872	393	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155692458589581312	394	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155692704363188224	395	Medium	['Request-InformationWanted']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155692867374833664	396	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155693261647831040	397	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155693555530293248	398	Low	['Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155695997047193600	399	Low	['Report-MultimediaShare', 'Report-News', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155696370344329216	400	Low	['Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155696580504145920	401	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155697244940701696	402	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155698018374447104	403	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155698168681472000	404	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155698272545067008	405	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155699021161406464	406	Low	['Report-Hashtags', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155699675283910656	407	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155699985855336448	408	Low	['Report-ThirdPartyObservation', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155702549124669440	409	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155703573587431424	410	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155703971660435456	411	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155704000072826880	412	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155704063175958528	413	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155704451623260160	414	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155705444985257984	415	Low	['Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155706415123783680	416	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155706683949105152	417	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155707298611777536	418	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155708088466337792	419	Low	['Report-ThirdPartyObservation', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155708295929352192	420	Low	['Report-ThirdPartyObservation', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155708489660084224	421	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155708625534509056	422	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155708996579409920	423	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155710365541359616	424	Low	['Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155710649189593088	425	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155711162903748608	426	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155711911318736896	427	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155714441213878272	428	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155716993351204864	429	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155716994848550912	430	Low	['Report-Location', 'Report-MultimediaShare', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155718437055782912	431	Low	['Request-InformationWanted', 'Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155719403012419584	432	Low	['Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155720180376461312	433	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155720767687970816	434	Low	['Report-Factoid', 'Report-Hashtags', 'Report-News', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155721051268980736	435	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155721500714045440	436	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155722120049000448	437	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155722388878835712	438	Low	['Report-Factoid', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155722404850569216	439	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155725057559166976	440	Low	['Report-ThirdPartyObservation', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155726076850524160	441	Low	['Report-MultimediaShare', 'Report-Official', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155729667539779584	442	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155733419692720128	443	Low	['Report-FirstPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155735839705653248	444	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155737133254135808	445	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155741385154338816	446	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155741556579565568	447	Low	['Other-Irrelevant', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155741955420127232	448	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155742918675750912	449	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155744546887626752	450	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155749658301329408	451	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155756143962030080	452	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155757964097183744	453	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155763410446909440	454	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155773211809865728	455	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155775007613759488	456	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155777010167189504	457	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155778828779708416	458	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155785695224578048	459	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155786715413585920	460	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155789277386727424	461	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155793443639189504	462	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155801416130150400	463	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155802472281071616	464	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155806600139083776	465	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155807337560412160	466	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155812324298506240	467	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155813830028455936	468	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155814981515956224	469	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155817822083117056	470	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155818007505133568	471	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155820407641055232	472	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155820550067040256	473	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155826833054736384	474	Low	['Report-MultimediaShare', 'Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155830623166173184	475	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155831452724060160	476	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155832916993290240	477	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155834316024360960	478	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155838138163449856	479	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155839297783828480	480	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155841164228083712	481	Low	['Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155841167910739968	482	Low	['Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155841370520793088	483	Low	['Report-ThirdPartyObservation', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155845856882393088	484	Low	['Report-ThirdPartyObservation', 'Report-Hashtags', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155846251541385216	485	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155847464613605376	486	Medium	['Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155847624697745408	487	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155854599221329920	488	Low	['Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155855109063995392	489	Low	['Report-MultimediaShare', 'Report-News', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155856444601692160	490	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155856501547982848	491	Low	['Report-ThirdPartyObservation', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155856892930994176	492	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155857748673867776	493	Critical	['Report-Location', 'Report-Location', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155858029629325312	494	Low	['Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155859702628126720	495	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'ContextualInformation', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155860154174193664	496	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155861292198113280	497	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155863879278301184	498	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155870297352019968	499	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155870391472201728	500	Low	['Report-MultimediaShare', 'Report-News', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155871174318088192	501	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155871573749972992	502	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155873131808075776	503	Medium	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155875783270961152	504	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155876667501318144	505	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155876759234985984	506	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155878317154852864	507	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155878669304369152	508	Critical	['Report-Location', 'Report-EmergingThreats', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155883193733668864	509	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155883399086657536	510	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155883514115416064	511	Medium	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155884054052343808	512	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155884379463454720	513	Medium	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155884536057729024	514	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'ContextualInformation', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155886489651294208	515	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155886677879074816	516	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155888239091298304	517	Critical	['Report-ThirdPartyObservation', 'Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155888789186908160	518	Critical	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155892244320120832	519	Low	['Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155892936216727552	520	Low	['Report-Location', 'Report-Hashtags', 'Report-News', 'ContextualInformation', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155894222584733696	521	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155896813519626240	522	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-Hashtags', 'Report-News', 'Other-ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155897212334854144	523	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155897366458839040	524	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155900027119853568	525	Low	['Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155901539543896064	526	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155904652925427712	527	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155905468117790720	528	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155905614486200320	529	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155905844917219328	530	Medium	['Request-InformationWanted', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155909665919651840	531	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155909708059951104	532	Low	['Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155910221920899072	533	Low	['Report-ThirdPartyObservation', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155910443635888128	534	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155910832250920960	535	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155912369731751936	536	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155917386056269824	537	Medium	['Request-InformationWanted', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155917494403473408	538	Low	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155919183684628480	539	Low	['Report-ThirdPartyObservation', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155920865323888640	540	Low	['Report-ThirdPartyObservation', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155920917597495296	541	Medium	['Report-ThirdPartyObservation', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155921096916385792	542	Low	['Report-ThirdPartyObservation', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-040	Q0	1155921101395902464	543	Low	['Report-ThirdPartyObservation', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157703024086794240	544	Critical	['Report-Location', 'Report-NewSubEvent', 'Report-OriginalEvent']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157704034968580096	545	Critical	['Report-Location', 'Report-EmergingThreats']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157704140665106432	546	Critical	['Report-Location', 'Report-EmergingThreats']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157713224768327680	547	Low	['Report-Location', 'Report-EmergingThreats']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157714970110566400	548	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157715110342930432	549	Medium	['Report-Location', 'Report-EmergingThreats', 'Report-NewSubEvent']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157715541907275776	550	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157716010100592640	551	Medium	['Report-ThirdPartyObservation', 'Report-Location', 'Report-EmergingThreats']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157718995048554496	552	Low	['Other-Irrelevant', 'Other-Advice', 'Report-Factoid', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157719680204910592	553	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157720999066034176	554	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157721312422445056	555	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare', 'Report-Factoid', 'Report-Official']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157721825805135872	556	Low	['Other-Irrelevant', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157725127066435584	557	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157726916461379584	558	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157727180241043456	559	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157727869822308352	560	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157729439955980288	561	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157729687105355776	562	Low	['Other-Irrelevant', 'Report-Factoid', 'Report-Factoid', 'Other-Advice', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157730762084368384	563	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157731343758974976	564	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157734864499744768	565	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157735763037118464	566	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157736177589342208	567	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157737029540749312	568	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157737115540688896	569	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157739106505502720	570	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157743567328051200	571	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157744633067319296	572	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157745729571475456	573	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157745809443573760	574	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157746370591244288	575	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157746582168715264	576	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157746721570480128	577	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157748203846066176	578	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157749459494809600	579	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157749614121906176	580	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157749798960861184	581	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157750196408922112	582	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157750479474049024	583	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157753468595163136	584	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157754331669467136	585	Low	['Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157754391010500608	586	Low	['Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157754491955044352	587	Low	['Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157754494039535616	588	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157755385975103488	589	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157755875030966272	590	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157755894186201088	591	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157756467513978880	592	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157756831437115392	593	Low	['Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157756847274766336	594	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157757861965049856	595	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157758875627601920	596	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157759070436233216	597	Low	['Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157759139944120320	598	Low	['Report-Factoid', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157759185171505152	599	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157759947762880512	600	Low	['CallToAction-Donations', 'Report-Factoid', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157760447539494912	601	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157763432684220416	602	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157763564255481856	603	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157763941927440384	604	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157764694553354240	605	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157764800212066304	606	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157765271672635392	607	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157765946418913280	608	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157766155613982720	609	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157766364452524032	610	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157766506748481536	611	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157766578185932800	612	Low	['Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157767579626287104	613	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157768137233850368	614	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157768321267200000	615	Low	['Other-Irrelevant', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157768675983790080	616	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157768780153405440	617	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157770610916806656	618	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157772689140043776	619	Low	['Other-Irrelevant', 'Other-Advice', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157773501631270912	620	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157775478301892608	621	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157778504865464320	622	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157778996987174912	623	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157780338921181184	624	Low	['Other-Irrelevant', 'Report-MultimediaShare', 'Report-News', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157780339579686912	625	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157780339953033216	626	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157780447574798336	627	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157781280433590272	628	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157781486474428416	629	Low	['ContextualInformation', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157781887034777600	630	Low	['Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157784017950785536	631	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157784689974886400	632	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157787813686980608	633	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157789407975530496	634	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157792855005573120	635	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157794027153920000	636	Low	['Report-Location', 'Report-Hashtags', 'Report-News', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157794308554022912	637	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157796286298382336	638	Low	['Report-Location', 'Other-Advice', 'Report-Factoid', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157797707970273280	639	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157798909730840576	640	Low	['Report-Location', 'Report-EmergingThreats', 'Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157798922590609408	641	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157799134100938752	642	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157799224865710080	643	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157805279129546752	644	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157807249148059648	645	Low	['Report-Location', 'Other-Advice', 'ContextualInformation', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157808491899314176	646	Low	['Report-Location', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157808564918018048	647	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157809456983478272	648	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157814198107176960	649	Low	['Report-Location', 'Report-MultimediaShare', 'ContextualInformation', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157814701461368832	650	Low	['ContextualInformation', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157815044010196992	651	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157815279541526528	652	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157815657775321088	653	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157817606776266752	654	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157817871835324416	655	Low	['Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157817919289606144	656	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157819696152010752	657	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157822363989360640	658	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157822601504415744	659	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157823396639584256	660	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157823434740518912	661	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157823957208190976	662	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157824556209324032	663	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157825797400535040	664	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157825914773729280	665	Low	['Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157829179846680576	666	Low	['Report-Location', 'Report-Factoid', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157837975688044544	667	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157841107721441280	668	Low	['Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157848338441617408	669	Low	['Other-Irrelevant', 'Report-Factoid', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157848799202684928	670	Low	['Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157848925245542400	671	Medium	['Report-Location', 'Report-EmergingThreats']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157848998860005376	672	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157850433915949056	673	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157858650326593536	674	Low	['ContextualInformation', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157859314872332288	675	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157863041133883392	676	Low	['ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157865604331769856	677	Low	['Report-Location', 'Report-ThirdPartyObservation']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157869167770554368	678	Low	['Report-Location', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157871131619143680	679	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157871528719081472	680	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157873838270636032	681	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157873959704125440	682	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157875707835383808	683	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157877246721265664	684	Low	['Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157877516759117824	685	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157880826979377152	686	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157883352701132800	687	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157885912279371776	688	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157887469406314496	689	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157890482854400000	690	Low	['ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157893819519684608	691	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157901519980761088	692	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-038	Q0	1157903053023928320	693	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157904807329435648	695	Low	['Report-Location', 'Report-Factoid', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157906441505669120	696	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157909513514696704	697	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157910076692344832	698	Low	['Report-Location', 'Report-MultimediaShare', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157912257935941632	699	Low	['ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157916114158051328	700	Low	['Report-Location', 'Report-Hashtags', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157921851986911232	701	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157922700846751744	702	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157927791842562048	703	Low	['ContextualInformation', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157931788414664704	704	Low	['Report-Location', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157931853296427008	705	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157932600574513152	706	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-038	Q0	1157934524216614912	707	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157944539417632768	709	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157964322225696768	710	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157967319504736256	711	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157971398310158336	712	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157982806766583808	713	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157990720445341696	714	Low	['Report-Location', 'Report-MultimediaShare', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157992594326130688	715	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157992688915906560	716	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157992707698176000	717	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157995865749020672	718	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157995980945547264	719	Low	['Report-Location', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157996556274081792	720	Low	['Report-Location', 'Report-MultimediaShare', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157996734833995776	721	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1157999594229420032	722	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158000272976822272	723	Low	['Report-Location', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158002527209689088	724	Low	['Report-Location', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158002721598976000	725	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158003459712593920	726	Low	['Report-Location', 'Report-Hashtags', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158004180721840128	727	Low	['Report-Location', 'Report-Factoid', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158005752272838656	728	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158007607044579328	729	Low	['ContextualInformation', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158012867209302016	730	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158015186609029120	731	Low	['Report-Location', 'Report-Factoid', 'Report-Hashtags']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158017278652440576	732	Low	['Report-Location', 'Report-Factoid', 'Report-Hashtags', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158019768118587392	733	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158019818580303872	734	Low	['Report-Location', 'Report-Factoid', 'Report-Factoid', 'Other-Advice', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158027475101741056	735	Low	['Report-Location', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158030196626378752	736	Low	['Report-ThirdPartyObservation', 'Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158031485175246848	737	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158034264841019392	738	Low	['ContextualInformation', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158035709112066048	739	Low	['Other-Irrelevant', 'Other-Advice', 'Report-News', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158039378998042624	740	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158042702543384576	741	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158044728308506624	742	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-Factoid']	marksrun2
+TRECIS-CTIT-H-Test-038	Q0	1158047637578424320	743	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158053338983751680	745	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158054387140485120	746	Low	['Other-Irrelevant', 'Report-Factoid', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158054456484720640	747	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158054496578129920	748	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158055490435219456	749	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158060881470742528	750	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158075277987274752	751	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158077416885096448	752	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158079547281162240	753	Low	['Report-Location', 'Report-MultimediaShare']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158081159693103104	754	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158081959576215552	755	Low	['Report-Location', 'Other-Sentiment']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158092110140256256	756	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158094480769073152	757	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158095257793380352	758	Low	['ContextualInformation']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158096923649355776	759	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158097379544821760	760	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158098134570061824	761	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158101003461419008	762	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-038	Q0	1158106589573853184	763	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158110304959651840	765	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158121580800593920	766	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158125872701935616	767	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158128027387039744	768	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158149724995649536	769	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158151064375484416	770	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158152222393266176	771	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158152744190009344	772	Low	['Report-ThirdPartyObservation', 'Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158154024207753216	773	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158157224583168000	774	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158158801519796224	775	Low	['Report-Location', 'Report-MultimediaShare', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158160236496195584	776	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158161292869419008	777	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158161508146266112	778	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158162342838001664	779	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158162449838878720	780	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158162496286367744	781	Low	['Report-Location']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158162642206416896	782	Low	['Report-Location', 'Report-MultimediaShare', 'Report-Factoid', 'Report-News']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158163176002744320	783	Low	['Other-Irrelevant']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158164032634966016	784	Medium	['Other-Irrelevant', 'Other-Advice', 'Report-Factoid', 'Other-Advice']	marksrun2
+TRECIS-CTIT-H-Test-039	Q0	1158164390669168640	785	Medium	['Report-MultimediaShare', 'Report-News']	marksrun2
