@@ -43,6 +43,15 @@ Dockerise a version of Play Framework and start coding the logic to read and cle
 * **Week 20**
 * **Week 21**
 * **Week 22**
+Log : 
+1. ~15hrs Diss. +1600 words, fixed up diagrams, format, tables - linked all the sections throughout, done the same with requirements, research Qs
+2. Working with the pandas df's is challenging locally, can clusterise but need to import .csv file
+3. 
+Questions for meeting
+1. The image I've used for MoSCoW is the one done at the start of the year, below it I have a table that has additional functional/non-functional requirements added throughout the development. 
+2. Research questions
+3. Should I be including Developer/Researcher User personas/experiences or does that diverge too far from the project specification?
+4. What should I include in the Appendix, is the sci-kit / JSON relevant?
 * **Week 23 [TERM ENDS]**
 * **Week 24** Dissertation submission deadline and presentations.
 

@@ -95,6 +95,15 @@ The product will be evaluated via automatic evaluation of categorization accurac
 <!-- GETTING STARTED -->
 ## Getting Started
 
+## Installation
+
+Open your favourite terminal and enter the following:
+
+    $ curl -s https://github.com/glasgowm148/Calamity/docs/install.sh | bash
+
+If the environment needs tweaking for SDKMAN to be installed, the installer will prompt you accordingly and ask you to restart.
+
+
 > `run.sh` configures environemntal variables for the number of embeddings, the dataset location, and how many lines to give to each *Actor* before running the code.
 
 ### Installation

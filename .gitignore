@@ -58,3 +58,5 @@ src/api/.idea/*
 src/1-java/.idea/workspace.xml
 src/play-api/data/test-tweets/all.json
 src/play-api/.bsp/sbt.json
+src/jupyter/test.csv
+src/jupyter/train.csv
