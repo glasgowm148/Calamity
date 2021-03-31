@@ -1,0 +1,33 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: jupyternotebook
+  namespace: 2336003gproject
+  selfLink: >-
+    /apis/route.openshift.io/v1/namespaces/2336003gproject/routes/jupyternotebook
+  uid: 8381876c-90a3-11eb-81ce-ac1f6bba3f6e
+  resourceVersion: '130548203'
+  creationTimestamp: '2021-03-29T15:29:12Z'
+  labels:
+    app: JupyterNotebook
+  annotations:
+    openshift.io/host.generated: 'true'
+spec:
+  host: scipy-notebook-2336003gproject.ida.dcs.gla.ac.uk
+  path: /
+  to:
+    kind: Service
+    name: scipy-notebook
+    weight: 100
+  port:
+    targetPort: 8888
+  wildcardPolicy: None
+status:
+  ingress:
+    - host: scipy-notebook-2336003gproject.ida.dcs.gla.ac.uk
+      routerName: router
+      conditions:
+        - type: Admitted
+          status: 'True'
+          lastTransitionTime: '2021-03-29T15:29:12Z'
+      wildcardPolicy: None

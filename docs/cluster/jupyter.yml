@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jup-metadata
+  labels:
+    app: JupyterNotebook
+  namespace: 2336003gproject
+spec:
+  containers:
+    - name: jupyter-notebook
+      image: quay.io/jupyteronopenshift/s2i-minimal-notebook-py36:2.5.1
+      ports:
+        - containerPort: 8888
+      resources:
+        cpu: "32000m"
+        memory: "64Gi"
+      command:
+        - 'jupyter-lab'
+      args:
+        - '--no-browser'
+        - '--ip=0.0.0.0'
+        - '--allow-root'
+        - '--NotebookApp.token='
+        - '--notebook-dir=/nfs'
+      volumeMounts:
+        - mountPath: /nfs/
+          name: nfs-access
+  securityContext: {}
+  serviceAccount: containerroot
+  volumes:
+    - name: nfs-access
+      persistentVolumeClaim:
+        claimName: 2336003gvol1claim

@@ -45,13 +45,30 @@ Dockerise a version of Play Framework and start coding the logic to read and cle
 * **Week 22**
 Log : 
 1. ~15hrs Diss. +1600 words, fixed up diagrams, format, tables - linked all the sections throughout, done the same with requirements, research Qs
-2. Working with the pandas df's is challenging locally, can clusterise but need to import .csv file
-3. 
+2. Working with the pandas df's is challenging locally, can clusterise Jupyter but need to import .csv file
+2a. Should maybe add more API calls to serve it in components
+
 Questions for meeting
-1. The image I've used for MoSCoW is the one done at the start of the year, below it I have a table that has additional functional/non-functional requirements added throughout the development. 
-2. Research questions
-3. Should I be including Developer/Researcher User personas/experiences or does that diverge too far from the project specification?
-4. What should I include in the Appendix, is the sci-kit / JSON relevant?
+1. The image I've used for MoSCoW is the one done at the start of the year, below it I have a table that has additional functional/non-functional requirements added throughout the development. Should I do this, or just do one table and drop the original graphical representation?
+2. Should I be including Developer/Researcher User personas/experiences or does that diverge too far from the project specification?
+3. What should I include in the Appendix, is the sci-kit / JSON relevant?
+
+
+- Drop fig 3.1 - Done
+- Drop devs -  Done
+- Link up figures - Mostly done
+
+- Summarise architecure design
+- Design work - wireframes/classes+functionality. 
+- Low-level details of the coding + overcame
+- versions at start or end. For sys, backend java - serious iter - 5x->5y there were N versions
+- Swagger definition
+- Design, MongoDB - table structure
+- Presentation describe project
+- Come with presentation. 
+
+
 * **Week 23 [TERM ENDS]**
 * **Week 24** Dissertation submission deadline and presentations.
+
 
