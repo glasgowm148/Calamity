@@ -59,49 +59,51 @@ public class LineProcessor extends UntypedAbstractActor {
 
             for (String tweetJson : messageData) {
                 Tweet tweet = mapper.readValue(tweetJson, Tweet.class);
-
-                /* Extract Hashtags */
-                final Extractor extractor = new Extractor();
-                List<String> hashtags = extractor.extractHashtags(tweet.getText());
-                tweet.setHashtags(hashtags);
-                System.out.println("Tweet ID: ");
-                System.out.print(tweet.getId().toString());
-                /* Text features using Twitter-Text */
-                final TwitterTextParseResults result = TwitterTextParser.parseTweet(tweet.getText());
-                tweet.setWeightedLength(result.weightedLength);
-                tweet.setPermillage(result.permillage);
-/*
-                try {
-                    // Remove URLs, mentions, hashtags and whitespace
-                    tweet.setText(tweet.getText().trim()
-                            .replaceAll("http.*?[\\S]+", "")
-                            .replaceAll("@[\\S]+", "")
-                            .replaceAll("#", "")
-                            .replaceAll("[\\s]+", " ")
-                            .replaceAll("\\{.*?}", "")
-                            .replaceAll("\\[.*?]", "")
-                            .replaceAll("\\(.*?\\)", "")
-                            .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
-                            .replaceAll("[/]", " ")
-                            .replaceAll(";", " "));
-
-                    Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"'`_|?!\n\r@;]+");
-                    String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
-
-                    //   Collect all tokens into labels collection.
-                    Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label -> label.length() > 0).collect(Collectors.toList());
-
-                    // Remove stopWords
-                    labels.removeAll(getFileContentAsList());
+                if (tweet.getText() != null){
+                    try {
+                        /* Extract Hashtags */
+                        final Extractor extractor = new Extractor();
+                        List<String> hashtags = extractor.extractHashtags(tweet.getText());
+                        tweet.setHashtags(hashtags);
+                        System.out.println("Tweet ID: " + tweet.getId().toString());
+                        /* Text features using Twitter-Text */
+                        final TwitterTextParseResults result = TwitterTextParser.parseTweet(tweet.getText());
+                        tweet.setWeightedLength(result.weightedLength);
+                        tweet.setPermillage(result.permillage);
 
 
-                    tweet.setText(String.valueOf(labels));
-                } catch (Exception e) {
+                        // Remove URLs, mentions, hashtags and whitespace
+                        tweet.setText(tweet.getText().trim()
+                                .replaceAll("http.*?[\\S]+", "")
+                                .replaceAll("@[\\S]+", "")
+                                .replaceAll("#", "")
+                                .replaceAll("[\\s]+", " ")
+                                .replaceAll("\\{.*?}", "")
+                                .replaceAll("\\[.*?]", "")
+                                .replaceAll("\\(.*?\\)", "")
+                                .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
+                                .replaceAll("[/]", " ")
+                                .replaceAll(";", " "));
 
-                    System.out.println("Error: " + e.toString());
-                    break;
+                        Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"'`_|?!\n\r@;]+");
+                        String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
+
+                        //   Collect all tokens into labels collection.
+                        Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label -> label.length() > 0).collect(Collectors.toList());
+
+                        // Remove stopWords
+                        labels.removeAll(getFileContentAsList());
+
+
+                        tweet.setText(String.valueOf(labels));
+                    } catch (Exception e) {
+
+                        System.out.println("Error: " + tweet.getText()); //e.toString()
+                        break;
+                    }
                 }
-                */
+
+
 
 
 
