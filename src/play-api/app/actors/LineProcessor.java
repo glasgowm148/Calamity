@@ -73,7 +73,7 @@ public class LineProcessor extends UntypedAbstractActor {
                 tweet.setPermillage(result.permillage);
 
 
-                /* Remove URLs, mentions, hashtags and whitespace 
+                /* Remove URLs, mentions, hashtags and whitespace */
                 tweet.setText(tweet.getText().trim()
                         .replaceAll("http.*?[\\S]+", "")
                         .replaceAll("@[\\S]+", "")
@@ -85,7 +85,7 @@ public class LineProcessor extends UntypedAbstractActor {
                         .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
                         .replaceAll("[/]", " ")
                         .replaceAll(";", " "));
-*/
+
                 Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"'`_|?!\n\r@;]+");
                 String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
 
