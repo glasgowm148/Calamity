@@ -31,6 +31,14 @@ public class LineProcessor extends UntypedAbstractActor {
 
     private static final String resourceFilePath = "lib/conf/stopwords.txt";
 
+    ObjectMapper mapper = new ObjectMapper();
+    GloVeModel model = new GloVeModel();
+    // Reads from the home directory
+
+    LineProcessor(){
+        model.load("lib/glove", Integer.parseInt(System.getenv("NUMBER_OF_EMBEDDINGS")));
+    }
+
     @Override
     public void onReceive(Object message) throws Exception {
         if (message instanceof LineMessage) {
@@ -45,14 +53,6 @@ public class LineProcessor extends UntypedAbstractActor {
 
             List<Tweet> tweetList = new ArrayList<>();
 
-            ObjectMapper mapper = new ObjectMapper();
-
-            GloVeModel model = new GloVeModel();
-
-            // Reads from the home directory
-            model.load("lib/glove", Integer.parseInt(System.getenv("NUMBER_OF_EMBEDDINGS")));
-
-
             Properties props = new Properties();
             props.setProperty("annotators", "tokenize, ssplit, pos, parse, sentiment"); // ner, entitymentions
             props.setProperty("parse.binaryTrees", "true");
@@ -65,7 +65,7 @@ public class LineProcessor extends UntypedAbstractActor {
                 final Extractor extractor = new Extractor();
                 List<String> hashtags = extractor.extractHashtags(tweet.getText());
                 tweet.setHashtags(hashtags);
-                System.out.println("Tweet ID: ")
+                System.out.println("Tweet ID: ");
                 System.out.print(tweet.getId().toString());
                 /* Text features using Twitter-Text */
                 final TwitterTextParseResults result = TwitterTextParser.parseTweet(tweet.getText());
