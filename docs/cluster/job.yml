@@ -48,7 +48,7 @@ spec:
           requests:
             # the "m" suffix here means "millicores", so 1 physical CPU
             # core = 1000m. this container requests 2000m = 2 physical cores
-            cpu: "64000m" 
+            cpu: "12000m" 
             # memory units are also defined by a suffix. typically this will
             # be "Mi" or "Gi" as appropriate
             memory: "128Gi"
@@ -84,7 +84,7 @@ spec:
         - name: NUMBER_OF_LINES
           value: "50" 
         - name: TWEET_DIR 
-          value: "data/missing"
+          value: "data/2020A/myan"
       # this defines a volume called nfs-access which corresponds to your cluster
       # filespace. 
       serviceAccount: containerroot
