@@ -6,18 +6,18 @@ EVALUATON: Information Type Categorization (Multi-type)
 Per Event Performance
 --------------------------------------------------
 athensEarthquake2020
-  Information Type Precision (positive class, multi-type, macro): 0.0
-  Information Type Recall (positive class, multi-type, macro): 0.0
-  Information Type F1 (positive class, multi-type, macro): 0.0
-  Information Type Accuracy (overall, multi-type, macro): 0.9479069767441862
-  High Importance Information Type Precision (positive class, multi-type, macro): 0.0
-  High Importance Information Type Recall (positive class, multi-type, macro): 0.0
-  High Importance Information Type F1 (positive class, multi-type, macro): 0.0
-  High Importance Information Type Accuracy (overall, multi-type, macro): 0.9957716701902749
-  Low Importance Information Type Precision (positive class, multi-type, macro): 0.0
-  Low Importance Information Type Recall (positive class, multi-type, macro): 0.0
-  Low Importance Information Type F1 (positive class, multi-type, macro): 0.0
-  Low Importance Information Type Accuracy (overall, multi-type, macro): 0.9327918103927896
+  Information Type Precision (positive class, multi-type, macro): 0.35965811965811967
+  Information Type Recall (positive class, multi-type, macro): 0.16822057550292846
+  Information Type F1 (positive class, multi-type, macro): 0.22751476261706302
+  Information Type Accuracy (overall, multi-type, macro): 0.9736997885835094
+  High Importance Information Type Precision (positive class, multi-type, macro): 0.3333333333333333
+  High Importance Information Type Recall (positive class, multi-type, macro): 0.15079365079365079
+  High Importance Information Type F1 (positive class, multi-type, macro): 0.20454545454545456
+  High Importance Information Type Accuracy (overall, multi-type, macro): 0.9968287526427062
+  Low Importance Information Type Precision (positive class, multi-type, macro): 0.3679712100764732
+  Low Importance Information Type Recall (positive class, multi-type, macro): 0.1737238148848056
+  Low Importance Information Type F1 (positive class, multi-type, macro): 0.23476822832388672
+  Low Importance Information Type Accuracy (overall, multi-type, macro): 0.966395905196395
 
 baltimoreFlashFlood2020
   Information Type Precision (positive class, multi-type, macro): 0.039841269841269844
