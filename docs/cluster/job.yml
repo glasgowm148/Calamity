@@ -84,7 +84,7 @@ spec:
         - name: NUMBER_OF_LINES
           value: "50" 
         - name: TWEET_DIR 
-          value: "data/2020A/myan"
+          value: "data/2020A/whaley" #myan
       # this defines a volume called nfs-access which corresponds to your cluster
       # filespace. 
       serviceAccount: containerroot
