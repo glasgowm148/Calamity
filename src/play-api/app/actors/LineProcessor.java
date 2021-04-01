@@ -66,7 +66,7 @@ public class LineProcessor extends UntypedAbstractActor {
                 List<String> hashtags = extractor.extractHashtags(tweet.getText());
                 tweet.setHashtags(hashtags);
                 System.out.println("Tweet ID: ")
-                System.out.print(tweet.getId());
+                System.out.print(tweet.getId().toString());
                 /* Text features using Twitter-Text */
                 final TwitterTextParseResults result = TwitterTextParser.parseTweet(tweet.getText());
                 tweet.setWeightedLength(result.weightedLength);
