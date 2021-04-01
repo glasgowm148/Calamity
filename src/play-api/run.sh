@@ -19,7 +19,7 @@ export NUMBER_OF_EMBEDDINGS="50"
 export NUMBER_OF_LINES="50"
 
 # The directory with the tweet sets; options {"data/test-tweets/test", "data/tweets/"}
-export TWEET_DIR="data/test-tweets/test"
+export TWEET_DIR="data/test-tweets/smol"
 
 # echo
 echo "Reading from " $TWEET_DIR

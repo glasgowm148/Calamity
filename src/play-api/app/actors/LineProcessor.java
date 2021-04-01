@@ -70,9 +70,9 @@ public class LineProcessor extends UntypedAbstractActor {
                 final TwitterTextParseResults result = TwitterTextParser.parseTweet(tweet.getText());
                 tweet.setWeightedLength(result.weightedLength);
                 tweet.setPermillage(result.permillage);
-
+/*
                 try {
-                    /* Remove URLs, mentions, hashtags and whitespace */
+                    // Remove URLs, mentions, hashtags and whitespace
                     tweet.setText(tweet.getText().trim()
                             .replaceAll("http.*?[\\S]+", "")
                             .replaceAll("@[\\S]+", "")
@@ -88,10 +88,10 @@ public class LineProcessor extends UntypedAbstractActor {
                     Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"'`_|?!\n\r@;]+");
                     String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
 
-                    /*   Collect all tokens into labels collection. */
+                    //   Collect all tokens into labels collection.
                     Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label -> label.length() > 0).collect(Collectors.toList());
 
-                    /* Remove stopWords */
+                    // Remove stopWords
                     labels.removeAll(getFileContentAsList());
 
 
@@ -101,7 +101,7 @@ public class LineProcessor extends UntypedAbstractActor {
                     System.out.println("Error: " + e.toString());
                     break;
                 }
-
+                */
 
 
 
