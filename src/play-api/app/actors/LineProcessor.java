@@ -96,6 +96,39 @@ public class LineProcessor extends UntypedAbstractActor {
 
 
                         tweet.setText(String.valueOf(labels));
+
+
+                        //ArrayList<String> defuzzedTokens = FeatureUtil.fuzztoken(String.valueOf(labels), true);
+                        /* call akka actor service */
+
+
+                        // GloVe Word Embeddings
+                        float[] d = model.encodeDocument(tweet.getText());
+                        tweet.setDimensions(d);
+
+                        // make the features - System.out.println(stringDoubleMap);
+                        Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
+
+
+                        //System.out.println("\nSet Feature Vector\n");
+                        tweet.setFeatures(stringDoubleMap);
+
+                        // tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
+
+                        //System.out.println(stringDoubleMap);
+
+
+                        Annotation annotation = pipeline.process(tweet.getText());
+                        pipeline.annotate(annotation);
+                        for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
+                            Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
+                            tweet.setVectorTree(RNNCoreAnnotations.getNodeVector(tree)); //RNNCoreAnnotations.getPredictedClass(tree);
+                        }
+
+                        tweet.setSentiment(tweet.getVectorTree());
+
+                        tweetList.add(tweet);
+
                     } catch (Exception e) {
 
                         System.out.println("Error: " + tweet.getText()); //e.toString()
@@ -103,40 +136,6 @@ public class LineProcessor extends UntypedAbstractActor {
                     }
                 }
 
-
-
-
-
-                //ArrayList<String> defuzzedTokens = FeatureUtil.fuzztoken(String.valueOf(labels), true);
-                /* call akka actor service */
-
-
-                // GloVe Word Embeddings
-                float[] d = model.encodeDocument(tweet.getText());
-                tweet.setDimensions(d);
-
-                // make the features - System.out.println(stringDoubleMap);
-                Map<String, Double> stringDoubleMap = NumericTweetFeatures.makeFeatures(tweet);
-
-
-                //System.out.println("\nSet Feature Vector\n");
-                tweet.setFeatures(stringDoubleMap);
-
-                // tweet.setFeatureVector(makeFeatureVector(stringDoubleMap));
-
-                //System.out.println(stringDoubleMap);
-
-
-                Annotation annotation = pipeline.process(tweet.getText());
-                pipeline.annotate(annotation);
-                for (CoreMap sentence : annotation.get(CoreAnnotations.SentencesAnnotation.class)) {
-                    Tree tree = sentence.get(SentimentCoreAnnotations.SentimentAnnotatedTree.class);
-                    tweet.setVectorTree(RNNCoreAnnotations.getNodeVector(tree)); //RNNCoreAnnotations.getPredictedClass(tree);
-                }
-
-                tweet.setSentiment(tweet.getVectorTree());
-
-                tweetList.add(tweet);
 
             }
             
