@@ -33,7 +33,6 @@ public class LineProcessor extends UntypedAbstractActor {
 
     ObjectMapper mapper = new ObjectMapper();
     GloVeModel model = new GloVeModel();
-    // Reads from the home directory
 
     LineProcessor(){
         model.load("lib/glove", Integer.parseInt(System.getenv("NUMBER_OF_EMBEDDINGS")));
@@ -72,31 +71,38 @@ public class LineProcessor extends UntypedAbstractActor {
                 tweet.setWeightedLength(result.weightedLength);
                 tweet.setPermillage(result.permillage);
 
+                try {
+                    /* Remove URLs, mentions, hashtags and whitespace */
+                    tweet.setText(tweet.getText().trim()
+                            .replaceAll("http.*?[\\S]+", "")
+                            .replaceAll("@[\\S]+", "")
+                            .replaceAll("#", "")
+                            .replaceAll("[\\s]+", " ")
+                            .replaceAll("\\{.*?}", "")
+                            .replaceAll("\\[.*?]", "")
+                            .replaceAll("\\(.*?\\)", "")
+                            .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
+                            .replaceAll("[/]", " ")
+                            .replaceAll(";", " "));
 
-                /* Remove URLs, mentions, hashtags and whitespace */
-                tweet.setText(tweet.getText().trim()
-                        .replaceAll("http.*?[\\S]+", "")
-                        .replaceAll("@[\\S]+", "")
-                        .replaceAll("#", "")
-                        .replaceAll("[\\s]+", " ")
-                        .replaceAll("\\{.*?}", "")
-                        .replaceAll("\\[.*?]", "")
-                        .replaceAll("\\(.*?\\)", "")
-                        .replaceAll("[^A-Za-z0-9(),!?@'`\"_\n]", " ")
-                        .replaceAll("[/]", " ")
-                        .replaceAll(";", " "));
+                    Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"'`_|?!\n\r@;]+");
+                    String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
 
-                Pattern charsPunctuationPattern = Pattern.compile("[\\d:,\"'`_|?!\n\r@;]+");
-                String input_text = charsPunctuationPattern.matcher(tweet.getText().trim().toLowerCase()).replaceAll("");
+                    /*   Collect all tokens into labels collection. */
+                    Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label -> label.length() > 0).collect(Collectors.toList());
 
-                /*   Collect all tokens into labels collection. */
-                Collection<String> labels = Arrays.asList(input_text.split(" ")).parallelStream().filter(label -> label.length() > 0).collect(Collectors.toList());
-
-                /* Remove stopWords */
-                labels.removeAll(getFileContentAsList());
+                    /* Remove stopWords */
+                    labels.removeAll(getFileContentAsList());
 
 
-                tweet.setText(String.valueOf(labels));
+                    tweet.setText(String.valueOf(labels));
+                } catch (Exception e) {
+
+                    System.out.println("Error: " + e.toString());
+                    break;
+                }
+
+
 
 
                 //ArrayList<String> defuzzedTokens = FeatureUtil.fuzztoken(String.valueOf(labels), true);

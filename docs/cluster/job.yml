@@ -48,7 +48,7 @@ spec:
           requests:
             # the "m" suffix here means "millicores", so 1 physical CPU
             # core = 1000m. this container requests 2000m = 2 physical cores
-            cpu: "12000m" 
+            cpu: "12000m"  # 16000 was used previously, but sometimes get stuck
             # memory units are also defined by a suffix. typically this will
             # be "Mi" or "Gi" as appropriate
             memory: "128Gi"
@@ -78,7 +78,7 @@ spec:
         # will be visible inside this container
         env:
         - name: SBT_OPTS 
-          value: "-Xmx52G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M  -Duser.timezone=GMT"
+          value: "-Xmx128G  -XX:+UseG1GC -XX:+CMSClassUnloadingEnabled -Xss2M  -Duser.timezone=GMT"
         - name: NUMBER_OF_EMBEDDINGS 
           value: "50"
         - name: NUMBER_OF_LINES
