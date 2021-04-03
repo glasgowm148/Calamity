@@ -5,42 +5,42 @@ Run: calamityrun (cal2.run)
 EVALUATON: Alertng Performance
 Overall performance
 --------------------------------------------------
-> High Importance Alert Worth:	-0.2464539007092196
-> Low Importance Alert Worth:	-0.003573210814508834
-> Accumulated Alert Worth:	-0.1250135557618642
+> High Importance Alert Worth:	-0.6953900709219878
+> Low Importance Alert Worth:	-0.012907375182118685
+> Accumulated Alert Worth:	-0.35414872305205325
 
 --------------------------------------------------
 EVALUATON: nDCG and Priority
 Overall performance
 --------------------------------------------------
-> nDCG:	0.513129958989331
+> nDCG:	0.5107143733501435
 
 --------------------------------------------------
 EVALUATON: Information Type Categorization
 Overall performance
 --------------------------------------------------
-> Information Type Precision (positive class, multi-type, macro):	0.4264067230254355
-> Information Type Recall (positive class, multi-type, macro):	0.27398627481507953
-> Information Type F1 (positive class, multi-type, macro):	0.29149428734829036
-> Information Type Accuracy (overall, multi-type, macro):	0.9264970965895151
-> High Importance Information Type Precision (positive class, multi-type, macro):	0.42679583365727664
-> High Importance Information Type Recall (positive class, multi-type, macro):	0.15994284451383842
-> High Importance Information Type F1 (positive class, multi-type, macro):	0.2085331261821187
-> High Importance Information Type Accuracy (overall, multi-type, macro):	0.9780131403178758
-> Low Importance Information Type Precision (positive class, multi-type, macro):	0.4262838459838015
-> Low Importance Information Type Recall (positive class, multi-type, macro):	0.3099999896470504
-> Low Importance Information Type F1 (positive class, multi-type, macro):	0.3176925487691866
-> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.9102288722542432
+> Information Type Precision (positive class, multi-type, macro):	0.3626256600776706
+> Information Type Recall (positive class, multi-type, macro):	0.2752951035601624
+> Information Type F1 (positive class, multi-type, macro):	0.2768995047569121
+> Information Type Accuracy (overall, multi-type, macro):	0.924985687413102
+> High Importance Information Type Precision (positive class, multi-type, macro):	0.41247771767951846
+> High Importance Information Type Recall (positive class, multi-type, macro):	0.1636611658808292
+> High Importance Information Type F1 (positive class, multi-type, macro):	0.20306160005765653
+> High Importance Information Type Accuracy (overall, multi-type, macro):	0.9765409885226685
+> Low Importance Information Type Precision (positive class, multi-type, macro):	0.34688290504550806
+> Low Importance Information Type Recall (positive class, multi-type, macro):	0.31054792598521513
+> Low Importance Information Type F1 (positive class, multi-type, macro):	0.30021673781983493
+> Low Importance Information Type Accuracy (overall, multi-type, macro):	0.9087050660100813
 
 --------------------------------------------------
 EVALUATON: Information Priority Level
 Overall Performance
 --------------------------------------------------
-> Priority Label Prediction (F1, macro): 0.27273242673121717
-> Priority Label Prediction High Importance (F1, macro): 0.16516593787378328
-> Priority Label Prediction Low Importance (F1, macro): 0.3067007916335648
+> Priority Label Prediction (F1, macro): 0.24454603062502867
+> Priority Label Prediction High Importance (F1, macro): 0.15389797150309306
+> Priority Label Prediction Low Importance (F1, macro): 0.2731717335056399
 
 --------------------------------------------------
 LATEX
 --------------------------------------------------
-calamityrun & 0.5131 & -0.2465 & -0.1250 & 0.2085 & 0.2915 & 0.9265 & 0.1652 & 0.2727 \\
+calamityrun & 0.5107 & -0.6954 & -0.3541 & 0.2031 & 0.2769 & 0.9250 & 0.1539 & 0.2445 \\
