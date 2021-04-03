@@ -69,6 +69,12 @@ Questions for meeting
 
 
 * **Week 23 [TERM ENDS]**
+
+QUESTIONS to ask
+
+1. (\underline{\textbf{\ref{fig:req}}}) format ok
+2. Conflating areas
+3. Postpone? MSci ? 
 * **Week 24** Dissertation submission deadline and presentations.
 
 

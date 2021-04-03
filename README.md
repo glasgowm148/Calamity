@@ -153,10 +153,11 @@ Mark Glasgow - markglasgow@gmail.com
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Ark Tweet NLP](http://www.cs.cmu.edu/~ark/TweetNLP/) - Twokenizer and Part-of-Speech tagger. 
-* [Keyword Extraction in Java](https://github.com/WuLC/KeywordExtraction) - Implementation of serveral algorithms for keyword extraction, including TextRank, TF-IDF, and a combination of the two. Cutting words and filtering stop words are performedu sing on HanLP
 * [TREC Incident Streams](http://dcs.gla.ac.uk/~richardm/TREC_IS/) provided the dataset and evaluation script.
+* [Ark Tweet NLP](http://www.cs.cmu.edu/~ark/TweetNLP/) - Twokenizer and Part-of-Speech tagger. 
+* [Keyword Extraction in Java](https://github.com/WuLC/KeywordExtraction) - Implementation of serveral algorithms for keyword extraction, including TextRank, TF-IDF, and a combination of the two. Cutting words and filtering stop words are performed using on HanLP
 * [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/)
+  * [java-text-embedding](https://github.com/chen0040/java-text-embedding) - provides GloVe word embedding that developer can directly use within their project.
 
 *This project was initially built as part of my Honours Individual Project Dissertation at The University of Glasgow*
 

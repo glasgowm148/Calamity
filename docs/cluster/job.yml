@@ -48,7 +48,7 @@ spec:
           requests:
             # the "m" suffix here means "millicores", so 1 physical CPU
             # core = 1000m. this container requests 2000m = 2 physical cores
-            cpu: "12000m"  # 16000 was used previously, but sometimes get stuck
+            cpu: "16000m"  # 16000 was used previously, but sometimes get stuck
             # memory units are also defined by a suffix. typically this will
             # be "Mi" or "Gi" as appropriate
             memory: "128Gi"
